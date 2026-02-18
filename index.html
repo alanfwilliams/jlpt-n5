@@ -212,7 +212,7 @@ var UI_STRINGS = {
   // Navigation / header
   day_label:      { en: 'Day',      ja: 'だい',       since: 38  },
   week_label:     { en: 'Week',     ja: 'しゅう',     since: 39  },
-  of_365:         { en: 'of 365',   ja: '/ 365にち',  since: 38  },
+  of_total:       { en: 'of',       ja: '/',           since: 38  },
   view_review:    { en: 'Review',   ja: 'ふくしゅう', since: 49  },
   // Day status
   mark_complete:   { en: '✓ Mark Complete',   ja: '✓ かんりょう！', since: 203 },
@@ -1134,12 +1134,16 @@ function Overview(_ref10) {
     completed = _ref10.completed,
     setDay = _ref10.setDay,
     currentDay = _ref10.currentDay;
-  var phases = [1, 2, 3, 4, 5, 6, 7, 8];
+  var phases = [];
+  var seen = {};
+  curriculum.forEach(function (l) {
+    if (!seen[l.phaseNum]) { seen[l.phaseNum] = true; phases.push(l.phaseNum); }
+  });
   return /*#__PURE__*/React.createElement("div", {
     className: "overview"
   }, /*#__PURE__*/React.createElement("div", {
     className: "overview-header"
-  }, /*#__PURE__*/React.createElement("h2", null, "Course Overview \u2014 All 365 Days"), /*#__PURE__*/React.createElement("span", {
+  }, /*#__PURE__*/React.createElement("h2", null, "Course Overview \u2014 All ", curriculum.length, " Days"), /*#__PURE__*/React.createElement("span", {
     style: {
       fontSize: '0.85rem',
       color: '#999'

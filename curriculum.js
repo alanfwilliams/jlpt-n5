@@ -18501,36 +18501,7879 @@ var PHASE_NAMES = {
 };
 
 // ═══════════════════════════════════════════════════════════════════════════
-// N4 CURRICULUM EXTENSION (Days 366-395 shown here as examples)
-// Full N4 curriculum (~540 days total) to be added
+// PHASE 9: N5 REVIEW (Days 366-395)
+// 30 days consolidating N5 knowledge and bridging to N4
 // ═══════════════════════════════════════════════════════════════════════════
 
-// Sample N4 lessons (Days 366-395: N5 Review & Bridge Grammar)
-for (var i = 366; i <= 395; i++) {
-  curriculum.push({
-    day: i,
-    phaseNum: 9,
-    phaseName: "N5 Review",
-    week: Math.floor((i - 1) / 7) + 1,
-    title: "N5 Review " + (i - 365) + ": Bridge to N4",
-    intro: "Welcome to N4! This review consolidates your N5 knowledge and prepares you for N4-level content. Focus on areas where you need more practice.",
-    type: "review",
-    chars: [],
-    vocab: [
-      ["ふくしゅう", "ふくしゅう", "review"],
-      ["じゅんび", "じゅんび", "preparation"],
-      ["もくひょう", "もくひょう", "goal"],
-      ["レベル", "レベル", "level"],
-      ["れんしゅう", "れんしゅう", "practice"]
-    ],
-    grammar: {
-      pattern: "N5 Consolidation",
-      meaning: "Review and strengthen N5 foundations",
-      example_jp: "N5のふくしゅうをして、N4のじゅんびをしましょう",
-      example_en: "Let's review N5 and prepare for N4"
-    },
-    practice: "Review your weakest N5 topics. Practice reading, listening, and writing. Use the SRS review system daily.",
-    tip: i === 366 ? "🎉 Welcome to N4! The next 540 days will build on your N5 foundation. Complete N4 curriculum content coming soon!" : "Keep reviewing N5 daily. Consistency is key to mastering N4!"
-  });
-}
+// --- Days 366-369: Hiragana & Katakana Speed Reading Review ---
 
+curriculum.push({
+  day: 366,
+  phaseNum: 9,
+  phaseName: "N5 Review",
+  week: Math.floor((366 - 1) / 7) + 1,
+  title: "Hiragana Speed Reading: あ行〜さ行",
+  intro: "Welcome to N4 preparation! We begin by sharpening your hiragana reading speed. Today covers the first 15 hiragana characters.",
+  type: "review",
+  chars: [],
+  vocab: [
+    ["あさ", "あさ", "morning"],
+    ["いす", "いす", "chair"],
+    ["うし", "うし", "cow"],
+    ["えき", "えき", "station"],
+    ["おかし", "おかし", "sweets"]
+  ],
+  grammar: {
+    pattern: "〜は〜です",
+    meaning: "A is B (basic identification)",
+    example_jp: "これはいすです。",
+    example_en: "This is a chair."
+  },
+  practice: "Read each hiragana row (あ, か, さ) aloud 5 times as fast as you can. Time yourself and try to beat your record.",
+  tip: "Welcome to N4! Speed reading kana is fundamental. If you can read hiragana without hesitation, everything else becomes easier."
+});
+
+curriculum.push({
+  day: 367,
+  phaseNum: 9,
+  phaseName: "N5 Review",
+  week: Math.floor((367 - 1) / 7) + 1,
+  title: "Hiragana Speed Reading: た行〜は行",
+  intro: "Continue building hiragana reading speed with the た, な, and は rows. Focus on instant recognition.",
+  type: "review",
+  chars: [],
+  vocab: [
+    ["たべもの", "たべもの", "food"],
+    ["なつ", "なつ", "summer"],
+    ["にほん", "にほん", "Japan"],
+    ["ふね", "ふね", "ship"],
+    ["はな", "はな", "flower"]
+  ],
+  grammar: {
+    pattern: "〜が好きです",
+    meaning: "I like ~",
+    example_jp: "なつがすきです。",
+    example_en: "I like summer."
+  },
+  practice: "Write a sentence for each vocabulary word using は〜です. Then read all sentences aloud without pausing.",
+  tip: "When you see a hiragana word, try to read it as a whole unit rather than character by character. This builds fluency."
+});
+
+curriculum.push({
+  day: 368,
+  phaseNum: 9,
+  phaseName: "N5 Review",
+  week: Math.floor((368 - 1) / 7) + 1,
+  title: "Hiragana Speed Reading: ま行〜わ行 + ん",
+  intro: "Complete your hiragana speed review with the remaining rows. By now you should recognize all 46 hiragana instantly.",
+  type: "review",
+  chars: [],
+  vocab: [
+    ["まど", "まど", "window"],
+    ["やま", "やま", "mountain"],
+    ["よる", "よる", "night"],
+    ["わたし", "わたし", "I / me"],
+    ["もの", "もの", "thing"]
+  ],
+  grammar: {
+    pattern: "〜を〜ます",
+    meaning: "Verb with object marker を",
+    example_jp: "まどをあけます。",
+    example_en: "I open the window."
+  },
+  practice: "Read a paragraph of hiragana-only text aloud. Try children's stories written in hiragana to practice natural reading flow.",
+  tip: "If any hiragana still trips you up, write it 20 times and create a mnemonic. Common trouble characters: ぬ, む, め, ね, れ, わ."
+});
+
+curriculum.push({
+  day: 369,
+  phaseNum: 9,
+  phaseName: "N5 Review",
+  week: Math.floor((369 - 1) / 7) + 1,
+  title: "Katakana Speed Reading: Full Review",
+  intro: "Katakana appears in loanwords, onomatopoeia, and emphasis. Review all 46 katakana for instant recognition.",
+  type: "review",
+  chars: [],
+  vocab: [
+    ["コーヒー", "コーヒー", "coffee"],
+    ["テレビ", "テレビ", "television"],
+    ["パソコン", "パソコン", "personal computer"],
+    ["レストラン", "レストラン", "restaurant"],
+    ["ホテル", "ホテル", "hotel"]
+  ],
+  grammar: {
+    pattern: "〜で〜を〜ます",
+    meaning: "Do something at a place (location で)",
+    example_jp: "レストランでコーヒーをのみます。",
+    example_en: "I drink coffee at the restaurant."
+  },
+  practice: "Walk around your home or neighborhood and identify items that would be written in katakana. Write them all out in katakana.",
+  tip: "Tricky katakana pairs: シ/ツ, ソ/ン, ア/マ. Practice distinguishing these by writing them side by side."
+});
+
+// --- Days 370-374: N5 Core Vocabulary Themes Review ---
+
+curriculum.push({
+  day: 370,
+  phaseNum: 9,
+  phaseName: "N5 Review",
+  week: Math.floor((370 - 1) / 7) + 1,
+  title: "Vocabulary Review: Family & People",
+  intro: "Review essential N5 vocabulary for family members and people. These words appear frequently on the JLPT.",
+  type: "review",
+  chars: [],
+  vocab: [
+    ["おかあさん", "おかあさん", "mother (polite)"],
+    ["おとうさん", "おとうさん", "father (polite)"],
+    ["おにいさん", "おにいさん", "older brother (polite)"],
+    ["おねえさん", "おねえさん", "older sister (polite)"],
+    ["ともだち", "ともだち", "friend"]
+  ],
+  grammar: {
+    pattern: "〜がいます",
+    meaning: "There is (animate being)",
+    example_jp: "おねえさんがふたりいます。",
+    example_en: "I have two older sisters."
+  },
+  practice: "Draw your family tree and label each person in Japanese. Practice introducing your family: 「かぞくは〜にんです。」",
+  tip: "Remember: use humble forms (はは, ちち) for your own family when speaking to others, and polite forms (おかあさん, おとうさん) for someone else's family."
+});
+
+curriculum.push({
+  day: 371,
+  phaseNum: 9,
+  phaseName: "N5 Review",
+  week: Math.floor((371 - 1) / 7) + 1,
+  title: "Vocabulary Review: Food & Drink",
+  intro: "Review N5 food and drink vocabulary. Being able to order food and discuss meals is essential for daily life in Japan.",
+  type: "review",
+  chars: [],
+  vocab: [
+    ["ごはん", "ごはん", "rice / meal"],
+    ["さかな", "さかな", "fish"],
+    ["にく", "にく", "meat"],
+    ["やさい", "やさい", "vegetables"],
+    ["みず", "みず", "water"]
+  ],
+  grammar: {
+    pattern: "〜をください",
+    meaning: "Please give me ~",
+    example_jp: "みずをください。",
+    example_en: "Water, please."
+  },
+  practice: "Write a menu in Japanese with 10 items. Practice ordering using 〜をください and 〜をおねがいします.",
+  tip: "At restaurants in Japan, you can call the waiter with すみません and order with 〜をおねがいします. It is more polite than ください in formal settings."
+});
+
+curriculum.push({
+  day: 372,
+  phaseNum: 9,
+  phaseName: "N5 Review",
+  week: Math.floor((372 - 1) / 7) + 1,
+  title: "Vocabulary Review: Time & Days",
+  intro: "Review time expressions, days of the week, and months. Time vocabulary is tested heavily on N5 and N4.",
+  type: "review",
+  chars: [],
+  vocab: [
+    ["げつようび", "げつようび", "Monday"],
+    ["いま", "いま", "now"],
+    ["あした", "あした", "tomorrow"],
+    ["せんしゅう", "せんしゅう", "last week"],
+    ["まいにち", "まいにち", "every day"]
+  ],
+  grammar: {
+    pattern: "〜に〜ます",
+    meaning: "Do something at/on (time marker に)",
+    example_jp: "げつようびにべんきょうします。",
+    example_en: "I study on Monday."
+  },
+  practice: "Write your weekly schedule in Japanese. Include times (〜じ), days (〜ようび), and activities for each day.",
+  tip: "Time words like きょう, あした, まいにち do not need the particle に. Days of the week and specific times do: げつようびに, さんじに."
+});
+
+curriculum.push({
+  day: 373,
+  phaseNum: 9,
+  phaseName: "N5 Review",
+  week: Math.floor((373 - 1) / 7) + 1,
+  title: "Vocabulary Review: Places & Directions",
+  intro: "Review N5 vocabulary for locations, buildings, and directional words. These are critical for reading comprehension passages.",
+  type: "review",
+  chars: [],
+  vocab: [
+    ["がっこう", "がっこう", "school"],
+    ["びょういん", "びょういん", "hospital"],
+    ["みぎ", "みぎ", "right"],
+    ["ひだり", "ひだり", "left"],
+    ["まっすぐ", "まっすぐ", "straight ahead"]
+  ],
+  grammar: {
+    pattern: "〜はどこですか",
+    meaning: "Where is ~?",
+    example_jp: "びょういんはどこですか。",
+    example_en: "Where is the hospital?"
+  },
+  practice: "Draw a simple map and write directions in Japanese using みぎ, ひだり, まっすぐ. Practice asking and answering どこですか.",
+  tip: "For giving directions, chain instructions with てから (after doing): まっすぐいってから、みぎにまがってください。"
+});
+
+curriculum.push({
+  day: 374,
+  phaseNum: 9,
+  phaseName: "N5 Review",
+  week: Math.floor((374 - 1) / 7) + 1,
+  title: "Vocabulary Review: Adjectives & Descriptions",
+  intro: "Review N5 い-adjectives and な-adjectives. Describing things accurately is key to natural conversation.",
+  type: "review",
+  chars: [],
+  vocab: [
+    ["おおきい", "おおきい", "big"],
+    ["ちいさい", "ちいさい", "small"],
+    ["しずか", "しずか", "quiet"],
+    ["にぎやか", "にぎやか", "lively"],
+    ["あたらしい", "あたらしい", "new"]
+  ],
+  grammar: {
+    pattern: "い-adj → くない / な-adj → じゃない",
+    meaning: "Negative forms of adjectives",
+    example_jp: "このへやはおおきくないです。",
+    example_en: "This room is not big."
+  },
+  practice: "Describe 10 objects around you using both い-adjectives and な-adjectives. Then negate each description.",
+  tip: "Remember: い-adjectives drop い and add くない (おおきい → おおきくない). な-adjectives use じゃない (しずか → しずかじゃない)."
+});
+
+// --- Days 375-379: N5 Grammar Patterns Review ---
+
+curriculum.push({
+  day: 375,
+  phaseNum: 9,
+  phaseName: "N5 Review",
+  week: Math.floor((375 - 1) / 7) + 1,
+  title: "Grammar Review: Particles は, が, を, に, で",
+  intro: "Particles are the backbone of Japanese grammar. Review the five most important N5 particles and their uses.",
+  type: "review",
+  chars: [],
+  vocab: [
+    ["こうえん", "こうえん", "park"],
+    ["しゅくだい", "しゅくだい", "homework"],
+    ["としょかん", "としょかん", "library"],
+    ["でんしゃ", "でんしゃ", "train"],
+    ["えいが", "えいが", "movie"]
+  ],
+  grammar: {
+    pattern: "は / が / を / に / で",
+    meaning: "Topic / subject / object / direction-time / place of action",
+    example_jp: "わたしはとしょかんでしゅくだいをします。",
+    example_en: "I do homework at the library."
+  },
+  practice: "Write 5 sentences, each using a different particle. Then combine particles: 「わたしは〜で〜を〜ます。」",
+  tip: "は marks the topic (what you are talking about), が marks the subject (who/what does the action). When in doubt, は is safer for general statements."
+});
+
+curriculum.push({
+  day: 376,
+  phaseNum: 9,
+  phaseName: "N5 Review",
+  week: Math.floor((376 - 1) / 7) + 1,
+  title: "Grammar Review: Particles も, と, から, まで, へ",
+  intro: "Continue your particle review with も (also), と (and/with), から (from), まで (until), and へ (toward).",
+  type: "review",
+  chars: [],
+  vocab: [
+    ["くうこう", "くうこう", "airport"],
+    ["かいしゃ", "かいしゃ", "company"],
+    ["ともだち", "ともだち", "friend"],
+    ["くに", "くに", "country"],
+    ["しごと", "しごと", "work / job"]
+  ],
+  grammar: {
+    pattern: "〜から〜まで",
+    meaning: "From ~ to/until ~",
+    example_jp: "くうこうからホテルまでタクシーでいきます。",
+    example_en: "I go from the airport to the hotel by taxi."
+  },
+  practice: "Describe your daily routine using から and まで for times. Use と to list things and も to add extra information.",
+  tip: "へ and に can both mark direction, but へ emphasizes the direction of movement while に emphasizes the destination or arrival point."
+});
+
+curriculum.push({
+  day: 377,
+  phaseNum: 9,
+  phaseName: "N5 Review",
+  week: Math.floor((377 - 1) / 7) + 1,
+  title: "Grammar Review: て-form Connections",
+  intro: "The て-form is one of the most versatile grammar points in Japanese. Review its formation and key uses.",
+  type: "review",
+  chars: [],
+  vocab: [
+    ["たべる", "たべる", "to eat"],
+    ["のむ", "のむ", "to drink"],
+    ["かく", "かく", "to write"],
+    ["よむ", "よむ", "to read"],
+    ["はなす", "はなす", "to speak"]
+  ],
+  grammar: {
+    pattern: "て-form + ください",
+    meaning: "Please do ~",
+    example_jp: "にほんごではなしてください。",
+    example_en: "Please speak in Japanese."
+  },
+  practice: "Convert these verbs to て-form: たべる→たべて, のむ→のんで, かく→かいて, よむ→よんで, はなす→はなして. Then use each with ください.",
+  tip: "て-form song for godan verbs: い/ち/り→って, み/び/に→んで, き→いて, ぎ→いで, し→して. いく is irregular: いって."
+});
+
+curriculum.push({
+  day: 378,
+  phaseNum: 9,
+  phaseName: "N5 Review",
+  week: Math.floor((378 - 1) / 7) + 1,
+  title: "Grammar Review: ます-form & Polite Speech",
+  intro: "Review ます-form conjugations including negative, past, and past-negative. Polite speech is essential for the JLPT.",
+  type: "review",
+  chars: [],
+  vocab: [
+    ["おきる", "おきる", "to wake up"],
+    ["ねる", "ねる", "to sleep"],
+    ["いく", "いく", "to go"],
+    ["くる", "くる", "to come"],
+    ["する", "する", "to do"]
+  ],
+  grammar: {
+    pattern: "〜ます / 〜ません / 〜ました / 〜ませんでした",
+    meaning: "Polite present / negative / past / past-negative",
+    example_jp: "きのうはやくねました。けさはやくおきませんでした。",
+    example_en: "I slept early yesterday. I did not wake up early this morning."
+  },
+  practice: "Conjugate each vocabulary verb into all four ます-forms. Write a short diary entry about yesterday using ました and ませんでした.",
+  tip: "The two irregular verbs する→します and くる→きます must simply be memorized. All other verbs follow predictable rules."
+});
+
+curriculum.push({
+  day: 379,
+  phaseNum: 9,
+  phaseName: "N5 Review",
+  week: Math.floor((379 - 1) / 7) + 1,
+  title: "Grammar Review: Questions, なに, だれ, どこ, いつ",
+  intro: "Review how to form questions in Japanese using question words and the particle か.",
+  type: "review",
+  chars: [],
+  vocab: [
+    ["なに", "なに", "what"],
+    ["だれ", "だれ", "who"],
+    ["どこ", "どこ", "where"],
+    ["いつ", "いつ", "when"],
+    ["どうして", "どうして", "why"]
+  ],
+  grammar: {
+    pattern: "Question word + か",
+    meaning: "Forming questions with か",
+    example_jp: "あしたどこにいきますか。",
+    example_en: "Where are you going tomorrow?"
+  },
+  practice: "Write questions using each question word (なに, だれ, どこ, いつ, どうして). Then write answers to your own questions.",
+  tip: "In casual speech, か can be dropped and replaced with rising intonation. But for the JLPT, always use the polite か form."
+});
+
+// --- Days 380-384: N5 Kanji Review ---
+
+curriculum.push({
+  day: 380,
+  phaseNum: 9,
+  phaseName: "N5 Review",
+  week: Math.floor((380 - 1) / 7) + 1,
+  title: "Kanji Review: Numbers 一〜十, 百, 千, 万",
+  intro: "Review the number kanji that form the basis of Japanese counting. These appear in prices, dates, and counters.",
+  type: "review",
+  chars: [],
+  vocab: [
+    ["一つ", "ひとつ", "one (thing)"],
+    ["二人", "ふたり", "two people"],
+    ["三月", "さんがつ", "March"],
+    ["百円", "ひゃくえん", "100 yen"],
+    ["千円", "せんえん", "1000 yen"]
+  ],
+  grammar: {
+    pattern: "Number + Counter",
+    meaning: "Counting with appropriate counters",
+    example_jp: "りんごをみっつください。",
+    example_en: "Three apples, please."
+  },
+  practice: "Write the numbers 1-10 in kanji from memory. Then practice writing prices: 二百五十円, 三千円, 一万円.",
+  tip: "Number readings change with counters: 三 is さん but 三つ is みっつ and 三日 is みっか. Learn numbers with their common counters."
+});
+
+curriculum.push({
+  day: 381,
+  phaseNum: 9,
+  phaseName: "N5 Review",
+  week: Math.floor((381 - 1) / 7) + 1,
+  title: "Kanji Review: Time 日, 月, 年, 時, 分",
+  intro: "Review the time-related kanji. Reading dates, times, and durations correctly is essential for JLPT listening and reading.",
+  type: "review",
+  chars: [],
+  vocab: [
+    ["今日", "きょう", "today"],
+    ["先月", "せんげつ", "last month"],
+    ["来年", "らいねん", "next year"],
+    ["何時", "なんじ", "what time"],
+    ["十分", "じゅっぷん", "ten minutes"]
+  ],
+  grammar: {
+    pattern: "〜時〜分に",
+    meaning: "At ~ hours ~ minutes",
+    example_jp: "まいあさ七時三十分におきます。",
+    example_en: "I wake up at 7:30 every morning."
+  },
+  practice: "Write today's date in Japanese kanji. Write your daily schedule with specific times using 時 and 分.",
+  tip: "Watch out for irregular time readings: 四時(よじ), 七時(しちじ), 九時(くじ), and minutes like 一分(いっぷん), 六分(ろっぷん)."
+});
+
+curriculum.push({
+  day: 382,
+  phaseNum: 9,
+  phaseName: "N5 Review",
+  week: Math.floor((382 - 1) / 7) + 1,
+  title: "Kanji Review: People & Body 人, 男, 女, 子, 目, 手, 足",
+  intro: "Review kanji related to people and the body. These are among the most frequently used kanji in everyday Japanese.",
+  type: "review",
+  chars: [],
+  vocab: [
+    ["男の人", "おとこのひと", "man"],
+    ["女の子", "おんなのこ", "girl"],
+    ["手紙", "てがみ", "letter"],
+    ["目玉", "めだま", "eyeball"],
+    ["大人", "おとな", "adult"]
+  ],
+  grammar: {
+    pattern: "〜の〜 (noun modifier)",
+    meaning: "Connecting nouns with の",
+    example_jp: "あの女の人はだれですか。",
+    example_en: "Who is that woman?"
+  },
+  practice: "Write each kanji 5 times with both on'yomi and kun'yomi readings. Create compound words using these kanji.",
+  tip: "人 has many readings: ひと (alone), にん (三人=さんにん), じん (日本人=にほんじん). Context determines the reading."
+});
+
+curriculum.push({
+  day: 383,
+  phaseNum: 9,
+  phaseName: "N5 Review",
+  week: Math.floor((383 - 1) / 7) + 1,
+  title: "Kanji Review: Nature 山, 川, 水, 火, 木, 金, 土",
+  intro: "Review nature and element kanji. Many of these also appear as days of the week in Japanese.",
+  type: "review",
+  chars: [],
+  vocab: [
+    ["山田", "やまだ", "Yamada (surname)"],
+    ["川", "かわ", "river"],
+    ["水曜日", "すいようび", "Wednesday"],
+    ["火曜日", "かようび", "Tuesday"],
+    ["金曜日", "きんようび", "Friday"]
+  ],
+  grammar: {
+    pattern: "〜曜日に",
+    meaning: "On (day of the week)",
+    example_jp: "金曜日にともだちとえいがをみます。",
+    example_en: "I watch a movie with a friend on Friday."
+  },
+  practice: "Write all seven days of the week in kanji. Identify the nature element in each. Write your weekly plan using 〜曜日に.",
+  tip: "The days of the week use the same elements as the planets: 日(sun), 月(moon), 火(fire/Mars), 水(water/Mercury), 木(wood/Jupiter), 金(gold/Venus), 土(earth/Saturn)."
+});
+
+curriculum.push({
+  day: 384,
+  phaseNum: 9,
+  phaseName: "N5 Review",
+  week: Math.floor((384 - 1) / 7) + 1,
+  title: "Kanji Review: Actions 食, 飲, 見, 聞, 読, 書, 話",
+  intro: "Review the most common action kanji from N5. These verbs are used in almost every conversation.",
+  type: "review",
+  chars: [],
+  vocab: [
+    ["食べる", "たべる", "to eat"],
+    ["飲み物", "のみもの", "drink / beverage"],
+    ["見る", "みる", "to see / watch"],
+    ["聞く", "きく", "to hear / ask"],
+    ["読書", "どくしょ", "reading (books)"]
+  ],
+  grammar: {
+    pattern: "〜たり〜たりする",
+    meaning: "Do things like ~ and ~",
+    example_jp: "日曜日は本を読んだりえいがを見たりします。",
+    example_en: "On Sundays I do things like read books and watch movies."
+  },
+  practice: "Write each action kanji with its verb form and a compound word. Make sentences using たり〜たりする to describe your weekends.",
+  tip: "Many action kanji have both a verb reading (kun'yomi) and a compound reading (on'yomi): 食 = たべる (verb) but 食堂 = しょくどう (compound)."
+});
+
+// --- Days 385-389: Mixed N5 Review with Increasing Difficulty ---
+
+curriculum.push({
+  day: 385,
+  phaseNum: 9,
+  phaseName: "N5 Review",
+  week: Math.floor((385 - 1) / 7) + 1,
+  title: "Mixed Review: Self-Introduction & Daily Life",
+  intro: "Combine vocabulary, grammar, and kanji to talk about yourself and your daily routine at a natural pace.",
+  type: "review",
+  chars: [],
+  vocab: [
+    ["しゅみ", "しゅみ", "hobby"],
+    ["べんきょう", "べんきょう", "study"],
+    ["しごと", "しごと", "work / job"],
+    ["かいもの", "かいもの", "shopping"],
+    ["さんぽ", "さんぽ", "walk / stroll"]
+  ],
+  grammar: {
+    pattern: "〜のがすきです",
+    meaning: "I like doing ~",
+    example_jp: "しゅみはさんぽするのがすきです。",
+    example_en: "My hobby is that I like taking walks."
+  },
+  practice: "Write a full self-introduction (じこしょうかい) in Japanese: name, country, job/school, hobbies, one fun fact. Practice saying it aloud.",
+  tip: "A good self-introduction follows this flow: name → origin → occupation → hobby → closing. End with よろしくおねがいします."
+});
+
+curriculum.push({
+  day: 386,
+  phaseNum: 9,
+  phaseName: "N5 Review",
+  week: Math.floor((386 - 1) / 7) + 1,
+  title: "Mixed Review: Shopping & Transactions",
+  intro: "Practice real-world shopping scenarios using N5 vocabulary, numbers, counters, and polite expressions.",
+  type: "review",
+  chars: [],
+  vocab: [
+    ["いくら", "いくら", "how much"],
+    ["たかい", "たかい", "expensive / tall"],
+    ["やすい", "やすい", "cheap / easy"],
+    ["みせ", "みせ", "shop / store"],
+    ["きっぷ", "きっぷ", "ticket"]
+  ],
+  grammar: {
+    pattern: "〜は いくらですか",
+    meaning: "How much is ~?",
+    example_jp: "このきっぷはいくらですか。",
+    example_en: "How much is this ticket?"
+  },
+  practice: "Role-play a shopping dialogue. Ask prices, compare items (こっちのほうがやすい), and make a purchase. Write the full dialogue.",
+  tip: "When shopping in Japan, use これ (this/near me), それ (that/near you), あれ (that/over there) to point out items clearly."
+});
+
+curriculum.push({
+  day: 387,
+  phaseNum: 9,
+  phaseName: "N5 Review",
+  week: Math.floor((387 - 1) / 7) + 1,
+  title: "Mixed Review: Giving & Receiving Directions",
+  intro: "Combine location vocabulary, existence verbs, and directional expressions for navigation scenarios.",
+  type: "review",
+  chars: [],
+  vocab: [
+    ["まがる", "まがる", "to turn"],
+    ["わたる", "わたる", "to cross"],
+    ["となり", "となり", "next to"],
+    ["あいだ", "あいだ", "between"],
+    ["ちかく", "ちかく", "nearby"]
+  ],
+  grammar: {
+    pattern: "〜てから、〜てください",
+    meaning: "After doing ~, please do ~",
+    example_jp: "つぎのかどをまがってから、まっすぐいってください。",
+    example_en: "After turning at the next corner, please go straight."
+  },
+  practice: "Draw a map of your neighborhood. Write directions from your home to three different places using てから and ください.",
+  tip: "Japanese directions often use landmarks rather than street names: こうばんのとなり (next to the police box), ぎんこうのまえ (in front of the bank)."
+});
+
+curriculum.push({
+  day: 388,
+  phaseNum: 9,
+  phaseName: "N5 Review",
+  week: Math.floor((388 - 1) / 7) + 1,
+  title: "Mixed Review: Describing Experiences & Plans",
+  intro: "Use past tense, future plans, and expressing experiences to talk about events in your life.",
+  type: "review",
+  chars: [],
+  vocab: [
+    ["りょこう", "りょこう", "travel / trip"],
+    ["なつやすみ", "なつやすみ", "summer vacation"],
+    ["おみやげ", "おみやげ", "souvenir"],
+    ["しゃしん", "しゃしん", "photograph"],
+    ["けいけん", "けいけん", "experience"]
+  ],
+  grammar: {
+    pattern: "〜たことがあります",
+    meaning: "I have (experienced) ~",
+    example_jp: "にほんにいったことがあります。",
+    example_en: "I have been to Japan."
+  },
+  practice: "Write about a trip you took using past tense. Then write about a future trip you want to take using たいです and つもりです.",
+  tip: "〜たことがあります is for general life experience. For recent past events, just use 〜ました. Do not mix them up on the JLPT."
+});
+
+curriculum.push({
+  day: 389,
+  phaseNum: 9,
+  phaseName: "N5 Review",
+  week: Math.floor((389 - 1) / 7) + 1,
+  title: "Mixed Review: Expressing Opinions & Feelings",
+  intro: "Practice expressing what you think, feel, and want using N5 grammar structures with more complex sentences.",
+  type: "review",
+  chars: [],
+  vocab: [
+    ["うれしい", "うれしい", "happy / glad"],
+    ["かなしい", "かなしい", "sad"],
+    ["たのしい", "たのしい", "fun / enjoyable"],
+    ["つまらない", "つまらない", "boring"],
+    ["むずかしい", "むずかしい", "difficult"]
+  ],
+  grammar: {
+    pattern: "〜とおもいます",
+    meaning: "I think that ~",
+    example_jp: "にほんごはたのしいとおもいます。",
+    example_en: "I think Japanese is fun."
+  },
+  practice: "Write your opinion about 5 topics (food, weather, a movie, Japanese, your city) using 〜とおもいます. Use adjectives from today's vocabulary.",
+  tip: "とおもいます is for your own thoughts. For reporting what someone else thinks, use とおもっています (ongoing state of thinking)."
+});
+
+// --- Days 390-395: Bridge to N4 ---
+
+curriculum.push({
+  day: 390,
+  phaseNum: 9,
+  phaseName: "N5 Review",
+  week: Math.floor((390 - 1) / 7) + 1,
+  title: "Bridge to N4: Plain Form (Dictionary & ない-form)",
+  intro: "N4 grammar relies heavily on plain form. Review dictionary form and ない-form as preparation for N4 patterns.",
+  type: "review",
+  chars: [],
+  vocab: [
+    ["つかう", "つかう", "to use"],
+    ["おぼえる", "おぼえる", "to memorize"],
+    ["わすれる", "わすれる", "to forget"],
+    ["かんがえる", "かんがえる", "to think / consider"],
+    ["きめる", "きめる", "to decide"]
+  ],
+  grammar: {
+    pattern: "Plain form (dictionary / ない)",
+    meaning: "Casual verb forms used in many N4 grammar patterns",
+    example_jp: "まいにちかんじをおぼえる。わすれないようにする。",
+    example_en: "I memorize kanji every day. I make sure not to forget."
+  },
+  practice: "Convert 10 verbs between ます-form, dictionary form, and ない-form. Grouping: ichidan verbs (たべる→たべない) vs. godan verbs (かく→かかない).",
+  tip: "N4 unlocks grammar built on plain form: 〜とおもう, 〜まえに, 〜ことができる, 〜なければならない. Mastering plain form now saves time later."
+});
+
+curriculum.push({
+  day: 391,
+  phaseNum: 9,
+  phaseName: "N5 Review",
+  week: Math.floor((391 - 1) / 7) + 1,
+  title: "Bridge to N4: Potential Form (〜ことができる)",
+  intro: "Learn to express ability using 〜ことができる, a structure that bridges N5 and N4. This is your first N4 grammar preview.",
+  type: "review",
+  chars: [],
+  vocab: [
+    ["およぐ", "およぐ", "to swim"],
+    ["うんてん", "うんてん", "driving"],
+    ["りょうり", "りょうり", "cooking"],
+    ["ピアノ", "ピアノ", "piano"],
+    ["じてんしゃ", "じてんしゃ", "bicycle"]
+  ],
+  grammar: {
+    pattern: "Dictionary form + ことができる",
+    meaning: "Can do ~ / able to do ~",
+    example_jp: "わたしはじてんしゃにのることができます。",
+    example_en: "I can ride a bicycle."
+  },
+  practice: "Write 5 things you can do and 5 things you cannot do using 〜ことができます / 〜ことができません.",
+  tip: "In N4, you will also learn the potential verb form (たべられる, およげる) which is shorter. For now, ことができる works for any verb."
+});
+
+curriculum.push({
+  day: 392,
+  phaseNum: 9,
+  phaseName: "N5 Review",
+  week: Math.floor((392 - 1) / 7) + 1,
+  title: "Bridge to N4: Expressing Reasons (〜から / 〜ので)",
+  intro: "Preview the N4 grammar pattern ので (because) alongside the N5 pattern から. Giving reasons is essential at N4 level.",
+  type: "review",
+  chars: [],
+  vocab: [
+    ["びょうき", "びょうき", "illness / sick"],
+    ["つかれる", "つかれる", "to get tired"],
+    ["いそがしい", "いそがしい", "busy"],
+    ["てんき", "てんき", "weather"],
+    ["やすみ", "やすみ", "rest / holiday"]
+  ],
+  grammar: {
+    pattern: "〜から / 〜ので",
+    meaning: "Because ~ (から is direct, ので is softer/polite)",
+    example_jp: "びょうきなので、きょうはやすみます。",
+    example_en: "Because I am sick, I will rest today."
+  },
+  practice: "Rewrite 5 sentences using both から and ので. Notice how ので sounds more polite and is preferred in formal writing.",
+  tip: "Before ので, use plain form for verbs and い-adjectives. For な-adjectives and nouns, add な: しずかなので, びょうきなので."
+});
+
+curriculum.push({
+  day: 393,
+  phaseNum: 9,
+  phaseName: "N5 Review",
+  week: Math.floor((393 - 1) / 7) + 1,
+  title: "Bridge to N4: Conditional (〜たら)",
+  intro: "Preview the N4 conditional form たら. This pattern expresses 'if' or 'when' and is one of the most useful N4 grammar points.",
+  type: "review",
+  chars: [],
+  vocab: [
+    ["あめ", "あめ", "rain"],
+    ["ひま", "ひま", "free time"],
+    ["あたたかい", "あたたかい", "warm"],
+    ["やくそく", "やくそく", "promise / appointment"],
+    ["れんらく", "れんらく", "contact / communication"]
+  ],
+  grammar: {
+    pattern: "〜たら",
+    meaning: "If ~ / When ~",
+    example_jp: "あめがふったら、いえにいます。",
+    example_en: "If it rains, I will stay home."
+  },
+  practice: "Write 5 if-then sentences using たら. Mix verbs (いったら), adjectives (さむかったら), and nouns (やすみだったら).",
+  tip: "たら is formed from the past tense (た-form) + ら. If you know た-form, you already know たら: たべた→たべたら, いった→いったら."
+});
+
+curriculum.push({
+  day: 394,
+  phaseNum: 9,
+  phaseName: "N5 Review",
+  week: Math.floor((394 - 1) / 7) + 1,
+  title: "Bridge to N4: Obligation & Permission (〜なければならない / 〜てもいい)",
+  intro: "Preview two important N4 patterns: expressing must do and may do. These are critical for understanding rules and permissions.",
+  type: "review",
+  chars: [],
+  vocab: [
+    ["しけん", "しけん", "exam"],
+    ["ルール", "ルール", "rule"],
+    ["きょか", "きょか", "permission"],
+    ["ひつよう", "ひつよう", "necessary"],
+    ["じゅんばん", "じゅんばん", "turn / order"]
+  ],
+  grammar: {
+    pattern: "〜なければならない / 〜てもいい",
+    meaning: "Must do ~ / May do ~",
+    example_jp: "しけんのまえにべんきょうしなければなりません。",
+    example_en: "You must study before the exam."
+  },
+  practice: "Write 5 school or work rules using なければならない. Then write 5 permissions using てもいいです. Practice both positive and negative.",
+  tip: "なければならない is long! In casual speech, なきゃ or なくちゃ are common shortcuts: べんきょうしなきゃ (gotta study). But use the full form on the JLPT."
+});
+
+curriculum.push({
+  day: 395,
+  phaseNum: 9,
+  phaseName: "N5 Review",
+  week: Math.floor((395 - 1) / 7) + 1,
+  title: "Bridge to N4: Comprehensive Review & N4 Readiness Check",
+  intro: "Final day of the N5 review phase. Test yourself on everything and assess your readiness for N4-level content.",
+  type: "review",
+  chars: [],
+  vocab: [
+    ["じしん", "じしん", "confidence"],
+    ["もくひょう", "もくひょう", "goal"],
+    ["せいちょう", "せいちょう", "growth"],
+    ["ちから", "ちから", "power / ability"],
+    ["みらい", "みらい", "future"]
+  ],
+  grammar: {
+    pattern: "〜ようにする",
+    meaning: "Try to ~ / make sure to ~",
+    example_jp: "まいにちにほんごをべんきょうするようにします。",
+    example_en: "I will make sure to study Japanese every day."
+  },
+  practice: "Take a self-assessment: write 3 things you are confident about, 3 things that need more work, and your goals for the N4 phase. Write everything in Japanese.",
+  tip: "You have completed the N5 review! From here, N4 introduces more kanji, longer sentences, and nuanced grammar. Trust the foundation you have built and keep going."
+});
+
+
+// ═══════════════════════════════════════════════════════════════════════════
+// PHASE 10: N4 VOCABULARY (Days 396-455)
+// 60 days of N4-level vocabulary organized by topic
+// ═══════════════════════════════════════════════════════════════════════════
+
+curriculum.push({
+  day: 396,
+  phaseNum: 10,
+  phaseName: "N4 Vocabulary",
+  week: Math.floor((396 - 1) / 7) + 1,
+  title: "Happy & Glad — Positive Emotions",
+  intro: "We begin N4 vocabulary with words for positive feelings. Being able to express happiness and joy is essential for natural conversation.",
+  type: "vocab",
+  chars: [],
+  vocab: [
+    ["うれしい", "うれしい", "happy; glad"],
+    ["たのしい", "たのしい", "fun; enjoyable"],
+    ["しあわせ", "しあわせ", "happiness; fortune"],
+    ["よろこぶ", "よろこぶ", "to be delighted; to rejoice"],
+    ["わらう", "わらう", "to laugh; to smile"]
+  ],
+  grammar: { pattern: "〜くて (i-adj joining)", meaning: "Connects two i-adjectives or describes a cause-result feeling", example_jp: "プレゼントをもらって、うれしくてわらいました。", example_en: "I received a present and was so happy that I laughed." },
+  practice: "Describe three things that make you うれしい using full sentences.",
+  tip: "うれしい describes a personal, momentary happiness — often in response to an event. しあわせ is a deeper, lasting state of happiness."
+});
+
+curriculum.push({
+  day: 397,
+  phaseNum: 10,
+  phaseName: "N4 Vocabulary",
+  week: Math.floor((397 - 1) / 7) + 1,
+  title: "Sad & Lonely — Negative Emotions",
+  intro: "Today we learn words for sadness and loneliness. These are common in daily conversation and in JLPT reading passages.",
+  type: "vocab",
+  chars: [],
+  vocab: [
+    ["かなしい", "かなしい", "sad"],
+    ["さびしい", "さびしい", "lonely"],
+    ["なく", "なく", "to cry; to weep"],
+    ["がっかりする", "がっかりする", "to be disappointed"],
+    ["くやしい", "くやしい", "frustrating; regrettable"]
+  ],
+  grammar: { pattern: "〜て、〜 (cause and emotion)", meaning: "Using the te-form to show cause followed by an emotional response", example_jp: "ともだちがひっこして、さびしいです。", example_en: "My friend moved away, so I'm lonely." },
+  practice: "Write sentences describing situations that make you かなしい or さびしい.",
+  tip: "さびしい can also be spelled さみしい — both are correct and commonly used."
+});
+
+curriculum.push({
+  day: 398,
+  phaseNum: 10,
+  phaseName: "N4 Vocabulary",
+  week: Math.floor((398 - 1) / 7) + 1,
+  title: "Fear & Surprise — Strong Reactions",
+  intro: "Learn vocabulary for fear and surprise. These words appear frequently in stories and everyday anecdotes.",
+  type: "vocab",
+  chars: [],
+  vocab: [
+    ["こわい", "こわい", "scary; frightening"],
+    ["びっくりする", "びっくりする", "to be surprised"],
+    ["おどろく", "おどろく", "to be astonished"],
+    ["しんぱいする", "しんぱいする", "to worry"],
+    ["こまる", "こまる", "to be troubled; to be in difficulty"]
+  ],
+  grammar: { pattern: "〜たら (conditional past)", meaning: "When/if something happened, then a reaction followed", example_jp: "おおきいおとがしたら、びっくりしました。", example_en: "When there was a loud sound, I was surprised." },
+  practice: "Describe a time you were びっくりした or こわかった using 〜たら.",
+  tip: "こわい is an i-adjective describing the feeling of being scared. The thing itself is not こわい — you are."
+});
+
+curriculum.push({
+  day: 399,
+  phaseNum: 10,
+  phaseName: "N4 Vocabulary",
+  week: Math.floor((399 - 1) / 7) + 1,
+  title: "Embarrassment & Shyness",
+  intro: "Today covers feelings of embarrassment and shyness — emotions that come up often in Japanese culture and conversation.",
+  type: "vocab",
+  chars: [],
+  vocab: [
+    ["はずかしい", "はずかしい", "embarrassing; shy"],
+    ["てれる", "てれる", "to feel bashful; to be shy"],
+    ["きんちょうする", "きんちょうする", "to be nervous; to feel tense"],
+    ["どきどきする", "どきどきする", "to have one's heart pound"],
+    ["あせる", "あせる", "to be flustered; to rush"]
+  ],
+  grammar: { pattern: "〜とき (when)", meaning: "Describes the time or situation when something happens", example_jp: "スピーチのとき、きんちょうします。", example_en: "When giving a speech, I get nervous." },
+  practice: "List three situations where you feel きんちょう or はずかしい using 〜とき.",
+  tip: "どきどき is an onomatopoeia — Japanese has many such words to express physical sensations and emotions."
+});
+
+curriculum.push({
+  day: 400,
+  phaseNum: 10,
+  phaseName: "N4 Vocabulary",
+  week: Math.floor((400 - 1) / 7) + 1,
+  title: "Anger & Annoyance",
+  intro: "We round out the emotions topic with words for anger and irritation. Understanding these is key for reading comprehension.",
+  type: "vocab",
+  chars: [],
+  vocab: [
+    ["おこる", "おこる", "to get angry"],
+    ["いらいらする", "いらいらする", "to be irritated"],
+    ["むかつく", "むかつく", "to feel annoyed; to be disgusted"],
+    ["うるさい", "うるさい", "noisy; annoying"],
+    ["がまんする", "がまんする", "to endure; to be patient"]
+  ],
+  grammar: { pattern: "〜ないで (without doing)", meaning: "Expresses doing something without performing another action", example_jp: "おこらないで、がまんしました。", example_en: "Without getting angry, I endured it." },
+  practice: "Write about a situation where you had to がまんする using 〜ないで.",
+  tip: "がまんする is a valued trait in Japanese culture — the ability to endure difficulty without complaint."
+});
+
+curriculum.push({
+  day: 401,
+  phaseNum: 10,
+  phaseName: "N4 Vocabulary",
+  week: Math.floor((401 - 1) / 7) + 1,
+  title: "Feelings Review — Mixed Emotions",
+  intro: "Today we review emotions and learn words for complex or mixed feelings. These nuanced words are common at N4 level.",
+  type: "vocab",
+  chars: [],
+  vocab: [
+    ["あんしんする", "あんしんする", "to feel relieved"],
+    ["なつかしい", "なつかしい", "nostalgic; dear"],
+    ["くやむ", "くやむ", "to regret"],
+    ["あきらめる", "あきらめる", "to give up"],
+    ["なれる", "なれる", "to get used to"]
+  ],
+  grammar: { pattern: "〜ようになる (come to ~)", meaning: "Expresses a change in state or ability over time", example_jp: "にほんのせいかつになれるようになりました。", example_en: "I came to get used to life in Japan." },
+  practice: "Describe something なつかしい from your past and something you あきらめた.",
+  tip: "なつかしい has no direct English equivalent — it's the bittersweet fondness for a past experience."
+});
+
+curriculum.push({
+  day: 402,
+  phaseNum: 10,
+  phaseName: "N4 Vocabulary",
+  week: Math.floor((402 - 1) / 7) + 1,
+  title: "Body Parts — Head to Chest",
+  intro: "We now move into health vocabulary, starting with body parts. Knowing these is essential for describing symptoms at a doctor's office.",
+  type: "vocab",
+  chars: [],
+  vocab: [
+    ["あたま", "あたま", "head"],
+    ["かお", "かお", "face"],
+    ["のど", "のど", "throat"],
+    ["むね", "むね", "chest; breast"],
+    ["おなか", "おなか", "stomach; belly"]
+  ],
+  grammar: { pattern: "〜が いたい (~ hurts)", meaning: "Body part + が + いたい expresses pain in that area", example_jp: "のどがいたいです。", example_en: "My throat hurts." },
+  practice: "Practice saying which body parts hurt using 〜がいたい for each word.",
+  tip: "In Japanese, you say 'throat が hurts' rather than 'my throat hurts' — the body part is the subject."
+});
+
+curriculum.push({
+  day: 403,
+  phaseNum: 10,
+  phaseName: "N4 Vocabulary",
+  week: Math.floor((403 - 1) / 7) + 1,
+  title: "Body Parts — Arms to Feet",
+  intro: "Continuing body vocabulary with limbs and extremities. These words frequently appear in health-related JLPT passages.",
+  type: "vocab",
+  chars: [],
+  vocab: [
+    ["うで", "うで", "arm"],
+    ["ゆび", "ゆび", "finger; toe"],
+    ["せなか", "せなか", "back (of body)"],
+    ["こし", "こし", "lower back; waist; hip"],
+    ["ひざ", "ひざ", "knee"]
+  ],
+  grammar: { pattern: "〜を + movement verb", meaning: "Body part を verb describes moving or using that body part", example_jp: "うでをのばしてください。", example_en: "Please stretch your arms." },
+  practice: "Give instructions using body part words and movement verbs like まげる (bend) and のばす (stretch).",
+  tip: "ゆび covers both fingers and toes. For specificity, use てのゆび (fingers) or あしのゆび (toes)."
+});
+
+curriculum.push({
+  day: 404,
+  phaseNum: 10,
+  phaseName: "N4 Vocabulary",
+  week: Math.floor((404 - 1) / 7) + 1,
+  title: "Common Symptoms & Illness",
+  intro: "Learn to describe common illnesses and symptoms. This vocabulary is vital for visiting a clinic or pharmacy in Japan.",
+  type: "vocab",
+  chars: [],
+  vocab: [
+    ["ねつ", "ねつ", "fever"],
+    ["せき", "せき", "cough"],
+    ["かぜ", "かぜ", "cold (illness)"],
+    ["インフルエンザ", "インフルエンザ", "influenza"],
+    ["はきけ", "はきけ", "nausea"]
+  ],
+  grammar: { pattern: "〜がある / 〜がでる (symptoms)", meaning: "Describes having or showing symptoms", example_jp: "ねつがあって、せきもでます。", example_en: "I have a fever and a cough as well." },
+  practice: "Describe being sick using multiple symptoms connected with 〜て.",
+  tip: "かぜ (cold) and かぜ (wind) are written the same in hiragana but are different words — context makes the meaning clear."
+});
+
+curriculum.push({
+  day: 405,
+  phaseNum: 10,
+  phaseName: "N4 Vocabulary",
+  week: Math.floor((405 - 1) / 7) + 1,
+  title: "Medicine & Treatment",
+  intro: "Today covers medicine and medical treatment words. These are practical for daily life in Japan.",
+  type: "vocab",
+  chars: [],
+  vocab: [
+    ["くすり", "くすり", "medicine"],
+    ["ちゅうしゃ", "ちゅうしゃ", "injection; shot"],
+    ["てあて", "てあて", "medical treatment; care"],
+    ["ばんそうこう", "ばんそうこう", "adhesive bandage"],
+    ["たいおんけい", "たいおんけい", "thermometer"]
+  ],
+  grammar: { pattern: "〜を のむ / つける / する", meaning: "Different verbs pair with different medical items", example_jp: "くすりをのんで、はやくねてください。", example_en: "Please take medicine and go to bed early." },
+  practice: "Create sentences for each medical item using the appropriate verb (のむ、つける、する).",
+  tip: "In Japanese you 'drink' (のむ) medicine, even pills and tablets — not 'eat' or 'take.'"
+});
+
+curriculum.push({
+  day: 406,
+  phaseNum: 10,
+  phaseName: "N4 Vocabulary",
+  week: Math.floor((406 - 1) / 7) + 1,
+  title: "At the Hospital",
+  intro: "Learn vocabulary for visiting a hospital or clinic. These words will help you navigate healthcare in Japan.",
+  type: "vocab",
+  chars: [],
+  vocab: [
+    ["びょういん", "びょういん", "hospital"],
+    ["いしゃ", "いしゃ", "doctor"],
+    ["かんごし", "かんごし", "nurse"],
+    ["しんさつ", "しんさつ", "medical examination"],
+    ["にゅういん", "にゅういん", "hospitalization"]
+  ],
+  grammar: { pattern: "〜なければならない (must)", meaning: "Expresses obligation or necessity", example_jp: "びょういんにいかなければなりません。", example_en: "I must go to the hospital." },
+  practice: "Describe health situations where you なければならない do something.",
+  tip: "びょういん is a hospital. For a smaller clinic, use いいん or クリニック."
+});
+
+curriculum.push({
+  day: 407,
+  phaseNum: 10,
+  phaseName: "N4 Vocabulary",
+  week: Math.floor((407 - 1) / 7) + 1,
+  title: "Injuries & Recovery",
+  intro: "Complete the health topic with words about injuries and getting better. These are important for describing past events.",
+  type: "vocab",
+  chars: [],
+  vocab: [
+    ["けが", "けが", "injury"],
+    ["きず", "きず", "wound; cut"],
+    ["おれる", "おれる", "to break (bone); to snap"],
+    ["なおる", "なおる", "to heal; to be cured"],
+    ["たいいんする", "たいいんする", "to leave hospital; to be discharged"]
+  ],
+  grammar: { pattern: "〜てしまう (unfortunate completion)", meaning: "Expresses that something regrettable has happened", example_jp: "あしのほねがおれてしまいました。", example_en: "I ended up breaking the bone in my leg." },
+  practice: "Describe injuries and recovery using 〜てしまう and 〜なおる.",
+  tip: "〜てしまう often expresses regret or that something unfortunate happened. In casual speech it contracts to 〜ちゃう."
+});
+
+curriculum.push({
+  day: 408,
+  phaseNum: 10,
+  phaseName: "N4 Vocabulary",
+  week: Math.floor((408 - 1) / 7) + 1,
+  title: "Weather Basics",
+  intro: "We begin the weather and nature topic. Weather is one of the most common small-talk subjects in Japanese.",
+  type: "vocab",
+  chars: [],
+  vocab: [
+    ["てんき", "てんき", "weather"],
+    ["はれ", "はれ", "clear weather; sunny"],
+    ["くもり", "くもり", "cloudy"],
+    ["あめ", "あめ", "rain"],
+    ["ゆき", "ゆき", "snow"]
+  ],
+  grammar: { pattern: "〜でしょう (probability)", meaning: "Expresses likelihood or prediction, common in weather forecasts", example_jp: "あしたはくもりでしょう。", example_en: "It will probably be cloudy tomorrow." },
+  practice: "Give a five-day weather forecast using でしょう with each weather word.",
+  tip: "Weather forecasts in Japanese use でしょう extensively — listen to Japanese news for natural practice."
+});
+
+curriculum.push({
+  day: 409,
+  phaseNum: 10,
+  phaseName: "N4 Vocabulary",
+  week: Math.floor((409 - 1) / 7) + 1,
+  title: "Wind, Storms & Temperature",
+  intro: "Expand your weather vocabulary with words for wind, storms, and temperature. These appear in daily news and conversation.",
+  type: "vocab",
+  chars: [],
+  vocab: [
+    ["かぜ", "かぜ", "wind"],
+    ["たいふう", "たいふう", "typhoon"],
+    ["かみなり", "かみなり", "thunder; lightning"],
+    ["きおん", "きおん", "temperature (air)"],
+    ["しつど", "しつど", "humidity"]
+  ],
+  grammar: { pattern: "〜そうだ (looks like / hearsay)", meaning: "Attached to stems to express appearance or reported information", example_jp: "たいふうがくるそうです。", example_en: "I heard that a typhoon is coming." },
+  practice: "Report weather information using 〜そうだ in both appearance and hearsay meanings.",
+  tip: "〜そうだ has two meanings: attached to a verb/adj stem it means 'looks like'; after a plain form it means 'I heard that.'"
+});
+
+curriculum.push({
+  day: 410,
+  phaseNum: 10,
+  phaseName: "N4 Vocabulary",
+  week: Math.floor((410 - 1) / 7) + 1,
+  title: "Seasons & Climate",
+  intro: "Learn vocabulary for seasons and climate descriptions. Japan's four distinct seasons are a beloved cultural topic.",
+  type: "vocab",
+  chars: [],
+  vocab: [
+    ["きせつ", "きせつ", "season"],
+    ["つゆ", "つゆ", "rainy season"],
+    ["むしあつい", "むしあつい", "hot and humid"],
+    ["すずしい", "すずしい", "cool; refreshing"],
+    ["あたたかい", "あたたかい", "warm"]
+  ],
+  grammar: { pattern: "〜くなる / 〜になる (become)", meaning: "Describes a change in state — adjective/noun + なる", example_jp: "あきになると、すずしくなります。", example_en: "When autumn comes, it becomes cool." },
+  practice: "Describe how the weather changes across the four seasons using 〜くなる and 〜になる.",
+  tip: "つゆ (rainy season) typically runs from June to mid-July. It's written 梅雨 in kanji — literally 'plum rain.'"
+});
+
+curriculum.push({
+  day: 411,
+  phaseNum: 10,
+  phaseName: "N4 Vocabulary",
+  week: Math.floor((411 - 1) / 7) + 1,
+  title: "Nature & Landscape",
+  intro: "Today covers natural features and landscape vocabulary. These words are useful for travel and describing scenery.",
+  type: "vocab",
+  chars: [],
+  vocab: [
+    ["しぜん", "しぜん", "nature"],
+    ["もり", "もり", "forest"],
+    ["みずうみ", "みずうみ", "lake"],
+    ["しま", "しま", "island"],
+    ["さばく", "さばく", "desert"]
+  ],
+  grammar: { pattern: "〜たことがある (have experienced)", meaning: "Expresses past experience", example_jp: "きれいなみずうみをみたことがあります。", example_en: "I have seen a beautiful lake." },
+  practice: "Describe nature experiences you have or haven't had using 〜たことがある.",
+  tip: "しぜん can be both a noun ('nature') and a na-adjective ('natural'): しぜんなかんきょう means 'natural environment.'"
+});
+
+curriculum.push({
+  day: 412,
+  phaseNum: 10,
+  phaseName: "N4 Vocabulary",
+  week: Math.floor((412 - 1) / 7) + 1,
+  title: "Natural Disasters",
+  intro: "Learn vocabulary for natural disasters. Japan experiences earthquakes and typhoons regularly, so this is practical knowledge.",
+  type: "vocab",
+  chars: [],
+  vocab: [
+    ["じしん", "じしん", "earthquake"],
+    ["つなみ", "つなみ", "tsunami"],
+    ["こうずい", "こうずい", "flood"],
+    ["ひなんする", "ひなんする", "to evacuate"],
+    ["ひがい", "ひがい", "damage; harm"]
+  ],
+  grammar: { pattern: "〜たら、〜てください (if ~, please do)", meaning: "Conditional instructions for what to do in a situation", example_jp: "じしんがきたら、つくえのしたにひなんしてください。", example_en: "If an earthquake comes, please take shelter under a desk." },
+  practice: "Write safety instructions for different disasters using 〜たら〜てください.",
+  tip: "つなみ is one of many Japanese words that have been adopted into English, along with たいふう (typhoon)."
+});
+
+curriculum.push({
+  day: 413,
+  phaseNum: 10,
+  phaseName: "N4 Vocabulary",
+  week: Math.floor((413 - 1) / 7) + 1,
+  title: "Environment & Ecology",
+  intro: "Complete the nature topic with environment and ecology words. Environmental topics appear in N4 reading passages.",
+  type: "vocab",
+  chars: [],
+  vocab: [
+    ["かんきょう", "かんきょう", "environment"],
+    ["くうき", "くうき", "air"],
+    ["よごれる", "よごれる", "to become dirty; to be polluted"],
+    ["リサイクル", "リサイクル", "recycling"],
+    ["エネルギー", "エネルギー", "energy"]
+  ],
+  grammar: { pattern: "〜ために (in order to / because of)", meaning: "Expresses purpose or cause", example_jp: "かんきょうのために、リサイクルをしましょう。", example_en: "Let's recycle for the sake of the environment." },
+  practice: "Suggest environmental actions using 〜ために and 〜ましょう.",
+  tip: "Japanese cities have detailed garbage separation rules. Learning リサイクル vocabulary is practical for daily life."
+});
+
+curriculum.push({
+  day: 414,
+  phaseNum: 10,
+  phaseName: "N4 Vocabulary",
+  week: Math.floor((414 - 1) / 7) + 1,
+  title: "Prices & Payment",
+  intro: "We begin the shopping topic with prices and payment. These words are essential for everyday transactions in Japan.",
+  type: "vocab",
+  chars: [],
+  vocab: [
+    ["ねだん", "ねだん", "price"],
+    ["おつり", "おつり", "change (money returned)"],
+    ["ぜいきん", "ぜいきん", "tax"],
+    ["げんきん", "げんきん", "cash"],
+    ["レジ", "レジ", "cash register"]
+  ],
+  grammar: { pattern: "〜はいくらですか (how much is ~?)", meaning: "Asking the price of something", example_jp: "ぜいきんをいれたねだんはいくらですか。", example_en: "How much is the price including tax?" },
+  practice: "Practice asking prices and confirming totals at a register.",
+  tip: "Japan's consumption tax (しょうひぜい) is added to prices. Some stores show tax-included (ぜいこみ) prices."
+});
+
+curriculum.push({
+  day: 415,
+  phaseNum: 10,
+  phaseName: "N4 Vocabulary",
+  week: Math.floor((415 - 1) / 7) + 1,
+  title: "Discounts & Deals",
+  intro: "Learn shopping vocabulary for discounts and sales. Japan has seasonal sales and bargain culture worth knowing.",
+  type: "vocab",
+  chars: [],
+  vocab: [
+    ["わりびき", "わりびき", "discount"],
+    ["セール", "セール", "sale"],
+    ["はんがく", "はんがく", "half price"],
+    ["むりょう", "むりょう", "free of charge"],
+    ["おとく", "おとく", "bargain; good deal"]
+  ],
+  grammar: { pattern: "〜のほうが〜 (comparison)", meaning: "Compares two items, stating which is more of a quality", example_jp: "セールのほうがおとくです。", example_en: "The sale is a better deal." },
+  practice: "Compare prices and deals at different stores using 〜のほうが.",
+  tip: "わりびき uses the counter わり (10%). にわりびき means 20% off; さんわりびき means 30% off."
+});
+
+curriculum.push({
+  day: 416,
+  phaseNum: 10,
+  phaseName: "N4 Vocabulary",
+  week: Math.floor((416 - 1) / 7) + 1,
+  title: "Store Types & Shopping Locations",
+  intro: "Today covers different types of stores and shopping locations. Knowing these helps you navigate any Japanese town.",
+  type: "vocab",
+  chars: [],
+  vocab: [
+    ["デパート", "デパート", "department store"],
+    ["スーパー", "スーパー", "supermarket"],
+    ["やおや", "やおや", "greengrocer; vegetable shop"],
+    ["にくや", "にくや", "butcher shop"],
+    ["ドラッグストア", "ドラッグストア", "drugstore"]
+  ],
+  grammar: { pattern: "〜で かう (buy at ~)", meaning: "Uses で to mark the location where an action takes place", example_jp: "やさいはスーパーでかいます。", example_en: "I buy vegetables at the supermarket." },
+  practice: "Describe where you buy different items using store vocabulary and で.",
+  tip: "Traditional shops use 〜や (屋): にくや, さかなや, はなや. This suffix means 'shop specializing in.'"
+});
+
+curriculum.push({
+  day: 417,
+  phaseNum: 10,
+  phaseName: "N4 Vocabulary",
+  week: Math.floor((417 - 1) / 7) + 1,
+  title: "Receipts & Transactions",
+  intro: "Learn transaction-related vocabulary used at checkout. These words are helpful when shopping or filing expenses.",
+  type: "vocab",
+  chars: [],
+  vocab: [
+    ["レシート", "レシート", "receipt"],
+    ["りょうしゅうしょ", "りょうしゅうしょ", "formal receipt"],
+    ["しはらう", "しはらう", "to pay"],
+    ["クレジットカード", "クレジットカード", "credit card"],
+    ["でんしマネー", "でんしマネー", "electronic money"]
+  ],
+  grammar: { pattern: "〜でもいいですか (is it okay to ~?)", meaning: "Asking for permission politely", example_jp: "クレジットカードでしはらってもいいですか。", example_en: "Is it okay to pay by credit card?" },
+  practice: "Practice asking about payment methods using 〜でもいいですか.",
+  tip: "りょうしゅうしょ is a formal receipt for business expenses. A regular レシート is for personal use."
+});
+
+curriculum.push({
+  day: 418,
+  phaseNum: 10,
+  phaseName: "N4 Vocabulary",
+  week: Math.floor((418 - 1) / 7) + 1,
+  title: "Product Descriptions",
+  intro: "Learn words to describe products — size, quality, and condition. These are common in shopping and online reviews.",
+  type: "vocab",
+  chars: [],
+  vocab: [
+    ["サイズ", "サイズ", "size"],
+    ["しなもの", "しなもの", "goods; products"],
+    ["ひんしつ", "ひんしつ", "quality"],
+    ["しんぴん", "しんぴん", "brand new item"],
+    ["ちゅうこ", "ちゅうこ", "secondhand; used"]
+  ],
+  grammar: { pattern: "〜すぎる (too much)", meaning: "Attached to adjective/verb stems to mean 'excessively'", example_jp: "このサイズはおおきすぎます。", example_en: "This size is too big." },
+  practice: "Describe problems with products using 〜すぎる (too big, too expensive, too old).",
+  tip: "ちゅうこ items are popular in Japan. Stores like BookOff and Hard Off specialize in quality secondhand goods."
+});
+
+curriculum.push({
+  day: 419,
+  phaseNum: 10,
+  phaseName: "N4 Vocabulary",
+  week: Math.floor((419 - 1) / 7) + 1,
+  title: "Returns & Customer Service",
+  intro: "Complete the shopping topic with customer service vocabulary. Knowing how to handle returns and complaints is practical.",
+  type: "vocab",
+  chars: [],
+  vocab: [
+    ["こうかんする", "こうかんする", "to exchange"],
+    ["へんぴんする", "へんぴんする", "to return (goods)"],
+    ["こしょう", "こしょう", "breakdown; malfunction"],
+    ["クレーム", "クレーム", "complaint"],
+    ["たいおうする", "たいおうする", "to handle; to deal with"]
+  ],
+  grammar: { pattern: "〜てほしい (want someone to do)", meaning: "Expresses what you want another person to do", example_jp: "こしょうしたので、こうかんしてほしいです。", example_en: "It broke, so I want you to exchange it." },
+  practice: "Role-play returning items and making requests using 〜てほしい.",
+  tip: "クレーム in Japanese means 'complaint' — different from the English 'claim.' A false friend to watch out for."
+});
+
+curriculum.push({
+  day: 420,
+  phaseNum: 10,
+  phaseName: "N4 Vocabulary",
+  week: Math.floor((420 - 1) / 7) + 1,
+  title: "Airports & Air Travel",
+  intro: "We begin the travel and transport topic at the airport. These words are essential for international travel through Japan.",
+  type: "vocab",
+  chars: [],
+  vocab: [
+    ["くうこう", "くうこう", "airport"],
+    ["ひこうき", "ひこうき", "airplane"],
+    ["パスポート", "パスポート", "passport"],
+    ["にもつ", "にもつ", "luggage; baggage"],
+    ["しゅっぱつする", "しゅっぱつする", "to depart"]
+  ],
+  grammar: { pattern: "〜までに (by the time)", meaning: "Expresses a deadline — something must be done before a certain time", example_jp: "しゅっぱつまでに、にもつをじゅんびしてください。", example_en: "Please prepare your luggage by departure time." },
+  practice: "Create travel preparation checklists using 〜までに.",
+  tip: "くうこう and ひこうき both contain こう — they share the kanji 空 (sky) and 港/機 respectively."
+});
+
+curriculum.push({
+  day: 421,
+  phaseNum: 10,
+  phaseName: "N4 Vocabulary",
+  week: Math.floor((421 - 1) / 7) + 1,
+  title: "Trains & Stations",
+  intro: "Japan's train system is world-famous. Today's vocabulary covers the essentials for navigating trains and stations.",
+  type: "vocab",
+  chars: [],
+  vocab: [
+    ["えき", "えき", "station"],
+    ["きっぷ", "きっぷ", "ticket"],
+    ["のりかえ", "のりかえ", "transfer (trains)"],
+    ["かいさつ", "かいさつ", "ticket gate"],
+    ["ホーム", "ホーム", "platform"]
+  ],
+  grammar: { pattern: "〜で のりかえる (transfer at ~)", meaning: "Describes where to change trains", example_jp: "とうきょうえきでのりかえてください。", example_en: "Please transfer at Tokyo Station." },
+  practice: "Give train directions with transfers using station names and 〜で のりかえる.",
+  tip: "ホーム comes from 'platform' — an abbreviated English loanword. Japanese often shortens borrowed words."
+});
+
+curriculum.push({
+  day: 422,
+  phaseNum: 10,
+  phaseName: "N4 Vocabulary",
+  week: Math.floor((422 - 1) / 7) + 1,
+  title: "Buses & Taxis",
+  intro: "Learn vocabulary for bus and taxi travel. These are important alternatives to trains, especially in rural areas.",
+  type: "vocab",
+  chars: [],
+  vocab: [
+    ["バスてい", "バスてい", "bus stop"],
+    ["うんてんしゅ", "うんてんしゅ", "driver"],
+    ["タクシーのりば", "タクシーのりば", "taxi stand"],
+    ["りょうきん", "りょうきん", "fare; fee"],
+    ["おりる", "おりる", "to get off (a vehicle)"]
+  ],
+  grammar: { pattern: "〜かた (way of doing ~)", meaning: "Attached to verb stems to mean 'how to do ~'", example_jp: "バスののりかたをおしえてください。", example_en: "Please tell me how to ride the bus." },
+  practice: "Ask how to do travel-related actions using 〜かた: のりかた, つかいかた, いきかた.",
+  tip: "On Japanese buses, you usually board from the back and exit from the front, paying when you get off."
+});
+
+curriculum.push({
+  day: 423,
+  phaseNum: 10,
+  phaseName: "N4 Vocabulary",
+  week: Math.floor((423 - 1) / 7) + 1,
+  title: "Accommodation",
+  intro: "Learn vocabulary for hotels and lodging. These words are useful for booking and checking in to accommodation.",
+  type: "vocab",
+  chars: [],
+  vocab: [
+    ["ホテル", "ホテル", "hotel"],
+    ["りょかん", "りょかん", "Japanese-style inn"],
+    ["よやくする", "よやくする", "to make a reservation"],
+    ["チェックイン", "チェックイン", "check-in"],
+    ["へや", "へや", "room"]
+  ],
+  grammar: { pattern: "〜たいのですが (I'd like to ~, but...)", meaning: "Politely expresses a request or desire with softening", example_jp: "よやくしたいのですが、へやはありますか。", example_en: "I'd like to make a reservation — do you have a room?" },
+  practice: "Practice hotel conversations: booking, checking in, and making requests.",
+  tip: "〜のですが ends softly, implying 'if possible.' It's much more polite than a direct 〜たいです."
+});
+
+curriculum.push({
+  day: 424,
+  phaseNum: 10,
+  phaseName: "N4 Vocabulary",
+  week: Math.floor((424 - 1) / 7) + 1,
+  title: "Directions & Navigation",
+  intro: "Today covers asking for and giving directions. Being able to navigate is one of the most practical travel skills.",
+  type: "vocab",
+  chars: [],
+  vocab: [
+    ["こうさてん", "こうさてん", "intersection; crossroads"],
+    ["しんごう", "しんごう", "traffic light"],
+    ["まがる", "まがる", "to turn"],
+    ["まっすぐ", "まっすぐ", "straight ahead"],
+    ["ちかく", "ちかく", "nearby; vicinity"]
+  ],
+  grammar: { pattern: "〜を まがる / 〜を わたる", meaning: "Using を with direction verbs for the path or thing crossed/turned at", example_jp: "しんごうをまがって、まっすぐいってください。", example_en: "Turn at the traffic light and go straight." },
+  practice: "Give directions to nearby landmarks using intersection and direction vocabulary.",
+  tip: "みぎにまがる means 'turn right' and ひだりにまがる means 'turn left.' The direction takes the に particle."
+});
+
+curriculum.push({
+  day: 425,
+  phaseNum: 10,
+  phaseName: "N4 Vocabulary",
+  week: Math.floor((425 - 1) / 7) + 1,
+  title: "Sightseeing & Tourism",
+  intro: "Complete the travel topic with tourism vocabulary. These words help you talk about sightseeing plans and experiences.",
+  type: "vocab",
+  chars: [],
+  vocab: [
+    ["かんこう", "かんこう", "sightseeing; tourism"],
+    ["おみやげ", "おみやげ", "souvenir"],
+    ["ガイド", "ガイド", "guide"],
+    ["けしき", "けしき", "scenery; view"],
+    ["しゃしんをとる", "しゃしんをとる", "to take a photo"]
+  ],
+  grammar: { pattern: "〜つもりだ (intend to)", meaning: "Expresses a plan or intention", example_jp: "あしたかんこうするつもりです。", example_en: "I intend to go sightseeing tomorrow." },
+  practice: "Describe your travel plans using 〜つもりだ for each activity.",
+  tip: "おみやげ culture is important in Japan — you're expected to bring back souvenirs for coworkers and friends after trips."
+});
+
+curriculum.push({
+  day: 426,
+  phaseNum: 10,
+  phaseName: "N4 Vocabulary",
+  week: Math.floor((426 - 1) / 7) + 1,
+  title: "Tests & Exams",
+  intro: "We begin the school and education topic with exam vocabulary. As a JLPT student yourself, these words are doubly useful!",
+  type: "vocab",
+  chars: [],
+  vocab: [
+    ["しけん", "しけん", "exam; test"],
+    ["もんだい", "もんだい", "question; problem"],
+    ["こたえ", "こたえ", "answer"],
+    ["ごうかくする", "ごうかくする", "to pass (an exam)"],
+    ["ふごうかく", "ふごうかく", "failure (exam); not passing"]
+  ],
+  grammar: { pattern: "〜ように (so that ~)", meaning: "Expresses a goal or desired outcome to work toward", example_jp: "しけんにごうかくするように、まいにちべんきょうします。", example_en: "I study every day so that I pass the exam." },
+  practice: "Write goals for your studies using 〜ように with exam vocabulary.",
+  tip: "ごうかく means 'pass' and ふごうかく means 'fail.' The prefix ふ〜 (不) negates words, similar to 'un-' in English."
+});
+
+curriculum.push({
+  day: 427,
+  phaseNum: 10,
+  phaseName: "N4 Vocabulary",
+  week: Math.floor((427 - 1) / 7) + 1,
+  title: "Grades & Academic Performance",
+  intro: "Today covers grades and academic results. These words frequently appear in school-life reading passages on the JLPT.",
+  type: "vocab",
+  chars: [],
+  vocab: [
+    ["せいせき", "せいせき", "grades; academic results"],
+    ["てんすう", "てんすう", "score; marks"],
+    ["レポート", "レポート", "report; paper"],
+    ["はっぴょうする", "はっぴょうする", "to present; to announce"],
+    ["けんきゅう", "けんきゅう", "research"]
+  ],
+  grammar: { pattern: "〜のに (despite; although)", meaning: "Expresses contrast — the result is unexpected given the condition", example_jp: "たくさんべんきょうしたのに、せいせきがわるかったです。", example_en: "Despite studying a lot, my grades were bad." },
+  practice: "Express disappointments and surprises about school using 〜のに.",
+  tip: "〜のに always carries a sense of frustration or surprise. Don't confuse it with 〜ために (purpose)."
+});
+
+curriculum.push({
+  day: 428,
+  phaseNum: 10,
+  phaseName: "N4 Vocabulary",
+  week: Math.floor((428 - 1) / 7) + 1,
+  title: "School Events & Milestones",
+  intro: "Learn vocabulary for major school events. Japanese school life has many distinctive events and ceremonies.",
+  type: "vocab",
+  chars: [],
+  vocab: [
+    ["にゅうがく", "にゅうがく", "enrollment; entering school"],
+    ["そつぎょう", "そつぎょう", "graduation"],
+    ["しぎょうしき", "しぎょうしき", "opening ceremony"],
+    ["ぶんかさい", "ぶんかさい", "school cultural festival"],
+    ["うんどうかい", "うんどうかい", "sports day; athletic meet"]
+  ],
+  grammar: { pattern: "〜たばかり (just did ~)", meaning: "Expresses that an action was just completed recently", example_jp: "そつぎょうしたばかりです。", example_en: "I just graduated." },
+  practice: "Talk about recent school events using 〜たばかり.",
+  tip: "Japanese schools start in April, not September. そつぎょうしき (graduation) is usually in March."
+});
+
+curriculum.push({
+  day: 429,
+  phaseNum: 10,
+  phaseName: "N4 Vocabulary",
+  week: Math.floor((429 - 1) / 7) + 1,
+  title: "Subjects & Study",
+  intro: "Today covers school subjects and study methods. These words are useful for discussing education and learning preferences.",
+  type: "vocab",
+  chars: [],
+  vocab: [
+    ["かもく", "かもく", "school subject"],
+    ["すうがく", "すうがく", "mathematics"],
+    ["かがく", "かがく", "science"],
+    ["れきし", "れきし", "history"],
+    ["ふくしゅうする", "ふくしゅうする", "to review (lessons)"]
+  ],
+  grammar: { pattern: "〜のなかで いちばん (most ~ among)", meaning: "Superlative comparison within a group", example_jp: "かもくのなかで、れきしがいちばんすきです。", example_en: "Among school subjects, I like history the most." },
+  practice: "Rank your favorite subjects using 〜のなかで いちばん.",
+  tip: "ふくしゅう (review) pairs with よしゅう (preview/preparation). Both are essential Japanese study habits."
+});
+
+curriculum.push({
+  day: 430,
+  phaseNum: 10,
+  phaseName: "N4 Vocabulary",
+  week: Math.floor((430 - 1) / 7) + 1,
+  title: "Classmates & Teachers",
+  intro: "Learn vocabulary for people in the school environment. Relationship words are important for understanding social contexts.",
+  type: "vocab",
+  chars: [],
+  vocab: [
+    ["せんぱい", "せんぱい", "senior (at school/work)"],
+    ["こうはい", "こうはい", "junior (at school/work)"],
+    ["クラスメート", "クラスメート", "classmate"],
+    ["きょうじゅ", "きょうじゅ", "professor"],
+    ["そうだんする", "そうだんする", "to consult; to discuss"]
+  ],
+  grammar: { pattern: "〜てもらう (receive the favor of ~)", meaning: "Expresses receiving a beneficial action from someone", example_jp: "せんぱいにそうだんしてもらいました。", example_en: "I had my senior advise me." },
+  practice: "Describe helpful actions from classmates and teachers using 〜てもらう.",
+  tip: "The せんぱい・こうはい relationship is central to Japanese social hierarchy in schools and workplaces."
+});
+
+curriculum.push({
+  day: 431,
+  phaseNum: 10,
+  phaseName: "N4 Vocabulary",
+  week: Math.floor((431 - 1) / 7) + 1,
+  title: "School Supplies & Facilities",
+  intro: "Complete the education topic with school supplies and facility words. These are useful everyday items you encounter in learning settings.",
+  type: "vocab",
+  chars: [],
+  vocab: [
+    ["きょうしつ", "きょうしつ", "classroom"],
+    ["としょかん", "としょかん", "library"],
+    ["たいいくかん", "たいいくかん", "gymnasium"],
+    ["じしょ", "じしょ", "dictionary"],
+    ["ノート", "ノート", "notebook"]
+  ],
+  grammar: { pattern: "〜てある (state resulting from action)", meaning: "Describes a state that exists because someone did something intentionally", example_jp: "きょうしつにじしょがおいてあります。", example_en: "A dictionary has been placed in the classroom." },
+  practice: "Describe what has been prepared or set up in a classroom using 〜てある.",
+  tip: "〜てある focuses on the resulting state of a deliberate action. Compare: まどがあいている (is open) vs まどがあけてある (has been opened by someone)."
+});
+
+curriculum.push({
+  day: 432,
+  phaseNum: 10,
+  phaseName: "N4 Vocabulary",
+  week: Math.floor((432 - 1) / 7) + 1,
+  title: "Jobs & Occupations",
+  intro: "We begin the work and business topic with job titles. These are among the most practical N4 vocabulary words.",
+  type: "vocab",
+  chars: [],
+  vocab: [
+    ["かいしゃいん", "かいしゃいん", "company employee"],
+    ["こうむいん", "こうむいん", "civil servant"],
+    ["てんいん", "てんいん", "shop clerk"],
+    ["エンジニア", "エンジニア", "engineer"],
+    ["けいえいしゃ", "けいえいしゃ", "business owner; manager"]
+  ],
+  grammar: { pattern: "〜として (as ~; in the role of ~)", meaning: "Describes someone's role or capacity", example_jp: "エンジニアとして、かいしゃではたらいています。", example_en: "I work at a company as an engineer." },
+  practice: "Describe various people's jobs using 〜として.",
+  tip: "かいしゃいん literally means 'company person' — いん (員) is a suffix for members or staff."
+});
+
+curriculum.push({
+  day: 433,
+  phaseNum: 10,
+  phaseName: "N4 Vocabulary",
+  week: Math.floor((433 - 1) / 7) + 1,
+  title: "Salary & Work Conditions",
+  intro: "Today covers salary and work condition vocabulary. These words come up in adult conversations and reading passages.",
+  type: "vocab",
+  chars: [],
+  vocab: [
+    ["きゅうりょう", "きゅうりょう", "salary; pay"],
+    ["ボーナス", "ボーナス", "bonus"],
+    ["ざんぎょう", "ざんぎょう", "overtime work"],
+    ["きゅうじつ", "きゅうじつ", "holiday; day off"],
+    ["やすみ", "やすみ", "rest; break; vacation"]
+  ],
+  grammar: { pattern: "〜らしい (it seems; apparently)", meaning: "Expresses hearsay or inference based on evidence", example_jp: "あのかいしゃはきゅうりょうがたかいらしいです。", example_en: "That company apparently has high salaries." },
+  practice: "Share information about jobs and conditions using 〜らしい.",
+  tip: "ざんぎょう (overtime) is a major topic in Japanese work culture. Japan has been reforming to reduce excessive overtime."
+});
+
+curriculum.push({
+  day: 434,
+  phaseNum: 10,
+  phaseName: "N4 Vocabulary",
+  week: Math.floor((434 - 1) / 7) + 1,
+  title: "Office & Workplace",
+  intro: "Learn vocabulary for the office environment. These words describe the places and things you encounter in a Japanese workplace.",
+  type: "vocab",
+  chars: [],
+  vocab: [
+    ["じむしょ", "じむしょ", "office"],
+    ["かいぎ", "かいぎ", "meeting; conference"],
+    ["しりょう", "しりょう", "materials; documents"],
+    ["コピーする", "コピーする", "to copy; to photocopy"],
+    ["いんさつする", "いんさつする", "to print"]
+  ],
+  grammar: { pattern: "〜ておく (do in advance)", meaning: "Expresses doing something ahead of time in preparation", example_jp: "かいぎのまえに、しりょうをコピーしておきます。", example_en: "I'll copy the materials before the meeting." },
+  practice: "Describe preparations for a meeting using 〜ておく with each vocabulary word.",
+  tip: "〜ておく contracts to 〜とく in casual speech: コピーしとく instead of コピーしておく."
+});
+
+curriculum.push({
+  day: 435,
+  phaseNum: 10,
+  phaseName: "N4 Vocabulary",
+  week: Math.floor((435 - 1) / 7) + 1,
+  title: "Business Travel & Assignments",
+  intro: "Today covers business travel and work assignments. These words bridge the travel and business vocabulary you've been learning.",
+  type: "vocab",
+  chars: [],
+  vocab: [
+    ["しゅっちょう", "しゅっちょう", "business trip"],
+    ["てんきんする", "てんきんする", "to be transferred (job)"],
+    ["しめきり", "しめきり", "deadline"],
+    ["ほうこくする", "ほうこくする", "to report"],
+    ["かだい", "かだい", "assignment; task"]
+  ],
+  grammar: { pattern: "〜なくてはいけない (must; have to)", meaning: "Another way to express obligation, common in workplace settings", example_jp: "しめきりまでにかだいをだしなくてはいけません。", example_en: "I have to submit the assignment by the deadline." },
+  practice: "Describe work obligations using 〜なくてはいけない.",
+  tip: "しめきり literally means 'closing cut' — the point at which submissions are cut off. It's used for any type of deadline."
+});
+
+curriculum.push({
+  day: 436,
+  phaseNum: 10,
+  phaseName: "N4 Vocabulary",
+  week: Math.floor((436 - 1) / 7) + 1,
+  title: "Job Hunting & Career",
+  intro: "Learn vocabulary for job searching and career development. This is a common JLPT reading topic and useful for life in Japan.",
+  type: "vocab",
+  chars: [],
+  vocab: [
+    ["しゅうしょく", "しゅうしょく", "finding employment"],
+    ["めんせつ", "めんせつ", "interview (job)"],
+    ["りれきしょ", "りれきしょ", "resume; CV"],
+    ["けいけん", "けいけん", "experience"],
+    ["さいようする", "さいようする", "to hire; to employ"]
+  ],
+  grammar: { pattern: "〜ことにする (decide to ~)", meaning: "Expresses a personal decision", example_jp: "にほんでしゅうしょくすることにしました。", example_en: "I decided to find a job in Japan." },
+  practice: "Describe career decisions using 〜ことにする.",
+  tip: "しゅうしょくかつどう (job hunting activities), often shortened to しゅうかつ, is a major event for Japanese university students."
+});
+
+curriculum.push({
+  day: 437,
+  phaseNum: 10,
+  phaseName: "N4 Vocabulary",
+  week: Math.floor((437 - 1) / 7) + 1,
+  title: "Workplace Communication",
+  intro: "Complete the work topic with communication and teamwork vocabulary. Good communication is highly valued in Japanese workplaces.",
+  type: "vocab",
+  chars: [],
+  vocab: [
+    ["れんらくする", "れんらくする", "to contact; to inform"],
+    ["かくにんする", "かくにんする", "to confirm; to verify"],
+    ["せつめいする", "せつめいする", "to explain"],
+    ["さんせいする", "さんせいする", "to agree; to approve"],
+    ["はんたいする", "はんたいする", "to oppose; to object"]
+  ],
+  grammar: { pattern: "〜かどうか (whether or not)", meaning: "Embeds a yes/no question inside a larger sentence", example_jp: "さんせいするかどうか、かくにんしてください。", example_en: "Please confirm whether or not you agree." },
+  practice: "Ask questions about decisions using 〜かどうか with workplace vocabulary.",
+  tip: "ほうれんそう (報連相) is a Japanese business acronym: ほうこく (report), れんらく (inform), そうだん (consult)."
+});
+
+curriculum.push({
+  day: 438,
+  phaseNum: 10,
+  phaseName: "N4 Vocabulary",
+  week: Math.floor((438 - 1) / 7) + 1,
+  title: "Housework & Chores",
+  intro: "We begin the home and daily life topic with housework vocabulary. These are high-frequency words for everyday conversation.",
+  type: "vocab",
+  chars: [],
+  vocab: [
+    ["せんたくする", "せんたくする", "to do laundry"],
+    ["そうじする", "そうじする", "to clean"],
+    ["かたづける", "かたづける", "to tidy up; to put away"],
+    ["ほす", "ほす", "to hang out to dry"],
+    ["たたむ", "たたむ", "to fold"]
+  ],
+  grammar: { pattern: "〜たあとで (after doing ~)", meaning: "Describes doing one action after completing another", example_jp: "せんたくしたあとで、ふくをほします。", example_en: "After doing the laundry, I hang the clothes out to dry." },
+  practice: "Describe your daily chore routine using 〜たあとで to sequence activities.",
+  tip: "In Japan, many people hang laundry outside to dry rather than using a dryer — ほす is a very common daily word."
+});
+
+curriculum.push({
+  day: 439,
+  phaseNum: 10,
+  phaseName: "N4 Vocabulary",
+  week: Math.floor((439 - 1) / 7) + 1,
+  title: "Cooking & Kitchen",
+  intro: "Today covers cooking and kitchen vocabulary. Cooking at home is economical and common in daily Japanese life.",
+  type: "vocab",
+  chars: [],
+  vocab: [
+    ["りょうりする", "りょうりする", "to cook"],
+    ["やく", "やく", "to grill; to bake; to fry"],
+    ["にる", "にる", "to boil; to simmer"],
+    ["きる", "きる", "to cut; to chop"],
+    ["れいぞうこ", "れいぞうこ", "refrigerator"]
+  ],
+  grammar: { pattern: "〜ながら (while doing ~)", meaning: "Describes doing two actions simultaneously", example_jp: "おんがくをききながら、りょうりします。", example_en: "I cook while listening to music." },
+  practice: "Describe multitasking in the kitchen using 〜ながら.",
+  tip: "やく covers many cooking methods: やきにく (grilled meat), たまごやき (egg omelet), おこのみやき (savory pancake)."
+});
+
+curriculum.push({
+  day: 440,
+  phaseNum: 10,
+  phaseName: "N4 Vocabulary",
+  week: Math.floor((440 - 1) / 7) + 1,
+  title: "Meals & Eating Habits",
+  intro: "Learn vocabulary for meals and eating habits. These words describe the structure of daily eating in Japan.",
+  type: "vocab",
+  chars: [],
+  vocab: [
+    ["あさごはん", "あさごはん", "breakfast"],
+    ["おべんとう", "おべんとう", "boxed lunch"],
+    ["おやつ", "おやつ", "snack"],
+    ["がいしょくする", "がいしょくする", "to eat out"],
+    ["じすいする", "じすいする", "to cook for oneself"]
+  ],
+  grammar: { pattern: "〜ことにしている (make it a habit to)", meaning: "Describes a habitual decision or personal rule", example_jp: "まいにちあさごはんをたべることにしています。", example_en: "I make it a habit to eat breakfast every day." },
+  practice: "Describe your eating habits and rules using 〜ことにしている.",
+  tip: "おやつ comes from やつどき (2 PM in the old time system) — traditional snack time. It now means any snack."
+});
+
+curriculum.push({
+  day: 441,
+  phaseNum: 10,
+  phaseName: "N4 Vocabulary",
+  week: Math.floor((441 - 1) / 7) + 1,
+  title: "Home Appliances",
+  intro: "Today covers common household appliances. These words are practical for daily life and apartment living in Japan.",
+  type: "vocab",
+  chars: [],
+  vocab: [
+    ["せんたくき", "せんたくき", "washing machine"],
+    ["そうじき", "そうじき", "vacuum cleaner"],
+    ["エアコン", "エアコン", "air conditioner"],
+    ["でんしレンジ", "でんしレンジ", "microwave oven"],
+    ["すいはんき", "すいはんき", "rice cooker"]
+  ],
+  grammar: { pattern: "〜のつかいかた (how to use ~)", meaning: "Asking or explaining how to use an item", example_jp: "でんしレンジのつかいかたをおしえてください。", example_en: "Please teach me how to use the microwave." },
+  practice: "Ask and explain how to use each appliance with 〜のつかいかた.",
+  tip: "すいはんき (rice cooker) is an essential appliance in Japan — nearly every household has one."
+});
+
+curriculum.push({
+  day: 442,
+  phaseNum: 10,
+  phaseName: "N4 Vocabulary",
+  week: Math.floor((442 - 1) / 7) + 1,
+  title: "Moving & Housing",
+  intro: "Learn vocabulary for housing and moving. Apartment hunting is a common experience for anyone living in Japan.",
+  type: "vocab",
+  chars: [],
+  vocab: [
+    ["ひっこしする", "ひっこしする", "to move (house)"],
+    ["やちん", "やちん", "rent"],
+    ["まどり", "まどり", "floor plan; layout"],
+    ["ふどうさんや", "ふどうさんや", "real estate agency"],
+    ["けいやくする", "けいやくする", "to sign a contract"]
+  ],
+  grammar: { pattern: "〜ことになる (it has been decided that)", meaning: "Expresses a decision made by others or circumstances", example_jp: "らいげつひっこしすることになりました。", example_en: "It has been decided that I'll move next month." },
+  practice: "Describe life changes using 〜ことになる vs 〜ことにする (your own decision).",
+  tip: "Japanese apartments use a unique system: 1K, 2DK, 3LDK — numbers indicate rooms, letters mean Kitchen, Dining, Living."
+});
+
+curriculum.push({
+  day: 443,
+  phaseNum: 10,
+  phaseName: "N4 Vocabulary",
+  week: Math.floor((443 - 1) / 7) + 1,
+  title: "Daily Routine & Lifestyle",
+  intro: "Complete the home topic with daily routine vocabulary. These words describe the rhythm of everyday life.",
+  type: "vocab",
+  chars: [],
+  vocab: [
+    ["めざましどけい", "めざましどけい", "alarm clock"],
+    ["じゅんびする", "じゅんびする", "to prepare; to get ready"],
+    ["おきる", "おきる", "to wake up; to get up"],
+    ["よふかしする", "よふかしする", "to stay up late"],
+    ["きそくただしい", "きそくただしい", "regular; well-disciplined"]
+  ],
+  grammar: { pattern: "〜てから (after doing ~ / since ~)", meaning: "Marks the starting point of a sequence or duration", example_jp: "おきてから、じゅんびするまでさんじゅっぷんかかります。", example_en: "It takes thirty minutes from waking up to getting ready." },
+  practice: "Describe your morning routine step by step using 〜てから.",
+  tip: "きそくただしいせいかつ (a disciplined lifestyle) is a common phrase in Japanese health and wellness discussions."
+});
+
+curriculum.push({
+  day: 444,
+  phaseNum: 10,
+  phaseName: "N4 Vocabulary",
+  week: Math.floor((444 - 1) / 7) + 1,
+  title: "Government & Politics",
+  intro: "We begin the society and culture topic with government vocabulary. These words appear in news and JLPT reading passages.",
+  type: "vocab",
+  chars: [],
+  vocab: [
+    ["せいじ", "せいじ", "politics"],
+    ["せいふ", "せいふ", "government"],
+    ["ほうりつ", "ほうりつ", "law"],
+    ["せんきょ", "せんきょ", "election"],
+    ["こくみん", "こくみん", "citizens; nationals"]
+  ],
+  grammar: { pattern: "〜によって (by means of; depending on)", meaning: "Expresses the agent of an action or variation by factor", example_jp: "ほうりつはせいふによってきめられます。", example_en: "Laws are decided by the government." },
+  practice: "Describe how decisions are made using 〜によって with society vocabulary.",
+  tip: "せんきょ (election) is important N4 vocabulary — Japan has national elections for both the Diet and local assemblies."
+});
+
+curriculum.push({
+  day: 445,
+  phaseNum: 10,
+  phaseName: "N4 Vocabulary",
+  week: Math.floor((445 - 1) / 7) + 1,
+  title: "Economy & Money Matters",
+  intro: "Today covers economic vocabulary. Understanding these words helps you follow Japanese news and current events.",
+  type: "vocab",
+  chars: [],
+  vocab: [
+    ["けいざい", "けいざい", "economy"],
+    ["ぶっか", "ぶっか", "commodity prices"],
+    ["きぎょう", "きぎょう", "enterprise; company"],
+    ["ぼうえき", "ぼうえき", "trade; commerce"],
+    ["ゆしゅつする", "ゆしゅつする", "to export"]
+  ],
+  grammar: { pattern: "〜ている (ongoing state)", meaning: "Describes a current continuing state or situation", example_jp: "ぶっかがあがっています。", example_en: "Prices are rising." },
+  practice: "Describe current economic trends using 〜ている with あがる, さがる, かわる.",
+  tip: "けいざい and せいじ often appear together: せいじけいざい means 'politics and economy' — a common compound."
+});
+
+curriculum.push({
+  day: 446,
+  phaseNum: 10,
+  phaseName: "N4 Vocabulary",
+  week: Math.floor((446 - 1) / 7) + 1,
+  title: "Culture & Traditions",
+  intro: "Learn vocabulary about culture and traditions. Japan's rich cultural heritage is a frequent JLPT topic.",
+  type: "vocab",
+  chars: [],
+  vocab: [
+    ["ぶんか", "ぶんか", "culture"],
+    ["でんとう", "でんとう", "tradition"],
+    ["まつり", "まつり", "festival"],
+    ["しゅうかん", "しゅうかん", "custom; habit"],
+    ["れいぎ", "れいぎ", "manners; etiquette"]
+  ],
+  grammar: { pattern: "〜といわれている (it is said that ~)", meaning: "Reports common knowledge or widely held beliefs", example_jp: "にほんはれいぎがたいせつだといわれています。", example_en: "It is said that manners are important in Japan." },
+  practice: "Share facts about Japanese culture using 〜といわれている.",
+  tip: "でんとう means tradition that has been passed down. でんとうてき (traditional) is the adjective form."
+});
+
+curriculum.push({
+  day: 447,
+  phaseNum: 10,
+  phaseName: "N4 Vocabulary",
+  week: Math.floor((447 - 1) / 7) + 1,
+  title: "Social Issues",
+  intro: "Today covers vocabulary for social issues. These topics appear in N4 reading comprehension and listening passages.",
+  type: "vocab",
+  chars: [],
+  vocab: [
+    ["しゃかい", "しゃかい", "society"],
+    ["じんこう", "じんこう", "population"],
+    ["もんだい", "もんだい", "problem; issue"],
+    ["こうれいしゃ", "こうれいしゃ", "elderly person"],
+    ["しょうしか", "しょうしか", "declining birthrate"]
+  ],
+  grammar: { pattern: "〜について (about; concerning)", meaning: "Marks the topic of discussion or inquiry", example_jp: "しょうしかのもんだいについてかんがえましょう。", example_en: "Let's think about the problem of declining birthrate." },
+  practice: "Discuss social issues using 〜について to frame each topic.",
+  tip: "しょうしこうれいか (declining birthrate and aging population) is one of Japan's biggest social challenges."
+});
+
+curriculum.push({
+  day: 448,
+  phaseNum: 10,
+  phaseName: "N4 Vocabulary",
+  week: Math.floor((448 - 1) / 7) + 1,
+  title: "International Relations",
+  intro: "Learn vocabulary about countries and international relations. These words help you discuss global topics in Japanese.",
+  type: "vocab",
+  chars: [],
+  vocab: [
+    ["こくさいてき", "こくさいてき", "international"],
+    ["がいこく", "がいこく", "foreign country"],
+    ["かんけい", "かんけい", "relationship; connection"],
+    ["へいわ", "へいわ", "peace"],
+    ["きょうりょくする", "きょうりょくする", "to cooperate"]
+  ],
+  grammar: { pattern: "〜ために (for the purpose of)", meaning: "Expresses the purpose or goal of an action", example_jp: "へいわのために、くにがきょうりょくします。", example_en: "Countries cooperate for the sake of peace." },
+  practice: "Describe international cooperation goals using 〜ために.",
+  tip: "こくさいてき ends in 〜てき, which turns nouns into na-adjectives: こくさい (international) → こくさいてきな (international-type)."
+});
+
+curriculum.push({
+  day: 449,
+  phaseNum: 10,
+  phaseName: "N4 Vocabulary",
+  week: Math.floor((449 - 1) / 7) + 1,
+  title: "Media & News",
+  intro: "Today covers media and news vocabulary. Understanding these words helps you engage with Japanese media.",
+  type: "vocab",
+  chars: [],
+  vocab: [
+    ["ニュース", "ニュース", "news"],
+    ["きじ", "きじ", "article"],
+    ["ばんぐみ", "ばんぐみ", "TV program"],
+    ["ほうそうする", "ほうそうする", "to broadcast"],
+    ["じょうほう", "じょうほう", "information"]
+  ],
+  grammar: { pattern: "〜によると (according to ~)", meaning: "Cites the source of information", example_jp: "ニュースによると、あしたはあめだそうです。", example_en: "According to the news, it will apparently rain tomorrow." },
+  practice: "Report news and information using 〜によると with different sources.",
+  tip: "じょうほう is increasingly important in modern Japanese — it's used for everything from news to data to IT."
+});
+
+curriculum.push({
+  day: 450,
+  phaseNum: 10,
+  phaseName: "N4 Vocabulary",
+  week: Math.floor((450 - 1) / 7) + 1,
+  title: "Computers & Devices",
+  intro: "We begin the technology topic with computer and device vocabulary. Technology words are mostly katakana loanwords.",
+  type: "vocab",
+  chars: [],
+  vocab: [
+    ["パソコン", "パソコン", "personal computer"],
+    ["スマホ", "スマホ", "smartphone"],
+    ["タブレット", "タブレット", "tablet"],
+    ["がめん", "がめん", "screen"],
+    ["キーボード", "キーボード", "keyboard"]
+  ],
+  grammar: { pattern: "〜をつかって (using ~)", meaning: "The te-form of つかう describes the tool or means used", example_jp: "パソコンをつかって、レポートをかきます。", example_en: "I write reports using a computer." },
+  practice: "Describe what you do with each device using 〜をつかって.",
+  tip: "パソコン is short for パーソナルコンピューター. スマホ is short for スマートフォン. Japanese loves abbreviations!"
+});
+
+curriculum.push({
+  day: 451,
+  phaseNum: 10,
+  phaseName: "N4 Vocabulary",
+  week: Math.floor((451 - 1) / 7) + 1,
+  title: "Internet & Online",
+  intro: "Today covers internet and online vocabulary. These are essential modern words used daily in Japan.",
+  type: "vocab",
+  chars: [],
+  vocab: [
+    ["インターネット", "インターネット", "internet"],
+    ["ホームページ", "ホームページ", "website; homepage"],
+    ["けんさくする", "けんさくする", "to search (online)"],
+    ["ダウンロードする", "ダウンロードする", "to download"],
+    ["アップロードする", "アップロードする", "to upload"]
+  ],
+  grammar: { pattern: "〜ば〜ほど (the more ~ the more ~)", meaning: "Expresses proportional increase", example_jp: "インターネットでけんさくすればするほど、じょうほうがふえます。", example_en: "The more you search the internet, the more information you get." },
+  practice: "Create sentences about technology habits using 〜ば〜ほど.",
+  tip: "In Japanese, ホームページ often means 'website' in general, not just the home page — a common false friend."
+});
+
+curriculum.push({
+  day: 452,
+  phaseNum: 10,
+  phaseName: "N4 Vocabulary",
+  week: Math.floor((452 - 1) / 7) + 1,
+  title: "Email & Messaging",
+  intro: "Learn vocabulary for email and digital messaging. Written communication skills are important for work and study in Japan.",
+  type: "vocab",
+  chars: [],
+  vocab: [
+    ["メール", "メール", "email"],
+    ["メッセージ", "メッセージ", "message"],
+    ["おくる", "おくる", "to send"],
+    ["へんじする", "へんじする", "to reply"],
+    ["てんぷファイル", "てんぷファイル", "attached file"]
+  ],
+  grammar: { pattern: "〜てくれませんか (could you please ~?)", meaning: "Polite request asking someone to do something for you", example_jp: "メールでしりょうをおくってくれませんか。", example_en: "Could you please send me the materials by email?" },
+  practice: "Write polite email requests using 〜てくれませんか.",
+  tip: "Japanese business emails follow strict formats: あいさつ (greeting), ようけん (purpose), しめ (closing). Learning this structure is important."
+});
+
+curriculum.push({
+  day: 453,
+  phaseNum: 10,
+  phaseName: "N4 Vocabulary",
+  week: Math.floor((453 - 1) / 7) + 1,
+  title: "Social Media & Apps",
+  intro: "Today covers social media and app vocabulary. Social media is a huge part of daily communication in modern Japan.",
+  type: "vocab",
+  chars: [],
+  vocab: [
+    ["アプリ", "アプリ", "app; application"],
+    ["とうこうする", "とうこうする", "to post (online)"],
+    ["フォローする", "フォローする", "to follow (social media)"],
+    ["コメント", "コメント", "comment"],
+    ["いいね", "いいね", "like (social media)"]
+  ],
+  grammar: { pattern: "〜たり〜たりする (do things like ~ and ~)", meaning: "Lists representative actions from a larger set", example_jp: "スマホでしゃしんをとうこうしたり、コメントをかいたりします。", example_en: "I do things like posting photos and writing comments on my phone." },
+  practice: "Describe your social media activities using 〜たり〜たりする.",
+  tip: "いいね literally means 'good, isn't it?' — it became the standard Japanese word for social media 'likes.'"
+});
+
+curriculum.push({
+  day: 454,
+  phaseNum: 10,
+  phaseName: "N4 Vocabulary",
+  week: Math.floor((454 - 1) / 7) + 1,
+  title: "Passwords & Security",
+  intro: "Learn vocabulary for digital security and privacy. As technology grows, these words become increasingly important.",
+  type: "vocab",
+  chars: [],
+  vocab: [
+    ["パスワード", "パスワード", "password"],
+    ["ログインする", "ログインする", "to log in"],
+    ["とうろくする", "とうろくする", "to register"],
+    ["こじんじょうほう", "こじんじょうほう", "personal information"],
+    ["あんぜん", "あんぜん", "safety; security"]
+  ],
+  grammar: { pattern: "〜ないようにする (make sure not to ~)", meaning: "Expresses effort to avoid doing something", example_jp: "パスワードをわすれないようにしてください。", example_en: "Please make sure not to forget your password." },
+  practice: "Write digital safety rules using 〜ないようにする.",
+  tip: "こじんじょうほう (personal information) protection is a growing concern in Japan, reflected in strict privacy laws."
+});
+
+curriculum.push({
+  day: 455,
+  phaseNum: 10,
+  phaseName: "N4 Vocabulary",
+  week: Math.floor((455 - 1) / 7) + 1,
+  title: "Technology in Daily Life",
+  intro: "Complete the N4 vocabulary phase by reviewing how technology integrates into daily life. You now know approximately 300 new N4 words!",
+  type: "vocab",
+  chars: [],
+  vocab: [
+    ["べんりな", "べんりな", "convenient"],
+    ["しんぽする", "しんぽする", "to progress; to advance"],
+    ["かのうな", "かのうな", "possible"],
+    ["しょうらい", "しょうらい", "future"],
+    ["やくにたつ", "やくにたつ", "to be useful"]
+  ],
+  grammar: { pattern: "〜おかげで (thanks to ~)", meaning: "Expresses gratitude for a positive cause or reason", example_jp: "インターネットのおかげで、べんきょうがべんりになりました。", example_en: "Thanks to the internet, studying has become convenient." },
+  practice: "Reflect on how technology has helped your life and studies using 〜おかげで.",
+  tip: "Congratulations on completing 300 N4 vocabulary words! Regular review with SRS will lock these into long-term memory."
+});
+
+// ═══════════════════════════════════════════════════════════════════════════
+// PHASE 11: N4 VERBS (Days 456-500)
+// 45 days covering causative, passive, conditional, volitional, and compounds
+// ═══════════════════════════════════════════════════════════════════════════
+
+curriculum.push({
+  day: 456,
+  phaseNum: 11,
+  phaseName: "N4 Verbs",
+  week: 66,
+  title: "Causative Form: Group 2 RU-Verbs",
+  intro: "The causative form expresses making or letting someone do something. RU-verbs: drop る, add させる.",
+  type: "verbs",
+  chars: [
+    ["食べる→食べさせる", "make/let eat"],
+    ["見る→見させる", "make/let see"],
+    ["起きる→起きさせる", "make/let wake up"],
+    ["着る→着させる", "make/let wear"],
+    ["寝る→寝させる", "make/let sleep"]
+  ],
+  vocab: [
+    ["食べさせる", "たべさせる", "to make/let eat"],
+    ["見させる", "みさせる", "to make/let see"],
+    ["起きさせる", "おきさせる", "to make/let wake up"],
+    ["着させる", "きさせる", "to make/let wear"],
+    ["出させる", "ださせる", "to make/let leave"]
+  ],
+  grammar: {
+    pattern: "〜させる (RU-verb causative)",
+    meaning: "Make/let someone do ~",
+    example_jp: "母は子どもに野菜を食べさせた。",
+    example_en: "The mother made the child eat vegetables."
+  },
+  practice: "Practice conjugating 10 RU-verbs into their causative form. Write sentences using each.",
+  tip: "The causative form has two meanings: 'make someone do' (forced) and 'let someone do' (permission). Context tells you which!"
+});
+
+curriculum.push({
+  day: 457,
+  phaseNum: 11,
+  phaseName: "N4 Verbs",
+  week: 66,
+  title: "Causative Form: Group 1 U-Verbs",
+  intro: "U-verbs change their final う-row kana to the あ-row, then add せる. For example: 書く→書かせる.",
+  type: "verbs",
+  chars: [
+    ["書く→書かせる", "make/let write"],
+    ["読む→読ませる", "make/let read"],
+    ["飲む→飲ませる", "make/let drink"],
+    ["話す→話させる", "make/let speak"],
+    ["待つ→待たせる", "make/let wait"]
+  ],
+  vocab: [
+    ["書かせる", "かかせる", "to make/let write"],
+    ["読ませる", "よませる", "to make/let read"],
+    ["飲ませる", "のませる", "to make/let drink"],
+    ["話させる", "はなさせる", "to make/let speak"],
+    ["泳がせる", "およがせる", "to make/let swim"]
+  ],
+  grammar: {
+    pattern: "〜させる (U-verb causative)",
+    meaning: "Make/let someone do ~ (U-verb pattern)",
+    example_jp: "先生は学生に作文を書かせた。",
+    example_en: "The teacher made the students write an essay."
+  },
+  practice: "Conjugate these U-verbs to causative: 行く, 帰る, 作る, 歌う, 遊ぶ. Write a sentence for each.",
+  tip: "Watch out for す-ending verbs: 話す→話させる (not 話さす). The あ-row + せる pattern is consistent."
+});
+
+curriculum.push({
+  day: 458,
+  phaseNum: 11,
+  phaseName: "N4 Verbs",
+  week: 66,
+  title: "Causative Form: Irregular Verbs",
+  intro: "The two irregular verbs する and くる have special causative forms: させる and こさせる.",
+  type: "verbs",
+  chars: [
+    ["する→させる", "make/let do"],
+    ["くる→こさせる", "make/let come"],
+    ["勉強する→勉強させる", "make/let study"],
+    ["運動する→運動させる", "make/let exercise"],
+    ["掃除する→掃除させる", "make/let clean"]
+  ],
+  vocab: [
+    ["させる", "させる", "to make/let do"],
+    ["こさせる", "こさせる", "to make/let come"],
+    ["勉強させる", "べんきょうさせる", "to make/let study"],
+    ["運動させる", "うんどうさせる", "to make/let exercise"],
+    ["掃除させる", "そうじさせる", "to make/let clean"]
+  ],
+  grammar: {
+    pattern: "する→させる / くる→こさせる",
+    meaning: "Irregular causative forms",
+    example_jp: "コーチは選手に毎日運動させる。",
+    example_en: "The coach makes the athletes exercise every day."
+  },
+  practice: "Write 5 sentences using する-verb causatives (勉強させる, 練習させる, etc.) and 3 using こさせる.",
+  tip: "Most する-compound verbs just replace する with させる. This makes hundreds of causatives easy to form!"
+});
+
+curriculum.push({
+  day: 459,
+  phaseNum: 11,
+  phaseName: "N4 Verbs",
+  week: 66,
+  title: "Causative + てください",
+  intro: "Combine causative with てください to politely ask someone to let you do something: 行かせてください (please let me go).",
+  type: "verbs",
+  chars: [
+    ["行かせてください", "please let me go"],
+    ["食べさせてください", "please let me eat"],
+    ["見させてください", "please let me see"],
+    ["やらせてください", "please let me do it"],
+    ["参加させてください", "please let me join"]
+  ],
+  vocab: [
+    ["行かせる", "いかせる", "to let go"],
+    ["参加させる", "さんかさせる", "to let participate"],
+    ["手伝わせる", "てつだわせる", "to let help"],
+    ["休ませる", "やすませる", "to let rest"],
+    ["使わせる", "つかわせる", "to let use"]
+  ],
+  grammar: {
+    pattern: "〜させてください",
+    meaning: "Please let me do ~",
+    example_jp: "このプロジェクトをやらせてください。",
+    example_en: "Please let me do this project."
+  },
+  practice: "Write 5 polite requests using させてください for situations at work, school, and home.",
+  tip: "させてください is very useful in business Japanese. It shows humility while making a request."
+});
+
+curriculum.push({
+  day: 460,
+  phaseNum: 11,
+  phaseName: "N4 Verbs",
+  week: 66,
+  title: "Causative Particles: に vs を",
+  intro: "With causative verbs, に marks the person being made/let to do something. を marks the direct object.",
+  type: "verbs",
+  chars: [
+    ["母に食べさせる", "make mother eat"],
+    ["子どもを食べさせる", "feed the child"],
+    ["学生に書かせる", "make students write"],
+    ["弟を走らせる", "make brother run"],
+    ["彼に歌わせる", "let him sing"]
+  ],
+  vocab: [
+    ["子ども", "こども", "child"],
+    ["学生", "がくせい", "student"],
+    ["部下", "ぶか", "subordinate"],
+    ["生徒", "せいと", "pupil"],
+    ["選手", "せんしゅ", "athlete"]
+  ],
+  grammar: {
+    pattern: "AにBをVさせる / AをVさせる",
+    meaning: "Make/let A do B (transitive) / Make A do V (intransitive)",
+    example_jp: "先生は学生に本を読ませた。",
+    example_en: "The teacher made the students read a book."
+  },
+  practice: "Write 5 sentences with transitive causative (AにBをVさせる) and 5 with intransitive (AをVさせる).",
+  tip: "Key rule: if the original verb is transitive (takes を), use に for the person. If intransitive, you can use を for the person."
+});
+
+curriculum.push({
+  day: 461,
+  phaseNum: 11,
+  phaseName: "N4 Verbs",
+  week: 66,
+  title: "Permissive Causative: Letting Someone Do",
+  intro: "The causative form can express permission — letting someone do what they want. Often paired with てあげる.",
+  type: "verbs",
+  chars: [
+    ["好きにさせる", "let do as one likes"],
+    ["休ませてあげる", "let rest (kindly)"],
+    ["遊ばせてあげる", "let play (kindly)"],
+    ["選ばせる", "let choose"],
+    ["自由にさせる", "let be free"]
+  ],
+  vocab: [
+    ["好きにする", "すきにする", "to do as one likes"],
+    ["自由", "じゆう", "freedom"],
+    ["選ぶ", "えらぶ", "to choose"],
+    ["任せる", "まかせる", "to entrust"],
+    ["許す", "ゆるす", "to allow"]
+  ],
+  grammar: {
+    pattern: "〜させてあげる",
+    meaning: "Let someone do ~ (with kindness)",
+    example_jp: "子どもに好きなおもちゃを選ばせてあげた。",
+    example_en: "I let the child choose their favorite toy."
+  },
+  practice: "Write 5 sentences about things parents let children do using させてあげる.",
+  tip: "させてあげる adds warmth. Compare: 遊ばせた (made/let play — neutral) vs 遊ばせてあげた (kindly let play)."
+});
+
+curriculum.push({
+  day: 462,
+  phaseNum: 11,
+  phaseName: "N4 Verbs",
+  week: 66,
+  title: "Causative Form: Practice Day",
+  intro: "Today we review all causative patterns: RU-verbs, U-verbs, irregulars, and the させてください form.",
+  type: "verbs",
+  chars: [
+    ["食べさせる", "make/let eat"],
+    ["書かせる", "make/let write"],
+    ["させる", "make/let do"],
+    ["行かせてください", "please let me go"],
+    ["選ばせてあげる", "kindly let choose"]
+  ],
+  vocab: [
+    ["先輩", "せんぱい", "senior"],
+    ["後輩", "こうはい", "junior"],
+    ["上司", "じょうし", "boss"],
+    ["同僚", "どうりょう", "colleague"],
+    ["先生", "せんせい", "teacher"]
+  ],
+  grammar: {
+    pattern: "Causative review",
+    meaning: "All causative patterns combined",
+    example_jp: "上司は部下に新しいプロジェクトをさせた。",
+    example_en: "The boss had the subordinate work on a new project."
+  },
+  practice: "Conjugate 10 random verbs into causative form. Write a short story using at least 5 causative sentences.",
+  tip: "Remember the three meanings: force (させる), permission (させてあげる), and request (させてください)."
+});
+
+curriculum.push({
+  day: 463,
+  phaseNum: 11,
+  phaseName: "N4 Verbs",
+  week: 67,
+  title: "Passive Form: Group 2 RU-Verbs",
+  intro: "The passive form expresses that something is done TO you. RU-verbs: drop る, add られる.",
+  type: "verbs",
+  chars: [
+    ["食べる→食べられる", "to be eaten"],
+    ["見る→見られる", "to be seen"],
+    ["褒める→褒められる", "to be praised"],
+    ["叱る→叱られる", "to be scolded"],
+    ["教える→教えられる", "to be taught"]
+  ],
+  vocab: [
+    ["食べられる", "たべられる", "to be eaten"],
+    ["見られる", "みられる", "to be seen"],
+    ["褒められる", "ほめられる", "to be praised"],
+    ["叱られる", "しかられる", "to be scolded"],
+    ["教えられる", "おしえられる", "to be taught"]
+  ],
+  grammar: {
+    pattern: "〜られる (RU-verb passive)",
+    meaning: "To be ~ed (RU-verb passive form)",
+    example_jp: "先生に褒められてうれしかった。",
+    example_en: "I was happy to be praised by the teacher."
+  },
+  practice: "Conjugate 10 RU-verbs to passive. Write sentences about being praised, scolded, or noticed.",
+  tip: "For RU-verbs, passive (られる) looks identical to potential (can do). Context tells the difference!"
+});
+
+curriculum.push({
+  day: 464,
+  phaseNum: 11,
+  phaseName: "N4 Verbs",
+  week: 67,
+  title: "Passive Form: Group 1 U-Verbs",
+  intro: "U-verbs change their final kana to the あ-row, then add れる. Example: 読む→読まれる.",
+  type: "verbs",
+  chars: [
+    ["読む→読まれる", "to be read"],
+    ["書く→書かれる", "to be written"],
+    ["飲む→飲まれる", "to be drunk"],
+    ["取る→取られる", "to be taken"],
+    ["踏む→踏まれる", "to be stepped on"]
+  ],
+  vocab: [
+    ["読まれる", "よまれる", "to be read"],
+    ["書かれる", "かかれる", "to be written"],
+    ["呼ばれる", "よばれる", "to be called"],
+    ["聞かれる", "きかれる", "to be asked"],
+    ["笑われる", "わらわれる", "to be laughed at"]
+  ],
+  grammar: {
+    pattern: "〜れる (U-verb passive)",
+    meaning: "To be ~ed (U-verb passive form)",
+    example_jp: "友だちに名前を呼ばれた。",
+    example_en: "I was called by name by my friend."
+  },
+  practice: "Conjugate these to passive: 言う, 使う, 売る, 殺す, 盗む. Write a sentence for each.",
+  tip: "U-verb passive is straightforward: あ-row + れる. Unlike RU-verbs, passive and potential forms are different."
+});
+
+curriculum.push({
+  day: 465,
+  phaseNum: 11,
+  phaseName: "N4 Verbs",
+  week: 67,
+  title: "Passive Form: Irregular Verbs",
+  intro: "する becomes される, くる becomes こられる. These are high-frequency forms in daily Japanese.",
+  type: "verbs",
+  chars: [
+    ["する→される", "to be done"],
+    ["くる→こられる", "to be come to"],
+    ["紹介する→紹介される", "to be introduced"],
+    ["招待する→招待される", "to be invited"],
+    ["注意する→注意される", "to be warned"]
+  ],
+  vocab: [
+    ["される", "される", "to be done"],
+    ["こられる", "こられる", "to be come to"],
+    ["紹介される", "しょうかいされる", "to be introduced"],
+    ["招待される", "しょうたいされる", "to be invited"],
+    ["質問される", "しつもんされる", "to be questioned"]
+  ],
+  grammar: {
+    pattern: "する→される / くる→こられる",
+    meaning: "Irregular passive forms",
+    example_jp: "パーティーに招待されました。",
+    example_en: "I was invited to the party."
+  },
+  practice: "Write 5 sentences using する-verb passives in formal situations (interviews, ceremonies, meetings).",
+  tip: "される is extremely common in news and formal writing. 発表された (was announced), 開催された (was held)."
+});
+
+curriculum.push({
+  day: 466,
+  phaseNum: 11,
+  phaseName: "N4 Verbs",
+  week: 67,
+  title: "Direct Passive: Action Done to the Subject",
+  intro: "Direct passive describes an action done directly to the subject. The doer is marked with に.",
+  type: "verbs",
+  chars: [
+    ["先生に褒められた", "was praised by teacher"],
+    ["母に起こされた", "was woken by mother"],
+    ["友だちに誘われた", "was invited by friend"],
+    ["犬にかまれた", "was bitten by dog"],
+    ["上司に注意された", "was warned by boss"]
+  ],
+  vocab: [
+    ["褒める", "ほめる", "to praise"],
+    ["起こす", "おこす", "to wake someone"],
+    ["誘う", "さそう", "to invite"],
+    ["叱る", "しかる", "to scold"],
+    ["注意する", "ちゅういする", "to warn"]
+  ],
+  grammar: {
+    pattern: "AはBに〜(ら)れる",
+    meaning: "A is ~ed by B (direct passive)",
+    example_jp: "私は母に毎朝6時に起こされる。",
+    example_en: "I am woken up by my mother at 6 every morning."
+  },
+  practice: "Write 5 sentences about things that happen to you daily using direct passive.",
+  tip: "In direct passive, the に-person is the doer. The subject (は) receives the action. Think: 'I was verbed by someone.'"
+});
+
+curriculum.push({
+  day: 467,
+  phaseNum: 11,
+  phaseName: "N4 Verbs",
+  week: 67,
+  title: "Indirect Passive: Suffering Passive",
+  intro: "Japanese has a unique 'suffering passive' for situations that negatively affect you, even if the action wasn't directed at you.",
+  type: "verbs",
+  chars: [
+    ["雨に降られた", "was rained on"],
+    ["隣の人に泣かれた", "neighbor cried (bothering me)"],
+    ["電車で足を踏まれた", "foot was stepped on"],
+    ["彼女に泣かれた", "she cried (on me)"],
+    ["友だちに先に行かれた", "friend went ahead (leaving me)"]
+  ],
+  vocab: [
+    ["降る", "ふる", "to fall (rain)"],
+    ["泣く", "なく", "to cry"],
+    ["踏む", "ふむ", "to step on"],
+    ["死ぬ", "しぬ", "to die"],
+    ["逃げる", "にげる", "to escape"]
+  ],
+  grammar: {
+    pattern: "〜に〜(ら)れる (suffering passive)",
+    meaning: "Be adversely affected by someone's action",
+    example_jp: "帰り道に雨に降られて、びしょぬれになった。",
+    example_en: "I got caught in the rain on the way home and was soaked."
+  },
+  practice: "Write 5 sentences about inconvenient things that happened to you using the suffering passive.",
+  tip: "The suffering passive is uniquely Japanese. Even intransitive verbs like 降る (rain) and 泣く (cry) can be passivized to show you were negatively affected."
+});
+
+curriculum.push({
+  day: 468,
+  phaseNum: 11,
+  phaseName: "N4 Verbs",
+  week: 67,
+  title: "Passive in Polite Speech",
+  intro: "Passive forms are used in polite/formal Japanese to soften statements and show respect.",
+  type: "verbs",
+  chars: [
+    ["言われました", "it was said"],
+    ["聞かれました", "I was asked"],
+    ["思われます", "it seems/is thought"],
+    ["考えられます", "it is considered"],
+    ["知られています", "it is known"]
+  ],
+  vocab: [
+    ["言う", "いう", "to say"],
+    ["聞く", "きく", "to ask"],
+    ["思う", "おもう", "to think"],
+    ["考える", "かんがえる", "to consider"],
+    ["知る", "しる", "to know"]
+  ],
+  grammar: {
+    pattern: "Passive in formal speech",
+    meaning: "Using passive to express formality and politeness",
+    example_jp: "この薬は食後に飲まれることをお勧めします。",
+    example_en: "It is recommended that this medicine be taken after meals."
+  },
+  practice: "Rewrite 5 casual sentences in formal passive style for a business email.",
+  tip: "Passive voice in Japanese, like English, creates distance and formality. 'We decided' → 'It was decided.'"
+});
+
+curriculum.push({
+  day: 469,
+  phaseNum: 11,
+  phaseName: "N4 Verbs",
+  week: 67,
+  title: "Passive Form: Practice Day",
+  intro: "Review all passive patterns: direct, indirect (suffering), and polite passives.",
+  type: "verbs",
+  chars: [
+    ["褒められる", "to be praised"],
+    ["雨に降られる", "to get rained on"],
+    ["言われました", "it was said"],
+    ["紹介される", "to be introduced"],
+    ["足を踏まれた", "foot was stepped on"]
+  ],
+  vocab: [
+    ["新聞", "しんぶん", "newspaper"],
+    ["ニュース", "ニュース", "news"],
+    ["記事", "きじ", "article"],
+    ["報告", "ほうこく", "report"],
+    ["発表", "はっぴょう", "announcement"]
+  ],
+  grammar: {
+    pattern: "Passive review",
+    meaning: "All passive patterns combined",
+    example_jp: "このニュースは今朝発表されました。",
+    example_en: "This news was announced this morning."
+  },
+  practice: "Write a short diary entry about your day using at least 5 passive sentences (mix direct, suffering, and formal).",
+  tip: "Passive is one of the most common verb forms in written Japanese. Read news articles and notice how often it appears."
+});
+
+curriculum.push({
+  day: 470,
+  phaseNum: 11,
+  phaseName: "N4 Verbs",
+  week: 68,
+  title: "Causative-Passive: Group 2 RU-Verbs",
+  intro: "The causative-passive means 'to be made to do something.' RU-verbs: add させられる. It expresses being forced.",
+  type: "verbs",
+  chars: [
+    ["食べさせられる", "to be made to eat"],
+    ["見させられる", "to be made to watch"],
+    ["覚えさせられる", "to be made to memorize"],
+    ["着させられる", "to be made to wear"],
+    ["調べさせられる", "to be made to investigate"]
+  ],
+  vocab: [
+    ["食べさせられる", "たべさせられる", "to be made to eat"],
+    ["見させられる", "みさせられる", "to be made to watch"],
+    ["覚えさせられる", "おぼえさせられる", "to be made to memorize"],
+    ["考えさせられる", "かんがえさせられる", "to be made to think"],
+    ["答えさせられる", "こたえさせられる", "to be made to answer"]
+  ],
+  grammar: {
+    pattern: "〜させられる (RU-verb causative-passive)",
+    meaning: "To be made to do ~ (against one's will)",
+    example_jp: "嫌いな野菜を食べさせられた。",
+    example_en: "I was made to eat vegetables I don't like."
+  },
+  practice: "Write 5 sentences about things you were made to do as a child using させられる.",
+  tip: "Causative-passive always implies being forced. It carries a nuance of complaint or reluctance."
+});
+
+curriculum.push({
+  day: 471,
+  phaseNum: 11,
+  phaseName: "N4 Verbs",
+  week: 68,
+  title: "Causative-Passive: Group 1 U-Verbs (Short Form)",
+  intro: "U-verbs have a shortened causative-passive: instead of させられる, use される. 書く→書かされる.",
+  type: "verbs",
+  chars: [
+    ["書く→書かされる", "to be made to write"],
+    ["読む→読まされる", "to be made to read"],
+    ["飲む→飲まされる", "to be made to drink"],
+    ["待つ→待たされる", "to be made to wait"],
+    ["歌う→歌わされる", "to be made to sing"]
+  ],
+  vocab: [
+    ["書かされる", "かかされる", "to be made to write"],
+    ["読まされる", "よまされる", "to be made to read"],
+    ["飲まされる", "のまされる", "to be made to drink"],
+    ["走らされる", "はしらされる", "to be made to run"],
+    ["歌わされる", "うたわされる", "to be made to sing"]
+  ],
+  grammar: {
+    pattern: "〜(さ)される (U-verb short causative-passive)",
+    meaning: "To be made to do ~ (U-verb shortened form)",
+    example_jp: "上司に残業させられた。",
+    example_en: "I was made to work overtime by my boss."
+  },
+  practice: "Conjugate 10 U-verbs into causative-passive. Compare the long form (〜させられる) and short form (〜される).",
+  tip: "The short form (書かされる) is more common in speech than the full form (書かせられる). Both are correct!"
+});
+
+curriculum.push({
+  day: 472,
+  phaseNum: 11,
+  phaseName: "N4 Verbs",
+  week: 68,
+  title: "Causative-Passive: Irregular Verbs",
+  intro: "する→させられる, くる→こさせられる. These complete the causative-passive conjugation set.",
+  type: "verbs",
+  chars: [
+    ["する→させられる", "to be made to do"],
+    ["くる→こさせられる", "to be made to come"],
+    ["勉強する→勉強させられる", "to be made to study"],
+    ["掃除する→掃除させられる", "to be made to clean"],
+    ["練習する→練習させられる", "to be made to practice"]
+  ],
+  vocab: [
+    ["させられる", "させられる", "to be made to do"],
+    ["こさせられる", "こさせられる", "to be made to come"],
+    ["勉強させられる", "べんきょうさせられる", "to be made to study"],
+    ["残業させられる", "ざんぎょうさせられる", "to be made to work overtime"],
+    ["我慢させられる", "がまんさせられる", "to be made to endure"]
+  ],
+  grammar: {
+    pattern: "する→させられる / くる→こさせられる",
+    meaning: "Irregular causative-passive forms",
+    example_jp: "毎日3時間も勉強させられる。",
+    example_en: "I'm made to study for 3 hours every day."
+  },
+  practice: "Write 5 complaints about things you are made to do at work or school using させられる.",
+  tip: "させられる is the longest common conjugation in Japanese. Break it down: させ (causative) + られる (passive) = made to do."
+});
+
+curriculum.push({
+  day: 473,
+  phaseNum: 11,
+  phaseName: "N4 Verbs",
+  week: 68,
+  title: "Expressing Complaints with Causative-Passive",
+  intro: "The causative-passive is perfect for expressing frustration about being forced to do things.",
+  type: "verbs",
+  chars: [
+    ["宿題をさせられた", "was made to do homework"],
+    ["掃除させられた", "was made to clean"],
+    ["残業させられた", "was made to work overtime"],
+    ["待たされた", "was made to wait"],
+    ["走らされた", "was made to run"]
+  ],
+  vocab: [
+    ["宿題", "しゅくだい", "homework"],
+    ["残業", "ざんぎょう", "overtime"],
+    ["掃除", "そうじ", "cleaning"],
+    ["我慢", "がまん", "patience/endurance"],
+    ["無理", "むり", "impossible/unreasonable"]
+  ],
+  grammar: {
+    pattern: "〜させられた (past complaint)",
+    meaning: "Was forced to do ~ (expressing frustration)",
+    example_jp: "子どものとき、毎日ピアノを練習させられた。",
+    example_en: "When I was a child, I was made to practice piano every day."
+  },
+  practice: "Write about 5 things you were forced to do growing up, using causative-passive past tense.",
+  tip: "This pattern is very natural for telling stories about childhood: 〜させられた (I was made to...). Japanese people use it often!"
+});
+
+curriculum.push({
+  day: 474,
+  phaseNum: 11,
+  phaseName: "N4 Verbs",
+  week: 68,
+  title: "Comparing: Causative vs Passive vs Causative-Passive",
+  intro: "Three forms, three meanings: causative (make do), passive (is done to), causative-passive (is made to do).",
+  type: "verbs",
+  chars: [
+    ["食べさせる", "make eat (causative)"],
+    ["食べられる", "be eaten (passive)"],
+    ["食べさせられる", "be made to eat (caus-pass)"],
+    ["読ませる", "make read"],
+    ["読まれる", "be read"]
+  ],
+  vocab: [
+    ["比較", "ひかく", "comparison"],
+    ["違い", "ちがい", "difference"],
+    ["意味", "いみ", "meaning"],
+    ["文法", "ぶんぽう", "grammar"],
+    ["使い分け", "つかいわけ", "proper use"]
+  ],
+  grammar: {
+    pattern: "Causative vs Passive vs Causative-Passive",
+    meaning: "Comparing three voice forms",
+    example_jp: "先生が読ませた。→ 先生に読まれた。→ 先生に読まされた。",
+    example_en: "Teacher made [me] read. → Was read by teacher. → Was made to read by teacher."
+  },
+  practice: "For 5 verbs, write all three forms (causative, passive, causative-passive) and a sentence for each.",
+  tip: "Think of it as a chain: I make (causative) → I am affected (passive) → I am forced (causative-passive)."
+});
+
+curriculum.push({
+  day: 475,
+  phaseNum: 11,
+  phaseName: "N4 Verbs",
+  week: 68,
+  title: "Natural Causative-Passive Expressions",
+  intro: "Some causative-passive expressions are so common they feel like set phrases in everyday Japanese.",
+  type: "verbs",
+  chars: [
+    ["考えさせられる", "makes you think"],
+    ["感動させられる", "to be moved"],
+    ["驚かされる", "to be surprised"],
+    ["笑わされる", "to be made to laugh"],
+    ["泣かされる", "to be made to cry"]
+  ],
+  vocab: [
+    ["感動", "かんどう", "being moved/touched"],
+    ["驚く", "おどろく", "to be surprised"],
+    ["笑う", "わらう", "to laugh"],
+    ["泣く", "なく", "to cry"],
+    ["考える", "かんがえる", "to think"]
+  ],
+  grammar: {
+    pattern: "〜させられる (natural expressions)",
+    meaning: "Common causative-passive idioms",
+    example_jp: "この映画には考えさせられた。",
+    example_en: "This movie really made me think."
+  },
+  practice: "Write about a book, movie, or experience that 考えさせられた, 感動させられた, or 驚かされた.",
+  tip: "考えさせられる (makes you think) is a favorite phrase of reviewers and critics. It sounds intellectual and thoughtful."
+});
+
+curriculum.push({
+  day: 476,
+  phaseNum: 11,
+  phaseName: "N4 Verbs",
+  week: 68,
+  title: "Causative-Passive: Practice Day",
+  intro: "Review all causative-passive forms and compare with causative and passive.",
+  type: "verbs",
+  chars: [
+    ["食べさせられる", "be made to eat"],
+    ["書かされる", "be made to write"],
+    ["させられる", "be made to do"],
+    ["考えさせられる", "makes one think"],
+    ["待たされる", "be kept waiting"]
+  ],
+  vocab: [
+    ["復習", "ふくしゅう", "review"],
+    ["練習", "れんしゅう", "practice"],
+    ["確認", "かくにん", "confirmation"],
+    ["応用", "おうよう", "application"],
+    ["完璧", "かんぺき", "perfect"]
+  ],
+  grammar: {
+    pattern: "Causative-passive comprehensive review",
+    meaning: "All causative-passive patterns",
+    example_jp: "日本語の動詞の活用を完璧に覚えさせられた。",
+    example_en: "I was made to perfectly memorize Japanese verb conjugations."
+  },
+  practice: "Create a chart of 10 verbs showing: dictionary form, causative, passive, and causative-passive for each.",
+  tip: "You now know all three voice forms! This is a major milestone. These patterns appear frequently on the JLPT N4."
+});
+
+curriculum.push({
+  day: 477,
+  phaseNum: 11,
+  phaseName: "N4 Verbs",
+  week: 69,
+  title: "Conditional ば Form: Verbs",
+  intro: "The ば form expresses 'if.' Verbs: change final え-row kana + ば. 行く→行けば, 食べる→食べれば.",
+  type: "verbs",
+  chars: [
+    ["行く→行けば", "if go"],
+    ["食べる→食べれば", "if eat"],
+    ["読む→読めば", "if read"],
+    ["する→すれば", "if do"],
+    ["来る→来れば", "if come"]
+  ],
+  vocab: [
+    ["行けば", "いけば", "if one goes"],
+    ["食べれば", "たべれば", "if one eats"],
+    ["読めば", "よめば", "if one reads"],
+    ["すれば", "すれば", "if one does"],
+    ["来れば", "くれば", "if one comes"]
+  ],
+  grammar: {
+    pattern: "〜ば (verb conditional)",
+    meaning: "If ~ (verb conditional)",
+    example_jp: "薬を飲めば、すぐよくなりますよ。",
+    example_en: "If you take the medicine, you'll get better quickly."
+  },
+  practice: "Conjugate 10 verbs into ば form. Write conditional sentences for each.",
+  tip: "The ば conditional implies a general truth or logical consequence. 'If A, then naturally B.'"
+});
+
+curriculum.push({
+  day: 478,
+  phaseNum: 11,
+  phaseName: "N4 Verbs",
+  week: 69,
+  title: "Conditional ば Form: Adjectives & Nouns",
+  intro: "い-adjectives: drop い, add ければ. な-adjectives/nouns: add であれば or なら.",
+  type: "verbs",
+  chars: [
+    ["高い→高ければ", "if expensive"],
+    ["安い→安ければ", "if cheap"],
+    ["静か→静かであれば", "if quiet"],
+    ["学生→学生であれば", "if student"],
+    ["いい→よければ", "if good"]
+  ],
+  vocab: [
+    ["高ければ", "たかければ", "if expensive"],
+    ["安ければ", "やすければ", "if cheap"],
+    ["よければ", "よければ", "if good"],
+    ["暇であれば", "ひまであれば", "if free"],
+    ["元気であれば", "げんきであれば", "if healthy"]
+  ],
+  grammar: {
+    pattern: "〜ければ / 〜であれば",
+    meaning: "If ~ (adjective/noun conditional)",
+    example_jp: "天気がよければ、ピクニックに行きましょう。",
+    example_en: "If the weather is good, let's go on a picnic."
+  },
+  practice: "Write 5 sentences with い-adjective ば forms and 5 with な-adjective/noun ば forms.",
+  tip: "Special case: いい becomes よければ (not いければ). This is the most common exception to memorize."
+});
+
+curriculum.push({
+  day: 479,
+  phaseNum: 11,
+  phaseName: "N4 Verbs",
+  week: 69,
+  title: "Conditional たら Form",
+  intro: "たら is the most versatile conditional. Just add ら to the past tense: 行った→行ったら.",
+  type: "verbs",
+  chars: [
+    ["行く→行ったら", "if/when go"],
+    ["食べる→食べたら", "if/when eat"],
+    ["高い→高かったら", "if expensive"],
+    ["静か→静かだったら", "if quiet"],
+    ["雨→雨だったら", "if rain"]
+  ],
+  vocab: [
+    ["行ったら", "いったら", "if/when one goes"],
+    ["食べたら", "たべたら", "if/when one eats"],
+    ["終わったら", "おわったら", "if/when finished"],
+    ["暇だったら", "ひまだったら", "if free"],
+    ["安かったら", "やすかったら", "if cheap"]
+  ],
+  grammar: {
+    pattern: "〜たら (conditional)",
+    meaning: "If/when ~ (most versatile conditional)",
+    example_jp: "駅に着いたら、電話してください。",
+    example_en: "When you arrive at the station, please call me."
+  },
+  practice: "Write 5 sentences using たら for 'if' and 5 using たら for 'when.'",
+  tip: "たら is the safest conditional — it works in almost any situation. When in doubt, use たら!"
+});
+
+curriculum.push({
+  day: 480,
+  phaseNum: 11,
+  phaseName: "N4 Verbs",
+  week: 69,
+  title: "Comparing ば vs たら",
+  intro: "ば implies general/logical conditions. たら is broader and can express discovered situations after the action.",
+  type: "verbs",
+  chars: [
+    ["練習すれば上手になる", "if you practice, you improve"],
+    ["練習したらうまくいった", "when I practiced, it went well"],
+    ["春になれば桜が咲く", "when spring comes, cherry blossoms bloom"],
+    ["家に帰ったら誰もいなかった", "when I got home, nobody was there"],
+    ["安ければ買います", "if it's cheap, I'll buy it"]
+  ],
+  vocab: [
+    ["条件", "じょうけん", "condition"],
+    ["場合", "ばあい", "case/situation"],
+    ["結果", "けっか", "result"],
+    ["発見", "はっけん", "discovery"],
+    ["事実", "じじつ", "fact"]
+  ],
+  grammar: {
+    pattern: "ば vs たら comparison",
+    meaning: "When to use ば vs たら",
+    example_jp: "ば: 春になれば暖かくなる。たら: 家に帰ったら猫がいた。",
+    example_en: "ば: When spring comes, it gets warm. たら: When I got home, there was a cat."
+  },
+  practice: "Write the same situation using both ば and たら. Note which sounds more natural in each context.",
+  tip: "Rule of thumb: ば for general truths and hypotheticals. たら for one-time events and discoveries."
+});
+
+curriculum.push({
+  day: 481,
+  phaseNum: 11,
+  phaseName: "N4 Verbs",
+  week: 69,
+  title: "Conditional なら",
+  intro: "なら is used when you receive information and respond to it. 'If that's the case, then...'",
+  type: "verbs",
+  chars: [
+    ["日本に行くなら", "if you're going to Japan"],
+    ["魚なら", "if it's fish"],
+    ["安いなら", "if it's cheap"],
+    ["暇なら", "if you're free"],
+    ["本当なら", "if it's true"]
+  ],
+  vocab: [
+    ["旅行", "りょこう", "travel"],
+    ["おすすめ", "おすすめ", "recommendation"],
+    ["場所", "ばしょ", "place"],
+    ["料理", "りょうり", "cooking"],
+    ["経験", "けいけん", "experience"]
+  ],
+  grammar: {
+    pattern: "〜なら",
+    meaning: "If (that's the case), then ~",
+    example_jp: "日本に行くなら、京都がおすすめですよ。",
+    example_en: "If you're going to Japan, I recommend Kyoto."
+  },
+  practice: "Write 5 recommendation sentences using なら. Imagine a friend tells you something, and you respond.",
+  tip: "なら is conversational. Someone says something → you react with なら: 'Oh, if that's the case, then...'"
+});
+
+curriculum.push({
+  day: 482,
+  phaseNum: 11,
+  phaseName: "N4 Verbs",
+  week: 69,
+  title: "Conditional と",
+  intro: "と expresses automatic or natural consequences. 'When A happens, B always follows.'",
+  type: "verbs",
+  chars: [
+    ["春になると", "when spring comes"],
+    ["ボタンを押すと", "when you press the button"],
+    ["右に曲がると", "when you turn right"],
+    ["このドアを開けると", "when you open this door"],
+    ["薬を飲むと", "when you take medicine"]
+  ],
+  vocab: [
+    ["ボタン", "ボタン", "button"],
+    ["ドア", "ドア", "door"],
+    ["信号", "しんごう", "traffic light"],
+    ["自動的", "じどうてき", "automatic"],
+    ["結果", "けっか", "result"]
+  ],
+  grammar: {
+    pattern: "〜と (automatic consequence)",
+    meaning: "When/if ~, then always ~ (natural result)",
+    example_jp: "このボタンを押すと、ドアが開きます。",
+    example_en: "When you press this button, the door opens."
+  },
+  practice: "Write 5 sentences describing automatic/natural consequences using と.",
+  tip: "と cannot be used with requests, commands, or suggestions. It's for stating facts: 'When A, B happens (always).'"
+});
+
+curriculum.push({
+  day: 483,
+  phaseNum: 11,
+  phaseName: "N4 Verbs",
+  week: 69,
+  title: "Mixed Conditionals: Practice Day",
+  intro: "Review all four conditionals: ば, たら, なら, と. Each has distinct nuances.",
+  type: "verbs",
+  chars: [
+    ["行けば", "if go (general)"],
+    ["行ったら", "if/when go (versatile)"],
+    ["行くなら", "if going (responding)"],
+    ["行くと", "when go (automatic)"],
+    ["高ければ買わない", "if expensive, won't buy"]
+  ],
+  vocab: [
+    ["文脈", "ぶんみゃく", "context"],
+    ["ニュアンス", "ニュアンス", "nuance"],
+    ["使い方", "つかいかた", "how to use"],
+    ["正しい", "ただしい", "correct"],
+    ["間違い", "まちがい", "mistake"]
+  ],
+  grammar: {
+    pattern: "ば vs たら vs なら vs と",
+    meaning: "All four Japanese conditionals compared",
+    example_jp: "ば: 読めばわかる。たら: 読んだらわかった。なら: 読むなら静かに。と: 読むと眠くなる。",
+    example_en: "ば: If you read it, you'll understand. たら: When I read it, I understood. なら: If you're going to read, do it quietly. と: When I read, I get sleepy."
+  },
+  practice: "Rewrite the same scenario using all four conditionals. Which is most natural? Write 3 sets of comparisons.",
+  tip: "JLPT N4 loves testing conditionals. The key differences: ば (hypothetical), たら (flexible), なら (reacting), と (automatic)."
+});
+
+curriculum.push({
+  day: 484,
+  phaseNum: 11,
+  phaseName: "N4 Verbs",
+  week: 70,
+  title: "Volitional Form: Group 2 RU-Verbs",
+  intro: "The volitional form expresses 'let's do' or 'I'll do.' RU-verbs: drop る, add よう.",
+  type: "verbs",
+  chars: [
+    ["食べる→食べよう", "let's eat"],
+    ["見る→見よう", "let's see"],
+    ["起きる→起きよう", "let's wake up"],
+    ["出る→出よう", "let's leave"],
+    ["寝る→寝よう", "let's sleep"]
+  ],
+  vocab: [
+    ["食べよう", "たべよう", "let's eat"],
+    ["見よう", "みよう", "let's see"],
+    ["始めよう", "はじめよう", "let's begin"],
+    ["出かけよう", "でかけよう", "let's go out"],
+    ["調べよう", "しらべよう", "let's investigate"]
+  ],
+  grammar: {
+    pattern: "〜よう (RU-verb volitional)",
+    meaning: "Let's ~ / I shall ~",
+    example_jp: "今日は早く寝よう。",
+    example_en: "Let's go to bed early today."
+  },
+  practice: "Conjugate 10 RU-verbs into volitional form. Write invitations using each.",
+  tip: "The volitional form is casual. For polite invitations, use ましょう instead: 食べましょう (let's eat)."
+});
+
+curriculum.push({
+  day: 485,
+  phaseNum: 11,
+  phaseName: "N4 Verbs",
+  week: 70,
+  title: "Volitional Form: Group 1 U-Verbs",
+  intro: "U-verbs change their final kana to the お-row: 行く→行こう, 書く→書こう.",
+  type: "verbs",
+  chars: [
+    ["行く→行こう", "let's go"],
+    ["書く→書こう", "let's write"],
+    ["読む→読もう", "let's read"],
+    ["飲む→飲もう", "let's drink"],
+    ["話す→話そう", "let's talk"]
+  ],
+  vocab: [
+    ["行こう", "いこう", "let's go"],
+    ["書こう", "かこう", "let's write"],
+    ["読もう", "よもう", "let's read"],
+    ["遊ぼう", "あそぼう", "let's play"],
+    ["帰ろう", "かえろう", "let's go home"]
+  ],
+  grammar: {
+    pattern: "〜おう (U-verb volitional)",
+    meaning: "Let's ~ / I shall ~ (U-verb)",
+    example_jp: "みんなで公園に行こう！",
+    example_en: "Let's all go to the park!"
+  },
+  practice: "Conjugate 10 U-verbs to volitional. Write casual invitations to friends.",
+  tip: "The お-row pattern: く→こう, む→もう, す→そう, つ→とう, ぶ→ぼう, ぬ→のう, ぐ→ごう, う→おう, る→ろう."
+});
+
+curriculum.push({
+  day: 486,
+  phaseNum: 11,
+  phaseName: "N4 Verbs",
+  week: 70,
+  title: "Volitional Form: Irregular Verbs",
+  intro: "する→しよう, くる→こよう. Also: polite forms ましょう for all verb groups.",
+  type: "verbs",
+  chars: [
+    ["する→しよう", "let's do"],
+    ["くる→こよう", "let's come"],
+    ["勉強する→勉強しよう", "let's study"],
+    ["食べる→食べましょう", "let's eat (polite)"],
+    ["行く→行きましょう", "let's go (polite)"]
+  ],
+  vocab: [
+    ["しよう", "しよう", "let's do"],
+    ["こよう", "こよう", "let's come"],
+    ["散歩しよう", "さんぽしよう", "let's take a walk"],
+    ["出発しましょう", "しゅっぱつしましょう", "let's depart"],
+    ["相談しよう", "そうだんしよう", "let's discuss"]
+  ],
+  grammar: {
+    pattern: "する→しよう / くる→こよう / 〜ましょう",
+    meaning: "Irregular volitional + polite form",
+    example_jp: "そろそろ出発しましょう。",
+    example_en: "Let's depart soon."
+  },
+  practice: "Write 5 casual invitations (よう) and 5 polite ones (ましょう). Notice the difference in tone.",
+  tip: "ましょう is formed from ます-stem + しょう. It works for ALL verb groups — the universal polite volitional."
+});
+
+curriculum.push({
+  day: 487,
+  phaseNum: 11,
+  phaseName: "N4 Verbs",
+  week: 70,
+  title: "Volitional + と思う: Expressing Intentions",
+  intro: "よう＋と思う means 'I think I'll do' or 'I'm planning to do.' It expresses personal intention.",
+  type: "verbs",
+  chars: [
+    ["食べようと思う", "I think I'll eat"],
+    ["行こうと思う", "I think I'll go"],
+    ["勉強しようと思う", "I think I'll study"],
+    ["始めようと思う", "I think I'll start"],
+    ["やめようと思う", "I think I'll quit"]
+  ],
+  vocab: [
+    ["思う", "おもう", "to think"],
+    ["計画", "けいかく", "plan"],
+    ["予定", "よてい", "schedule"],
+    ["目標", "もくひょう", "goal"],
+    ["将来", "しょうらい", "future"]
+  ],
+  grammar: {
+    pattern: "〜ようと思う / 〜ようと思っている",
+    meaning: "I think I'll ~ / I'm thinking of ~ing",
+    example_jp: "来年、日本に行こうと思っています。",
+    example_en: "I'm thinking of going to Japan next year."
+  },
+  practice: "Write 5 intentions with ようと思う and 5 ongoing plans with ようと思っている.",
+  tip: "ようと思う = just decided. ようと思っている = have been planning for a while. The ている adds duration."
+});
+
+curriculum.push({
+  day: 488,
+  phaseNum: 11,
+  phaseName: "N4 Verbs",
+  week: 70,
+  title: "Volitional + とする: Attempting to Do",
+  intro: "よう＋とする means 'try to do' or 'be about to do.' It implies effort or imminence.",
+  type: "verbs",
+  chars: [
+    ["食べようとする", "try to eat"],
+    ["逃げようとする", "try to escape"],
+    ["立ち上がろうとする", "try to stand up"],
+    ["ドアを開けようとした", "tried to open the door"],
+    ["眠ろうとしたが", "tried to sleep but"]
+  ],
+  vocab: [
+    ["努力", "どりょく", "effort"],
+    ["試す", "ためす", "to try"],
+    ["挑戦", "ちょうせん", "challenge"],
+    ["失敗", "しっぱい", "failure"],
+    ["成功", "せいこう", "success"]
+  ],
+  grammar: {
+    pattern: "〜ようとする",
+    meaning: "Try to ~ / Be about to ~",
+    example_jp: "ドアを開けようとしたが、鍵がかかっていた。",
+    example_en: "I tried to open the door, but it was locked."
+  },
+  practice: "Write 5 sentences about failed attempts using ようとしたが and 5 about succeeding using ようとして.",
+  tip: "ようとする emphasizes the attempt, not the result. It often pairs with が (but) to show the attempt failed."
+});
+
+curriculum.push({
+  day: 489,
+  phaseNum: 11,
+  phaseName: "N4 Verbs",
+  week: 70,
+  title: "ましょうか: Offering Help",
+  intro: "ましょうか turns a polite volitional into an offer: 'Shall I do ~?' Very useful for polite interactions.",
+  type: "verbs",
+  chars: [
+    ["手伝いましょうか", "shall I help?"],
+    ["持ちましょうか", "shall I carry it?"],
+    ["開けましょうか", "shall I open it?"],
+    ["説明しましょうか", "shall I explain?"],
+    ["案内しましょうか", "shall I guide you?"]
+  ],
+  vocab: [
+    ["手伝う", "てつだう", "to help"],
+    ["持つ", "もつ", "to hold/carry"],
+    ["案内する", "あんないする", "to guide"],
+    ["説明する", "せつめいする", "to explain"],
+    ["紹介する", "しょうかいする", "to introduce"]
+  ],
+  grammar: {
+    pattern: "〜ましょうか",
+    meaning: "Shall I ~? (offering help)",
+    example_jp: "重そうですね。持ちましょうか。",
+    example_en: "That looks heavy. Shall I carry it?"
+  },
+  practice: "Write 5 offers of help using ましょうか in different situations (office, shop, station, home, street).",
+  tip: "ましょうか is one of the most useful polite expressions. Japanese people use it constantly to show consideration."
+});
+
+curriculum.push({
+  day: 490,
+  phaseNum: 11,
+  phaseName: "N4 Verbs",
+  week: 70,
+  title: "Volitional Form: Practice Day",
+  intro: "Review all volitional uses: invitations (よう), intentions (ようと思う), attempts (ようとする), offers (ましょうか).",
+  type: "verbs",
+  chars: [
+    ["行こう", "let's go"],
+    ["行こうと思う", "I think I'll go"],
+    ["行こうとした", "tried to go"],
+    ["行きましょうか", "shall I go?"],
+    ["行きましょう", "let's go (polite)"]
+  ],
+  vocab: [
+    ["一緒に", "いっしょに", "together"],
+    ["そろそろ", "そろそろ", "soon/about time"],
+    ["ぜひ", "ぜひ", "by all means"],
+    ["よかったら", "よかったら", "if you'd like"],
+    ["どうぞ", "どうぞ", "please (go ahead)"]
+  ],
+  grammar: {
+    pattern: "Volitional form comprehensive review",
+    meaning: "All volitional patterns",
+    example_jp: "よかったら、一緒に食べに行きましょう。",
+    example_en: "If you'd like, let's go eat together."
+  },
+  practice: "Write a conversation between two friends making weekend plans using all volitional patterns.",
+  tip: "Volitional is your go-to for suggesting and planning. Master it and your Japanese sounds much more natural."
+});
+
+curriculum.push({
+  day: 491,
+  phaseNum: 11,
+  phaseName: "N4 Verbs",
+  week: 71,
+  title: "Potential Form Review + New N4 Verbs",
+  intro: "Quick review of potential form (can do) with new N4-level verbs.",
+  type: "verbs",
+  chars: [
+    ["届ける→届けられる", "can deliver"],
+    ["届く→届く", "can reach (intransitive)"],
+    ["伝える→伝えられる", "can convey"],
+    ["受ける→受けられる", "can receive"],
+    ["決める→決められる", "can decide"]
+  ],
+  vocab: [
+    ["届ける", "とどける", "to deliver"],
+    ["届く", "とどく", "to reach/arrive"],
+    ["伝える", "つたえる", "to convey/tell"],
+    ["受ける", "うける", "to receive/take"],
+    ["決める", "きめる", "to decide"]
+  ],
+  grammar: {
+    pattern: "Potential form review",
+    meaning: "Expressing ability with new N4 verbs",
+    example_jp: "日本語でメッセージを伝えられるようになった。",
+    example_en: "I've become able to convey messages in Japanese."
+  },
+  practice: "Write 5 things you can now do in Japanese using potential form + ようになった.",
+  tip: "Potential + ようになった (have become able to) is a powerful pattern for expressing growth and progress."
+});
+
+curriculum.push({
+  day: 492,
+  phaseNum: 11,
+  phaseName: "N4 Verbs",
+  week: 71,
+  title: "Transitive/Intransitive Pairs 1: 開く/開ける, 閉まる/閉める",
+  intro: "Japanese has pairs of verbs where one is transitive (someone does it) and one is intransitive (it happens).",
+  type: "verbs",
+  chars: [
+    ["ドアが開く", "door opens (by itself)"],
+    ["ドアを開ける", "open the door"],
+    ["窓が閉まる", "window closes"],
+    ["窓を閉める", "close the window"],
+    ["電気がつく", "light turns on"]
+  ],
+  vocab: [
+    ["開く", "あく", "to open (intransitive)"],
+    ["開ける", "あける", "to open (transitive)"],
+    ["閉まる", "しまる", "to close (intransitive)"],
+    ["閉める", "しめる", "to close (transitive)"],
+    ["つく", "つく", "to turn on (intransitive)"]
+  ],
+  grammar: {
+    pattern: "Intransitive (〜が) vs Transitive (〜を)",
+    meaning: "Something happens vs Someone does it",
+    example_jp: "風でドアが開いた。/ 私がドアを開けた。",
+    example_en: "The door opened from the wind. / I opened the door."
+  },
+  practice: "For each pair, write one intransitive sentence (it happened) and one transitive sentence (I did it).",
+  tip: "Key pattern: intransitive uses が, transitive uses を. If it happens by itself → intransitive. If someone does it → transitive."
+});
+
+curriculum.push({
+  day: 493,
+  phaseNum: 11,
+  phaseName: "N4 Verbs",
+  week: 71,
+  title: "Transitive/Intransitive Pairs 2: 集まる/集める, 決まる/決める",
+  intro: "More important verb pairs. Notice the pattern: -ある is often intransitive, -える is often transitive.",
+  type: "verbs",
+  chars: [
+    ["人が集まる", "people gather"],
+    ["人を集める", "gather people"],
+    ["日が決まる", "date is decided"],
+    ["日を決める", "decide the date"],
+    ["値段が下がる", "price drops"]
+  ],
+  vocab: [
+    ["集まる", "あつまる", "to gather (intransitive)"],
+    ["集める", "あつめる", "to collect (transitive)"],
+    ["決まる", "きまる", "to be decided (intransitive)"],
+    ["決める", "きめる", "to decide (transitive)"],
+    ["下がる", "さがる", "to go down (intransitive)"]
+  ],
+  grammar: {
+    pattern: "〜まる/〜める pairs",
+    meaning: "Intransitive -aru / Transitive -eru pattern",
+    example_jp: "会議の日が決まった。/ 会議の日を決めた。",
+    example_en: "The meeting date was decided. / I decided the meeting date."
+  },
+  practice: "Write pairs of sentences for: 始まる/始める, 見つかる/見つける, 変わる/変える.",
+  tip: "The -aru/-eru pattern covers many pairs: 決まる/決める, 集まる/集める, 始まる/始める, 変わる/変える."
+});
+
+curriculum.push({
+  day: 494,
+  phaseNum: 11,
+  phaseName: "N4 Verbs",
+  week: 71,
+  title: "Transitive/Intransitive Pairs 3: 変わる/変える, 見つかる/見つける",
+  intro: "More pairs with the same -aru/-eru pattern, plus some irregular pairs.",
+  type: "verbs",
+  chars: [
+    ["季節が変わる", "season changes"],
+    ["髪型を変える", "change hairstyle"],
+    ["鍵が見つかる", "key is found"],
+    ["犯人を見つける", "find the criminal"],
+    ["仕事が増える", "work increases"]
+  ],
+  vocab: [
+    ["変わる", "かわる", "to change (intransitive)"],
+    ["変える", "かえる", "to change (transitive)"],
+    ["見つかる", "みつかる", "to be found (intransitive)"],
+    ["見つける", "みつける", "to find (transitive)"],
+    ["増える", "ふえる", "to increase (intransitive)"]
+  ],
+  grammar: {
+    pattern: "More transitive/intransitive pairs",
+    meaning: "Expanding verb pair vocabulary",
+    example_jp: "財布がやっと見つかった！",
+    example_en: "My wallet was finally found!"
+  },
+  practice: "Write a short story using at least 5 transitive/intransitive pairs naturally.",
+  tip: "When describing results or states, Japanese prefers intransitive: 窓が開いている (window is open) rather than 窓を開けてある."
+});
+
+curriculum.push({
+  day: 495,
+  phaseNum: 11,
+  phaseName: "N4 Verbs",
+  week: 71,
+  title: "Compound Verbs 1: 持っていく, 持ってくる",
+  intro: "Compound verbs combine two verbs. て-form + いく/くる express movement away/toward.",
+  type: "verbs",
+  chars: [
+    ["持っていく", "take (away)"],
+    ["持ってくる", "bring (here)"],
+    ["連れていく", "take someone along"],
+    ["連れてくる", "bring someone"],
+    ["送っていく", "see someone off"]
+  ],
+  vocab: [
+    ["持っていく", "もっていく", "to take along"],
+    ["持ってくる", "もってくる", "to bring"],
+    ["連れていく", "つれていく", "to take (a person)"],
+    ["連れてくる", "つれてくる", "to bring (a person)"],
+    ["送っていく", "おくっていく", "to see off / escort"]
+  ],
+  grammar: {
+    pattern: "〜ていく / 〜てくる",
+    meaning: "Going/coming while doing ~ (compound direction)",
+    example_jp: "パーティーにケーキを持っていきます。",
+    example_en: "I will bring a cake to the party."
+  },
+  practice: "Write 5 sentences with ていく (moving away) and 5 with てくる (moving toward).",
+  tip: "Think of it as direction: ていく = verb + go away. てくる = verb + come here. 持っていく = hold + go = take."
+});
+
+curriculum.push({
+  day: 496,
+  phaseNum: 11,
+  phaseName: "N4 Verbs",
+  week: 71,
+  title: "Compound Verbs 2: 取り出す, 飛び出す, 走り出す",
+  intro: "〜出す compounds express 'starting to' or 'bursting out.' They add sudden or dramatic action.",
+  type: "verbs",
+  chars: [
+    ["取り出す", "take out"],
+    ["飛び出す", "jump out"],
+    ["走り出す", "start running"],
+    ["泣き出す", "burst into tears"],
+    ["笑い出す", "burst out laughing"]
+  ],
+  vocab: [
+    ["取り出す", "とりだす", "to take out"],
+    ["飛び出す", "とびだす", "to jump/fly out"],
+    ["走り出す", "はしりだす", "to start running"],
+    ["泣き出す", "なきだす", "to burst into tears"],
+    ["降り出す", "ふりだす", "to start raining"]
+  ],
+  grammar: {
+    pattern: "〜出す (compound verb: start/burst out)",
+    meaning: "Start doing ~ suddenly",
+    example_jp: "子どもが急に泣き出した。",
+    example_en: "The child suddenly burst into tears."
+  },
+  practice: "Write 5 sentences about sudden events using 〜出す compounds.",
+  tip: "〜出す has two meanings: physically taking out (取り出す) and suddenly starting (泣き出す). Context makes it clear."
+});
+
+curriculum.push({
+  day: 497,
+  phaseNum: 11,
+  phaseName: "N4 Verbs",
+  week: 71,
+  title: "Compound Verbs 3: 思い出す, 申し込む",
+  intro: "More compound verbs common at N4 level. These function as single vocabulary items.",
+  type: "verbs",
+  chars: [
+    ["思い出す", "remember/recall"],
+    ["申し込む", "apply for"],
+    ["打ち合わせる", "meet/discuss"],
+    ["間に合う", "be in time"],
+    ["片付ける", "tidy up"]
+  ],
+  vocab: [
+    ["思い出す", "おもいだす", "to remember/recall"],
+    ["申し込む", "もうしこむ", "to apply for"],
+    ["間に合う", "まにあう", "to be in time"],
+    ["片付ける", "かたづける", "to tidy up"],
+    ["引っ越す", "ひっこす", "to move house"]
+  ],
+  grammar: {
+    pattern: "Common N4 compound verbs",
+    meaning: "Multi-verb compounds used as vocabulary",
+    example_jp: "締め切りに間に合わなかった。",
+    example_en: "I didn't make it in time for the deadline."
+  },
+  practice: "Use each compound verb in a sentence. Try to use them in a short diary entry about your week.",
+  tip: "Compound verbs are a huge part of intermediate Japanese. Learning them greatly expands your vocabulary."
+});
+
+curriculum.push({
+  day: 498,
+  phaseNum: 11,
+  phaseName: "N4 Verbs",
+  week: 72,
+  title: "Verb Conjugation Review: All Forms",
+  intro: "Comprehensive review of all verb forms learned: causative, passive, causative-passive, conditional, and volitional.",
+  type: "verbs",
+  chars: [
+    ["食べさせる", "make eat (causative)"],
+    ["食べられる", "be eaten (passive)"],
+    ["食べさせられる", "be made to eat"],
+    ["食べれば", "if eat (conditional)"],
+    ["食べよう", "let's eat (volitional)"]
+  ],
+  vocab: [
+    ["活用", "かつよう", "conjugation"],
+    ["形", "かたち", "form/shape"],
+    ["動詞", "どうし", "verb"],
+    ["変換", "へんかん", "conversion"],
+    ["暗記", "あんき", "memorization"]
+  ],
+  grammar: {
+    pattern: "All conjugation forms review",
+    meaning: "Complete verb form overview",
+    example_jp: "日本語の動詞の活用をしっかり復習しよう。",
+    example_en: "Let's thoroughly review Japanese verb conjugations."
+  },
+  practice: "Create a full conjugation chart for 5 verbs (one RU, one U, する, くる, and one compound).",
+  tip: "Make a wall chart with all conjugation forms. Visual reference helps enormously during review."
+});
+
+curriculum.push({
+  day: 499,
+  phaseNum: 11,
+  phaseName: "N4 Verbs",
+  week: 72,
+  title: "N4 Verb Pairs and Compounds Review",
+  intro: "Review all transitive/intransitive pairs and compound verbs from this phase.",
+  type: "verbs",
+  chars: [
+    ["開く↔開ける", "open (intr/tr)"],
+    ["閉まる↔閉める", "close (intr/tr)"],
+    ["持っていく", "take along"],
+    ["思い出す", "recall"],
+    ["間に合う", "be in time"]
+  ],
+  vocab: [
+    ["対", "つい", "pair/opposite"],
+    ["組み合わせ", "くみあわせ", "combination"],
+    ["自動詞", "じどうし", "intransitive verb"],
+    ["他動詞", "たどうし", "transitive verb"],
+    ["複合動詞", "ふくごうどうし", "compound verb"]
+  ],
+  grammar: {
+    pattern: "Verb pairs and compounds review",
+    meaning: "Transitive/intransitive and compound verbs",
+    example_jp: "ドアが開いた。→ ドアを開けた。（自動詞↔他動詞）",
+    example_en: "The door opened. → I opened the door. (intransitive ↔ transitive)"
+  },
+  practice: "Write a conversation using at least 3 verb pairs and 3 compound verbs naturally.",
+  tip: "Verb pairs test your understanding of who is doing the action. Compounds test vocabulary. Both are N4 essentials."
+});
+
+curriculum.push({
+  day: 500,
+  phaseNum: 11,
+  phaseName: "N4 Verbs",
+  week: 72,
+  title: "Comprehensive N4 Verb Test Prep",
+  intro: "Final verb phase review covering everything from causative to compound verbs. Test yourself!",
+  type: "verbs",
+  chars: [
+    ["させる/される/させられる", "causative/passive/caus-pass"],
+    ["ば/たら/なら/と", "four conditionals"],
+    ["よう/ようと思う", "volitional/intention"],
+    ["持っていく/持ってくる", "take/bring"],
+    ["開く/開ける", "open (intr/tr)"]
+  ],
+  vocab: [
+    ["完了", "かんりょう", "completion"],
+    ["達成", "たっせい", "achievement"],
+    ["自信", "じしん", "confidence"],
+    ["実力", "じつりょく", "true ability"],
+    ["合格", "ごうかく", "passing (exam)"]
+  ],
+  grammar: {
+    pattern: "N4 verb comprehensive review",
+    meaning: "All N4 verb patterns in one lesson",
+    example_jp: "N4の動詞の勉強が終わった。自信を持って次に進もう。",
+    example_en: "N4 verb study is complete. Let's move forward with confidence."
+  },
+  practice: "Take a practice test: conjugate 20 random verbs into all forms. Score yourself and review any mistakes.",
+  tip: "Congratulations on completing the N4 Verbs phase! You now command the most important verb forms for intermediate Japanese."
+});
+
+// ═══════════════════════════════════════════════════════════════════════════
+// PHASE 12: N4 GRAMMAR (Days 501-555)
+// 55 days of N4-level grammar patterns
+// ═══════════════════════════════════════════════════════════════════════════
+
+curriculum.push({
+  day: 501,
+  phaseNum: 12,
+  phaseName: "N4 Grammar",
+  week: Math.floor((501 - 1) / 7) + 1,
+  title: "Expressing Ability: ことができる",
+  intro: "Learn to express ability and possibility using ことができる. This versatile pattern attaches to the dictionary form of verbs to say 'can do' something.",
+  type: "grammar",
+  chars: [],
+  vocab: [
+    ["運転", "うんてん", "driving"],
+    ["泳ぐ", "およぐ", "to swim"],
+    ["料理", "りょうり", "cooking"],
+    ["外国語", "がいこくご", "foreign language"],
+    ["可能", "かのう", "possible"]
+  ],
+  grammar: {
+    pattern: "Verb（辞書形）＋ことができる",
+    meaning: "Can do ~; be able to ~",
+    example_jp: "日本語を話すことができます。",
+    example_en: "I can speak Japanese."
+  },
+  practice: "Make five sentences about things you can do using ことができる. Try using different verbs like 泳ぐ, 運転する, and 料理する.",
+  tip: "ことができる is more formal than the potential form of verbs. Use it in writing and formal speech."
+});
+
+curriculum.push({
+  day: 502,
+  phaseNum: 12,
+  phaseName: "N4 Grammar",
+  week: Math.floor((502 - 1) / 7) + 1,
+  title: "Becoming Able: ようになる",
+  intro: "Learn to express a change in ability or state using ようになる. This pattern describes something that has gradually become possible or habitual.",
+  type: "grammar",
+  chars: [],
+  vocab: [
+    ["漢字", "かんじ", "kanji"],
+    ["読める", "よめる", "to be able to read"],
+    ["慣れる", "なれる", "to get used to"],
+    ["最近", "さいきん", "recently"],
+    ["少しずつ", "すこしずつ", "little by little"]
+  ],
+  grammar: {
+    pattern: "Verb（辞書形／ない形）＋ようになる",
+    meaning: "To come to ~; to reach the point where ~",
+    example_jp: "漢字が読めるようになりました。",
+    example_en: "I became able to read kanji."
+  },
+  practice: "Describe three changes in your abilities over the past year using ようになる. Think about skills you have developed.",
+  tip: "ようになる emphasizes a gradual change over time, unlike ことができる which simply states current ability."
+});
+
+curriculum.push({
+  day: 503,
+  phaseNum: 12,
+  phaseName: "N4 Grammar",
+  week: Math.floor((503 - 1) / 7) + 1,
+  title: "Making an Effort: ようにする",
+  intro: "Learn to express deliberate effort or habit-forming using ようにする. This pattern shows you are making a conscious effort to do or not do something.",
+  type: "grammar",
+  chars: [],
+  vocab: [
+    ["早起き", "はやおき", "waking up early"],
+    ["野菜", "やさい", "vegetables"],
+    ["毎日", "まいにち", "every day"],
+    ["健康", "けんこう", "health"],
+    ["気をつける", "きをつける", "to be careful"]
+  ],
+  grammar: {
+    pattern: "Verb（辞書形／ない形）＋ようにする",
+    meaning: "To try to ~; to make sure to ~",
+    example_jp: "毎日野菜を食べるようにしています。",
+    example_en: "I try to eat vegetables every day."
+  },
+  practice: "Write five sentences about healthy habits you try to maintain using ようにする and ようにしている.",
+  tip: "ようにしている (ongoing form) implies you have been making this effort as a habit, not just a one-time decision."
+});
+
+curriculum.push({
+  day: 504,
+  phaseNum: 12,
+  phaseName: "N4 Grammar",
+  week: Math.floor((504 - 1) / 7) + 1,
+  title: "Trying Something: てみる",
+  intro: "Learn to express trying something out using てみる. This pattern conveys the idea of doing something to see what happens or what it is like.",
+  type: "grammar",
+  chars: [],
+  vocab: [
+    ["着る", "きる", "to wear"],
+    ["納豆", "なっとう", "fermented soybeans"],
+    ["初めて", "はじめて", "for the first time"],
+    ["一度", "いちど", "once"],
+    ["面白い", "おもしろい", "interesting"]
+  ],
+  grammar: {
+    pattern: "Verb（て形）＋みる",
+    meaning: "To try doing ~; to do ~ and see",
+    example_jp: "納豆を食べてみました。",
+    example_en: "I tried eating natto (to see what it was like)."
+  },
+  practice: "List five things you would like to try and express them using てみたい. Then write about three things you have already tried using てみた.",
+  tip: "てみる implies curiosity or experimentation. It is different from trying hard to do something, which uses ようとする."
+});
+
+curriculum.push({
+  day: 505,
+  phaseNum: 12,
+  phaseName: "N4 Grammar",
+  week: Math.floor((505 - 1) / 7) + 1,
+  title: "Completion and Regret: てしまう",
+  intro: "Learn to express completion or regret using てしまう. This pattern can mean either doing something completely or doing something unfortunate by accident.",
+  type: "grammar",
+  chars: [],
+  vocab: [
+    ["忘れる", "わすれる", "to forget"],
+    ["壊す", "こわす", "to break"],
+    ["財布", "さいふ", "wallet"],
+    ["失くす", "なくす", "to lose"],
+    ["全部", "ぜんぶ", "all; everything"]
+  ],
+  grammar: {
+    pattern: "Verb（て形）＋しまう",
+    meaning: "To end up doing ~; to completely do ~",
+    example_jp: "財布を失くしてしまいました。",
+    example_en: "I ended up losing my wallet."
+  },
+  practice: "Write three sentences about unfortunate things that happened using てしまう, and two sentences about completing tasks using てしまう.",
+  tip: "Context determines whether てしまう expresses regret or completion. 宿題をやってしまった can mean 'I finished my homework' or 'I accidentally did my homework' depending on tone."
+});
+
+curriculum.push({
+  day: 506,
+  phaseNum: 12,
+  phaseName: "N4 Grammar",
+  week: Math.floor((506 - 1) / 7) + 1,
+  title: "Casual Completion: ちゃう・じゃう",
+  intro: "Learn the casual contractions ちゃう and じゃう, which are the informal spoken forms of てしまう and でしまう. These are very common in everyday conversation.",
+  type: "grammar",
+  chars: [],
+  vocab: [
+    ["食べちゃう", "たべちゃう", "to end up eating"],
+    ["飲んじゃう", "のんじゃう", "to end up drinking"],
+    ["寝ちゃう", "ねちゃう", "to fall asleep"],
+    ["遅刻", "ちこく", "being late"],
+    ["つい", "つい", "unintentionally"]
+  ],
+  grammar: {
+    pattern: "Verb（て→ちゃう / で→じゃう）",
+    meaning: "Casual form of てしまう / でしまう",
+    example_jp: "ケーキを全部食べちゃった。",
+    example_en: "I ended up eating all the cake."
+  },
+  practice: "Rewrite five てしまう sentences from yesterday into casual ちゃう/じゃう forms. Practice saying them aloud to get comfortable with the contraction.",
+  tip: "ちゃう comes from てしまう and じゃう comes from でしまう. In even more casual speech, you may hear ちゃった and じゃった for past tense."
+});
+
+curriculum.push({
+  day: 507,
+  phaseNum: 12,
+  phaseName: "N4 Grammar",
+  week: Math.floor((507 - 1) / 7) + 1,
+  title: "Advance Preparation: ておく",
+  intro: "Learn to express doing something in advance or for future convenience using ておく. This pattern emphasizes preparation or leaving something in a certain state.",
+  type: "grammar",
+  chars: [],
+  vocab: [
+    ["予約", "よやく", "reservation"],
+    ["準備", "じゅんび", "preparation"],
+    ["調べる", "しらべる", "to investigate"],
+    ["冷蔵庫", "れいぞうこ", "refrigerator"],
+    ["事前", "じぜん", "in advance"]
+  ],
+  grammar: {
+    pattern: "Verb（て形）＋おく",
+    meaning: "To do ~ in advance; to leave ~ as is",
+    example_jp: "レストランを予約しておきました。",
+    example_en: "I reserved the restaurant in advance."
+  },
+  practice: "Think of a trip you are planning. Write five preparation sentences using ておく for things you need to do before the trip.",
+  tip: "In casual speech, ておく contracts to とく. For example, 買っておく becomes 買っとく."
+});
+
+curriculum.push({
+  day: 508,
+  phaseNum: 12,
+  phaseName: "N4 Grammar",
+  week: Math.floor((508 - 1) / 7) + 1,
+  title: "Resulting State: てある",
+  intro: "Learn to describe a state resulting from a deliberate action using てある. This pattern focuses on the current state that exists because someone did something intentionally.",
+  type: "grammar",
+  chars: [],
+  vocab: [
+    ["窓", "まど", "window"],
+    ["開ける", "あける", "to open"],
+    ["閉める", "しめる", "to close"],
+    ["貼る", "はる", "to stick; to post"],
+    ["置く", "おく", "to place"]
+  ],
+  grammar: {
+    pattern: "Verb（て形）＋ある",
+    meaning: "Something has been done (and remains in that state)",
+    example_jp: "窓が開けてあります。",
+    example_en: "The window has been opened (and is still open)."
+  },
+  practice: "Look around your room and describe five things using てある. Focus on states that exist because someone deliberately did something.",
+  tip: "Compare: ドアが開いている (the door is open — describes a state) vs ドアが開けてある (someone opened the door and left it open — implies intentional action)."
+});
+
+curriculum.push({
+  day: 509,
+  phaseNum: 12,
+  phaseName: "N4 Grammar",
+  week: Math.floor((509 - 1) / 7) + 1,
+  title: "In the Middle Of: ているところ",
+  intro: "Learn to express being right in the middle of doing something using ているところ. This pattern precisely pinpoints the moment of an ongoing action.",
+  type: "grammar",
+  chars: [],
+  vocab: [
+    ["会議", "かいぎ", "meeting"],
+    ["最中", "さいちゅう", "in the middle of"],
+    ["電話", "でんわ", "telephone"],
+    ["作業", "さぎょう", "work; task"],
+    ["ちょうど", "ちょうど", "exactly; just"]
+  ],
+  grammar: {
+    pattern: "Verb（ている）＋ところ",
+    meaning: "Right in the middle of doing ~",
+    example_jp: "今、ご飯を食べているところです。",
+    example_en: "I am right in the middle of eating."
+  },
+  practice: "Imagine someone calls you at different times of day. Write five responses using ているところ to explain what you are doing at that moment.",
+  tip: "ところ changes meaning with different verb forms: するところ (about to do), しているところ (in the middle of doing), したところ (just did)."
+});
+
+curriculum.push({
+  day: 510,
+  phaseNum: 12,
+  phaseName: "N4 Grammar",
+  week: Math.floor((510 - 1) / 7) + 1,
+  title: "Just Did: たばかり",
+  intro: "Learn to express that something just happened using たばかり. This pattern emphasizes the recentness of a completed action.",
+  type: "grammar",
+  chars: [],
+  vocab: [
+    ["引っ越す", "ひっこす", "to move (residence)"],
+    ["届く", "とどく", "to arrive; to be delivered"],
+    ["卒業", "そつぎょう", "graduation"],
+    ["始まる", "はじまる", "to begin"],
+    ["さっき", "さっき", "a moment ago"]
+  ],
+  grammar: {
+    pattern: "Verb（た形）＋ばかり",
+    meaning: "Just did ~; only just ~",
+    example_jp: "日本に来たばかりです。",
+    example_en: "I just came to Japan."
+  },
+  practice: "Write five sentences about things that just happened recently using たばかり. Include situations at work, school, and daily life.",
+  tip: "たばかり emphasizes subjective recentness. Even if some time has passed, you can use it if it still feels recent to you."
+});
+
+curriculum.push({
+  day: 511,
+  phaseNum: 12,
+  phaseName: "N4 Grammar",
+  week: Math.floor((511 - 1) / 7) + 1,
+  title: "Doing for Others: てあげる",
+  intro: "Learn to express doing a favor for someone using てあげる. This pattern is part of the giving and receiving verb system that is essential in Japanese.",
+  type: "grammar",
+  chars: [],
+  vocab: [
+    ["手伝う", "てつだう", "to help"],
+    ["送る", "おくる", "to send; to escort"],
+    ["教える", "おしえる", "to teach"],
+    ["貸す", "かす", "to lend"],
+    ["親切", "しんせつ", "kind; kindness"]
+  ],
+  grammar: {
+    pattern: "Verb（て形）＋あげる",
+    meaning: "To do ~ for someone (as a favor)",
+    example_jp: "友達に日本語を教えてあげました。",
+    example_en: "I taught Japanese to my friend (as a favor)."
+  },
+  practice: "Write five sentences about favors you have done for others using てあげる. Think about things you did for friends, family, or coworkers.",
+  tip: "Be careful using てあげる about yourself too much, as it can sound boastful. It is safer to use it when offering help: 持ってあげましょうか？"
+});
+
+curriculum.push({
+  day: 512,
+  phaseNum: 12,
+  phaseName: "N4 Grammar",
+  week: Math.floor((512 - 1) / 7) + 1,
+  title: "Receiving Favors: てもらう",
+  intro: "Learn to express receiving a favor from someone using てもらう. This pattern shows gratitude by framing the action from the receiver's perspective.",
+  type: "grammar",
+  chars: [],
+  vocab: [
+    ["直す", "なおす", "to fix; to correct"],
+    ["翻訳", "ほんやく", "translation"],
+    ["説明", "せつめい", "explanation"],
+    ["紹介", "しょうかい", "introduction"],
+    ["助かる", "たすかる", "to be saved; to be helpful"]
+  ],
+  grammar: {
+    pattern: "Verb（て形）＋もらう",
+    meaning: "To have someone do ~ for me; to receive the favor of ~",
+    example_jp: "先生に作文を直してもらいました。",
+    example_en: "I had the teacher correct my essay."
+  },
+  practice: "Write five sentences about favors others have done for you using てもらう. Use に to mark the person who did the favor.",
+  tip: "てもらう is very useful for polite requests too: てもらえますか is a common way to ask someone to do something for you."
+});
+
+curriculum.push({
+  day: 513,
+  phaseNum: 12,
+  phaseName: "N4 Grammar",
+  week: Math.floor((513 - 1) / 7) + 1,
+  title: "Someone Does for Me: てくれる",
+  intro: "Learn to express someone doing something for you or your in-group using てくれる. This pattern highlights your gratitude for the other person's action.",
+  type: "grammar",
+  chars: [],
+  vocab: [
+    ["迎える", "むかえる", "to welcome; to pick up"],
+    ["心配", "しんぱい", "worry"],
+    ["連絡", "れんらく", "contact"],
+    ["応援", "おうえん", "support; cheering"],
+    ["優しい", "やさしい", "kind; gentle"]
+  ],
+  grammar: {
+    pattern: "Verb（て形）＋くれる",
+    meaning: "Someone does ~ for me (and I appreciate it)",
+    example_jp: "母が空港まで迎えに来てくれました。",
+    example_en: "My mother came to pick me up at the airport (and I appreciate it)."
+  },
+  practice: "Write five sentences about kind things others have done for you using てくれる. Compare them with てもらう versions of the same events.",
+  tip: "The difference between てもらう and てくれる is perspective. てもらう emphasizes that I received the favor; てくれる emphasizes the kindness of the giver."
+});
+
+curriculum.push({
+  day: 514,
+  phaseNum: 12,
+  phaseName: "N4 Grammar",
+  week: Math.floor((514 - 1) / 7) + 1,
+  title: "Intentions: つもり",
+  intro: "Learn to express intentions and plans using つもり. This pattern conveys a firm personal intention to do or not do something.",
+  type: "grammar",
+  chars: [],
+  vocab: [
+    ["留学", "りゅうがく", "study abroad"],
+    ["将来", "しょうらい", "future"],
+    ["転職", "てんしょく", "changing jobs"],
+    ["計画", "けいかく", "plan"],
+    ["決める", "きめる", "to decide"]
+  ],
+  grammar: {
+    pattern: "Verb（辞書形／ない形）＋つもり",
+    meaning: "Intend to ~; plan to ~",
+    example_jp: "来年、日本に留学するつもりです。",
+    example_en: "I intend to study abroad in Japan next year."
+  },
+  practice: "Write five sentences about your future plans using つもり. Include both positive intentions (するつもり) and negative intentions (しないつもり).",
+  tip: "つもり expresses a stronger, more decided intention than よていだ. Use つもり for personal resolve and よてい for scheduled plans."
+});
+
+curriculum.push({
+  day: 515,
+  phaseNum: 12,
+  phaseName: "N4 Grammar",
+  week: Math.floor((515 - 1) / 7) + 1,
+  title: "Scheduled Plans: よていだ",
+  intro: "Learn to express scheduled plans and arrangements using よていだ. This pattern is used for concrete plans that have been arranged or decided.",
+  type: "grammar",
+  chars: [],
+  vocab: [
+    ["出張", "しゅっちょう", "business trip"],
+    ["会議", "かいぎ", "meeting"],
+    ["予定", "よてい", "plan; schedule"],
+    ["届く", "とどく", "to arrive"],
+    ["開催", "かいさい", "holding (an event)"]
+  ],
+  grammar: {
+    pattern: "Verb（辞書形）＋予定だ / Noun の予定だ",
+    meaning: "Plan to ~; be scheduled to ~",
+    example_jp: "来週、大阪に出張する予定です。",
+    example_en: "I am scheduled to go on a business trip to Osaka next week."
+  },
+  practice: "Write your schedule for the coming week using よていだ. Include work meetings, social plans, and personal activities.",
+  tip: "よていだ sounds more objective and official than つもり. Use it when reporting plans in professional or formal contexts."
+});
+
+curriculum.push({
+  day: 516,
+  phaseNum: 12,
+  phaseName: "N4 Grammar",
+  week: Math.floor((516 - 1) / 7) + 1,
+  title: "Personal Decisions: ことにする",
+  intro: "Learn to express personal decisions using ことにする. This pattern emphasizes that you have made a deliberate choice about something.",
+  type: "grammar",
+  chars: [],
+  vocab: [
+    ["禁煙", "きんえん", "quitting smoking"],
+    ["引っ越す", "ひっこす", "to move (residence)"],
+    ["辞める", "やめる", "to quit"],
+    ["申し込む", "もうしこむ", "to apply"],
+    ["決心", "けっしん", "determination"]
+  ],
+  grammar: {
+    pattern: "Verb（辞書形／ない形）＋ことにする",
+    meaning: "To decide to ~",
+    example_jp: "来月から毎朝走ることにしました。",
+    example_en: "I decided to run every morning starting next month."
+  },
+  practice: "Write five sentences about decisions you have made recently using ことにした. Include both decisions to do things and decisions not to do things.",
+  tip: "ことにしている means you have decided and are continuing that decision as a habit. For example: 毎日日本語を勉強することにしている。"
+});
+
+curriculum.push({
+  day: 517,
+  phaseNum: 12,
+  phaseName: "N4 Grammar",
+  week: Math.floor((517 - 1) / 7) + 1,
+  title: "External Decisions: ことになる",
+  intro: "Learn to express decisions or outcomes that are determined externally using ことになる. This pattern shows that a situation has been decided by circumstances or others.",
+  type: "grammar",
+  chars: [],
+  vocab: [
+    ["転勤", "てんきん", "job transfer"],
+    ["異動", "いどう", "personnel change"],
+    ["決まる", "きまる", "to be decided"],
+    ["結局", "けっきょく", "in the end"],
+    ["規則", "きそく", "rule; regulation"]
+  ],
+  grammar: {
+    pattern: "Verb（辞書形／ない形）＋ことになる",
+    meaning: "It has been decided that ~; it turns out that ~",
+    example_jp: "来月から東京に転勤することになりました。",
+    example_en: "It has been decided that I will transfer to Tokyo next month."
+  },
+  practice: "Write five sentences about things that have been decided for you or situations that turned out a certain way using ことになる.",
+  tip: "ことにする = I decided (active); ことになる = it was decided / it turned out (passive or external). Japanese speakers often use ことになる even for their own decisions to sound humble."
+});
+
+curriculum.push({
+  day: 518,
+  phaseNum: 12,
+  phaseName: "N4 Grammar",
+  week: Math.floor((518 - 1) / 7) + 1,
+  title: "Purpose: ために",
+  intro: "Learn to express purpose and reason using ために. This pattern can indicate both the purpose of an action and the cause of a situation.",
+  type: "grammar",
+  chars: [],
+  vocab: [
+    ["合格", "ごうかく", "passing (an exam)"],
+    ["試験", "しけん", "exam"],
+    ["貯金", "ちょきん", "savings"],
+    ["努力", "どりょく", "effort"],
+    ["目標", "もくひょう", "goal"]
+  ],
+  grammar: {
+    pattern: "Verb（辞書形）＋ために / Noun の＋ために",
+    meaning: "In order to ~; for the sake of ~",
+    example_jp: "試験に合格するために毎日勉強しています。",
+    example_en: "I study every day in order to pass the exam."
+  },
+  practice: "Write five sentences about things you do for a specific purpose using ために. Think about your goals for study, work, and health.",
+  tip: "ために with a volitional verb expresses purpose: 買うために (in order to buy). With a non-volitional verb or noun, it expresses cause: 台風のために (because of the typhoon)."
+});
+
+curriculum.push({
+  day: 519,
+  phaseNum: 12,
+  phaseName: "N4 Grammar",
+  week: Math.floor((519 - 1) / 7) + 1,
+  title: "Indirect Purpose: ように",
+  intro: "Learn to express indirect purpose or desired outcomes using ように. This pattern is used when the goal involves a change of state or ability rather than a direct action.",
+  type: "grammar",
+  chars: [],
+  vocab: [
+    ["間に合う", "まにあう", "to be in time"],
+    ["忘れない", "わすれない", "to not forget"],
+    ["聞こえる", "きこえる", "to be audible"],
+    ["目覚まし", "めざまし", "alarm clock"],
+    ["大きな声", "おおきなこえ", "loud voice"]
+  ],
+  grammar: {
+    pattern: "Verb（辞書形／ない形）＋ように",
+    meaning: "So that ~; in such a way that ~",
+    example_jp: "忘れないようにメモしました。",
+    example_en: "I took notes so that I would not forget."
+  },
+  practice: "Write five sentences using ように to express things you do to achieve certain outcomes. Compare each with a ために version if possible.",
+  tip: "Use ために when the subject of both clauses is the same and the verb is volitional. Use ように with potential verbs, ない forms, or when subjects differ."
+});
+
+curriculum.push({
+  day: 520,
+  phaseNum: 12,
+  phaseName: "N4 Grammar",
+  week: Math.floor((520 - 1) / 7) + 1,
+  title: "Thinking of Doing: ようと思う",
+  intro: "Learn to express what you are thinking of doing using ようと思う. This pattern conveys a softer intention or something you are considering.",
+  type: "grammar",
+  chars: [],
+  vocab: [
+    ["ダイエット", "ダイエット", "diet"],
+    ["始める", "はじめる", "to begin"],
+    ["相談", "そうだん", "consultation"],
+    ["挑戦", "ちょうせん", "challenge"],
+    ["そろそろ", "そろそろ", "soon; before long"]
+  ],
+  grammar: {
+    pattern: "Verb（意向形）＋と思う／と思っている",
+    meaning: "I think I will ~; I am thinking of doing ~",
+    example_jp: "そろそろダイエットを始めようと思っています。",
+    example_en: "I am thinking of starting a diet soon."
+  },
+  practice: "Write five sentences about things you are considering doing using ようと思う and ようと思っている. Notice the difference in nuance.",
+  tip: "ようと思う suggests a decision just made now, while ようと思っている indicates you have been thinking about it for a while."
+});
+
+curriculum.push({
+  day: 521,
+  phaseNum: 12,
+  phaseName: "N4 Grammar",
+  week: Math.floor((521 - 1) / 7) + 1,
+  title: "Conditional: たら",
+  intro: "Learn the たら conditional, one of the most versatile conditional forms in Japanese. It expresses 'if' or 'when' something happens and is used in a wide range of situations.",
+  type: "grammar",
+  chars: [],
+  vocab: [
+    ["暇", "ひま", "free time"],
+    ["届く", "とどく", "to arrive"],
+    ["天気", "てんき", "weather"],
+    ["宝くじ", "たからくじ", "lottery"],
+    ["もし", "もし", "if"]
+  ],
+  grammar: {
+    pattern: "Verb（た形）＋ら",
+    meaning: "If ~; when ~",
+    example_jp: "雨が降ったら、出かけません。",
+    example_en: "If it rains, I will not go out."
+  },
+  practice: "Write five たら sentences: two about hypothetical situations, two about future plans, and one about a past discovery (something you found out when something happened).",
+  tip: "たら is the most beginner-friendly conditional. When in doubt about which conditional to use, たら is almost always acceptable."
+});
+
+curriculum.push({
+  day: 522,
+  phaseNum: 12,
+  phaseName: "N4 Grammar",
+  week: Math.floor((522 - 1) / 7) + 1,
+  title: "Conditional: ば",
+  intro: "Learn the ば conditional form, which expresses general conditions and hypothetical situations. It focuses on stating a logical condition and its natural result.",
+  type: "grammar",
+  chars: [],
+  vocab: [
+    ["練習", "れんしゅう", "practice"],
+    ["上手", "じょうず", "skillful"],
+    ["安い", "やすい", "cheap"],
+    ["近い", "ちかい", "near"],
+    ["便利", "べんり", "convenient"]
+  ],
+  grammar: {
+    pattern: "Verb（ば形）/ い-Adj（ければ）/ な-Adj・Noun（であれば）",
+    meaning: "If ~; provided that ~",
+    example_jp: "練習すれば、上手になります。",
+    example_en: "If you practice, you will become good at it."
+  },
+  practice: "Write five ば conditional sentences expressing general truths or logical conditions. Try using verbs, い-adjectives, and な-adjectives.",
+  tip: "ば focuses on the condition itself. It works best for general truths and hypothetical conditions. Avoid using it when the main clause is a request, command, or invitation."
+});
+
+curriculum.push({
+  day: 523,
+  phaseNum: 12,
+  phaseName: "N4 Grammar",
+  week: Math.floor((523 - 1) / 7) + 1,
+  title: "Conditional: なら",
+  intro: "Learn the なら conditional, which is used when responding to or building on information just heard or assumed. It often translates as 'if it is the case that'.",
+  type: "grammar",
+  chars: [],
+  vocab: [
+    ["旅行", "りょこう", "travel"],
+    ["京都", "きょうと", "Kyoto"],
+    ["おすすめ", "おすすめ", "recommendation"],
+    ["詳しい", "くわしい", "detailed; knowledgeable"],
+    ["相談", "そうだん", "consultation"]
+  ],
+  grammar: {
+    pattern: "Verb（辞書形／た形）＋なら / Noun ＋なら",
+    meaning: "If (it is the case that) ~; speaking of ~",
+    example_jp: "京都に行くなら、春がいいですよ。",
+    example_en: "If you are going to Kyoto, spring is the best time."
+  },
+  practice: "Practice giving advice using なら. Write five sentences where you respond to someone's plan or statement with a recommendation.",
+  tip: "なら picks up on the listener's topic. If someone says 'I want to learn Japanese,' you could respond: 日本語を勉強するなら、この本がいいですよ。"
+});
+
+curriculum.push({
+  day: 524,
+  phaseNum: 12,
+  phaseName: "N4 Grammar",
+  week: Math.floor((524 - 1) / 7) + 1,
+  title: "Automatic Conditional: と",
+  intro: "Learn the と conditional, which expresses natural, automatic, or habitual consequences. It is used for situations where one thing naturally leads to another.",
+  type: "grammar",
+  chars: [],
+  vocab: [
+    ["押す", "おす", "to push"],
+    ["曲がる", "まがる", "to turn"],
+    ["春", "はる", "spring"],
+    ["右", "みぎ", "right"],
+    ["自動的", "じどうてき", "automatic"]
+  ],
+  grammar: {
+    pattern: "Verb（辞書形）＋と",
+    meaning: "When ~; if ~ (automatic/natural result)",
+    example_jp: "このボタンを押すと、ドアが開きます。",
+    example_en: "When you push this button, the door opens."
+  },
+  practice: "Write five sentences using と for natural consequences: two about machines or devices, two about natural phenomena, and one about directions.",
+  tip: "と implies an automatic, inevitable result. Do not use it with requests, invitations, or volitional actions in the result clause."
+});
+
+curriculum.push({
+  day: 525,
+  phaseNum: 12,
+  phaseName: "N4 Grammar",
+  week: Math.floor((525 - 1) / 7) + 1,
+  title: "Despite: のに",
+  intro: "Learn to express frustration or surprise about unexpected outcomes using のに. This pattern means 'despite' or 'even though' and often carries emotional weight.",
+  type: "grammar",
+  chars: [],
+  vocab: [
+    ["約束", "やくそく", "promise"],
+    ["せっかく", "せっかく", "with effort; specially"],
+    ["一生懸命", "いっしょうけんめい", "with all one's might"],
+    ["残念", "ざんねん", "regrettable"],
+    ["結果", "けっか", "result"]
+  ],
+  grammar: {
+    pattern: "Verb（普通形）＋のに / い-Adj ＋のに / な-Adj ＋な＋のに",
+    meaning: "Even though ~; despite ~",
+    example_jp: "一生懸命勉強したのに、試験に落ちました。",
+    example_en: "Even though I studied hard, I failed the exam."
+  },
+  practice: "Write five sentences expressing frustration or surprise about unexpected outcomes using のに. Think of situations where effort did not lead to the expected result.",
+  tip: "のに often implies the speaker's disappointment or frustration. It sounds more emotional than けど or が."
+});
+
+curriculum.push({
+  day: 526,
+  phaseNum: 12,
+  phaseName: "N4 Grammar",
+  week: Math.floor((526 - 1) / 7) + 1,
+  title: "Even If: ても",
+  intro: "Learn to express 'even if' using ても. This pattern shows that the result remains the same regardless of the condition.",
+  type: "grammar",
+  chars: [],
+  vocab: [
+    ["無理", "むり", "impossible"],
+    ["頑張る", "がんばる", "to do one's best"],
+    ["反対", "はんたい", "opposition"],
+    ["構わない", "かまわない", "to not mind"],
+    ["絶対", "ぜったい", "absolutely"]
+  ],
+  grammar: {
+    pattern: "Verb（て形）＋も / い-Adj（くても）/ な-Adj（でも）",
+    meaning: "Even if ~; even though ~",
+    example_jp: "雨が降っても、サッカーをします。",
+    example_en: "Even if it rains, I will play soccer."
+  },
+  practice: "Write five ても sentences about things you would do regardless of obstacles or conditions. Use a mix of verbs and adjectives.",
+  tip: "ても is neutral and factual, while のに carries emotional frustration. Compare: 雨が降っても行きます (neutral plan) vs 雨が降ったのに行きました (frustrated that it rained)."
+});
+
+curriculum.push({
+  day: 527,
+  phaseNum: 12,
+  phaseName: "N4 Grammar",
+  week: Math.floor((527 - 1) / 7) + 1,
+  title: "Even If (Emphatic): たとえ〜ても",
+  intro: "Learn the emphatic conditional たとえ〜ても, which strengthens the meaning of 'even if' to express strong determination or an extreme hypothetical.",
+  type: "grammar",
+  chars: [],
+  vocab: [
+    ["諦める", "あきらめる", "to give up"],
+    ["困難", "こんなん", "difficulty"],
+    ["夢", "ゆめ", "dream"],
+    ["覚悟", "かくご", "resolve; preparedness"],
+    ["どんな", "どんな", "what kind of"]
+  ],
+  grammar: {
+    pattern: "たとえ ＋ Verb（て形）＋も",
+    meaning: "Even if ~; no matter if ~",
+    example_jp: "たとえ失敗しても、諦めません。",
+    example_en: "Even if I fail, I will not give up."
+  },
+  practice: "Write five sentences expressing strong determination using たとえ〜ても. Think of extreme situations and your resolve in facing them.",
+  tip: "たとえ adds dramatic emphasis. It often pairs with strong statements of resolve. Use it when you want to sound determined and unwavering."
+});
+
+curriculum.push({
+  day: 528,
+  phaseNum: 12,
+  phaseName: "N4 Grammar",
+  week: Math.floor((528 - 1) / 7) + 1,
+  title: "Whether or Not: かどうか",
+  intro: "Learn to express 'whether or not' using かどうか. This pattern embeds a yes/no question into a larger sentence.",
+  type: "grammar",
+  chars: [],
+  vocab: [
+    ["参加", "さんか", "participation"],
+    ["確認", "かくにん", "confirmation"],
+    ["迷う", "まよう", "to be unsure"],
+    ["正しい", "ただしい", "correct"],
+    ["まだ", "まだ", "still; not yet"]
+  ],
+  grammar: {
+    pattern: "Verb（普通形）＋かどうか",
+    meaning: "Whether or not ~",
+    example_jp: "明日来るかどうか分かりません。",
+    example_en: "I do not know whether or not he will come tomorrow."
+  },
+  practice: "Write five sentences using かどうか to express uncertainty about different situations. Use verbs like 分かる, 確認する, 知る, and 聞く.",
+  tip: "かどうか replaces the question particle か when embedding a yes/no question. For information questions, just use か: 何時に来るか分かりません。"
+});
+
+curriculum.push({
+  day: 529,
+  phaseNum: 12,
+  phaseName: "N4 Grammar",
+  week: Math.floor((529 - 1) / 7) + 1,
+  title: "Seems Like: ようだ",
+  intro: "Learn to express inference based on evidence using ようだ. This pattern is used when you draw a conclusion from what you observe or know.",
+  type: "grammar",
+  chars: [],
+  vocab: [
+    ["様子", "ようす", "state; appearance"],
+    ["具合", "ぐあい", "condition"],
+    ["どうやら", "どうやら", "apparently"],
+    ["風邪", "かぜ", "cold (illness)"],
+    ["判断", "はんだん", "judgment"]
+  ],
+  grammar: {
+    pattern: "Verb（普通形）＋ようだ / Noun の＋ようだ",
+    meaning: "It seems that ~; it appears that ~ (based on evidence)",
+    example_jp: "彼は風邪を引いたようです。",
+    example_en: "It seems like he caught a cold."
+  },
+  practice: "Observe things around you and write five ようだ sentences based on evidence you see or know. Explain what evidence leads to your conclusion.",
+  tip: "ようだ is based on the speaker's own observation and judgment. It sounds more certain than かもしれない but less certain than にちがいない."
+});
+
+curriculum.push({
+  day: 530,
+  phaseNum: 12,
+  phaseName: "N4 Grammar",
+  week: Math.floor((530 - 1) / 7) + 1,
+  title: "Apparently: らしい",
+  intro: "Learn to express information heard from others or general impressions using らしい. This pattern conveys hearsay or typicality.",
+  type: "grammar",
+  chars: [],
+  vocab: [
+    ["噂", "うわさ", "rumor"],
+    ["男らしい", "おとこらしい", "manly"],
+    ["春らしい", "はるらしい", "spring-like"],
+    ["報道", "ほうどう", "news report"],
+    ["本当", "ほんとう", "truth; really"]
+  ],
+  grammar: {
+    pattern: "Verb（普通形）＋らしい / Noun ＋らしい",
+    meaning: "It seems ~; apparently ~ (hearsay); ~like (typical of)",
+    example_jp: "来月、新しい店ができるらしいです。",
+    example_en: "Apparently a new store is opening next month."
+  },
+  practice: "Write three sentences reporting things you heard using らしい, and two sentences describing something as typical of its category (like 春らしい天気).",
+  tip: "らしい has two uses: hearsay (あの映画は面白いらしい = apparently that movie is good) and typicality (子供らしい = childlike, typical of a child)."
+});
+
+curriculum.push({
+  day: 531,
+  phaseNum: 12,
+  phaseName: "N4 Grammar",
+  week: Math.floor((531 - 1) / 7) + 1,
+  title: "Quoting: と言う",
+  intro: "Learn to quote speech and thoughts using と言う. This fundamental pattern allows you to report what someone said or express ideas attributed to others.",
+  type: "grammar",
+  chars: [],
+  vocab: [
+    ["意見", "いけん", "opinion"],
+    ["伝える", "つたえる", "to convey"],
+    ["嘘", "うそ", "lie"],
+    ["本音", "ほんね", "true feelings"],
+    ["言葉", "ことば", "word; language"]
+  ],
+  grammar: {
+    pattern: "Sentence（普通形）＋と言う",
+    meaning: "To say that ~; to be called ~",
+    example_jp: "先生は明日テストがあると言いました。",
+    example_en: "The teacher said there will be a test tomorrow."
+  },
+  practice: "Write five sentences reporting what different people said using と言う. Include direct quotes and indirect quotes.",
+  tip: "Quoted speech always uses plain form before と, even in polite sentences. 先生は「明日テストがある」と言いました。"
+});
+
+curriculum.push({
+  day: 532,
+  phaseNum: 12,
+  phaseName: "N4 Grammar",
+  week: Math.floor((532 - 1) / 7) + 1,
+  title: "Hearsay: そうだ (伝聞)",
+  intro: "Learn to report hearsay information using そうだ. This pattern attaches to the plain form and means you heard something from another source.",
+  type: "grammar",
+  chars: [],
+  vocab: [
+    ["ニュース", "ニュース", "news"],
+    ["値上げ", "ねあげ", "price increase"],
+    ["開店", "かいてん", "store opening"],
+    ["発表", "はっぴょう", "announcement"],
+    ["情報", "じょうほう", "information"]
+  ],
+  grammar: {
+    pattern: "Verb（普通形）＋そうだ / い-Adj ＋そうだ / な-Adj だ＋そうだ",
+    meaning: "I heard that ~; they say that ~",
+    example_jp: "ニュースによると、明日は雪が降るそうです。",
+    example_en: "According to the news, it will snow tomorrow."
+  },
+  practice: "Write five sentences reporting news or information you heard from others using そうだ (hearsay). Cite your sources where possible.",
+  tip: "Hearsay そうだ attaches to the complete plain form: 高いそうだ, おいしいそうだ, 静かだそうだ. Do not confuse it with appearance そうだ which attaches to the stem."
+});
+
+curriculum.push({
+  day: 533,
+  phaseNum: 12,
+  phaseName: "N4 Grammar",
+  week: Math.floor((533 - 1) / 7) + 1,
+  title: "Appearance: そうだ (様態)",
+  intro: "Learn to express how something appears based on visual impression using そうだ. This pattern attaches to the verb or adjective stem and describes how something looks.",
+  type: "grammar",
+  chars: [],
+  vocab: [
+    ["美味しそう", "おいしそう", "looks delicious"],
+    ["楽しそう", "たのしそう", "looks fun"],
+    ["降りそう", "ふりそう", "looks like it will fall"],
+    ["元気", "げんき", "healthy; energetic"],
+    ["見た目", "みため", "appearance"]
+  ],
+  grammar: {
+    pattern: "Verb（ます stem）＋そうだ / い-Adj（い→）そうだ / な-Adj ＋そうだ",
+    meaning: "It looks like ~; it seems ~ (based on appearance)",
+    example_jp: "このケーキは美味しそうですね。",
+    example_en: "This cake looks delicious, doesn't it?"
+  },
+  practice: "Look at photos of food, scenery, or people and write five sentences describing their appearance using そうだ. Compare with hearsay そうだ.",
+  tip: "Appearance そうだ drops い from い-adjectives: 美味しい→美味しそう. Exception: いい becomes よさそう, ない becomes なさそう."
+});
+
+curriculum.push({
+  day: 534,
+  phaseNum: 12,
+  phaseName: "N4 Grammar",
+  week: Math.floor((534 - 1) / 7) + 1,
+  title: "Resemblance: みたいだ",
+  intro: "Learn to express similarity and casual inference using みたいだ. This pattern is the informal equivalent of ようだ and is very common in daily conversation.",
+  type: "grammar",
+  chars: [],
+  vocab: [
+    ["子供", "こども", "child"],
+    ["夢", "ゆめ", "dream"],
+    ["まるで", "まるで", "as if; just like"],
+    ["雰囲気", "ふんいき", "atmosphere"],
+    ["そっくり", "そっくり", "look-alike"]
+  ],
+  grammar: {
+    pattern: "Verb（普通形）＋みたいだ / Noun ＋みたいだ",
+    meaning: "Looks like ~; seems like ~; like a ~",
+    example_jp: "まるで夢みたいだ。",
+    example_en: "It is just like a dream."
+  },
+  practice: "Write five sentences using みたいだ: three for comparisons (like a ~) and two for casual inference (it seems like ~).",
+  tip: "みたいだ is more casual than ようだ. In formal writing or polite speech, prefer ようだ. In casual conversation, みたいだ is more natural."
+});
+
+curriculum.push({
+  day: 535,
+  phaseNum: 12,
+  phaseName: "N4 Grammar",
+  week: Math.floor((535 - 1) / 7) + 1,
+  title: "The Fact That: ということ",
+  intro: "Learn to nominalize clauses and express 'the fact that' using ということ. This pattern turns an entire sentence into a noun phrase for further comment.",
+  type: "grammar",
+  chars: [],
+  vocab: [
+    ["意味", "いみ", "meaning"],
+    ["事実", "じじつ", "fact"],
+    ["重要", "じゅうよう", "important"],
+    ["理解", "りかい", "understanding"],
+    ["つまり", "つまり", "in other words"]
+  ],
+  grammar: {
+    pattern: "Sentence（普通形）＋ということ",
+    meaning: "The fact that ~; that ~; it means that ~",
+    example_jp: "彼が来ないということは、忙しいということです。",
+    example_en: "The fact that he is not coming means that he is busy."
+  },
+  practice: "Write five sentences using ということ to explain the significance or meaning of a situation. Use phrases like ということは and ということです.",
+  tip: "ということ is often shortened to ってこと in casual speech. 来ないってことは忙しいってことだ。"
+});
+
+curriculum.push({
+  day: 536,
+  phaseNum: 12,
+  phaseName: "N4 Grammar",
+  week: Math.floor((536 - 1) / 7) + 1,
+  title: "Casual Quotation: って",
+  intro: "Learn the casual quotation particle って, which replaces と in everyday speech. It is used for quoting, hearsay, and defining things informally.",
+  type: "grammar",
+  chars: [],
+  vocab: [
+    ["彼女", "かのじょ", "she; girlfriend"],
+    ["噂", "うわさ", "rumor"],
+    ["先輩", "せんぱい", "senior"],
+    ["聞く", "きく", "to hear; to ask"],
+    ["誰か", "だれか", "someone"]
+  ],
+  grammar: {
+    pattern: "Sentence ＋って",
+    meaning: "Casual form of と (quoting); I heard that ~",
+    example_jp: "田中さん、来週結婚するんだって。",
+    example_en: "I heard that Tanaka-san is getting married next week."
+  },
+  practice: "Rewrite five と言う or そうだ sentences into casual って forms. Practice using って for quoting, hearsay, and asking what something means.",
+  tip: "って has multiple uses: quoting (先生が来るって言った), hearsay (明日雨だって), and asking meaning (それってどういう意味？)."
+});
+
+curriculum.push({
+  day: 537,
+  phaseNum: 12,
+  phaseName: "N4 Grammar",
+  week: Math.floor((537 - 1) / 7) + 1,
+  title: "Probability: だろう",
+  intro: "Learn to express probability and conjecture using だろう. This pattern indicates the speaker's confident guess about something.",
+  type: "grammar",
+  chars: [],
+  vocab: [
+    ["多分", "たぶん", "probably"],
+    ["天気予報", "てんきよほう", "weather forecast"],
+    ["将来", "しょうらい", "future"],
+    ["大丈夫", "だいじょうぶ", "all right"],
+    ["予想", "よそう", "expectation; prediction"]
+  ],
+  grammar: {
+    pattern: "Verb（普通形）＋だろう / い-Adj ＋だろう / な-Adj ＋だろう",
+    meaning: "Probably ~; I think ~",
+    example_jp: "明日は晴れるだろう。",
+    example_en: "It will probably be sunny tomorrow."
+  },
+  practice: "Write five predictions about the future using だろう. Include predictions about weather, social trends, and personal events.",
+  tip: "だろう is the plain form; でしょう is the polite form. でしょう with rising intonation becomes a tag question: 明日は日曜日でしょう？ (Tomorrow is Sunday, right?)"
+});
+
+curriculum.push({
+  day: 538,
+  phaseNum: 12,
+  phaseName: "N4 Grammar",
+  week: Math.floor((538 - 1) / 7) + 1,
+  title: "Possibility: かもしれない",
+  intro: "Learn to express possibility and uncertainty using かもしれない. This pattern indicates that something might be true but you are not sure.",
+  type: "grammar",
+  chars: [],
+  vocab: [
+    ["遅れる", "おくれる", "to be late"],
+    ["間違い", "まちがい", "mistake"],
+    ["変わる", "かわる", "to change"],
+    ["原因", "げんいん", "cause"],
+    ["ひょっとしたら", "ひょっとしたら", "perhaps"]
+  ],
+  grammar: {
+    pattern: "Verb（普通形）＋かもしれない",
+    meaning: "Might ~; maybe ~; perhaps ~",
+    example_jp: "電車が遅れるかもしれません。",
+    example_en: "The train might be late."
+  },
+  practice: "Write five sentences expressing possibilities about different situations using かもしれない. Think about uncertain outcomes in daily life.",
+  tip: "かもしれない expresses less certainty than だろう. Certainty scale: にちがいない > はずだ > だろう > かもしれない."
+});
+
+curriculum.push({
+  day: 539,
+  phaseNum: 12,
+  phaseName: "N4 Grammar",
+  week: Math.floor((539 - 1) / 7) + 1,
+  title: "Expectation: はずだ",
+  intro: "Learn to express logical expectation using はずだ. This pattern indicates something should be true based on logic, evidence, or prior arrangements.",
+  type: "grammar",
+  chars: [],
+  vocab: [
+    ["届く", "とどく", "to arrive"],
+    ["知っている", "しっている", "to know"],
+    ["予約", "よやく", "reservation"],
+    ["確か", "たしか", "certain; sure"],
+    ["間違いない", "まちがいない", "no doubt"]
+  ],
+  grammar: {
+    pattern: "Verb（普通形）＋はずだ / Noun の＋はずだ",
+    meaning: "Should ~; is expected to ~; ought to ~",
+    example_jp: "荷物は明日届くはずです。",
+    example_en: "The package should arrive tomorrow."
+  },
+  practice: "Write five sentences about things you expect to be true or happen based on logic or arrangements using はずだ. Include はずがない for things that should not be true.",
+  tip: "はずだ is based on logical reasoning, not hope or desire. Use it when you have a good reason to believe something: 彼は日本に住んでいたから、日本語が話せるはずだ。"
+});
+
+curriculum.push({
+  day: 540,
+  phaseNum: 12,
+  phaseName: "N4 Grammar",
+  week: Math.floor((540 - 1) / 7) + 1,
+  title: "Certainty: にちがいない",
+  intro: "Learn to express strong conviction using にちがいない. This pattern indicates the speaker is almost certain about something based on strong evidence.",
+  type: "grammar",
+  chars: [],
+  vocab: [
+    ["犯人", "はんにん", "culprit"],
+    ["成功", "せいこう", "success"],
+    ["天才", "てんさい", "genius"],
+    ["証拠", "しょうこ", "evidence"],
+    ["きっと", "きっと", "surely"]
+  ],
+  grammar: {
+    pattern: "Verb（普通形）＋にちがいない / Noun ＋にちがいない",
+    meaning: "Must be ~; no doubt that ~; certainly ~",
+    example_jp: "彼は天才にちがいない。",
+    example_en: "He must be a genius."
+  },
+  practice: "Write five sentences expressing strong convictions using にちがいない. Base each on evidence or reasoning that supports your conclusion.",
+  tip: "にちがいない is the strongest expression of certainty among the conjecture patterns. It literally means 'there is no mistake that.' Use it when you are very confident."
+});
+
+curriculum.push({
+  day: 541,
+  phaseNum: 12,
+  phaseName: "N4 Grammar",
+  week: Math.floor((541 - 1) / 7) + 1,
+  title: "Listing Reasons: し〜し",
+  intro: "Learn to list multiple reasons or attributes using し〜し. This pattern is used to give several reasons that together support a conclusion.",
+  type: "grammar",
+  chars: [],
+  vocab: [
+    ["静か", "しずか", "quiet"],
+    ["広い", "ひろい", "spacious"],
+    ["家賃", "やちん", "rent"],
+    ["交通", "こうつう", "transportation"],
+    ["気に入る", "きにいる", "to like; to be pleased with"]
+  ],
+  grammar: {
+    pattern: "Sentence１＋し、Sentence２＋し（、Result）",
+    meaning: "And what's more; not only ~ but also ~; because ~ and ~",
+    example_jp: "この部屋は広いし、静かだし、気に入りました。",
+    example_en: "This room is spacious, and it is quiet, so I liked it."
+  },
+  practice: "Write five sentences listing multiple reasons for a decision or opinion using し〜し. Try listing both positive and negative reasons.",
+  tip: "し can list just one reason with an implied 'among other things': 値段も安いし。(The price is cheap, and [there are other reasons too].)"
+});
+
+curriculum.push({
+  day: 542,
+  phaseNum: 12,
+  phaseName: "N4 Grammar",
+  week: Math.floor((542 - 1) / 7) + 1,
+  title: "While Doing: ながら",
+  intro: "Learn to express doing two actions simultaneously using ながら. This pattern describes performing one action while doing another at the same time.",
+  type: "grammar",
+  chars: [],
+  vocab: [
+    ["歩く", "あるく", "to walk"],
+    ["音楽", "おんがく", "music"],
+    ["運転", "うんてん", "driving"],
+    ["携帯", "けいたい", "mobile phone"],
+    ["同時", "どうじ", "simultaneous"]
+  ],
+  grammar: {
+    pattern: "Verb（ます stem）＋ながら、Main Action",
+    meaning: "While doing ~; at the same time as ~",
+    example_jp: "音楽を聞きながら勉強します。",
+    example_en: "I study while listening to music."
+  },
+  practice: "Write five sentences about things you do simultaneously using ながら. The main action comes at the end of the sentence.",
+  tip: "The main action goes in the second clause. The ながら clause describes the secondary or background action. Both actions must be done by the same person."
+});
+
+curriculum.push({
+  day: 543,
+  phaseNum: 12,
+  phaseName: "N4 Grammar",
+  week: Math.floor((543 - 1) / 7) + 1,
+  title: "By the Way: ところで",
+  intro: "Learn to change the topic of conversation using ところで. This conjunction is used to introduce a new, unrelated subject in conversation.",
+  type: "grammar",
+  chars: [],
+  vocab: [
+    ["話題", "わだい", "topic"],
+    ["件", "けん", "matter; case"],
+    ["思い出す", "おもいだす", "to remember"],
+    ["関係", "かんけい", "relation"],
+    ["別", "べつ", "different; separate"]
+  ],
+  grammar: {
+    pattern: "ところで、New Topic",
+    meaning: "By the way; incidentally",
+    example_jp: "ところで、来週の会議のことですが。",
+    example_en: "By the way, about next week's meeting."
+  },
+  practice: "Write a short conversation where you naturally change the topic twice using ところで. Practice smooth topic transitions.",
+  tip: "ところで is best used when the new topic is completely unrelated. For related topics, use それで or それから instead."
+});
+
+curriculum.push({
+  day: 544,
+  phaseNum: 12,
+  phaseName: "N4 Grammar",
+  week: Math.floor((544 - 1) / 7) + 1,
+  title: "Furthermore: それに",
+  intro: "Learn to add information to support a point using それに. This conjunction means 'moreover' or 'in addition' and adds weight to an argument.",
+  type: "grammar",
+  chars: [],
+  vocab: [
+    ["値段", "ねだん", "price"],
+    ["品質", "ひんしつ", "quality"],
+    ["サービス", "サービス", "service"],
+    ["満足", "まんぞく", "satisfaction"],
+    ["以上", "いじょう", "more than; above"]
+  ],
+  grammar: {
+    pattern: "Statement１。それに、Statement２。",
+    meaning: "Moreover; in addition; on top of that",
+    example_jp: "この店は安い。それに、サービスもいい。",
+    example_en: "This shop is cheap. Moreover, the service is good too."
+  },
+  practice: "Write five pairs of sentences connected by それに. Build arguments where the second point strengthens the first.",
+  tip: "それに adds information in the same direction (both positive or both negative). Do not use it to introduce contrasting information; use しかし or でも instead."
+});
+
+curriculum.push({
+  day: 545,
+  phaseNum: 12,
+  phaseName: "N4 Grammar",
+  week: Math.floor((545 - 1) / 7) + 1,
+  title: "However: しかし",
+  intro: "Learn the formal conjunction しかし for expressing contrast. This word connects two opposing ideas and is commonly used in written and formal spoken Japanese.",
+  type: "grammar",
+  chars: [],
+  vocab: [
+    ["努力", "どりょく", "effort"],
+    ["結果", "けっか", "result"],
+    ["期待", "きたい", "expectation"],
+    ["現実", "げんじつ", "reality"],
+    ["反面", "はんめん", "on the other hand"]
+  ],
+  grammar: {
+    pattern: "Statement１。しかし、Statement２。",
+    meaning: "However; but; nevertheless",
+    example_jp: "たくさん練習しました。しかし、試合に負けました。",
+    example_en: "I practiced a lot. However, I lost the match."
+  },
+  practice: "Write five pairs of contrasting sentences connected by しかし. Practice using it in both formal writing and speech contexts.",
+  tip: "Formality scale for 'but': しかし (most formal, written) > けれども > けれど > けど > でも (most casual, spoken)."
+});
+
+curriculum.push({
+  day: 546,
+  phaseNum: 12,
+  phaseName: "N4 Grammar",
+  week: Math.floor((546 - 1) / 7) + 1,
+  title: "Unexpected Contrast: ところが",
+  intro: "Learn to express unexpected turns of events using ところが. This conjunction introduces a result that goes against what was expected from the first statement.",
+  type: "grammar",
+  chars: [],
+  vocab: [
+    ["予想", "よそう", "expectation"],
+    ["意外", "いがい", "unexpected"],
+    ["実際", "じっさい", "actual; in fact"],
+    ["驚く", "おどろく", "to be surprised"],
+    ["逆", "ぎゃく", "reverse; opposite"]
+  ],
+  grammar: {
+    pattern: "Statement１。ところが、Statement２ (unexpected)。",
+    meaning: "However (unexpectedly); but then",
+    example_jp: "今日は天気がいいと思った。ところが、午後から雨が降り出した。",
+    example_en: "I thought the weather would be nice today. However, it started raining in the afternoon."
+  },
+  practice: "Write five short narratives using ところが where the outcome is the opposite of what was expected. Think of surprising twists in daily life.",
+  tip: "ところが is different from しかし because it always introduces a surprising or unexpected result. しかし is neutral contrast; ところが implies the speaker was caught off guard."
+});
+
+curriculum.push({
+  day: 547,
+  phaseNum: 12,
+  phaseName: "N4 Grammar",
+  week: Math.floor((547 - 1) / 7) + 1,
+  title: "Purpose of Going: のに",
+  intro: "Learn to express the purpose of movement using のに. When attached to verb stems before movement verbs, it indicates the purpose for going or coming somewhere.",
+  type: "grammar",
+  chars: [],
+  vocab: [
+    ["買い物", "かいもの", "shopping"],
+    ["迎え", "むかえ", "meeting; picking up"],
+    ["見学", "けんがく", "tour; observation"],
+    ["必要", "ひつよう", "necessary"],
+    ["便利", "べんり", "convenient"]
+  ],
+  grammar: {
+    pattern: "Verb（ます stem）＋に行く／来る or Verb（辞書形）＋のに + Adj/Verb",
+    meaning: "For the purpose of ~; in order to ~; for doing ~",
+    example_jp: "この辞書は日本語を勉強するのに便利です。",
+    example_en: "This dictionary is convenient for studying Japanese."
+  },
+  practice: "Write five sentences using のに to describe what something is useful or necessary for. Include descriptions of tools, places, and time.",
+  tip: "This のに (purpose/use) is different from のに (despite). Compare: 勉強するのに便利だ (convenient for studying) vs 勉強したのに落ちた (despite studying, I failed)."
+});
+
+curriculum.push({
+  day: 548,
+  phaseNum: 12,
+  phaseName: "N4 Grammar",
+  week: Math.floor((548 - 1) / 7) + 1,
+  title: "Only; Nothing But: ばかり",
+  intro: "Learn to express doing nothing but one thing using ばかり. This pattern emphasizes excessive repetition or exclusivity of an action.",
+  type: "grammar",
+  chars: [],
+  vocab: [
+    ["遊ぶ", "あそぶ", "to play"],
+    ["文句", "もんく", "complaint"],
+    ["甘い物", "あまいもの", "sweets"],
+    ["最近", "さいきん", "recently"],
+    ["飽きる", "あきる", "to get tired of"]
+  ],
+  grammar: {
+    pattern: "Verb（て形）＋ばかりいる / Noun ＋ばかり",
+    meaning: "Nothing but ~; always doing ~; only ~",
+    example_jp: "彼はゲームばかりしている。",
+    example_en: "He does nothing but play games."
+  },
+  practice: "Write five sentences criticizing or commenting on excessive behavior using ばかり. Think about bad habits and repetitive actions.",
+  tip: "ばかり often carries a negative connotation, implying the speaker disapproves. 遊んでばかりいないで勉強しなさい (Stop playing all the time and study!)."
+});
+
+curriculum.push({
+  day: 549,
+  phaseNum: 12,
+  phaseName: "N4 Grammar",
+  week: Math.floor((549 - 1) / 7) + 1,
+  title: "Only; Just: だけ",
+  intro: "Learn to express limitation using だけ. This pattern means 'only' or 'just' and limits the extent or quantity of something without negative connotation.",
+  type: "grammar",
+  chars: [],
+  vocab: [
+    ["少し", "すこし", "a little"],
+    ["一人", "ひとり", "one person; alone"],
+    ["十分", "じゅうぶん", "sufficient"],
+    ["残り", "のこり", "remainder"],
+    ["できるだけ", "できるだけ", "as much as possible"]
+  ],
+  grammar: {
+    pattern: "Noun / Verb（辞書形）＋だけ",
+    meaning: "Only ~; just ~; as much as ~",
+    example_jp: "水だけ飲みました。",
+    example_en: "I drank only water."
+  },
+  practice: "Write five sentences using だけ in different contexts: limiting quantity, limiting actions, and using できるだけ (as much as possible).",
+  tip: "だけ is neutral, while ばかり is often negative. Compare: コーヒーだけ飲む (I drink only coffee — neutral statement) vs コーヒーばかり飲む (All you drink is coffee — somewhat critical)."
+});
+
+curriculum.push({
+  day: 550,
+  phaseNum: 12,
+  phaseName: "N4 Grammar",
+  week: Math.floor((550 - 1) / 7) + 1,
+  title: "Nothing But (Negative): しか〜ない",
+  intro: "Learn to express 'nothing but' or 'only' with a negative nuance using しか〜ない. This pattern emphasizes insufficiency or limitation.",
+  type: "grammar",
+  chars: [],
+  vocab: [
+    ["千円", "せんえん", "one thousand yen"],
+    ["残る", "のこる", "to remain"],
+    ["方法", "ほうほう", "method"],
+    ["選択肢", "せんたくし", "choice; option"],
+    ["仕方がない", "しかたがない", "it cannot be helped"]
+  ],
+  grammar: {
+    pattern: "Noun ＋しか＋Negative Verb",
+    meaning: "Nothing but ~; only ~ (with negative feeling)",
+    example_jp: "財布に千円しかありません。",
+    example_en: "I have only one thousand yen in my wallet (and it is not enough)."
+  },
+  practice: "Write five sentences using しか〜ない to express insufficiency. Compare each with a だけ version and note the difference in feeling.",
+  tip: "しか always requires a negative verb. It emphasizes that the amount is insufficient. Compare: 三人だけ来た (Only three came — neutral) vs 三人しか来なかった (Only three came — not enough)."
+});
+
+curriculum.push({
+  day: 551,
+  phaseNum: 12,
+  phaseName: "N4 Grammar",
+  week: Math.floor((551 - 1) / 7) + 1,
+  title: "Sometimes: ことがある",
+  intro: "Learn to express occasional occurrences using ことがある. With the dictionary form, it means something happens from time to time.",
+  type: "grammar",
+  chars: [],
+  vocab: [
+    ["たまに", "たまに", "occasionally"],
+    ["遅刻", "ちこく", "being late"],
+    ["失敗", "しっぱい", "failure"],
+    ["珍しい", "めずらしい", "rare"],
+    ["時々", "ときどき", "sometimes"]
+  ],
+  grammar: {
+    pattern: "Verb（辞書形）＋ことがある",
+    meaning: "Sometimes ~; there are times when ~",
+    example_jp: "朝ご飯を食べないことがあります。",
+    example_en: "There are times when I do not eat breakfast."
+  },
+  practice: "Write five sentences about things that occasionally happen using ことがある. Compare with たことがある (experience) which you already know.",
+  tip: "Do not confuse with past experience: 食べたことがある (I have eaten it before — experience) vs 食べることがある (I sometimes eat it — occasional habit)."
+});
+
+curriculum.push({
+  day: 552,
+  phaseNum: 12,
+  phaseName: "N4 Grammar",
+  week: Math.floor((552 - 1) / 7) + 1,
+  title: "That Is Why: わけだ",
+  intro: "Learn to express logical conclusions or explanations using わけだ. This pattern means 'that is why' or 'no wonder' and shows that something makes sense given the circumstances.",
+  type: "grammar",
+  chars: [],
+  vocab: [
+    ["納得", "なっとく", "understanding; agreement"],
+    ["理由", "りゆう", "reason"],
+    ["道理", "どうり", "reason; no wonder"],
+    ["当然", "とうぜん", "natural; of course"],
+    ["なるほど", "なるほど", "I see; indeed"]
+  ],
+  grammar: {
+    pattern: "Verb（普通形）＋わけだ",
+    meaning: "That is why ~; no wonder ~; so that means ~",
+    example_jp: "十年も日本に住んでいたんですか。日本語が上手なわけだ。",
+    example_en: "You lived in Japan for ten years? No wonder your Japanese is good."
+  },
+  practice: "Write five dialogues where someone learns a fact and then draws a logical conclusion using わけだ. Use なるほど and 道理で for natural lead-ins.",
+  tip: "わけだ confirms a logical conclusion. It often follows a moment of realization. 道理で (no wonder) pairs naturally with わけだ: 道理で暑いわけだ。エアコンが壊れている。"
+});
+
+curriculum.push({
+  day: 553,
+  phaseNum: 12,
+  phaseName: "N4 Grammar",
+  week: Math.floor((553 - 1) / 7) + 1,
+  title: "No Way That: わけがない",
+  intro: "Learn to strongly deny a possibility using わけがない. This pattern expresses the speaker's conviction that something is logically impossible.",
+  type: "grammar",
+  chars: [],
+  vocab: [
+    ["嘘つき", "うそつき", "liar"],
+    ["裏切る", "うらぎる", "to betray"],
+    ["信じる", "しんじる", "to believe"],
+    ["ありえない", "ありえない", "impossible"],
+    ["絶対", "ぜったい", "absolutely"]
+  ],
+  grammar: {
+    pattern: "Verb（普通形）＋わけがない",
+    meaning: "There is no way that ~; it is impossible that ~",
+    example_jp: "彼がそんなことをするわけがない。",
+    example_en: "There is no way he would do such a thing."
+  },
+  practice: "Write five sentences strongly denying possibilities using わけがない. Think of accusations or unlikely scenarios that you want to reject.",
+  tip: "わけがない is a strong denial based on logic. Compare: はずがない (should not be — expectation) vs わけがない (no way — logical impossibility)."
+});
+
+curriculum.push({
+  day: 554,
+  phaseNum: 12,
+  phaseName: "N4 Grammar",
+  week: Math.floor((554 - 1) / 7) + 1,
+  title: "No Need To: ことはない",
+  intro: "Learn to express that something is unnecessary using ことはない. This pattern reassures someone that they do not need to do something.",
+  type: "grammar",
+  chars: [],
+  vocab: [
+    ["心配", "しんぱい", "worry"],
+    ["急ぐ", "いそぐ", "to hurry"],
+    ["謝る", "あやまる", "to apologize"],
+    ["慌てる", "あわてる", "to panic"],
+    ["大丈夫", "だいじょうぶ", "all right"]
+  ],
+  grammar: {
+    pattern: "Verb（辞書形）＋ことはない",
+    meaning: "There is no need to ~; you do not have to ~",
+    example_jp: "心配することはないですよ。",
+    example_en: "There is no need to worry."
+  },
+  practice: "Write five sentences reassuring someone that they do not need to do something using ことはない. Think of common worries people have.",
+  tip: "ことはない is softer and more reassuring than なくてもいい. It often implies 'there is no reason for you to feel that way.'"
+});
+
+curriculum.push({
+  day: 555,
+  phaseNum: 12,
+  phaseName: "N4 Grammar",
+  week: Math.floor((555 - 1) / 7) + 1,
+  title: "The Way Things Should Be: ものだ",
+  intro: "Learn to express general truths, nostalgia, and how things should be using ものだ. This versatile pattern has multiple uses depending on context.",
+  type: "grammar",
+  chars: [],
+  vocab: [
+    ["礼儀", "れいぎ", "manners; etiquette"],
+    ["常識", "じょうしき", "common sense"],
+    ["昔", "むかし", "old times; long ago"],
+    ["懐かしい", "なつかしい", "nostalgic"],
+    ["当たり前", "あたりまえ", "natural; obvious"]
+  ],
+  grammar: {
+    pattern: "Verb（辞書形）＋ものだ",
+    meaning: "It is natural to ~; one should ~; used to ~ (nostalgia)",
+    example_jp: "人の話はよく聞くものだ。",
+    example_en: "One should listen carefully to what others say."
+  },
+  practice: "Write three sentences expressing general truths or expectations using ものだ, and two sentences expressing nostalgia using ものだ (past tense: たものだ).",
+  tip: "ものだ has three main uses: general truth (時間は大切にするものだ), nostalgia (子供の頃、よく遊んだものだ), and strong emotion (よく来てくれたものだ). Context determines the meaning."
+});
+
+// ═══════════════════════════════════════════════════════════════════════════
+// PHASE 13: N4 KANJI (Days 556-620)
+// 65 days covering ~130 N4-level kanji
+// ═══════════════════════════════════════════════════════════════════════════
+
+curriculum.push({
+  day: 556,
+  phaseNum: 13,
+  phaseName: "N4 Kanji",
+  week: 80,
+  title: "Kanji: 会 & 社",
+  intro: "Today we learn 会 (meet/meeting) and 社 (company/shrine). These combine to form 会社 (company).",
+  type: "kanji",
+  chars: [
+    ["会", "カイ・あう"],
+    ["社", "シャ・やしろ"]
+  ],
+  vocab: [
+    ["会社", "かいしゃ", "company"],
+    ["社会", "しゃかい", "society"],
+    ["会議", "かいぎ", "meeting"],
+    ["会う", "あう", "to meet"],
+    ["神社", "じんじゃ", "shrine"]
+  ],
+  grammar: {
+    pattern: "会 in compounds",
+    meaning: "Meeting/gathering",
+    example_jp: "来週、会議があります。",
+    example_en: "There is a meeting next week."
+  },
+  practice: "Write each kanji 10 times. Create flashcards for all vocabulary words. Practice reading the example sentences aloud.",
+  tip: "Focus on recognizing kanji in context. You don't need perfect handwriting for the JLPT — reading comprehension is key."
+});
+
+curriculum.push({
+  day: 557,
+  phaseNum: 13,
+  phaseName: "N4 Kanji",
+  week: 80,
+  title: "Kanji: 員 & 者",
+  intro: "員 (member/staff) and 者 (person). Both are used extensively in compound words.",
+  type: "kanji",
+  chars: [
+    ["員", "イン"],
+    ["者", "シャ・もの"]
+  ],
+  vocab: [
+    ["会社員", "かいしゃいん", "company employee"],
+    ["駅員", "えきいん", "station staff"],
+    ["医者", "いしゃ", "doctor"],
+    ["若者", "わかもの", "young person"],
+    ["記者", "きしゃ", "reporter"]
+  ],
+  grammar: {
+    pattern: "〜員 / 〜者",
+    meaning: "Person suffixes in compounds",
+    example_jp: "父は会社員です。",
+    example_en: "My father is a company employee."
+  },
+  practice: "Write each kanji 10 times. Create flashcards for all vocabulary words. Practice reading the example sentences aloud.",
+  tip: "Focus on recognizing kanji in context. You don't need perfect handwriting for the JLPT — reading comprehension is key."
+});
+
+curriculum.push({
+  day: 558,
+  phaseNum: 13,
+  phaseName: "N4 Kanji",
+  week: 80,
+  title: "Kanji: 主 & 代",
+  intro: "主 (main/master) and 代 (generation/substitute). Both are very common in daily Japanese.",
+  type: "kanji",
+  chars: [
+    ["主", "シュ・ぬし・おも"],
+    ["代", "ダイ・タイ・かわる"]
+  ],
+  vocab: [
+    ["主人", "しゅじん", "husband/master"],
+    ["主に", "おもに", "mainly"],
+    ["時代", "じだい", "era/period"],
+    ["代わり", "かわり", "substitute"],
+    ["現代", "げんだい", "modern times"]
+  ],
+  grammar: {
+    pattern: "主 and 代 in context",
+    meaning: "Main/master and generation",
+    example_jp: "現代の若者は忙しい。",
+    example_en: "Young people of the modern era are busy."
+  },
+  practice: "Write each kanji 10 times. Create flashcards for all vocabulary words. Practice reading the example sentences aloud.",
+  tip: "Focus on recognizing kanji in context. You don't need perfect handwriting for the JLPT — reading comprehension is key."
+});
+
+curriculum.push({
+  day: 559,
+  phaseNum: 13,
+  phaseName: "N4 Kanji",
+  week: 80,
+  title: "Kanji: 親 & 兄",
+  intro: "親 (parent/intimate) and 兄 (older brother). Family kanji are essential for N4.",
+  type: "kanji",
+  chars: [
+    ["親", "シン・おや・したしい"],
+    ["兄", "ケイ・キョウ・あに"]
+  ],
+  vocab: [
+    ["両親", "りょうしん", "both parents"],
+    ["親切", "しんせつ", "kind/friendly"],
+    ["お兄さん", "おにいさん", "older brother (polite)"],
+    ["兄弟", "きょうだい", "siblings"],
+    ["親友", "しんゆう", "close friend"]
+  ],
+  grammar: {
+    pattern: "Family kanji compounds",
+    meaning: "Parent and sibling kanji",
+    example_jp: "両親はとても親切な人です。",
+    example_en: "My parents are very kind people."
+  },
+  practice: "Write each kanji 10 times. Create flashcards for all vocabulary words. Practice reading the example sentences aloud.",
+  tip: "Focus on recognizing kanji in context. You don't need perfect handwriting for the JLPT — reading comprehension is key."
+});
+
+curriculum.push({
+  day: 560,
+  phaseNum: 13,
+  phaseName: "N4 Kanji",
+  week: 80,
+  title: "Kanji: 弟 & 姉",
+  intro: "弟 (younger brother) and 姉 (older sister). Continue building family vocabulary.",
+  type: "kanji",
+  chars: [
+    ["弟", "テイ・ダイ・おとうと"],
+    ["姉", "シ・あね"]
+  ],
+  vocab: [
+    ["弟", "おとうと", "younger brother"],
+    ["兄弟", "きょうだい", "siblings"],
+    ["お姉さん", "おねえさん", "older sister (polite)"],
+    ["姉妹", "しまい", "sisters"],
+    ["弟子", "でし", "disciple"]
+  ],
+  grammar: {
+    pattern: "弟 and 姉 in family terms",
+    meaning: "Younger brother and older sister",
+    example_jp: "姉は大学生で、弟は高校生です。",
+    example_en: "My older sister is in college and my younger brother is in high school."
+  },
+  practice: "Write each kanji 10 times. Create flashcards for all vocabulary words. Practice reading the example sentences aloud.",
+  tip: "Focus on recognizing kanji in context. You don't need perfect handwriting for the JLPT — reading comprehension is key."
+});
+
+curriculum.push({
+  day: 561,
+  phaseNum: 13,
+  phaseName: "N4 Kanji",
+  week: 81,
+  title: "Kanji: 妹 & 夫",
+  intro: "妹 (younger sister) and 夫 (husband). More family kanji to complete the set.",
+  type: "kanji",
+  chars: [
+    ["妹", "マイ・いもうと"],
+    ["夫", "フ・フウ・おっと"]
+  ],
+  vocab: [
+    ["妹", "いもうと", "younger sister"],
+    ["姉妹", "しまい", "sisters"],
+    ["夫", "おっと", "husband"],
+    ["夫婦", "ふうふ", "married couple"],
+    ["夫人", "ふじん", "wife/Mrs."]
+  ],
+  grammar: {
+    pattern: "夫婦 (married couple)",
+    meaning: "Husband and wife compound",
+    example_jp: "あの夫婦はいつも仲がいい。",
+    example_en: "That married couple always gets along well."
+  },
+  practice: "Write each kanji 10 times. Create flashcards for all vocabulary words. Practice reading the example sentences aloud.",
+  tip: "Focus on recognizing kanji in context. You don't need perfect handwriting for the JLPT — reading comprehension is key."
+});
+
+curriculum.push({
+  day: 562,
+  phaseNum: 13,
+  phaseName: "N4 Kanji",
+  week: 81,
+  title: "Kanji: 妻 & 彼",
+  intro: "妻 (wife) and 彼 (he/that). 彼 is used both as a pronoun and in compound words.",
+  type: "kanji",
+  chars: [
+    ["妻", "サイ・つま"],
+    ["彼", "ヒ・かれ"]
+  ],
+  vocab: [
+    ["妻", "つま", "wife"],
+    ["彼", "かれ", "he/boyfriend"],
+    ["彼女", "かのじょ", "she/girlfriend"],
+    ["彼ら", "かれら", "they"],
+    ["夫妻", "ふさい", "Mr. and Mrs."]
+  ],
+  grammar: {
+    pattern: "彼/彼女 pronouns",
+    meaning: "Third person pronouns",
+    example_jp: "彼女は来年日本に行くそうです。",
+    example_en: "I heard she is going to Japan next year."
+  },
+  practice: "Write each kanji 10 times. Create flashcards for all vocabulary words. Practice reading the example sentences aloud.",
+  tip: "Focus on recognizing kanji in context. You don't need perfect handwriting for the JLPT — reading comprehension is key."
+});
+
+curriculum.push({
+  day: 563,
+  phaseNum: 13,
+  phaseName: "N4 Kanji",
+  week: 81,
+  title: "Kanji: 友 & 族",
+  intro: "友 (friend) and 族 (tribe/family). 友 is already familiar; 族 completes the family set.",
+  type: "kanji",
+  chars: [
+    ["友", "ユウ・とも"],
+    ["族", "ゾク"]
+  ],
+  vocab: [
+    ["友だち", "ともだち", "friend"],
+    ["友人", "ゆうじん", "friend (formal)"],
+    ["親友", "しんゆう", "close friend"],
+    ["家族", "かぞく", "family"],
+    ["民族", "みんぞく", "ethnic group"]
+  ],
+  grammar: {
+    pattern: "友 and 族 compounds",
+    meaning: "Friend and family/group",
+    example_jp: "家族と友だちは大切です。",
+    example_en: "Family and friends are important."
+  },
+  practice: "Write each kanji 10 times. Create flashcards for all vocabulary words. Practice reading the example sentences aloud.",
+  tip: "Focus on recognizing kanji in context. You don't need perfect handwriting for the JLPT — reading comprehension is key."
+});
+
+curriculum.push({
+  day: 564,
+  phaseNum: 13,
+  phaseName: "N4 Kanji",
+  week: 81,
+  title: "Kanji: 客 & 届",
+  intro: "客 (guest/customer) and 届 (deliver/reach). Both are common in daily life.",
+  type: "kanji",
+  chars: [
+    ["客", "キャク・カク"],
+    ["届", "とどく・とどける"]
+  ],
+  vocab: [
+    ["お客さん", "おきゃくさん", "customer/guest"],
+    ["客室", "きゃくしつ", "guest room"],
+    ["届く", "とどく", "to reach/arrive"],
+    ["届ける", "とどける", "to deliver"],
+    ["届け", "とどけ", "notification"]
+  ],
+  grammar: {
+    pattern: "客 and 届 in daily use",
+    meaning: "Customer and delivery",
+    example_jp: "荷物が届きましたか。",
+    example_en: "Did the package arrive?"
+  },
+  practice: "Write each kanji 10 times. Create flashcards for all vocabulary words. Practice reading the example sentences aloud.",
+  tip: "Focus on recognizing kanji in context. You don't need perfect handwriting for the JLPT — reading comprehension is key."
+});
+
+curriculum.push({
+  day: 565,
+  phaseNum: 13,
+  phaseName: "N4 Kanji",
+  week: 81,
+  title: "Kanji: 民 & 君",
+  intro: "民 (people/citizen) and 君 (you informal). 民 appears in formal/political vocabulary.",
+  type: "kanji",
+  chars: [
+    ["民", "ミン・たみ"],
+    ["君", "クン・きみ"]
+  ],
+  vocab: [
+    ["国民", "こくみん", "citizens"],
+    ["民族", "みんぞく", "ethnic group"],
+    ["君", "きみ", "you (informal)"],
+    ["諸君", "しょくん", "everyone (formal)"],
+    ["市民", "しみん", "citizen"]
+  ],
+  grammar: {
+    pattern: "民 in political vocabulary",
+    meaning: "People/citizens in compounds",
+    example_jp: "国民の意見は大切です。",
+    example_en: "The opinions of citizens are important."
+  },
+  practice: "Write each kanji 10 times. Create flashcards for all vocabulary words. Practice reading the example sentences aloud.",
+  tip: "Focus on recognizing kanji in context. You don't need perfect handwriting for the JLPT — reading comprehension is key."
+});
+
+curriculum.push({
+  day: 566,
+  phaseNum: 13,
+  phaseName: "N4 Kanji",
+  week: 81,
+  title: "Kanji: 走 & 歩",
+  intro: "走 (run) and 歩 (walk). Two fundamental movement kanji.",
+  type: "kanji",
+  chars: [
+    ["走", "ソウ・はしる"],
+    ["歩", "ホ・ブ・あるく"]
+  ],
+  vocab: [
+    ["走る", "はしる", "to run"],
+    ["歩く", "あるく", "to walk"],
+    ["走行", "そうこう", "running (vehicle)"],
+    ["歩道", "ほどう", "sidewalk"],
+    ["散歩", "さんぽ", "walk/stroll"]
+  ],
+  grammar: {
+    pattern: "走 and 歩 movement verbs",
+    meaning: "Run and walk",
+    example_jp: "毎朝、公園を走ってから歩いて帰る。",
+    example_en: "Every morning I run in the park then walk home."
+  },
+  practice: "Write each kanji 10 times. Create flashcards for all vocabulary words. Practice reading the example sentences aloud.",
+  tip: "Focus on recognizing kanji in context. You don't need perfect handwriting for the JLPT — reading comprehension is key."
+});
+
+curriculum.push({
+  day: 567,
+  phaseNum: 13,
+  phaseName: "N4 Kanji",
+  week: 81,
+  title: "Kanji: 起 & 送",
+  intro: "起 (rise/wake) and 送 (send). Both are high-frequency daily verbs.",
+  type: "kanji",
+  chars: [
+    ["起", "キ・おきる・おこす"],
+    ["送", "ソウ・おくる"]
+  ],
+  vocab: [
+    ["起きる", "おきる", "to wake up"],
+    ["起こす", "おこす", "to wake someone"],
+    ["送る", "おくる", "to send"],
+    ["送別", "そうべつ", "farewell"],
+    ["見送る", "みおくる", "to see off"]
+  ],
+  grammar: {
+    pattern: "起 and 送 in daily life",
+    meaning: "Waking and sending",
+    example_jp: "毎朝6時に起きて、メールを送る。",
+    example_en: "I wake up at 6 every morning and send emails."
+  },
+  practice: "Write each kanji 10 times. Create flashcards for all vocabulary words. Practice reading the example sentences aloud.",
+  tip: "Focus on recognizing kanji in context. You don't need perfect handwriting for the JLPT — reading comprehension is key."
+});
+
+curriculum.push({
+  day: 568,
+  phaseNum: 13,
+  phaseName: "N4 Kanji",
+  week: 82,
+  title: "Kanji: 運 & 引",
+  intro: "運 (carry/luck/fate) and 引 (pull/draw). 運 has multiple meanings in compounds.",
+  type: "kanji",
+  chars: [
+    ["運", "ウン・はこぶ"],
+    ["引", "イン・ひく"]
+  ],
+  vocab: [
+    ["運ぶ", "はこぶ", "to carry"],
+    ["運動", "うんどう", "exercise"],
+    ["運転", "うんてん", "driving"],
+    ["引く", "ひく", "to pull"],
+    ["引っ越し", "ひっこし", "moving house"]
+  ],
+  grammar: {
+    pattern: "運 multiple meanings",
+    meaning: "Carry, luck, movement",
+    example_jp: "毎日運動しています。",
+    example_en: "I exercise every day."
+  },
+  practice: "Write each kanji 10 times. Create flashcards for all vocabulary words. Practice reading the example sentences aloud.",
+  tip: "Focus on recognizing kanji in context. You don't need perfect handwriting for the JLPT — reading comprehension is key."
+});
+
+curriculum.push({
+  day: 569,
+  phaseNum: 13,
+  phaseName: "N4 Kanji",
+  week: 82,
+  title: "Kanji: 押 & 投",
+  intro: "押 (push) and 投 (throw). Physical action kanji.",
+  type: "kanji",
+  chars: [
+    ["押", "オウ・おす"],
+    ["投", "トウ・なげる"]
+  ],
+  vocab: [
+    ["押す", "おす", "to push"],
+    ["押入れ", "おしいれ", "closet"],
+    ["投げる", "なげる", "to throw"],
+    ["投票", "とうひょう", "voting"],
+    ["押し入る", "おしいる", "to break in"]
+  ],
+  grammar: {
+    pattern: "押 and 投 actions",
+    meaning: "Push and throw",
+    example_jp: "ボタンを押してください。",
+    example_en: "Please push the button."
+  },
+  practice: "Write each kanji 10 times. Create flashcards for all vocabulary words. Practice reading the example sentences aloud.",
+  tip: "Focus on recognizing kanji in context. You don't need perfect handwriting for the JLPT — reading comprehension is key."
+});
+
+curriculum.push({
+  day: 570,
+  phaseNum: 13,
+  phaseName: "N4 Kanji",
+  week: 82,
+  title: "Kanji: 飛 & 落",
+  intro: "飛 (fly) and 落 (fall/drop). Opposite vertical movements.",
+  type: "kanji",
+  chars: [
+    ["飛", "ヒ・とぶ"],
+    ["落", "ラク・おちる・おとす"]
+  ],
+  vocab: [
+    ["飛ぶ", "とぶ", "to fly"],
+    ["飛行機", "ひこうき", "airplane"],
+    ["落ちる", "おちる", "to fall"],
+    ["落とす", "おとす", "to drop"],
+    ["落ち着く", "おちつく", "to calm down"]
+  ],
+  grammar: {
+    pattern: "飛 and 落 — up and down",
+    meaning: "Fly and fall",
+    example_jp: "鳥が飛んで、木の葉が落ちた。",
+    example_en: "A bird flew and leaves fell from the tree."
+  },
+  practice: "Write each kanji 10 times. Create flashcards for all vocabulary words. Practice reading the example sentences aloud.",
+  tip: "Focus on recognizing kanji in context. You don't need perfect handwriting for the JLPT — reading comprehension is key."
+});
+
+curriculum.push({
+  day: 571,
+  phaseNum: 13,
+  phaseName: "N4 Kanji",
+  week: 82,
+  title: "Kanji: 持 & 届",
+  intro: "持 (hold/have) and 届 (deliver/reach). Both relate to having and transferring things.",
+  type: "kanji",
+  chars: [
+    ["持", "ジ・もつ"],
+    ["届", "とどく・とどける"]
+  ],
+  vocab: [
+    ["持つ", "もつ", "to hold/have"],
+    ["持ち物", "もちもの", "belongings"],
+    ["気持ち", "きもち", "feeling"],
+    ["届く", "とどく", "to arrive"],
+    ["届ける", "とどける", "to deliver"]
+  ],
+  grammar: {
+    pattern: "持つ in common phrases",
+    meaning: "Hold, have, carry",
+    example_jp: "いい気持ちですね。",
+    example_en: "It feels good, doesn't it?"
+  },
+  practice: "Write each kanji 10 times. Create flashcards for all vocabulary words. Practice reading the example sentences aloud.",
+  tip: "Focus on recognizing kanji in context. You don't need perfect handwriting for the JLPT — reading comprehension is key."
+});
+
+curriculum.push({
+  day: 572,
+  phaseNum: 13,
+  phaseName: "N4 Kanji",
+  week: 82,
+  title: "Kanji: 捨 & 拾",
+  intro: "捨 (discard) and 拾 (pick up). Perfect opposites!",
+  type: "kanji",
+  chars: [
+    ["捨", "シャ・すてる"],
+    ["拾", "シュウ・ひろう"]
+  ],
+  vocab: [
+    ["捨てる", "すてる", "to throw away"],
+    ["拾う", "ひろう", "to pick up"],
+    ["使い捨て", "つかいすて", "disposable"],
+    ["拾得", "しゅうとく", "finding/picking up"],
+    ["ゴミを捨てる", "ゴミをすてる", "to throw away trash"]
+  ],
+  grammar: {
+    pattern: "捨 vs 拾 — opposites",
+    meaning: "Throw away vs pick up",
+    example_jp: "ゴミは捨てないで、拾ってください。",
+    example_en: "Don't throw away trash; please pick it up."
+  },
+  practice: "Write each kanji 10 times. Create flashcards for all vocabulary words. Practice reading the example sentences aloud.",
+  tip: "Focus on recognizing kanji in context. You don't need perfect handwriting for the JLPT — reading comprehension is key."
+});
+
+curriculum.push({
+  day: 573,
+  phaseNum: 13,
+  phaseName: "N4 Kanji",
+  week: 82,
+  title: "Kanji: 返 & 渡",
+  intro: "返 (return) and 渡 (cross/hand over). Both involve transfer.",
+  type: "kanji",
+  chars: [
+    ["返", "ヘン・かえす"],
+    ["渡", "ト・わたる・わたす"]
+  ],
+  vocab: [
+    ["返す", "かえす", "to return (something)"],
+    ["返事", "へんじ", "reply"],
+    ["渡る", "わたる", "to cross"],
+    ["渡す", "わたす", "to hand over"],
+    ["橋を渡る", "はしをわたる", "to cross a bridge"]
+  ],
+  grammar: {
+    pattern: "返 and 渡 transfer verbs",
+    meaning: "Return and cross/hand over",
+    example_jp: "本を返してから、橋を渡った。",
+    example_en: "After returning the book, I crossed the bridge."
+  },
+  practice: "Write each kanji 10 times. Create flashcards for all vocabulary words. Practice reading the example sentences aloud.",
+  tip: "Focus on recognizing kanji in context. You don't need perfect handwriting for the JLPT — reading comprehension is key."
+});
+
+curriculum.push({
+  day: 574,
+  phaseNum: 13,
+  phaseName: "N4 Kanji",
+  week: 82,
+  title: "Kanji: 着 & 届",
+  intro: "着 (arrive/wear) and 届 (reach/deliver). Both express reaching a destination.",
+  type: "kanji",
+  chars: [
+    ["着", "チャク・きる・つく"],
+    ["届", "とどく・とどける"]
+  ],
+  vocab: [
+    ["着く", "つく", "to arrive"],
+    ["着る", "きる", "to wear"],
+    ["到着", "とうちゃく", "arrival"],
+    ["届く", "とどく", "to reach"],
+    ["届ける", "とどける", "to deliver"]
+  ],
+  grammar: {
+    pattern: "着 — arrive and wear",
+    meaning: "Two readings, two meanings",
+    example_jp: "空港に着いたら、連絡してください。",
+    example_en: "Please contact me when you arrive at the airport."
+  },
+  practice: "Write each kanji 10 times. Create flashcards for all vocabulary words. Practice reading the example sentences aloud.",
+  tip: "Focus on recognizing kanji in context. You don't need perfect handwriting for the JLPT — reading comprehension is key."
+});
+
+curriculum.push({
+  day: 575,
+  phaseNum: 13,
+  phaseName: "N4 Kanji",
+  week: 83,
+  title: "Kanji: 立 & 座",
+  intro: "立 (stand) and 座 (sit). Another pair of opposite actions.",
+  type: "kanji",
+  chars: [
+    ["立", "リツ・たつ"],
+    ["座", "ザ・すわる"]
+  ],
+  vocab: [
+    ["立つ", "たつ", "to stand"],
+    ["立場", "たちば", "standpoint/position"],
+    ["座る", "すわる", "to sit"],
+    ["座席", "ざせき", "seat"],
+    ["正座", "せいざ", "sitting on knees"]
+  ],
+  grammar: {
+    pattern: "立 and 座 — stand and sit",
+    meaning: "Opposite posture kanji",
+    example_jp: "電車で立っていたら、席を譲られた。",
+    example_en: "I was standing on the train and someone offered me a seat."
+  },
+  practice: "Write each kanji 10 times. Create flashcards for all vocabulary words. Practice reading the example sentences aloud.",
+  tip: "Focus on recognizing kanji in context. You don't need perfect handwriting for the JLPT — reading comprehension is key."
+});
+
+curriculum.push({
+  day: 576,
+  phaseNum: 13,
+  phaseName: "N4 Kanji",
+  week: 83,
+  title: "Kanji: 海 & 池",
+  intro: "海 (sea/ocean) and 池 (pond). Water-related nature kanji.",
+  type: "kanji",
+  chars: [
+    ["海", "カイ・うみ"],
+    ["池", "チ・いけ"]
+  ],
+  vocab: [
+    ["海", "うみ", "sea/ocean"],
+    ["海外", "かいがい", "overseas"],
+    ["池", "いけ", "pond"],
+    ["電池", "でんち", "battery"],
+    ["海岸", "かいがん", "coast"]
+  ],
+  grammar: {
+    pattern: "海 in compounds",
+    meaning: "Sea/ocean compounds",
+    example_jp: "夏休みに海に行きたい。",
+    example_en: "I want to go to the ocean during summer vacation."
+  },
+  practice: "Write each kanji 10 times. Create flashcards for all vocabulary words. Practice reading the example sentences aloud.",
+  tip: "Focus on recognizing kanji in context. You don't need perfect handwriting for the JLPT — reading comprehension is key."
+});
+
+curriculum.push({
+  day: 577,
+  phaseNum: 13,
+  phaseName: "N4 Kanji",
+  week: 83,
+  title: "Kanji: 林 & 森",
+  intro: "林 (grove/woods) and 森 (forest). Notice: 木→林→森 shows increasing density!",
+  type: "kanji",
+  chars: [
+    ["林", "リン・はやし"],
+    ["森", "シン・もり"]
+  ],
+  vocab: [
+    ["林", "はやし", "grove/woods"],
+    ["森", "もり", "forest"],
+    ["森林", "しんりん", "forest (formal)"],
+    ["林業", "りんぎょう", "forestry"],
+    ["森の中", "もりのなか", "in the forest"]
+  ],
+  grammar: {
+    pattern: "木→林→森 progression",
+    meaning: "Tree → grove → forest",
+    example_jp: "森の中を散歩するのが好きです。",
+    example_en: "I like taking walks in the forest."
+  },
+  practice: "Write each kanji 10 times. Create flashcards for all vocabulary words. Practice reading the example sentences aloud.",
+  tip: "Focus on recognizing kanji in context. You don't need perfect handwriting for the JLPT — reading comprehension is key."
+});
+
+curriculum.push({
+  day: 578,
+  phaseNum: 13,
+  phaseName: "N4 Kanji",
+  week: 83,
+  title: "Kanji: 島 & 港",
+  intro: "島 (island) and 港 (port/harbor). Geography kanji for Japan's island nation.",
+  type: "kanji",
+  chars: [
+    ["島", "トウ・しま"],
+    ["港", "コウ・みなと"]
+  ],
+  vocab: [
+    ["島", "しま", "island"],
+    ["半島", "はんとう", "peninsula"],
+    ["港", "みなと", "port/harbor"],
+    ["空港", "くうこう", "airport"],
+    ["島国", "しまぐに", "island nation"]
+  ],
+  grammar: {
+    pattern: "島 and 港 geography",
+    meaning: "Island and port",
+    example_jp: "日本は島国です。",
+    example_en: "Japan is an island nation."
+  },
+  practice: "Write each kanji 10 times. Create flashcards for all vocabulary words. Practice reading the example sentences aloud.",
+  tip: "Focus on recognizing kanji in context. You don't need perfect handwriting for the JLPT — reading comprehension is key."
+});
+
+curriculum.push({
+  day: 579,
+  phaseNum: 13,
+  phaseName: "N4 Kanji",
+  week: 83,
+  title: "Kanji: 坂 & 岸",
+  intro: "坂 (slope/hill) and 岸 (shore/bank). Terrain kanji.",
+  type: "kanji",
+  chars: [
+    ["坂", "ハン・さか"],
+    ["岸", "ガン・きし"]
+  ],
+  vocab: [
+    ["坂", "さか", "slope/hill"],
+    ["坂道", "さかみち", "sloping road"],
+    ["岸", "きし", "shore/bank"],
+    ["海岸", "かいがん", "coast/beach"],
+    ["川岸", "かわぎし", "riverbank"]
+  ],
+  grammar: {
+    pattern: "坂 and 岸 terrain",
+    meaning: "Slope and shore",
+    example_jp: "この坂を上ると海岸が見える。",
+    example_en: "If you go up this slope, you can see the coast."
+  },
+  practice: "Write each kanji 10 times. Create flashcards for all vocabulary words. Practice reading the example sentences aloud.",
+  tip: "Focus on recognizing kanji in context. You don't need perfect handwriting for the JLPT — reading comprehension is key."
+});
+
+curriculum.push({
+  day: 580,
+  phaseNum: 13,
+  phaseName: "N4 Kanji",
+  week: 83,
+  title: "Kanji: 湖 & 畑",
+  intro: "湖 (lake) and 畑 (field/farm). Nature and agriculture kanji.",
+  type: "kanji",
+  chars: [
+    ["湖", "コ・みずうみ"],
+    ["畑", "はた・はたけ"]
+  ],
+  vocab: [
+    ["湖", "みずうみ", "lake"],
+    ["湖畔", "こはん", "lakeside"],
+    ["畑", "はたけ", "farm field"],
+    ["花畑", "はなばたけ", "flower field"],
+    ["田畑", "たはた", "rice paddies and fields"]
+  ],
+  grammar: {
+    pattern: "湖 and 畑 nature",
+    meaning: "Lake and field",
+    example_jp: "湖の近くに大きな畑がある。",
+    example_en: "There is a large field near the lake."
+  },
+  practice: "Write each kanji 10 times. Create flashcards for all vocabulary words. Practice reading the example sentences aloud.",
+  tip: "Focus on recognizing kanji in context. You don't need perfect handwriting for the JLPT — reading comprehension is key."
+});
+
+curriculum.push({
+  day: 581,
+  phaseNum: 13,
+  phaseName: "N4 Kanji",
+  week: 83,
+  title: "Kanji: 原 & 谷",
+  intro: "原 (plain/field/original) and 谷 (valley). Landscape vocabulary.",
+  type: "kanji",
+  chars: [
+    ["原", "ゲン・はら"],
+    ["谷", "コク・たに"]
+  ],
+  vocab: [
+    ["原因", "げんいん", "cause/reason"],
+    ["草原", "そうげん", "grassland"],
+    ["谷", "たに", "valley"],
+    ["渋谷", "しぶや", "Shibuya"],
+    ["谷間", "たにま", "ravine"]
+  ],
+  grammar: {
+    pattern: "原 multiple meanings",
+    meaning: "Plain, original, cause",
+    example_jp: "事故の原因を調べている。",
+    example_en: "They are investigating the cause of the accident."
+  },
+  practice: "Write each kanji 10 times. Create flashcards for all vocabulary words. Practice reading the example sentences aloud.",
+  tip: "Focus on recognizing kanji in context. You don't need perfect handwriting for the JLPT — reading comprehension is key."
+});
+
+curriculum.push({
+  day: 582,
+  phaseNum: 13,
+  phaseName: "N4 Kanji",
+  week: 84,
+  title: "Kanji: 岩 & 泉",
+  intro: "岩 (rock/boulder) and 泉 (spring/fountain). Natural feature kanji.",
+  type: "kanji",
+  chars: [
+    ["岩", "ガン・いわ"],
+    ["泉", "セン・いずみ"]
+  ],
+  vocab: [
+    ["岩", "いわ", "rock/boulder"],
+    ["岩山", "いわやま", "rocky mountain"],
+    ["泉", "いずみ", "spring/fountain"],
+    ["温泉", "おんせん", "hot spring"],
+    ["岩石", "がんせき", "rock (geological)"]
+  ],
+  grammar: {
+    pattern: "岩 and 泉 natural features",
+    meaning: "Rock and spring",
+    example_jp: "日本には温泉がたくさんある。",
+    example_en: "There are many hot springs in Japan."
+  },
+  practice: "Write each kanji 10 times. Create flashcards for all vocabulary words. Practice reading the example sentences aloud.",
+  tip: "Focus on recognizing kanji in context. You don't need perfect handwriting for the JLPT — reading comprehension is key."
+});
+
+curriculum.push({
+  day: 583,
+  phaseNum: 13,
+  phaseName: "N4 Kanji",
+  week: 84,
+  title: "Kanji: 波 & 氷",
+  intro: "波 (wave) and 氷 (ice). Water in different forms.",
+  type: "kanji",
+  chars: [
+    ["波", "ハ・なみ"],
+    ["氷", "ヒョウ・こおり"]
+  ],
+  vocab: [
+    ["波", "なみ", "wave"],
+    ["電波", "でんぱ", "radio wave"],
+    ["氷", "こおり", "ice"],
+    ["氷山", "ひょうざん", "iceberg"],
+    ["波動", "はどう", "wave motion"]
+  ],
+  grammar: {
+    pattern: "波 and 氷 water forms",
+    meaning: "Wave and ice",
+    example_jp: "今日の海は波が高い。",
+    example_en: "The waves are high at the sea today."
+  },
+  practice: "Write each kanji 10 times. Create flashcards for all vocabulary words. Practice reading the example sentences aloud.",
+  tip: "Focus on recognizing kanji in context. You don't need perfect handwriting for the JLPT — reading comprehension is key."
+});
+
+curriculum.push({
+  day: 584,
+  phaseNum: 13,
+  phaseName: "N4 Kanji",
+  week: 84,
+  title: "Kanji: 光 & 風",
+  intro: "光 (light/shine) and 風 (wind/style). Natural phenomena kanji.",
+  type: "kanji",
+  chars: [
+    ["光", "コウ・ひかり・ひかる"],
+    ["風", "フウ・かぜ"]
+  ],
+  vocab: [
+    ["光", "ひかり", "light"],
+    ["光る", "ひかる", "to shine"],
+    ["風", "かぜ", "wind"],
+    ["台風", "たいふう", "typhoon"],
+    ["風景", "ふうけい", "scenery"]
+  ],
+  grammar: {
+    pattern: "光 and 風 nature",
+    meaning: "Light and wind",
+    example_jp: "朝の光が窓から入ってきた。",
+    example_en: "Morning light came in through the window."
+  },
+  practice: "Write each kanji 10 times. Create flashcards for all vocabulary words. Practice reading the example sentences aloud.",
+  tip: "Focus on recognizing kanji in context. You don't need perfect handwriting for the JLPT — reading comprehension is key."
+});
+
+curriculum.push({
+  day: 585,
+  phaseNum: 13,
+  phaseName: "N4 Kanji",
+  week: 84,
+  title: "Kanji: 雲 & 星",
+  intro: "雲 (cloud) and 星 (star). Sky kanji to complete the nature set.",
+  type: "kanji",
+  chars: [
+    ["雲", "ウン・くも"],
+    ["星", "セイ・ほし"]
+  ],
+  vocab: [
+    ["雲", "くも", "cloud"],
+    ["星", "ほし", "star"],
+    ["雲海", "うんかい", "sea of clouds"],
+    ["星空", "ほしぞら", "starry sky"],
+    ["流れ星", "ながれぼし", "shooting star"]
+  ],
+  grammar: {
+    pattern: "雲 and 星 sky kanji",
+    meaning: "Cloud and star",
+    example_jp: "雲がなくなって、星がきれいに見える。",
+    example_en: "The clouds cleared and the stars are beautiful."
+  },
+  practice: "Write each kanji 10 times. Create flashcards for all vocabulary words. Practice reading the example sentences aloud.",
+  tip: "Focus on recognizing kanji in context. You don't need perfect handwriting for the JLPT — reading comprehension is key."
+});
+
+curriculum.push({
+  day: 586,
+  phaseNum: 13,
+  phaseName: "N4 Kanji",
+  week: 84,
+  title: "Kanji: 悲 & 怒",
+  intro: "悲 (sad/grieve) and 怒 (angry). Emotion kanji.",
+  type: "kanji",
+  chars: [
+    ["悲", "ヒ・かなしい"],
+    ["怒", "ド・おこる・いかる"]
+  ],
+  vocab: [
+    ["悲しい", "かなしい", "sad"],
+    ["悲しむ", "かなしむ", "to grieve"],
+    ["怒る", "おこる", "to get angry"],
+    ["怒り", "いかり", "anger"],
+    ["悲劇", "ひげき", "tragedy"]
+  ],
+  grammar: {
+    pattern: "悲 and 怒 emotions",
+    meaning: "Sadness and anger",
+    example_jp: "そのニュースを聞いて悲しくなった。",
+    example_en: "I became sad after hearing that news."
+  },
+  practice: "Write each kanji 10 times. Create flashcards for all vocabulary words. Practice reading the example sentences aloud.",
+  tip: "Focus on recognizing kanji in context. You don't need perfect handwriting for the JLPT — reading comprehension is key."
+});
+
+curriculum.push({
+  day: 587,
+  phaseNum: 13,
+  phaseName: "N4 Kanji",
+  week: 84,
+  title: "Kanji: 楽 & 苦",
+  intro: "楽 (fun/easy/music) and 苦 (suffering/bitter). Opposite experiences.",
+  type: "kanji",
+  chars: [
+    ["楽", "ラク・ガク・たのしい"],
+    ["苦", "ク・くるしい・にがい"]
+  ],
+  vocab: [
+    ["楽しい", "たのしい", "fun/enjoyable"],
+    ["音楽", "おんがく", "music"],
+    ["苦しい", "くるしい", "painful"],
+    ["苦手", "にがて", "weak point"],
+    ["楽器", "がっき", "musical instrument"]
+  ],
+  grammar: {
+    pattern: "楽 and 苦 — opposites",
+    meaning: "Fun/easy vs suffering",
+    example_jp: "音楽を聞くと楽しい気持ちになる。",
+    example_en: "Listening to music makes me feel happy."
+  },
+  practice: "Write each kanji 10 times. Create flashcards for all vocabulary words. Practice reading the example sentences aloud.",
+  tip: "Focus on recognizing kanji in context. You don't need perfect handwriting for the JLPT — reading comprehension is key."
+});
+
+curriculum.push({
+  day: 588,
+  phaseNum: 13,
+  phaseName: "N4 Kanji",
+  week: 84,
+  title: "Kanji: 忙 & 暇",
+  intro: "忙 (busy) and 暇 (free time). Opposite states of being.",
+  type: "kanji",
+  chars: [
+    ["忙", "ボウ・いそがしい"],
+    ["暇", "カ・ひま"]
+  ],
+  vocab: [
+    ["忙しい", "いそがしい", "busy"],
+    ["多忙", "たぼう", "very busy"],
+    ["暇", "ひま", "free time"],
+    ["暇な時", "ひまなとき", "when free"],
+    ["忙しくない", "いそがしくない", "not busy"]
+  ],
+  grammar: {
+    pattern: "忙 and 暇 opposites",
+    meaning: "Busy vs free",
+    example_jp: "最近忙しくて、暇がない。",
+    example_en: "I've been busy lately and have no free time."
+  },
+  practice: "Write each kanji 10 times. Create flashcards for all vocabulary words. Practice reading the example sentences aloud.",
+  tip: "Focus on recognizing kanji in context. You don't need perfect handwriting for the JLPT — reading comprehension is key."
+});
+
+curriculum.push({
+  day: 589,
+  phaseNum: 13,
+  phaseName: "N4 Kanji",
+  week: 85,
+  title: "Kanji: 正 & 同",
+  intro: "正 (correct/right) and 同 (same/agree). Abstract quality kanji.",
+  type: "kanji",
+  chars: [
+    ["正", "セイ・ショウ・ただしい"],
+    ["同", "ドウ・おなじ"]
+  ],
+  vocab: [
+    ["正しい", "ただしい", "correct"],
+    ["正月", "しょうがつ", "New Year"],
+    ["同じ", "おなじ", "same"],
+    ["同時", "どうじ", "simultaneous"],
+    ["正確", "せいかく", "accurate"]
+  ],
+  grammar: {
+    pattern: "正 and 同 qualities",
+    meaning: "Correct and same",
+    example_jp: "正しい答えは同じだった。",
+    example_en: "The correct answer was the same."
+  },
+  practice: "Write each kanji 10 times. Create flashcards for all vocabulary words. Practice reading the example sentences aloud.",
+  tip: "Focus on recognizing kanji in context. You don't need perfect handwriting for the JLPT — reading comprehension is key."
+});
+
+curriculum.push({
+  day: 590,
+  phaseNum: 13,
+  phaseName: "N4 Kanji",
+  week: 85,
+  title: "Kanji: 特 & 別",
+  intro: "特 (special) and 別 (separate/different). Often combined as 特別 (special).",
+  type: "kanji",
+  chars: [
+    ["特", "トク"],
+    ["別", "ベツ・わかれる"]
+  ],
+  vocab: [
+    ["特に", "とくに", "especially"],
+    ["特別", "とくべつ", "special"],
+    ["別に", "べつに", "not particularly"],
+    ["別れる", "わかれる", "to separate"],
+    ["特急", "とっきゅう", "express train"]
+  ],
+  grammar: {
+    pattern: "特別 (special)",
+    meaning: "Special/particular",
+    example_jp: "今日は特別な日です。",
+    example_en: "Today is a special day."
+  },
+  practice: "Write each kanji 10 times. Create flashcards for all vocabulary words. Practice reading the example sentences aloud.",
+  tip: "Focus on recognizing kanji in context. You don't need perfect handwriting for the JLPT — reading comprehension is key."
+});
+
+curriculum.push({
+  day: 591,
+  phaseNum: 13,
+  phaseName: "N4 Kanji",
+  week: 85,
+  title: "Kanji: 不 & 全",
+  intro: "不 (not/un-) and 全 (all/whole). Prefix and totality kanji.",
+  type: "kanji",
+  chars: [
+    ["不", "フ・ブ"],
+    ["全", "ゼン・まったく"]
+  ],
+  vocab: [
+    ["不便", "ふべん", "inconvenient"],
+    ["不安", "ふあん", "anxiety"],
+    ["全部", "ぜんぶ", "all/everything"],
+    ["全然", "ぜんぜん", "not at all"],
+    ["安全", "あんぜん", "safety"]
+  ],
+  grammar: {
+    pattern: "不〜 (negative prefix)",
+    meaning: "Not/un- prefix",
+    example_jp: "ここは全然不便じゃない。",
+    example_en: "This place is not inconvenient at all."
+  },
+  practice: "Write each kanji 10 times. Create flashcards for all vocabulary words. Practice reading the example sentences aloud.",
+  tip: "Focus on recognizing kanji in context. You don't need perfect handwriting for the JLPT — reading comprehension is key."
+});
+
+curriculum.push({
+  day: 592,
+  phaseNum: 13,
+  phaseName: "N4 Kanji",
+  week: 85,
+  title: "Kanji: 必 & 急",
+  intro: "必 (certain/necessary) and 急 (hurry/sudden). Urgency kanji.",
+  type: "kanji",
+  chars: [
+    ["必", "ヒツ・かならず"],
+    ["急", "キュウ・いそぐ"]
+  ],
+  vocab: [
+    ["必ず", "かならず", "certainly/without fail"],
+    ["必要", "ひつよう", "necessary"],
+    ["急ぐ", "いそぐ", "to hurry"],
+    ["急に", "きゅうに", "suddenly"],
+    ["救急車", "きゅうきゅうしゃ", "ambulance"]
+  ],
+  grammar: {
+    pattern: "必 and 急 urgency",
+    meaning: "Necessary and urgent",
+    example_jp: "急いでください。これは必要です。",
+    example_en: "Please hurry. This is necessary."
+  },
+  practice: "Write each kanji 10 times. Create flashcards for all vocabulary words. Practice reading the example sentences aloud.",
+  tip: "Focus on recognizing kanji in context. You don't need perfect handwriting for the JLPT — reading comprehension is key."
+});
+
+curriculum.push({
+  day: 593,
+  phaseNum: 13,
+  phaseName: "N4 Kanji",
+  week: 85,
+  title: "Kanji: 簡 & 単",
+  intro: "簡 (simple/brief) and 単 (single/simple). Often combined as 簡単 (easy/simple).",
+  type: "kanji",
+  chars: [
+    ["簡", "カン"],
+    ["単", "タン"]
+  ],
+  vocab: [
+    ["簡単", "かんたん", "easy/simple"],
+    ["簡単に", "かんたんに", "easily"],
+    ["単語", "たんご", "vocabulary word"],
+    ["単位", "たんい", "unit/credit"],
+    ["簡潔", "かんけつ", "concise"]
+  ],
+  grammar: {
+    pattern: "簡単 (simple/easy)",
+    meaning: "Simple compound",
+    example_jp: "この問題は簡単です。",
+    example_en: "This problem is easy."
+  },
+  practice: "Write each kanji 10 times. Create flashcards for all vocabulary words. Practice reading the example sentences aloud.",
+  tip: "Focus on recognizing kanji in context. You don't need perfect handwriting for the JLPT — reading comprehension is key."
+});
+
+curriculum.push({
+  day: 594,
+  phaseNum: 13,
+  phaseName: "N4 Kanji",
+  week: 85,
+  title: "Kanji: 複 & 難",
+  intro: "複 (compound/complex) and 難 (difficult). Opposite of yesterday's kanji!",
+  type: "kanji",
+  chars: [
+    ["複", "フク"],
+    ["難", "ナン・むずかしい"]
+  ],
+  vocab: [
+    ["複雑", "ふくざつ", "complicated"],
+    ["難しい", "むずかしい", "difficult"],
+    ["複数", "ふくすう", "plural/multiple"],
+    ["困難", "こんなん", "difficulty"],
+    ["複合", "ふくごう", "compound"]
+  ],
+  grammar: {
+    pattern: "複雑 and 難しい",
+    meaning: "Complex and difficult",
+    example_jp: "この文法は複雑で難しい。",
+    example_en: "This grammar is complex and difficult."
+  },
+  practice: "Write each kanji 10 times. Create flashcards for all vocabulary words. Practice reading the example sentences aloud.",
+  tip: "Focus on recognizing kanji in context. You don't need perfect handwriting for the JLPT — reading comprehension is key."
+});
+
+curriculum.push({
+  day: 595,
+  phaseNum: 13,
+  phaseName: "N4 Kanji",
+  week: 85,
+  title: "Kanji: 深 & 広",
+  intro: "深 (deep) and 広 (wide/broad). Dimension kanji.",
+  type: "kanji",
+  chars: [
+    ["深", "シン・ふかい"],
+    ["広", "コウ・ひろい"]
+  ],
+  vocab: [
+    ["深い", "ふかい", "deep"],
+    ["深夜", "しんや", "late at night"],
+    ["広い", "ひろい", "wide/spacious"],
+    ["広場", "ひろば", "plaza/open space"],
+    ["広告", "こうこく", "advertisement"]
+  ],
+  grammar: {
+    pattern: "深 and 広 dimensions",
+    meaning: "Deep and wide",
+    example_jp: "この公園は広くて、池が深い。",
+    example_en: "This park is spacious and the pond is deep."
+  },
+  practice: "Write each kanji 10 times. Create flashcards for all vocabulary words. Practice reading the example sentences aloud.",
+  tip: "Focus on recognizing kanji in context. You don't need perfect handwriting for the JLPT — reading comprehension is key."
+});
+
+curriculum.push({
+  day: 596,
+  phaseNum: 13,
+  phaseName: "N4 Kanji",
+  week: 86,
+  title: "Kanji: 考 & 思",
+  intro: "考 (think/consider) and 思 (think/feel). Two kanji for thinking!",
+  type: "kanji",
+  chars: [
+    ["考", "コウ・かんがえる"],
+    ["思", "シ・おもう"]
+  ],
+  vocab: [
+    ["考える", "かんがえる", "to think/consider"],
+    ["参考", "さんこう", "reference"],
+    ["思う", "おもう", "to think/feel"],
+    ["思い出", "おもいで", "memory"],
+    ["考え方", "かんがえかた", "way of thinking"]
+  ],
+  grammar: {
+    pattern: "考える vs 思う",
+    meaning: "Consider vs feel/believe",
+    example_jp: "よく考えてから答えを出そうと思う。",
+    example_en: "I think I'll give my answer after thinking carefully."
+  },
+  practice: "Write each kanji 10 times. Create flashcards for all vocabulary words. Practice reading the example sentences aloud.",
+  tip: "Focus on recognizing kanji in context. You don't need perfect handwriting for the JLPT — reading comprehension is key."
+});
+
+curriculum.push({
+  day: 597,
+  phaseNum: 13,
+  phaseName: "N4 Kanji",
+  week: 86,
+  title: "Kanji: 意 & 味",
+  intro: "意 (meaning/intention) and 味 (taste/flavor). Together: 意味 (meaning).",
+  type: "kanji",
+  chars: [
+    ["意", "イ"],
+    ["味", "ミ・あじ"]
+  ],
+  vocab: [
+    ["意味", "いみ", "meaning"],
+    ["意見", "いけん", "opinion"],
+    ["味", "あじ", "taste/flavor"],
+    ["興味", "きょうみ", "interest"],
+    ["意外", "いがい", "unexpected"]
+  ],
+  grammar: {
+    pattern: "意味 (meaning)",
+    meaning: "Meaning/significance",
+    example_jp: "この言葉の意味がわかりますか。",
+    example_en: "Do you understand the meaning of this word?"
+  },
+  practice: "Write each kanji 10 times. Create flashcards for all vocabulary words. Practice reading the example sentences aloud.",
+  tip: "Focus on recognizing kanji in context. You don't need perfect handwriting for the JLPT — reading comprehension is key."
+});
+
+curriculum.push({
+  day: 598,
+  phaseNum: 13,
+  phaseName: "N4 Kanji",
+  week: 86,
+  title: "Kanji: 理 & 由",
+  intro: "理 (reason/logic) and 由 (reason/cause). Together: 理由 (reason).",
+  type: "kanji",
+  chars: [
+    ["理", "リ"],
+    ["由", "ユウ・ユ・よし"]
+  ],
+  vocab: [
+    ["理由", "りゆう", "reason"],
+    ["理解", "りかい", "understanding"],
+    ["自由", "じゆう", "freedom"],
+    ["料理", "りょうり", "cooking"],
+    ["無理", "むり", "impossible"]
+  ],
+  grammar: {
+    pattern: "理由 (reason)",
+    meaning: "Reason/cause",
+    example_jp: "遅刻した理由を教えてください。",
+    example_en: "Please tell me the reason you were late."
+  },
+  practice: "Write each kanji 10 times. Create flashcards for all vocabulary words. Practice reading the example sentences aloud.",
+  tip: "Focus on recognizing kanji in context. You don't need perfect handwriting for the JLPT — reading comprehension is key."
+});
+
+curriculum.push({
+  day: 599,
+  phaseNum: 13,
+  phaseName: "N4 Kanji",
+  week: 86,
+  title: "Kanji: 問 & 答",
+  intro: "問 (question/ask) and 答 (answer). Perfect pair for studying!",
+  type: "kanji",
+  chars: [
+    ["問", "モン・とう・とい"],
+    ["答", "トウ・こたえる"]
+  ],
+  vocab: [
+    ["問題", "もんだい", "problem/question"],
+    ["質問", "しつもん", "question"],
+    ["答える", "こたえる", "to answer"],
+    ["答え", "こたえ", "answer"],
+    ["問い合わせ", "といあわせ", "inquiry"]
+  ],
+  grammar: {
+    pattern: "問 and 答 Q&A",
+    meaning: "Question and answer",
+    example_jp: "質問に答えてください。",
+    example_en: "Please answer the question."
+  },
+  practice: "Write each kanji 10 times. Create flashcards for all vocabulary words. Practice reading the example sentences aloud.",
+  tip: "Focus on recognizing kanji in context. You don't need perfect handwriting for the JLPT — reading comprehension is key."
+});
+
+curriculum.push({
+  day: 600,
+  phaseNum: 13,
+  phaseName: "N4 Kanji",
+  week: 86,
+  title: "Kanji: 知 & 覚",
+  intro: "知 (know) and 覚 (remember/awake). Knowledge kanji.",
+  type: "kanji",
+  chars: [
+    ["知", "チ・しる"],
+    ["覚", "カク・おぼえる・さめる"]
+  ],
+  vocab: [
+    ["知る", "しる", "to know"],
+    ["知識", "ちしき", "knowledge"],
+    ["覚える", "おぼえる", "to remember/memorize"],
+    ["覚ます", "さます", "to wake up"],
+    ["知り合い", "しりあい", "acquaintance"]
+  ],
+  grammar: {
+    pattern: "知 and 覚 knowledge",
+    meaning: "Know and remember",
+    example_jp: "新しい漢字を覚えるのは大変です。",
+    example_en: "Memorizing new kanji is difficult."
+  },
+  practice: "Write each kanji 10 times. Create flashcards for all vocabulary words. Practice reading the example sentences aloud.",
+  tip: "Focus on recognizing kanji in context. You don't need perfect handwriting for the JLPT — reading comprehension is key."
+});
+
+curriculum.push({
+  day: 601,
+  phaseNum: 13,
+  phaseName: "N4 Kanji",
+  week: 86,
+  title: "Kanji: 信 & 伝",
+  intro: "信 (believe/trust) and 伝 (convey/transmit). Communication kanji.",
+  type: "kanji",
+  chars: [
+    ["信", "シン"],
+    ["伝", "デン・つたえる・つたわる"]
+  ],
+  vocab: [
+    ["信じる", "しんじる", "to believe"],
+    ["信号", "しんごう", "traffic light"],
+    ["伝える", "つたえる", "to convey/tell"],
+    ["伝統", "でんとう", "tradition"],
+    ["自信", "じしん", "confidence"]
+  ],
+  grammar: {
+    pattern: "信 and 伝 communication",
+    meaning: "Trust and convey",
+    example_jp: "この話を友だちに伝えてください。",
+    example_en: "Please convey this story to your friend."
+  },
+  practice: "Write each kanji 10 times. Create flashcards for all vocabulary words. Practice reading the example sentences aloud.",
+  tip: "Focus on recognizing kanji in context. You don't need perfect handwriting for the JLPT — reading comprehension is key."
+});
+
+curriculum.push({
+  day: 602,
+  phaseNum: 13,
+  phaseName: "N4 Kanji",
+  week: 86,
+  title: "Kanji: 決 & 変",
+  intro: "決 (decide) and 変 (change/strange). Decision-making kanji.",
+  type: "kanji",
+  chars: [
+    ["決", "ケツ・きめる・きまる"],
+    ["変", "ヘン・かわる・かえる"]
+  ],
+  vocab: [
+    ["決める", "きめる", "to decide"],
+    ["決まる", "きまる", "to be decided"],
+    ["変わる", "かわる", "to change (intransitive)"],
+    ["変える", "かえる", "to change (transitive)"],
+    ["大変", "たいへん", "terrible/very"]
+  ],
+  grammar: {
+    pattern: "決 and 変 — decide and change",
+    meaning: "Decision and change",
+    example_jp: "予定が変わったので、もう一度決めましょう。",
+    example_en: "The plans changed, so let's decide again."
+  },
+  practice: "Write each kanji 10 times. Create flashcards for all vocabulary words. Practice reading the example sentences aloud.",
+  tip: "Focus on recognizing kanji in context. You don't need perfect handwriting for the JLPT — reading comprehension is key."
+});
+
+curriculum.push({
+  day: 603,
+  phaseNum: 13,
+  phaseName: "N4 Kanji",
+  week: 87,
+  title: "Kanji: 開 & 閉",
+  intro: "開 (open) and 閉 (close). Another classic opposite pair.",
+  type: "kanji",
+  chars: [
+    ["開", "カイ・あく・あける・ひらく"],
+    ["閉", "ヘイ・しまる・しめる・とじる"]
+  ],
+  vocab: [
+    ["開く", "あく", "to open"],
+    ["開ける", "あける", "to open (transitive)"],
+    ["閉まる", "しまる", "to close"],
+    ["閉める", "しめる", "to close (transitive)"],
+    ["開発", "かいはつ", "development"]
+  ],
+  grammar: {
+    pattern: "開 and 閉 — open and close",
+    meaning: "Opposite pair",
+    example_jp: "窓を開けて、ドアを閉めてください。",
+    example_en: "Please open the window and close the door."
+  },
+  practice: "Write each kanji 10 times. Create flashcards for all vocabulary words. Practice reading the example sentences aloud.",
+  tip: "Focus on recognizing kanji in context. You don't need perfect handwriting for the JLPT — reading comprehension is key."
+});
+
+curriculum.push({
+  day: 604,
+  phaseNum: 13,
+  phaseName: "N4 Kanji",
+  week: 87,
+  title: "Kanji: 集 & 届",
+  intro: "集 (gather/collect) and 届 (deliver). Movement of things and people.",
+  type: "kanji",
+  chars: [
+    ["集", "シュウ・あつまる・あつめる"],
+    ["届", "とどく・とどける"]
+  ],
+  vocab: [
+    ["集める", "あつめる", "to collect"],
+    ["集まる", "あつまる", "to gather"],
+    ["集中", "しゅうちゅう", "concentration"],
+    ["届く", "とどく", "to arrive"],
+    ["届ける", "とどける", "to deliver"]
+  ],
+  grammar: {
+    pattern: "集 gather/collect",
+    meaning: "Gathering and collecting",
+    example_jp: "みんなが集まったら、会議を始めましょう。",
+    example_en: "When everyone has gathered, let's start the meeting."
+  },
+  practice: "Write each kanji 10 times. Create flashcards for all vocabulary words. Practice reading the example sentences aloud.",
+  tip: "Focus on recognizing kanji in context. You don't need perfect handwriting for the JLPT — reading comprehension is key."
+});
+
+curriculum.push({
+  day: 605,
+  phaseNum: 13,
+  phaseName: "N4 Kanji",
+  week: 87,
+  title: "Kanji: 受 & 払",
+  intro: "受 (receive) and 払 (pay). Transaction kanji.",
+  type: "kanji",
+  chars: [
+    ["受", "ジュ・うける"],
+    ["払", "フツ・はらう"]
+  ],
+  vocab: [
+    ["受ける", "うける", "to receive/take"],
+    ["受付", "うけつけ", "reception desk"],
+    ["払う", "はらう", "to pay"],
+    ["受験", "じゅけん", "taking an exam"],
+    ["支払い", "しはらい", "payment"]
+  ],
+  grammar: {
+    pattern: "受 and 払 transactions",
+    meaning: "Receive and pay",
+    example_jp: "受付でお金を払ってください。",
+    example_en: "Please pay at the reception desk."
+  },
+  practice: "Write each kanji 10 times. Create flashcards for all vocabulary words. Practice reading the example sentences aloud.",
+  tip: "Focus on recognizing kanji in context. You don't need perfect handwriting for the JLPT — reading comprehension is key."
+});
+
+curriculum.push({
+  day: 606,
+  phaseNum: 13,
+  phaseName: "N4 Kanji",
+  week: 87,
+  title: "Kanji: 教 & 育",
+  intro: "教 (teach) and 育 (raise/grow). Together: 教育 (education).",
+  type: "kanji",
+  chars: [
+    ["教", "キョウ・おしえる"],
+    ["育", "イク・そだてる"]
+  ],
+  vocab: [
+    ["教える", "おしえる", "to teach"],
+    ["教室", "きょうしつ", "classroom"],
+    ["育てる", "そだてる", "to raise/grow"],
+    ["教育", "きょういく", "education"],
+    ["育つ", "そだつ", "to grow up"]
+  ],
+  grammar: {
+    pattern: "教育 (education)",
+    meaning: "Teaching and growing",
+    example_jp: "子どもの教育は大切です。",
+    example_en: "Children's education is important."
+  },
+  practice: "Write each kanji 10 times. Create flashcards for all vocabulary words. Practice reading the example sentences aloud.",
+  tip: "Focus on recognizing kanji in context. You don't need perfect handwriting for the JLPT — reading comprehension is key."
+});
+
+curriculum.push({
+  day: 607,
+  phaseNum: 13,
+  phaseName: "N4 Kanji",
+  week: 87,
+  title: "Kanji: 文 & 化",
+  intro: "文 (writing/sentence) and 化 (change/transform). Together: 文化 (culture).",
+  type: "kanji",
+  chars: [
+    ["文", "ブン・モン・ふみ"],
+    ["化", "カ・ケ・ばける"]
+  ],
+  vocab: [
+    ["文化", "ぶんか", "culture"],
+    ["文章", "ぶんしょう", "sentence/text"],
+    ["変化", "へんか", "change"],
+    ["化学", "かがく", "chemistry"],
+    ["文学", "ぶんがく", "literature"]
+  ],
+  grammar: {
+    pattern: "文化 (culture)",
+    meaning: "Writing and transformation",
+    example_jp: "日本の文化に興味があります。",
+    example_en: "I am interested in Japanese culture."
+  },
+  practice: "Write each kanji 10 times. Create flashcards for all vocabulary words. Practice reading the example sentences aloud.",
+  tip: "Focus on recognizing kanji in context. You don't need perfect handwriting for the JLPT — reading comprehension is key."
+});
+
+curriculum.push({
+  day: 608,
+  phaseNum: 13,
+  phaseName: "N4 Kanji",
+  week: 87,
+  title: "Kanji: 世 & 界",
+  intro: "世 (world/generation) and 界 (world/boundary). Together: 世界 (world).",
+  type: "kanji",
+  chars: [
+    ["世", "セ・セイ・よ"],
+    ["界", "カイ"]
+  ],
+  vocab: [
+    ["世界", "せかい", "world"],
+    ["世の中", "よのなか", "society/world"],
+    ["世紀", "せいき", "century"],
+    ["世話", "せわ", "care/help"],
+    ["業界", "ぎょうかい", "industry"]
+  ],
+  grammar: {
+    pattern: "世界 (world)",
+    meaning: "World/globe",
+    example_jp: "世界中を旅行したい。",
+    example_en: "I want to travel all over the world."
+  },
+  practice: "Write each kanji 10 times. Create flashcards for all vocabulary words. Practice reading the example sentences aloud.",
+  tip: "Focus on recognizing kanji in context. You don't need perfect handwriting for the JLPT — reading comprehension is key."
+});
+
+curriculum.push({
+  day: 609,
+  phaseNum: 13,
+  phaseName: "N4 Kanji",
+  week: 87,
+  title: "Kanji: 経 & 験",
+  intro: "経 (pass through/sutra) and 験 (test/verify). Together: 経験 (experience).",
+  type: "kanji",
+  chars: [
+    ["経", "ケイ・キョウ"],
+    ["験", "ケン・ゲン"]
+  ],
+  vocab: [
+    ["経験", "けいけん", "experience"],
+    ["経済", "けいざい", "economy"],
+    ["実験", "じっけん", "experiment"],
+    ["経つ", "たつ", "to pass (time)"],
+    ["受験", "じゅけん", "taking an exam"]
+  ],
+  grammar: {
+    pattern: "経験 (experience)",
+    meaning: "Experience and testing",
+    example_jp: "日本に住んだ経験がありますか。",
+    example_en: "Do you have experience living in Japan?"
+  },
+  practice: "Write each kanji 10 times. Create flashcards for all vocabulary words. Practice reading the example sentences aloud.",
+  tip: "Focus on recognizing kanji in context. You don't need perfect handwriting for the JLPT — reading comprehension is key."
+});
+
+curriculum.push({
+  day: 610,
+  phaseNum: 13,
+  phaseName: "N4 Kanji",
+  week: 88,
+  title: "Kanji: 政 & 治",
+  intro: "政 (politics/government) and 治 (govern/cure). Together: 政治 (politics).",
+  type: "kanji",
+  chars: [
+    ["政", "セイ・ショウ"],
+    ["治", "ジ・チ・おさめる・なおす"]
+  ],
+  vocab: [
+    ["政治", "せいじ", "politics"],
+    ["政府", "せいふ", "government"],
+    ["治る", "なおる", "to be cured"],
+    ["治す", "なおす", "to cure"],
+    ["自治", "じち", "self-government"]
+  ],
+  grammar: {
+    pattern: "政治 (politics)",
+    meaning: "Politics and governance",
+    example_jp: "政治に興味がありますか。",
+    example_en: "Are you interested in politics?"
+  },
+  practice: "Write each kanji 10 times. Create flashcards for all vocabulary words. Practice reading the example sentences aloud.",
+  tip: "Focus on recognizing kanji in context. You don't need perfect handwriting for the JLPT — reading comprehension is key."
+});
+
+curriculum.push({
+  day: 611,
+  phaseNum: 13,
+  phaseName: "N4 Kanji",
+  week: 88,
+  title: "Kanji: 産 & 業",
+  intro: "産 (produce/give birth) and 業 (business/industry). Economy kanji.",
+  type: "kanji",
+  chars: [
+    ["産", "サン・うむ"],
+    ["業", "ギョウ・ゴウ・わざ"]
+  ],
+  vocab: [
+    ["産業", "さんぎょう", "industry"],
+    ["生産", "せいさん", "production"],
+    ["業界", "ぎょうかい", "industry/field"],
+    ["卒業", "そつぎょう", "graduation"],
+    ["産む", "うむ", "to give birth"]
+  ],
+  grammar: {
+    pattern: "産業 (industry)",
+    meaning: "Production and business",
+    example_jp: "この地域の主な産業は農業です。",
+    example_en: "The main industry of this region is agriculture."
+  },
+  practice: "Write each kanji 10 times. Create flashcards for all vocabulary words. Practice reading the example sentences aloud.",
+  tip: "Focus on recognizing kanji in context. You don't need perfect handwriting for the JLPT — reading comprehension is key."
+});
+
+curriculum.push({
+  day: 612,
+  phaseNum: 13,
+  phaseName: "N4 Kanji",
+  week: 88,
+  title: "Kanji: 品 & 届",
+  intro: "品 (goods/quality) and 届 (deliver). Shopping-related kanji.",
+  type: "kanji",
+  chars: [
+    ["品", "ヒン・しな"],
+    ["届", "とどく・とどける"]
+  ],
+  vocab: [
+    ["品物", "しなもの", "goods/items"],
+    ["食品", "しょくひん", "food products"],
+    ["作品", "さくひん", "work (art)"],
+    ["届く", "とどく", "to arrive"],
+    ["届ける", "とどける", "to deliver"]
+  ],
+  grammar: {
+    pattern: "品 quality/goods",
+    meaning: "Products and quality",
+    example_jp: "注文した品物が届いた。",
+    example_en: "The goods I ordered have arrived."
+  },
+  practice: "Write each kanji 10 times. Create flashcards for all vocabulary words. Practice reading the example sentences aloud.",
+  tip: "Focus on recognizing kanji in context. You don't need perfect handwriting for the JLPT — reading comprehension is key."
+});
+
+curriculum.push({
+  day: 613,
+  phaseNum: 13,
+  phaseName: "N4 Kanji",
+  week: 88,
+  title: "Kanji: 売 & 届",
+  intro: "売 (sell) and 届 (reach). Commerce kanji.",
+  type: "kanji",
+  chars: [
+    ["売", "バイ・うる・うれる"],
+    ["届", "とどく・とどける"]
+  ],
+  vocab: [
+    ["売る", "うる", "to sell"],
+    ["売れる", "うれる", "to sell well"],
+    ["売り場", "うりば", "sales counter"],
+    ["販売", "はんばい", "sales"],
+    ["届く", "とどく", "to reach/arrive"]
+  ],
+  grammar: {
+    pattern: "売 commerce",
+    meaning: "Selling and commerce",
+    example_jp: "この商品はよく売れている。",
+    example_en: "This product is selling well."
+  },
+  practice: "Write each kanji 10 times. Create flashcards for all vocabulary words. Practice reading the example sentences aloud.",
+  tip: "Focus on recognizing kanji in context. You don't need perfect handwriting for the JLPT — reading comprehension is key."
+});
+
+curriculum.push({
+  day: 614,
+  phaseNum: 13,
+  phaseName: "N4 Kanji",
+  week: 88,
+  title: "Kanji: 度 & 届",
+  intro: "度 (degree/time) and 届 (deliver). Measurement kanji.",
+  type: "kanji",
+  chars: [
+    ["度", "ド・タク・たび"],
+    ["届", "とどく・とどける"]
+  ],
+  vocab: [
+    ["温度", "おんど", "temperature"],
+    ["今度", "こんど", "this time/next time"],
+    ["何度も", "なんども", "many times"],
+    ["態度", "たいど", "attitude"],
+    ["一度", "いちど", "once"]
+  ],
+  grammar: {
+    pattern: "度 — degree and time",
+    meaning: "Multiple meanings of degree",
+    example_jp: "何度も挑戦して、やっと成功した。",
+    example_en: "After trying many times, I finally succeeded."
+  },
+  practice: "Write each kanji 10 times. Create flashcards for all vocabulary words. Practice reading the example sentences aloud.",
+  tip: "Focus on recognizing kanji in context. You don't need perfect handwriting for the JLPT — reading comprehension is key."
+});
+
+curriculum.push({
+  day: 615,
+  phaseNum: 13,
+  phaseName: "N4 Kanji",
+  week: 88,
+  title: "Kanji: 届 & 届",
+  intro: "Progress (進) and result (果). Achievement kanji.",
+  type: "kanji",
+  chars: [
+    ["進", "シン・すすむ"],
+    ["果", "カ・はたす"]
+  ],
+  vocab: [
+    ["進む", "すすむ", "to advance"],
+    ["進歩", "しんぽ", "progress"],
+    ["結果", "けっか", "result"],
+    ["果物", "くだもの", "fruit"],
+    ["効果", "こうか", "effect"]
+  ],
+  grammar: {
+    pattern: "進 and 果 progress",
+    meaning: "Progress and results",
+    example_jp: "努力の結果、進歩した。",
+    example_en: "As a result of effort, I made progress."
+  },
+  practice: "Write each kanji 10 times. Create flashcards for all vocabulary words. Practice reading the example sentences aloud.",
+  tip: "Focus on recognizing kanji in context. You don't need perfect handwriting for the JLPT — reading comprehension is key."
+});
+
+curriculum.push({
+  day: 616,
+  phaseNum: 13,
+  phaseName: "N4 Kanji",
+  week: 88,
+  title: "N4 Kanji Review: People & Social",
+  intro: "Review all people and social kanji from days 556-565.",
+  type: "review",
+  chars: [
+    ["会社員", "かいしゃいん"],
+    ["家族", "かぞく"]
+  ],
+  vocab: [
+    ["会社", "かいしゃ", "company"],
+    ["家族", "かぞく", "family"],
+    ["友人", "ゆうじん", "friend"],
+    ["両親", "りょうしん", "parents"],
+    ["兄弟", "きょうだい", "siblings"]
+  ],
+  grammar: {
+    pattern: "People kanji review",
+    meaning: "Review of social vocabulary",
+    example_jp: "会社の同僚は友人でもある。",
+    example_en: "My company colleague is also a friend."
+  },
+  practice: "Write each kanji 10 times. Create flashcards for all vocabulary words. Practice reading the example sentences aloud.",
+  tip: "Focus on recognizing kanji in context. You don't need perfect handwriting for the JLPT — reading comprehension is key."
+});
+
+curriculum.push({
+  day: 617,
+  phaseNum: 13,
+  phaseName: "N4 Kanji",
+  week: 89,
+  title: "N4 Kanji Review: Action & Movement",
+  intro: "Review all action and movement kanji from days 566-575.",
+  type: "review",
+  chars: [
+    ["走る・歩く", "はしる・あるく"],
+    ["開く・閉まる", "あく・しまる"]
+  ],
+  vocab: [
+    ["走る", "はしる", "to run"],
+    ["歩く", "あるく", "to walk"],
+    ["持つ", "もつ", "to hold"],
+    ["届く", "とどく", "to arrive"],
+    ["立つ", "たつ", "to stand"]
+  ],
+  grammar: {
+    pattern: "Action kanji review",
+    meaning: "Review of movement verbs",
+    example_jp: "朝走って、昼歩いて、夜座る。",
+    example_en: "Run in the morning, walk at noon, sit at night."
+  },
+  practice: "Write each kanji 10 times. Create flashcards for all vocabulary words. Practice reading the example sentences aloud.",
+  tip: "Focus on recognizing kanji in context. You don't need perfect handwriting for the JLPT — reading comprehension is key."
+});
+
+curriculum.push({
+  day: 618,
+  phaseNum: 13,
+  phaseName: "N4 Kanji",
+  week: 89,
+  title: "N4 Kanji Review: Nature & Weather",
+  intro: "Review all nature and weather kanji from days 576-585.",
+  type: "review",
+  chars: [
+    ["海・山", "うみ・やま"],
+    ["風・雲", "かぜ・くも"]
+  ],
+  vocab: [
+    ["海", "うみ", "sea"],
+    ["森", "もり", "forest"],
+    ["島", "しま", "island"],
+    ["光", "ひかり", "light"],
+    ["星", "ほし", "star"]
+  ],
+  grammar: {
+    pattern: "Nature kanji review",
+    meaning: "Review of nature vocabulary",
+    example_jp: "島の森を歩いて、海と星を見た。",
+    example_en: "I walked through the island's forest and saw the sea and stars."
+  },
+  practice: "Write each kanji 10 times. Create flashcards for all vocabulary words. Practice reading the example sentences aloud.",
+  tip: "Focus on recognizing kanji in context. You don't need perfect handwriting for the JLPT — reading comprehension is key."
+});
+
+curriculum.push({
+  day: 619,
+  phaseNum: 13,
+  phaseName: "N4 Kanji",
+  week: 89,
+  title: "N4 Kanji Review: Feelings & Abstract",
+  intro: "Review feelings, qualities, and abstract kanji from days 586-605.",
+  type: "review",
+  chars: [
+    ["楽しい・難しい", "たのしい・むずかしい"],
+    ["意味・理由", "いみ・りゆう"]
+  ],
+  vocab: [
+    ["楽しい", "たのしい", "fun"],
+    ["難しい", "むずかしい", "difficult"],
+    ["意味", "いみ", "meaning"],
+    ["理由", "りゆう", "reason"],
+    ["経験", "けいけん", "experience"]
+  ],
+  grammar: {
+    pattern: "Abstract kanji review",
+    meaning: "Review of abstract concepts",
+    example_jp: "難しいことも楽しい経験になる。",
+    example_en: "Even difficult things become fun experiences."
+  },
+  practice: "Write each kanji 10 times. Create flashcards for all vocabulary words. Practice reading the example sentences aloud.",
+  tip: "Focus on recognizing kanji in context. You don't need perfect handwriting for the JLPT — reading comprehension is key."
+});
+
+curriculum.push({
+  day: 620,
+  phaseNum: 13,
+  phaseName: "N4 Kanji",
+  week: 89,
+  title: "N4 Kanji Comprehensive Test",
+  intro: "Final kanji review covering all 130 kanji from the N4 Kanji phase.",
+  type: "review",
+  chars: [
+    ["全部の漢字", "ぜんぶのかんじ"],
+    ["復習", "ふくしゅう"]
+  ],
+  vocab: [
+    ["漢字", "かんじ", "kanji"],
+    ["復習", "ふくしゅう", "review"],
+    ["自信", "じしん", "confidence"],
+    ["合格", "ごうかく", "pass (exam)"],
+    ["完了", "かんりょう", "completion"]
+  ],
+  grammar: {
+    pattern: "Comprehensive kanji review",
+    meaning: "All N4 kanji test",
+    example_jp: "全部の漢字を復習して、自信を持とう。",
+    example_en: "Let's review all kanji and have confidence."
+  },
+  practice: "Write each kanji 10 times. Create flashcards for all vocabulary words. Practice reading the example sentences aloud.",
+  tip: "Focus on recognizing kanji in context. You don't need perfect handwriting for the JLPT — reading comprehension is key."
+});
+
+// ═══════════════════════════════════════════════════════════════════════════
+// PHASE 14: N4 TEST PREP (Days 621-660)
+// 40 days of review and JLPT N4 test preparation
+// ═══════════════════════════════════════════════════════════════════════════
+
+curriculum.push({
+  day: 621,
+  phaseNum: 14,
+  phaseName: "N4 Test Prep",
+  week: 89,
+  title: "N4 Vocabulary Review: Emotions & Feelings",
+  intro: "Review all emotion vocabulary from the N4 Vocabulary phase. Practice expressing feelings in full sentences.",
+  type: "review",
+  chars: [],
+  vocab: [
+    ["うれしい", "うれしい", "happy/glad"],
+    ["かなしい", "かなしい", "sad"],
+    ["さびしい", "さびしい", "lonely"],
+    ["はずかしい", "はずかしい", "embarrassed"],
+    ["こわい", "こわい", "scary"]
+  ],
+  grammar: {
+    pattern: "Emotion adjective review",
+    meaning: "Expressing feelings",
+    example_jp: "友だちに会えてうれしかった。",
+    example_en: "I was happy to meet my friend."
+  },
+  practice: "Review all vocabulary from this topic. Write 10 sentences using today's words in context. Quiz yourself with flashcards.",
+  tip: "You are in the final stretch! Every review session now builds your test-taking confidence."
+});
+
+curriculum.push({
+  day: 622,
+  phaseNum: 14,
+  phaseName: "N4 Test Prep",
+  week: 89,
+  title: "N4 Vocabulary Review: Health & Body",
+  intro: "Review health and body vocabulary. These appear frequently in JLPT listening and reading.",
+  type: "review",
+  chars: [],
+  vocab: [
+    ["ねつ", "ねつ", "fever"],
+    ["せき", "せき", "cough"],
+    ["くすり", "くすり", "medicine"],
+    ["びょういん", "びょういん", "hospital"],
+    ["けが", "けが", "injury"]
+  ],
+  grammar: {
+    pattern: "Health vocabulary review",
+    meaning: "Medical and body terms",
+    example_jp: "ねつがあるので、くすりを飲みました。",
+    example_en: "I had a fever, so I took medicine."
+  },
+  practice: "Review all vocabulary from this topic. Write 10 sentences using today's words in context. Quiz yourself with flashcards.",
+  tip: "You are in the final stretch! Every review session now builds your test-taking confidence."
+});
+
+curriculum.push({
+  day: 623,
+  phaseNum: 14,
+  phaseName: "N4 Test Prep",
+  week: 89,
+  title: "N4 Vocabulary Review: Weather & Nature",
+  intro: "Review weather and nature vocabulary. Practice describing weather conditions.",
+  type: "review",
+  chars: [],
+  vocab: [
+    ["くもり", "くもり", "cloudy"],
+    ["たいふう", "たいふう", "typhoon"],
+    ["じしん", "じしん", "earthquake"],
+    ["にじ", "にじ", "rainbow"],
+    ["かぜ", "かぜ", "wind"]
+  ],
+  grammar: {
+    pattern: "Weather vocabulary review",
+    meaning: "Weather descriptions",
+    example_jp: "今日はくもりで、かぜが強い。",
+    example_en: "Today is cloudy with strong wind."
+  },
+  practice: "Review all vocabulary from this topic. Write 10 sentences using today's words in context. Quiz yourself with flashcards.",
+  tip: "You are in the final stretch! Every review session now builds your test-taking confidence."
+});
+
+curriculum.push({
+  day: 624,
+  phaseNum: 14,
+  phaseName: "N4 Test Prep",
+  week: 90,
+  title: "N4 Vocabulary Review: Shopping & Money",
+  intro: "Review shopping and money vocabulary. Practice transaction conversations.",
+  type: "review",
+  chars: [],
+  vocab: [
+    ["ねだん", "ねだん", "price"],
+    ["おつり", "おつり", "change (money)"],
+    ["レシート", "レシート", "receipt"],
+    ["わりびき", "わりびき", "discount"],
+    ["しはらい", "しはらい", "payment"]
+  ],
+  grammar: {
+    pattern: "Shopping vocabulary review",
+    meaning: "Commerce terms",
+    example_jp: "このお店はわりびきがあります。",
+    example_en: "This shop has discounts."
+  },
+  practice: "Review all vocabulary from this topic. Write 10 sentences using today's words in context. Quiz yourself with flashcards.",
+  tip: "You are in the final stretch! Every review session now builds your test-taking confidence."
+});
+
+curriculum.push({
+  day: 625,
+  phaseNum: 14,
+  phaseName: "N4 Test Prep",
+  week: 90,
+  title: "N4 Vocabulary Review: Travel & Transport",
+  intro: "Review travel and transportation vocabulary. Practice giving and understanding directions.",
+  type: "review",
+  chars: [],
+  vocab: [
+    ["くうこう", "くうこう", "airport"],
+    ["きっぷ", "きっぷ", "ticket"],
+    ["のりかえ", "のりかえ", "transfer (train)"],
+    ["しゅっぱつ", "しゅっぱつ", "departure"],
+    ["とうちゃく", "とうちゃく", "arrival"]
+  ],
+  grammar: {
+    pattern: "Travel vocabulary review",
+    meaning: "Transportation terms",
+    example_jp: "くうこうまでのきっぷを買った。",
+    example_en: "I bought a ticket to the airport."
+  },
+  practice: "Review all vocabulary from this topic. Write 10 sentences using today's words in context. Quiz yourself with flashcards.",
+  tip: "You are in the final stretch! Every review session now builds your test-taking confidence."
+});
+
+curriculum.push({
+  day: 626,
+  phaseNum: 14,
+  phaseName: "N4 Test Prep",
+  week: 90,
+  title: "N4 Vocabulary Review: School & Education",
+  intro: "Review school and education vocabulary. Education is a common JLPT topic.",
+  type: "review",
+  chars: [],
+  vocab: [
+    ["しけん", "しけん", "exam"],
+    ["せいせき", "せいせき", "grades"],
+    ["そつぎょう", "そつぎょう", "graduation"],
+    ["にゅうがく", "にゅうがく", "enrollment"],
+    ["きょうかしょ", "きょうかしょ", "textbook"]
+  ],
+  grammar: {
+    pattern: "Education vocabulary review",
+    meaning: "School and study terms",
+    example_jp: "来月しけんがあるので、勉強している。",
+    example_en: "I have an exam next month, so I am studying."
+  },
+  practice: "Review all vocabulary from this topic. Write 10 sentences using today's words in context. Quiz yourself with flashcards.",
+  tip: "You are in the final stretch! Every review session now builds your test-taking confidence."
+});
+
+curriculum.push({
+  day: 627,
+  phaseNum: 14,
+  phaseName: "N4 Test Prep",
+  week: 90,
+  title: "N4 Vocabulary Review: Work & Business",
+  intro: "Review work and business vocabulary. Professional Japanese is important for N4.",
+  type: "review",
+  chars: [],
+  vocab: [
+    ["かいしゃいん", "かいしゃいん", "company employee"],
+    ["きゅうりょう", "きゅうりょう", "salary"],
+    ["しゅっちょう", "しゅっちょう", "business trip"],
+    ["かいぎ", "かいぎ", "meeting"],
+    ["ざんぎょう", "ざんぎょう", "overtime"]
+  ],
+  grammar: {
+    pattern: "Work vocabulary review",
+    meaning: "Business terms",
+    example_jp: "来週、しゅっちょうで大阪に行きます。",
+    example_en: "Next week I am going to Osaka on a business trip."
+  },
+  practice: "Review all vocabulary from this topic. Write 10 sentences using today's words in context. Quiz yourself with flashcards.",
+  tip: "You are in the final stretch! Every review session now builds your test-taking confidence."
+});
+
+curriculum.push({
+  day: 628,
+  phaseNum: 14,
+  phaseName: "N4 Test Prep",
+  week: 90,
+  title: "N4 Vocabulary Review: Home & Daily Life",
+  intro: "Review home and daily life vocabulary. Everyday routines are key for conversation.",
+  type: "review",
+  chars: [],
+  vocab: [
+    ["せんたく", "せんたく", "laundry"],
+    ["そうじ", "そうじ", "cleaning"],
+    ["りょうり", "りょうり", "cooking"],
+    ["かいもの", "かいもの", "shopping"],
+    ["ひっこし", "ひっこし", "moving house"]
+  ],
+  grammar: {
+    pattern: "Daily life vocabulary review",
+    meaning: "Household terms",
+    example_jp: "毎週末にそうじとせんたくをする。",
+    example_en: "I clean and do laundry every weekend."
+  },
+  practice: "Review all vocabulary from this topic. Write 10 sentences using today's words in context. Quiz yourself with flashcards.",
+  tip: "You are in the final stretch! Every review session now builds your test-taking confidence."
+});
+
+curriculum.push({
+  day: 629,
+  phaseNum: 14,
+  phaseName: "N4 Test Prep",
+  week: 90,
+  title: "N4 Vocabulary Review: Society & Culture",
+  intro: "Review society and culture vocabulary. These words appear in reading passages.",
+  type: "review",
+  chars: [],
+  vocab: [
+    ["せいじ", "せいじ", "politics"],
+    ["けいざい", "けいざい", "economy"],
+    ["ぶんか", "ぶんか", "culture"],
+    ["しゃかい", "しゃかい", "society"],
+    ["れきし", "れきし", "history"]
+  ],
+  grammar: {
+    pattern: "Society vocabulary review",
+    meaning: "Social and cultural terms",
+    example_jp: "日本のぶんかとれきしに興味がある。",
+    example_en: "I am interested in Japanese culture and history."
+  },
+  practice: "Review all vocabulary from this topic. Write 10 sentences using today's words in context. Quiz yourself with flashcards.",
+  tip: "You are in the final stretch! Every review session now builds your test-taking confidence."
+});
+
+curriculum.push({
+  day: 630,
+  phaseNum: 14,
+  phaseName: "N4 Test Prep",
+  week: 90,
+  title: "N4 Vocabulary Review: Technology & Communication",
+  intro: "Review technology and communication vocabulary. Modern Japanese uses many loanwords.",
+  type: "review",
+  chars: [],
+  vocab: [
+    ["パソコン", "パソコン", "personal computer"],
+    ["インターネット", "インターネット", "internet"],
+    ["メール", "メール", "email"],
+    ["アプリ", "アプリ", "app"],
+    ["データ", "データ", "data"]
+  ],
+  grammar: {
+    pattern: "Technology vocabulary review",
+    meaning: "Digital and tech terms",
+    example_jp: "パソコンでメールを送った。",
+    example_en: "I sent an email on the computer."
+  },
+  practice: "Review all vocabulary from this topic. Write 10 sentences using today's words in context. Quiz yourself with flashcards.",
+  tip: "You are in the final stretch! Every review session now builds your test-taking confidence."
+});
+
+curriculum.push({
+  day: 631,
+  phaseNum: 14,
+  phaseName: "N4 Test Prep",
+  week: 91,
+  title: "N4 Grammar Review: Causative & Passive",
+  intro: "Review causative (させる), passive (られる), and causative-passive (させられる) forms.",
+  type: "review",
+  chars: [],
+  vocab: [
+    ["食べさせる", "たべさせる", "to make/let eat"],
+    ["食べられる", "たべられる", "to be eaten"],
+    ["食べさせられる", "たべさせられる", "to be made to eat"],
+    ["言われる", "いわれる", "to be told"],
+    ["書かされる", "かかされる", "to be made to write"]
+  ],
+  grammar: {
+    pattern: "Causative/Passive review",
+    meaning: "Voice form review",
+    example_jp: "先生に宿題をさせられた。",
+    example_en: "I was made to do homework by the teacher."
+  },
+  practice: "Write 5 original sentences using each grammar pattern. Try to combine multiple patterns in longer sentences.",
+  tip: "Grammar review is most effective when you write your own example sentences for each pattern."
+});
+
+curriculum.push({
+  day: 632,
+  phaseNum: 14,
+  phaseName: "N4 Test Prep",
+  week: 91,
+  title: "N4 Grammar Review: Conditional Forms",
+  intro: "Review all four conditional forms: ば, たら, なら, と.",
+  type: "review",
+  chars: [],
+  vocab: [
+    ["行けば", "いけば", "if one goes"],
+    ["行ったら", "いったら", "if/when one goes"],
+    ["行くなら", "いくなら", "if going (topic)"],
+    ["行くと", "いくと", "when one goes (automatic)"],
+    ["よければ", "よければ", "if good"]
+  ],
+  grammar: {
+    pattern: "ば/たら/なら/と review",
+    meaning: "Four conditional forms",
+    example_jp: "天気がよければ、出かけましょう。",
+    example_en: "If the weather is good, let's go out."
+  },
+  practice: "Write 5 original sentences using each grammar pattern. Try to combine multiple patterns in longer sentences.",
+  tip: "Grammar review is most effective when you write your own example sentences for each pattern."
+});
+
+curriculum.push({
+  day: 633,
+  phaseNum: 14,
+  phaseName: "N4 Test Prep",
+  week: 91,
+  title: "N4 Grammar Review: Giving & Receiving",
+  intro: "Review てあげる, てもらう, てくれる patterns.",
+  type: "review",
+  chars: [],
+  vocab: [
+    ["教えてあげる", "おしえてあげる", "teach (for someone)"],
+    ["教えてもらう", "おしえてもらう", "have someone teach"],
+    ["教えてくれる", "おしえてくれる", "someone teaches (for me)"],
+    ["手伝ってあげる", "てつだってあげる", "help (for someone)"],
+    ["手伝ってもらう", "てつだってもらう", "have someone help"]
+  ],
+  grammar: {
+    pattern: "てあげる/てもらう/てくれる",
+    meaning: "Giving/receiving actions",
+    example_jp: "友だちに日本語を教えてもらった。",
+    example_en: "I had my friend teach me Japanese."
+  },
+  practice: "Write 5 original sentences using each grammar pattern. Try to combine multiple patterns in longer sentences.",
+  tip: "Grammar review is most effective when you write your own example sentences for each pattern."
+});
+
+curriculum.push({
+  day: 634,
+  phaseNum: 14,
+  phaseName: "N4 Test Prep",
+  week: 91,
+  title: "N4 Grammar Review: Hearsay & Appearance",
+  intro: "Review そうだ (hearsay), そうだ (appearance), ようだ, みたいだ, らしい.",
+  type: "review",
+  chars: [],
+  vocab: [
+    ["雨が降るそうだ", "あめがふるそうだ", "I heard it will rain"],
+    ["おいしそうだ", "おいしそうだ", "looks delicious"],
+    ["雨のようだ", "あめのようだ", "it seems like rain"],
+    ["雨みたいだ", "あめみたいだ", "it seems like rain (casual)"],
+    ["雨らしい", "あめらしい", "apparently it's rain"]
+  ],
+  grammar: {
+    pattern: "Hearsay and appearance review",
+    meaning: "Expressing conjecture",
+    example_jp: "明日は雨が降るそうです。",
+    example_en: "I heard it will rain tomorrow."
+  },
+  practice: "Write 5 original sentences using each grammar pattern. Try to combine multiple patterns in longer sentences.",
+  tip: "Grammar review is most effective when you write your own example sentences for each pattern."
+});
+
+curriculum.push({
+  day: 635,
+  phaseNum: 14,
+  phaseName: "N4 Test Prep",
+  week: 91,
+  title: "N4 Grammar Review: Ability & Change",
+  intro: "Review ことができる, ようになる, ようにする patterns.",
+  type: "review",
+  chars: [],
+  vocab: [
+    ["泳ぐことができる", "およぐことができる", "can swim"],
+    ["泳げるようになった", "およげるようになった", "became able to swim"],
+    ["泳ぐようにする", "およぐようにする", "try to swim"],
+    ["読めるようになる", "よめるようになる", "become able to read"],
+    ["勉強するようにする", "べんきょうするようにする", "make sure to study"]
+  ],
+  grammar: {
+    pattern: "Ability and change review",
+    meaning: "Can do and becoming able",
+    example_jp: "漢字が読めるようになった。",
+    example_en: "I became able to read kanji."
+  },
+  practice: "Write 5 original sentences using each grammar pattern. Try to combine multiple patterns in longer sentences.",
+  tip: "Grammar review is most effective when you write your own example sentences for each pattern."
+});
+
+curriculum.push({
+  day: 636,
+  phaseNum: 14,
+  phaseName: "N4 Test Prep",
+  week: 91,
+  title: "N4 Grammar Review: Obligation & Permission",
+  intro: "Review なければならない, てもいい, てはいけない patterns.",
+  type: "review",
+  chars: [],
+  vocab: [
+    ["行かなければならない", "いかなければならない", "must go"],
+    ["食べてもいい", "たべてもいい", "may eat"],
+    ["走ってはいけない", "はしってはいけない", "must not run"],
+    ["飲まなくてもいい", "のまなくてもいい", "don't have to drink"],
+    ["寝なければならない", "ねなければならない", "must sleep"]
+  ],
+  grammar: {
+    pattern: "Obligation/permission review",
+    meaning: "Must, may, must not",
+    example_jp: "宿題をしなければならない。",
+    example_en: "I must do my homework."
+  },
+  practice: "Write 5 original sentences using each grammar pattern. Try to combine multiple patterns in longer sentences.",
+  tip: "Grammar review is most effective when you write your own example sentences for each pattern."
+});
+
+curriculum.push({
+  day: 637,
+  phaseNum: 14,
+  phaseName: "N4 Test Prep",
+  week: 91,
+  title: "N4 Grammar Review: Intention & Planning",
+  intro: "Review つもり, 予定, ことにする, ことになる patterns.",
+  type: "review",
+  chars: [],
+  vocab: [
+    ["行くつもりだ", "いくつもりだ", "intend to go"],
+    ["行く予定だ", "いくよていだ", "plan to go"],
+    ["行くことにした", "いくことにした", "decided to go"],
+    ["行くことになった", "いくことになった", "it was decided to go"],
+    ["行こうと思う", "いこうとおもう", "think I'll go"]
+  ],
+  grammar: {
+    pattern: "Intention/planning review",
+    meaning: "Plans and decisions",
+    example_jp: "来年日本に行くつもりです。",
+    example_en: "I intend to go to Japan next year."
+  },
+  practice: "Write 5 original sentences using each grammar pattern. Try to combine multiple patterns in longer sentences.",
+  tip: "Grammar review is most effective when you write your own example sentences for each pattern."
+});
+
+curriculum.push({
+  day: 638,
+  phaseNum: 14,
+  phaseName: "N4 Test Prep",
+  week: 92,
+  title: "N4 Grammar Review: Complex Sentences",
+  intro: "Review し, ながら, のに, ばかり, だけ patterns.",
+  type: "review",
+  chars: [],
+  vocab: [
+    ["安いし、おいしい", "やすいし、おいしい", "cheap and delicious"],
+    ["音楽を聞きながら", "おんがくをききながら", "while listening to music"],
+    ["勉強したのに", "べんきょうしたのに", "even though I studied"],
+    ["食べたばかり", "たべたばかり", "just ate"],
+    ["水だけ飲む", "みずだけのむ", "drink only water"]
+  ],
+  grammar: {
+    pattern: "Complex sentence patterns",
+    meaning: "Connectors and emphasis",
+    example_jp: "音楽を聞きながら勉強した。",
+    example_en: "I studied while listening to music."
+  },
+  practice: "Write 5 original sentences using each grammar pattern. Try to combine multiple patterns in longer sentences.",
+  tip: "Grammar review is most effective when you write your own example sentences for each pattern."
+});
+
+curriculum.push({
+  day: 639,
+  phaseNum: 14,
+  phaseName: "N4 Test Prep",
+  week: 92,
+  title: "N4 Grammar Review: Quotation & Hearsay",
+  intro: "Review と言う, そうだ, って, ということ patterns.",
+  type: "review",
+  chars: [],
+  vocab: [
+    ["行くと言った", "いくといった", "said will go"],
+    ["行くそうだ", "いくそうだ", "I heard will go"],
+    ["行くって", "いくって", "heard will go (casual)"],
+    ["行くということだ", "いくということだ", "it means will go"],
+    ["行くらしい", "いくらしい", "apparently will go"]
+  ],
+  grammar: {
+    pattern: "Quotation review",
+    meaning: "Reporting and hearsay",
+    example_jp: "彼は来月日本に行くと言った。",
+    example_en: "He said he's going to Japan next month."
+  },
+  practice: "Write 5 original sentences using each grammar pattern. Try to combine multiple patterns in longer sentences.",
+  tip: "Grammar review is most effective when you write your own example sentences for each pattern."
+});
+
+curriculum.push({
+  day: 640,
+  phaseNum: 14,
+  phaseName: "N4 Test Prep",
+  week: 92,
+  title: "N4 Grammar: Comprehensive Mixed Review",
+  intro: "Final comprehensive grammar review covering all N4 patterns learned.",
+  type: "review",
+  chars: [],
+  vocab: [
+    ["文法", "ぶんぽう", "grammar"],
+    ["復習", "ふくしゅう", "review"],
+    ["理解", "りかい", "understanding"],
+    ["完璧", "かんぺき", "perfect"],
+    ["自信", "じしん", "confidence"]
+  ],
+  grammar: {
+    pattern: "Comprehensive grammar review",
+    meaning: "All N4 grammar patterns",
+    example_jp: "全部の文法を復習して、自信を持とう。",
+    example_en: "Let's review all grammar and have confidence."
+  },
+  practice: "Write 5 original sentences using each grammar pattern. Try to combine multiple patterns in longer sentences.",
+  tip: "Grammar review is most effective when you write your own example sentences for each pattern."
+});
+
+curriculum.push({
+  day: 641,
+  phaseNum: 14,
+  phaseName: "N4 Test Prep",
+  week: 92,
+  title: "N4 Kanji Practice: People & Social Reading",
+  intro: "Practice reading kanji in context. Focus on people and social vocabulary.",
+  type: "review",
+  chars: [],
+  vocab: [
+    ["会社", "かいしゃ", "company"],
+    ["家族", "かぞく", "family"],
+    ["友人", "ゆうじん", "friend"],
+    ["両親", "りょうしん", "parents"],
+    ["兄弟", "きょうだい", "siblings"]
+  ],
+  grammar: {
+    pattern: "People kanji reading",
+    meaning: "Read and recognize social kanji",
+    example_jp: "兄弟で会社を作った。",
+    example_en: "The siblings started a company."
+  },
+  practice: "Read through all kanji from this category. Write the reading for each kanji without looking. Check your answers.",
+  tip: "Kanji reading practice is the fastest way to improve your JLPT score. Focus on recognition, not writing."
+});
+
+curriculum.push({
+  day: 642,
+  phaseNum: 14,
+  phaseName: "N4 Test Prep",
+  week: 92,
+  title: "N4 Kanji Practice: Action & Movement Reading",
+  intro: "Practice reading action and movement kanji in sentences.",
+  type: "review",
+  chars: [],
+  vocab: [
+    ["走る", "はしる", "to run"],
+    ["歩く", "あるく", "to walk"],
+    ["届く", "とどく", "to arrive"],
+    ["持つ", "もつ", "to hold"],
+    ["開ける", "あける", "to open"]
+  ],
+  grammar: {
+    pattern: "Action kanji reading",
+    meaning: "Read and recognize movement kanji",
+    example_jp: "公園を走って、家まで歩いた。",
+    example_en: "I ran in the park and walked home."
+  },
+  practice: "Read through all kanji from this category. Write the reading for each kanji without looking. Check your answers.",
+  tip: "Kanji reading practice is the fastest way to improve your JLPT score. Focus on recognition, not writing."
+});
+
+curriculum.push({
+  day: 643,
+  phaseNum: 14,
+  phaseName: "N4 Test Prep",
+  week: 92,
+  title: "N4 Kanji Practice: Nature Reading",
+  intro: "Practice reading nature kanji in context.",
+  type: "review",
+  chars: [],
+  vocab: [
+    ["海", "うみ", "sea"],
+    ["森", "もり", "forest"],
+    ["光", "ひかり", "light"],
+    ["風", "かぜ", "wind"],
+    ["星", "ほし", "star"]
+  ],
+  grammar: {
+    pattern: "Nature kanji reading",
+    meaning: "Read and recognize nature kanji",
+    example_jp: "海の上に星の光が見えた。",
+    example_en: "I could see starlight over the sea."
+  },
+  practice: "Read through all kanji from this category. Write the reading for each kanji without looking. Check your answers.",
+  tip: "Kanji reading practice is the fastest way to improve your JLPT score. Focus on recognition, not writing."
+});
+
+curriculum.push({
+  day: 644,
+  phaseNum: 14,
+  phaseName: "N4 Test Prep",
+  week: 92,
+  title: "N4 Kanji Practice: Feelings & Qualities Reading",
+  intro: "Practice reading feeling and quality kanji.",
+  type: "review",
+  chars: [],
+  vocab: [
+    ["楽しい", "たのしい", "fun"],
+    ["難しい", "むずかしい", "difficult"],
+    ["必要", "ひつよう", "necessary"],
+    ["簡単", "かんたん", "easy"],
+    ["特別", "とくべつ", "special"]
+  ],
+  grammar: {
+    pattern: "Quality kanji reading",
+    meaning: "Read and recognize quality kanji",
+    example_jp: "簡単だと思ったが、難しかった。",
+    example_en: "I thought it was easy, but it was difficult."
+  },
+  practice: "Read through all kanji from this category. Write the reading for each kanji without looking. Check your answers.",
+  tip: "Kanji reading practice is the fastest way to improve your JLPT score. Focus on recognition, not writing."
+});
+
+curriculum.push({
+  day: 645,
+  phaseNum: 14,
+  phaseName: "N4 Test Prep",
+  week: 93,
+  title: "N4 Kanji Practice: Abstract & Thought Reading",
+  intro: "Practice reading abstract concept kanji.",
+  type: "review",
+  chars: [],
+  vocab: [
+    ["意味", "いみ", "meaning"],
+    ["理由", "りゆう", "reason"],
+    ["経験", "けいけん", "experience"],
+    ["問題", "もんだい", "problem"],
+    ["結果", "けっか", "result"]
+  ],
+  grammar: {
+    pattern: "Abstract kanji reading",
+    meaning: "Read and recognize concept kanji",
+    example_jp: "問題の意味が理解できた。",
+    example_en: "I understood the meaning of the problem."
+  },
+  practice: "Read through all kanji from this category. Write the reading for each kanji without looking. Check your answers.",
+  tip: "Kanji reading practice is the fastest way to improve your JLPT score. Focus on recognition, not writing."
+});
+
+curriculum.push({
+  day: 646,
+  phaseNum: 14,
+  phaseName: "N4 Test Prep",
+  week: 93,
+  title: "N4 Kanji Practice: Daily Life Reading",
+  intro: "Practice reading daily life and society kanji in context.",
+  type: "review",
+  chars: [],
+  vocab: [
+    ["教育", "きょういく", "education"],
+    ["文化", "ぶんか", "culture"],
+    ["世界", "せかい", "world"],
+    ["政治", "せいじ", "politics"],
+    ["産業", "さんぎょう", "industry"]
+  ],
+  grammar: {
+    pattern: "Society kanji reading",
+    meaning: "Read and recognize society kanji",
+    example_jp: "教育は世界を変えることができる。",
+    example_en: "Education can change the world."
+  },
+  practice: "Read through all kanji from this category. Write the reading for each kanji without looking. Check your answers.",
+  tip: "Kanji reading practice is the fastest way to improve your JLPT score. Focus on recognition, not writing."
+});
+
+curriculum.push({
+  day: 647,
+  phaseNum: 14,
+  phaseName: "N4 Test Prep",
+  week: 93,
+  title: "N4 Kanji Practice: On'yomi Focus",
+  intro: "Practice kanji readings focusing on Chinese-origin readings (on'yomi). These appear in compound words.",
+  type: "review",
+  chars: [],
+  vocab: [
+    ["会議", "かいぎ", "meeting"],
+    ["政府", "せいふ", "government"],
+    ["経済", "けいざい", "economy"],
+    ["教室", "きょうしつ", "classroom"],
+    ["信号", "しんごう", "traffic light"]
+  ],
+  grammar: {
+    pattern: "On'yomi compound reading",
+    meaning: "Chinese reading compounds",
+    example_jp: "会議は教室で行われた。",
+    example_en: "The meeting was held in the classroom."
+  },
+  practice: "Read through all kanji from this category. Write the reading for each kanji without looking. Check your answers.",
+  tip: "Kanji reading practice is the fastest way to improve your JLPT score. Focus on recognition, not writing."
+});
+
+curriculum.push({
+  day: 648,
+  phaseNum: 14,
+  phaseName: "N4 Test Prep",
+  week: 93,
+  title: "N4 Kanji Practice: Kun'yomi Focus",
+  intro: "Practice kanji readings focusing on Japanese-origin readings (kun'yomi). These appear in verbs and adjectives.",
+  type: "review",
+  chars: [],
+  vocab: [
+    ["走る", "はしる", "to run"],
+    ["深い", "ふかい", "deep"],
+    ["広い", "ひろい", "wide"],
+    ["考える", "かんがえる", "to think"],
+    ["届ける", "とどける", "to deliver"]
+  ],
+  grammar: {
+    pattern: "Kun'yomi reading practice",
+    meaning: "Japanese reading verbs and adjectives",
+    example_jp: "深く考えてから答えを出す。",
+    example_en: "I give an answer after thinking deeply."
+  },
+  practice: "Read through all kanji from this category. Write the reading for each kanji without looking. Check your answers.",
+  tip: "Kanji reading practice is the fastest way to improve your JLPT score. Focus on recognition, not writing."
+});
+
+curriculum.push({
+  day: 649,
+  phaseNum: 14,
+  phaseName: "N4 Test Prep",
+  week: 93,
+  title: "N4 Kanji Practice: Compound Words",
+  intro: "Practice reading kanji compound words — two or more kanji together.",
+  type: "review",
+  chars: [],
+  vocab: [
+    ["運動会", "うんどうかい", "sports day"],
+    ["飛行機", "ひこうき", "airplane"],
+    ["引っ越し", "ひっこし", "moving house"],
+    ["受付", "うけつけ", "reception"],
+    ["問い合わせ", "といあわせ", "inquiry"]
+  ],
+  grammar: {
+    pattern: "Compound word reading",
+    meaning: "Multi-kanji compounds",
+    example_jp: "飛行機のチケットについて問い合わせた。",
+    example_en: "I inquired about airplane tickets."
+  },
+  practice: "Read through all kanji from this category. Write the reading for each kanji without looking. Check your answers.",
+  tip: "Kanji reading practice is the fastest way to improve your JLPT score. Focus on recognition, not writing."
+});
+
+curriculum.push({
+  day: 650,
+  phaseNum: 14,
+  phaseName: "N4 Test Prep",
+  week: 93,
+  title: "N4 Kanji Recognition Test",
+  intro: "Full kanji recognition test. Read all kanji without hints.",
+  type: "review",
+  chars: [],
+  vocab: [
+    ["復習", "ふくしゅう", "review"],
+    ["完了", "かんりょう", "completion"],
+    ["達成", "たっせい", "achievement"],
+    ["合格", "ごうかく", "pass (exam)"],
+    ["努力", "どりょく", "effort"]
+  ],
+  grammar: {
+    pattern: "Full kanji test",
+    meaning: "Comprehensive reading test",
+    example_jp: "努力すれば、必ず合格できる。",
+    example_en: "If you work hard, you can definitely pass."
+  },
+  practice: "Read through all kanji from this category. Write the reading for each kanji without looking. Check your answers.",
+  tip: "Kanji reading practice is the fastest way to improve your JLPT score. Focus on recognition, not writing."
+});
+
+curriculum.push({
+  day: 651,
+  phaseNum: 14,
+  phaseName: "N4 Test Prep",
+  week: 93,
+  title: "JLPT Listening: Keywords & Context Clues",
+  intro: "Learn strategies for JLPT listening. Focus on identifying keywords and using context to understand conversations.",
+  type: "review",
+  chars: [],
+  vocab: [
+    ["キーワード", "キーワード", "keyword"],
+    ["文脈", "ぶんみゃく", "context"],
+    ["聞き取り", "ききとり", "listening comprehension"],
+    ["重要", "じゅうよう", "important"],
+    ["注意", "ちゅうい", "attention/caution"]
+  ],
+  grammar: {
+    pattern: "Listening strategy: keywords",
+    meaning: "Identify important words first",
+    example_jp: "会話のキーワードに注意して聞きましょう。",
+    example_en: "Let's listen carefully for keywords in the conversation."
+  },
+  practice: "Practice the strategies learned today with sample JLPT questions. Time yourself and review mistakes.",
+  tip: "Test-taking strategies can boost your score significantly. Practice these techniques under timed conditions."
+});
+
+curriculum.push({
+  day: 652,
+  phaseNum: 14,
+  phaseName: "N4 Test Prep",
+  week: 94,
+  title: "JLPT Listening: Question Types & Common Traps",
+  intro: "Practice with common JLPT listening question formats and learn to avoid traps.",
+  type: "review",
+  chars: [],
+  vocab: [
+    ["選択肢", "せんたくし", "multiple choice"],
+    ["正解", "せいかい", "correct answer"],
+    ["ひっかけ", "ひっかけ", "trick/trap"],
+    ["消去法", "しょうきょほう", "elimination method"],
+    ["メモ", "メモ", "memo/notes"]
+  ],
+  grammar: {
+    pattern: "Listening strategy: traps",
+    meaning: "Avoiding common listening mistakes",
+    example_jp: "選択肢を読んでから聞くと、正解がわかりやすい。",
+    example_en: "If you read the choices before listening, the correct answer is easier to find."
+  },
+  practice: "Practice the strategies learned today with sample JLPT questions. Time yourself and review mistakes.",
+  tip: "Test-taking strategies can boost your score significantly. Practice these techniques under timed conditions."
+});
+
+curriculum.push({
+  day: 653,
+  phaseNum: 14,
+  phaseName: "N4 Test Prep",
+  week: 94,
+  title: "JLPT Reading: Scanning for Information",
+  intro: "Learn to quickly scan Japanese text for specific information. Essential for the reading section.",
+  type: "review",
+  chars: [],
+  vocab: [
+    ["情報", "じょうほう", "information"],
+    ["探す", "さがす", "to search"],
+    ["要点", "ようてん", "main point"],
+    ["段落", "だんらく", "paragraph"],
+    ["結論", "けつろん", "conclusion"]
+  ],
+  grammar: {
+    pattern: "Reading strategy: scanning",
+    meaning: "Quick information finding",
+    example_jp: "まず要点を探してから、詳しく読む。",
+    example_en: "First find the main points, then read in detail."
+  },
+  practice: "Practice the strategies learned today with sample JLPT questions. Time yourself and review mistakes.",
+  tip: "Test-taking strategies can boost your score significantly. Practice these techniques under timed conditions."
+});
+
+curriculum.push({
+  day: 654,
+  phaseNum: 14,
+  phaseName: "N4 Test Prep",
+  week: 94,
+  title: "JLPT Reading: Understanding Long Passages",
+  intro: "Practice reading longer Japanese texts. Focus on paragraph structure and connecting ideas.",
+  type: "review",
+  chars: [],
+  vocab: [
+    ["長文", "ちょうぶん", "long text"],
+    ["構成", "こうせい", "structure/composition"],
+    ["接続詞", "せつぞくし", "conjunction"],
+    ["要約", "ようやく", "summary"],
+    ["理解する", "りかいする", "to understand"]
+  ],
+  grammar: {
+    pattern: "Reading strategy: long passages",
+    meaning: "Understanding text structure",
+    example_jp: "接続詞に注目すると、長文の構成がわかる。",
+    example_en: "If you focus on conjunctions, you can understand the structure of long texts."
+  },
+  practice: "Practice the strategies learned today with sample JLPT questions. Time yourself and review mistakes.",
+  tip: "Test-taking strategies can boost your score significantly. Practice these techniques under timed conditions."
+});
+
+curriculum.push({
+  day: 655,
+  phaseNum: 14,
+  phaseName: "N4 Test Prep",
+  week: 94,
+  title: "JLPT Reading: Charts, Schedules & Notices",
+  intro: "Practice reading practical Japanese: train schedules, event notices, signs, and charts.",
+  type: "review",
+  chars: [],
+  vocab: [
+    ["時刻表", "じこくひょう", "timetable"],
+    ["お知らせ", "おしらせ", "notice/announcement"],
+    ["掲示板", "けいじばん", "bulletin board"],
+    ["申込書", "もうしこみしょ", "application form"],
+    ["案内", "あんない", "guidance/information"]
+  ],
+  grammar: {
+    pattern: "Practical reading",
+    meaning: "Real-world Japanese documents",
+    example_jp: "掲示板のお知らせを読んでください。",
+    example_en: "Please read the notice on the bulletin board."
+  },
+  practice: "Practice the strategies learned today with sample JLPT questions. Time yourself and review mistakes.",
+  tip: "Test-taking strategies can boost your score significantly. Practice these techniques under timed conditions."
+});
+
+curriculum.push({
+  day: 656,
+  phaseNum: 14,
+  phaseName: "N4 Test Prep",
+  week: 94,
+  title: "Mock Test: Vocabulary Section",
+  intro: "Practice N4-style vocabulary questions. Test your word knowledge under timed conditions.",
+  type: "review",
+  chars: [],
+  vocab: [
+    ["語彙", "ごい", "vocabulary"],
+    ["意味", "いみ", "meaning"],
+    ["用法", "ようほう", "usage"],
+    ["類義語", "るいぎご", "synonym"],
+    ["対義語", "たいぎご", "antonym"]
+  ],
+  grammar: {
+    pattern: "Vocabulary test practice",
+    meaning: "N4 vocabulary question format",
+    example_jp: "語彙の問題は、文脈から意味を判断する。",
+    example_en: "For vocabulary questions, determine meaning from context."
+  },
+  practice: "Complete a timed practice test for this section. Review your answers carefully and note any patterns in your mistakes.",
+  tip: "Simulate real test conditions: time yourself, stay focused, and don't look up answers until you finish."
+});
+
+curriculum.push({
+  day: 657,
+  phaseNum: 14,
+  phaseName: "N4 Test Prep",
+  week: 94,
+  title: "Mock Test: Grammar Section",
+  intro: "Practice N4-style grammar questions. Focus on choosing the correct grammar form.",
+  type: "review",
+  chars: [],
+  vocab: [
+    ["文法", "ぶんぽう", "grammar"],
+    ["助詞", "じょし", "particle"],
+    ["活用", "かつよう", "conjugation"],
+    ["語順", "ごじゅん", "word order"],
+    ["文型", "ぶんけい", "sentence pattern"]
+  ],
+  grammar: {
+    pattern: "Grammar test practice",
+    meaning: "N4 grammar question format",
+    example_jp: "文法の問題は、文型と助詞に注意する。",
+    example_en: "For grammar questions, pay attention to sentence patterns and particles."
+  },
+  practice: "Complete a timed practice test for this section. Review your answers carefully and note any patterns in your mistakes.",
+  tip: "Simulate real test conditions: time yourself, stay focused, and don't look up answers until you finish."
+});
+
+curriculum.push({
+  day: 658,
+  phaseNum: 14,
+  phaseName: "N4 Test Prep",
+  week: 94,
+  title: "Mock Test: Reading Comprehension",
+  intro: "Practice N4-style reading comprehension. Work through passages and answer questions.",
+  type: "review",
+  chars: [],
+  vocab: [
+    ["読解", "どっかい", "reading comprehension"],
+    ["本文", "ほんぶん", "main text"],
+    ["設問", "せつもん", "question (on a test)"],
+    ["選択", "せんたく", "selection/choice"],
+    ["内容", "ないよう", "content"]
+  ],
+  grammar: {
+    pattern: "Reading comprehension test",
+    meaning: "N4 reading question format",
+    example_jp: "本文をよく読んでから設問に答える。",
+    example_en: "Read the text carefully before answering the questions."
+  },
+  practice: "Complete a timed practice test for this section. Review your answers carefully and note any patterns in your mistakes.",
+  tip: "Simulate real test conditions: time yourself, stay focused, and don't look up answers until you finish."
+});
+
+curriculum.push({
+  day: 659,
+  phaseNum: 14,
+  phaseName: "N4 Test Prep",
+  week: 95,
+  title: "Mock Test: Listening Comprehension Strategies",
+  intro: "Final listening practice. Simulate real JLPT N4 listening conditions.",
+  type: "review",
+  chars: [],
+  vocab: [
+    ["聴解", "ちょうかい", "listening comprehension"],
+    ["会話", "かいわ", "conversation"],
+    ["質問", "しつもん", "question"],
+    ["回答", "かいとう", "answer"],
+    ["集中", "しゅうちゅう", "concentration"]
+  ],
+  grammar: {
+    pattern: "Listening comprehension test",
+    meaning: "N4 listening question format",
+    example_jp: "聴解では集中して、質問をよく聞く。",
+    example_en: "In listening, concentrate and listen carefully to the questions."
+  },
+  practice: "Complete a timed practice test for this section. Review your answers carefully and note any patterns in your mistakes.",
+  tip: "Simulate real test conditions: time yourself, stay focused, and don't look up answers until you finish."
+});
+
+curriculum.push({
+  day: 660,
+  phaseNum: 14,
+  phaseName: "N4 Test Prep",
+  week: 95,
+  title: "N4 Course Complete: Final Readiness Check",
+  intro: "Congratulations! Final comprehensive review of all N4 material. You are ready for the JLPT N4!",
+  type: "review",
+  chars: [],
+  vocab: [
+    ["卒業", "そつぎょう", "graduation"],
+    ["達成", "たっせい", "achievement"],
+    ["自信", "じしん", "confidence"],
+    ["成長", "せいちょう", "growth"],
+    ["未来", "みらい", "future"]
+  ],
+  grammar: {
+    pattern: "N4 comprehensive review",
+    meaning: "Final readiness assessment",
+    example_jp: "660日間の勉強を達成しました。おめでとうございます！",
+    example_en: "You have completed 660 days of study. Congratulations!"
+  },
+  practice: "Complete a timed practice test for this section. Review your answers carefully and note any patterns in your mistakes.",
+  tip: "660 days completed! You have journeyed from zero Japanese to N4 level. This is an incredible achievement. Whether you take the JLPT or not, you now have a solid foundation in Japanese. Keep reading, listening, and speaking. Your Japanese journey continues!"
+});

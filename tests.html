@@ -623,7 +623,7 @@ QUnit.module('srsDueCards', function () {
 QUnit.module('curriculum data integrity', function () {
 
   QUnit.test('curriculum is not empty', function (assert) {
-    assert.ok(curriculum.length >= 365, 'should have at least 365 lessons (N5 complete)');
+    assert.ok(curriculum.length >= 660, 'should have at least 660 lessons (N5 + N4 complete)');
   });
 
   QUnit.test('day numbers are sequential from 1', function (assert) {
@@ -718,10 +718,10 @@ QUnit.module('curriculum data integrity', function () {
     assert.equal(failures.length, 0, failures.join('\n'));
   });
 
-  QUnit.test('week numbers are integers from 1 to 130', function (assert) {
+  QUnit.test('week numbers are integers from 1 to 95', function (assert) {
     var failures = [];
     curriculum.forEach(function (lesson) {
-      if (typeof lesson.week !== 'number' || lesson.week < 1 || lesson.week > 130) {
+      if (typeof lesson.week !== 'number' || lesson.week < 1 || lesson.week > 95) {
         failures.push('day ' + lesson.day + ' week=' + lesson.week);
       }
     });
@@ -752,15 +752,18 @@ QUnit.module('curriculum data integrity', function () {
     assert.equal(failures.length, 0, 'Non-phase-2: ' + failures.join(', '));
   });
 
-  QUnit.test('day 365 is the last lesson', function (assert) {
-    assert.equal(curriculum[364].day, 365);
+  QUnit.test('day 365 exists and day 660 is the last lesson', function (assert) {
+    assert.equal(curriculum[364].day, 365, 'day 365 exists');
+    assert.equal(curriculum[curriculum.length - 1].day, 660, 'last day is 660');
   });
 
   QUnit.test('phaseName matches phaseNum for all lessons', function (assert) {
     var phaseMap = {
       1: 'Hiragana', 2: 'Katakana', 3: 'Foundations',
       4: 'Vocabulary', 5: 'Verbs', 6: 'Grammar',
-      7: 'Kanji', 8: 'Test Prep'
+      7: 'Kanji', 8: 'Test Prep', 9: 'N5 Review',
+      10: 'N4 Vocabulary', 11: 'N4 Verbs', 12: 'N4 Grammar',
+      13: 'N4 Kanji', 14: 'N4 Test Prep'
     };
     var failures = [];
     curriculum.forEach(function (lesson) {
@@ -772,18 +775,62 @@ QUnit.module('curriculum data integrity', function () {
     });
     assert.equal(failures.length, 0, failures.join('\n'));
   });
+
+  QUnit.test('N5 Review phase covers days 366-395 (phaseNum=9)', function (assert) {
+    var phase9 = curriculum.slice(365, 395);
+    var failures = phase9.filter(function (l) { return l.phaseNum !== 9; })
+                         .map(function (l) { return 'day ' + l.day; });
+    assert.equal(failures.length, 0, 'Non-phase-9: ' + failures.join(', '));
+  });
+
+  QUnit.test('N4 Vocabulary phase covers days 396-455 (phaseNum=10)', function (assert) {
+    var phase10 = curriculum.slice(395, 455);
+    var failures = phase10.filter(function (l) { return l.phaseNum !== 10; })
+                          .map(function (l) { return 'day ' + l.day; });
+    assert.equal(failures.length, 0, 'Non-phase-10: ' + failures.join(', '));
+  });
+
+  QUnit.test('N4 Verbs phase covers days 456-500 (phaseNum=11)', function (assert) {
+    var phase11 = curriculum.slice(455, 500);
+    var failures = phase11.filter(function (l) { return l.phaseNum !== 11; })
+                          .map(function (l) { return 'day ' + l.day; });
+    assert.equal(failures.length, 0, 'Non-phase-11: ' + failures.join(', '));
+  });
+
+  QUnit.test('N4 Grammar phase covers days 501-555 (phaseNum=12)', function (assert) {
+    var phase12 = curriculum.slice(500, 555);
+    var failures = phase12.filter(function (l) { return l.phaseNum !== 12; })
+                          .map(function (l) { return 'day ' + l.day; });
+    assert.equal(failures.length, 0, 'Non-phase-12: ' + failures.join(', '));
+  });
+
+  QUnit.test('N4 Kanji phase covers days 556-620 (phaseNum=13)', function (assert) {
+    var phase13 = curriculum.slice(555, 620);
+    var failures = phase13.filter(function (l) { return l.phaseNum !== 13; })
+                          .map(function (l) { return 'day ' + l.day; });
+    assert.equal(failures.length, 0, 'Non-phase-13: ' + failures.join(', '));
+  });
+
+  QUnit.test('N4 Test Prep phase covers days 621-660 (phaseNum=14)', function (assert) {
+    var phase14 = curriculum.slice(620, 660);
+    var failures = phase14.filter(function (l) { return l.phaseNum !== 14; })
+                          .map(function (l) { return 'day ' + l.day; });
+    assert.equal(failures.length, 0, 'Non-phase-14: ' + failures.join(', '));
+  });
 });
 
 // ── Phase constants ───────────────────────────────────────────────────────────
 QUnit.module('phase constants', function () {
-  var EXPECTED_PHASES = [1, 2, 3, 4, 5, 6, 7, 8];
+  var EXPECTED_PHASES = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14];
   var EXPECTED_NAMES = {
     1: 'Hiragana', 2: 'Katakana', 3: 'Foundations',
     4: 'Vocabulary', 5: 'Verbs', 6: 'Grammar',
-    7: 'Kanji', 8: 'Test Prep'
+    7: 'Kanji', 8: 'Test Prep', 9: 'N5 Review',
+    10: 'N4 Vocabulary', 11: 'N4 Verbs', 12: 'N4 Grammar',
+    13: 'N4 Kanji', 14: 'N4 Test Prep'
   };
 
-  QUnit.test('PHASE_COLORS is defined with all 8 phase keys', function (assert) {
+  QUnit.test('PHASE_COLORS is defined with all 14 phase keys', function (assert) {
     assert.ok(typeof PHASE_COLORS === 'object' && PHASE_COLORS !== null, 'PHASE_COLORS exists');
     EXPECTED_PHASES.forEach(function (p) {
       assert.ok(typeof PHASE_COLORS[p] === 'string' && PHASE_COLORS[p].length > 0,
@@ -791,7 +838,7 @@ QUnit.module('phase constants', function () {
     });
   });
 
-  QUnit.test('PHASE_BG is defined with all 8 phase keys', function (assert) {
+  QUnit.test('PHASE_BG is defined with all 14 phase keys', function (assert) {
     assert.ok(typeof PHASE_BG === 'object' && PHASE_BG !== null, 'PHASE_BG exists');
     EXPECTED_PHASES.forEach(function (p) {
       assert.ok(typeof PHASE_BG[p] === 'string' && PHASE_BG[p].length > 0,
@@ -799,7 +846,7 @@ QUnit.module('phase constants', function () {
     });
   });
 
-  QUnit.test('PHASE_NAMES is defined with all 8 phase keys', function (assert) {
+  QUnit.test('PHASE_NAMES is defined with all 14 phase keys', function (assert) {
     assert.ok(typeof PHASE_NAMES === 'object' && PHASE_NAMES !== null, 'PHASE_NAMES exists');
     EXPECTED_PHASES.forEach(function (p) {
       assert.equal(PHASE_NAMES[p], EXPECTED_NAMES[p],
