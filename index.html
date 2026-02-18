@@ -190,6 +190,65 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
 "use strict";
 
 
+// ── Progressive UI Translations ──────────────────────────────────────────────
+// As learning-related words are taught in the curriculum, the UI progressively
+// switches from English to Japanese. Each entry has {en, ja, since} where
+// `since` is the day number when the Japanese word is first taught.
+var UI_STRINGS = {
+  // Navigation / header
+  day_label:      { en: 'Day',      ja: 'だい',       since: 38  },
+  week_label:     { en: 'Week',     ja: 'しゅう',     since: 39  },
+  of_365:         { en: 'of 365',   ja: '/ 365にち',  since: 38  },
+  view_review:    { en: 'Review',   ja: 'ふくしゅう', since: 49  },
+  // Day status
+  mark_complete:   { en: '✓ Mark Complete',   ja: '✓ かんりょう！', since: 203 },
+  mark_incomplete: { en: '✕ Mark Incomplete', ja: '✕ まだ',         since: 53  },
+  complete_badge:  { en: '✓ Complete',         ja: '✓ かんりょう',  since: 203 },
+  // Navigation buttons
+  nav_prev: { en: '← Previous', ja: '← まえ',   since: 62  },
+  nav_next: { en: 'Next →',     ja: 'つぎ →',   since: 109 },
+  // Section labels (inside a lesson)
+  section_characters: { en: 'Characters',    ja: 'もじ',       since: 277 },
+  section_vocabulary: { en: 'Vocabulary',    ja: 'たんご',     since: 140 },
+  section_grammar:    { en: 'Grammar Point', ja: 'ぶんぽう',   since: 183 },
+  section_practice:   { en: 'Practice',      ja: 'れんしゅう', since: 147 },
+  section_exercises:  { en: 'Exercises',     ja: 'もんだい',   since: 212 },
+  // Vocabulary table headers
+  vocab_word:    { en: 'Word',    ja: 'ことば', since: 139 },
+  vocab_reading: { en: 'Reading', ja: 'よみ',   since: 58  },
+  vocab_meaning: { en: 'Meaning', ja: 'いみ',   since: 137 },
+  // SRS review buttons
+  btn_again: { en: 'Again', ja: 'もういちど',  since: 47  },
+  btn_hard:  { en: 'Hard',  ja: 'むずかしい', since: 77  },
+  btn_good:  { en: 'Good',  ja: 'いい',       since: 44  },
+  btn_easy:  { en: 'Easy',  ja: 'かんたん',   since: 156 },
+  // Review card labels
+  card_char:    { en: 'Character',  ja: 'もじ',   since: 277 },
+  card_vocab:   { en: 'Vocabulary', ja: 'たんご', since: 140 },
+  tap_reveal:   { en: 'tap to reveal',                    ja: 'タップしてみる',  since: 15  },
+  click_reveal: { en: 'Click the card to see the answer', ja: 'カードをクリック！', since: 46 },
+  // Review completion messages
+  all_caught_up:  { en: 'All caught up!',      ja: 'ぜんぶおわった！',  since: 179 },
+  no_cards_due:   { en: 'No cards due for review right now.', ja: 'いまふくしゅうカードはありません。', since: 49 },
+  session_done:   { en: 'Session complete!',   ja: 'よくできました！',  since: 140 },
+  // Exercise / quiz labels
+  start_quiz:  { en: 'Start Quiz',               ja: 'テストをはじめる',     since: 117 },
+  try_again:   { en: 'Try Again',                ja: 'もういちど',            since: 47  },
+  quiz_title:  { en: 'Ready to test yourself?',  ja: 'テストのじかんです！',  since: 117 },
+  check_btn:   { en: 'Check',                    ja: 'かくにん',              since: 147 },
+  // Exercise prompts (translated once prerequisite words are taught)
+  prompt_listen:    { en: 'Listen and choose the meaning:', ja: 'きいて、いみをえらんでください：', since: 137 },
+  prompt_mc_char:   { en: 'What is the reading for this character?', ja: 'このもじのよみは？', since: 277 },
+  prompt_mc_word:   { en: 'What does this word mean?', ja: 'このことばのいみは？', since: 137 },
+  prompt_type_char: { en: 'Type the reading for this character:', ja: 'このもじのよみをにゅうりょくしてください：', since: 277 },
+  prompt_type_word: { en: 'What does this word mean? (type in English)', ja: 'このことばのいみは？（えいごで）', since: 137 },
+};
+function t(key, dayNum) {
+  var s = UI_STRINGS[key];
+  if (!s) return key;
+  return (dayNum >= s.since) ? s.ja : s.en;
+}
+
 // ── localStorage ─────────────────────────────────────────────────────────────
 var LS_KEY = 'n5_2025';
 function lsLoad() {
@@ -230,7 +289,8 @@ function speak(text) {
 // ── ReviewView ────────────────────────────────────────────────────────────────
 function ReviewView(_ref6) {
   var srs = _ref6.srs,
-    onUpdate = _ref6.onUpdate;
+    onUpdate = _ref6.onUpdate,
+    dayNum = _ref6.dayNum || 1;
   var dueIds = getDueCards(srs);
   var allItems = dueIds.map(function (id) {
     return cardToItem(id, srs);
@@ -264,9 +324,9 @@ function ReviewView(_ref6) {
       className: "review-done-icon"
     }, "\uD83C\uDF89"), /*#__PURE__*/React.createElement("div", {
       className: "review-done-title"
-    }, "All caught up!"), /*#__PURE__*/React.createElement("div", {
+    }, t('all_caught_up', dayNum)), /*#__PURE__*/React.createElement("div", {
       className: "review-done-sub"
-    }, "No cards due for review right now. Check back tomorrow!")));
+    }, t('no_cards_due', dayNum)));
   }
   if (cur >= queue.length) {
     return /*#__PURE__*/React.createElement("div", {
@@ -277,7 +337,7 @@ function ReviewView(_ref6) {
       className: "review-done-icon"
     }, "\u2705"), /*#__PURE__*/React.createElement("div", {
       className: "review-done-title"
-    }, "Session complete!"), /*#__PURE__*/React.createElement("div", {
+    }, t('session_done', dayNum)), /*#__PURE__*/React.createElement("div", {
       className: "review-done-sub"
     }, "\u2713 ", score.right, " correct \xB7 \u2717 ", score.wrong, " again")));
   }
@@ -315,7 +375,7 @@ function ReviewView(_ref6) {
     }
   }, "\uD83D\uDD0A"), !flipped && /*#__PURE__*/React.createElement("div", {
     className: "review-tap"
-  }, "tap to reveal"), flipped && /*#__PURE__*/React.createElement("div", {
+  }, t('tap_reveal', dayNum)), flipped && /*#__PURE__*/React.createElement("div", {
     className: "review-back"
   }, /*#__PURE__*/React.createElement("div", {
     className: "review-answer"
@@ -328,23 +388,37 @@ function ReviewView(_ref6) {
     onClick: function onClick() {
       return grade(1);
     }
-  }, "Again"), /*#__PURE__*/React.createElement("button", {
+  }, t('btn_again', dayNum)), /*#__PURE__*/React.createElement("button", {
     className: "review-btn good",
     onClick: function onClick() {
       return grade(3);
     }
-  }, "Good"), /*#__PURE__*/React.createElement("button", {
+  }, t('btn_good', dayNum)), /*#__PURE__*/React.createElement("button", {
     className: "review-btn easy",
     onClick: function onClick() {
       return grade(5);
     }
-  }, "Easy")) : /*#__PURE__*/React.createElement("div", {
+  }, t('btn_easy', dayNum))) : /*#__PURE__*/React.createElement("div", {
     style: {
       height: '56px'
     }
   }));
 }
 
+
+// Maps exercise prompt strings to UI_STRINGS keys for translation
+var PROMPT_KEYS = {
+  'Listen and choose the meaning:': 'prompt_listen',
+  'What is the reading for this character?': 'prompt_mc_char',
+  'What does this word mean?': 'prompt_mc_word',
+  'Type the reading for this character:': 'prompt_type_char',
+  'What does this word mean? (type in English)': 'prompt_type_word',
+};
+function translatePrompt(prompt, dayNum) {
+  var key = PROMPT_KEYS[prompt];
+  if (!key) return prompt;
+  return t(key, dayNum);
+}
 
 // ── TypingTip ────────────────────────────────────────────────────────────────
 var TYPING_NOTES = {
@@ -433,7 +507,7 @@ function Exercises(_ref9) {
       className: "quiz-start-box"
     }, /*#__PURE__*/React.createElement("div", {
       className: "quiz-start-title"
-    }, "Ready to test yourself?"), /*#__PURE__*/React.createElement("div", {
+    }, t('quiz_title', lesson.day)), /*#__PURE__*/React.createElement("div", {
       className: "quiz-start-hint"
     }, "The lesson content above will be hidden while you answer ", exs.length, " questions."), /*#__PURE__*/React.createElement("button", {
       className: "quiz-start-btn",
@@ -441,7 +515,7 @@ function Exercises(_ref9) {
         setStarted(true);
         onStart && onStart();
       }
-    }, "Start Quiz")));
+    }, t('start_quiz', lesson.day)));
   }
   var retry = function retry() {
     setExs(buildExercises(lesson));
@@ -488,7 +562,7 @@ function Exercises(_ref9) {
       className: "section"
     }, /*#__PURE__*/React.createElement("div", {
       className: "section-label"
-    }, "Exercises"), /*#__PURE__*/React.createElement("div", {
+    }, t('section_exercises', lesson.day)), /*#__PURE__*/React.createElement("div", {
       className: "exercise-box"
     }, /*#__PURE__*/React.createElement("div", {
       className: "ex-finish"
@@ -497,7 +571,7 @@ function Exercises(_ref9) {
     }, emoji, " ", score.right, " / ", score.total, " correct"), /*#__PURE__*/React.createElement("button", {
       className: "ex-retry-btn",
       onClick: retry
-    }, "Try Again"))));
+    }, t('try_again', lesson.day)))));
   }
   var ex = exs[cur];
   var progress = "".concat(cur + 1, " / ").concat(exs.length);
@@ -506,13 +580,13 @@ function Exercises(_ref9) {
       className: "section"
     }, /*#__PURE__*/React.createElement("div", {
       className: "section-label"
-    }, "Exercises ", /*#__PURE__*/React.createElement("span", {
+    }, t('section_exercises', lesson.day), " ", /*#__PURE__*/React.createElement("span", {
       className: "ex-count"
     }, progress)), /*#__PURE__*/React.createElement("div", {
       className: "exercise-box"
     }, /*#__PURE__*/React.createElement("div", {
       className: "ex-prompt"
-    }, ex.prompt), ex.type === 'listen' ? /*#__PURE__*/React.createElement("div", {
+    }, translatePrompt(ex.prompt, lesson.day)), ex.type === 'listen' ? /*#__PURE__*/React.createElement("div", {
       className: "ex-question"
     }, /*#__PURE__*/React.createElement("button", {
       className: "ex-listen-btn",
@@ -551,13 +625,13 @@ function Exercises(_ref9) {
     className: "section"
   }, /*#__PURE__*/React.createElement("div", {
     className: "section-label"
-  }, "Exercises ", /*#__PURE__*/React.createElement("span", {
+  }, t('section_exercises', lesson.day), " ", /*#__PURE__*/React.createElement("span", {
     className: "ex-count"
   }, progress)), /*#__PURE__*/React.createElement("div", {
     className: "exercise-box"
   }, /*#__PURE__*/React.createElement("div", {
     className: "ex-prompt"
-  }, ex.prompt), ex.question && /*#__PURE__*/React.createElement("div", {
+  }, translatePrompt(ex.prompt, lesson.day)), ex.question && /*#__PURE__*/React.createElement("div", {
     className: "ex-question"
   }, ex.question), /*#__PURE__*/React.createElement("div", {
     className: "ex-typing-row"
@@ -579,7 +653,7 @@ function Exercises(_ref9) {
     className: "ex-check-btn",
     onClick: handleCheck,
     disabled: !answer.trim() || revealed
-  }, "Check")), revealed && /*#__PURE__*/React.createElement("div", {
+  }, t('check_btn', lesson.day))), revealed && /*#__PURE__*/React.createElement("div", {
     className: "ex-feedback ".concat(isRight ? 'correct' : 'wrong')
   }, isRight ? '✓ Correct!' : "\u2717  Answer: ".concat(ex.answers[0]))));
 }
@@ -669,7 +743,7 @@ function App() {
     style: {
       width: pct + '%'
     }
-  })), /*#__PURE__*/React.createElement("span", null, completed.size, "/365 days")), /*#__PURE__*/React.createElement("div", {
+  })), /*#__PURE__*/React.createElement("span", null, completed.size, " ", t('of_365', dayNum))), /*#__PURE__*/React.createElement("div", {
     className: "view-btns"
   }, /*#__PURE__*/React.createElement("button", {
     className: "view-btn ".concat(view === 'day' ? 'active' : ''),
@@ -686,10 +760,11 @@ function App() {
     onClick: function onClick() {
       return setView('review');
     }
-  }, "Review", srsDueCards(srsCards).length > 0 ? " (".concat(srsDueCards(srsCards).length, ")") : '')))), /*#__PURE__*/React.createElement("main", {
+  }, t('view_review', dayNum), srsDueCards(srsCards).length > 0 ? " (".concat(srsDueCards(srsCards).length, ")") : '')))), /*#__PURE__*/React.createElement("main", {
     className: "main"
   }, view === 'review' ? /*#__PURE__*/React.createElement(ReviewMode, {
     cards: srsCards,
+    dayNum: dayNum,
     onUpdate: function onUpdate(updated) {
       setSrsCards(updated);
       srsSave(updated);
@@ -697,6 +772,7 @@ function App() {
   }) : view === 'overview' ? /*#__PURE__*/React.createElement(Overview, {
     curriculum: curriculum,
     completed: completed,
+    dayNum: dayNum,
     setDay: function setDay(d) {
       setDayNum(d);
       setView('day');
@@ -739,16 +815,16 @@ function DayView(_ref0) {
     className: "day-meta"
   }, /*#__PURE__*/React.createElement("span", {
     className: "day-num"
-  }, "Day ", dayNum), /*#__PURE__*/React.createElement("span", {
+  }, t('day_label', dayNum), " ", dayNum), /*#__PURE__*/React.createElement("span", {
     className: "phase-badge",
     style: {
       background: pColor
     }
   }, lesson.phaseName), /*#__PURE__*/React.createElement("span", {
     className: "week-badge"
-  }, "Week ", lesson.week), isDone && /*#__PURE__*/React.createElement("span", {
+  }, t('week_label', dayNum), " ", lesson.week), isDone && /*#__PURE__*/React.createElement("span", {
     className: "complete-badge"
-  }, "\u2713 Complete")), /*#__PURE__*/React.createElement("h2", {
+  }, t('complete_badge', dayNum))), /*#__PURE__*/React.createElement("h2", {
     className: "day-title"
   }, lesson.title)), /*#__PURE__*/React.createElement("div", {
     className: "day-body"
@@ -764,7 +840,7 @@ function DayView(_ref0) {
     className: "section"
   }, /*#__PURE__*/React.createElement("div", {
     className: "section-label"
-  }, "Characters"), /*#__PURE__*/React.createElement("div", {
+  }, t('section_characters', dayNum)), /*#__PURE__*/React.createElement("div", {
     className: "chars-table"
   }, lesson.chars.map(function (c, i) {
     return /*#__PURE__*/React.createElement("div", {
@@ -787,13 +863,13 @@ function DayView(_ref0) {
     className: "section"
   }, /*#__PURE__*/React.createElement("div", {
     className: "section-label"
-  }, "Vocabulary"), function () {
+  }, t('section_vocabulary', dayNum)), function () {
     var hasReadings = lesson.vocab.some(function (v) {
       return v[1] && v[1] !== v[0];
     });
     return /*#__PURE__*/React.createElement("table", {
       className: "vocab-table"
-    }, hasReadings && /*#__PURE__*/React.createElement("thead", null, /*#__PURE__*/React.createElement("tr", null, /*#__PURE__*/React.createElement("th", null, "Word"), /*#__PURE__*/React.createElement("th", null, "Reading"), /*#__PURE__*/React.createElement("th", null, "Meaning"))), /*#__PURE__*/React.createElement("tbody", null, lesson.vocab.map(function (v, i) {
+    }, hasReadings && /*#__PURE__*/React.createElement("thead", null, /*#__PURE__*/React.createElement("tr", null, /*#__PURE__*/React.createElement("th", null, t('vocab_word', dayNum)), /*#__PURE__*/React.createElement("th", null, t('vocab_reading', dayNum)), /*#__PURE__*/React.createElement("th", null, t('vocab_meaning', dayNum)))), /*#__PURE__*/React.createElement("tbody", null, lesson.vocab.map(function (v, i) {
       return /*#__PURE__*/React.createElement("tr", {
         key: i
       }, /*#__PURE__*/React.createElement("td", null, v[0], /*#__PURE__*/React.createElement("button", {
@@ -808,7 +884,7 @@ function DayView(_ref0) {
     className: "section"
   }, /*#__PURE__*/React.createElement("div", {
     className: "section-label"
-  }, "Grammar Point"), /*#__PURE__*/React.createElement("div", {
+  }, t('section_grammar', dayNum)), /*#__PURE__*/React.createElement("div", {
     className: "grammar-box"
   }, /*#__PURE__*/React.createElement("div", {
     className: "grammar-pattern"
@@ -824,7 +900,7 @@ function DayView(_ref0) {
     className: "section"
   }, /*#__PURE__*/React.createElement("div", {
     className: "section-label"
-  }, "Practice"), /*#__PURE__*/React.createElement("div", {
+  }, t('section_practice', dayNum)), /*#__PURE__*/React.createElement("div", {
     className: "practice-box"
   }, lesson.practice)), lesson.tip && /*#__PURE__*/React.createElement("div", {
     className: "section"
@@ -847,22 +923,23 @@ function DayView(_ref0) {
       return setDay(Math.max(1, dayNum - 1));
     },
     disabled: dayNum === 1
-  }, "\u2190 Previous"), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("div", {
+  }, t('nav_prev', dayNum)), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("div", {
     className: "day-counter"
-  }, "Day ", dayNum, " of 365"), /*#__PURE__*/React.createElement("button", {
+  }, t('day_label', dayNum), " ", dayNum, " ", t('of_365', dayNum)), /*#__PURE__*/React.createElement("button", {
     className: "nav-btn complete ".concat(isDone ? 'done' : ''),
     onClick: toggleDone
-  }, isDone ? '✕ Mark Incomplete' : '✓ Mark Complete')), /*#__PURE__*/React.createElement("button", {
+  }, isDone ? t('mark_incomplete', dayNum) : t('mark_complete', dayNum))), /*#__PURE__*/React.createElement("button", {
     className: "nav-btn next",
     onClick: function onClick() {
       return setDay(Math.min(365, dayNum + 1));
     },
     disabled: dayNum === 365
-  }, "Next \u2192")));
+  }, t('nav_next', dayNum)));
 }
 function ReviewMode(_ref1) {
   var cards = _ref1.cards,
-    onUpdate = _ref1.onUpdate;
+    onUpdate = _ref1.onUpdate,
+    dayNum = _ref1.dayNum || 1;
   var _React$useStateQ = React.useState(function() { return rndShuffle(srsDueCards(cards)); }),
     _React$useStateQS = _slicedToArray(_React$useStateQ, 2),
     due = _React$useStateQS[0];
@@ -881,9 +958,9 @@ function ReviewMode(_ref1) {
       className: "review-empty-icon"
     }, "\u2705"), /*#__PURE__*/React.createElement("div", {
       className: "review-empty-title"
-    }, "All caught up!"), /*#__PURE__*/React.createElement("div", {
+    }, t('all_caught_up', dayNum)), /*#__PURE__*/React.createElement("div", {
       className: "review-empty-sub"
-    }, "No cards due for review right now."));
+    }, t('no_cards_due', dayNum)));
   }
   if (idx >= due.length) {
     return /*#__PURE__*/React.createElement("div", {
@@ -892,7 +969,7 @@ function ReviewMode(_ref1) {
       className: "review-empty-icon"
     }, "\uD83C\uDF1F"), /*#__PURE__*/React.createElement("div", {
       className: "review-empty-title"
-    }, "Session complete!"), /*#__PURE__*/React.createElement("div", {
+    }, t('session_done', dayNum)), /*#__PURE__*/React.createElement("div", {
       className: "review-empty-sub"
     }, "Reviewed ", due.length, " card", due.length !== 1 ? 's' : '', "."));
   }
@@ -916,7 +993,7 @@ function ReviewMode(_ref1) {
     }
   }, /*#__PURE__*/React.createElement("div", {
     className: "review-card-type"
-  }, card.type === 'char' ? 'Character' : 'Vocabulary'), /*#__PURE__*/React.createElement("div", {
+  }, card.type === 'char' ? t('card_char', dayNum) : t('card_vocab', dayNum)), /*#__PURE__*/React.createElement("div", {
     className: "review-card-front"
   }, card.front, /*#__PURE__*/React.createElement("button", {
     className: "speak-btn",
@@ -936,31 +1013,31 @@ function ReviewMode(_ref1) {
     className: "review-meaning"
   }, card.back)) : /*#__PURE__*/React.createElement("div", {
     className: "review-card-hint"
-  }, "tap to reveal")), flipped && /*#__PURE__*/React.createElement("div", {
+  }, t('tap_reveal', dayNum))), flipped && /*#__PURE__*/React.createElement("div", {
     className: "review-btns"
   }, /*#__PURE__*/React.createElement("button", {
     className: "review-btn again",
     onClick: function onClick() {
       return rate(0);
     }
-  }, "Again"), /*#__PURE__*/React.createElement("button", {
+  }, t('btn_again', dayNum)), /*#__PURE__*/React.createElement("button", {
     className: "review-btn hard",
     onClick: function onClick() {
       return rate(1);
     }
-  }, "Hard"), /*#__PURE__*/React.createElement("button", {
+  }, t('btn_hard', dayNum)), /*#__PURE__*/React.createElement("button", {
     className: "review-btn good",
     onClick: function onClick() {
       return rate(2);
     }
-  }, "Good"), /*#__PURE__*/React.createElement("button", {
+  }, t('btn_good', dayNum)), /*#__PURE__*/React.createElement("button", {
     className: "review-btn easy",
     onClick: function onClick() {
       return rate(3);
     }
-  }, "Easy")), !flipped && /*#__PURE__*/React.createElement("div", {
+  }, t('btn_easy', dayNum))), !flipped && /*#__PURE__*/React.createElement("div", {
     className: "review-flip-hint"
-  }, "Click the card to see the answer"));
+  }, t('click_reveal', dayNum)));
 }
 function Overview(_ref10) {
   var curriculum = _ref10.curriculum,
