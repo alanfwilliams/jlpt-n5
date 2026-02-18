@@ -179,6 +179,11 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
 .review-done-title{font-size:1.3rem;font-weight:700;color:#2c3e50;margin-bottom:6px}
 .review-done-sub{font-size:0.9rem;color:#888}
 .view-btn .badge{display:inline-block;background:#e74c3c;color:#fff;border-radius:10px;padding:1px 6px;font-size:0.7rem;font-weight:700;margin-left:4px;vertical-align:middle}
+/* Furigana (ruby annotation) */
+ruby{display:ruby}
+rt{font-size:0.6em;color:#8e44ad;font-weight:400;letter-spacing:0.02em}
+.vocab-table td:first-child ruby{font-size:1.1rem}
+.vocab-table td:first-child rt{font-size:0.6em}
 
 </style>
 </head>
@@ -872,13 +877,13 @@ function DayView(_ref0) {
     }, hasReadings && /*#__PURE__*/React.createElement("thead", null, /*#__PURE__*/React.createElement("tr", null, /*#__PURE__*/React.createElement("th", null, t('vocab_word', dayNum)), /*#__PURE__*/React.createElement("th", null, t('vocab_reading', dayNum)), /*#__PURE__*/React.createElement("th", null, t('vocab_meaning', dayNum)))), /*#__PURE__*/React.createElement("tbody", null, lesson.vocab.map(function (v, i) {
       return /*#__PURE__*/React.createElement("tr", {
         key: i
-      }, /*#__PURE__*/React.createElement("td", null, v[0], /*#__PURE__*/React.createElement("button", {
+      }, /*#__PURE__*/React.createElement("td", null, hasKanji(v[0]) && v[1] && v[1] !== v[0] ? /*#__PURE__*/React.createElement("ruby", null, v[0], /*#__PURE__*/React.createElement("rt", null, v[1])) : v[0], /*#__PURE__*/React.createElement("button", {
         className: "speak-btn",
         onClick: function onClick() {
           return speak(v[0]);
         },
         title: "Listen"
-      }, "\uD83D\uDD0A")), hasReadings && /*#__PURE__*/React.createElement("td", null, v[1]), /*#__PURE__*/React.createElement("td", null, v[2]));
+      }, "\uD83D\uDD0A")), hasReadings && !hasKanji(v[0]) && /*#__PURE__*/React.createElement("td", null, v[1]), hasReadings && hasKanji(v[0]) && /*#__PURE__*/React.createElement("td", null), /*#__PURE__*/React.createElement("td", null, v[2]));
     })));
   }()), lesson.grammar && lesson.grammar.pattern && /*#__PURE__*/React.createElement("div", {
     className: "section"
