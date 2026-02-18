@@ -331,7 +331,7 @@ function ReviewView(_ref6) {
       className: "review-done-title"
     }, t('all_caught_up', dayNum)), /*#__PURE__*/React.createElement("div", {
       className: "review-done-sub"
-    }, t('no_cards_due', dayNum)));
+    }, t('no_cards_due', dayNum))));
   }
   if (cur >= queue.length) {
     return /*#__PURE__*/React.createElement("div", {
@@ -520,7 +520,7 @@ function Exercises(_ref9) {
         setStarted(true);
         onStart && onStart();
       }
-    }, t('start_quiz', lesson.day)));
+    }, t('start_quiz', lesson.day))));
   }
   var retry = function retry() {
     setExs(buildExercises(lesson));
@@ -939,7 +939,7 @@ function DayView(_ref0) {
       return setDay(Math.min(365, dayNum + 1));
     },
     disabled: dayNum === 365
-  }, t('nav_next', dayNum)));
+  }, t('nav_next', dayNum))));
 }
 function ReviewMode(_ref1) {
   var cards = _ref1.cards,
