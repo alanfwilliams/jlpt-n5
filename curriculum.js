@@ -13928,18 +13928,18 @@ var curriculum = [
     "phaseName": "Kanji",
     "week": 37,
     "title": "Kanji: 一 (one)",
-    "intro": "Today's kanji: 一. Readings: いち・ひと. Meaning: one.",
+    "intro": "Today's kanji: 一. Readings: ichi/hito. Meaning: one.",
     "type": "kanji",
     "chars": [
       [
         "一",
-        "いち・ひと"
+        "ichi/hito"
       ]
     ],
     "vocab": [
       [
         "一",
-        "いち・ひと",
+        "ichi/hito",
         "one"
       ],
       [
@@ -13963,18 +13963,18 @@ var curriculum = [
     "phaseName": "Kanji",
     "week": 37,
     "title": "Kanji: 二 (two)",
-    "intro": "Today's kanji: 二. Readings: に・ふた. Meaning: two.",
+    "intro": "Today's kanji: 二. Readings: ni/futa. Meaning: two.",
     "type": "kanji",
     "chars": [
       [
         "二",
-        "に・ふた"
+        "ni/futa"
       ]
     ],
     "vocab": [
       [
         "二",
-        "に・ふた",
+        "ni/futa",
         "two"
       ],
       [
@@ -13998,18 +13998,18 @@ var curriculum = [
     "phaseName": "Kanji",
     "week": 37,
     "title": "Kanji: 三 (three)",
-    "intro": "Today's kanji: 三. Readings: さん・みっ. Meaning: three.",
+    "intro": "Today's kanji: 三. Readings: san/mit. Meaning: three.",
     "type": "kanji",
     "chars": [
       [
         "三",
-        "さん・みっ"
+        "san/mit"
       ]
     ],
     "vocab": [
       [
         "三",
-        "さん・みっ",
+        "san/mit",
         "three"
       ],
       [
@@ -14033,18 +14033,18 @@ var curriculum = [
     "phaseName": "Kanji",
     "week": 37,
     "title": "Kanji: 四 (four)",
-    "intro": "Today's kanji: 四. Readings: し・よん. Meaning: four.",
+    "intro": "Today's kanji: 四. Readings: shi/yon/yot. Meaning: four.",
     "type": "kanji",
     "chars": [
       [
         "四",
-        "し・よん"
+        "shi/yon/yot"
       ]
     ],
     "vocab": [
       [
         "四",
-        "し・よん",
+        "shi/yon/yot",
         "four"
       ],
       [
@@ -14068,18 +14068,18 @@ var curriculum = [
     "phaseName": "Kanji",
     "week": 37,
     "title": "Kanji: 五 (five)",
-    "intro": "Today's kanji: 五. Readings: ご・いつ. Meaning: five.",
+    "intro": "Today's kanji: 五. Readings: go/itsu. Meaning: five.",
     "type": "kanji",
     "chars": [
       [
         "五",
-        "ご・いつ"
+        "go/itsu"
       ]
     ],
     "vocab": [
       [
         "五",
-        "ご・いつ",
+        "go/itsu",
         "five"
       ],
       [
@@ -14103,18 +14103,18 @@ var curriculum = [
     "phaseName": "Kanji",
     "week": 37,
     "title": "Kanji: 六 (six)",
-    "intro": "Today's kanji: 六. Readings: ろく・むっ. Meaning: six.",
+    "intro": "Today's kanji: 六. Readings: roku/mut. Meaning: six.",
     "type": "kanji",
     "chars": [
       [
         "六",
-        "ろく・むっ"
+        "roku/mut"
       ]
     ],
     "vocab": [
       [
         "六",
-        "ろく・むっ",
+        "roku/mut",
         "six"
       ],
       [
@@ -14138,18 +14138,18 @@ var curriculum = [
     "phaseName": "Kanji",
     "week": 37,
     "title": "Kanji: 七 (seven)",
-    "intro": "Today's kanji: 七. Readings: しち・なな. Meaning: seven.",
+    "intro": "Today's kanji: 七. Readings: shichi/nana. Meaning: seven.",
     "type": "kanji",
     "chars": [
       [
         "七",
-        "しち・なな"
+        "shichi/nana"
       ]
     ],
     "vocab": [
       [
         "七",
-        "しち・なな",
+        "shichi/nana",
         "seven"
       ],
       [
@@ -14173,18 +14173,18 @@ var curriculum = [
     "phaseName": "Kanji",
     "week": 38,
     "title": "Kanji: 八 (eight)",
-    "intro": "Today's kanji: 八. Readings: はち・やっ. Meaning: eight.",
+    "intro": "Today's kanji: 八. Readings: hachi/yat. Meaning: eight.",
     "type": "kanji",
     "chars": [
       [
         "八",
-        "はち・やっ"
+        "hachi/yat"
       ]
     ],
     "vocab": [
       [
         "八",
-        "はち・やっ",
+        "hachi/yat",
         "eight"
       ],
       [
@@ -14208,18 +14208,18 @@ var curriculum = [
     "phaseName": "Kanji",
     "week": 38,
     "title": "Kanji: 九 (nine)",
-    "intro": "Today's kanji: 九. Readings: く・きゅう. Meaning: nine.",
+    "intro": "Today's kanji: 九. Readings: ku/kyuu/kokon. Meaning: nine.",
     "type": "kanji",
     "chars": [
       [
         "九",
-        "く・きゅう"
+        "ku/kyuu/kokon"
       ]
     ],
     "vocab": [
       [
         "九",
-        "く・きゅう",
+        "ku/kyuu/kokon",
         "nine"
       ],
       [
@@ -14243,18 +14243,18 @@ var curriculum = [
     "phaseName": "Kanji",
     "week": 38,
     "title": "Kanji: 十 (ten)",
-    "intro": "Today's kanji: 十. Readings: じゅう・とお. Meaning: ten.",
+    "intro": "Today's kanji: 十. Readings: juu/too. Meaning: ten.",
     "type": "kanji",
     "chars": [
       [
         "十",
-        "じゅう・とお"
+        "juu/too"
       ]
     ],
     "vocab": [
       [
         "十",
-        "じゅう・とお",
+        "juu/too",
         "ten"
       ],
       [
@@ -14278,18 +14278,18 @@ var curriculum = [
     "phaseName": "Kanji",
     "week": 38,
     "title": "Kanji: 百 (hundred)",
-    "intro": "Today's kanji: 百. Readings: ひゃく. Meaning: hundred.",
+    "intro": "Today's kanji: 百. Readings: hyaku. Meaning: hundred.",
     "type": "kanji",
     "chars": [
       [
         "百",
-        "ひゃく"
+        "hyaku"
       ]
     ],
     "vocab": [
       [
         "百",
-        "ひゃく",
+        "hyaku",
         "hundred"
       ],
       [
@@ -14313,18 +14313,18 @@ var curriculum = [
     "phaseName": "Kanji",
     "week": 38,
     "title": "Kanji: 千 (thousand)",
-    "intro": "Today's kanji: 千. Readings: せん. Meaning: thousand.",
+    "intro": "Today's kanji: 千. Readings: sen. Meaning: thousand.",
     "type": "kanji",
     "chars": [
       [
         "千",
-        "せん"
+        "sen"
       ]
     ],
     "vocab": [
       [
         "千",
-        "せん",
+        "sen",
         "thousand"
       ],
       [
@@ -14348,18 +14348,18 @@ var curriculum = [
     "phaseName": "Kanji",
     "week": 38,
     "title": "Kanji: 万 (ten thousand)",
-    "intro": "Today's kanji: 万. Readings: まん. Meaning: ten thousand.",
+    "intro": "Today's kanji: 万. Readings: man. Meaning: ten thousand.",
     "type": "kanji",
     "chars": [
       [
         "万",
-        "まん"
+        "man"
       ]
     ],
     "vocab": [
       [
         "万",
-        "まん",
+        "man",
         "ten thousand"
       ],
       [
@@ -14383,18 +14383,18 @@ var curriculum = [
     "phaseName": "Kanji",
     "week": 38,
     "title": "Kanji: 円 (yen/circle)",
-    "intro": "Today's kanji: 円. Readings: えん・まる. Meaning: yen/circle.",
+    "intro": "Today's kanji: 円. Readings: en/maru. Meaning: yen/circle.",
     "type": "kanji",
     "chars": [
       [
         "円",
-        "えん・まる"
+        "en/maru"
       ]
     ],
     "vocab": [
       [
         "円",
-        "えん・まる",
+        "en/maru",
         "yen/circle"
       ],
       [
@@ -14418,18 +14418,18 @@ var curriculum = [
     "phaseName": "Kanji",
     "week": 39,
     "title": "Kanji: 年 (year)",
-    "intro": "Today's kanji: 年. Readings: ねん・とし. Meaning: year.",
+    "intro": "Today's kanji: 年. Readings: nen/toshi. Meaning: year.",
     "type": "kanji",
     "chars": [
       [
         "年",
-        "ねん・とし"
+        "nen/toshi"
       ]
     ],
     "vocab": [
       [
         "年",
-        "ねん・とし",
+        "nen/toshi",
         "year"
       ],
       [
@@ -14453,18 +14453,18 @@ var curriculum = [
     "phaseName": "Kanji",
     "week": 39,
     "title": "Kanji: 月 (month/moon)",
-    "intro": "Today's kanji: 月. Readings: つき・がつ. Meaning: month/moon.",
+    "intro": "Today's kanji: 月. Readings: tsuki/gatsu. Meaning: month/moon.",
     "type": "kanji",
     "chars": [
       [
         "月",
-        "つき・がつ"
+        "tsuki/gatsu"
       ]
     ],
     "vocab": [
       [
         "月",
-        "つき・がつ",
+        "tsuki/gatsu",
         "month/moon"
       ],
       [
@@ -14488,18 +14488,18 @@ var curriculum = [
     "phaseName": "Kanji",
     "week": 39,
     "title": "Kanji: 日 (day/sun)",
-    "intro": "Today's kanji: 日. Readings: にち・か・ひ. Meaning: day/sun.",
+    "intro": "Today's kanji: 日. Readings: nichi/ka/hi. Meaning: day/sun.",
     "type": "kanji",
     "chars": [
       [
         "日",
-        "にち・か・ひ"
+        "nichi/ka/hi"
       ]
     ],
     "vocab": [
       [
         "日",
-        "にち・か・ひ",
+        "nichi/ka/hi",
         "day/sun"
       ],
       [
@@ -14523,18 +14523,18 @@ var curriculum = [
     "phaseName": "Kanji",
     "week": 39,
     "title": "Kanji: 時 (time/hour)",
-    "intro": "Today's kanji: 時. Readings: じ・とき. Meaning: time/hour.",
+    "intro": "Today's kanji: 時. Readings: ji/toki. Meaning: time/hour.",
     "type": "kanji",
     "chars": [
       [
         "時",
-        "じ・とき"
+        "ji/toki"
       ]
     ],
     "vocab": [
       [
         "時",
-        "じ・とき",
+        "ji/toki",
         "time/hour"
       ],
       [
@@ -14558,18 +14558,18 @@ var curriculum = [
     "phaseName": "Kanji",
     "week": 39,
     "title": "Kanji: 分 (minute/divide)",
-    "intro": "Today's kanji: 分. Readings: ふん・ぷん. Meaning: minute/divide.",
+    "intro": "Today's kanji: 分. Readings: fun/pun/wak. Meaning: minute/divide.",
     "type": "kanji",
     "chars": [
       [
         "分",
-        "ふん・ぷん"
+        "fun/pun/wak"
       ]
     ],
     "vocab": [
       [
         "分",
-        "ふん・ぷん",
+        "fun/pun/wak",
         "minute/divide"
       ],
       [
@@ -14593,18 +14593,18 @@ var curriculum = [
     "phaseName": "Kanji",
     "week": 39,
     "title": "Kanji: 週 (week)",
-    "intro": "Today's kanji: 週. Readings: しゅう. Meaning: week.",
+    "intro": "Today's kanji: 週. Readings: shuu. Meaning: week.",
     "type": "kanji",
     "chars": [
       [
         "週",
-        "しゅう"
+        "shuu"
       ]
     ],
     "vocab": [
       [
         "週",
-        "しゅう",
+        "shuu",
         "week"
       ],
       [
@@ -14628,18 +14628,18 @@ var curriculum = [
     "phaseName": "Kanji",
     "week": 39,
     "title": "Kanji: 間 (between/space)",
-    "intro": "Today's kanji: 間. Readings: かん・あいだ. Meaning: between/space.",
+    "intro": "Today's kanji: 間. Readings: kan/aida. Meaning: between/space.",
     "type": "kanji",
     "chars": [
       [
         "間",
-        "かん・あいだ"
+        "kan/aida"
       ]
     ],
     "vocab": [
       [
         "間",
-        "かん・あいだ",
+        "kan/aida",
         "between/space"
       ],
       [
@@ -14663,18 +14663,18 @@ var curriculum = [
     "phaseName": "Kanji",
     "week": 40,
     "title": "Kanji: 今 (now)",
-    "intro": "Today's kanji: 今. Readings: いま・こん. Meaning: now.",
+    "intro": "Today's kanji: 今. Readings: ima/kon. Meaning: now.",
     "type": "kanji",
     "chars": [
       [
         "今",
-        "いま・こん"
+        "ima/kon"
       ]
     ],
     "vocab": [
       [
         "今",
-        "いま・こん",
+        "ima/kon",
         "now"
       ],
       [
@@ -14698,18 +14698,18 @@ var curriculum = [
     "phaseName": "Kanji",
     "week": 40,
     "title": "Kanji: 本 (book/origin)",
-    "intro": "Today's kanji: 本. Readings: ほん・もと. Meaning: book/origin.",
+    "intro": "Today's kanji: 本. Readings: hon/moto. Meaning: book/origin.",
     "type": "kanji",
     "chars": [
       [
         "本",
-        "ほん・もと"
+        "hon/moto"
       ]
     ],
     "vocab": [
       [
         "本",
-        "ほん・もと",
+        "hon/moto",
         "book/origin"
       ],
       [
@@ -14733,18 +14733,18 @@ var curriculum = [
     "phaseName": "Kanji",
     "week": 40,
     "title": "Kanji: 語 (language)",
-    "intro": "Today's kanji: 語. Readings: ご. Meaning: language.",
+    "intro": "Today's kanji: 語. Readings: go. Meaning: language.",
     "type": "kanji",
     "chars": [
       [
         "語",
-        "ご"
+        "go"
       ]
     ],
     "vocab": [
       [
         "語",
-        "ご",
+        "go",
         "language"
       ],
       [
@@ -14768,18 +14768,18 @@ var curriculum = [
     "phaseName": "Kanji",
     "week": 40,
     "title": "Kanji: 字 (character/letter)",
-    "intro": "Today's kanji: 字. Readings: じ. Meaning: character/letter.",
+    "intro": "Today's kanji: 字. Readings: ji. Meaning: character/letter.",
     "type": "kanji",
     "chars": [
       [
         "字",
-        "じ"
+        "ji"
       ]
     ],
     "vocab": [
       [
         "字",
-        "じ",
+        "ji",
         "character/letter"
       ],
       [
@@ -14803,18 +14803,18 @@ var curriculum = [
     "phaseName": "Kanji",
     "week": 40,
     "title": "Kanji: 学 (study)",
-    "intro": "Today's kanji: 学. Readings: がく・まな. Meaning: study.",
+    "intro": "Today's kanji: 学. Readings: gaku/mana. Meaning: study.",
     "type": "kanji",
     "chars": [
       [
         "学",
-        "がく・まな"
+        "gaku/mana"
       ]
     ],
     "vocab": [
       [
         "学",
-        "がく・まな",
+        "gaku/mana",
         "study"
       ],
       [
@@ -14838,18 +14838,18 @@ var curriculum = [
     "phaseName": "Kanji",
     "week": 40,
     "title": "Kanji: 校 (school)",
-    "intro": "Today's kanji: 校. Readings: こう. Meaning: school.",
+    "intro": "Today's kanji: 校. Readings: kou. Meaning: school.",
     "type": "kanji",
     "chars": [
       [
         "校",
-        "こう"
+        "kou"
       ]
     ],
     "vocab": [
       [
         "校",
-        "こう",
+        "kou",
         "school"
       ],
       [
@@ -14873,18 +14873,18 @@ var curriculum = [
     "phaseName": "Kanji",
     "week": 40,
     "title": "Kanji: 先 (before/ahead)",
-    "intro": "Today's kanji: 先. Readings: せん・さき. Meaning: before/ahead.",
+    "intro": "Today's kanji: 先. Readings: sen/saki. Meaning: before/ahead.",
     "type": "kanji",
     "chars": [
       [
         "先",
-        "せん・さき"
+        "sen/saki"
       ]
     ],
     "vocab": [
       [
         "先",
-        "せん・さき",
+        "sen/saki",
         "before/ahead"
       ],
       [
@@ -14908,18 +14908,18 @@ var curriculum = [
     "phaseName": "Kanji",
     "week": 41,
     "title": "Kanji: 生 (life/birth)",
-    "intro": "Today's kanji: 生. Readings: せい・い・う. Meaning: life/birth.",
+    "intro": "Today's kanji: 生. Readings: sei/i/u. Meaning: life/birth.",
     "type": "kanji",
     "chars": [
       [
         "生",
-        "せい・い・う"
+        "sei/i/u"
       ]
     ],
     "vocab": [
       [
         "生",
-        "せい・い・う",
+        "sei/i/u",
         "life/birth"
       ],
       [
@@ -14943,18 +14943,18 @@ var curriculum = [
     "phaseName": "Kanji",
     "week": 41,
     "title": "Kanji: 友 (friend)",
-    "intro": "Today's kanji: 友. Readings: ゆう・とも. Meaning: friend.",
+    "intro": "Today's kanji: 友. Readings: yuu/tomo. Meaning: friend.",
     "type": "kanji",
     "chars": [
       [
         "友",
-        "ゆう・とも"
+        "yuu/tomo"
       ]
     ],
     "vocab": [
       [
         "友",
-        "ゆう・とも",
+        "yuu/tomo",
         "friend"
       ],
       [
@@ -14978,18 +14978,18 @@ var curriculum = [
     "phaseName": "Kanji",
     "week": 41,
     "title": "Kanji: 人 (person)",
-    "intro": "Today's kanji: 人. Readings: じん・ひと. Meaning: person.",
+    "intro": "Today's kanji: 人. Readings: jin/hito. Meaning: person.",
     "type": "kanji",
     "chars": [
       [
         "人",
-        "じん・ひと"
+        "jin/hito"
       ]
     ],
     "vocab": [
       [
         "人",
-        "じん・ひと",
+        "jin/hito",
         "person"
       ],
       [
@@ -15013,18 +15013,18 @@ var curriculum = [
     "phaseName": "Kanji",
     "week": 41,
     "title": "Kanji: 名 (name)",
-    "intro": "Today's kanji: 名. Readings: めい・な. Meaning: name.",
+    "intro": "Today's kanji: 名. Readings: mei/na. Meaning: name.",
     "type": "kanji",
     "chars": [
       [
         "名",
-        "めい・な"
+        "mei/na"
       ]
     ],
     "vocab": [
       [
         "名",
-        "めい・な",
+        "mei/na",
         "name"
       ],
       [
@@ -15048,18 +15048,18 @@ var curriculum = [
     "phaseName": "Kanji",
     "week": 41,
     "title": "Kanji: 電 (electricity)",
-    "intro": "Today's kanji: 電. Readings: でん. Meaning: electricity.",
+    "intro": "Today's kanji: 電. Readings: den. Meaning: electricity.",
     "type": "kanji",
     "chars": [
       [
         "電",
-        "でん"
+        "den"
       ]
     ],
     "vocab": [
       [
         "電",
-        "でん",
+        "den",
         "electricity"
       ],
       [
@@ -15083,18 +15083,18 @@ var curriculum = [
     "phaseName": "Kanji",
     "week": 41,
     "title": "Kanji: 話 (speech/talk)",
-    "intro": "Today's kanji: 話. Readings: わ・はな. Meaning: speech/talk.",
+    "intro": "Today's kanji: 話. Readings: wa/hana. Meaning: speech/talk.",
     "type": "kanji",
     "chars": [
       [
         "話",
-        "わ・はな"
+        "wa/hana"
       ]
     ],
     "vocab": [
       [
         "話",
-        "わ・はな",
+        "wa/hana",
         "speech/talk"
       ],
       [
@@ -15118,18 +15118,18 @@ var curriculum = [
     "phaseName": "Kanji",
     "week": 41,
     "title": "Kanji: 何 (what)",
-    "intro": "Today's kanji: 何. Readings: なに・なん. Meaning: what.",
+    "intro": "Today's kanji: 何. Readings: nani/nan. Meaning: what.",
     "type": "kanji",
     "chars": [
       [
         "何",
-        "なに・なん"
+        "nani/nan"
       ]
     ],
     "vocab": [
       [
         "何",
-        "なに・なん",
+        "nani/nan",
         "what"
       ],
       [
@@ -15153,18 +15153,18 @@ var curriculum = [
     "phaseName": "Kanji",
     "week": 42,
     "title": "Kanji: 大 (big)",
-    "intro": "Today's kanji: 大. Readings: だい・おお. Meaning: big.",
+    "intro": "Today's kanji: 大. Readings: dai/oo. Meaning: big.",
     "type": "kanji",
     "chars": [
       [
         "大",
-        "だい・おお"
+        "dai/oo"
       ]
     ],
     "vocab": [
       [
         "大",
-        "だい・おお",
+        "dai/oo",
         "big"
       ],
       [
@@ -15188,18 +15188,18 @@ var curriculum = [
     "phaseName": "Kanji",
     "week": 42,
     "title": "Kanji: 小 (small)",
-    "intro": "Today's kanji: 小. Readings: しょう・ちい. Meaning: small.",
+    "intro": "Today's kanji: 小. Readings: shou/chii. Meaning: small.",
     "type": "kanji",
     "chars": [
       [
         "小",
-        "しょう・ちい"
+        "shou/chii"
       ]
     ],
     "vocab": [
       [
         "小",
-        "しょう・ちい",
+        "shou/chii",
         "small"
       ],
       [
@@ -15223,18 +15223,18 @@ var curriculum = [
     "phaseName": "Kanji",
     "week": 42,
     "title": "Kanji: 山 (mountain)",
-    "intro": "Today's kanji: 山. Readings: さん・やま. Meaning: mountain.",
+    "intro": "Today's kanji: 山. Readings: san/yama. Meaning: mountain.",
     "type": "kanji",
     "chars": [
       [
         "山",
-        "さん・やま"
+        "san/yama"
       ]
     ],
     "vocab": [
       [
         "山",
-        "さん・やま",
+        "san/yama",
         "mountain"
       ],
       [
@@ -15258,18 +15258,18 @@ var curriculum = [
     "phaseName": "Kanji",
     "week": 42,
     "title": "Kanji: 川 (river)",
-    "intro": "Today's kanji: 川. Readings: せん・かわ. Meaning: river.",
+    "intro": "Today's kanji: 川. Readings: sen/kawa. Meaning: river.",
     "type": "kanji",
     "chars": [
       [
         "川",
-        "せん・かわ"
+        "sen/kawa"
       ]
     ],
     "vocab": [
       [
         "川",
-        "せん・かわ",
+        "sen/kawa",
         "river"
       ],
       [
@@ -15293,18 +15293,18 @@ var curriculum = [
     "phaseName": "Kanji",
     "week": 42,
     "title": "Kanji: 空 (sky/empty)",
-    "intro": "Today's kanji: 空. Readings: くう・そら. Meaning: sky/empty.",
+    "intro": "Today's kanji: 空. Readings: kuu/sora/a. Meaning: sky/empty.",
     "type": "kanji",
     "chars": [
       [
         "空",
-        "くう・そら"
+        "kuu/sora/a"
       ]
     ],
     "vocab": [
       [
         "空",
-        "くう・そら",
+        "kuu/sora/a",
         "sky/empty"
       ],
       [
@@ -15328,18 +15328,18 @@ var curriculum = [
     "phaseName": "Kanji",
     "week": 42,
     "title": "Kanji: 海 (sea)",
-    "intro": "Today's kanji: 海. Readings: かい・うみ. Meaning: sea.",
+    "intro": "Today's kanji: 海. Readings: kai/umi. Meaning: sea.",
     "type": "kanji",
     "chars": [
       [
         "海",
-        "かい・うみ"
+        "kai/umi"
       ]
     ],
     "vocab": [
       [
         "海",
-        "かい・うみ",
+        "kai/umi",
         "sea"
       ],
       [
@@ -15363,18 +15363,18 @@ var curriculum = [
     "phaseName": "Kanji",
     "week": 42,
     "title": "Kanji: 土 (earth/soil)",
-    "intro": "Today's kanji: 土. Readings: ど・つち. Meaning: earth/soil.",
+    "intro": "Today's kanji: 土. Readings: do/tsuchi. Meaning: earth/soil.",
     "type": "kanji",
     "chars": [
       [
         "土",
-        "ど・つち"
+        "do/tsuchi"
       ]
     ],
     "vocab": [
       [
         "土",
-        "ど・つち",
+        "do/tsuchi",
         "earth/soil"
       ],
       [
@@ -15398,18 +15398,18 @@ var curriculum = [
     "phaseName": "Kanji",
     "week": 43,
     "title": "Kanji: 木 (tree/wood)",
-    "intro": "Today's kanji: 木. Readings: もく・き. Meaning: tree/wood.",
+    "intro": "Today's kanji: 木. Readings: moku/ki. Meaning: tree/wood.",
     "type": "kanji",
     "chars": [
       [
         "木",
-        "もく・き"
+        "moku/ki"
       ]
     ],
     "vocab": [
       [
         "木",
-        "もく・き",
+        "moku/ki",
         "tree/wood"
       ],
       [
@@ -15433,18 +15433,18 @@ var curriculum = [
     "phaseName": "Kanji",
     "week": 43,
     "title": "Kanji: 火 (fire)",
-    "intro": "Today's kanji: 火. Readings: か・ひ. Meaning: fire.",
+    "intro": "Today's kanji: 火. Readings: ka/hi. Meaning: fire.",
     "type": "kanji",
     "chars": [
       [
         "火",
-        "か・ひ"
+        "ka/hi"
       ]
     ],
     "vocab": [
       [
         "火",
-        "か・ひ",
+        "ka/hi",
         "fire"
       ],
       [
@@ -15468,18 +15468,18 @@ var curriculum = [
     "phaseName": "Kanji",
     "week": 43,
     "title": "Kanji: 水 (water)",
-    "intro": "Today's kanji: 水. Readings: すい・みず. Meaning: water.",
+    "intro": "Today's kanji: 水. Readings: sui/mizu. Meaning: water.",
     "type": "kanji",
     "chars": [
       [
         "水",
-        "すい・みず"
+        "sui/mizu"
       ]
     ],
     "vocab": [
       [
         "水",
-        "すい・みず",
+        "sui/mizu",
         "water"
       ],
       [
@@ -15503,18 +15503,18 @@ var curriculum = [
     "phaseName": "Kanji",
     "week": 43,
     "title": "Kanji: 金 (gold/money)",
-    "intro": "Today's kanji: 金. Readings: きん・かな. Meaning: gold/money.",
+    "intro": "Today's kanji: 金. Readings: kin/kana. Meaning: gold/money.",
     "type": "kanji",
     "chars": [
       [
         "金",
-        "きん・かな"
+        "kin/kana"
       ]
     ],
     "vocab": [
       [
         "金",
-        "きん・かな",
+        "kin/kana",
         "gold/money"
       ],
       [
@@ -15538,18 +15538,18 @@ var curriculum = [
     "phaseName": "Kanji",
     "week": 43,
     "title": "Kanji: 女 (woman)",
-    "intro": "Today's kanji: 女. Readings: じょ・おんな. Meaning: woman.",
+    "intro": "Today's kanji: 女. Readings: jo/onna. Meaning: woman.",
     "type": "kanji",
     "chars": [
       [
         "女",
-        "じょ・おんな"
+        "jo/onna"
       ]
     ],
     "vocab": [
       [
         "女",
-        "じょ・おんな",
+        "jo/onna",
         "woman"
       ],
       [
@@ -15573,18 +15573,18 @@ var curriculum = [
     "phaseName": "Kanji",
     "week": 43,
     "title": "Kanji: 男 (man)",
-    "intro": "Today's kanji: 男. Readings: だん・おとこ. Meaning: man.",
+    "intro": "Today's kanji: 男. Readings: dan/otoko. Meaning: man.",
     "type": "kanji",
     "chars": [
       [
         "男",
-        "だん・おとこ"
+        "dan/otoko"
       ]
     ],
     "vocab": [
       [
         "男",
-        "だん・おとこ",
+        "dan/otoko",
         "man"
       ],
       [
@@ -15595,9 +15595,9 @@ var curriculum = [
     ],
     "grammar": {
       "pattern": "男 in words",
-      "meaning": "ten thousand",
+      "meaning": "man",
       "example_jp": "おとこのひと=man",
-      "example_en": "ten thousand"
+      "example_en": "man"
     },
     "practice": "Write 男 20 times. Learn: おとこのひと=man, だんせい=male",
     "tip": "Stroke order matters in Japanese. Look up the correct stroke order for 男 and practice carefully!"
@@ -15608,18 +15608,18 @@ var curriculum = [
     "phaseName": "Kanji",
     "week": 43,
     "title": "Kanji: 車 (car)",
-    "intro": "Today's kanji: 車. Readings: しゃ・くるま. Meaning: car.",
+    "intro": "Today's kanji: 車. Readings: sha/kuruma. Meaning: car.",
     "type": "kanji",
     "chars": [
       [
         "車",
-        "しゃ・くるま"
+        "sha/kuruma"
       ]
     ],
     "vocab": [
       [
         "車",
-        "しゃ・くるま",
+        "sha/kuruma",
         "car"
       ],
       [
@@ -15643,18 +15643,18 @@ var curriculum = [
     "phaseName": "Kanji",
     "week": 44,
     "title": "Kanji: 道 (road/way)",
-    "intro": "Today's kanji: 道. Readings: どう・みち. Meaning: road/way.",
+    "intro": "Today's kanji: 道. Readings: dou/michi. Meaning: road/way.",
     "type": "kanji",
     "chars": [
       [
         "道",
-        "どう・みち"
+        "dou/michi"
       ]
     ],
     "vocab": [
       [
         "道",
-        "どう・みち",
+        "dou/michi",
         "road/way"
       ],
       [
@@ -15678,18 +15678,18 @@ var curriculum = [
     "phaseName": "Kanji",
     "week": 44,
     "title": "Kanji: 国 (country)",
-    "intro": "Today's kanji: 国. Readings: こく・くに. Meaning: country.",
+    "intro": "Today's kanji: 国. Readings: koku/kuni. Meaning: country.",
     "type": "kanji",
     "chars": [
       [
         "国",
-        "こく・くに"
+        "koku/kuni"
       ]
     ],
     "vocab": [
       [
         "国",
-        "こく・くに",
+        "koku/kuni",
         "country"
       ],
       [
@@ -15713,18 +15713,18 @@ var curriculum = [
     "phaseName": "Kanji",
     "week": 44,
     "title": "Kanji: 外 (outside/foreign)",
-    "intro": "Today's kanji: 外. Readings: がい・そと. Meaning: outside/foreign.",
+    "intro": "Today's kanji: 外. Readings: gai/soto. Meaning: outside/foreign.",
     "type": "kanji",
     "chars": [
       [
         "外",
-        "がい・そと"
+        "gai/soto"
       ]
     ],
     "vocab": [
       [
         "外",
-        "がい・そと",
+        "gai/soto",
         "outside/foreign"
       ],
       [
@@ -15748,18 +15748,18 @@ var curriculum = [
     "phaseName": "Kanji",
     "week": 44,
     "title": "Kanji: 上 (above/up)",
-    "intro": "Today's kanji: 上. Readings: じょう・うえ. Meaning: above/up.",
+    "intro": "Today's kanji: 上. Readings: jou/ue. Meaning: above/up.",
     "type": "kanji",
     "chars": [
       [
         "上",
-        "じょう・うえ"
+        "jou/ue"
       ]
     ],
     "vocab": [
       [
         "上",
-        "じょう・うえ",
+        "jou/ue",
         "above/up"
       ],
       [
@@ -15783,18 +15783,18 @@ var curriculum = [
     "phaseName": "Kanji",
     "week": 44,
     "title": "Kanji: 下 (below/down)",
-    "intro": "Today's kanji: 下. Readings: か・した. Meaning: below/down.",
+    "intro": "Today's kanji: 下. Readings: ka/shita. Meaning: below/down.",
     "type": "kanji",
     "chars": [
       [
         "下",
-        "か・した"
+        "ka/shita"
       ]
     ],
     "vocab": [
       [
         "下",
-        "か・した",
+        "ka/shita",
         "below/down"
       ],
       [
@@ -15818,18 +15818,18 @@ var curriculum = [
     "phaseName": "Kanji",
     "week": 44,
     "title": "Kanji: 右 (right)",
-    "intro": "Today's kanji: 右. Readings: う・みぎ. Meaning: right.",
+    "intro": "Today's kanji: 右. Readings: u/migi. Meaning: right.",
     "type": "kanji",
     "chars": [
       [
         "右",
-        "う・みぎ"
+        "u/migi"
       ]
     ],
     "vocab": [
       [
         "右",
-        "う・みぎ",
+        "u/migi",
         "right"
       ],
       [
@@ -15853,18 +15853,18 @@ var curriculum = [
     "phaseName": "Kanji",
     "week": 44,
     "title": "Kanji: 左 (left)",
-    "intro": "Today's kanji: 左. Readings: さ・ひだり. Meaning: left.",
+    "intro": "Today's kanji: 左. Readings: sa/hidari. Meaning: left.",
     "type": "kanji",
     "chars": [
       [
         "左",
-        "さ・ひだり"
+        "sa/hidari"
       ]
     ],
     "vocab": [
       [
         "左",
-        "さ・ひだり",
+        "sa/hidari",
         "left"
       ],
       [
