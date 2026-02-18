@@ -18448,3 +18448,36 @@ var curriculum = [
     "tip": "365 days completed! Celebrate this incredible achievement. Your N5 journey ends here — but your Japanese journey continues forever! Consider JLPT N4 next!"
   }
 ];
+
+var PHASE_COLORS = {
+  1: '#e91e8c',
+  2: '#8e44ad',
+  3: '#2980b9',
+  4: '#16a085',
+  5: '#e67e22',
+  6: '#2c3e50',
+  7: '#c0392b',
+  8: '#27ae60'
+};
+
+var PHASE_BG = {
+  1: '#fce4f0',
+  2: '#f5e6ff',
+  3: '#e8f4fd',
+  4: '#e8f8f5',
+  5: '#fef5e7',
+  6: '#eaecee',
+  7: '#fdedec',
+  8: '#e9f7ef'
+};
+
+var PHASE_NAMES = {
+  1: 'Hiragana',
+  2: 'Katakana',
+  3: 'Foundations',
+  4: 'Vocabulary',
+  5: 'Verbs',
+  6: 'Grammar',
+  7: 'Kanji',
+  8: 'Test Prep'
+};

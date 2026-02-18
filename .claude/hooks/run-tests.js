@@ -412,6 +412,46 @@ test("curriculum: day 365 is the final lesson", function (a) {
   a.equal(curriculum[364].day, 365);
 });
 
+// ── 13. Phase constants ────────────────────────────────────────────────────────
+var EXPECTED_PHASE_NAMES = {
+  1: 'Hiragana', 2: 'Katakana', 3: 'Foundations',
+  4: 'Vocabulary', 5: 'Verbs', 6: 'Grammar',
+  7: 'Kanji', 8: 'Test Prep'
+};
+var PHASE_NUMS = [1, 2, 3, 4, 5, 6, 7, 8];
+
+test("PHASE_COLORS: defined with all 8 phase keys as non-empty strings", function (a) {
+  a.ok(typeof PHASE_COLORS === "object" && PHASE_COLORS !== null, "PHASE_COLORS is an object");
+  PHASE_NUMS.forEach(function (p) {
+    a.ok(typeof PHASE_COLORS[p] === "string" && PHASE_COLORS[p].length > 0,
+      "PHASE_COLORS[" + p + "] is a non-empty string");
+  });
+});
+
+test("PHASE_BG: defined with all 8 phase keys as non-empty strings", function (a) {
+  a.ok(typeof PHASE_BG === "object" && PHASE_BG !== null, "PHASE_BG is an object");
+  PHASE_NUMS.forEach(function (p) {
+    a.ok(typeof PHASE_BG[p] === "string" && PHASE_BG[p].length > 0,
+      "PHASE_BG[" + p + "] is a non-empty string");
+  });
+});
+
+test("PHASE_NAMES: defined with correct names for all 8 phases", function (a) {
+  a.ok(typeof PHASE_NAMES === "object" && PHASE_NAMES !== null, "PHASE_NAMES is an object");
+  PHASE_NUMS.forEach(function (p) {
+    a.equal(PHASE_NAMES[p], EXPECTED_PHASE_NAMES[p], "PHASE_NAMES[" + p + "]");
+  });
+});
+
+test("phase constants: every phaseNum in curriculum is covered", function (a) {
+  var seen = new Set(curriculum.map(function (l) { return l.phaseNum; }));
+  seen.forEach(function (p) {
+    a.ok(PHASE_COLORS[p], "PHASE_COLORS has key " + p);
+    a.ok(PHASE_BG[p],     "PHASE_BG has key "     + p);
+    a.ok(PHASE_NAMES[p],  "PHASE_NAMES has key "  + p);
+  });
+});
+
 // ── summary ───────────────────────────────────────────────────────────────────
 var total = _pass + _fail;
 if (_fail === 0) {
