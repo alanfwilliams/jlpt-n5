@@ -7404,10 +7404,27 @@ function App() {
   var pBg = PHASE_BG[lesson.phaseNum] || '#f8f9fa';
   var pct = Math.round(completed.size / 365 * 100);
   var toggleDone = function toggleDone() {
+    var wasDone = completed.has(dayNum);
     setCompleted(function (prev) {
       var n = new Set(prev);
       n.has(dayNum) ? n["delete"](dayNum) : n.add(dayNum);
       return n;
+    });
+    setSrsCards(function (prev) {
+      var cards = Object.assign({}, prev);
+      if (wasDone) {
+        var prefix1 = 'v_' + dayNum + '_';
+        var prefix2 = 'c_' + dayNum + '_';
+        Object.keys(cards).forEach(function (id) {
+          if (id.startsWith(prefix1) || id.startsWith(prefix2)) {
+            delete cards[id];
+          }
+        });
+      } else {
+        srsAddCards(lesson, cards);
+      }
+      srsSave(cards);
+      return cards;
     });
   };
   React.useEffect(function () {
@@ -7420,14 +7437,6 @@ function App() {
       localStorage.setItem('n5_completed', JSON.stringify(_toConsumableArray(completed)));
     } catch (e) {}
   }, [completed]);
-  React.useEffect(function () {
-    var cards = _objectSpread({}, srsCards);
-    var changed = srsAddCards(lesson, cards);
-    if (changed) {
-      setSrsCards(cards);
-      srsSave(cards);
-    }
-  }, [dayNum]);
   return /*#__PURE__*/React.createElement("div", {
     className: "app"
   }, /*#__PURE__*/React.createElement("header", {
