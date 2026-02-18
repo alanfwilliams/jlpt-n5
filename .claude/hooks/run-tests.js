@@ -412,6 +412,140 @@ test("curriculum: day 365 is the final lesson", function (a) {
   a.equal(curriculum[364].day, 365);
 });
 
+// ── 13. Phase constants ────────────────────────────────────────────────────────
+var EXPECTED_PHASE_NAMES = {
+  1: 'Hiragana', 2: 'Katakana', 3: 'Foundations',
+  4: 'Vocabulary', 5: 'Verbs', 6: 'Grammar',
+  7: 'Kanji', 8: 'Test Prep'
+};
+var PHASE_NUMS = [1, 2, 3, 4, 5, 6, 7, 8];
+
+test("PHASE_COLORS: defined with all 8 phase keys as non-empty strings", function (a) {
+  a.ok(typeof PHASE_COLORS === "object" && PHASE_COLORS !== null, "PHASE_COLORS is an object");
+  PHASE_NUMS.forEach(function (p) {
+    a.ok(typeof PHASE_COLORS[p] === "string" && PHASE_COLORS[p].length > 0,
+      "PHASE_COLORS[" + p + "] is a non-empty string");
+  });
+});
+
+test("PHASE_BG: defined with all 8 phase keys as non-empty strings", function (a) {
+  a.ok(typeof PHASE_BG === "object" && PHASE_BG !== null, "PHASE_BG is an object");
+  PHASE_NUMS.forEach(function (p) {
+    a.ok(typeof PHASE_BG[p] === "string" && PHASE_BG[p].length > 0,
+      "PHASE_BG[" + p + "] is a non-empty string");
+  });
+});
+
+test("PHASE_NAMES: defined with correct names for all 8 phases", function (a) {
+  a.ok(typeof PHASE_NAMES === "object" && PHASE_NAMES !== null, "PHASE_NAMES is an object");
+  PHASE_NUMS.forEach(function (p) {
+    a.equal(PHASE_NAMES[p], EXPECTED_PHASE_NAMES[p], "PHASE_NAMES[" + p + "]");
+  });
+});
+
+test("phase constants: every phaseNum in curriculum is covered", function (a) {
+  var seen = new Set(curriculum.map(function (l) { return l.phaseNum; }));
+  seen.forEach(function (p) {
+    a.ok(PHASE_COLORS[p], "PHASE_COLORS has key " + p);
+    a.ok(PHASE_BG[p],     "PHASE_BG has key "     + p);
+    a.ok(PHASE_NAMES[p],  "PHASE_NAMES has key "  + p);
+  });
+});
+
+// ── 14. React render smoke test ───────────────────────────────────────────────
+// Extracts the inline <script> from index.html, runs it in a stubbed browser
+// environment, then calls each top-level component to verify no globals are
+// missing and no ReferenceError would blank the page.
+(function () {
+  var html;
+  try {
+    html = fs.readFileSync(path.join(projectDir, "index.html"), "utf8");
+  } catch (e) {
+    test("React render: can read index.html", function (a) {
+      a.ok(false, "Could not read index.html: " + e.message);
+    });
+    return;
+  }
+
+  // Extract the last <script> block (the inline app code, no src= attribute)
+  var allScripts = html.match(/<script>[\s\S]*?<\/script>/g) || [];
+  var appBlock = allScripts[allScripts.length - 1];
+  if (!appBlock) {
+    test("React render: inline script found in index.html", function (a) {
+      a.ok(false, "No inline <script> block found");
+    });
+    return;
+  }
+  var appCode = appBlock.replace(/^<script>/, "").replace(/<\/script>$/, "");
+
+  // Minimal browser-API stubs
+  global.React = {
+    createElement: function () { return {}; },
+    useState: function (init) {
+      var v = typeof init === "function" ? init() : init;
+      return [v, function () {}];
+    },
+    useEffect: function () {},
+    useRef:    function () { return { current: null }; },
+  };
+  global.ReactDOM = {
+    createRoot: function () { return { render: function () {} }; },
+  };
+  global.localStorage = {
+    getItem: function () { return null; },
+    setItem: function () {},
+  };
+  global.document = { getElementById: function () { return {}; } };
+  // window.speechSynthesis is already undefined from the top of this file
+
+  // Run the script — this defines App, DayView, Overview, ReviewMode, etc.
+  // as globals and calls ReactDOM.createRoot(...).render(...) via stubs.
+  test("React render: index.html inline script executes without error", function (a) {
+    try {
+      vm.runInThisContext(appCode);
+      a.ok(true, "Script executed without throwing");
+    } catch (e) {
+      a.ok(false, "Script threw: " + e.message);
+    }
+  });
+
+  // Call each top-level component to verify all referenced globals exist.
+  // With the React stub, createElement returns {} without recursing into
+  // children, so only the function body of each component is exercised.
+  var lesson0   = curriculum[0];
+  var emptySet  = new Set();
+  var noop      = function () {};
+
+  test("React render: App() renders without throwing", function (a) {
+    try { App(); a.ok(true); } catch (e) { a.ok(false, e.message); }
+  });
+
+  test("React render: DayView() renders without throwing", function (a) {
+    try {
+      DayView({
+        lesson: lesson0, dayNum: 1,
+        pColor: PHASE_COLORS[1], pBg: PHASE_BG[1],
+        completed: emptySet, toggleDone: noop, setDay: noop,
+      });
+      a.ok(true);
+    } catch (e) { a.ok(false, e.message); }
+  });
+
+  test("React render: Overview() renders without throwing", function (a) {
+    try {
+      Overview({ curriculum: curriculum, completed: emptySet, setDay: noop, currentDay: 1 });
+      a.ok(true);
+    } catch (e) { a.ok(false, e.message); }
+  });
+
+  test("React render: ReviewMode() renders without throwing", function (a) {
+    try {
+      ReviewMode({ cards: {}, dayNum: 1, onUpdate: noop });
+      a.ok(true);
+    } catch (e) { a.ok(false, e.message); }
+  });
+}());
+
 // ── summary ───────────────────────────────────────────────────────────────────
 var total = _pass + _fail;
 if (_fail === 0) {

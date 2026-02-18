@@ -758,6 +758,49 @@ QUnit.module('curriculum data integrity', function () {
   });
 });
 
+// ── Phase constants ───────────────────────────────────────────────────────────
+QUnit.module('phase constants', function () {
+  var EXPECTED_PHASES = [1, 2, 3, 4, 5, 6, 7, 8];
+  var EXPECTED_NAMES = {
+    1: 'Hiragana', 2: 'Katakana', 3: 'Foundations',
+    4: 'Vocabulary', 5: 'Verbs', 6: 'Grammar',
+    7: 'Kanji', 8: 'Test Prep'
+  };
+
+  QUnit.test('PHASE_COLORS is defined with all 8 phase keys', function (assert) {
+    assert.ok(typeof PHASE_COLORS === 'object' && PHASE_COLORS !== null, 'PHASE_COLORS exists');
+    EXPECTED_PHASES.forEach(function (p) {
+      assert.ok(typeof PHASE_COLORS[p] === 'string' && PHASE_COLORS[p].length > 0,
+        'PHASE_COLORS[' + p + '] is a non-empty string');
+    });
+  });
+
+  QUnit.test('PHASE_BG is defined with all 8 phase keys', function (assert) {
+    assert.ok(typeof PHASE_BG === 'object' && PHASE_BG !== null, 'PHASE_BG exists');
+    EXPECTED_PHASES.forEach(function (p) {
+      assert.ok(typeof PHASE_BG[p] === 'string' && PHASE_BG[p].length > 0,
+        'PHASE_BG[' + p + '] is a non-empty string');
+    });
+  });
+
+  QUnit.test('PHASE_NAMES is defined with all 8 phase keys', function (assert) {
+    assert.ok(typeof PHASE_NAMES === 'object' && PHASE_NAMES !== null, 'PHASE_NAMES exists');
+    EXPECTED_PHASES.forEach(function (p) {
+      assert.equal(PHASE_NAMES[p], EXPECTED_NAMES[p],
+        'PHASE_NAMES[' + p + '] matches expected name');
+    });
+  });
+
+  QUnit.test('every phaseNum in the curriculum has an entry in each constant', function (assert) {
+    var seen = new Set(curriculum.map(function (l) { return l.phaseNum; }));
+    seen.forEach(function (p) {
+      assert.ok(PHASE_COLORS[p], 'PHASE_COLORS has key ' + p);
+      assert.ok(PHASE_BG[p], 'PHASE_BG has key ' + p);
+      assert.ok(PHASE_NAMES[p], 'PHASE_NAMES has key ' + p);
+    });
+  });
+});
+
 </script>
 </body>
 </html>
