@@ -179,6 +179,22 @@ QUnit.module('checkTyping', function () {
   QUnit.test('alternatives matching is case-insensitive', function (assert) {
     assert.ok(checkTyping('SALMON', ['sake/salmon']));
   });
+
+  QUnit.test('trailing punctuation in user input is ignored', function (assert) {
+    assert.ok(checkTyping('hey!', ['hey']));
+  });
+
+  QUnit.test('trailing question mark in user input is ignored', function (assert) {
+    assert.ok(checkTyping('hello?', ['hello']));
+  });
+
+  QUnit.test('punctuation in answer is ignored when user omits it', function (assert) {
+    assert.ok(checkTyping('hello', ['hello!']));
+  });
+
+  QUnit.test('punctuation ignored for slash-separated alternatives', function (assert) {
+    assert.ok(checkTyping('sake!', ['sake/salmon']));
+  });
 });
 
 

@@ -258,12 +258,20 @@ function buildExercises(lesson) {
   }
   return rndShuffle(exs).slice(0, 5);
 }
+function normAns(s) {
+  return s.trim().toLowerCase().replace(/[!"#$%&'()*+,./:;<=>?@[\]^_`{|}~\\]/g, '').trim();
+}
 function checkTyping(userAns, answers) {
   var u = userAns.trim().toLowerCase();
+  var uNorm = normAns(userAns);
   return answers.some(function (a) {
-    return a.trim().toLowerCase() === u || a.split(/[\/,]/).map(function (s) {
+    var parts = a.split(/[\/,]/).map(function (s) {
       return s.trim().toLowerCase();
-    }).includes(u);
+    });
+    var partsNorm = a.split(/[\/,]/).map(function (s) {
+      return normAns(s);
+    });
+    return a.trim().toLowerCase() === u || parts.includes(u) || partsNorm.includes(uNorm);
   });
 }
 
