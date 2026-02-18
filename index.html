@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>日本語 N5 | 365-Day Course</title>
+<title>日本語 N5/N4 | 365-Day Course</title>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.2.0/umd/react.production.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.2.0/umd/react-dom.production.min.js"></script>
 
@@ -184,12 +184,90 @@ ruby{display:ruby}
 rt{font-size:0.6em;color:#8e44ad;font-weight:400;letter-spacing:0.02em}
 .vocab-table td:first-child ruby{font-size:1.1rem}
 .vocab-table td:first-child rt{font-size:0.6em}
+.furigana-hidden rt{display:none}
+
+/* Level selector overlay */
+.level-overlay{position:fixed;inset:0;background:rgba(0,0,0,0.7);z-index:1000;display:flex;align-items:center;justify-content:center}
+.level-modal{background:#fff;border-radius:16px;padding:40px 32px;max-width:520px;width:90%;text-align:center;box-shadow:0 8px 40px rgba(0,0,0,0.3)}
+.level-modal h2{font-size:1.8rem;font-weight:800;color:#2c3e50;margin-bottom:8px}
+.level-modal p{color:#888;font-size:0.95rem;margin-bottom:28px;line-height:1.5}
+.level-cards{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:24px}
+.level-card{border:2px solid #e0e0e0;border-radius:12px;padding:20px 16px;cursor:pointer;transition:all 0.2s;text-align:left}
+.level-card:hover{border-color:#3498db;background:#f0f8ff}
+.level-card.selected{border-color:#3498db;background:#e8f4fd}
+.level-card-badge{display:inline-block;padding:4px 12px;border-radius:20px;font-size:0.8rem;font-weight:700;color:#fff;margin-bottom:10px}
+.level-card h3{font-size:1.1rem;font-weight:700;color:#2c3e50;margin-bottom:4px}
+.level-card p{color:#888;font-size:0.8rem;margin-bottom:0}
+.level-start-btn{padding:14px 40px;background:#2c3e50;color:#fff;border:none;border-radius:10px;font-size:1rem;font-weight:700;cursor:pointer;font-family:inherit;transition:background 0.2s}
+.level-start-btn:hover{background:#1a252f}
+.level-continue-btn{background:none;border:none;color:#aaa;font-size:0.85rem;cursor:pointer;margin-top:12px;text-decoration:underline;font-family:inherit}
+
+/* Level badge in header */
+.level-badge{padding:4px 10px;border-radius:20px;font-size:0.78rem;font-weight:700;color:#fff;cursor:pointer;border:none;transition:opacity 0.15s}
+.level-badge:hover{opacity:0.8}
+
+/* Conjugation exercise */
+.ex-conjugation-base{font-size:1.8rem;font-weight:700;color:#2c3e50;text-align:center;margin-bottom:8px}
+.ex-conjugation-form{font-size:0.85rem;color:#8e44ad;font-weight:600;text-align:center;margin-bottom:16px}
+
+/* Fill-in-the-blank exercise */
+.fitb-sentence{font-size:1.1rem;line-height:1.8;color:#2c3e50;text-align:center;margin-bottom:16px;padding:12px;background:#f8f9fa;border-radius:8px}
+.fitb-blank{display:inline-block;min-width:80px;border-bottom:2px solid #3498db;text-align:center;padding:0 8px}
+.fitb-hint{font-size:0.8rem;color:#aaa;font-style:italic;text-align:center;margin-bottom:12px}
+
+/* Reading comprehension */
+.reading-passage{background:#fafafa;border:1px solid #e8e8e8;border-radius:8px;padding:14px 16px;font-size:1rem;line-height:2;color:#2c3e50;margin-bottom:16px;max-height:200px;overflow-y:auto}
+.reading-passage-toggle{font-size:0.78rem;color:#3498db;background:none;border:none;cursor:pointer;padding:0;font-family:inherit;margin-bottom:10px}
+
+/* Stroke order */
+.stroke-order-section{margin-top:8px;text-align:center}
+.stroke-order-toggle{background:none;border:1px solid #e0e0e0;border-radius:6px;padding:4px 10px;font-size:0.78rem;color:#666;cursor:pointer;font-family:inherit;transition:all 0.15s}
+.stroke-order-toggle:hover{background:#f0f0f0;border-color:#ccc}
+.stroke-order-img{display:block;margin:8px auto 0;border-radius:6px;border:1px solid #eee;background:#fff}
+
+/* Furigana toggle button */
+.furigana-toggle-btn{padding:5px 12px;border:1px solid rgba(255,255,255,0.3);background:transparent;color:#fff;border-radius:4px;cursor:pointer;font-size:0.78rem;transition:background 0.2s;white-space:nowrap}
+.furigana-toggle-btn:hover{background:rgba(255,255,255,0.15)}
+
+/* Mock JLPT test mode */
+.mock-test-overlay{position:fixed;inset:0;background:#1a1a2e;z-index:900;display:flex;flex-direction:column}
+.mock-test-header{background:#16213e;padding:16px 24px;display:flex;align-items:center;justify-content:space-between;color:#fff}
+.mock-test-header h2{font-size:1.1rem;font-weight:700}
+.mock-test-timer{font-size:1.4rem;font-weight:800;color:#e74c3c;font-variant-numeric:tabular-nums}
+.mock-test-timer.warning{animation:pulse 1s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:0.5}}
+.mock-test-body{flex:1;overflow-y:auto;padding:24px;max-width:700px;margin:0 auto;width:100%}
+.mock-test-q{background:#fff;border-radius:10px;padding:20px;margin-bottom:16px}
+.mock-test-q-num{font-size:0.75rem;font-weight:700;color:#999;text-transform:uppercase;margin-bottom:8px}
+.mock-test-q-text{font-size:1rem;color:#2c3e50;margin-bottom:14px;line-height:1.6}
+.mock-test-options{display:grid;gap:8px}
+.mock-test-option{padding:10px 14px;border:2px solid #e0e0e0;background:#fafafa;border-radius:8px;cursor:pointer;text-align:left;font-size:0.95rem;font-family:inherit;transition:border-color 0.15s}
+.mock-test-option:hover{border-color:#3498db;background:#f0f8ff}
+.mock-test-option.selected{border-color:#3498db;background:#e8f4fd}
+.mock-test-option.correct{border-color:#27ae60!important;background:#eafaf1!important;color:#196f3d}
+.mock-test-option.wrong{border-color:#e74c3c!important;background:#fdecea!important;color:#922b21}
+.mock-test-footer{background:#16213e;padding:16px 24px;display:flex;gap:12px;justify-content:center}
+.mock-test-submit{padding:12px 32px;background:#e74c3c;color:#fff;border:none;border-radius:8px;font-size:1rem;font-weight:700;cursor:pointer;font-family:inherit;transition:background 0.15s}
+.mock-test-submit:hover{background:#c0392b}
+.mock-test-exit{padding:12px 24px;background:transparent;color:#aaa;border:1px solid #444;border-radius:8px;font-size:1rem;cursor:pointer;font-family:inherit}
+.mock-test-results{text-align:center;padding:40px 20px;color:#fff}
+.mock-test-score{font-size:3rem;font-weight:800;margin-bottom:12px}
+.mock-test-grade{font-size:1.2rem;color:#aaa;margin-bottom:24px}
+
+/* Progress reset */
+.progress-reset-section{border-top:1px solid #f0f0f0;padding:16px 24px;background:#fafafa}
+.progress-reset-btn{padding:8px 18px;background:#e74c3c;color:#fff;border:none;border-radius:6px;font-size:0.82rem;font-weight:600;cursor:pointer;font-family:inherit}
+.level-complete-banner{background:linear-gradient(135deg,#27ae60,#2ecc71);color:#fff;padding:20px 24px;border-radius:12px;text-align:center;margin-bottom:20px}
+.level-complete-banner h3{font-size:1.3rem;font-weight:700;margin-bottom:6px}
+.level-complete-banner p{font-size:0.9rem;opacity:0.9;margin-bottom:14px}
+.level-complete-banner button{padding:10px 28px;background:#fff;color:#27ae60;border:none;border-radius:8px;font-size:0.95rem;font-weight:700;cursor:pointer;font-family:inherit}
 
 </style>
 </head>
 <body>
 <div id="root"></div>
 <script src="curriculum.js"></script>
+<script src="curriculum-n4.js"></script>
 <script src="lib.js"></script>
 <script>
 "use strict";
@@ -463,9 +541,10 @@ function TypingTip(_ref8) {
 function Exercises(_ref9) {
   var lesson = _ref9.lesson,
     onStart = _ref9.onStart,
-    onFinish = _ref9.onFinish;
+    onFinish = _ref9.onFinish,
+    activeCurriculum = _ref9.activeCurriculum;
   var _React$useState9 = React.useState(function () {
-      return buildExercises(lesson);
+      return buildExercises(lesson, activeCurriculum);
     }),
     _React$useState0 = _slicedToArray(_React$useState9, 2),
     exs = _React$useState0[0],
@@ -501,6 +580,9 @@ function Exercises(_ref9) {
     _React$useState22 = _slicedToArray(_React$useState21, 2),
     started = _React$useState22[0],
     setStarted = _React$useState22[1];
+  var _React$useStatePS = _slicedToArray(React.useState(true), 2),
+    showPassage = _React$useStatePS[0],
+    setShowPassage = _React$useStatePS[1];
   var inputRef = React.useRef(null);
   if (exs.length === 0) return null;
 
@@ -523,7 +605,7 @@ function Exercises(_ref9) {
     }, t('start_quiz', lesson.day))));
   }
   var retry = function retry() {
-    setExs(buildExercises(lesson));
+    setExs(buildExercises(lesson, activeCurriculum));
     setCur(0);
     setAnswer('');
     setSelected(null);
@@ -619,7 +701,65 @@ function Exercises(_ref9) {
     }))));
   }
 
-  // Typing exercise
+  // Reading comprehension exercise
+  if (ex.type === 'reading') {
+    return /*#__PURE__*/React.createElement("div", {className: "section"},
+      /*#__PURE__*/React.createElement("div", {className: "section-label"}, t('section_exercises', lesson.day), " ", /*#__PURE__*/React.createElement("span", {className: "ex-count"}, progress)),
+      /*#__PURE__*/React.createElement("div", {className: "exercise-box"},
+        /*#__PURE__*/React.createElement("div", {className: "ex-prompt"}, ex.prompt),
+        showPassage && /*#__PURE__*/React.createElement("div", {className: "reading-passage"}, ex.passage),
+        /*#__PURE__*/React.createElement("button", {className: "reading-passage-toggle", onClick: function() { setShowPassage(function(s) { return !s; }); }},
+          showPassage ? "Hide passage" : "Show passage"),
+        ex.question && /*#__PURE__*/React.createElement("div", {className: "ex-question", style: {fontSize: '1rem', marginTop: '12px'}}, ex.question),
+        /*#__PURE__*/React.createElement("div", {className: "ex-options"},
+          ex.options.map(function(opt, i) {
+            var cls = 'ex-option';
+            if (selected !== null) {
+              if (i === ex.correct) cls += ' correct'; else if (i === selected) cls += ' wrong';
+            }
+            return /*#__PURE__*/React.createElement("button", {
+              key: i, className: cls, disabled: selected !== null,
+              onClick: function() { setSelected(i); advance(i === ex.correct); }
+            }, opt);
+          })
+        )
+      )
+    );
+  }
+
+  // Fill-in-the-blank exercise
+  if (ex.type === 'fitb') {
+    var handleFitbCheck = function() {
+      if (!answer.trim() || revealed) return;
+      setRevealed(true);
+      advance(checkTyping(answer, ex.answers));
+    };
+    var fitbRight = revealed && checkTyping(answer, ex.answers);
+    return /*#__PURE__*/React.createElement("div", {className: "section"},
+      /*#__PURE__*/React.createElement("div", {className: "section-label"}, t('section_exercises', lesson.day), " ", /*#__PURE__*/React.createElement("span", {className: "ex-count"}, progress)),
+      /*#__PURE__*/React.createElement("div", {className: "exercise-box"},
+        /*#__PURE__*/React.createElement("div", {className: "ex-prompt"}, ex.prompt),
+        /*#__PURE__*/React.createElement("div", {className: "fitb-sentence"}, ex.sentence),
+        ex.hint && /*#__PURE__*/React.createElement("div", {className: "fitb-hint"}, "Hint: ", ex.hint),
+        /*#__PURE__*/React.createElement("div", {className: "ex-typing-row"},
+          /*#__PURE__*/React.createElement("input", {
+            ref: inputRef, className: "ex-input", type: "text",
+            value: answer, onChange: function(e) { setAnswer(e.target.value); },
+            onKeyDown: function(e) { if (e.key === 'Enter') handleFitbCheck(); },
+            placeholder: "Fill in the blank...", disabled: revealed, autoFocus: true
+          }),
+          /*#__PURE__*/React.createElement("button", {
+            className: "ex-check-btn", onClick: handleFitbCheck, disabled: !answer.trim() || revealed
+          }, t('check_btn', lesson.day))
+        ),
+        revealed && /*#__PURE__*/React.createElement("div", {className: "ex-feedback " + (fitbRight ? 'correct' : 'wrong')},
+          fitbRight ? "\u2713 Correct!" : "\u2717  Answer: " + ex.answers[0]
+        )
+      )
+    );
+  }
+
+  // Typing / conjugation exercise (shared UI)
   var handleCheck = function handleCheck() {
     if (!answer.trim() || revealed) return;
     setRevealed(true);
@@ -636,7 +776,12 @@ function Exercises(_ref9) {
     className: "exercise-box"
   }, /*#__PURE__*/React.createElement("div", {
     className: "ex-prompt"
-  }, translatePrompt(ex.prompt, lesson.day)), ex.question && /*#__PURE__*/React.createElement("div", {
+  }, translatePrompt(ex.prompt, lesson.day)),
+  ex.type === 'conjugation' && /*#__PURE__*/React.createElement("div", null,
+    /*#__PURE__*/React.createElement("div", {className: "ex-conjugation-base"}, ex.question),
+    /*#__PURE__*/React.createElement("div", {className: "ex-conjugation-form"}, "→ " + (ex.prompt.replace('Conjugate to ', '').replace(':', '')))
+  ),
+  ex.type !== 'conjugation' && ex.question && /*#__PURE__*/React.createElement("div", {
     className: "ex-question"
   }, ex.question), /*#__PURE__*/React.createElement("div", {
     className: "ex-typing-row"
@@ -664,10 +809,222 @@ function Exercises(_ref9) {
 }
 
 
+// ── Level selector ────────────────────────────────────────────────────────────
+function LevelSelector(_ref_ls) {
+  var onSelect = _ref_ls.onSelect, hasSaved = _ref_ls.hasSaved;
+  var _ls = _slicedToArray(React.useState('n5'), 2),
+    selLevel = _ls[0],
+    setSelLevel = _ls[1];
+  return /*#__PURE__*/React.createElement("div", {className: "level-overlay"},
+    /*#__PURE__*/React.createElement("div", {className: "level-modal"},
+      /*#__PURE__*/React.createElement("h2", null, "\u65E5\u672C\u8A9E Course"),
+      /*#__PURE__*/React.createElement("p", null, "Choose your level to begin. You can switch levels any time from the header."),
+      /*#__PURE__*/React.createElement("div", {className: "level-cards"},
+        /*#__PURE__*/React.createElement("div", {
+          className: "level-card " + (selLevel === 'n5' ? 'selected' : ''),
+          onClick: function() { setSelLevel('n5'); }
+        },
+          /*#__PURE__*/React.createElement("span", {className: "level-card-badge", style: {background: '#2980b9'}}, "N5"),
+          /*#__PURE__*/React.createElement("h3", null, "JLPT N5"),
+          /*#__PURE__*/React.createElement("p", null, "Beginner \u2014 hiragana, katakana, ~800 words, ~100 kanji. Start here if you\u2019re new to Japanese.")
+        ),
+        /*#__PURE__*/React.createElement("div", {
+          className: "level-card " + (selLevel === 'n4' ? 'selected' : ''),
+          onClick: function() { setSelLevel('n4'); }
+        },
+          /*#__PURE__*/React.createElement("span", {className: "level-card-badge", style: {background: '#e74c3c'}}, "N4"),
+          /*#__PURE__*/React.createElement("h3", null, "JLPT N4"),
+          /*#__PURE__*/React.createElement("p", null, "Elementary \u2014 ~1,500 words, ~300 kanji. Choose this if you\u2019ve completed N5.")
+        )
+      ),
+      /*#__PURE__*/React.createElement("button", {
+        className: "level-start-btn",
+        onClick: function() { onSelect(selLevel); }
+      }, "Start " + selLevel.toUpperCase() + " Course"),
+      hasSaved && /*#__PURE__*/React.createElement("div", null,
+        /*#__PURE__*/React.createElement("button", {
+          className: "level-continue-btn",
+          onClick: function() { onSelect(null); }
+        }, "Continue where I left off")
+      )
+    )
+  );
+}
+
+// ── Mock JLPT Test Mode ───────────────────────────────────────────────────────
+function MockTest(_ref_mt) {
+  var activeCurriculum = _ref_mt.activeCurriculum, level = _ref_mt.level, onExit = _ref_mt.onExit;
+  var DURATION = 30 * 60; // 30 minutes
+  var _mt1 = React.useState(function() {
+    // Build 20 questions from random lessons
+    var allVocab = activeCurriculum.flatMap(function(d) { return d.vocab || []; });
+    var allConj = activeCurriculum.flatMap(function(d) { return (d.conjugations || []); });
+    var questions = [];
+    // Vocab MC questions
+    var vocabPool = rndShuffle(allVocab.filter(function(v) { return v[2] && v[2].trim(); })).slice(0, 12);
+    vocabPool.forEach(function(v) {
+      var wrong = rndShuffle(allVocab.filter(function(w) { return w[2] !== v[2] && w[2] && w[2].trim(); })).slice(0, 3);
+      var opts = rndShuffle([v[2]].concat(wrong.map(function(w) { return w[2]; })));
+      questions.push({
+        type: 'vocab',
+        text: '\u300C' + v[0] + '\u300D means:',
+        options: opts,
+        correct: opts.indexOf(v[2])
+      });
+    });
+    // Conjugation questions
+    if (allConj.length > 0) {
+      var conjPool = rndShuffle(allConj).slice(0, 8);
+      conjPool.forEach(function(c) {
+        var wrong = rndShuffle(allConj.filter(function(x) { return x.answer !== c.answer; })).slice(0, 3);
+        var opts = rndShuffle([c.answer].concat(wrong.map(function(x) { return x.answer; })));
+        questions.push({
+          type: 'conjugation',
+          text: c.form + ' of \u300C' + c.base + '\u300D:',
+          options: opts,
+          correct: opts.indexOf(c.answer)
+        });
+      });
+    }
+    return rndShuffle(questions).slice(0, 20);
+  }),
+    _mt1s = _slicedToArray(_mt1, 2),
+    questions = _mt1s[0];
+
+  var _mt2 = React.useState(DURATION), _mt2s = _slicedToArray(_mt2, 2), timeLeft = _mt2s[0], setTimeLeft = _mt2s[1];
+  var _mt3 = React.useState({}), _mt3s = _slicedToArray(_mt3, 2), answers = _mt3s[0], setAnswers = _mt3s[1];
+  var _mt4 = React.useState(false), _mt4s = _slicedToArray(_mt4, 2), submitted = _mt4s[0], setSubmitted = _mt4s[1];
+
+  React.useEffect(function() {
+    if (submitted) return;
+    var interval = setInterval(function() {
+      setTimeLeft(function(t) {
+        if (t <= 1) { setSubmitted(true); return 0; }
+        return t - 1;
+      });
+    }, 1000);
+    return function() { clearInterval(interval); };
+  }, [submitted]);
+
+  var formatTime = function(s) {
+    var m = Math.floor(s / 60);
+    var sec = s % 60;
+    return (m < 10 ? '0' : '') + m + ':' + (sec < 10 ? '0' : '') + sec;
+  };
+
+  var score = submitted ? questions.reduce(function(acc, q, i) {
+    return acc + (answers[i] === q.correct ? 1 : 0);
+  }, 0) : 0;
+
+  var pct = submitted ? Math.round(score / questions.length * 100) : 0;
+
+  if (submitted) {
+    return /*#__PURE__*/React.createElement("div", {className: "mock-test-overlay"},
+      /*#__PURE__*/React.createElement("div", {className: "mock-test-header"},
+        /*#__PURE__*/React.createElement("h2", null, level.toUpperCase() + " Mock Test \u2014 Results"),
+        /*#__PURE__*/React.createElement("button", {className: "mock-test-exit", onClick: onExit}, "Exit")
+      ),
+      /*#__PURE__*/React.createElement("div", {className: "mock-test-body"},
+        /*#__PURE__*/React.createElement("div", {className: "mock-test-results"},
+          /*#__PURE__*/React.createElement("div", {className: "mock-test-score", style: {color: pct >= 60 ? '#27ae60' : '#e74c3c'}},
+            score + " / " + questions.length
+          ),
+          /*#__PURE__*/React.createElement("div", {className: "mock-test-grade"},
+            pct >= 80 ? "\uD83C\uDF1F Excellent! (" + pct + "%)" :
+            pct >= 60 ? "\u2705 Pass (" + pct + "%)" :
+            "\uD83D\uDCDA Keep studying (" + pct + "%)"
+          )
+        ),
+        questions.map(function(q, i) {
+          return /*#__PURE__*/React.createElement("div", {key: i, className: "mock-test-q"},
+            /*#__PURE__*/React.createElement("div", {className: "mock-test-q-num"}, "Q" + (i+1)),
+            /*#__PURE__*/React.createElement("div", {className: "mock-test-q-text"}, q.text),
+            /*#__PURE__*/React.createElement("div", {className: "mock-test-options"},
+              q.options.map(function(opt, j) {
+                var cls = "mock-test-option";
+                if (j === q.correct) cls += " correct";
+                else if (answers[i] === j) cls += " wrong";
+                return /*#__PURE__*/React.createElement("button", {key: j, className: cls, disabled: true}, opt);
+              })
+            )
+          );
+        })
+      )
+    );
+  }
+
+  return /*#__PURE__*/React.createElement("div", {className: "mock-test-overlay"},
+    /*#__PURE__*/React.createElement("div", {className: "mock-test-header"},
+      /*#__PURE__*/React.createElement("h2", null, level.toUpperCase() + " Mock Test \u2014 " + questions.length + " questions"),
+      /*#__PURE__*/React.createElement("div", {className: "mock-test-timer " + (timeLeft < 300 ? 'warning' : '')}, formatTime(timeLeft)),
+      /*#__PURE__*/React.createElement("button", {className: "mock-test-exit", onClick: onExit}, "Exit")
+    ),
+    /*#__PURE__*/React.createElement("div", {className: "mock-test-body"},
+      questions.map(function(q, i) {
+        return /*#__PURE__*/React.createElement("div", {key: i, className: "mock-test-q"},
+          /*#__PURE__*/React.createElement("div", {className: "mock-test-q-num"}, "Q" + (i+1)),
+          /*#__PURE__*/React.createElement("div", {className: "mock-test-q-text"}, q.text),
+          /*#__PURE__*/React.createElement("div", {className: "mock-test-options"},
+            q.options.map(function(opt, j) {
+              return /*#__PURE__*/React.createElement("button", {
+                key: j,
+                className: "mock-test-option " + (answers[i] === j ? 'selected' : ''),
+                onClick: function() { setAnswers(function(a) { var n = Object.assign({}, a); n[i] = j; return n; }); }
+              }, opt);
+            })
+          )
+        );
+      })
+    ),
+    /*#__PURE__*/React.createElement("div", {className: "mock-test-footer"},
+      /*#__PURE__*/React.createElement("button", {
+        className: "mock-test-submit",
+        onClick: function() { setSubmitted(true); }
+      }, "Submit Test"),
+      /*#__PURE__*/React.createElement("button", {className: "mock-test-exit", onClick: onExit}, "Exit without submitting")
+    )
+  );
+}
+
 function App() {
+  // ── Level state ──
+  var _lsLevel = (function() { try { return localStorage.getItem('jlpt_level') || null; } catch(e) { return null; } })();
+  var _hasSaved = (function() { try { return !!(localStorage.getItem('n5_day') || localStorage.getItem('n4_day')); } catch(e) { return false; } })();
+  var _React$useState_level = React.useState(_lsLevel),
+    _React$useState_levels = _slicedToArray(_React$useState_level, 2),
+    level = _React$useState_levels[0],
+    setLevel = _React$useState_levels[1];
+
+  var _React$useState_showLevelSel = React.useState(!_lsLevel),
+    _showLevelSelArr = _slicedToArray(_React$useState_showLevelSel, 2),
+    showLevelSel = _showLevelSelArr[0],
+    setShowLevelSel = _showLevelSelArr[1];
+
+  var _React$useState_furigana = React.useState(true),
+    _furiganaArr = _slicedToArray(_React$useState_furigana, 2),
+    showFurigana = _furiganaArr[0],
+    setShowFurigana = _furiganaArr[1];
+
+  var _React$useState_mockTest = React.useState(false),
+    _mockTestArr = _slicedToArray(_React$useState_mockTest, 2),
+    showMockTest = _mockTestArr[0],
+    setShowMockTest = _mockTestArr[1];
+
+  // active curriculum and phase constants based on level
+  var activeLevel = level || 'n5';
+  var activeCurriculum = (activeLevel === 'n4' && typeof curriculum_n4 !== 'undefined') ? curriculum_n4 : curriculum;
+  var activePhaseCols = activeLevel === 'n4' ? PHASE_COLORS_N4 : PHASE_COLORS;
+  var activePhaseBg = activeLevel === 'n4' ? PHASE_BG_N4 : PHASE_BG;
+  var activePhaseNames = activeLevel === 'n4' ? PHASE_NAMES_N4 : PHASE_NAMES;
+  var totalDays = activeCurriculum.length;
+
+  var _dayLsKey = activeLevel === 'n4' ? 'n4_day' : 'n5_day';
+  var _completedLsKey = activeLevel === 'n4' ? 'n4_completed' : 'n5_completed';
+  var _srsKey = activeLevel === 'n4' ? 'n4_srs' : 'n5_srs';
+
   var _React$useState23 = React.useState(function () {
       try {
-        return parseInt(localStorage.getItem('n5_day') || '1') || 1;
+        return parseInt(localStorage.getItem(_dayLsKey) || '1') || 1;
       } catch (e) {
         return 1;
       }
@@ -676,41 +1033,67 @@ function App() {
     dayNum = _React$useState24[0],
     setDayNum = _React$useState24[1];
   var _React$useState25 = React.useState(function () {
-      return srsLoad();
+      try {
+        var raw = localStorage.getItem(_srsKey);
+        return raw ? JSON.parse(raw) : {};
+      } catch(e) { return {}; }
     }),
     _React$useState26 = _slicedToArray(_React$useState25, 2),
     srsCards = _React$useState26[0],
     setSrsCards = _React$useState26[1];
+
   var _React$useState27 = React.useState(function () {
-      try {
-        return new Set(JSON.parse(localStorage.getItem('n5_completed') || '[]'));
-      } catch (e) {
-        return new Set();
-      }
-    }),
+    try { return new Set(JSON.parse(localStorage.getItem(_completedLsKey) || '[]')); }
+    catch (e) { return new Set(); }
+  }),
     _React$useState28 = _slicedToArray(_React$useState27, 2),
     completed = _React$useState28[0],
     setCompleted = _React$useState28[1];
+
   var _React$useState29 = React.useState('day'),
     _React$useState30 = _slicedToArray(_React$useState29, 2),
     view = _React$useState30[0],
     setView = _React$useState30[1];
-  var lesson = curriculum[dayNum - 1];
-  var pColor = PHASE_COLORS[lesson.phaseNum] || '#555';
-  var pBg = PHASE_BG[lesson.phaseNum] || '#f8f9fa';
-  var pct = Math.round(completed.size / 365 * 100);
+
+  var safeDayNum = Math.max(1, Math.min(dayNum, totalDays));
+  var lesson = activeCurriculum[safeDayNum - 1];
+  var pColor = (activePhaseCols[lesson.phaseNum]) || '#555';
+  var pBg = (activePhaseBg[lesson.phaseNum]) || '#f8f9fa';
+  var pct = Math.round(completed.size / totalDays * 100);
+
+  var handleLevelSelect = function(newLevel) {
+    if (!newLevel) { setShowLevelSel(false); return; }
+    try { localStorage.setItem('jlpt_level', newLevel); } catch(e) {}
+    setLevel(newLevel);
+    setShowLevelSel(false);
+    // Reset day to 1 when switching levels
+    var newDayKey = newLevel === 'n4' ? 'n4_day' : 'n5_day';
+    var savedDay = parseInt(localStorage.getItem(newDayKey) || '1') || 1;
+    setDayNum(savedDay);
+    var newCompKey = newLevel === 'n4' ? 'n4_completed' : 'n5_completed';
+    try {
+      var saved = new Set(JSON.parse(localStorage.getItem(newCompKey) || '[]'));
+      setCompleted(saved);
+    } catch(e) { setCompleted(new Set()); }
+    var newSrsKey = newLevel === 'n4' ? 'n4_srs' : 'n5_srs';
+    try {
+      var savedSrs = JSON.parse(localStorage.getItem(newSrsKey) || '{}');
+      setSrsCards(savedSrs);
+    } catch(e) { setSrsCards({}); }
+  };
+
   var toggleDone = function toggleDone() {
-    var wasDone = completed.has(dayNum);
+    var wasDone = completed.has(safeDayNum);
     setCompleted(function (prev) {
       var n = new Set(prev);
-      n.has(dayNum) ? n["delete"](dayNum) : n.add(dayNum);
+      n.has(safeDayNum) ? n["delete"](safeDayNum) : n.add(safeDayNum);
       return n;
     });
     setSrsCards(function (prev) {
       var cards = Object.assign({}, prev);
       if (wasDone) {
-        var prefix1 = 'v_' + dayNum + '_';
-        var prefix2 = 'c_' + dayNum + '_';
+        var prefix1 = 'v_' + safeDayNum + '_';
+        var prefix2 = 'c_' + safeDayNum + '_';
         Object.keys(cards).forEach(function (id) {
           if (id.startsWith(prefix1) || id.startsWith(prefix2)) {
             delete cards[id];
@@ -719,27 +1102,51 @@ function App() {
       } else {
         srsAddCards(lesson, cards);
       }
-      srsSave(cards);
+      try { localStorage.setItem(_srsKey, JSON.stringify(cards)); } catch(e) {}
       return cards;
     });
   };
+
   React.useEffect(function () {
-    try {
-      localStorage.setItem('n5_day', String(dayNum));
-    } catch (e) {}
-  }, [dayNum]);
+    try { localStorage.setItem(_dayLsKey, String(safeDayNum)); } catch (e) {}
+  }, [safeDayNum, activeLevel]);
   React.useEffect(function () {
-    try {
-      localStorage.setItem('n5_completed', JSON.stringify(_toConsumableArray(completed)));
-    } catch (e) {}
-  }, [completed]);
+    try { localStorage.setItem(_completedLsKey, JSON.stringify(_toConsumableArray(completed))); } catch (e) {}
+  }, [completed, activeLevel]);
+
+  var levelColor = activeLevel === 'n4' ? '#e74c3c' : '#2980b9';
+  var dueCount = srsDueCards(srsCards).length;
+
+  var isN5Complete = activeLevel === 'n5' && completed.size >= 365;
+
   return /*#__PURE__*/React.createElement("div", {
-    className: "app"
-  }, /*#__PURE__*/React.createElement("header", {
+    className: "app " + (showFurigana ? '' : 'furigana-hidden')
+  },
+  showLevelSel && /*#__PURE__*/React.createElement(LevelSelector, {
+    onSelect: handleLevelSelect,
+    hasSaved: _hasSaved
+  }),
+  showMockTest && /*#__PURE__*/React.createElement(MockTest, {
+    activeCurriculum: activeCurriculum,
+    level: activeLevel,
+    onExit: function() { setShowMockTest(false); }
+  }),
+  /*#__PURE__*/React.createElement("header", {
     className: "header"
-  }, /*#__PURE__*/React.createElement("h1", null, "\u65E5\u672C\u8A9E N5 | 365-Day Course"), /*#__PURE__*/React.createElement("div", {
+  }, /*#__PURE__*/React.createElement("h1", null, "\u65E5\u672C\u8A9E | 365-Day Course"), /*#__PURE__*/React.createElement("div", {
     className: "header-right"
-  }, /*#__PURE__*/React.createElement("div", {
+  }, /*#__PURE__*/React.createElement("button", {
+    className: "level-badge",
+    style: {background: levelColor},
+    onClick: function() { setShowLevelSel(true); },
+    title: "Switch level"
+  }, activeLevel.toUpperCase()),
+  /*#__PURE__*/React.createElement("button", {
+    className: "furigana-toggle-btn",
+    onClick: function() { setShowFurigana(function(f) { return !f; }); },
+    title: "Toggle furigana"
+  }, showFurigana ? "ふりがな ON" : "ふりがな OFF"),
+  /*#__PURE__*/React.createElement("div", {
     className: "progress-wrap"
   }, /*#__PURE__*/React.createElement("div", {
     className: "progress-bar"
@@ -748,7 +1155,7 @@ function App() {
     style: {
       width: pct + '%'
     }
-  })), /*#__PURE__*/React.createElement("span", null, completed.size, " ", t('of_365', dayNum))), /*#__PURE__*/React.createElement("div", {
+  })), /*#__PURE__*/React.createElement("span", null, completed.size, " / ", totalDays)), /*#__PURE__*/React.createElement("div", {
     className: "view-btns"
   }, /*#__PURE__*/React.createElement("button", {
     className: "view-btn ".concat(view === 'day' ? 'active' : ''),
@@ -765,34 +1172,76 @@ function App() {
     onClick: function onClick() {
       return setView('review');
     }
-  }, t('view_review', dayNum), srsDueCards(srsCards).length > 0 ? " (".concat(srsDueCards(srsCards).length, ")") : '')))), /*#__PURE__*/React.createElement("main", {
+  }, t('view_review', safeDayNum), dueCount > 0 ? " (".concat(dueCount, ")") : ''),
+  /*#__PURE__*/React.createElement("button", {
+    className: "view-btn",
+    onClick: function() { setShowMockTest(true); },
+    title: "Mock JLPT test"
+  }, "Mock Test")))),
+  /*#__PURE__*/React.createElement("main", {
     className: "main"
-  }, view === 'review' ? /*#__PURE__*/React.createElement(ReviewMode, {
+  },
+  isN5Complete && /*#__PURE__*/React.createElement("div", {className: "level-complete-banner"},
+    /*#__PURE__*/React.createElement("h3", null, "\uD83C\uDF89 N5 Complete!"),
+    /*#__PURE__*/React.createElement("p", null, "You\u2019ve finished all 365 N5 days. Ready to start N4?"),
+    /*#__PURE__*/React.createElement("button", {onClick: function() { handleLevelSelect('n4'); }}, "Start N4 Course")
+  ),
+  view === 'review' ? /*#__PURE__*/React.createElement(ReviewMode, {
     cards: srsCards,
-    dayNum: dayNum,
+    dayNum: safeDayNum,
     onUpdate: function onUpdate(updated) {
       setSrsCards(updated);
-      srsSave(updated);
+      try { localStorage.setItem(_srsKey, JSON.stringify(updated)); } catch(e) {}
     }
   }) : view === 'overview' ? /*#__PURE__*/React.createElement(Overview, {
-    curriculum: curriculum,
+    curriculum: activeCurriculum,
+    phaseColors: activePhaseCols,
+    phaseNames: activePhaseNames,
     completed: completed,
-    dayNum: dayNum,
+    dayNum: safeDayNum,
     setDay: function setDay(d) {
       setDayNum(d);
       setView('day');
     },
-    currentDay: dayNum
+    currentDay: safeDayNum
   }) : /*#__PURE__*/React.createElement(DayView, {
     lesson: lesson,
-    dayNum: dayNum,
+    dayNum: safeDayNum,
     pColor: pColor,
     pBg: pBg,
     completed: completed,
     toggleDone: toggleDone,
-    setDay: setDayNum
+    setDay: setDayNum,
+    totalDays: totalDays,
+    activeCurriculum: activeCurriculum
   })));
 }
+// ── KanjiVG stroke order helpers ─────────────────────────────────────────────
+function kanjiCodepoint(ch) {
+  return ch.codePointAt(0).toString(16).padStart(5, '0');
+}
+function StrokeOrderCard(_ref_so) {
+  var kanji = _ref_so.kanji;
+  var _so = React.useState(false), _sos = _slicedToArray(_so, 2), show = _sos[0], setShow = _sos[1];
+  var cp = kanjiCodepoint(kanji);
+  // KanjiVG SVGs via jsDelivr CDN (no local files needed)
+  var src = 'https://cdn.jsdelivr.net/npm/kanjivg@1.0.0/svg/' + cp + '.svg';
+  return /*#__PURE__*/React.createElement("div", {className: "stroke-order-section"},
+    /*#__PURE__*/React.createElement("button", {
+      className: "stroke-order-toggle",
+      onClick: function() { setShow(function(s) { return !s; }); }
+    }, show ? "Hide stroke order" : "Show stroke order"),
+    show && /*#__PURE__*/React.createElement("img", {
+      className: "stroke-order-img",
+      src: src,
+      alt: "Stroke order for " + kanji,
+      width: 100,
+      height: 100,
+      onError: function(e) { e.target.style.display='none'; }
+    })
+  );
+}
+
 function DayView(_ref0) {
   var lesson = _ref0.lesson,
     dayNum = _ref0.dayNum,
@@ -800,7 +1249,9 @@ function DayView(_ref0) {
     pBg = _ref0.pBg,
     completed = _ref0.completed,
     toggleDone = _ref0.toggleDone,
-    setDay = _ref0.setDay;
+    setDay = _ref0.setDay,
+    totalDays = _ref0.totalDays || 365,
+    activeCurriculum = _ref0.activeCurriculum;
   var isDone = completed.has(dayNum);
   var _React$useState31 = React.useState(false),
     _React$useState32 = _slicedToArray(_React$useState31, 2),
@@ -809,6 +1260,10 @@ function DayView(_ref0) {
   React.useEffect(function () {
     setQuizActive(false);
   }, [dayNum]);
+
+  // Detect if this is a kanji lesson (for stroke order)
+  var isKanjiLesson = lesson.type === 'kanji' || (lesson.chars && lesson.chars.length > 0 && lesson.chars.some(function(c) { return hasKanji(c[0]); }));
+
   return /*#__PURE__*/React.createElement("div", {
     className: "day-card"
   }, /*#__PURE__*/React.createElement("div", {
@@ -848,6 +1303,7 @@ function DayView(_ref0) {
   }, t('section_characters', dayNum)), /*#__PURE__*/React.createElement("div", {
     className: "chars-table"
   }, lesson.chars.map(function (c, i) {
+    var isKanji = hasKanji(c[0]);
     return /*#__PURE__*/React.createElement("div", {
       key: i,
       className: "char-card"
@@ -861,10 +1317,40 @@ function DayView(_ref0) {
       title: "Listen"
     }, "\uD83D\uDD0A"), /*#__PURE__*/React.createElement("span", {
       className: "char-reading"
-    }, c[1]));
+    }, c[1]),
+    isKanji && /*#__PURE__*/React.createElement(StrokeOrderCard, {kanji: c[0], key: "so-" + i})
+    );
   }))), /*#__PURE__*/React.createElement(TypingTip, {
     lesson: lesson
-  }), lesson.vocab && lesson.vocab.length > 0 && /*#__PURE__*/React.createElement("div", {
+  }),
+  lesson.conjugations && lesson.conjugations.length > 0 && /*#__PURE__*/React.createElement("div", {className: "section"},
+    /*#__PURE__*/React.createElement("div", {className: "section-label"}, "Conjugations"),
+    /*#__PURE__*/React.createElement("table", {className: "vocab-table"},
+      /*#__PURE__*/React.createElement("thead", null,
+        /*#__PURE__*/React.createElement("tr", null,
+          /*#__PURE__*/React.createElement("th", null, "Base"),
+          /*#__PURE__*/React.createElement("th", null, "Form"),
+          /*#__PURE__*/React.createElement("th", null, "Conjugated")
+        )
+      ),
+      /*#__PURE__*/React.createElement("tbody", null,
+        lesson.conjugations.map(function(conj, i) {
+          return /*#__PURE__*/React.createElement("tr", {key: i},
+            /*#__PURE__*/React.createElement("td", null, conj.base, /*#__PURE__*/React.createElement("button", {className: "speak-btn", onClick: function() { speak(conj.base); }, title: "Listen"}, "\uD83D\uDD0A")),
+            /*#__PURE__*/React.createElement("td", null, conj.form),
+            /*#__PURE__*/React.createElement("td", null, conj.answer, /*#__PURE__*/React.createElement("button", {className: "speak-btn", onClick: function() { speak(conj.answer); }, title: "Listen"}, "\uD83D\uDD0A"))
+          );
+        })
+      )
+    )
+  ),
+  lesson.passages && lesson.passages.length > 0 && /*#__PURE__*/React.createElement("div", {className: "section"},
+    /*#__PURE__*/React.createElement("div", {className: "section-label"}, "Reading Passages"),
+    lesson.passages.map(function(p, pi) {
+      return /*#__PURE__*/React.createElement(PassageCard, {key: pi, passage: p});
+    })
+  ),
+  lesson.vocab && lesson.vocab.length > 0 && /*#__PURE__*/React.createElement("div", {
     className: "section"
   }, /*#__PURE__*/React.createElement("div", {
     className: "section-label"
@@ -914,6 +1400,7 @@ function DayView(_ref0) {
   }, lesson.tip))), /*#__PURE__*/React.createElement(Exercises, {
     key: lesson.day,
     lesson: lesson,
+    activeCurriculum: activeCurriculum,
     onStart: function onStart() {
       return setQuizActive(true);
     },
@@ -930,16 +1417,30 @@ function DayView(_ref0) {
     disabled: dayNum === 1
   }, t('nav_prev', dayNum)), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("div", {
     className: "day-counter"
-  }, t('day_label', dayNum), " ", dayNum, " ", t('of_365', dayNum)), /*#__PURE__*/React.createElement("button", {
+  }, t('day_label', dayNum), " ", dayNum, " / ", totalDays), /*#__PURE__*/React.createElement("button", {
     className: "nav-btn complete ".concat(isDone ? 'done' : ''),
     onClick: toggleDone
   }, isDone ? t('mark_incomplete', dayNum) : t('mark_complete', dayNum))), /*#__PURE__*/React.createElement("button", {
     className: "nav-btn next",
     onClick: function onClick() {
-      return setDay(Math.min(365, dayNum + 1));
+      return setDay(Math.min(totalDays, dayNum + 1));
     },
-    disabled: dayNum === 365
+    disabled: dayNum === totalDays
   }, t('nav_next', dayNum))));
+}
+
+// ── PassageCard ───────────────────────────────────────────────────────────────
+function PassageCard(_ref_pc) {
+  var passage = _ref_pc.passage;
+  var _pc = React.useState(false), _pcs = _slicedToArray(_pc, 2), showEn = _pcs[0], setShowEn = _pcs[1];
+  return /*#__PURE__*/React.createElement("div", {style: {marginBottom: '12px'}},
+    /*#__PURE__*/React.createElement("div", {className: "reading-passage"}, passage.jp),
+    /*#__PURE__*/React.createElement("button", {
+      className: "reading-passage-toggle",
+      onClick: function() { setShowEn(function(s) { return !s; }); }
+    }, showEn ? "Hide translation" : "Show translation"),
+    showEn && /*#__PURE__*/React.createElement("div", {className: "intro-text", style: {marginTop: '8px'}}, passage.en)
+  );
 }
 function ReviewMode(_ref1) {
   var cards = _ref1.cards,
@@ -1048,34 +1549,36 @@ function Overview(_ref10) {
   var curriculum = _ref10.curriculum,
     completed = _ref10.completed,
     setDay = _ref10.setDay,
-    currentDay = _ref10.currentDay;
-  var phases = [1, 2, 3, 4, 5, 6, 7, 8];
+    currentDay = _ref10.currentDay,
+    phaseColors = _ref10.phaseColors || PHASE_COLORS,
+    phaseNames = _ref10.phaseNames || PHASE_NAMES;
+  var phaseNums = Object.keys(phaseNames).map(Number);
   return /*#__PURE__*/React.createElement("div", {
     className: "overview"
   }, /*#__PURE__*/React.createElement("div", {
     className: "overview-header"
-  }, /*#__PURE__*/React.createElement("h2", null, "Course Overview \u2014 All 365 Days"), /*#__PURE__*/React.createElement("span", {
+  }, /*#__PURE__*/React.createElement("h2", null, "Course Overview \u2014 All ", curriculum.length, " Days"), /*#__PURE__*/React.createElement("span", {
     style: {
       fontSize: '0.85rem',
       color: '#999'
     }
   }, completed.size, " completed \xB7 Click a day to jump to it")), /*#__PURE__*/React.createElement("div", {
     className: "phase-legend"
-  }, phases.map(function (p) {
+  }, phaseNums.map(function (p) {
     return /*#__PURE__*/React.createElement("div", {
       key: p,
       className: "legend-item"
     }, /*#__PURE__*/React.createElement("div", {
       className: "legend-dot",
       style: {
-        background: PHASE_COLORS[p]
+        background: phaseColors[p]
       }
-    }), /*#__PURE__*/React.createElement("span", null, PHASE_NAMES[p]));
+    }), /*#__PURE__*/React.createElement("span", null, phaseNames[p]));
   })), /*#__PURE__*/React.createElement("div", {
     className: "cal-grid"
   }, curriculum.map(function (lesson, i) {
     var d = i + 1;
-    var col = PHASE_COLORS[lesson.phaseNum];
+    var col = phaseColors[lesson.phaseNum];
     var isDone = completed.has(d);
     var isCurrent = d === currentDay;
     return /*#__PURE__*/React.createElement("div", {

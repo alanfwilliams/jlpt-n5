@@ -16,6 +16,7 @@
 
 <!-- Load curriculum data and pure utility functions -->
 <script src="curriculum.js"></script>
+<script src="curriculum-n4.js"></script>
 <script src="lib.js"></script>
 <!-- QUnit runner -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/qunit/2.20.0/qunit.min.js"></script>
@@ -755,6 +756,103 @@ QUnit.module('curriculum data integrity', function () {
       }
     });
     assert.equal(failures.length, 0, failures.join('\n'));
+  });
+});
+
+// ── N4 curriculum integrity ───────────────────────────────────────────────────
+QUnit.module('N4 curriculum integrity', function () {
+  QUnit.test('curriculum_n4 is defined and is an array', function (assert) {
+    assert.ok(typeof curriculum_n4 !== 'undefined', 'curriculum_n4 is defined');
+    assert.ok(Array.isArray(curriculum_n4), 'curriculum_n4 is an array');
+  });
+
+  QUnit.test('curriculum_n4 has exactly 365 days', function (assert) {
+    assert.equal(curriculum_n4.length, 365, 'length is 365');
+  });
+
+  QUnit.test('curriculum_n4 days are sequential 1–365', function (assert) {
+    curriculum_n4.forEach(function (lesson, i) {
+      assert.equal(lesson.day, i + 1, 'day ' + (i + 1) + ' has correct day field');
+    });
+  });
+
+  QUnit.test('curriculum_n4 required fields present on every day', function (assert) {
+    var required = ['day', 'phaseNum', 'phaseName', 'week', 'title', 'type'];
+    curriculum_n4.forEach(function (lesson) {
+      required.forEach(function (field) {
+        assert.ok(lesson[field] !== undefined && lesson[field] !== null,
+          'day ' + lesson.day + ' has field: ' + field);
+      });
+    });
+  });
+
+  QUnit.test('curriculum_n4 type is a string on every day', function (assert) {
+    curriculum_n4.forEach(function (lesson) {
+      assert.equal(typeof lesson.type, 'string',
+        'day ' + lesson.day + ' type is a string (got ' + JSON.stringify(lesson.type) + ')');
+    });
+  });
+
+  QUnit.test('curriculum_n4 week is 1–52 on every day', function (assert) {
+    curriculum_n4.forEach(function (lesson) {
+      assert.ok(lesson.week >= 1 && lesson.week <= 52,
+        'day ' + lesson.day + ' week=' + lesson.week + ' in range 1-52');
+    });
+  });
+
+  QUnit.test('curriculum_n4 vocab entries are [jp, reading, en] triples', function (assert) {
+    curriculum_n4.forEach(function (lesson) {
+      (lesson.vocab || []).forEach(function (v, i) {
+        assert.equal(v.length, 3,
+          'day ' + lesson.day + ' vocab[' + i + '] has 3 elements (got ' + v.length + ')');
+        assert.equal(typeof v[2], 'string',
+          'day ' + lesson.day + ' vocab[' + i + '][2] (meaning) is a string');
+      });
+    });
+  });
+
+  QUnit.test('curriculum_n4 chars entries are [char, reading] pairs', function (assert) {
+    curriculum_n4.forEach(function (lesson) {
+      (lesson.chars || []).forEach(function (c, i) {
+        assert.equal(c.length, 2,
+          'day ' + lesson.day + ' chars[' + i + '] has 2 elements');
+      });
+    });
+  });
+
+  QUnit.test('curriculum_n4 conjugations have base, form, answer', function (assert) {
+    curriculum_n4.forEach(function (lesson) {
+      (lesson.conjugations || []).forEach(function (c, i) {
+        assert.ok(c.base && c.form && c.answer,
+          'day ' + lesson.day + ' conjugations[' + i + '] has base/form/answer');
+      });
+    });
+  });
+
+  QUnit.test('PHASE_COLORS_N4, PHASE_BG_N4, PHASE_NAMES_N4 are defined', function (assert) {
+    assert.ok(typeof PHASE_COLORS_N4 === 'object' && PHASE_COLORS_N4 !== null, 'PHASE_COLORS_N4 exists');
+    assert.ok(typeof PHASE_BG_N4 === 'object' && PHASE_BG_N4 !== null, 'PHASE_BG_N4 exists');
+    assert.ok(typeof PHASE_NAMES_N4 === 'object' && PHASE_NAMES_N4 !== null, 'PHASE_NAMES_N4 exists');
+  });
+
+  QUnit.test('every N4 phaseNum has an entry in N4 phase constants', function (assert) {
+    var seen = new Set(curriculum_n4.map(function (l) { return l.phaseNum; }));
+    seen.forEach(function (p) {
+      assert.ok(PHASE_COLORS_N4[p], 'PHASE_COLORS_N4 has key ' + p);
+      assert.ok(PHASE_BG_N4[p], 'PHASE_BG_N4 has key ' + p);
+      assert.ok(PHASE_NAMES_N4[p], 'PHASE_NAMES_N4 has key ' + p);
+    });
+  });
+
+  QUnit.test('buildExercises works with curriculum_n4', function (assert) {
+    // Find a lesson with vocab in N4
+    var vocabLesson = curriculum_n4.find(function (l) { return l.vocab && l.vocab.length >= 2; });
+    if (!vocabLesson) { assert.ok(true, 'no vocab lesson found, skip'); return; }
+    // Mock window.speechSynthesis for test environment
+    var origSS = typeof window !== 'undefined' ? window.speechSynthesis : undefined;
+    var exs = buildExercises(vocabLesson, curriculum_n4);
+    assert.ok(Array.isArray(exs), 'returns an array');
+    assert.ok(exs.length <= 5, 'at most 5 exercises');
   });
 });
 

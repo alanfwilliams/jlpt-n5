@@ -122,14 +122,77 @@ function rndShuffle(arr) {
   }
   return a;
 }
-function buildExercises(lesson) {
+function buildExercises(lesson, curriculumOverride) {
   var exs = [];
-  var allVocab = curriculum.flatMap(function (d) {
+  var activeCurriculum = curriculumOverride || curriculum;
+  var allVocab = activeCurriculum.flatMap(function (d) {
     return d.vocab || [];
   });
-  var allChars = curriculum.flatMap(function (d) {
+  var allChars = activeCurriculum.flatMap(function (d) {
     return d.chars || [];
   });
+
+  // ── Conjugation exercises (N4 conjugation days) ──
+  if (lesson.conjugations && lesson.conjugations.length > 0) {
+    var conjs = rndShuffle(lesson.conjugations);
+
+    // Typing: base → conjugated form
+    var cj0 = conjs[0];
+    exs.push({
+      type: 'conjugation',
+      prompt: 'Conjugate to ' + cj0.form + ':',
+      question: cj0.base,
+      answers: [cj0.answer],
+      placeholder: 'Type the ' + cj0.form + '...'
+    });
+
+    // MC: which is the correct conjugation?
+    if (conjs.length > 1) {
+      var cj1 = conjs[1];
+      var wrongConj = rndShuffle(conjs.filter(function(c) { return c.answer !== cj1.answer; })).slice(0, 3);
+      var extraWrong = wrongConj.length < 3
+        ? rndShuffle(activeCurriculum.flatMap(function(d) {
+            return (d.conjugations || []).filter(function(c) { return c.answer !== cj1.answer; });
+          })).slice(0, 3 - wrongConj.length)
+        : [];
+      var conjOpts = rndShuffle([cj1.answer].concat(wrongConj.concat(extraWrong).map(function(c) { return c.answer; })));
+      exs.push({
+        type: 'mc',
+        prompt: 'Which is the correct ' + cj1.form + ' of ' + cj1.base + '?',
+        question: cj1.base,
+        options: conjOpts,
+        correct: conjOpts.indexOf(cj1.answer)
+      });
+    }
+  }
+
+  // ── Fill-in-the-blank grammar exercises ──
+  if (lesson.grammar && lesson.grammar.fitb) {
+    exs.push({
+      type: 'fitb',
+      prompt: 'Fill in the blank:',
+      sentence: lesson.grammar.fitb.sentence,
+      answers: lesson.grammar.fitb.answers,
+      hint: lesson.grammar.fitb.hint || ''
+    });
+  }
+
+  // ── Reading comprehension exercises ──
+  if (lesson.passages && lesson.passages.length > 0) {
+    var passage = rndShuffle(lesson.passages)[0];
+    if (passage.questions && passage.questions.length > 0) {
+      var pq = rndShuffle(passage.questions)[0];
+      exs.push({
+        type: 'reading',
+        prompt: 'Read the passage and answer:',
+        passage: passage.jp,
+        passageEn: passage.en,
+        question: pq.question,
+        options: pq.options,
+        correct: pq.correct
+      });
+    }
+  }
 
   // Listening exercise: hear a word, pick its meaning
   if (lesson.vocab && lesson.vocab.length >= 2 && window.speechSynthesis) {

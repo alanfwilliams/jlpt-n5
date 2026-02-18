@@ -24,8 +24,12 @@ const projectDir = process.env.CLAUDE_PROJECT_DIR ||
 global.window = { speechSynthesis: undefined };
 
 // ── load scripts into global scope ───────────────────────────────────────────
-vm.runInThisContext(fs.readFileSync(path.join(projectDir, "curriculum.js"), "utf8"));
-vm.runInThisContext(fs.readFileSync(path.join(projectDir, "lib.js"),        "utf8"));
+vm.runInThisContext(fs.readFileSync(path.join(projectDir, "curriculum.js"),    "utf8"));
+var n4Path = path.join(projectDir, "curriculum-n4.js");
+if (fs.existsSync(n4Path)) {
+  vm.runInThisContext(fs.readFileSync(n4Path, "utf8"));
+}
+vm.runInThisContext(fs.readFileSync(path.join(projectDir, "lib.js"),           "utf8"));
 
 // ── minimal test harness ──────────────────────────────────────────────────────
 var _pass = 0, _fail = 0;
@@ -452,7 +456,62 @@ test("phase constants: every phaseNum in curriculum is covered", function (a) {
   });
 });
 
-// ── 14. React render smoke test ───────────────────────────────────────────────
+// ── 14. N4 curriculum integrity ───────────────────────────────────────────────
+(function () {
+  if (typeof curriculum_n4 === 'undefined') {
+    test("N4 curriculum: curriculum_n4 is defined", function (a) {
+      a.ok(false, "curriculum_n4 not loaded — curriculum-n4.js missing?");
+    });
+    return;
+  }
+
+  test("N4 curriculum: is an array of 365 days", function (a) {
+    a.ok(Array.isArray(curriculum_n4), "is an array");
+    a.equal(curriculum_n4.length, 365, "length is 365");
+  });
+
+  test("N4 curriculum: days are sequential 1–365", function (a) {
+    var bad = curriculum_n4.filter(function (l, i) { return l.day !== i + 1; });
+    a.equal(bad.length, 0, bad.map(function (l) { return "day " + l.day + "@idx" + (l.day-1); }).join(", "));
+  });
+
+  test("N4 curriculum: type is a string on every day", function (a) {
+    var bad = curriculum_n4.filter(function (l) { return typeof l.type !== 'string'; });
+    a.equal(bad.length, 0, "type is non-string on days: " + bad.map(function (l) { return l.day; }).join(", "));
+  });
+
+  test("N4 curriculum: week is 1–52 on every day", function (a) {
+    var bad = curriculum_n4.filter(function (l) { return l.week < 1 || l.week > 52; });
+    a.equal(bad.length, 0, "week out of range on days: " + bad.map(function (l) { return l.day + "(wk=" + l.week + ")"; }).join(", "));
+  });
+
+  test("N4 curriculum: vocab entries are [jp, reading, en] triples", function (a) {
+    var bad = [];
+    curriculum_n4.forEach(function (l) {
+      (l.vocab || []).forEach(function (v, i) {
+        if (v.length !== 3 || typeof v[2] !== 'string') bad.push("day" + l.day + "[" + i + "]");
+      });
+    });
+    a.equal(bad.length, 0, "Bad vocab: " + bad.slice(0, 5).join(", "));
+  });
+
+  test("N4 curriculum: PHASE_COLORS_N4, PHASE_BG_N4, PHASE_NAMES_N4 defined", function (a) {
+    a.ok(typeof PHASE_COLORS_N4 === 'object' && PHASE_COLORS_N4 !== null, "PHASE_COLORS_N4 defined");
+    a.ok(typeof PHASE_BG_N4 === 'object' && PHASE_BG_N4 !== null, "PHASE_BG_N4 defined");
+    a.ok(typeof PHASE_NAMES_N4 === 'object' && PHASE_NAMES_N4 !== null, "PHASE_NAMES_N4 defined");
+  });
+
+  test("N4 curriculum: every phaseNum covered by N4 constants", function (a) {
+    var seen = new Set(curriculum_n4.map(function (l) { return l.phaseNum; }));
+    seen.forEach(function (p) {
+      a.ok(PHASE_COLORS_N4[p], "PHASE_COLORS_N4[" + p + "]");
+      a.ok(PHASE_BG_N4[p],     "PHASE_BG_N4[" + p + "]");
+      a.ok(PHASE_NAMES_N4[p],  "PHASE_NAMES_N4[" + p + "]");
+    });
+  });
+}());
+
+// ── 15. React render smoke test ───────────────────────────────────────────────
 // Extracts the inline <script> from index.html, runs it in a stubbed browser
 // environment, then calls each top-level component to verify no globals are
 // missing and no ReferenceError would blank the page.
@@ -496,6 +555,13 @@ test("phase constants: every phaseNum in curriculum is covered", function (a) {
     setItem: function () {},
   };
   global.document = { getElementById: function () { return {}; } };
+  // curriculum_n4 may already be defined from the load above; if not, stub it
+  if (typeof curriculum_n4 === 'undefined') {
+    global.curriculum_n4 = curriculum.slice(0, 10); // minimal stub
+    global.PHASE_COLORS_N4 = PHASE_COLORS;
+    global.PHASE_BG_N4 = PHASE_BG;
+    global.PHASE_NAMES_N4 = PHASE_NAMES;
+  }
   // window.speechSynthesis is already undefined from the top of this file
 
   // Run the script — this defines App, DayView, Overview, ReviewMode, etc.
@@ -526,6 +592,7 @@ test("phase constants: every phaseNum in curriculum is covered", function (a) {
         lesson: lesson0, dayNum: 1,
         pColor: PHASE_COLORS[1], pBg: PHASE_BG[1],
         completed: emptySet, toggleDone: noop, setDay: noop,
+        totalDays: 365, activeCurriculum: curriculum,
       });
       a.ok(true);
     } catch (e) { a.ok(false, e.message); }
