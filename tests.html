@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JLPT N5 — Test Suite</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/qunit/2.20.0/qunit.min.css">
+<style>
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
+  #qunit-fixture { display: none; }
+</style>
+</head>
+<body>
+<div id="qunit"></div>
+<div id="qunit-fixture"></div>
+
+<!-- Load curriculum data and pure utility functions -->
+<script src="curriculum.js"></script>
+<script src="lib.js"></script>
+<!-- QUnit runner -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qunit/2.20.0/qunit.min.js"></script>
+
+<script>
+"use strict";
+
+// ── 1. SM-2 Algorithm — sm2Update(card, grade) ───────────────────────────────
+QUnit.module('sm2Update', function () {
+
+  QUnit.test('null card uses SM-2 defaults (ef=2.5, interval=1, reps=0)', function (assert) {
+    var result = sm2Update(null, 3);
+    assert.equal(result.reps, 1, 'reps increments from 0 to 1');
+    assert.equal(result.interval, 1, 'reps was 0, so interval stays 1');
+    assert.ok(typeof result.due === 'number', 'due is a number');
+  });
+
+  QUnit.test('grade >= 3, reps=0 → interval=1, reps becomes 1', function (assert) {
+    var result = sm2Update({ interval: 1, ef: 2.5, reps: 0 }, 3);
+    assert.equal(result.interval, 1);
+    assert.equal(result.reps, 1);
+  });
+
+  QUnit.test('grade >= 3, reps=1 → interval=6, reps becomes 2', function (assert) {
+    var result = sm2Update({ interval: 1, ef: 2.5, reps: 1 }, 3);
+    assert.equal(result.interval, 6);
+    assert.equal(result.reps, 2);
+  });
+
+  QUnit.test('grade >= 3, reps>=2 → interval=round(interval * ef)', function (assert) {
+    var card = { interval: 6, ef: 2.5, reps: 2 };
+    var result = sm2Update(card, 3);
+    assert.equal(result.interval, Math.round(6 * 2.5)); // 15
+    assert.equal(result.reps, 3);
+  });
+
+  QUnit.test('grade < 3 resets reps to 0 and interval to 1', function (assert) {
+    var card = { interval: 15, ef: 2.5, reps: 5 };
+    var result = sm2Update(card, 2);
+    assert.equal(result.reps, 0);
+    assert.equal(result.interval, 1);
+  });
+
+  QUnit.test('grade=0 also resets card', function (assert) {
+    var result = sm2Update({ interval: 30, ef: 2.5, reps: 10 }, 0);
+    assert.equal(result.reps, 0);
+    assert.equal(result.interval, 1);
+  });
+
+  QUnit.test('grade=5 (perfect) increases EF', function (assert) {
+    var result = sm2Update({ interval: 1, ef: 2.5, reps: 1 }, 5);
+    assert.ok(result.ef > 2.5, 'EF increases on perfect grade');
+  });
+
+  QUnit.test('grade=3 (bare pass) decreases EF', function (assert) {
+    var result = sm2Update({ interval: 1, ef: 2.5, reps: 1 }, 3);
+    assert.ok(result.ef < 2.5, 'EF decreases on grade 3');
+  });
+
+  QUnit.test('EF is never below 1.3 (clamp)', function (assert) {
+    // Start at minimum EF and apply grade 3 repeatedly
+    var card = { interval: 1, ef: 1.3, reps: 2 };
+    for (var i = 0; i < 5; i++) {
+      card = sm2Update(card, 3);
+      assert.ok(card.ef >= 1.3, 'EF must never drop below 1.3 (iteration ' + (i + 1) + ')');
+    }
+  });
+
+  QUnit.test('due date is set to interval days from now', function (assert) {
+    var before = Date.now();
+    // reps=1 → interval becomes 6
+    var result = sm2Update({ interval: 1, ef: 2.5, reps: 1 }, 3);
+    var after = Date.now();
+    var msPerDay = 24 * 60 * 60 * 1000;
+    var expectedMin = before + 6 * msPerDay;
+    var expectedMax = after + 6 * msPerDay;
+    assert.ok(result.due >= expectedMin && result.due <= expectedMax,
+      'due is approximately 6 days from now');
+  });
+
+  QUnit.test('grade=5 EF formula: ef + 0.1 - 0*(0.08+0*0.02)', function (assert) {
+    var card = { interval: 1, ef: 2.5, reps: 0 };
+    var result = sm2Update(card, 5);
+    var expected = Math.max(1.3, 2.5 + 0.1 - 0 * (0.08 + 0 * 0.02));
+    assert.ok(Math.abs(result.ef - expected) < 0.0001, 'EF formula correct for grade 5');
+  });
+
+  QUnit.test('grade=4 EF formula: ef + 0.1 - 1*(0.08+1*0.02)', function (assert) {
+    var card = { interval: 1, ef: 2.5, reps: 0 };
+    var result = sm2Update(card, 4);
+    var expected = Math.max(1.3, 2.5 + 0.1 - 1 * (0.08 + 1 * 0.02));
+    assert.ok(Math.abs(result.ef - expected) < 0.0001, 'EF formula correct for grade 4');
+  });
+
+  QUnit.test('returns a new object, does not mutate input card', function (assert) {
+    var card = { interval: 6, ef: 2.5, reps: 2 };
+    var original = { interval: 6, ef: 2.5, reps: 2 };
+    sm2Update(card, 5);
+    assert.deepEqual(card, original, 'input card should not be mutated');
+  });
+});
+
+
+// ── 2. Answer Checking — checkTyping(userAns, answers) ───────────────────────
+QUnit.module('checkTyping', function () {
+
+  QUnit.test('exact match passes', function (assert) {
+    assert.ok(checkTyping('cat', ['cat']));
+  });
+
+  QUnit.test('case-insensitive: uppercase user input passes', function (assert) {
+    assert.ok(checkTyping('CAT', ['cat']));
+  });
+
+  QUnit.test('case-insensitive: uppercase answer passes', function (assert) {
+    assert.ok(checkTyping('cat', ['CAT']));
+  });
+
+  QUnit.test('leading/trailing whitespace in user answer is trimmed', function (assert) {
+    assert.ok(checkTyping('  cat  ', ['cat']));
+  });
+
+  QUnit.test('leading/trailing whitespace in answer entry is trimmed', function (assert) {
+    assert.ok(checkTyping('cat', ['  cat  ']));
+  });
+
+  QUnit.test('wrong answer fails', function (assert) {
+    assert.notOk(checkTyping('dog', ['cat']));
+  });
+
+  QUnit.test('empty user input does not match non-empty answer', function (assert) {
+    assert.notOk(checkTyping('', ['cat']));
+  });
+
+  QUnit.test('slash-separated alternative: first part matches', function (assert) {
+    // e.g. "sake/salmon" in the answer list
+    assert.ok(checkTyping('sake', ['sake/salmon']));
+  });
+
+  QUnit.test('slash-separated alternative: second part matches', function (assert) {
+    assert.ok(checkTyping('salmon', ['sake/salmon']));
+  });
+
+  QUnit.test('comma-separated alternative: first part matches', function (assert) {
+    // e.g. "flower,nose" in the answer list
+    assert.ok(checkTyping('flower', ['flower,nose']));
+  });
+
+  QUnit.test('comma-separated alternative: second part matches', function (assert) {
+    assert.ok(checkTyping('nose', ['flower,nose']));
+  });
+
+  QUnit.test('matches any entry in a multi-answer array', function (assert) {
+    assert.ok(checkTyping('bird', ['cat', 'bird', 'fish']));
+  });
+
+  QUnit.test('fails when no entry matches', function (assert) {
+    assert.notOk(checkTyping('horse', ['cat', 'dog', 'fish']));
+  });
+
+  QUnit.test('alternatives matching is case-insensitive', function (assert) {
+    assert.ok(checkTyping('SALMON', ['sake/salmon']));
+  });
+});
+
+
+// ── 3. Card ID helper — cardId(type, day, idx) ───────────────────────────────
+QUnit.module('cardId', function () {
+
+  QUnit.test('vocab card: type=v', function (assert) {
+    assert.equal(cardId('v', 1, 0), 'v_1_0');
+  });
+
+  QUnit.test('char card: type=c', function (assert) {
+    assert.equal(cardId('c', 14, 3), 'c_14_3');
+  });
+
+  QUnit.test('large day and index', function (assert) {
+    assert.equal(cardId('v', 365, 99), 'v_365_99');
+  });
+});
+
+
+// ── 4. Adding SRS cards — addDayCards(srs, lesson) ───────────────────────────
+QUnit.module('addDayCards', function () {
+
+  var sampleLesson = {
+    day: 1,
+    vocab: [['いえ', 'いえ', 'house'], ['あお', 'あお', 'blue'], ['うえ', 'うえ', 'above']],
+    chars: [['あ', 'a'], ['い', 'i']]
+  };
+
+  QUnit.test('adds a vocab card for each vocab entry', function (assert) {
+    var result = addDayCards({}, sampleLesson);
+    assert.ok(result['v_1_0'], 'vocab card 0 added');
+    assert.ok(result['v_1_1'], 'vocab card 1 added');
+    assert.ok(result['v_1_2'], 'vocab card 2 added');
+  });
+
+  QUnit.test('adds a char card for each char entry', function (assert) {
+    var result = addDayCards({}, sampleLesson);
+    assert.ok(result['c_1_0'], 'char card 0 added');
+    assert.ok(result['c_1_1'], 'char card 1 added');
+  });
+
+  QUnit.test('new cards have correct initial SM-2 values', function (assert) {
+    var card = addDayCards({}, sampleLesson)['v_1_0'];
+    assert.equal(card.interval, 1, 'initial interval = 1');
+    assert.equal(card.ef, 2.5, 'initial ef = 2.5');
+    assert.equal(card.reps, 0, 'initial reps = 0');
+    assert.ok(typeof card.due === 'number', 'due is a number');
+  });
+
+  QUnit.test('does NOT overwrite an existing card (guard: if !srs[id])', function (assert) {
+    var existing = { interval: 10, ef: 1.8, reps: 7, due: 9999999 };
+    var srs = { 'v_1_0': existing };
+    var result = addDayCards(srs, sampleLesson);
+    assert.deepEqual(result['v_1_0'], existing, 'existing card data must be preserved');
+  });
+
+  QUnit.test('empty vocab and chars produce no error', function (assert) {
+    var result = addDayCards({}, { day: 99, vocab: [], chars: [] });
+    assert.equal(Object.keys(result).length, 0, 'no cards added for empty lesson');
+  });
+
+  QUnit.test('lesson with only vocab (no chars) works', function (assert) {
+    var result = addDayCards({}, { day: 50, vocab: [['ねこ', 'ねこ', 'cat']], chars: [] });
+    assert.ok(result['v_50_0'], 'vocab card added');
+    assert.notOk(result['c_50_0'], 'no char card added');
+  });
+});
+
+
+// ── 5. Due card filtering — getDueCards(srs) ─────────────────────────────────
+QUnit.module('getDueCards', function () {
+
+  QUnit.test('returns cards whose due <= now', function (assert) {
+    var srs = {
+      'v_1_0': { due: Date.now() - 1000 },   // past  → due
+      'v_1_1': { due: Date.now() + 99999 }   // future → not due
+    };
+    var due = getDueCards(srs);
+    assert.deepEqual(due, ['v_1_0']);
+  });
+
+  QUnit.test('returns empty array when no cards are due', function (assert) {
+    var srs = { 'v_1_0': { due: Date.now() + 99999 } };
+    assert.equal(getDueCards(srs).length, 0);
+  });
+
+  QUnit.test('returns all cards when all are past-due', function (assert) {
+    var past = Date.now() - 1000;
+    var srs = {
+      'v_1_0': { due: past },
+      'v_1_1': { due: past },
+      'c_1_0': { due: past }
+    };
+    assert.equal(getDueCards(srs).length, 3);
+  });
+
+  QUnit.test('returns empty array for empty srs', function (assert) {
+    assert.equal(getDueCards({}).length, 0);
+  });
+
+  QUnit.test('returns card ids (strings), not card objects', function (assert) {
+    var srs = { 'v_1_0': { due: Date.now() - 1 } };
+    var due = getDueCards(srs);
+    assert.equal(typeof due[0], 'string', 'each entry is a card ID string');
+  });
+});
+
+
+// ── 6. Card-ID to display item — cardToItem(id, srs) ─────────────────────────
+QUnit.module('cardToItem', function () {
+
+  QUnit.test('vocab card resolves to correct fields', function (assert) {
+    // Day 1, vocab[0] = ["いえ","いえ","house"]
+    var item = cardToItem('v_1_0', {});
+    assert.equal(item.type, 'vocab');
+    assert.equal(item.front, 'いえ');
+    assert.equal(item.back, 'house');
+    assert.equal(item.day, 1);
+  });
+
+  QUnit.test('char card resolves to correct fields', function (assert) {
+    // Day 1, chars[0] = ["あ","a"]
+    var item = cardToItem('c_1_0', {});
+    assert.equal(item.type, 'char');
+    assert.equal(item.front, 'あ');
+    assert.equal(item.back, 'a');
+    assert.equal(item.day, 1);
+  });
+
+  QUnit.test('reading is null when reading equals front (pure hiragana vocab)', function (assert) {
+    // Day 1 vocab[0]: front="いえ", reading="いえ" — same, so reading should be null
+    var item = cardToItem('v_1_0', {});
+    assert.equal(item.reading, null,
+      'reading should be null when the reading string matches the front');
+  });
+
+  QUnit.test('out-of-range day index returns null', function (assert) {
+    assert.equal(cardToItem('v_999_0', {}), null);
+  });
+
+  QUnit.test('out-of-range vocab index returns null', function (assert) {
+    assert.equal(cardToItem('v_1_999', {}), null);
+  });
+
+  QUnit.test('out-of-range char index returns null', function (assert) {
+    assert.equal(cardToItem('c_1_999', {}), null);
+  });
+
+  QUnit.test('day 0 (non-existent) returns null', function (assert) {
+    assert.equal(cardToItem('v_0_0', {}), null);
+  });
+});
+
+
+// ── 7. Array shuffle — rndShuffle(arr) ───────────────────────────────────────
+QUnit.module('rndShuffle', function () {
+
+  QUnit.test('returns an array of the same length', function (assert) {
+    var arr = [1, 2, 3, 4, 5];
+    assert.equal(rndShuffle(arr).length, arr.length);
+  });
+
+  QUnit.test('contains exactly the same elements', function (assert) {
+    var arr = ['a', 'b', 'c', 'd'];
+    var shuffled = rndShuffle(arr);
+    assert.deepEqual(shuffled.slice().sort(), arr.slice().sort());
+  });
+
+  QUnit.test('does not mutate the original array', function (assert) {
+    var arr = [1, 2, 3];
+    var copy = arr.slice();
+    rndShuffle(arr);
+    assert.deepEqual(arr, copy, 'original array is unchanged');
+  });
+
+  QUnit.test('works on an empty array', function (assert) {
+    assert.deepEqual(rndShuffle([]), []);
+  });
+
+  QUnit.test('works on a single-element array', function (assert) {
+    assert.deepEqual(rndShuffle([42]), [42]);
+  });
+
+  QUnit.test('returns a new array (not the same reference)', function (assert) {
+    var arr = [1, 2, 3];
+    assert.notStrictEqual(rndShuffle(arr), arr, 'should return a new array');
+  });
+});
+
+
+// ── 8. Exercise generation — buildExercises(lesson) ─────────────────────────
+QUnit.module('buildExercises', {
+  // Disable speechSynthesis so "listen" exercises are consistently excluded,
+  // making test output deterministic regardless of browser support.
+  beforeEach: function () {
+    this._origSpeech = window.speechSynthesis;
+    try { delete window.speechSynthesis; } catch (e) { window.speechSynthesis = undefined; }
+  },
+  afterEach: function () {
+    if (this._origSpeech !== undefined) {
+      window.speechSynthesis = this._origSpeech;
+    }
+  }
+}, function () {
+
+  QUnit.test('never returns more than 5 exercises', function (assert) {
+    var lesson = curriculum[0]; // Day 1: has both chars and vocab
+    var exs = buildExercises(lesson);
+    assert.ok(exs.length <= 5, 'got ' + exs.length + ' exercises (max 5)');
+  });
+
+  QUnit.test('returns empty array for lesson with no vocab or chars', function (assert) {
+    var exs = buildExercises({ day: 1, vocab: [], chars: [] });
+    assert.equal(exs.length, 0);
+  });
+
+  QUnit.test('mc exercises have required fields: type, prompt, options, correct', function (assert) {
+    var lesson = curriculum[0]; // Day 1 has chars
+    var exs = buildExercises(lesson);
+    exs.filter(function (e) { return e.type === 'mc'; }).forEach(function (mc) {
+      assert.equal(mc.type, 'mc');
+      assert.ok(mc.prompt, 'mc.prompt is non-empty');
+      assert.ok(Array.isArray(mc.options), 'mc.options is an array');
+      assert.ok(typeof mc.correct === 'number', 'mc.correct is a number');
+    });
+  });
+
+  QUnit.test('typing exercises have a non-empty answers array', function (assert) {
+    var lesson = curriculum[0];
+    var exs = buildExercises(lesson);
+    exs.filter(function (e) { return e.type === 'typing'; }).forEach(function (t) {
+      assert.ok(Array.isArray(t.answers), 'typing.answers is an array');
+      assert.ok(t.answers.length > 0, 'typing.answers is non-empty');
+    });
+  });
+
+  QUnit.test('mc correct index is always within options bounds (10 runs)', function (assert) {
+    var lesson = curriculum[0];
+    for (var run = 0; run < 10; run++) {
+      buildExercises(lesson)
+        .filter(function (e) { return e.type === 'mc'; })
+        .forEach(function (mc) {
+          assert.ok(
+            mc.correct >= 0 && mc.correct < mc.options.length,
+            'correct=' + mc.correct + ' out of ' + mc.options.length + ' options'
+          );
+        });
+    }
+  });
+
+  QUnit.test('mc options array always has at least 2 entries', function (assert) {
+    var lesson = curriculum[0];
+    for (var run = 0; run < 5; run++) {
+      buildExercises(lesson)
+        .filter(function (e) { return e.type === 'mc'; })
+        .forEach(function (mc) {
+          assert.ok(mc.options.length >= 2, 'mc has at least 2 options');
+        });
+    }
+  });
+
+  QUnit.test('vocab-only lesson produces exercises', function (assert) {
+    var lesson = curriculum[29]; // Day 30: Foundations — vocab but no chars
+    var exs = buildExercises(lesson);
+    assert.ok(exs.length > 0, 'exercises generated for vocab-only lesson');
+  });
+});
+
+
+// ── 9. SRS2 update — srsReview(card, quality) ────────────────────────────────
+// Note: srsReview uses `ease` field (same as SM-2 `ef`).
+// quality 0→3 maps to SM-2 grades [0, 3, 4, 5].
+QUnit.module('srsReview', function () {
+
+  QUnit.test('quality=0 (again) resets reps=0 and interval=1', function (assert) {
+    var card = { interval: 15, ease: 2.5, reps: 5, due: 0 };
+    var result = srsReview(card, 0);
+    assert.equal(result.reps, 0);
+    assert.equal(result.interval, 1);
+  });
+
+  QUnit.test('quality=1 (hard, grade=3): reps=0 → interval=1', function (assert) {
+    var card = { interval: 1, ease: 2.5, reps: 0, due: 0 };
+    var result = srsReview(card, 1);
+    assert.equal(result.interval, 1);
+    assert.equal(result.reps, 1);
+  });
+
+  QUnit.test('quality=1 (hard, grade=3): reps=1 → interval=6', function (assert) {
+    var card = { interval: 1, ease: 2.5, reps: 1, due: 0 };
+    var result = srsReview(card, 1);
+    assert.equal(result.interval, 6);
+    assert.equal(result.reps, 2);
+  });
+
+  QUnit.test('quality=3 (easy, grade=5) increases ease', function (assert) {
+    var card = { interval: 1, ease: 2.5, reps: 0, due: 0 };
+    var result = srsReview(card, 3);
+    assert.ok(result.ease > 2.5, 'ease increases on quality=3 (perfect)');
+  });
+
+  QUnit.test('ease is never below 1.3', function (assert) {
+    var card = { interval: 1, ease: 1.3, reps: 2, due: 0 };
+    for (var i = 0; i < 5; i++) {
+      card = srsReview(card, 1); // quality=1 (grade 3) decreases ease
+      assert.ok(card.ease >= 1.3, 'ease must never drop below 1.3 (iteration ' + (i + 1) + ')');
+    }
+  });
+
+  QUnit.test('returns a new card object (does not mutate input)', function (assert) {
+    var card = { interval: 6, ease: 2.5, reps: 2, due: 0 };
+    var original = { interval: 6, ease: 2.5, reps: 2, due: 0 };
+    var result = srsReview(card, 3);
+    assert.deepEqual(card, original, 'input card should not be mutated');
+    assert.notStrictEqual(result, card, 'result should be a new object');
+  });
+
+  QUnit.test('due date is set to interval days from now', function (assert) {
+    var before = Date.now();
+    // reps=1 → interval becomes 6
+    var card = { interval: 1, ease: 2.5, reps: 1, due: 0 };
+    var result = srsReview(card, 1); // grade 3
+    var after = Date.now();
+    var msPerDay = 86400000;
+    assert.ok(
+      result.due >= before + 6 * msPerDay && result.due <= after + 6 * msPerDay,
+      'due is approximately 6 days from now'
+    );
+  });
+});
+
+
+// ── 10. srsAddCards(dayLesson, cards) ────────────────────────────────────────
+QUnit.module('srsAddCards', function () {
+
+  var sampleLesson = {
+    day: 5,
+    vocab: [['ねこ', 'ねこ', 'cat'], ['いぬ', 'いぬ', 'dog']],
+    chars: [['な', 'na'], ['に', 'ni']]
+  };
+
+  QUnit.test('adds vocab cards with embedded front/back/reading', function (assert) {
+    var cards = {};
+    srsAddCards(sampleLesson, cards);
+    var card = cards['v_5_0'];
+    assert.ok(card, 'vocab card 0 added');
+    assert.equal(card.front, 'ねこ');
+    assert.equal(card.back, 'cat');
+    assert.equal(card.type, 'vocab');
+  });
+
+  QUnit.test('adds char cards with embedded front/back', function (assert) {
+    var cards = {};
+    srsAddCards(sampleLesson, cards);
+    var card = cards['c_5_0'];
+    assert.ok(card, 'char card 0 added');
+    assert.equal(card.front, 'な');
+    assert.equal(card.back, 'na');
+    assert.equal(card.type, 'char');
+  });
+
+  QUnit.test('new cards start with interval=1, ease=2.5, reps=0', function (assert) {
+    var cards = {};
+    srsAddCards(sampleLesson, cards);
+    var card = cards['v_5_0'];
+    assert.equal(card.interval, 1);
+    assert.equal(card.ease, 2.5);
+    assert.equal(card.reps, 0);
+  });
+
+  QUnit.test('does not overwrite an existing card', function (assert) {
+    var existing = { interval: 14, ease: 1.9, reps: 8, due: 42, front: 'ねこ', back: 'cat', type: 'vocab', id: 'v_5_0' };
+    var cards = { 'v_5_0': existing };
+    srsAddCards(sampleLesson, cards);
+    assert.deepEqual(cards['v_5_0'], existing, 'existing card data must be preserved');
+  });
+
+  QUnit.test('returns true when new cards were added', function (assert) {
+    var changed = srsAddCards(sampleLesson, {});
+    assert.equal(changed, true);
+  });
+
+  QUnit.test('returns false when all cards already exist', function (assert) {
+    var cards = {};
+    srsAddCards(sampleLesson, cards); // first call adds them
+    var changed = srsAddCards(sampleLesson, cards); // second call: nothing new
+    assert.equal(changed, false);
+  });
+});
+
+
+// ── 11. srsDueCards(cards) ───────────────────────────────────────────────────
+QUnit.module('srsDueCards', function () {
+
+  QUnit.test('returns card objects (not IDs) that are due', function (assert) {
+    var pastCard = { id: 'v_1_0', due: Date.now() - 1000 };
+    var futureCard = { id: 'v_1_1', due: Date.now() + 99999 };
+    var result = srsDueCards({ 'v_1_0': pastCard, 'v_1_1': futureCard });
+    assert.equal(result.length, 1);
+    assert.deepEqual(result[0], pastCard);
+  });
+
+  QUnit.test('returns empty array when no cards are due', function (assert) {
+    var cards = { 'v_1_0': { due: Date.now() + 99999 } };
+    assert.equal(srsDueCards(cards).length, 0);
+  });
+
+  QUnit.test('returns empty array for empty cards object', function (assert) {
+    assert.equal(srsDueCards({}).length, 0);
+  });
+
+  QUnit.test('returns all cards when all are overdue', function (assert) {
+    var past = Date.now() - 1000;
+    var cards = {
+      'v_1_0': { due: past },
+      'v_1_1': { due: past },
+      'c_1_0': { due: past }
+    };
+    assert.equal(srsDueCards(cards).length, 3);
+  });
+});
+
+
+// ── 12. Curriculum Data Integrity ────────────────────────────────────────────
+QUnit.module('curriculum data integrity', function () {
+
+  QUnit.test('has exactly 365 lessons', function (assert) {
+    assert.equal(curriculum.length, 365);
+  });
+
+  QUnit.test('day numbers are sequential from 1 to 365', function (assert) {
+    var failures = [];
+    curriculum.forEach(function (lesson, i) {
+      if (lesson.day !== i + 1) {
+        failures.push('index ' + i + ' has day=' + lesson.day + ', expected ' + (i + 1));
+      }
+    });
+    assert.equal(failures.length, 0, failures.join('; '));
+  });
+
+  QUnit.test('no duplicate day numbers', function (assert) {
+    var days = curriculum.map(function (l) { return l.day; });
+    var unique = new Set(days);
+    assert.equal(unique.size, 365, 'all day numbers should be unique');
+  });
+
+  QUnit.test('every lesson has non-empty required string fields', function (assert) {
+    var required = ['title', 'type', 'intro', 'practice', 'tip'];
+    var failures = [];
+    curriculum.forEach(function (lesson) {
+      required.forEach(function (field) {
+        if (!lesson[field] || typeof lesson[field] !== 'string' || !lesson[field].trim()) {
+          failures.push('day ' + lesson.day + ' missing/empty: ' + field);
+        }
+      });
+    });
+    assert.equal(failures.length, 0, failures.join('\n'));
+  });
+
+  QUnit.test('type field is always a known value', function (assert) {
+    // All types legitimately used in the curriculum — 'numbers', 'particles', 'verbs'
+    // are distinct sub-types under the Foundations / Verbs phases.
+    // A non-string type value (e.g. an array) will never match and will be flagged here.
+    var validTypes = new Set(['script', 'lesson', 'grammar', 'kanji', 'review',
+                              'numbers', 'particles', 'verbs']);
+    var failures = [];
+    curriculum.forEach(function (lesson) {
+      if (!validTypes.has(lesson.type)) {
+        failures.push('day ' + lesson.day + ' has unknown type: ' + lesson.type);
+      }
+    });
+    assert.equal(failures.length, 0, failures.join('\n'));
+  });
+
+  QUnit.test('vocab entries are always 3-element arrays with non-empty jp and meaning', function (assert) {
+    var failures = [];
+    curriculum.forEach(function (lesson) {
+      (lesson.vocab || []).forEach(function (v, i) {
+        if (!Array.isArray(v) || v.length !== 3) {
+          failures.push('day ' + lesson.day + ' vocab[' + i + '] wrong length');
+          return;
+        }
+        if (!v[0] || !v[0].trim()) {
+          failures.push('day ' + lesson.day + ' vocab[' + i + '][0] (jp) is empty');
+        }
+        if (!v[2] || !v[2].trim()) {
+          failures.push('day ' + lesson.day + ' vocab[' + i + '][2] (meaning) is empty');
+        }
+      });
+    });
+    assert.equal(failures.length, 0, failures.join('\n'));
+  });
+
+  QUnit.test('chars entries are always 2-element arrays with non-empty char and reading', function (assert) {
+    var failures = [];
+    curriculum.forEach(function (lesson) {
+      (lesson.chars || []).forEach(function (c, i) {
+        if (!Array.isArray(c) || c.length !== 2) {
+          failures.push('day ' + lesson.day + ' chars[' + i + '] wrong length');
+          return;
+        }
+        if (!c[0] || !c[0].trim()) {
+          failures.push('day ' + lesson.day + ' chars[' + i + '][0] (char) is empty');
+        }
+        if (!c[1] || !c[1].trim()) {
+          failures.push('day ' + lesson.day + ' chars[' + i + '][1] (reading) is empty');
+        }
+      });
+    });
+    assert.equal(failures.length, 0, failures.join('\n'));
+  });
+
+  QUnit.test('phase numbers are integers from 1 to 8', function (assert) {
+    var failures = [];
+    curriculum.forEach(function (lesson) {
+      if (typeof lesson.phaseNum !== 'number' || lesson.phaseNum < 1 || lesson.phaseNum > 8) {
+        failures.push('day ' + lesson.day + ' phaseNum=' + lesson.phaseNum);
+      }
+    });
+    assert.equal(failures.length, 0, failures.join('\n'));
+  });
+
+  QUnit.test('week numbers are integers from 1 to 52', function (assert) {
+    var failures = [];
+    curriculum.forEach(function (lesson) {
+      if (typeof lesson.week !== 'number' || lesson.week < 1 || lesson.week > 52) {
+        failures.push('day ' + lesson.day + ' week=' + lesson.week);
+      }
+    });
+    assert.equal(failures.length, 0, failures.join('\n'));
+  });
+
+  QUnit.test('lessons of type "script" always have at least one char', function (assert) {
+    var failures = [];
+    curriculum.filter(function (l) { return l.type === 'script'; }).forEach(function (lesson) {
+      if (!lesson.chars || lesson.chars.length === 0) {
+        failures.push('day ' + lesson.day + ' (type=script) has no chars');
+      }
+    });
+    assert.equal(failures.length, 0, failures.join('\n'));
+  });
+
+  QUnit.test('Hiragana phase covers days 1-14 (phaseNum=1)', function (assert) {
+    var hira = curriculum.slice(0, 14);
+    var failures = hira.filter(function (l) { return l.phaseNum !== 1; })
+                       .map(function (l) { return 'day ' + l.day; });
+    assert.equal(failures.length, 0, 'Non-phase-1: ' + failures.join(', '));
+  });
+
+  QUnit.test('Katakana phase covers days 15-28 (phaseNum=2)', function (assert) {
+    var kata = curriculum.slice(14, 28);
+    var failures = kata.filter(function (l) { return l.phaseNum !== 2; })
+                       .map(function (l) { return 'day ' + l.day; });
+    assert.equal(failures.length, 0, 'Non-phase-2: ' + failures.join(', '));
+  });
+
+  QUnit.test('day 365 is the last lesson', function (assert) {
+    assert.equal(curriculum[364].day, 365);
+  });
+
+  QUnit.test('phaseName matches phaseNum for all lessons', function (assert) {
+    var phaseMap = {
+      1: 'Hiragana', 2: 'Katakana', 3: 'Foundations',
+      4: 'Vocabulary', 5: 'Verbs', 6: 'Grammar',
+      7: 'Kanji', 8: 'Test Prep'
+    };
+    var failures = [];
+    curriculum.forEach(function (lesson) {
+      var expected = phaseMap[lesson.phaseNum];
+      if (expected && lesson.phaseName !== expected) {
+        failures.push('day ' + lesson.day + ': phaseNum=' + lesson.phaseNum +
+          ' but phaseName="' + lesson.phaseName + '" (expected "' + expected + '")');
+      }
+    });
+    assert.equal(failures.length, 0, failures.join('\n'));
+  });
+});
+
+</script>
+</body>
+</html>
