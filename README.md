@@ -74,7 +74,7 @@ Your site will be live at `https://YOUR_USERNAME.github.io/jlpt-n5` within a min
 ### Future content (Days 961+)
 - **N2** — ~360 days (vocabulary, verbs, grammar, kanji, test prep)
 - **N1** — ~400 days (vocabulary, verbs, grammar, kanji, test prep)
-- See [N3-REQUIREMENTS.md](N3-REQUIREMENTS.md) for the full implementation plan
+- See [N3-N2-N1-REQUIREMENTS.md](N3-N2-N1-REQUIREMENTS.md) for the full implementation plan
 
 ## Browser compatibility
 

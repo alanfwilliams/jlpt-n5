@@ -14,7 +14,7 @@ jlpt-n5/
 ├── lib.js              # Pure utility functions: SM-2, card helpers, exercises
 ├── tests.html          # QUnit browser test suite (open directly, no server)
 ├── README.md           # User-facing documentation
-├── N3-REQUIREMENTS.md  # Implementation plan for N2/N1 (N3 complete)
+├── N3-N2-N1-REQUIREMENTS.md  # Implementation plan for N2/N1 (N3 complete)
 └── .nojekyll           # Disables Jekyll processing for GitHub Pages
 ```
 
@@ -114,7 +114,7 @@ node .claude/hooks/run-tests.js
 
 Phase constants for N2 (phases 21–26) and N1 (phases 27–32) are defined in
 `curriculum.js` but lesson data for those levels has not yet been added.
-See `N3-REQUIREMENTS.md` for the full N2/N1 implementation plan.
+See `N3-N2-N1-REQUIREMENTS.md` for the full N2/N1 implementation plan.
 
 ## Key implementation notes
 
