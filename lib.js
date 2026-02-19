@@ -18,6 +18,27 @@ function _iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" !=
 function _arrayWithHoles(r) { if (Array.isArray(r)) return r; }
 function hasKanji(str) { return /[\u4E00-\u9FFF\u3400-\u4DBF]/.test(str); }
 
+// ── Furigana helper ──────────────────────────────────────────────────────────
+function furiganaHTML(word, reading) {
+  if (!reading || reading === word || !hasKanji(word)) return word;
+  return '<ruby>' + word + '<rt>' + reading + '</rt></ruby>';
+}
+
+// ── Level helper ─────────────────────────────────────────────────────────────
+function dayToLevel(day) {
+  if (day <= 365) return 'N5';
+  if (day <= 660) return 'N4';
+  if (day <= 960) return 'N3';
+  if (day <= 1320) return 'N2';
+  return 'N1';
+}
+
+function exerciseCap(day) {
+  if (day <= 660) return 5;
+  if (day <= 960) return 7;
+  return 9;
+}
+
 // ── SRS (SM-2) ───────────────────────────────────────────────────────────────
 function sm2Update(card, grade) {
   var _ref = card || {},
@@ -256,7 +277,171 @@ function buildExercises(lesson) {
       correct: mcL.indexOf(vL[2])
     });
   }
-  return rndShuffle(exs).slice(0, 5);
+
+  // ── N3+ exercise types (day > 660) ──────────────────────────────────────
+  var day = lesson.day || 0;
+
+  // Reading comprehension (N3+)
+  if (day > 660 && lesson.passage && lesson.passage.questions && lesson.passage.questions.length > 0) {
+    var q0 = lesson.passage.questions[0];
+    exs.push({
+      type: 'reading',
+      prompt: 'Read the passage and answer:',
+      question: q0.question_jp || q0.question_en,
+      answers: [q0.answer],
+      passage: lesson.passage.text_jp,
+      placeholder: 'Type your answer...'
+    });
+  }
+
+  // Conjugation exercise (N3+, verb days)
+  if (day > 660 && lesson.type === 'verbs' && lesson.vocab && lesson.vocab.length >= 2) {
+    var verbForms = ['て-form', 'ない-form', 'た-form', 'potential', 'passive', 'causative', 'volitional'];
+    var form = verbForms[day % verbForms.length];
+    var vConj = rndShuffle(lesson.vocab)[0];
+    exs.push({
+      type: 'conjugation',
+      prompt: 'Conjugate to ' + form + ':',
+      question: vConj[0],
+      answers: [vConj[1]],
+      targetForm: form,
+      placeholder: form + '...'
+    });
+  }
+
+  // Pair match (N3+, verb days with transitive/intransitive pairs)
+  if (day > 660 && lesson.type === 'verbs' && lesson.vocab && lesson.vocab.length >= 4) {
+    var pairs = lesson.vocab.slice(0, 4);
+    var pairItems = rndShuffle(pairs.map(function (v) { return v[0]; }));
+    var pairAnswers = pairs.map(function (v) { return v[2]; });
+    exs.push({
+      type: 'pair_match',
+      prompt: 'Match each word to its meaning:',
+      question: '',
+      items: pairItems,
+      answers: pairAnswers,
+      options: rndShuffle(pairAnswers)
+    });
+  }
+
+  // Fill-in-the-blank (N3+, grammar days)
+  if (day > 660 && lesson.grammar && lesson.grammar.pattern && lesson.grammar.example_jp) {
+    var gPat = lesson.grammar.pattern;
+    var wrongPats = rndShuffle(curriculum.filter(function (d) {
+      return d.grammar && d.grammar.pattern && d.grammar.pattern !== gPat;
+    }).map(function (d) { return d.grammar.pattern; })).slice(0, 3);
+    if (wrongPats.length >= 2) {
+      var fillOpts = rndShuffle([gPat].concat(wrongPats));
+      exs.push({
+        type: 'fill_blank',
+        prompt: 'Choose the correct grammar pattern:',
+        question: lesson.grammar.meaning,
+        options: fillOpts,
+        correct: fillOpts.indexOf(gPat)
+      });
+    }
+  }
+
+  // Synonym exercise (N2+)
+  if (day > 960 && lesson.vocab && lesson.vocab.length >= 3) {
+    var vSyn = rndShuffle(lesson.vocab)[0];
+    var wrongSyn = rndShuffle(allVocab.filter(function (w) {
+      return w[2] && w[2].trim() && w[2] !== vSyn[2] && w[0] !== vSyn[0];
+    })).slice(0, 3);
+    var synOpts = rndShuffle([vSyn[2]].concat(wrongSyn.map(function (w) { return w[2]; })));
+    exs.push({
+      type: 'synonym',
+      prompt: 'Choose the closest meaning to: ' + vSyn[0],
+      question: vSyn[0],
+      options: synOpts,
+      correct: synOpts.indexOf(vSyn[2])
+    });
+  }
+
+  // Reorder exercise (N2+, grammar days)
+  if (day > 960 && lesson.grammar && lesson.grammar.example_jp) {
+    var words = lesson.grammar.example_jp.replace(/[。、！？]/g, '').split('');
+    if (words.length >= 4) {
+      var chunks = [];
+      for (var ci = 0; ci < words.length; ci += 2) {
+        chunks.push(words.slice(ci, ci + 2).join(''));
+      }
+      if (chunks.length >= 3) {
+        exs.push({
+          type: 'reorder',
+          prompt: 'Arrange into a correct sentence:',
+          question: lesson.grammar.example_en,
+          items: rndShuffle(chunks),
+          answer: chunks.join('')
+        });
+      }
+    }
+  }
+
+  // Error find (N2+)
+  if (day > 960 && lesson.grammar && lesson.grammar.pattern) {
+    exs.push({
+      type: 'error_find',
+      prompt: 'Which grammar pattern is used correctly?',
+      question: '',
+      options: [lesson.grammar.example_jp, lesson.grammar.example_jp.split('').reverse().join('')],
+      correct: 0
+    });
+  }
+
+  // Kanji reading (N2+, kanji days)
+  if (day > 960 && lesson.type === 'kanji' && lesson.chars && lesson.chars.length >= 2) {
+    var kChar = rndShuffle(lesson.chars)[0];
+    var wrongK = rndShuffle(allChars.filter(function (c) {
+      return c[1] && c[1].trim() && c[1] !== kChar[1];
+    })).slice(0, 3);
+    var kOpts = rndShuffle([kChar[1]].concat(wrongK.map(function (c) { return c[1]; })));
+    exs.push({
+      type: 'kanji_reading',
+      prompt: 'Select the correct reading:',
+      question: kChar[0],
+      options: kOpts,
+      correct: kOpts.indexOf(kChar[1])
+    });
+  }
+
+  // Passage cloze (N1+)
+  if (day > 1320 && lesson.passage && lesson.passage.text_jp) {
+    exs.push({
+      type: 'passage_cloze',
+      prompt: 'Fill in the blank in the passage:',
+      question: lesson.passage.text_jp,
+      answers: lesson.passage.questions ? [lesson.passage.questions[0].answer] : [],
+      placeholder: 'Type the missing word...'
+    });
+  }
+
+  // Register exercise (N1+)
+  if (day > 1320 && lesson.vocab && lesson.vocab.length >= 2) {
+    var regV = rndShuffle(lesson.vocab)[0];
+    var regOpts = rndShuffle(['Formal', 'Informal', 'Honorific', 'Humble']);
+    exs.push({
+      type: 'register',
+      prompt: 'What formality level is this expression?',
+      question: regV[0],
+      options: regOpts,
+      correct: 0
+    });
+  }
+
+  // Paraphrase (N1+)
+  if (day > 1320 && lesson.grammar && lesson.grammar.example_jp && lesson.grammar.example_en) {
+    exs.push({
+      type: 'paraphrase',
+      prompt: 'Which sentence has the same meaning?',
+      question: lesson.grammar.example_jp,
+      options: [lesson.grammar.example_en],
+      correct: 0
+    });
+  }
+
+  var cap = exerciseCap(day);
+  return rndShuffle(exs).slice(0, cap);
 }
 function normAns(s) {
   return s.trim().toLowerCase().replace(/[!"#$%&'()*+,./:;<=>?@[\]^_`{|}~\\]/g, '').trim();

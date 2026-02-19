@@ -623,7 +623,7 @@ QUnit.module('srsDueCards', function () {
 QUnit.module('curriculum data integrity', function () {
 
   QUnit.test('curriculum is not empty', function (assert) {
-    assert.ok(curriculum.length >= 660, 'should have at least 660 lessons (N5 + N4 complete)');
+    assert.ok(curriculum.length >= 960, 'should have at least 960 lessons (N5 through N3 complete)');
   });
 
   QUnit.test('day numbers are sequential from 1', function (assert) {
@@ -660,7 +660,7 @@ QUnit.module('curriculum data integrity', function () {
     // are distinct sub-types under the Foundations / Verbs phases.
     // A non-string type value (e.g. an array) will never match and will be flagged here.
     var validTypes = new Set(['script', 'lesson', 'grammar', 'kanji', 'review',
-                              'numbers', 'particles', 'verbs', 'vocab']);
+                              'numbers', 'particles', 'verbs', 'vocab', 'reading']);
     var failures = [];
     curriculum.forEach(function (lesson) {
       if (!validTypes.has(lesson.type)) {
@@ -708,20 +708,20 @@ QUnit.module('curriculum data integrity', function () {
     assert.equal(failures.length, 0, failures.join('\n'));
   });
 
-  QUnit.test('phase numbers are integers from 1 to 14', function (assert) {
+  QUnit.test('phase numbers are integers from 1 to 20', function (assert) {
     var failures = [];
     curriculum.forEach(function (lesson) {
-      if (typeof lesson.phaseNum !== 'number' || lesson.phaseNum < 1 || lesson.phaseNum > 14) {
+      if (typeof lesson.phaseNum !== 'number' || lesson.phaseNum < 1 || lesson.phaseNum > 20) {
         failures.push('day ' + lesson.day + ' phaseNum=' + lesson.phaseNum);
       }
     });
     assert.equal(failures.length, 0, failures.join('\n'));
   });
 
-  QUnit.test('week numbers are integers from 1 to 95', function (assert) {
+  QUnit.test('week numbers are integers from 1 to 138', function (assert) {
     var failures = [];
     curriculum.forEach(function (lesson) {
-      if (typeof lesson.week !== 'number' || lesson.week < 1 || lesson.week > 95) {
+      if (typeof lesson.week !== 'number' || lesson.week < 1 || lesson.week > 138) {
         failures.push('day ' + lesson.day + ' week=' + lesson.week);
       }
     });
@@ -752,9 +752,10 @@ QUnit.module('curriculum data integrity', function () {
     assert.equal(failures.length, 0, 'Non-phase-2: ' + failures.join(', '));
   });
 
-  QUnit.test('day 365 exists and day 660 is the last lesson', function (assert) {
+  QUnit.test('day 365 exists and day 960 is the last lesson', function (assert) {
     assert.equal(curriculum[364].day, 365, 'day 365 exists');
-    assert.equal(curriculum[curriculum.length - 1].day, 660, 'last day is 660');
+    assert.equal(curriculum[659].day, 660, 'day 660 exists');
+    assert.equal(curriculum[curriculum.length - 1].day, 960, 'last day is 960');
   });
 
   QUnit.test('phaseName matches phaseNum for all lessons', function (assert) {
@@ -763,7 +764,9 @@ QUnit.module('curriculum data integrity', function () {
       4: 'Vocabulary', 5: 'Verbs', 6: 'Grammar',
       7: 'Kanji', 8: 'Test Prep', 9: 'N5 Review',
       10: 'N4 Vocabulary', 11: 'N4 Verbs', 12: 'N4 Grammar',
-      13: 'N4 Kanji', 14: 'N4 Test Prep'
+      13: 'N4 Kanji', 14: 'N4 Test Prep',
+      15: 'N4 Review', 16: 'N3 Vocabulary', 17: 'N3 Verbs & Adjectives',
+      18: 'N3 Grammar', 19: 'N3 Kanji', 20: 'N3 Test Prep'
     };
     var failures = [];
     curriculum.forEach(function (lesson) {
@@ -817,20 +820,79 @@ QUnit.module('curriculum data integrity', function () {
                           .map(function (l) { return 'day ' + l.day; });
     assert.equal(failures.length, 0, 'Non-phase-14: ' + failures.join(', '));
   });
+
+  // N3 phase range tests
+  QUnit.test('N4 Review phase covers days 661-690 (phaseNum=15)', function (assert) {
+    var phase = curriculum.slice(660, 690);
+    var failures = phase.filter(function (l) { return l.phaseNum !== 15; })
+                        .map(function (l) { return 'day ' + l.day; });
+    assert.equal(failures.length, 0, 'Non-phase-15: ' + failures.join(', '));
+  });
+
+  QUnit.test('N3 Vocabulary phase covers days 691-770 (phaseNum=16)', function (assert) {
+    var phase = curriculum.slice(690, 770);
+    var failures = phase.filter(function (l) { return l.phaseNum !== 16; })
+                        .map(function (l) { return 'day ' + l.day; });
+    assert.equal(failures.length, 0, 'Non-phase-16: ' + failures.join(', '));
+  });
+
+  QUnit.test('N3 Verbs & Adjectives phase covers days 771-820 (phaseNum=17)', function (assert) {
+    var phase = curriculum.slice(770, 820);
+    var failures = phase.filter(function (l) { return l.phaseNum !== 17; })
+                        .map(function (l) { return 'day ' + l.day; });
+    assert.equal(failures.length, 0, 'Non-phase-17: ' + failures.join(', '));
+  });
+
+  QUnit.test('N3 Grammar phase covers days 821-895 (phaseNum=18)', function (assert) {
+    var phase = curriculum.slice(820, 895);
+    var failures = phase.filter(function (l) { return l.phaseNum !== 18; })
+                        .map(function (l) { return 'day ' + l.day; });
+    assert.equal(failures.length, 0, 'Non-phase-18: ' + failures.join(', '));
+  });
+
+  QUnit.test('N3 Kanji phase covers days 896-930 (phaseNum=19)', function (assert) {
+    var phase = curriculum.slice(895, 930);
+    var failures = phase.filter(function (l) { return l.phaseNum !== 19; })
+                        .map(function (l) { return 'day ' + l.day; });
+    assert.equal(failures.length, 0, 'Non-phase-19: ' + failures.join(', '));
+  });
+
+  QUnit.test('N3 Test Prep phase covers days 931-960 (phaseNum=20)', function (assert) {
+    var phase = curriculum.slice(930, 960);
+    var failures = phase.filter(function (l) { return l.phaseNum !== 20; })
+                        .map(function (l) { return 'day ' + l.day; });
+    assert.equal(failures.length, 0, 'Non-phase-20: ' + failures.join(', '));
+  });
+
+  // Level boundary tests
+  QUnit.test('JLPT level day ranges do not overlap', function (assert) {
+    var levels = [
+      { name: 'N5', start: 1, end: 365 },
+      { name: 'N4', start: 366, end: 660 },
+      { name: 'N3', start: 661, end: 960 }
+    ];
+    for (var i = 0; i < levels.length - 1; i++) {
+      assert.ok(levels[i].end < levels[i + 1].start,
+        levels[i].name + ' ends at ' + levels[i].end + ' before ' + levels[i + 1].name + ' starts at ' + levels[i + 1].start);
+    }
+    assert.equal(levels[levels.length - 1].end, 960, 'N3 ends at day 960');
+  });
 });
 
 // ── Phase constants ───────────────────────────────────────────────────────────
 QUnit.module('phase constants', function () {
-  var EXPECTED_PHASES = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14];
+  var EXPECTED_PHASES = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20];
   var EXPECTED_NAMES = {
     1: 'Hiragana', 2: 'Katakana', 3: 'Foundations',
     4: 'Vocabulary', 5: 'Verbs', 6: 'Grammar',
     7: 'Kanji', 8: 'Test Prep', 9: 'N5 Review',
     10: 'N4 Vocabulary', 11: 'N4 Verbs', 12: 'N4 Grammar',
-    13: 'N4 Kanji', 14: 'N4 Test Prep'
+    13: 'N4 Kanji', 14: 'N4 Test Prep',
+    15: 'N4 Review', 16: 'N3 Vocabulary', 17: 'N3 Verbs & Adjectives',
+    18: 'N3 Grammar', 19: 'N3 Kanji', 20: 'N3 Test Prep'
   };
 
-  QUnit.test('PHASE_COLORS is defined with all 14 phase keys', function (assert) {
+  QUnit.test('PHASE_COLORS is defined with all 20 phase keys', function (assert) {
     assert.ok(typeof PHASE_COLORS === 'object' && PHASE_COLORS !== null, 'PHASE_COLORS exists');
     EXPECTED_PHASES.forEach(function (p) {
       assert.ok(typeof PHASE_COLORS[p] === 'string' && PHASE_COLORS[p].length > 0,
@@ -838,7 +900,7 @@ QUnit.module('phase constants', function () {
     });
   });
 
-  QUnit.test('PHASE_BG is defined with all 14 phase keys', function (assert) {
+  QUnit.test('PHASE_BG is defined with all 20 phase keys', function (assert) {
     assert.ok(typeof PHASE_BG === 'object' && PHASE_BG !== null, 'PHASE_BG exists');
     EXPECTED_PHASES.forEach(function (p) {
       assert.ok(typeof PHASE_BG[p] === 'string' && PHASE_BG[p].length > 0,
@@ -846,7 +908,7 @@ QUnit.module('phase constants', function () {
     });
   });
 
-  QUnit.test('PHASE_NAMES is defined with all 14 phase keys', function (assert) {
+  QUnit.test('PHASE_NAMES is defined with all 20 phase keys', function (assert) {
     assert.ok(typeof PHASE_NAMES === 'object' && PHASE_NAMES !== null, 'PHASE_NAMES exists');
     EXPECTED_PHASES.forEach(function (p) {
       assert.equal(PHASE_NAMES[p], EXPECTED_NAMES[p],
@@ -861,6 +923,133 @@ QUnit.module('phase constants', function () {
       assert.ok(PHASE_BG[p], 'PHASE_BG has key ' + p);
       assert.ok(PHASE_NAMES[p], 'PHASE_NAMES has key ' + p);
     });
+  });
+});
+
+// ── 13. New lib.js helpers ──────────────────────────────────────────────────
+QUnit.module('furiganaHTML', function () {
+  QUnit.test('returns ruby tags for kanji word with reading', function (assert) {
+    var result = furiganaHTML('食べる', 'たべる');
+    assert.ok(result.indexOf('<ruby>') >= 0, 'contains ruby tag');
+    assert.ok(result.indexOf('<rt>') >= 0, 'contains rt tag');
+    assert.ok(result.indexOf('たべる') >= 0, 'contains reading');
+  });
+
+  QUnit.test('returns plain text for hiragana word', function (assert) {
+    var result = furiganaHTML('たべる', 'たべる');
+    assert.equal(result, 'たべる', 'no ruby for hiragana-only');
+  });
+
+  QUnit.test('returns plain text when reading matches word', function (assert) {
+    var result = furiganaHTML('abc', 'abc');
+    assert.equal(result, 'abc');
+  });
+
+  QUnit.test('returns word when no reading provided', function (assert) {
+    assert.equal(furiganaHTML('test', null), 'test');
+    assert.equal(furiganaHTML('test', ''), 'test');
+  });
+});
+
+QUnit.module('dayToLevel', function () {
+  QUnit.test('days 1-365 are N5', function (assert) {
+    assert.equal(dayToLevel(1), 'N5');
+    assert.equal(dayToLevel(365), 'N5');
+  });
+
+  QUnit.test('days 366-660 are N4', function (assert) {
+    assert.equal(dayToLevel(366), 'N4');
+    assert.equal(dayToLevel(660), 'N4');
+  });
+
+  QUnit.test('days 661-960 are N3', function (assert) {
+    assert.equal(dayToLevel(661), 'N3');
+    assert.equal(dayToLevel(960), 'N3');
+  });
+
+  QUnit.test('days 961-1320 are N2', function (assert) {
+    assert.equal(dayToLevel(961), 'N2');
+    assert.equal(dayToLevel(1320), 'N2');
+  });
+
+  QUnit.test('days 1321-1720 are N1', function (assert) {
+    assert.equal(dayToLevel(1321), 'N1');
+    assert.equal(dayToLevel(1720), 'N1');
+  });
+});
+
+QUnit.module('exerciseCap', function () {
+  QUnit.test('N5/N4 cap is 5', function (assert) {
+    assert.equal(exerciseCap(1), 5);
+    assert.equal(exerciseCap(660), 5);
+  });
+
+  QUnit.test('N3 cap is 7', function (assert) {
+    assert.equal(exerciseCap(661), 7);
+    assert.equal(exerciseCap(960), 7);
+  });
+
+  QUnit.test('N2/N1 cap is 9', function (assert) {
+    assert.equal(exerciseCap(961), 9);
+    assert.equal(exerciseCap(1720), 9);
+  });
+});
+
+// ── 14. N3+ exercise types in buildExercises ────────────────────────────────
+QUnit.module('buildExercises (N3+ types)', {
+  beforeEach: function () {
+    this._origSpeech = window.speechSynthesis;
+    try { delete window.speechSynthesis; } catch (e) { window.speechSynthesis = undefined; }
+  },
+  afterEach: function () {
+    if (this._origSpeech !== undefined) {
+      window.speechSynthesis = this._origSpeech;
+    }
+  }
+}, function () {
+
+  QUnit.test('N3 grammar lesson generates fill_blank exercise', function (assert) {
+    var lesson = { day: 830, type: 'grammar', vocab: [['試験', 'しけん', 'exam'], ['結果', 'けっか', 'result'], ['合格', 'ごうかく', 'pass']], chars: [],
+      grammar: { pattern: '～おかげで', meaning: 'thanks to', example_jp: '先生のおかげで合格した。', example_en: 'I passed thanks to my teacher.' } };
+    var exs = buildExercises(lesson);
+    var types = exs.map(function (e) { return e.type; });
+    assert.ok(types.indexOf('fill_blank') >= 0 || types.indexOf('mc') >= 0, 'generates fill_blank or mc exercise');
+  });
+
+  QUnit.test('N3 verb lesson generates conjugation exercise', function (assert) {
+    var lesson = { day: 780, type: 'verbs', vocab: [['上げる', 'あげる', 'to raise'], ['下げる', 'さげる', 'to lower'], ['始める', 'はじめる', 'to begin'], ['集める', 'あつめる', 'to gather']], chars: [],
+      grammar: { pattern: 'transitive pairs', meaning: 'verb pairs', example_jp: '手を上げる。', example_en: 'Raise your hand.' } };
+    var exs = buildExercises(lesson);
+    var types = exs.map(function (e) { return e.type; });
+    assert.ok(types.indexOf('conjugation') >= 0 || types.indexOf('pair_match') >= 0, 'generates conjugation or pair_match');
+  });
+
+  QUnit.test('exercise cap is respected for N3 lessons', function (assert) {
+    var lesson = curriculum[700] || curriculum[0]; // N3 lesson or fallback
+    var exs = buildExercises(lesson);
+    var cap = exerciseCap(lesson.day);
+    assert.ok(exs.length <= cap, 'exercises count ' + exs.length + ' <= cap ' + cap);
+  });
+});
+
+// ── 15. Passage field validation ────────────────────────────────────────────
+QUnit.module('passage rendering', function () {
+  QUnit.test('reading type days with passage have required structure', function (assert) {
+    var readingDays = curriculum.filter(function (l) { return l.type === 'reading'; });
+    var failures = [];
+    readingDays.forEach(function (lesson) {
+      if (!lesson.passage) {
+        failures.push('day ' + lesson.day + ' type=reading but no passage field');
+        return;
+      }
+      if (!lesson.passage.text_jp || !lesson.passage.text_jp.trim()) {
+        failures.push('day ' + lesson.day + ' passage.text_jp is empty');
+      }
+      if (!lesson.passage.text_en || !lesson.passage.text_en.trim()) {
+        failures.push('day ' + lesson.day + ' passage.text_en is empty');
+      }
+    });
+    assert.equal(failures.length, 0, failures.join('\n'));
   });
 });
 

@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>日本語 N5/N4 Course</title>
+<title>日本語 N5–N1 Course</title>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.2.0/umd/react.production.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.2.0/umd/react-dom.production.min.js"></script>
 
@@ -193,6 +193,29 @@ ruby{display:ruby}
 rt{font-size:0.6em;color:#8e44ad;font-weight:400;letter-spacing:0.02em}
 .vocab-table td:first-child ruby{font-size:1.1rem}
 .vocab-table td:first-child rt{font-size:0.6em}
+/* Passage / reading comprehension */
+.passage-box{background:#f8f9fa;border:1px solid #e0e0e0;border-radius:10px;padding:16px 18px;margin-bottom:12px;line-height:1.9;font-size:1rem;color:#2c3e50}
+.passage-box ruby rt{font-size:0.55em;color:#8e44ad}
+.passage-en{color:#888;font-size:0.85rem;margin-top:10px;border-top:1px dashed #ddd;padding-top:10px;line-height:1.6}
+.passage-questions{margin-top:12px}
+.passage-q{background:#fff;border:1px solid #e8e8e8;border-radius:8px;padding:10px 14px;margin-bottom:8px}
+.passage-q-jp{font-weight:600;color:#2c3e50;margin-bottom:2px}
+.passage-q-en{font-size:0.82rem;color:#888}
+/* Furigana toggle */
+.furigana-toggle{display:inline-flex;align-items:center;gap:6px;padding:4px 12px;background:#f0f0f0;border:1px solid #ddd;border-radius:6px;font-size:0.75rem;cursor:pointer;color:#666;transition:all 0.2s;font-family:inherit;margin-bottom:10px}
+.furigana-toggle:hover{background:#e8e8e8;color:#333}
+.furigana-toggle.active{background:#8e44ad;color:#fff;border-color:#8e44ad}
+.hide-furigana rt{visibility:hidden}
+/* Level selector */
+.level-tabs{display:flex;gap:4px;margin-bottom:16px;flex-wrap:wrap}
+.level-tab{padding:6px 14px;border:1px solid #ddd;background:#fff;border-radius:6px;cursor:pointer;font-size:0.8rem;font-weight:600;transition:all 0.2s;font-family:inherit}
+.level-tab:hover{background:#f0f0f0}
+.level-tab.active{background:#2c3e50;color:#fff;border-color:#2c3e50}
+.level-badge{display:inline-block;padding:2px 8px;border-radius:10px;font-size:0.7rem;font-weight:700;color:#fff;margin-left:6px}
+.level-progress{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:16px}
+.level-progress-item{display:flex;align-items:center;gap:6px;font-size:0.78rem;color:#666}
+.level-progress-bar{width:60px;height:6px;background:#e8e8e8;border-radius:3px;overflow:hidden}
+.level-progress-fill{height:100%;border-radius:3px;transition:width 0.3s}
 
 </style>
 </head>
@@ -256,6 +279,17 @@ var UI_STRINGS = {
   prompt_mc_word:   { en: 'What does this word mean?', ja: 'このことばのいみは？', since: 137 },
   prompt_type_char: { en: 'Type the reading for this character:', ja: 'このもじのよみをにゅうりょくしてください：', since: 277 },
   prompt_type_word: { en: 'What does this word mean? (type in English)', ja: 'このことばのいみは？（えいごで）', since: 137 },
+  // N3 additions
+  reading_passage: { en: 'Reading', ja: '読解', since: 935 },
+  conjugate:       { en: 'Conjugate', ja: '活用', since: 775 },
+  // N2 additions
+  synonym_label:   { en: 'Synonym', ja: '類義語', since: 1100 },
+  reorder_label:   { en: 'Reorder', ja: '並べ替え', since: 1150 },
+  // N1 additions
+  editorial:       { en: 'Editorial', ja: '社説', since: 1700 },
+  mock_exam:       { en: 'Mock Exam', ja: '模擬試験', since: 1695 },
+  furigana_show:   { en: 'Show furigana', ja: 'ふりがな表示', since: 400 },
+  furigana_hide:   { en: 'Hide furigana', ja: 'ふりがな非表示', since: 400 },
 };
 function t(key, dayNum) {
   var s = UI_STRINGS[key];
@@ -829,7 +863,7 @@ function App() {
     className: "app"
   }, /*#__PURE__*/React.createElement("header", {
     className: "header"
-  }, /*#__PURE__*/React.createElement("h1", null, "\u65E5\u672C\u8A9E N5/N4 Course"), /*#__PURE__*/React.createElement("div", {
+  }, /*#__PURE__*/React.createElement("h1", null, "\u65E5\u672C\u8A9E N5\u2013N1 Course"), /*#__PURE__*/React.createElement("div", {
     className: "header-right"
   }, /*#__PURE__*/React.createElement("div", {
     className: "progress-wrap"
@@ -900,6 +934,16 @@ function DayView(_ref0) {
     _React$useState32 = _slicedToArray(_React$useState31, 2),
     quizActive = _React$useState32[0],
     setQuizActive = _React$useState32[1];
+  var defaultFurigana = dayNum <= 1320;
+  var _React$useStateFuri = React.useState(function () {
+    try { var v = localStorage.getItem('n5_furigana'); return v !== null ? v === 'true' : defaultFurigana; } catch (e) { return defaultFurigana; }
+  }),
+    _React$useStateFuri2 = _slicedToArray(_React$useStateFuri, 2),
+    showFurigana = _React$useStateFuri2[0],
+    setShowFurigana = _React$useStateFuri2[1];
+  var toggleFurigana = function () {
+    setShowFurigana(function (v) { try { localStorage.setItem('n5_furigana', String(!v)); } catch(e){} return !v; });
+  };
   React.useEffect(function () {
     setQuizActive(false);
   }, [dayNum]);
@@ -996,7 +1040,30 @@ function DayView(_ref0) {
     className: "section"
   }, /*#__PURE__*/React.createElement("div", {
     className: "tip-box"
-  }, lesson.tip))), /*#__PURE__*/React.createElement(Exercises, {
+  }, lesson.tip)),
+  // Furigana toggle button (shown when lesson has kanji vocab or passage)
+  (lesson.vocab && lesson.vocab.some(function(v) { return hasKanji(v[0]); }) || lesson.passage) && /*#__PURE__*/React.createElement("button", {
+    className: "furigana-toggle" + (showFurigana ? " active" : ""),
+    onClick: toggleFurigana
+  }, showFurigana ? t('furigana_hide', dayNum) : t('furigana_show', dayNum)),
+  // Passage rendering for reading comprehension days
+  lesson.passage && /*#__PURE__*/React.createElement("div", {
+    className: "section"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "section-label"
+  }, t('reading_passage', dayNum)), /*#__PURE__*/React.createElement("div", {
+    className: "passage-box" + (showFurigana ? "" : " hide-furigana")
+  }, /*#__PURE__*/React.createElement("div", null, lesson.passage.text_jp), lesson.passage.text_en && /*#__PURE__*/React.createElement("div", {
+    className: "passage-en"
+  }, lesson.passage.text_en)), lesson.passage.questions && lesson.passage.questions.length > 0 && /*#__PURE__*/React.createElement("div", {
+    className: "passage-questions"
+  }, lesson.passage.questions.map(function(q, qi) {
+    return /*#__PURE__*/React.createElement("div", { key: qi, className: "passage-q" },
+      /*#__PURE__*/React.createElement("div", { className: "passage-q-jp" }, q.question_jp),
+      q.question_en && /*#__PURE__*/React.createElement("div", { className: "passage-q-en" }, q.question_en)
+    );
+  })))
+  ), /*#__PURE__*/React.createElement(Exercises, {
     key: lesson.day,
     lesson: lesson,
     onStart: function onStart() {
@@ -1134,10 +1201,33 @@ function Overview(_ref10) {
     completed = _ref10.completed,
     setDay = _ref10.setDay,
     currentDay = _ref10.currentDay;
+  var _React$useStateLevel = React.useState('all'),
+    _React$useStateLevel2 = _slicedToArray(_React$useStateLevel, 2),
+    levelFilter = _React$useStateLevel2[0],
+    setLevelFilter = _React$useStateLevel2[1];
+  var LEVELS = [
+    { key: 'all', label: 'All', range: [1, 9999] },
+    { key: 'N5', label: 'N5', range: [1, 365] },
+    { key: 'N4', label: 'N4', range: [366, 660] },
+    { key: 'N3', label: 'N3', range: [661, 960] },
+    { key: 'N2', label: 'N2', range: [961, 1320] },
+    { key: 'N1', label: 'N1', range: [1321, 1720] }
+  ];
+  var filteredCurriculum = curriculum.filter(function (l) {
+    if (levelFilter === 'all') return true;
+    var lv = LEVELS.find(function (lv) { return lv.key === levelFilter; });
+    return lv && l.day >= lv.range[0] && l.day <= lv.range[1];
+  });
   var phases = [];
   var seen = {};
-  curriculum.forEach(function (l) {
+  filteredCurriculum.forEach(function (l) {
     if (!seen[l.phaseNum]) { seen[l.phaseNum] = true; phases.push(l.phaseNum); }
+  });
+  // Per-level progress
+  var levelProgress = LEVELS.slice(1).map(function (lv) {
+    var lvDays = curriculum.filter(function (l) { return l.day >= lv.range[0] && l.day <= lv.range[1]; });
+    var lvDone = lvDays.filter(function (l) { return completed.has(l.day); }).length;
+    return { key: lv.key, label: lv.label, total: lvDays.length, done: lvDone, pct: lvDays.length > 0 ? Math.round(lvDone / lvDays.length * 100) : 0 };
   });
   return /*#__PURE__*/React.createElement("div", {
     className: "overview"
@@ -1148,7 +1238,29 @@ function Overview(_ref10) {
       fontSize: '0.85rem',
       color: '#999'
     }
-  }, completed.size, " completed \xB7 Click a day to jump to it")), /*#__PURE__*/React.createElement("div", {
+  }, completed.size, " completed \xB7 Click a day to jump to it")),
+  // Level filter tabs
+  /*#__PURE__*/React.createElement("div", { className: "level-tabs" }, LEVELS.map(function (lv) {
+    return /*#__PURE__*/React.createElement("button", {
+      key: lv.key,
+      className: "level-tab" + (levelFilter === lv.key ? " active" : ""),
+      onClick: function () { setLevelFilter(lv.key); }
+    }, lv.label);
+  })),
+  // Per-level progress bars
+  /*#__PURE__*/React.createElement("div", { className: "level-progress" }, levelProgress.map(function (lp) {
+    if (lp.total === 0) return null;
+    var color = lp.key === 'N5' ? '#e91e8c' : lp.key === 'N4' ? '#1abc9c' : lp.key === 'N3' ? '#0984e3' : lp.key === 'N2' ? '#00cec9' : '#0652DD';
+    return /*#__PURE__*/React.createElement("div", { key: lp.key, className: "level-progress-item" },
+      /*#__PURE__*/React.createElement("span", null, lp.label),
+      /*#__PURE__*/React.createElement("div", { className: "level-progress-bar" },
+        /*#__PURE__*/React.createElement("div", { className: "level-progress-fill", style: { width: lp.pct + '%', background: color } })
+      ),
+      /*#__PURE__*/React.createElement("span", null, lp.pct + '%'),
+      lp.pct === 100 && /*#__PURE__*/React.createElement("span", { className: "level-badge", style: { background: color } }, "\u2713")
+    );
+  })),
+  /*#__PURE__*/React.createElement("div", {
     className: "phase-legend"
   }, phases.map(function (p) {
     return /*#__PURE__*/React.createElement("div", {
@@ -1162,8 +1274,8 @@ function Overview(_ref10) {
     }), /*#__PURE__*/React.createElement("span", null, PHASE_NAMES[p]));
   })), /*#__PURE__*/React.createElement("div", {
     className: "cal-grid"
-  }, curriculum.map(function (lesson, i) {
-    var d = i + 1;
+  }, filteredCurriculum.map(function (lesson) {
+    var d = lesson.day;
     var col = PHASE_COLORS[lesson.phaseNum];
     var isDone = completed.has(d);
     var isCurrent = d === currentDay;
