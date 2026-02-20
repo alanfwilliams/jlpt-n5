@@ -339,7 +339,7 @@ test("curriculum: required string fields are non-empty on every lesson", functio
 });
 
 test("curriculum: type field is always a known string value", function (a) {
-  var valid = new Set(["script","lesson","grammar","kanji","review","numbers","particles","verbs","vocab"]);
+  var valid = new Set(["script","lesson","grammar","kanji","review","numbers","particles","verbs","vocab","reading"]);
   var failures = [];
   curriculum.forEach(function (l) {
     if (!valid.has(l.type))
