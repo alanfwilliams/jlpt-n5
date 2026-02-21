@@ -2,7 +2,7 @@
 
 ## Project overview
 
-A free, self-contained, zero-dependency interactive Japanese course from zero to JLPT N3 in 960 days (N5 + N4 + N3 complete; N2/N1 planned).
+A free, self-contained, zero-dependency interactive Japanese course from zero to JLPT N2 in 1320 days (N5 + N4 + N3 + N2 complete; N1 planned).
 Everything runs in the browser with no build step and no installation required.
 
 ## Repository structure
@@ -10,11 +10,11 @@ Everything runs in the browser with no build step and no installation required.
 ```
 jlpt-n5/
 ├── index.html          # Application shell — React components + localStorage logic
-├── curriculum.js       # 960-day lesson data array + phase colour/name constants
+├── curriculum.js       # 1320-day lesson data array + phase colour/name constants
 ├── lib.js              # Pure utility functions: SM-2, card helpers, exercises
 ├── tests.html          # QUnit browser test suite (open directly, no server)
 ├── README.md           # User-facing documentation
-├── N3-N2-N1-REQUIREMENTS.md  # Implementation plan for N2/N1 (N3 complete)
+├── N3-N2-N1-REQUIREMENTS.md  # Implementation plan for N1 (N2 complete)
 └── .nojekyll           # Disables Jekyll processing for GitHub Pages
 ```
 
@@ -83,8 +83,8 @@ node .claude/hooks/run-tests.js
 | `srsReview` | Quality→grade mapping, EF clamp, no mutation, new object |
 | `srsAddCards` | Embedded card data, no-overwrite, bool return value |
 | `srsDueCards` | Returns objects not IDs, due/not-due filtering |
-| **Curriculum integrity** | 960 sequential days, required fields, type validity, vocab/chars structure, phase/week ranges, N5/N4/N3 boundary checks |
-| **Phase constants** | PHASE_COLORS, PHASE_BG, PHASE_NAMES defined and correct for all 20 active phases |
+| **Curriculum integrity** | 1320 sequential days, required fields, type validity, vocab/chars structure, phase/week ranges, N5/N4/N3/N2 boundary checks |
+| **Phase constants** | PHASE_COLORS, PHASE_BG, PHASE_NAMES defined and correct for all 26 active phases |
 | **React render** | index.html inline script executes, App/DayView/Overview/ReviewMode render without error |
 
 ## Curriculum structure
@@ -111,14 +111,20 @@ node .claude/hooks/run-tests.js
 | 821–895   | 18    | N3 Grammar Patterns (~120 patterns)                |
 | 896–930   | 19    | N3 Kanji (~170 kanji)                              |
 | 931–960   | 20    | N3 Test Prep                                       |
+| 961–990   | 21    | N3 Review (bridge to N2)                           |
+| 991–1090  | 22    | N2 Vocabulary (~500 words)                         |
+| 1091–1140 | 23    | N2 Verbs & Expressions                             |
+| 1141–1230 | 24    | N2 Grammar Patterns                                |
+| 1231–1275 | 25    | N2 Kanji (~200 kanji)                              |
+| 1276–1320 | 26    | N2 Test Prep                                       |
 
-Phase constants for N2 (phases 21–26) and N1 (phases 27–32) are defined in
-`curriculum.js` but lesson data for those levels has not yet been added.
-See `N3-N2-N1-REQUIREMENTS.md` for the full N2/N1 implementation plan.
+Phase constants for N1 (phases 27–32) are defined in
+`curriculum.js` but lesson data for that level has not yet been added.
+See `N3-N2-N1-REQUIREMENTS.md` for the full N1 implementation plan.
 
 ## Key implementation notes
 
-- All 960 day definitions live in `curriculum.js` — the first 365 as a JSON array literal, days 366–960 appended via `curriculum.push()` calls
+- All 1320 day definitions live in `curriculum.js` — the first 365 as a JSON array literal, days 366–1320 appended via `curriculum.push()` calls
 - Two SM-2 implementations exist side-by-side: `sm2Update` (older, used by `ReviewView`) and `srsReview` (newer, used by `ReviewMode` + `App`). Both use `ease`/`ef` for the same concept.
 - Quiz state, SRS card data, and completed-day flags are stored in `localStorage`
 - The lesson view, overview calendar, and review flashcard deck are separate React components in `index.html`

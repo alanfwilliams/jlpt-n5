@@ -183,7 +183,7 @@ test("cardToItem: reading=null when same as front", function (a) {
   a.equal(cardToItem("v_1_0", {}).reading, null);
 });
 test("cardToItem: out-of-range day → null", function (a) {
-  a.equal(cardToItem("v_999_0", {}), null);
+  a.equal(cardToItem("v_9999_0", {}), null);
 });
 test("cardToItem: out-of-range vocab index → null", function (a) {
   a.equal(cardToItem("v_1_999", {}), null);
@@ -339,7 +339,7 @@ test("curriculum: required string fields are non-empty on every lesson", functio
 });
 
 test("curriculum: type field is always a known string value", function (a) {
-  var valid = new Set(["script","lesson","grammar","kanji","review","numbers","particles","verbs","vocab"]);
+  var valid = new Set(["script","lesson","grammar","kanji","review","numbers","particles","verbs","vocab","reading"]);
   var failures = [];
   curriculum.forEach(function (l) {
     if (!valid.has(l.type))
@@ -374,19 +374,19 @@ test("curriculum: chars entries are 2-element [char, reading] arrays", function 
   a.equal(failures.length, 0, failures.join("\n"));
 });
 
-test("curriculum: phaseNum is 1–20 on every lesson", function (a) {
+test("curriculum: phaseNum is 1–26 on every lesson", function (a) {
   var failures = [];
   curriculum.forEach(function (l) {
-    if (typeof l.phaseNum !== "number" || l.phaseNum < 1 || l.phaseNum > 20)
+    if (typeof l.phaseNum !== "number" || l.phaseNum < 1 || l.phaseNum > 26)
       failures.push("day " + l.day + " phaseNum=" + l.phaseNum);
   });
   a.equal(failures.length, 0, failures.join("\n"));
 });
 
-test("curriculum: week is 1–138 on every lesson", function (a) {
+test("curriculum: week is 1–189 on every lesson", function (a) {
   var failures = [];
   curriculum.forEach(function (l) {
-    if (typeof l.week !== "number" || l.week < 1 || l.week > 138)
+    if (typeof l.week !== "number" || l.week < 1 || l.week > 189)
       failures.push("day " + l.day + " week=" + l.week);
   });
   a.equal(failures.length, 0, failures.join("\n"));
@@ -420,7 +420,11 @@ test("curriculum: N4 ends at day 660", function (a) {
 
 test("curriculum: N3 ends at day 960", function (a) {
   a.equal(curriculum[959].day, 960, "day 960 should be the last N3 lesson");
-  a.equal(curriculum[curriculum.length - 1].day, 960, "last day is 960");
+});
+
+test("curriculum: N2 ends at day 1320", function (a) {
+  a.equal(curriculum[1319].day, 1320, "day 1320 should be the last N2 lesson");
+  a.equal(curriculum[curriculum.length - 1].day, 1320, "last day is 1320");
 });
 
 test("curriculum: N4 starts at day 366 (if present)", function (a) {
@@ -440,9 +444,11 @@ var EXPECTED_PHASE_NAMES = {
   9: 'N5 Review', 10: 'N4 Vocabulary', 11: 'N4 Verbs',
   12: 'N4 Grammar', 13: 'N4 Kanji', 14: 'N4 Test Prep',
   15: 'N4 Review', 16: 'N3 Vocabulary', 17: 'N3 Verbs & Adjectives',
-  18: 'N3 Grammar', 19: 'N3 Kanji', 20: 'N3 Test Prep'
+  18: 'N3 Grammar', 19: 'N3 Kanji', 20: 'N3 Test Prep',
+  21: 'N3 Review', 22: 'N2 Vocabulary', 23: 'N2 Verbs & Expressions',
+  24: 'N2 Grammar', 25: 'N2 Kanji', 26: 'N2 Test Prep'
 };
-var PHASE_NUMS = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20];
+var PHASE_NUMS = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26];
 
 test("PHASE_COLORS: defined with all phase keys as non-empty strings", function (a) {
   a.ok(typeof PHASE_COLORS === "object" && PHASE_COLORS !== null, "PHASE_COLORS is an object");
