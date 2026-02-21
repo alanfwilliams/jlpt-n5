@@ -1,8 +1,9 @@
 # JLPT N3 / N2 / N1 — Implementation Requirements
 
 > **Status:** N3 is fully implemented (days 661–960, phases 15–20, all tests passing).
-> This document now serves as the implementation plan for **N2 and N1** only.
-> N3 sections are retained for reference.
+> N2 is fully implemented (days 961–1320, phases 21–26, all tests passing).
+> This document now serves as the implementation plan for **N1** only.
+> N3/N2 sections are retained for reference.
 
 This document describes what was built to extend the course through N3, and what remains to be built for N2 and N1 readiness.
 
@@ -13,7 +14,7 @@ This document describes what was built to extend the course through N3, and what
 | Level | New Vocabulary | New Kanji | New Grammar | New Days | Day Range | Status |
 |-------|---------------|-----------|-------------|----------|-----------|--------|
 | N3 | ~1,500 words | ~170 kanji | ~120 patterns | 300 | 661–960 | ✅ Complete |
-| N2 | ~3,000 words | ~200 kanji | ~180 patterns | 360 | 961–1320 | Planned |
+| N2 | ~3,000 words | ~200 kanji | ~180 patterns | 360 | 961–1320 | ✅ Complete |
 | N1 | ~4,000 words | ~300 kanji | ~220 patterns | 400 | 1321–1720 | Planned |
 | **Total** | **~8,500 words** | **~670 kanji** | **~520 patterns** | **1,060** | **661–1720** | |
 
@@ -792,12 +793,13 @@ To maintain consistency across all 1720 days:
 
 | File | Changes | Status |
 |------|---------|--------|
-| `curriculum.js` | N3 days 661–960, phases 15–20 ✅; still needs N2/N1 days 961–1720, phases 21–32 | N3 done |
-| `lib.js` | Add 11 new exercise types to `buildExercises()`, increase exercise caps, add furigana helper | Planned |
-| `index.html` | Passage rendering, furigana toggle, level selector/filter, reading exercise UI, per-level progress | Planned |
-| `tests.html` | Update day count checks as levels are added, add phase range checks, new exercise type tests | Ongoing |
-| `CLAUDE.md` | Updated with 960-day curriculum structure and current test coverage | ✅ Done |
-| `README.md` | Updated with N5/N4/N3 curriculum overview | ✅ Done |
+| `curriculum.js` | N3 days 661–960 ✅; N2 days 961–1320 ✅; still needs N1 days 1321–1720, phases 27–32 | N3+N2 done |
+| `lib.js` | 11 new exercise types in `buildExercises()` ✅, exercise caps ✅, furigana helper ✅, dayToLevel ✅ | ✅ Done |
+| `index.html` | Passage rendering ✅, furigana toggle ✅, level selector/filter ✅, per-level progress ✅ | ✅ Done |
+| `tests.html` | Day count updated to 1320 ✅, N2 phase range checks ✅, new exercise type tests ✅ | ✅ Done |
+| `run-tests.js` | N2 phases, furiganaHTML, dayToLevel, exerciseCap, buildExercises N2+, passage validation ✅ | ✅ Done |
+| `CLAUDE.md` | Updated with 1320-day curriculum structure and current test coverage | ✅ Done |
+| `README.md` | Updated with N5/N4/N3/N2 curriculum overview | ✅ Done |
 
 ---
 
@@ -816,18 +818,18 @@ To maintain consistency across all 1720 days:
 9. ✅ N3 Test Prep days (931–960)
 10. ✅ Tests for N3 curriculum data integrity
 
-### Phase B — N2 (days 961–1320)
+### Phase B — N2 (days 961–1320) ✅ Complete
 
-11. Phase constants 21–26 in `curriculum.js`
-12. N3 Review days (961–990)
-13. N2 Vocabulary days (991–1090)
-14. N2 Verbs & Expressions days (1091–1140)
-15. N2 Grammar days (1141–1230)
-16. N2 Kanji days (1231–1275)
-17. New exercise types: `synonym`, `reorder`, `error_find`, `kanji_reading`
-18. N2 Test Prep days (1276–1320)
-19. UI level selector and per-level progress
-20. Tests for N2 content and features
+11. ✅ Phase constants 21–26 in `curriculum.js`
+12. ✅ N3 Review days (961–990)
+13. ✅ N2 Vocabulary days (991–1090)
+14. ✅ N2 Verbs & Expressions days (1091–1140)
+15. ✅ N2 Grammar days (1141–1230)
+16. ✅ N2 Kanji days (1231–1275)
+17. ✅ New exercise types: `synonym`, `reorder`, `error_find`, `kanji_reading`
+18. ✅ N2 Test Prep days (1276–1320)
+19. ✅ UI level selector and per-level progress
+20. ✅ Tests for N2 content and features (104 tests passing)
 
 ### Phase C — N1 (days 1321–1720)
 

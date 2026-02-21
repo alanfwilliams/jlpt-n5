@@ -941,7 +941,7 @@ QUnit.module('phase constants', function () {
     24: 'N2 Grammar', 25: 'N2 Kanji', 26: 'N2 Test Prep'
   };
 
-  QUnit.test('PHASE_COLORS is defined with all 20 phase keys', function (assert) {
+  QUnit.test('PHASE_COLORS is defined with all 26 phase keys', function (assert) {
     assert.ok(typeof PHASE_COLORS === 'object' && PHASE_COLORS !== null, 'PHASE_COLORS exists');
     EXPECTED_PHASES.forEach(function (p) {
       assert.ok(typeof PHASE_COLORS[p] === 'string' && PHASE_COLORS[p].length > 0,
@@ -949,7 +949,7 @@ QUnit.module('phase constants', function () {
     });
   });
 
-  QUnit.test('PHASE_BG is defined with all 20 phase keys', function (assert) {
+  QUnit.test('PHASE_BG is defined with all 26 phase keys', function (assert) {
     assert.ok(typeof PHASE_BG === 'object' && PHASE_BG !== null, 'PHASE_BG exists');
     EXPECTED_PHASES.forEach(function (p) {
       assert.ok(typeof PHASE_BG[p] === 'string' && PHASE_BG[p].length > 0,
@@ -957,7 +957,7 @@ QUnit.module('phase constants', function () {
     });
   });
 
-  QUnit.test('PHASE_NAMES is defined with all 20 phase keys', function (assert) {
+  QUnit.test('PHASE_NAMES is defined with all 26 phase keys', function (assert) {
     assert.ok(typeof PHASE_NAMES === 'object' && PHASE_NAMES !== null, 'PHASE_NAMES exists');
     EXPECTED_PHASES.forEach(function (p) {
       assert.equal(PHASE_NAMES[p], EXPECTED_NAMES[p],
@@ -1075,6 +1075,52 @@ QUnit.module('buildExercises (N3+ types)', {
 
   QUnit.test('exercise cap is respected for N3 lessons', function (assert) {
     var lesson = curriculum[700] || curriculum[0]; // N3 lesson or fallback
+    var exs = buildExercises(lesson);
+    var cap = exerciseCap(lesson.day);
+    assert.ok(exs.length <= cap, 'exercises count ' + exs.length + ' <= cap ' + cap);
+  });
+
+  QUnit.test('N2 vocab lesson generates synonym exercise', function (assert) {
+    var lesson = { day: 1050, type: 'vocab', chars: [],
+      vocab: [
+        ['契約', 'けいやく', 'contract'], ['利益', 'りえき', 'profit'], ['投資', 'とうし', 'investment'],
+        ['経営', 'けいえい', 'management'], ['売上', 'うりあげ', 'sales']
+      ] };
+    var exs = buildExercises(lesson);
+    var types = exs.map(function (e) { return e.type; });
+    assert.ok(types.indexOf('synonym') >= 0, 'N2 vocab lesson generates synonym exercise');
+  });
+
+  QUnit.test('N2 grammar lesson generates reorder exercise', function (assert) {
+    var lesson = { day: 1180, type: 'grammar', chars: [],
+      vocab: [['わけだ', 'わけだ', "that's why"]],
+      grammar: { pattern: '～わけだ', meaning: "that's why / no wonder",
+        example_jp: 'だから彼女は怒っているわけだ。', example_en: "So that's why she is angry." } };
+    var exs = buildExercises(lesson);
+    var types = exs.map(function (e) { return e.type; });
+    assert.ok(types.indexOf('reorder') >= 0, 'N2 grammar lesson generates reorder exercise');
+  });
+
+  QUnit.test('N2 grammar lesson generates error_find exercise', function (assert) {
+    var lesson = { day: 1200, type: 'grammar', chars: [],
+      vocab: [['限る', 'かぎる', 'to be limited to']],
+      grammar: { pattern: '～に限って', meaning: 'only when / it is always the case that',
+        example_jp: '大事なときに限って失敗する。', example_en: 'I always fail at the important moments.' } };
+    var exs = buildExercises(lesson);
+    var types = exs.map(function (e) { return e.type; });
+    assert.ok(types.indexOf('error_find') >= 0, 'N2 grammar lesson generates error_find exercise');
+  });
+
+  QUnit.test('N2 kanji lesson generates kanji_reading exercise', function (assert) {
+    var lesson = { day: 1240, type: 'kanji', vocab: [],
+      chars: [['裁', 'さい'], ['憲', 'けん'], ['権', 'けん'], ['議', 'ぎ'], ['税', 'ぜい']] };
+    var exs = buildExercises(lesson);
+    var types = exs.map(function (e) { return e.type; });
+    assert.ok(types.indexOf('kanji_reading') >= 0, 'N2 kanji lesson generates kanji_reading exercise');
+  });
+
+  QUnit.test('exercise cap is respected for N2 lessons', function (assert) {
+    var lesson = curriculum[1000] || curriculum[0]; // N2 lesson or fallback
     var exs = buildExercises(lesson);
     var cap = exerciseCap(lesson.day);
     assert.ok(exs.length <= cap, 'exercises count ' + exs.length + ' <= cap ' + cap);

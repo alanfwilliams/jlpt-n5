@@ -312,8 +312,8 @@ test("srsDueCards: all overdue → all returned", function (a) {
 });
 
 // ── 12. Curriculum data integrity ─────────────────────────────────────────────
-test("curriculum: not empty and has at least N3 (960 lessons)", function (a) {
-  a.ok(curriculum.length >= 960, "should have at least 960 lessons (N5 through N3 complete)");
+test("curriculum: not empty and has at least N2 (1320 lessons)", function (a) {
+  a.ok(curriculum.length >= 1320, "should have at least 1320 lessons (N5 through N2 complete)");
 });
 
 test("curriculum: sequential day numbers starting from 1", function (a) {
@@ -418,9 +418,31 @@ test("curriculum: N4 ends at day 660", function (a) {
   a.equal(curriculum[659].day, 660, "day 660 should be the last N4 lesson");
 });
 
-test("curriculum: N3 ends at day 960, N2 Phase 21-22 extends to day 1090", function (a) {
+test("curriculum: N3 ends at day 960, N2 complete at day 1320", function (a) {
   a.equal(curriculum[959].day, 960, "day 960 should be the last N3 lesson");
-  a.ok(curriculum[curriculum.length - 1].day >= 960, "curriculum extends at least to day 960");
+  a.equal(curriculum[1319].day, 1320, "day 1320 should be the last N2 lesson");
+  a.equal(curriculum[curriculum.length - 1].day, 1320, "last day in curriculum is 1320");
+});
+
+test("curriculum: N2 phase boundaries (phases 21–26)", function (a) {
+  // Phase 21: N3 Review days 961–990
+  var ph21 = curriculum.slice(960, 990).filter(function (l) { return l.phaseNum !== 21; });
+  a.equal(ph21.length, 0, "days 961–990 all phaseNum=21");
+  // Phase 22: N2 Vocabulary days 991–1090
+  var ph22 = curriculum.slice(990, 1090).filter(function (l) { return l.phaseNum !== 22; });
+  a.equal(ph22.length, 0, "days 991–1090 all phaseNum=22");
+  // Phase 23: N2 Verbs days 1091–1140
+  var ph23 = curriculum.slice(1090, 1140).filter(function (l) { return l.phaseNum !== 23; });
+  a.equal(ph23.length, 0, "days 1091–1140 all phaseNum=23");
+  // Phase 24: N2 Grammar days 1141–1230
+  var ph24 = curriculum.slice(1140, 1230).filter(function (l) { return l.phaseNum !== 24; });
+  a.equal(ph24.length, 0, "days 1141–1230 all phaseNum=24");
+  // Phase 25: N2 Kanji days 1231–1275
+  var ph25 = curriculum.slice(1230, 1275).filter(function (l) { return l.phaseNum !== 25; });
+  a.equal(ph25.length, 0, "days 1231–1275 all phaseNum=25");
+  // Phase 26: N2 Test Prep days 1276–1320
+  var ph26 = curriculum.slice(1275, 1320).filter(function (l) { return l.phaseNum !== 26; });
+  a.equal(ph26.length, 0, "days 1276–1320 all phaseNum=26");
 });
 
 test("curriculum: N4 starts at day 366 (if present)", function (a) {
@@ -440,9 +462,12 @@ var EXPECTED_PHASE_NAMES = {
   9: 'N5 Review', 10: 'N4 Vocabulary', 11: 'N4 Verbs',
   12: 'N4 Grammar', 13: 'N4 Kanji', 14: 'N4 Test Prep',
   15: 'N4 Review', 16: 'N3 Vocabulary', 17: 'N3 Verbs & Adjectives',
-  18: 'N3 Grammar', 19: 'N3 Kanji', 20: 'N3 Test Prep'
+  18: 'N3 Grammar', 19: 'N3 Kanji', 20: 'N3 Test Prep',
+  21: 'N3 Review', 22: 'N2 Vocabulary', 23: 'N2 Verbs & Expressions',
+  24: 'N2 Grammar', 25: 'N2 Kanji', 26: 'N2 Test Prep'
 };
-var PHASE_NUMS = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20];
+var PHASE_NUMS = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+                 21, 22, 23, 24, 25, 26];
 
 test("PHASE_COLORS: defined with all phase keys as non-empty strings", function (a) {
   a.ok(typeof PHASE_COLORS === "object" && PHASE_COLORS !== null, "PHASE_COLORS is an object");
@@ -476,7 +501,109 @@ test("phase constants: every phaseNum in curriculum is covered", function (a) {
   });
 });
 
-// ── 14. React render smoke test ───────────────────────────────────────────────
+// ── 14. furiganaHTML ──────────────────────────────────────────────────────────
+test("furiganaHTML: returns ruby tags for kanji word", function (a) {
+  var r = furiganaHTML('食べる', 'たべる');
+  a.ok(r.indexOf('<ruby>') >= 0, 'contains ruby tag');
+  a.ok(r.indexOf('<rt>') >= 0, 'contains rt tag');
+  a.ok(r.indexOf('たべる') >= 0, 'contains reading');
+});
+
+test("furiganaHTML: returns plain text for hiragana-only word", function (a) {
+  a.equal(furiganaHTML('たべる', 'たべる'), 'たべる');
+});
+
+test("furiganaHTML: returns word when no reading provided", function (a) {
+  a.equal(furiganaHTML('test', null), 'test');
+  a.equal(furiganaHTML('test', ''), 'test');
+});
+
+// ── 15. dayToLevel ────────────────────────────────────────────────────────────
+test("dayToLevel: N5 range (days 1–365)", function (a) {
+  a.equal(dayToLevel(1), 'N5');
+  a.equal(dayToLevel(365), 'N5');
+});
+
+test("dayToLevel: N4 range (days 366–660)", function (a) {
+  a.equal(dayToLevel(366), 'N4');
+  a.equal(dayToLevel(660), 'N4');
+});
+
+test("dayToLevel: N3 range (days 661–960)", function (a) {
+  a.equal(dayToLevel(661), 'N3');
+  a.equal(dayToLevel(960), 'N3');
+});
+
+test("dayToLevel: N2 range (days 961–1320)", function (a) {
+  a.equal(dayToLevel(961), 'N2');
+  a.equal(dayToLevel(1320), 'N2');
+});
+
+test("dayToLevel: N1 range (days 1321+)", function (a) {
+  a.equal(dayToLevel(1321), 'N1');
+  a.equal(dayToLevel(1720), 'N1');
+});
+
+// ── 16. exerciseCap ───────────────────────────────────────────────────────────
+test("exerciseCap: N5/N4 cap is 5", function (a) {
+  a.equal(exerciseCap(1), 5);
+  a.equal(exerciseCap(660), 5);
+});
+
+test("exerciseCap: N3 cap is 7", function (a) {
+  a.equal(exerciseCap(661), 7);
+  a.equal(exerciseCap(960), 7);
+});
+
+test("exerciseCap: N2/N1 cap is 9", function (a) {
+  a.equal(exerciseCap(961), 9);
+  a.equal(exerciseCap(1320), 9);
+});
+
+// ── 17. buildExercises (N2 types) ─────────────────────────────────────────────
+test("buildExercises N2: synonym exercise generated for N2 vocab lesson", function (a) {
+  var lesson = { day: 1050, type: 'vocab', chars: [],
+    vocab: [
+      ['契約', 'けいやく', 'contract'], ['利益', 'りえき', 'profit'], ['投資', 'とうし', 'investment'],
+      ['経営', 'けいえい', 'management'], ['売上', 'うりあげ', 'sales']
+    ] };
+  var exs = buildExercises(lesson);
+  var types = exs.map(function (e) { return e.type; });
+  a.ok(types.indexOf('synonym') >= 0, 'synonym exercise generated for N2 vocab lesson');
+});
+
+test("buildExercises N2: kanji_reading exercise for N2 kanji lesson", function (a) {
+  var lesson = { day: 1240, type: 'kanji', vocab: [],
+    chars: [['裁', 'さい'], ['憲', 'けん'], ['権', 'けん'], ['議', 'ぎ'], ['税', 'ぜい']] };
+  var exs = buildExercises(lesson);
+  var types = exs.map(function (e) { return e.type; });
+  a.ok(types.indexOf('kanji_reading') >= 0, 'kanji_reading exercise generated for N2 kanji lesson');
+});
+
+test("buildExercises N2: exercise cap respected (max 9)", function (a) {
+  var lesson = curriculum[1000];
+  var exs = buildExercises(lesson);
+  a.ok(exs.length <= 9, 'N2 exercise count ' + exs.length + ' <= 9');
+});
+
+// ── 18. passage field validation ──────────────────────────────────────────────
+test("passage: all reading-type days have text_jp and text_en", function (a) {
+  var failures = [];
+  curriculum.forEach(function (l) {
+    if (l.type !== 'reading') return;
+    if (!l.passage) {
+      failures.push('day ' + l.day + ': type=reading but no passage');
+      return;
+    }
+    if (!l.passage.text_jp || !l.passage.text_jp.trim())
+      failures.push('day ' + l.day + ': passage.text_jp empty');
+    if (!l.passage.text_en || !l.passage.text_en.trim())
+      failures.push('day ' + l.day + ': passage.text_en empty');
+  });
+  a.equal(failures.length, 0, failures.join('\n'));
+});
+
+// ── 20. React render smoke test ───────────────────────────────────────────────
 // Extracts the inline <script> from index.html, runs it in a stubbed browser
 // environment, then calls each top-level component to verify no globals are
 // missing and no ReferenceError would blank the page.

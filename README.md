@@ -1,6 +1,6 @@
-# 日本語 N5–N3 Course
+# 日本語 N5–N2 Course
 
-A free, self-contained interactive Japanese course from zero to JLPT N3 level.
+A free, self-contained interactive Japanese course from zero to JLPT N2 level.
 **No install. No account. Just open `index.html` in any browser.**
 
 🔗 **Live:** [alanfwilliams.github.io/jlpt](https://alanfwilliams.github.io/jlpt)
@@ -11,7 +11,7 @@ A free, self-contained interactive Japanese course from zero to JLPT N3 level.
 
 | Feature | Details |
 |---|---|
-| **N5 + N4 + N3 curriculum** | Complete N5 (365 days) + N4 (295 days) + N3 (300 days) — 960 days total |
+| **N5 + N4 + N3 + N2 curriculum** | Complete N5 (365 days) + N4 (295 days) + N3 (300 days) + N2 (360 days) — 1,320 days total |
 | **Spaced repetition (SRS)** | SM-2 algorithm, same as Anki — cards scheduled automatically |
 | **Text-to-speech** | Native browser Japanese voice on every vocab word |
 | **Listening exercises** | Hear a word, pick the meaning |
@@ -33,7 +33,7 @@ A free, self-contained interactive Japanese course from zero to JLPT N3 level.
 ```bash
 git init
 git add index.html README.md
-git commit -m "Initial commit: N5/N4/N3 960-day course"
+git commit -m "Initial commit: N5/N4/N3/N2 1320-day course"
 git branch -M main
 git remote add origin https://github.com/YOUR_USERNAME/jlpt-n5.git
 git push -u origin main
@@ -71,10 +71,17 @@ Your site will be live at `https://YOUR_USERNAME.github.io/jlpt-n5` within a min
 - **Days 896–930** — N3 Kanji (~170 kanji)
 - **Days 931–960** — Review & JLPT N3 Test Prep
 
-### Future content (Days 961+)
-- **N2** — ~360 days (vocabulary, verbs, grammar, kanji, test prep)
+### N2 Course (Days 961–1320)
+- **Days 961–990** — N3 Review & Bridge to N2 (30 days)
+- **Days 991–1090** — N2 Vocabulary (~3,000 words, business, law, science, medicine)
+- **Days 1091–1140** — N2 Verbs & Expressions (compound verbs, honorifics, idioms)
+- **Days 1141–1230** — N2 Grammar Patterns (~180 patterns)
+- **Days 1231–1275** — N2 Kanji (~200 kanji, government, economy, science)
+- **Days 1276–1320** — Review & JLPT N2 Test Prep
+
+### Future content (Days 1321+)
 - **N1** — ~400 days (vocabulary, verbs, grammar, kanji, test prep)
-- See [N3-N2-N1-REQUIREMENTS.md](N3-N2-N1-REQUIREMENTS.md) for the full implementation plan
+- See [N3-N2-N1-REQUIREMENTS.md](N3-N2-N1-REQUIREMENTS.md) for the full N1 implementation plan
 
 ## Browser compatibility
 
