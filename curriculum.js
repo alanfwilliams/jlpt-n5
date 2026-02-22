@@ -43695,3 +43695,8880 @@ curriculum.push({
     ]
   }
 });
+
+// ═══════════════════════════════════════════════════════════════════════════
+// PHASE 27: N2 REVIEW (Days 1321-1350)
+// 30 days reviewing N2 material and bridging to N1
+// ═══════════════════════════════════════════════════════════════════════════
+
+// --- Days 1321-1325: N2 Vocabulary Review ---
+
+curriculum.push({
+  day: 1321,
+  phaseNum: 27,
+  phaseName: "N2 Review",
+  week: Math.ceil(1321 / 7),
+  title: "N2 Vocabulary Review: Business & Economy",
+  intro: "Welcome to Phase 27 — the N2 Review bridge. Over the next 30 days, you will consolidate everything learned in N2 before advancing to N1. Today we review essential business and economy vocabulary.",
+  type: "review",
+  vocab: [
+    ["契約", "けいやく", "contract, agreement"],
+    ["利益", "りえき", "profit, benefit"],
+    ["投資", "とうし", "investment"],
+    ["経営", "けいえい", "management, administration"],
+    ["収入", "しゅうにゅう", "income, revenue"],
+    ["支出", "ししゅつ", "expenditure, spending"],
+    ["融資", "ゆうし", "financing, loan"],
+    ["景気", "けいき", "economic conditions, business climate"]
+  ],
+  chars: [],
+  grammar: { pattern: "〜に基づいて", meaning: "based on ~, on the basis of ~", example_jp: "契約内容に基づいて、利益を分配する。", example_en: "We distribute profits based on the contract terms." },
+  practice: "Write five sentences using today's vocabulary. Try to connect at least two words in each sentence, e.g., 投資の利益 or 経営の収入.",
+  tip: "Business vocabulary appears frequently in N2 reading passages. Practice reading newspaper headlines to reinforce these words in context."
+});
+
+curriculum.push({
+  day: 1322,
+  phaseNum: 27,
+  phaseName: "N2 Review",
+  week: Math.ceil(1322 / 7),
+  title: "N2 Vocabulary Review: Society & Systems",
+  intro: "Today we review N2 vocabulary related to society, institutions, and systems — words that appear frequently in opinion essays and formal writing.",
+  type: "review",
+  vocab: [
+    ["制度", "せいど", "system, institution"],
+    ["方針", "ほうしん", "policy, course of action"],
+    ["対策", "たいさく", "countermeasure, strategy"],
+    ["実施", "じっし", "implementation, enforcement"],
+    ["改善", "かいぜん", "improvement, reform"],
+    ["促進", "そくしん", "promotion, acceleration"],
+    ["規制", "きせい", "regulation, restriction"],
+    ["普及", "ふきゅう", "spread, diffusion, popularization"]
+  ],
+  chars: [],
+  grammar: { pattern: "〜に伴い", meaning: "accompanying ~, along with ~", example_jp: "制度の改善に伴い、新しい方針が実施された。", example_en: "Along with the improvement of the system, a new policy was implemented." },
+  practice: "Create a short paragraph describing a social issue using at least five of today's words. Focus on using formal written style.",
+  tip: "Many N2 vocabulary words are Sino-Japanese compounds (漢語). Understanding the individual kanji meanings helps you guess new compounds."
+});
+
+curriculum.push({
+  day: 1323,
+  phaseNum: 27,
+  phaseName: "N2 Review",
+  week: Math.ceil(1323 / 7),
+  title: "N2 Vocabulary Review: Research & Analysis",
+  intro: "Today's review focuses on vocabulary used in academic and analytical contexts — essential for N2 reading comprehension passages about research and data.",
+  type: "review",
+  vocab: [
+    ["調査", "ちょうさ", "investigation, survey"],
+    ["分析", "ぶんせき", "analysis"],
+    ["統計", "とうけい", "statistics"],
+    ["傾向", "けいこう", "tendency, trend"],
+    ["要因", "よういん", "factor, cause"],
+    ["影響", "えいきょう", "influence, effect"],
+    ["結論", "けつろん", "conclusion"],
+    ["根拠", "こんきょ", "basis, grounds, evidence"]
+  ],
+  chars: [],
+  grammar: { pattern: "〜によると", meaning: "according to ~", example_jp: "最新の調査によると、この傾向は今後も続くと分析されている。", example_en: "According to the latest survey, it is analyzed that this trend will continue." },
+  practice: "Write a short report-style paragraph using today's vocabulary. Start with 調査によると and present findings using 傾向, 要因, and 結論.",
+  tip: "In N2 reading passages, look for signal words like 要因 and 根拠 — they often point to the key arguments the author is making."
+});
+
+curriculum.push({
+  day: 1324,
+  phaseNum: 27,
+  phaseName: "N2 Review",
+  week: Math.ceil(1324 / 7),
+  title: "N2 Vocabulary Review: Communication & Relations",
+  intro: "Today we review N2 vocabulary for interpersonal communication, relationships, and social interactions — words that bridge formal and everyday usage.",
+  type: "review",
+  vocab: [
+    ["交渉", "こうしょう", "negotiation"],
+    ["合意", "ごうい", "agreement, consensus"],
+    ["主張", "しゅちょう", "assertion, claim"],
+    ["批判", "ひはん", "criticism"],
+    ["妥協", "だきょう", "compromise"],
+    ["対立", "たいりつ", "confrontation, opposition"],
+    ["協力", "きょうりょく", "cooperation"]
+  ],
+  chars: [],
+  grammar: { pattern: "〜をめぐって", meaning: "concerning ~, regarding ~ (often disputes)", example_jp: "新しい方針をめぐって、賛成派と反対派が対立している。", example_en: "Regarding the new policy, supporters and opponents are in opposition." },
+  practice: "Describe a negotiation scenario using today's vocabulary. Include the stages: 主張 → 対立 → 交渉 → 妥協 → 合意.",
+  tip: "Words like 交渉, 合意, and 妥協 often appear together in N2 listening passages about workplace situations."
+});
+
+curriculum.push({
+  day: 1325,
+  phaseNum: 27,
+  phaseName: "N2 Review",
+  week: Math.ceil(1325 / 7),
+  title: "N2 Vocabulary Review: Environment & Nature",
+  intro: "Today's review covers N2 vocabulary related to environmental issues and natural phenomena — a common topic in JLPT reading and listening sections.",
+  type: "review",
+  vocab: [
+    ["環境", "かんきょう", "environment"],
+    ["汚染", "おせん", "pollution, contamination"],
+    ["温暖化", "おんだんか", "global warming"],
+    ["資源", "しげん", "resources"],
+    ["排出", "はいしゅつ", "emission, discharge"],
+    ["保全", "ほぜん", "preservation, conservation"],
+    ["再生", "さいせい", "regeneration, recycling"],
+    ["生態系", "せいたいけい", "ecosystem"]
+  ],
+  chars: [],
+  grammar: { pattern: "〜につれて", meaning: "as ~, along with ~ (gradual change)", example_jp: "温暖化が進むにつれて、生態系への影響が深刻化している。", example_en: "As global warming progresses, the impact on ecosystems is becoming more serious." },
+  practice: "Write an opinion paragraph about an environmental issue using at least six of today's words. Use formal written style (である体).",
+  tip: "Environmental topics are perennial favorites on the JLPT. Master this vocabulary cluster and you will be well prepared for related reading passages."
+});
+
+// --- Days 1326-1330: N2 Verbs & Expressions Review ---
+
+curriculum.push({
+  day: 1326,
+  phaseNum: 27,
+  phaseName: "N2 Review",
+  week: Math.ceil(1326 / 7),
+  title: "N2 Verbs Review: Work & Involvement",
+  intro: "This week we review key N2 verbs and expressions. Today focuses on verbs describing professional involvement and participation.",
+  type: "review",
+  vocab: [
+    ["携わる", "たずさわる", "to be involved in, to engage in"],
+    ["従事する", "じゅうじする", "to engage in, to be employed in"],
+    ["担当する", "たんとうする", "to be in charge of"],
+    ["取り組む", "とりくむ", "to tackle, to work on"],
+    ["果たす", "はたす", "to fulfill, to accomplish"],
+    ["務める", "つとめる", "to serve as, to hold a position"]
+  ],
+  chars: [],
+  grammar: { pattern: "〜にあたって", meaning: "on the occasion of ~, when doing ~", example_jp: "新しいプロジェクトに取り組むにあたって、全員の協力が不可欠だ。", example_en: "When tackling the new project, everyone's cooperation is essential." },
+  practice: "Write a self-introduction for a business setting using today's verbs. Describe your role (担当する), what you work on (取り組む), and what you aim to accomplish (果たす).",
+  tip: "Many N2 verbs have する-verb equivalents (e.g., 従事する). Knowing both the する form and the native Japanese form broadens your expressive range."
+});
+
+curriculum.push({
+  day: 1327,
+  phaseNum: 27,
+  phaseName: "N2 Review",
+  week: Math.ceil(1327 / 7),
+  title: "N2 Verbs Review: Judgment & Evaluation",
+  intro: "Today we review N2 verbs related to judgment, evaluation, and decision-making — critical for understanding opinion-based texts.",
+  type: "review",
+  vocab: [
+    ["見なす", "みなす", "to regard as, to consider"],
+    ["評価する", "ひょうかする", "to evaluate, to assess"],
+    ["判断する", "はんだんする", "to judge, to decide"],
+    ["推測する", "すいそくする", "to guess, to infer"],
+    ["検討する", "けんとうする", "to examine, to consider"],
+    ["把握する", "はあくする", "to grasp, to comprehend"]
+  ],
+  chars: [],
+  grammar: { pattern: "〜と見なす", meaning: "to regard ~ as, to consider ~ to be", example_jp: "この結果は成功と見なすことができる。", example_en: "This result can be regarded as a success." },
+  practice: "Write a short evaluation of a product or service using today's verbs. Include your judgment (判断する), assessment (評価する), and recommendation (検討する).",
+  tip: "Verbs of judgment like 見なす and 推測する often appear in N2 reading passages where you must identify the author's stance."
+});
+
+curriculum.push({
+  day: 1328,
+  phaseNum: 27,
+  phaseName: "N2 Review",
+  week: Math.ceil(1328 / 7),
+  title: "N2 Verbs Review: Change & Influence",
+  intro: "Today we review N2 verbs that describe change, transformation, and influence — essential for discussing trends and developments.",
+  type: "review",
+  vocab: [
+    ["踏まえる", "ふまえる", "to be based on, to take into account"],
+    ["及ぼす", "およぼす", "to exert, to have an effect on"],
+    ["左右する", "さゆうする", "to influence, to affect"],
+    ["促す", "うながす", "to urge, to prompt, to encourage"],
+    ["妨げる", "さまたげる", "to hinder, to obstruct"],
+    ["覆す", "くつがえす", "to overturn, to reverse"]
+  ],
+  chars: [],
+  grammar: { pattern: "〜を踏まえて", meaning: "based on ~, taking ~ into account", example_jp: "過去の失敗を踏まえて、新しい計画を立てた。", example_en: "Based on past failures, we made a new plan." },
+  practice: "Describe a cause-and-effect chain using today's verbs. For example: A が B に影響を及ぼす → B が C を妨げる → D が E を覆す.",
+  tip: "The verb 踏まえる is extremely common in formal writing. It signals that the speaker is grounding their argument in evidence or prior experience."
+});
+
+curriculum.push({
+  day: 1329,
+  phaseNum: 27,
+  phaseName: "N2 Review",
+  week: Math.ceil(1329 / 7),
+  title: "N2 Verbs Review: Emotional & Abstract Actions",
+  intro: "Today we review N2 verbs that express abstract or emotional states — verbs that add nuance and depth to your Japanese expression.",
+  type: "review",
+  vocab: [
+    ["抱える", "かかえる", "to hold, to carry (a problem/burden)"],
+    ["悔やむ", "くやむ", "to regret, to rue"],
+    ["戸惑う", "とまどう", "to be bewildered, to be confused"],
+    ["偏る", "かたよる", "to be biased, to lean toward"],
+    ["怠る", "おこたる", "to neglect, to be negligent"],
+    ["潤う", "うるおう", "to be moistened, to profit, to be enriched"]
+  ],
+  chars: [],
+  grammar: { pattern: "〜ずにはいられない", meaning: "cannot help but ~, cannot resist ~ing", example_jp: "あの失敗を悔やまずにはいられない。", example_en: "I cannot help but regret that failure." },
+  practice: "Write a reflective diary entry using today's verbs. Describe a challenge you face (抱える), your confusion (戸惑う), and what you regret (悔やむ).",
+  tip: "Abstract verbs like 抱える and 偏る are often used metaphorically. 問題を抱える means 'to have/carry a problem' — a vivid image that enriches your writing."
+});
+
+curriculum.push({
+  day: 1330,
+  phaseNum: 27,
+  phaseName: "N2 Review",
+  week: Math.ceil(1330 / 7),
+  title: "N2 Verbs Review: Formal Actions & Processes",
+  intro: "Today completes the verb review section with formal verbs describing institutional actions and processes — vocabulary essential for understanding news and official documents.",
+  type: "review",
+  vocab: [
+    ["施行する", "しこうする", "to enforce, to put into effect"],
+    ["撤回する", "てっかいする", "to withdraw, to retract"],
+    ["承認する", "しょうにんする", "to approve, to authorize"],
+    ["締結する", "ていけつする", "to conclude (a treaty/contract)"],
+    ["委託する", "いたくする", "to entrust, to commission"],
+    ["遂行する", "すいこうする", "to carry out, to execute"]
+  ],
+  chars: [],
+  grammar: { pattern: "〜に先立って", meaning: "prior to ~, before ~", example_jp: "法律の施行に先立って、国民への説明会が開かれた。", example_en: "Prior to the enforcement of the law, an explanatory meeting for citizens was held." },
+  practice: "Write a news-style report about a government action using today's verbs. Include a sequence: 承認する → 締結する → 施行する.",
+  tip: "Formal する-verbs like 施行 and 締結 are staples of newspaper Japanese. Reading NHK News Web regularly will reinforce these naturally."
+});
+
+// --- Days 1331-1337: N2 Grammar Review ---
+
+curriculum.push({
+  day: 1331,
+  phaseNum: 27,
+  phaseName: "N2 Review",
+  week: Math.ceil(1331 / 7),
+  title: "N2 Grammar Review: Contrast & Concession",
+  intro: "This week we systematically review N2 grammar patterns. Today focuses on contrast and concession — patterns that express 'despite' or 'although'.",
+  type: "review",
+  vocab: [
+    ["反面", "はんめん", "on the other hand"],
+    ["一方", "いっぽう", "on the one hand, meanwhile"],
+    ["にもかかわらず", "にもかかわらず", "despite, in spite of"],
+    ["ものの", "ものの", "although, but"],
+    ["とはいえ", "とはいえ", "having said that, nevertheless"],
+    ["かといって", "かといって", "but then, even so"]
+  ],
+  chars: [],
+  grammar: { pattern: "〜にもかかわらず", meaning: "despite ~, in spite of ~", example_jp: "何度も警告したにもかかわらず、彼は同じ失敗を繰り返した。", example_en: "Despite being warned many times, he repeated the same mistake." },
+  practice: "Write six sentences, each using a different concession pattern from today's vocabulary list. Vary the topics between daily life and formal situations.",
+  tip: "にもかかわらず is more formal than のに. Use にもかかわらず in essays and formal speech, and のに in casual conversation."
+});
+
+curriculum.push({
+  day: 1332,
+  phaseNum: 27,
+  phaseName: "N2 Review",
+  week: Math.ceil(1332 / 7),
+  title: "N2 Grammar Review: Cause & Reason",
+  intro: "Today we review N2 grammar patterns that express cause, reason, and triggers — essential for constructing logical arguments.",
+  type: "review",
+  vocab: [
+    ["をきっかけに", "をきっかけに", "triggered by, taking the opportunity of"],
+    ["を契機に", "をけいきに", "taking the opportunity of (formal)"],
+    ["ばかりに", "ばかりに", "just because, simply because (negative result)"],
+    ["あまり", "あまり", "so much that, to the extent that"],
+    ["以上", "いじょう", "since, now that"],
+    ["からには", "からには", "since, now that (with determination)"]
+  ],
+  chars: [],
+  grammar: { pattern: "〜をきっかけに", meaning: "triggered by ~, taking ~ as an opportunity", example_jp: "留学をきっかけに、日本文化に深い関心を持つようになった。", example_en: "Triggered by studying abroad, I came to have a deep interest in Japanese culture." },
+  practice: "Write a paragraph about a life-changing event using をきっかけに, and then rewrite it using を契機に. Compare the nuance of formality.",
+  tip: "をきっかけに and を契機に are near-synonyms, but 契機 is more formal and literary. In essays, use 契機; in speeches, きっかけ works well."
+});
+
+curriculum.push({
+  day: 1333,
+  phaseNum: 27,
+  phaseName: "N2 Review",
+  week: Math.ceil(1333 / 7),
+  title: "N2 Grammar Review: Degree & Extent",
+  intro: "Today we review N2 grammar patterns expressing degree, extent, and limits — patterns that help you describe how much or to what degree something occurs.",
+  type: "review",
+  vocab: [
+    ["に過ぎない", "にすぎない", "nothing more than, merely"],
+    ["に限る", "にかぎる", "nothing beats ~, ~ is the best"],
+    ["に限らず", "にかぎらず", "not limited to"],
+    ["どころか", "どころか", "far from, let alone"],
+    ["ないことはない", "ないことはない", "it's not that ~ is impossible"],
+    ["っぽい", "っぽい", "-ish, -like, tending to"]
+  ],
+  chars: [],
+  grammar: { pattern: "〜に過ぎない", meaning: "nothing more than ~, merely ~", example_jp: "これは一つの例に過ぎない。全体像はもっと複雑だ。", example_en: "This is nothing more than one example. The whole picture is more complex." },
+  practice: "For each pattern today, write one sentence about a mundane topic and one about a serious topic. Notice how the same grammar works across registers.",
+  tip: "に過ぎない is a powerful rhetorical device for downplaying something. It appears frequently in opinion essays on the JLPT."
+});
+
+curriculum.push({
+  day: 1334,
+  phaseNum: 27,
+  phaseName: "N2 Review",
+  week: Math.ceil(1334 / 7),
+  title: "N2 Grammar Review: Time & Sequence",
+  intro: "Today we review N2 grammar patterns related to time, sequence, and duration — patterns that structure narratives and explanations.",
+  type: "review",
+  vocab: [
+    ["に伴い", "にともない", "along with, as ~ happens"],
+    ["次第", "しだい", "as soon as, depending on"],
+    ["たとたん", "たとたん", "just as, the moment"],
+    ["て以来", "ていらい", "ever since"],
+    ["うちに", "うちに", "while, before ~ changes"],
+    ["最中に", "さいちゅうに", "in the middle of"]
+  ],
+  chars: [],
+  grammar: { pattern: "〜に伴い", meaning: "along with ~, accompanying ~", example_jp: "人口の減少に伴い、労働力不足が深刻化している。", example_en: "Along with the decline in population, the labor shortage is becoming more serious." },
+  practice: "Write a timeline of events using today's patterns. Describe a sequence: て以来 (background), に伴い (concurrent change), たとたん (sudden event), 最中に (interruption).",
+  tip: "次第 has two main uses: 到着次第 (as soon as arriving) and 努力次第 (depending on effort). Context determines which meaning applies."
+});
+
+curriculum.push({
+  day: 1335,
+  phaseNum: 27,
+  phaseName: "N2 Review",
+  week: Math.ceil(1335 / 7),
+  title: "N2 Grammar Review: Formal Expressions",
+  intro: "Today we review formal and written-style N2 grammar patterns — the patterns that distinguish N2-level writing from everyday speech.",
+  type: "review",
+  vocab: [
+    ["において", "において", "in, at (formal location/context)"],
+    ["における", "における", "in, at (attributive form)"],
+    ["に関して", "にかんして", "regarding, concerning"],
+    ["にわたって", "にわたって", "over, spanning, throughout"],
+    ["に応じて", "におうじて", "according to, in response to"],
+    ["をもとに", "をもとに", "based on, on the basis of"]
+  ],
+  chars: [],
+  grammar: { pattern: "〜において", meaning: "in ~, at ~ (formal)", example_jp: "国際会議において、環境問題に関して活発な議論が行われた。", example_en: "At the international conference, active discussions were held regarding environmental issues." },
+  practice: "Rewrite three casual sentences into formal style using today's patterns. For example: 会議で → 会議において, ～について → ～に関して.",
+  tip: "において and における are the formal equivalents of で. Use において for predicates and における before nouns: 会議における議論."
+});
+
+curriculum.push({
+  day: 1336,
+  phaseNum: 27,
+  phaseName: "N2 Review",
+  week: Math.ceil(1336 / 7),
+  title: "N2 Grammar Review: Listing & Addition",
+  intro: "Today we review N2 grammar patterns for listing items, adding information, and presenting multiple points — essential for structured arguments.",
+  type: "review",
+  vocab: [
+    ["上に", "うえに", "in addition to, on top of"],
+    ["はもちろん", "はもちろん", "not to mention, of course"],
+    ["はもとより", "はもとより", "not only ~ but also (formal)"],
+    ["に加えて", "にくわえて", "in addition to"],
+    ["をはじめ", "をはじめ", "starting with, including"],
+    ["たところで", "たところで", "even if ~ (futility)"]
+  ],
+  chars: [],
+  grammar: { pattern: "〜はもとより", meaning: "not only ~ but also ~ (formal)", example_jp: "国内はもとより、海外からも多くの観光客が訪れている。", example_en: "Not only from within the country but also from overseas, many tourists are visiting." },
+  practice: "Write a promotional paragraph for a city or product using today's listing patterns. Layer information: をはじめ (main examples), に加えて (additions), はもとより (emphasis).",
+  tip: "はもとより is the more formal, literary version of はもちろん. Use はもとより in essays and はもちろん in speech."
+});
+
+curriculum.push({
+  day: 1337,
+  phaseNum: 27,
+  phaseName: "N2 Review",
+  week: Math.ceil(1337 / 7),
+  title: "N2 Grammar Review: Comprehensive Pattern Drill",
+  intro: "Today we do a comprehensive review of N2 grammar with mixed patterns. This is a synthesis day — practice recognizing and using patterns from all categories.",
+  type: "review",
+  vocab: [
+    ["つつある", "つつある", "be in the process of ~ing"],
+    ["わけがない", "わけがない", "there is no way that ~"],
+    ["ことから", "ことから", "because of the fact that ~"],
+    ["一方で", "いっぽうで", "on the other hand, while"],
+    ["としても", "としても", "even if, even as"],
+    ["ようがない", "ようがない", "there is no way to ~"]
+  ],
+  chars: [],
+  grammar: { pattern: "〜つつある", meaning: "be in the process of ~ing (gradual change)", example_jp: "地方の人口は減少しつつあるが、一方で都市部は増加している。", example_en: "Rural populations are in the process of declining, while on the other hand urban areas are increasing." },
+  practice: "Write a mini-essay (8-10 sentences) on a topic of your choice using at least one pattern from each day this week (1331-1337). Aim for a coherent argument, not isolated sentences.",
+  tip: "Grammar mastery comes from using patterns in combination, not in isolation. The best N2 essays weave multiple grammar points together naturally."
+});
+
+// --- Days 1338-1342: N2 Kanji Review ---
+
+curriculum.push({
+  day: 1338,
+  phaseNum: 27,
+  phaseName: "N2 Review",
+  week: Math.ceil(1338 / 7),
+  title: "N2 Kanji Review: Government & Law",
+  intro: "This week we review N2 kanji compounds by topic. Today covers kanji related to government, law, and official institutions.",
+  type: "review",
+  vocab: [
+    ["政府", "せいふ", "government"],
+    ["法律", "ほうりつ", "law, legislation"],
+    ["議会", "ぎかい", "parliament, congress"],
+    ["選挙", "せんきょ", "election"],
+    ["行政", "ぎょうせい", "administration, governance"],
+    ["司法", "しほう", "judiciary, justice"],
+    ["憲法", "けんぽう", "constitution"]
+  ],
+  chars: [],
+  grammar: { pattern: "〜に基づいて", meaning: "based on ~", example_jp: "すべての法律は憲法に基づいて制定される。", example_en: "All laws are enacted based on the constitution." },
+  practice: "Read a short Japanese news article about politics. Identify and list all kanji compounds from today's lesson that appear. Write their context sentences.",
+  tip: "Government kanji often share components: 政 (politics), 法 (law), 議 (discussion). Recognizing these radicals helps you decode unfamiliar compounds."
+});
+
+curriculum.push({
+  day: 1339,
+  phaseNum: 27,
+  phaseName: "N2 Review",
+  week: Math.ceil(1339 / 7),
+  title: "N2 Kanji Review: Science & Technology",
+  intro: "Today we review N2 kanji compounds related to science, technology, and innovation — vocabulary increasingly common in modern Japanese texts.",
+  type: "review",
+  vocab: [
+    ["技術", "ぎじゅつ", "technology, technique"],
+    ["開発", "かいはつ", "development"],
+    ["研究", "けんきゅう", "research"],
+    ["実験", "じっけん", "experiment"],
+    ["発明", "はつめい", "invention"],
+    ["人工", "じんこう", "artificial, man-made"],
+    ["情報", "じょうほう", "information"]
+  ],
+  chars: [],
+  grammar: { pattern: "〜を通じて", meaning: "through ~, by means of ~", example_jp: "長年の研究を通じて、画期的な技術が開発された。", example_en: "Through years of research, groundbreaking technology was developed." },
+  practice: "Write a short description of a technological innovation using today's kanji compounds. Explain the 研究 process, the 実験 results, and the 開発 outcome.",
+  tip: "科学 (science) and 技術 (technology) are often combined as 科学技術. Many four-character combinations like this function as single concepts."
+});
+
+curriculum.push({
+  day: 1340,
+  phaseNum: 27,
+  phaseName: "N2 Review",
+  week: Math.ceil(1340 / 7),
+  title: "N2 Kanji Review: Health & Medicine",
+  intro: "Today we review N2 kanji compounds related to health, medicine, and the human body — practical vocabulary for daily life and reading comprehension.",
+  type: "review",
+  vocab: [
+    ["医療", "いりょう", "medical care, medical treatment"],
+    ["症状", "しょうじょう", "symptoms"],
+    ["診断", "しんだん", "diagnosis"],
+    ["治療", "ちりょう", "treatment, therapy"],
+    ["予防", "よぼう", "prevention"],
+    ["患者", "かんじゃ", "patient"],
+    ["免疫", "めんえき", "immunity"]
+  ],
+  chars: [],
+  grammar: { pattern: "〜に先立ち", meaning: "prior to ~, before ~", example_jp: "治療に先立ち、詳しい診断が行われた。", example_en: "Prior to treatment, a detailed diagnosis was conducted." },
+  practice: "Describe a visit to the doctor using today's kanji compounds. Include the sequence: 症状 → 診断 → 治療 → 予防.",
+  tip: "Medical kanji share key components: 医 (medicine), 症 (illness), 療 (heal). The radical 疒 (やまいだれ) appears in many illness-related kanji."
+});
+
+curriculum.push({
+  day: 1341,
+  phaseNum: 27,
+  phaseName: "N2 Review",
+  week: Math.ceil(1341 / 7),
+  title: "N2 Kanji Review: Education & Culture",
+  intro: "Today we review N2 kanji compounds related to education, culture, and intellectual pursuits — topics that appear frequently in JLPT reading passages.",
+  type: "review",
+  vocab: [
+    ["教育", "きょういく", "education"],
+    ["文化", "ぶんか", "culture"],
+    ["伝統", "でんとう", "tradition"],
+    ["価値", "かち", "value, worth"],
+    ["思想", "しそう", "thought, ideology"],
+    ["芸術", "げいじゅつ", "art, fine arts"],
+    ["創造", "そうぞう", "creation, creativity"]
+  ],
+  chars: [],
+  grammar: { pattern: "〜とともに", meaning: "together with ~, as well as ~", example_jp: "伝統を守るとともに、新しい文化を創造することが大切だ。", example_en: "It is important to preserve tradition as well as create new culture." },
+  practice: "Write an essay paragraph about the relationship between 伝統 and 創造 in modern society. Use at least five of today's kanji compounds.",
+  tip: "Education and culture vocabulary often appears in N2 opinion passages. Practice identifying the author's 価値観 (values) as you read."
+});
+
+curriculum.push({
+  day: 1342,
+  phaseNum: 27,
+  phaseName: "N2 Review",
+  week: Math.ceil(1342 / 7),
+  title: "N2 Kanji Review: Abstract Concepts & Emotions",
+  intro: "Today completes the kanji review week with abstract concepts and emotion-related compounds — vocabulary that adds depth to your expression.",
+  type: "review",
+  vocab: [
+    ["意識", "いしき", "consciousness, awareness"],
+    ["感覚", "かんかく", "sense, sensation, feeling"],
+    ["印象", "いんしょう", "impression"],
+    ["不安", "ふあん", "anxiety, unease"],
+    ["期待", "きたい", "expectation, hope"],
+    ["満足", "まんぞく", "satisfaction"],
+    ["矛盾", "むじゅん", "contradiction"]
+  ],
+  chars: [],
+  grammar: { pattern: "〜反面", meaning: "on the other hand, while ~ is true", example_jp: "期待が大きい反面、不安も感じている。", example_en: "While expectations are high, I also feel anxiety." },
+  practice: "Describe a complex emotional situation using today's kanji compounds. Express both positive (期待, 満足) and negative (不安, 矛盾) aspects using the 反面 pattern.",
+  tip: "矛盾 comes from an ancient Chinese story about a spear (矛) and shield (盾). Knowing the etymology makes abstract kanji more memorable."
+});
+
+// --- Days 1343-1347: N2 Mixed Reading Passages ---
+
+curriculum.push({
+  day: 1343,
+  phaseNum: 27,
+  phaseName: "N2 Review",
+  week: Math.ceil(1343 / 7),
+  title: "N2 Reading Review: The Changing Workplace",
+  intro: "This week features reading passages that integrate N2 vocabulary, grammar, and kanji. Today's passage discusses changes in the modern workplace.",
+  type: "reading",
+  vocab: [
+    ["働き方改革", "はたらきかたかいかく", "work style reform"],
+    ["柔軟", "じゅうなん", "flexible, adaptable"],
+    ["在宅勤務", "ざいたくきんむ", "working from home, remote work"],
+    ["生産性", "せいさんせい", "productivity"],
+    ["雇用", "こよう", "employment"],
+    ["多様性", "たようせい", "diversity"]
+  ],
+  chars: [],
+  grammar: { pattern: "〜を契機に", meaning: "taking ~ as an opportunity, triggered by ~", example_jp: "感染症の流行を契機に、在宅勤務が急速に普及した。", example_en: "Triggered by the epidemic, remote work rapidly spread." },
+  practice: "After reading the passage, summarize the main argument in three sentences using your own words. Then write your opinion on the topic.",
+  tip: "When reading N2 passages, first skim for the overall structure (problem → analysis → conclusion), then reread for details.",
+  passage: {
+    text_jp: "近年、日本の労働環境は大きな変革期を迎えている。かつては終身雇用と年功序列が当たり前とされていたが、グローバル化や技術革新に伴い、こうした伝統的な制度は見直しを迫られている。特に働き方改革の推進をきっかけに、柔軟な勤務形態が注目を集めるようになった。在宅勤務やフレックスタイム制の導入は、生産性の向上にもかかわらず、当初は経営者側から懐疑的に見なされていた。しかし、感染症の流行を契機に、多くの企業がこれらの制度を本格的に導入せざるを得なくなった。結果として、通勤時間の削減や多様な人材の活用といった利点が明らかになりつつある。一方で、社員間のコミュニケーション不足や、仕事と私生活の境界が曖昧になるといった課題も浮き彫りになっている。今後は、こうした課題を踏まえた上で、それぞれの企業や個人に応じた最適な働き方を模索していく必要があるだろう。労働環境の改善は、単なる制度の変更に過ぎないのではなく、社会全体の意識改革を伴うものでなければならない。",
+    text_en: "In recent years, Japan's working environment has entered a period of major transformation. While lifetime employment and seniority-based systems were once taken for granted, globalization and technological innovation have forced a reconsideration of these traditional systems. In particular, triggered by the promotion of work style reform, flexible work arrangements have drawn attention. The introduction of remote work and flextime systems was initially viewed skeptically by management, despite their potential for improving productivity. However, triggered by the epidemic, many companies had no choice but to fully implement these systems. As a result, advantages such as reduced commute times and the utilization of diverse human resources are becoming apparent. On the other hand, issues such as insufficient communication between employees and the blurring of boundaries between work and private life have also come to the fore. Going forward, it will be necessary to explore optimal work styles suited to each company and individual, taking these challenges into account. The improvement of the working environment must not be merely a change in systems, but must be accompanied by a reform of awareness across society as a whole.",
+    questions: [
+      { question_jp: "従来の日本の雇用制度が見直されている理由は何ですか。", question_en: "What is the reason traditional Japanese employment systems are being reconsidered?", answer: "グローバル化や技術革新に伴い、従来の制度が時代に合わなくなったため" },
+      { question_jp: "在宅勤務の課題として挙げられているものは何ですか。", question_en: "What is mentioned as a challenge of remote work?", answer: "社員間のコミュニケーション不足や、仕事と私生活の境界が曖昧になること" }
+    ]
+  }
+});
+
+curriculum.push({
+  day: 1344,
+  phaseNum: 27,
+  phaseName: "N2 Review",
+  week: Math.ceil(1344 / 7),
+  title: "N2 Reading Review: Environmental Responsibility",
+  intro: "Today's passage explores environmental responsibility and sustainability — a topic that integrates N2 vocabulary about nature, society, and policy.",
+  type: "reading",
+  vocab: [
+    ["持続可能", "じぞくかのう", "sustainable"],
+    ["循環型社会", "じゅんかんがたしゃかい", "recycling-oriented society"],
+    ["廃棄物", "はいきぶつ", "waste, refuse"],
+    ["削減", "さくげん", "reduction, cutback"],
+    ["取り組み", "とりくみ", "efforts, initiatives"],
+    ["責任", "せきにん", "responsibility"]
+  ],
+  chars: [],
+  grammar: { pattern: "〜ないわけにはいかない", meaning: "cannot avoid ~ing, must ~", example_jp: "この問題を無視しないわけにはいかない。", example_en: "We cannot avoid addressing this problem." },
+  practice: "Summarize the passage in 100 characters or fewer in Japanese. Then list three N2 grammar patterns you found in the text.",
+  tip: "Environmental passages often use chains of cause and effect. Look for patterns like に伴い, をきっかけに, and その結果 to follow the logical flow.",
+  passage: {
+    text_jp: "地球環境の保全は、もはや一部の専門家だけの課題ではなく、社会全体で取り組むべき問題となっている。温暖化の進行に伴い、世界各地で異常気象が頻発しており、その影響は農業や水資源にまで及んでいる。こうした状況を踏まえて、多くの国が持続可能な社会の実現を目指す政策を打ち出している。日本においても、循環型社会の構築が重要な課題として位置づけられている。廃棄物の削減、再生可能エネルギーの普及、そして企業の環境への取り組みが求められている。しかし、制度を整えるだけでは十分とは言えない。一人一人の市民が環境に対する意識を高め、日常生活における行動を変えていくことが不可欠である。プラスチック製品の使用を減らすことはもちろん、食品ロスの問題にも目を向けなければならない。環境問題は複雑であるがゆえに、単純な解決策は存在しない。科学的な根拠に基づいた政策と、市民一人一人の地道な努力の両方があってこそ、持続可能な未来が実現するのである。私たちには、次の世代に美しい地球を残す責任がある。この責任から目を背けるわけにはいかない。",
+    text_en: "The preservation of the global environment is no longer a concern for only a few specialists; it has become an issue that all of society must address. Along with the progression of global warming, extreme weather events are occurring frequently around the world, and their effects extend to agriculture and water resources. Taking this situation into account, many countries have put forward policies aimed at achieving a sustainable society. In Japan as well, building a recycling-oriented society has been positioned as an important challenge. Reduction of waste, the spread of renewable energy, and corporate environmental initiatives are required. However, merely establishing systems cannot be considered sufficient. It is essential that each individual citizen heighten their awareness of the environment and change their behavior in daily life. Not only must we reduce the use of plastic products, we must also turn our attention to the problem of food waste. Precisely because environmental problems are complex, simple solutions do not exist. Only when there are both policies based on scientific evidence and the steady efforts of each individual citizen can a sustainable future be realized. We bear the responsibility of leaving a beautiful earth for the next generation. We cannot turn away from this responsibility.",
+    questions: [
+      { question_jp: "筆者は持続可能な社会の実現に何が必要だと述べていますか。", question_en: "What does the author say is necessary for achieving a sustainable society?", answer: "科学的な根拠に基づいた政策と、市民一人一人の地道な努力の両方が必要" },
+      { question_jp: "制度を整えるだけでは不十分だとされる理由は何ですか。", question_en: "Why is merely establishing systems considered insufficient?", answer: "一人一人の市民が環境意識を高め、日常生活の行動を変えることも不可欠だから" }
+    ]
+  }
+});
+
+curriculum.push({
+  day: 1345,
+  phaseNum: 27,
+  phaseName: "N2 Review",
+  week: Math.ceil(1345 / 7),
+  title: "N2 Reading Review: Education in the Digital Age",
+  intro: "Today's passage discusses the transformation of education through technology — a passage that integrates vocabulary from multiple N2 domains.",
+  type: "reading",
+  vocab: [
+    ["オンライン授業", "おんらいんじゅぎょう", "online classes"],
+    ["格差", "かくさ", "gap, disparity"],
+    ["導入", "どうにゅう", "introduction, implementation"],
+    ["従来", "じゅうらい", "conventional, traditional"],
+    ["可能性", "かのうせい", "possibility, potential"],
+    ["課題", "かだい", "challenge, issue, assignment"]
+  ],
+  chars: [],
+  grammar: { pattern: "〜どころか", meaning: "far from ~, let alone ~", example_jp: "デジタル化は格差を解消するどころか、新たな格差を生んでいる。", example_en: "Far from eliminating disparities, digitalization is creating new ones." },
+  practice: "Write a response to the passage expressing your own views on digital education. Use at least four N2 grammar patterns.",
+  tip: "Reading passages about education often present both advantages (利点) and disadvantages (課題). Train yourself to identify both sides quickly.",
+  passage: {
+    text_jp: "デジタル技術の発展に伴い、教育の在り方が根本から問い直されている。従来の教室中心の授業に加えて、オンライン授業やデジタル教材の活用が急速に広まりつつある。この変化は、地理的な制約を超えた学びの機会を提供するという点で、画期的な進歩と言える。地方に住む学生であっても、都市部の一流の教育を受けることが可能になったのだ。しかしながら、こうした技術の導入が必ずしも教育の質の向上につながるとは限らない。デジタル機器を持たない家庭の子どもたちは、教育の機会から取り残されるおそれがある。つまり、デジタル化は格差を解消するどころか、新たな「デジタル格差」を生み出しかねないのである。また、画面を通じた学習では、対面での交流を通じて得られる社会性やコミュニケーション能力の育成が不十分になりがちだ。教育において最も重要なのは、技術そのものではなく、それをいかに活用するかという視点である。教師の役割は、知識の伝達者から、学びの設計者・支援者へと変化しつつある。今後の教育改革は、技術の可能性を最大限に引き出しながらも、人間同士のつながりを大切にするものでなければならない。",
+    text_en: "Along with the development of digital technology, the nature of education is being fundamentally reconsidered. In addition to conventional classroom-centered lessons, the use of online classes and digital learning materials is rapidly spreading. This change can be called a groundbreaking advance in that it provides learning opportunities that transcend geographical constraints. Even students living in rural areas have become able to receive top-quality education from urban areas. However, the introduction of such technology does not necessarily lead to improvement in educational quality. Children from families without digital devices risk being left behind from educational opportunities. In other words, far from eliminating disparities, digitalization may create new 'digital divides.' Furthermore, learning through screens tends to result in insufficient development of social skills and communication abilities gained through face-to-face interaction. What is most important in education is not technology itself, but the perspective of how to utilize it. The role of teachers is changing from transmitters of knowledge to designers and supporters of learning. Future educational reform must maximize the potential of technology while also valuing human connections.",
+    questions: [
+      { question_jp: "「デジタル格差」とは何を指していますか。", question_en: "What does 'digital divide' refer to?", answer: "デジタル機器を持つ家庭と持たない家庭の間で、教育機会に差が生じること" },
+      { question_jp: "筆者は教師の役割がどのように変わっていると述べていますか。", question_en: "How does the author say the role of teachers is changing?", answer: "知識の伝達者から、学びの設計者・支援者へと変化している" }
+    ]
+  }
+});
+
+curriculum.push({
+  day: 1346,
+  phaseNum: 27,
+  phaseName: "N2 Review",
+  week: Math.ceil(1346 / 7),
+  title: "N2 Reading Review: Aging Society and Innovation",
+  intro: "Today's passage examines Japan's aging society and technological solutions — a topic combining demographic, social, and scientific vocabulary.",
+  type: "reading",
+  vocab: [
+    ["高齢化", "こうれいか", "aging (of population)"],
+    ["少子化", "しょうしか", "declining birthrate"],
+    ["介護", "かいご", "nursing care, caregiving"],
+    ["自動化", "じどうか", "automation"],
+    ["人手不足", "ひとでぶそく", "labor shortage"],
+    ["福祉", "ふくし", "welfare, well-being"]
+  ],
+  chars: [],
+  grammar: { pattern: "〜ざるを得ない", meaning: "cannot help but ~, have no choice but to ~", example_jp: "人手不足の現状を考えると、自動化を進めざるを得ない。", example_en: "Considering the current labor shortage, we have no choice but to advance automation." },
+  practice: "After reading, create a mind map connecting today's vocabulary to the passage's key arguments. Then write a paragraph proposing one additional solution.",
+  tip: "Japan's demographic challenges (少子高齢化) are a frequent JLPT topic. Understanding this social context helps you predict passage content before you even read it.",
+  passage: {
+    text_jp: "日本は世界に先駆けて超高齢社会に突入した。少子化と高齢化が同時に進行する中で、社会のあらゆる側面に影響が及んでいる。特に深刻なのは、介護分野における人手不足である。高齢者の数が増加する一方で、介護に従事する若い世代は減少しており、このギャップは年々拡大しつつある。こうした状況を受けて、介護ロボットやAI技術の導入が検討されるようになった。すでにいくつかの施設では、見守りセンサーやコミュニケーションロボットが試験的に活用されている。これらの技術は、介護者の身体的な負担を軽減するとともに、高齢者の安全を確保する上で有効だとされている。とはいえ、技術だけで人間の温かみを代替できるわけがない。高齢者にとって、人との触れ合いや会話は精神的な健康を維持する上で欠かせないものである。したがって、今後の福祉政策は、技術の活用と人間的なケアの両立を目指すべきだろう。自動化を進めざるを得ない現実を受け入れつつも、一人一人の高齢者が尊厳を持って暮らせる社会の実現に向けて、官民一体となった取り組みが求められている。",
+    text_en: "Japan has entered a super-aging society ahead of the rest of the world. As declining birthrates and aging progress simultaneously, every aspect of society is being affected. Particularly serious is the labor shortage in the caregiving field. While the number of elderly people is increasing, the younger generation engaged in caregiving is decreasing, and this gap is expanding year by year. In response to this situation, the introduction of care robots and AI technology has come under consideration. Already in some facilities, monitoring sensors and communication robots are being used on a trial basis. These technologies are considered effective in reducing the physical burden on caregivers and ensuring the safety of the elderly. That said, there is no way technology alone can substitute for human warmth. For elderly people, human contact and conversation are indispensable for maintaining mental health. Therefore, future welfare policies should aim to balance the utilization of technology with humane care. While accepting the reality that automation must be advanced, efforts uniting the public and private sectors are needed toward realizing a society where each elderly person can live with dignity.",
+    questions: [
+      { question_jp: "介護分野で技術導入が検討されている理由は何ですか。", question_en: "Why is the introduction of technology being considered in the caregiving field?", answer: "高齢者が増加する一方で介護に従事する若い世代が減少し、人手不足が深刻化しているため" },
+      { question_jp: "筆者は技術の活用だけでは不十分だと考える理由は何ですか。", question_en: "Why does the author think technology alone is insufficient?", answer: "高齢者にとって人との触れ合いや会話が精神的な健康維持に欠かせないため" }
+    ]
+  }
+});
+
+curriculum.push({
+  day: 1347,
+  phaseNum: 27,
+  phaseName: "N2 Review",
+  week: Math.ceil(1347 / 7),
+  title: "N2 Reading Review: Language and Identity",
+  intro: "Today's final reading passage explores the relationship between language and identity — a reflective topic that ties together your entire N2 journey.",
+  type: "reading",
+  vocab: [
+    ["母語", "ぼご", "mother tongue, native language"],
+    ["多言語", "たげんご", "multilingual"],
+    ["アイデンティティ", "あいでんてぃてぃ", "identity"],
+    ["異文化", "いぶんか", "cross-cultural, different culture"],
+    ["共存", "きょうぞん", "coexistence"],
+    ["視野", "しや", "field of vision, perspective"]
+  ],
+  chars: [],
+  grammar: { pattern: "〜てこそ", meaning: "only by ~ing, it is precisely when ~", example_jp: "異文化を理解してこそ、真の国際人と言える。", example_en: "Only by understanding different cultures can one be called a truly international person." },
+  practice: "Write a personal reflection (200 characters) about how learning Japanese has influenced your sense of identity. Use at least three N2 grammar patterns.",
+  tip: "Passages about language and culture test your ability to follow abstract reasoning. Focus on the author's thesis (主張) and the evidence (根拠) they present.",
+  passage: {
+    text_jp: "言語は単なるコミュニケーションの道具に過ぎないのだろうか。多くの言語学者は、言語が人間の思考や世界の認識そのものに深く関わっていると主張する。母語が異なれば、同じ現象に対する捉え方も異なるのだ。例えば、日本語には「もったいない」という概念があるが、これを一語で表現できる言語は少ない。このような言語固有の表現は、その言語を話す人々の価値観や文化を反映している。グローバル化が進む現代において、英語が世界共通語としての地位を確立しつつある一方で、少数言語の消滅が加速しているという現実がある。一つの言語が消えるということは、一つの世界観が失われることにほかならない。多言語社会の実現は、異なる文化の共存を促進するとともに、人類の知的遺産を守ることにもつながる。外国語を学ぶということは、新たな視野を獲得することである。母語だけでは気づかなかった自己のアイデンティティに、外国語を通じて初めて向き合うことがある。言語を学んでこそ見える世界がある。あなたが日本語を学び続けてきたことは、日本語という窓を通じて、世界をもう一つの角度から見つめ直す力を手に入れたということなのだ。",
+    text_en: "Is language merely a tool for communication? Many linguists assert that language is deeply involved in human thought and the very perception of the world. If one's mother tongue differs, one's way of grasping the same phenomenon also differs. For example, Japanese has the concept of 'mottainai,' but few languages can express this in a single word. Such language-specific expressions reflect the values and culture of the people who speak that language. In our modern age of advancing globalization, while English is establishing its position as a global lingua franca, there is the reality that the extinction of minority languages is accelerating. The disappearance of one language is nothing other than the loss of one worldview. The realization of a multilingual society not only promotes the coexistence of different cultures but also leads to preserving humanity's intellectual heritage. Learning a foreign language is acquiring a new perspective. Through a foreign language, one may for the first time confront aspects of one's own identity that one never noticed through the mother tongue alone. There are worlds visible only by learning a language. The fact that you have continued to study Japanese means that you have gained the ability to look at the world from another angle through the window of Japanese.",
+    questions: [
+      { question_jp: "少数言語の消滅は何を意味すると筆者は述べていますか。", question_en: "What does the author say the extinction of minority languages means?", answer: "一つの言語が消えることは、一つの世界観が失われることにほかならない" },
+      { question_jp: "外国語を学ぶことの意義について、筆者はどう考えていますか。", question_en: "What does the author think about the significance of learning a foreign language?", answer: "新たな視野を獲得し、母語だけでは気づかなかった自己のアイデンティティに向き合えること" }
+    ]
+  }
+});
+
+// --- Days 1348-1349: Mixed Review Exercises ---
+
+curriculum.push({
+  day: 1348,
+  phaseNum: 27,
+  phaseName: "N2 Review",
+  week: Math.ceil(1348 / 7),
+  title: "N2 Comprehensive Review: Vocabulary & Grammar Integration",
+  intro: "Today is a mixed review day combining vocabulary, grammar, and kanji from the entire N2 curriculum. Test your ability to use all components together.",
+  type: "review",
+  vocab: [
+    ["総合", "そうごう", "comprehensive, integrated"],
+    ["復習", "ふくしゅう", "review, revision"],
+    ["定着", "ていちゃく", "establishment, taking root"],
+    ["応用", "おうよう", "application, practical use"],
+    ["習得", "しゅうとく", "acquisition, mastery"],
+    ["実力", "じつりょく", "real ability, true strength"]
+  ],
+  chars: [],
+  grammar: { pattern: "〜てはじめて", meaning: "only after ~ing, not until ~", example_jp: "何度も復習してはじめて、知識が定着するものだ。", example_en: "It is only after reviewing many times that knowledge truly takes root." },
+  practice: "Complete this challenge: write a 300-character essay on any topic, incorporating at least one word from each day of Phase 27 (days 1321-1347). This tests your ability to integrate vocabulary across domains.",
+  tip: "True language mastery is not about knowing individual words or patterns — it is about combining them fluently. This integration practice builds real 実力."
+});
+
+curriculum.push({
+  day: 1349,
+  phaseNum: 27,
+  phaseName: "N2 Review",
+  week: Math.ceil(1349 / 7),
+  title: "N2 Final Review: Listening & Speaking Preparation",
+  intro: "Today's review focuses on reinforcing N2 knowledge through listening and speaking practice. Activate your passive vocabulary by producing language.",
+  type: "review",
+  vocab: [
+    ["発音", "はつおん", "pronunciation"],
+    ["流暢", "りゅうちょう", "fluency, fluent"],
+    ["表現力", "ひょうげんりょく", "expressive ability"],
+    ["要約", "ようやく", "summary, summarization"],
+    ["論理的", "ろんりてき", "logical"],
+    ["説得力", "せっとくりょく", "persuasiveness"]
+  ],
+  chars: [],
+  grammar: { pattern: "〜からこそ", meaning: "precisely because ~", example_jp: "毎日練習を続けてきたからこそ、この表現力が身についたのだ。", example_en: "It is precisely because I continued practicing every day that I acquired this expressive ability." },
+  practice: "Record yourself speaking for two minutes on each topic: (1) your opinion on a social issue, (2) a summary of something you read recently. Listen back and note areas for improvement.",
+  tip: "Speaking fluency develops separately from reading ability. Even at N2 level, dedicated speaking practice is essential for activating your knowledge."
+});
+
+// --- Day 1350: N1 Preview/Bridge ---
+
+curriculum.push({
+  day: 1350,
+  phaseNum: 27,
+  phaseName: "N2 Review",
+  week: Math.ceil(1350 / 7),
+  title: "Bridge to N1: What Lies Ahead",
+  intro: "Congratulations on completing the N2 Review phase! Today we preview what awaits in N1 — the highest level of the JLPT. N1 introduces literary vocabulary, advanced grammar, and complex reading comprehension.",
+  type: "review",
+  vocab: [
+    ["挑戦", "ちょうせん", "challenge, attempt"],
+    ["上級", "じょうきゅう", "advanced level"],
+    ["文語", "ぶんご", "literary language, written language"],
+    ["慣用句", "かんようく", "idiom, idiomatic expression"],
+    ["敬語", "けいご", "honorific language, keigo"],
+    ["抽象的", "ちゅうしょうてき", "abstract"]
+  ],
+  chars: [],
+  grammar: { pattern: "〜んばかりに", meaning: "as if about to ~, on the verge of ~", example_jp: "彼は泣かんばかりに喜んだ。", example_en: "He was so happy he looked as if he was about to cry." },
+  practice: "Look at the N1 grammar pattern above (んばかりに). Try to create three original sentences using it. This is a taste of the literary expressions you will encounter in N1.",
+  tip: "N1 builds on everything you have learned. Your solid N2 foundation — vocabulary, grammar, kanji, and reading skills — is the launchpad for N1 success. The journey continues: 千里の道も一歩から。"
+});
+
+// ═══════════════════════════════════════════════════════════════════════════
+// PHASE 28: N1 VOCABULARY (Days 1351-1470)
+// 120 days of advanced N1-level vocabulary
+// ═══════════════════════════════════════════════════════════════════════════
+
+curriculum.push({
+  day: 1351,
+  phaseNum: 28,
+  phaseName: "N1 Vocabulary",
+  week: Math.ceil(1351 / 7),
+  title: "Formal Adverbs I: Manner & Degree",
+  intro: "Today we study formal expression vocabulary essential for N1 reading comprehension.",
+  type: "vocab",
+  vocab: [["概ね","おおむね","generally, mostly"],["辛うじて","かろうじて","barely, narrowly"],["予め","あらかじめ","in advance, beforehand"],["敢えて","あえて","daringly, deliberately"],["一概に","いちがいに","unconditionally, sweepingly"],["生憎","あいにく","unfortunately, regrettably"],["折角","せっかく","with great effort, specially"],["専ら","もっぱら","exclusively, entirely"]],
+  chars: [],
+  grammar: {"pattern":"～を予め～する","meaning":"to do ~ in advance","example_jp":"問題を予め把握しておくことが肝要である。","example_en":"It is essential to grasp the problems in advance."},
+  practice: "Write three sentences using at least four of today's vocabulary items in context.",
+  tip: "Many N1 vocabulary items have kanji that hint at their meaning. Look for common radicals to aid memorization."
+});
+
+curriculum.push({
+  day: 1352,
+  phaseNum: 28,
+  phaseName: "N1 Vocabulary",
+  week: Math.ceil(1352 / 7),
+  title: "Formal Adverbs II: Frequency & Secrecy",
+  intro: "Continuing with formal expression terms, today's lesson builds your advanced vocabulary.",
+  type: "vocab",
+  vocab: [["頻りに","しきりに","frequently, incessantly"],["密かに","ひそかに","secretly, privately"],["悉く","ことごとく","entirely, without exception"],["漸く","ようやく","finally, at long last"],["偏に","ひとえに","solely, entirely"],["殊に","ことに","especially, particularly"],["強いて","しいて","forcibly, if pressed"],["概して","がいして","generally speaking, on the whole"]],
+  chars: [],
+  grammar: {"pattern":"～は概して～である","meaning":"~ is generally ~","example_jp":"日本の四季は概して穏やかである。","example_en":"Japan's four seasons are generally mild."},
+  practice: "Create a short paragraph on a related topic incorporating five of today's words.",
+  tip: "Reading newspapers regularly is one of the best ways to encounter these words in natural context."
+});
+
+curriculum.push({
+  day: 1353,
+  phaseNum: 28,
+  phaseName: "N1 Vocabulary",
+  week: Math.ceil(1353 / 7),
+  title: "Formal Adverbs III: Negation & Contrast",
+  intro: "Today's focus is formal expression — words you will encounter in formal texts and exams.",
+  type: "vocab",
+  vocab: [["到底","とうてい","(not) at all, utterly"],["断じて","だんじて","absolutely, decidedly"],["却って","かえって","on the contrary, rather"],["寧ろ","むしろ","rather, instead"],["徒に","いたずらに","in vain, uselessly"],["遂に","ついに","finally, at last"],["何卒","なにとぞ","please (formal request)"],["兎に角","とにかく","anyway, at any rate"]],
+  chars: [],
+  grammar: {"pattern":"到底～ない","meaning":"utterly impossible to ~","example_jp":"この問題は到底解決できない。","example_en":"This problem is utterly impossible to solve."},
+  practice: "For each vocabulary item, write one original example sentence in a formal register.",
+  tip: "Try to learn words in collocations rather than isolation — knowing which verbs pair with which nouns is crucial."
+});
+
+curriculum.push({
+  day: 1354,
+  phaseNum: 28,
+  phaseName: "N1 Vocabulary",
+  week: Math.ceil(1354 / 7),
+  title: "Formal Adverbs IV: Concession & Supposition",
+  intro: "We explore formal expression expressions that appear frequently in N1-level materials.",
+  type: "vocab",
+  vocab: [["仮令","たとえ","even if, supposing"],["尤も","もっとも","although, but then"],["即ち","すなわち","that is to say, namely"],["然も","しかも","moreover, furthermore"],["況して","まして","much less, let alone"],["所詮","しょせん","after all, in the end"],["飽くまで","あくまで","to the very end, stubbornly"],["畢竟","ひっきょう","after all, in the final analysis"]],
+  chars: [],
+  grammar: {"pattern":"仮令～ても","meaning":"even if ~","example_jp":"仮令困難があっても飽くまで挑戦する。","example_en":"Even if there are difficulties, I will persist to the very end."},
+  practice: "Compose a brief essay (80-100 characters) using as many of today's words as possible.",
+  tip: "At the N1 level, nuance matters more than raw vocabulary count. Pay attention to subtle differences."
+});
+
+curriculum.push({
+  day: 1355,
+  phaseNum: 28,
+  phaseName: "N1 Vocabulary",
+  week: Math.ceil(1355 / 7),
+  title: "Formal Conjunctions I: Transition & Extension",
+  intro: "Advanced formal conjunction vocabulary for today. These words are common in formal writing.",
+  type: "vocab",
+  vocab: [["翻って","ひるがえって","on the other hand, conversely"],["延いては","ひいては","and furthermore, by extension"],["但し","ただし","however, provided that"],["然し乍ら","しかしながら","nevertheless, however"],["其れ故","それゆえ","therefore, for that reason"],["就中","なかんずく","above all, especially"],["因みに","ちなみに","incidentally, by the way"],["尚","なお","furthermore, in addition"]],
+  chars: [],
+  grammar: {"pattern":"然し乍ら～","meaning":"nevertheless ~","example_jp":"計画は順調だった。然し乍ら、予期せぬ問題が発生した。","example_en":"The plan was going smoothly. Nevertheless, an unexpected problem arose."},
+  practice: "Match each word to its synonym or antonym from previous lessons, then write example sentences.",
+  tip: "Keep a vocabulary notebook organized by theme — it helps build semantic networks in your memory."
+});
+
+curriculum.push({
+  day: 1356,
+  phaseNum: 28,
+  phaseName: "N1 Vocabulary",
+  week: Math.ceil(1356 / 7),
+  title: "Formal Conjunctions II: Legal & Academic",
+  intro: "Today brings more formal conjunction terms to strengthen your N1 word power.",
+  type: "vocab",
+  vocab: [["或いは","あるいは","or, possibly"],["若しくは","もしくは","or (formal alternative)"],["及び","および","and, as well as"],["並びに","ならびに","and, as well as (formal)"],["又は","または","or, either"],["乃至","ないし","or, from...to"],["従って","したがって","therefore, consequently"],["斯くして","かくして","in this way, thus"]],
+  chars: [],
+  grammar: {"pattern":"及び / 並びに","meaning":"formal 'and' for listing (legal)","example_jp":"申請者及びその代理人は所定の書類を提出しなければならない。","example_en":"The applicant and their representative must submit the designated documents."},
+  practice: "Practice reading aloud each word and its example sentence, then write your own examples.",
+  tip: "Practice writing these words by hand. The physical act of writing reinforces kanji recognition."
+});
+
+curriculum.push({
+  day: 1357,
+  phaseNum: 28,
+  phaseName: "N1 Vocabulary",
+  week: Math.ceil(1357 / 7),
+  title: "Written Expressions I: Attitudes & Evaluation",
+  intro: "Expanding your written expression vocabulary with words vital for academic and formal contexts.",
+  type: "vocab",
+  vocab: [["潔い","いさぎよい","graceful in defeat, manly"],["疎い","うとい","unfamiliar with, ignorant of"],["甚だしい","はなはだしい","extreme, excessive"],["著しい","いちじるしい","remarkable, striking"],["目覚ましい","めざましい","spectacular, brilliant"],["逞しい","たくましい","sturdy, robust"],["忌まわしい","いまわしい","abominable, detestable"],["紛らわしい","まぎらわしい","confusing, misleading"]],
+  chars: [],
+  grammar: {"pattern":"著しく～する","meaning":"to remarkably ~","example_jp":"環境は著しく悪化した。","example_en":"The environment deteriorated remarkably."},
+  practice: "Use today's vocabulary to summarize a recent news article you have read.",
+  tip: "Listen to NHK news broadcasts to hear these words pronounced in natural speech patterns."
+});
+
+curriculum.push({
+  day: 1358,
+  phaseNum: 28,
+  phaseName: "N1 Vocabulary",
+  week: Math.ceil(1358 / 7),
+  title: "Written Expressions II: Formal Verbs of Action",
+  intro: "Today's written expression words will deepen your understanding of formal Japanese.",
+  type: "vocab",
+  vocab: [["促す","うながす","to urge, to prompt"],["覆す","くつがえす","to overturn, to reverse"],["培う","つちかう","to cultivate, to foster"],["携わる","たずさわる","to be involved in"],["赴く","おもむく","to go (formal), to proceed"],["躊躇う","ためらう","to hesitate, to waver"],["怠る","おこたる","to neglect, to be remiss"],["補う","おぎなう","to supplement, to compensate"]],
+  chars: [],
+  grammar: {"pattern":"～に携わる","meaning":"to be involved in ~","example_jp":"彼は長年教育に携わってきた。","example_en":"He has been involved in education for many years."},
+  practice: "Create flashcards for today's words and practice recall in both directions.",
+  tip: "Review previous lessons' vocabulary alongside today's to build connections between related terms."
+});
+
+curriculum.push({
+  day: 1359,
+  phaseNum: 28,
+  phaseName: "N1 Vocabulary",
+  week: Math.ceil(1359 / 7),
+  title: "Written Expressions III: Change & Development",
+  intro: "We continue building written expression vocabulary for advanced reading and listening.",
+  type: "vocab",
+  vocab: [["衰える","おとろえる","to decline, to weaken"],["滅びる","ほろびる","to perish, to be ruined"],["廃れる","すたれる","to fall into disuse"],["栄える","さかえる","to prosper, to flourish"],["潤う","うるおう","to be moistened, to profit"],["損なう","そこなう","to harm, to impair"],["募る","つのる","to grow intense, to recruit"],["兼ねる","かねる","to serve both as, to be unable to"]],
+  chars: [],
+  grammar: {"pattern":"～が衰える","meaning":"~ declines / weakens","example_jp":"かつて栄えた文明も遂に衰え、滅びた。","example_en":"Even the civilization that once flourished eventually declined and perished."},
+  practice: "Write a dialogue between two professionals using at least five of today's vocabulary items.",
+  tip: "Many of these words appear in JLPT N1 reading passages. Practice identifying them in longer texts."
+});
+
+curriculum.push({
+  day: 1360,
+  phaseNum: 28,
+  phaseName: "N1 Vocabulary",
+  week: Math.ceil(1360 / 7),
+  title: "Written Expressions IV: States & Conditions",
+  intro: "Today's lesson covers important written expression terms used in professional settings.",
+  type: "vocab",
+  vocab: [["過酷","かこく","harsh, severe"],["深刻","しんこく","serious, grave"],["膨大","ぼうだい","enormous, vast"],["稀有","けう","rare, extraordinary"],["脆弱","ぜいじゃく","fragile, vulnerable"],["緻密","ちみつ","meticulous, elaborate"],["杜撰","ずさん","sloppy, careless"],["的確","てきかく","precise, accurate"]],
+  chars: [],
+  grammar: {"pattern":"～な状況","meaning":"a ~ situation","example_jp":"深刻な人手不足が膨大な経済損失をもたらしている。","example_en":"The serious labor shortage is causing enormous economic losses."},
+  practice: "For each word, identify the context where it would most naturally appear (news, academic, legal, etc.).",
+  tip: "When learning formal vocabulary, always note the register — some words are only appropriate in writing."
+});
+
+curriculum.push({
+  day: 1361,
+  phaseNum: 28,
+  phaseName: "N1 Vocabulary",
+  week: Math.ceil(1361 / 7),
+  title: "Formal Evaluation & Judgment",
+  intro: "Today we study formal evaluation vocabulary essential for N1 reading comprehension.",
+  type: "vocab",
+  vocab: [["妥当","だとう","appropriate, valid"],["顕著","けんちょ","remarkable, conspicuous"],["厳密","げんみつ","strict, rigorous"],["曖昧","あいまい","vague, ambiguous"],["安易","あんい","easy-going, simplistic"],["不可欠","ふかけつ","indispensable, essential"],["喫緊","きっきん","urgent, pressing"],["抜本的","ばっぽんてき","fundamental, radical"]],
+  chars: [],
+  grammar: {"pattern":"～は不可欠である","meaning":"~ is indispensable","example_jp":"抜本的な改革が不可欠である。","example_en":"Fundamental reform is indispensable."},
+  practice: "Write three sentences using at least four of today's vocabulary items in context.",
+  tip: "Many N1 vocabulary items have kanji that hint at their meaning. Look for common radicals to aid memorization."
+});
+
+curriculum.push({
+  day: 1362,
+  phaseNum: 28,
+  phaseName: "N1 Vocabulary",
+  week: Math.ceil(1362 / 7),
+  title: "Reading: Formal Expressions in Context",
+  intro: "Today is a reading day. Apply the vocabulary you have learned in context through an extended passage.",
+  type: "reading",
+  vocab: [["施策","しさく","policy measure"],["弊害","へいがい","harmful effect"],["是正","ぜせい","correction, rectification"],["改革","かいかく","reform, revolution"],["実効性","じっこうせい","effectiveness"]],
+  chars: [],
+  grammar: {"pattern":"然し乍ら～","meaning":"nevertheless ~","example_jp":"然し乍ら、現行の制度には多くの弊害がある。","example_en":"Nevertheless, the current system has many harmful effects."},
+  practice: "Read the passage carefully. Answer the comprehension questions, then summarize the main argument in your own words.",
+  tip: "When reading formal Japanese, identify the connectives first — they reveal the logical structure of the argument.",
+  passage: {"text_jp":"我が国の教育制度は概ね良好に機能してきたとされるが、近年その弊害が顕著になりつつある。然し乍ら、改革の議論は徒に時間を費やすばかりで、抜本的な施策には到底至っていない。殊に深刻なのは、画一的な教育が個々の能力を損なっている点である。翻って諸外国の取り組みを見ると、個別最適化された学習環境が目覚ましい成果を上げている。尤も、外国の制度をそのまま導入することは安易に過ぎよう。我が国の文化的背景を踏まえた緻密な制度設計が不可欠である。畢竟、教育改革とは即ち次世代への投資にほかならない。","text_en":"Japan's education system is said to have generally functioned well, but in recent years its harmful effects have become conspicuous. Nevertheless, reform discussions have merely wasted time in vain and have utterly failed to reach fundamental policy measures. Especially serious is the point that uniform education is impairing individual abilities. On the other hand, looking at efforts in other countries, individually optimized learning environments are achieving spectacular results. However, it would be simplistic to adopt foreign systems as they are. Meticulous system design that accounts for our cultural background is indispensable. In the final analysis, education reform is nothing other than investment in the next generation.","questions":[{"question_jp":"筆者は現行の教育制度の最大の問題点は何だと述べていますか。","question_en":"What does the author state is the biggest problem with the current system?","answer":"画一的な教育が個々の能力を損なっていること"}]}
+});
+
+curriculum.push({
+  day: 1363,
+  phaseNum: 28,
+  phaseName: "N1 Vocabulary",
+  week: Math.ceil(1363 / 7),
+  title: "Academic Vocabulary I: Research Fundamentals",
+  intro: "Today's focus is academic research — words you will encounter in formal texts and exams.",
+  type: "vocab",
+  vocab: [["論文","ろんぶん","thesis, academic paper"],["仮説","かせつ","hypothesis"],["検証","けんしょう","verification, testing"],["分析","ぶんせき","analysis"],["統計","とうけい","statistics"],["実証","じっしょう","empirical proof"],["理論","りろん","theory"],["文献","ぶんけん","literature, references"]],
+  chars: [],
+  grammar: {"pattern":"仮説を検証する","meaning":"to verify a hypothesis","example_jp":"統計的手法により仮説の検証を行った。","example_en":"We conducted verification of the hypothesis using statistical methods."},
+  practice: "For each vocabulary item, write one original example sentence in a formal register.",
+  tip: "Try to learn words in collocations rather than isolation — knowing which verbs pair with which nouns is crucial."
+});
+
+curriculum.push({
+  day: 1364,
+  phaseNum: 28,
+  phaseName: "N1 Vocabulary",
+  week: Math.ceil(1364 / 7),
+  title: "Academic Vocabulary II: Logic & Reasoning",
+  intro: "We explore academic logic expressions that appear frequently in N1-level materials.",
+  type: "vocab",
+  vocab: [["演繹","えんえき","deduction"],["帰納","きのう","induction"],["前提","ぜんてい","premise, precondition"],["命題","めいだい","proposition, thesis"],["結論","けつろん","conclusion"],["根拠","こんきょ","basis, grounds"],["推論","すいろん","inference, reasoning"],["矛盾","むじゅん","contradiction"]],
+  chars: [],
+  grammar: {"pattern":"～を前提として","meaning":"on the premise of ~","example_jp":"この命題を前提として演繹的に推論する。","example_en":"We reason deductively from this proposition as a premise."},
+  practice: "Compose a brief essay (80-100 characters) using as many of today's words as possible.",
+  tip: "At the N1 level, nuance matters more than raw vocabulary count. Pay attention to subtle differences."
+});
+
+curriculum.push({
+  day: 1365,
+  phaseNum: 28,
+  phaseName: "N1 Vocabulary",
+  week: Math.ceil(1365 / 7),
+  title: "Academic Vocabulary III: Research Process",
+  intro: "Advanced academic research vocabulary for today. These words are common in formal writing.",
+  type: "vocab",
+  vocab: [["考察","こうさつ","consideration, discussion"],["概要","がいよう","summary, outline"],["調査","ちょうさ","investigation, survey"],["観察","かんさつ","observation"],["実験","じっけん","experiment"],["手法","しゅほう","technique, method"],["知見","ちけん","finding, insight"],["妥当性","だとうせい","validity"]],
+  chars: [],
+  grammar: {"pattern":"～に基づく考察","meaning":"discussion based on ~","example_jp":"実験結果に基づく考察を行った。","example_en":"We conducted a discussion based on experimental results."},
+  practice: "Match each word to its synonym or antonym from previous lessons, then write example sentences.",
+  tip: "Keep a vocabulary notebook organized by theme — it helps build semantic networks in your memory."
+});
+
+curriculum.push({
+  day: 1366,
+  phaseNum: 28,
+  phaseName: "N1 Vocabulary",
+  week: Math.ceil(1366 / 7),
+  title: "Academic Vocabulary IV: Theories & Debate",
+  intro: "Today brings more academic theory terms to strengthen your N1 word power.",
+  type: "vocab",
+  vocab: [["学説","がくせつ","academic theory"],["定説","ていせつ","established theory"],["通説","つうせつ","prevailing view"],["異論","いろん","objection, dissent"],["反論","はんろん","counterargument"],["批判","ひはん","criticism, critique"],["見解","けんかい","opinion, view"],["論争","ろんそう","controversy, debate"]],
+  chars: [],
+  grammar: {"pattern":"～に対する反論","meaning":"counterargument against ~","example_jp":"通説に対する異論が提出され、激しい論争が展開された。","example_en":"Objections to the prevailing view were presented and an intense debate unfolded."},
+  practice: "Practice reading aloud each word and its example sentence, then write your own examples.",
+  tip: "Practice writing these words by hand. The physical act of writing reinforces kanji recognition."
+});
+
+curriculum.push({
+  day: 1367,
+  phaseNum: 28,
+  phaseName: "N1 Vocabulary",
+  week: Math.ceil(1367 / 7),
+  title: "Academic Vocabulary V: Data & Evidence",
+  intro: "Expanding your academic data vocabulary with words vital for academic and formal contexts.",
+  type: "vocab",
+  vocab: [["数値","すうち","numerical value"],["指標","しひょう","indicator, index"],["傾向","けいこう","tendency, trend"],["相関","そうかん","correlation"],["偏差","へんさ","deviation, variance"],["標本","ひょうほん","sample, specimen"],["変数","へんすう","variable"],["有意","ゆうい","significant (statistical)"]],
+  chars: [],
+  grammar: {"pattern":"有意な相関が認められる","meaning":"a significant correlation is found","example_jp":"二つの変数の間に有意な相関が認められた。","example_en":"A significant correlation was found between the two variables."},
+  practice: "Use today's vocabulary to summarize a recent news article you have read.",
+  tip: "Listen to NHK news broadcasts to hear these words pronounced in natural speech patterns."
+});
+
+curriculum.push({
+  day: 1368,
+  phaseNum: 28,
+  phaseName: "N1 Vocabulary",
+  week: Math.ceil(1368 / 7),
+  title: "Academic Vocabulary VI: Publication",
+  intro: "Today's academic publication words will deepen your understanding of formal Japanese.",
+  type: "vocab",
+  vocab: [["掲載","けいさい","publication, printing"],["査読","さどく","peer review"],["引用","いんよう","citation, quotation"],["抄録","しょうろく","abstract, summary"],["紀要","きよう","bulletin, proceedings"],["寄稿","きこう","contribution (article)"],["刊行","かんこう","publication, issue"],["著述","ちょじゅつ","writing, literary work"]],
+  chars: [],
+  grammar: {"pattern":"～に掲載される","meaning":"to be published in ~","example_jp":"査読を経て国際誌に掲載された。","example_en":"It was published in an international journal after peer review."},
+  practice: "Create flashcards for today's words and practice recall in both directions.",
+  tip: "Review previous lessons' vocabulary alongside today's to build connections between related terms."
+});
+
+curriculum.push({
+  day: 1369,
+  phaseNum: 28,
+  phaseName: "N1 Vocabulary",
+  week: Math.ceil(1369 / 7),
+  title: "Academic Vocabulary VII: Methodology",
+  intro: "We continue building academic methodology vocabulary for advanced reading and listening.",
+  type: "vocab",
+  vocab: [["枠組み","わくぐみ","framework, structure"],["範疇","はんちゅう","category, scope"],["体系","たいけい","system, systematic structure"],["尺度","しゃくど","scale, measure"],["網羅","もうら","comprehensive coverage"],["精査","せいさ","close examination"],["裏付け","うらづけ","substantiation"],["整合性","せいごうせい","consistency, coherence"]],
+  chars: [],
+  grammar: {"pattern":"～の整合性を確認する","meaning":"to confirm the consistency of ~","example_jp":"データとの整合性を確認した。","example_en":"We confirmed consistency with the data."},
+  practice: "Write a dialogue between two professionals using at least five of today's vocabulary items.",
+  tip: "Many of these words appear in JLPT N1 reading passages. Practice identifying them in longer texts."
+});
+
+curriculum.push({
+  day: 1370,
+  phaseNum: 28,
+  phaseName: "N1 Vocabulary",
+  week: Math.ceil(1370 / 7),
+  title: "Academic Vocabulary VIII: Impact & Application",
+  intro: "Today's lesson covers important academic impact terms used in professional settings.",
+  type: "vocab",
+  vocab: [["応用","おうよう","application, applied use"],["貢献","こうけん","contribution"],["波及","はきゅう","spread, ripple effect"],["汎用","はんよう","general-purpose"],["革新","かくしん","innovation"],["示唆","しさ","suggestion, implication"],["展望","てんぼう","outlook, prospect"],["意義","いぎ","significance, meaning"]],
+  chars: [],
+  grammar: {"pattern":"～を示唆する","meaning":"to suggest / imply ~","example_jp":"本研究の知見は新たな治療法の開発を示唆している。","example_en":"The findings of this study suggest the development of new treatments."},
+  practice: "For each word, identify the context where it would most naturally appear (news, academic, legal, etc.).",
+  tip: "When learning formal vocabulary, always note the register — some words are only appropriate in writing."
+});
+
+curriculum.push({
+  day: 1371,
+  phaseNum: 28,
+  phaseName: "N1 Vocabulary",
+  week: Math.ceil(1371 / 7),
+  title: "Academic Vocabulary IX: Evaluation Terms",
+  intro: "Today we study academic evaluation vocabulary essential for N1 reading comprehension.",
+  type: "vocab",
+  vocab: [["客観的","きゃっかんてき","objective"],["主観的","しゅかんてき","subjective"],["定量的","ていりょうてき","quantitative"],["定性的","ていせいてき","qualitative"],["先行研究","せんこうけんきゅう","prior research"],["追試","ついし","replication study"],["再現性","さいげんせい","reproducibility"],["信頼性","しんらいせい","reliability"]],
+  chars: [],
+  grammar: {"pattern":"客観的に～を評価する","meaning":"to evaluate ~ objectively","example_jp":"先行研究の信頼性を客観的に評価する必要がある。","example_en":"It is necessary to objectively evaluate the reliability of prior research."},
+  practice: "Write three sentences using at least four of today's vocabulary items in context.",
+  tip: "Many N1 vocabulary items have kanji that hint at their meaning. Look for common radicals to aid memorization."
+});
+
+curriculum.push({
+  day: 1372,
+  phaseNum: 28,
+  phaseName: "N1 Vocabulary",
+  week: Math.ceil(1372 / 7),
+  title: "Academic Vocabulary X: Discourse & Argumentation",
+  intro: "Continuing with academic discourse terms, today's lesson builds your advanced vocabulary.",
+  type: "vocab",
+  vocab: [["言及","げんきゅう","reference, mention"],["論及","ろんきゅう","discussion of"],["敷衍","ふえん","elaboration, amplification"],["要約","ようやく","summary, abstract"],["帰結","きけつ","conclusion, consequence"],["蓋然性","がいぜんせい","probability, likelihood"],["自明","じめい","self-evident"],["普遍的","ふへんてき","universal"]],
+  chars: [],
+  grammar: {"pattern":"～に言及する","meaning":"to refer to / mention ~","example_jp":"筆者は先行研究の限界に言及している。","example_en":"The author refers to the limitations of prior research."},
+  practice: "Create a short paragraph on a related topic incorporating five of today's words.",
+  tip: "Reading newspapers regularly is one of the best ways to encounter these words in natural context."
+});
+
+curriculum.push({
+  day: 1373,
+  phaseNum: 28,
+  phaseName: "N1 Vocabulary",
+  week: Math.ceil(1373 / 7),
+  title: "Reading: Academic Research in Context",
+  intro: "Today is a reading day. Apply the vocabulary you have learned in context through an extended passage.",
+  type: "reading",
+  vocab: [["研究成果","けんきゅうせいか","research results"],["学術","がくじゅつ","academic, scholarly"],["検討","けんとう","examination"],["論拠","ろんきょ","grounds for argument"],["帰着","きちゃく","conclusion, result"]],
+  chars: [],
+  grammar: {"pattern":"～という結論に帰着する","meaning":"to arrive at the conclusion that ~","example_jp":"検証の結果、当初の仮説を支持するという結論に帰着した。","example_en":"As a result of verification, we arrived at the conclusion that supports the initial hypothesis."},
+  practice: "Read the passage carefully. Answer the comprehension questions, then summarize the main argument in your own words.",
+  tip: "When reading formal Japanese, identify the connectives first — they reveal the logical structure of the argument.",
+  passage: {"text_jp":"学術研究における仮説の検証は、科学的知識の蓄積において不可欠な過程である。研究者はまず先行文献を精査し、既存の学説との整合性を確認した上で独自の命題を提示する。次に、定量的あるいは定性的な手法を用いてデータを収集し、統計的に分析する。その結果に基づく考察を経て、仮説の妥当性が判断される。無論、一つの研究で普遍的な結論を導くことは到底不可能であり、追試による再現性の確認が求められる。畢竟、学問とは個々の知見の積み重ねによって漸く前進するものである。","text_en":"Verification of hypotheses in academic research is an indispensable process in the accumulation of scientific knowledge. Researchers first scrutinize prior literature, confirm consistency with existing theories, and then present their own propositions. Next, they collect data using quantitative or qualitative methods and analyze it statistically. Through discussion based on those results, the validity of the hypothesis is judged. Naturally, it is utterly impossible to derive universal conclusions from a single study, and confirmation of reproducibility through replication is required. In the final analysis, scholarship advances only gradually through the accumulation of individual findings.","questions":[{"question_jp":"学術研究において追試が必要とされる理由は何ですか。","question_en":"Why are replication studies necessary in academic research?","answer":"一つの研究で普遍的な結論を導くことは不可能であり、再現性の確認が必要だから"}]}
+});
+
+curriculum.push({
+  day: 1374,
+  phaseNum: 28,
+  phaseName: "N1 Vocabulary",
+  week: Math.ceil(1374 / 7),
+  title: "Legal Vocabulary I: Courts & Trials",
+  intro: "We explore legal expressions that appear frequently in N1-level materials.",
+  type: "vocab",
+  vocab: [["条例","じょうれい","ordinance, bylaw"],["施行","しこう","enforcement, implementation"],["審議","しんぎ","deliberation"],["判決","はんけつ","verdict, judgment"],["法令","ほうれい","law, regulation"],["訴訟","そしょう","lawsuit, litigation"],["弁護","べんご","defense (legal)"],["裁判","さいばん","trial, court case"]],
+  chars: [],
+  grammar: {"pattern":"法令を施行する","meaning":"to enforce a law","example_jp":"新たな条例が来月施行される。","example_en":"The new ordinance will be enforced next month."},
+  practice: "Compose a brief essay (80-100 characters) using as many of today's words as possible.",
+  tip: "At the N1 level, nuance matters more than raw vocabulary count. Pay attention to subtle differences."
+});
+
+curriculum.push({
+  day: 1375,
+  phaseNum: 28,
+  phaseName: "N1 Vocabulary",
+  week: Math.ceil(1375 / 7),
+  title: "Legal Vocabulary II: Parties & Procedures",
+  intro: "Advanced legal vocabulary for today. These words are common in formal writing.",
+  type: "vocab",
+  vocab: [["被告","ひこく","defendant"],["原告","げんこく","plaintiff"],["控訴","こうそ","appeal"],["違憲","いけん","unconstitutional"],["憲法","けんぽう","constitution"],["立法","りっぽう","legislation"],["行政","ぎょうせい","administration"],["司法","しほう","judiciary"]],
+  chars: [],
+  grammar: {"pattern":"～は違憲である","meaning":"~ is unconstitutional","example_jp":"最高裁はその法律を違憲と判断した。","example_en":"The Supreme Court ruled that law unconstitutional."},
+  practice: "Match each word to its synonym or antonym from previous lessons, then write example sentences.",
+  tip: "Keep a vocabulary notebook organized by theme — it helps build semantic networks in your memory."
+});
+
+curriculum.push({
+  day: 1376,
+  phaseNum: 28,
+  phaseName: "N1 Vocabulary",
+  week: Math.ceil(1376 / 7),
+  title: "Legal Vocabulary III: Criminal Law",
+  intro: "Today brings more legal terms to strengthen your N1 word power.",
+  type: "vocab",
+  vocab: [["起訴","きそ","indictment, prosecution"],["黙秘","もくひ","silence, right to remain silent"],["証拠","しょうこ","evidence, proof"],["判例","はんれい","judicial precedent"],["刑罰","けいばつ","punishment, penalty"],["量刑","りょうけい","sentencing"],["無罪","むざい","not guilty, innocent"],["有罪","ゆうざい","guilty"]],
+  chars: [],
+  grammar: {"pattern":"証拠に基づいて判決を下す","meaning":"to render a verdict based on evidence","example_jp":"裁判官は証拠に基づいて有罪の判決を下した。","example_en":"The judge rendered a guilty verdict based on the evidence."},
+  practice: "Practice reading aloud each word and its example sentence, then write your own examples.",
+  tip: "Practice writing these words by hand. The physical act of writing reinforces kanji recognition."
+});
+
+curriculum.push({
+  day: 1377,
+  phaseNum: 28,
+  phaseName: "N1 Vocabulary",
+  week: Math.ceil(1377 / 7),
+  title: "Legal Vocabulary IV: Governance & Policy",
+  intro: "Expanding your legal vocabulary with words vital for academic and formal contexts.",
+  type: "vocab",
+  vocab: [["規制","きせい","regulation, restriction"],["緩和","かんわ","relaxation, easing"],["措置","そち","measure, step"],["勧告","かんこく","recommendation, advisory"],["答申","とうしん","report, recommendation"],["諮問","しもん","consultation, inquiry"],["公布","こうふ","promulgation"],["改正","かいせい","amendment, revision"]],
+  chars: [],
+  grammar: {"pattern":"規制を緩和する","meaning":"to ease regulations","example_jp":"政府は段階的に規制を緩和する措置を講じた。","example_en":"The government took measures to gradually ease regulations."},
+  practice: "Use today's vocabulary to summarize a recent news article you have read.",
+  tip: "Listen to NHK news broadcasts to hear these words pronounced in natural speech patterns."
+});
+
+curriculum.push({
+  day: 1378,
+  phaseNum: 28,
+  phaseName: "N1 Vocabulary",
+  week: Math.ceil(1378 / 7),
+  title: "Legal Vocabulary V: Rights & Obligations",
+  intro: "Today's legal words will deepen your understanding of formal Japanese.",
+  type: "vocab",
+  vocab: [["権利","けんり","right, privilege"],["義務","ぎむ","duty, obligation"],["侵害","しんがい","infringement, violation"],["保障","ほしょう","guarantee, security"],["賠償","ばいしょう","compensation, reparation"],["遵守","じゅんしゅ","compliance, observance"],["免責","めんせき","exemption from liability"],["準拠","じゅんきょ","conformity, compliance"]],
+  chars: [],
+  grammar: {"pattern":"～を遵守する","meaning":"to comply with ~","example_jp":"全ての関係者は法令を遵守する義務がある。","example_en":"All parties have an obligation to comply with laws and regulations."},
+  practice: "Create flashcards for today's words and practice recall in both directions.",
+  tip: "Review previous lessons' vocabulary alongside today's to build connections between related terms."
+});
+
+curriculum.push({
+  day: 1379,
+  phaseNum: 28,
+  phaseName: "N1 Vocabulary",
+  week: Math.ceil(1379 / 7),
+  title: "Legal Vocabulary VI: Contracts & Agreements",
+  intro: "We continue building legal vocabulary for advanced reading and listening.",
+  type: "vocab",
+  vocab: [["締結","ていけつ","conclusion (of treaty/contract)"],["履行","りこう","fulfillment, performance"],["違反","いはん","violation, breach"],["紛争","ふんそう","dispute, conflict"],["仲裁","ちゅうさい","arbitration"],["和解","わかい","settlement, reconciliation"],["管轄","かんかつ","jurisdiction"],["効力","こうりょく","validity, effect"]],
+  chars: [],
+  grammar: {"pattern":"契約を締結する","meaning":"to conclude a contract","example_jp":"両国は平和条約を締結した。","example_en":"Both countries concluded a peace treaty."},
+  practice: "Write a dialogue between two professionals using at least five of today's vocabulary items.",
+  tip: "Many of these words appear in JLPT N1 reading passages. Practice identifying them in longer texts."
+});
+
+curriculum.push({
+  day: 1380,
+  phaseNum: 28,
+  phaseName: "N1 Vocabulary",
+  week: Math.ceil(1380 / 7),
+  title: "Reading: A Legal Commentary",
+  intro: "Today is a reading day. Apply the vocabulary you have learned in context through an extended passage.",
+  type: "reading",
+  vocab: [["裁量","さいりょう","discretion"],["判断","はんだん","judgment, decision"],["適用","てきよう","application (of law)"],["解釈","かいしゃく","interpretation"],["妥結","だけつ","settlement, agreement"]],
+  chars: [],
+  grammar: {"pattern":"～の解釈を巡って","meaning":"concerning the interpretation of ~","example_jp":"憲法の解釈を巡って長年の論争が続いている。","example_en":"A long-standing debate continues concerning the interpretation of the constitution."},
+  practice: "Read the passage carefully. Answer the comprehension questions, then summarize the main argument in your own words.",
+  tip: "When reading formal Japanese, identify the connectives first — they reveal the logical structure of the argument.",
+  passage: {"text_jp":"近年、個人情報保護法の改正を巡る議論が活発化している。デジタル社会の急速な発展に伴い、従来の法令では想定されていなかった事態が頻発しているためである。殊に問題となっているのは、人工知能による個人データの処理と、その結果に基づく自動的な意思決定である。現行法の解釈のみでは到底対応しきれず、抜本的な法改正が不可欠とされている。然し乍ら、規制を過度に強化すれば技術革新を阻害する恐れがあり、権利の保障と産業の発展との均衡を如何に図るかが喫緊の課題となっている。","text_en":"In recent years, debate surrounding the revision of the Personal Information Protection Act has intensified. This is because the rapid development of digital society has led to frequent situations not anticipated by conventional laws. Particularly problematic is the processing of personal data by artificial intelligence and automatic decision-making based on its results. Interpretation of current law alone is utterly insufficient, and fundamental legal revision is considered indispensable. Nevertheless, if regulations are strengthened excessively, there is a risk of impeding technological innovation, and how to balance the guarantee of rights with industrial development has become an urgent issue.","questions":[{"question_jp":"個人情報保護法の改正が求められている主な理由は何ですか。","question_en":"What is the main reason revision of the Personal Information Protection Act is needed?","answer":"デジタル社会の発展によりAIによるデータ処理など従来の法令で想定されていなかった事態が頻発しているため"}]}
+});
+
+curriculum.push({
+  day: 1381,
+  phaseNum: 28,
+  phaseName: "N1 Vocabulary",
+  week: Math.ceil(1381 / 7),
+  title: "Economics I: Macroeconomic Terms",
+  intro: "Today we study economics vocabulary essential for N1 reading comprehension.",
+  type: "vocab",
+  vocab: [["景気","けいき","economic conditions"],["不況","ふきょう","recession, depression"],["為替","かわせ","exchange rate"],["物価","ぶっか","prices, cost of living"],["株価","かぶか","stock price"],["融資","ゆうし","financing, loan"],["赤字","あかじ","deficit, red ink"],["黒字","くろじ","surplus, in the black"]],
+  chars: [],
+  grammar: {"pattern":"景気が回復する","meaning":"the economy recovers","example_jp":"長引く不況の後、景気が漸く回復し始めた。","example_en":"After a prolonged recession, the economy finally began to recover."},
+  practice: "Write three sentences using at least four of today's vocabulary items in context.",
+  tip: "Many N1 vocabulary items have kanji that hint at their meaning. Look for common radicals to aid memorization."
+});
+
+curriculum.push({
+  day: 1382,
+  phaseNum: 28,
+  phaseName: "N1 Vocabulary",
+  week: Math.ceil(1382 / 7),
+  title: "Economics II: Public Finance",
+  intro: "Continuing with economics terms, today's lesson builds your advanced vocabulary.",
+  type: "vocab",
+  vocab: [["収支","しゅうし","income and expenditure"],["予算","よさん","budget"],["歳入","さいにゅう","annual revenue"],["財政","ざいせい","public finance"],["歳出","さいしゅつ","annual expenditure"],["国債","こくさい","government bond"],["税収","ぜいしゅう","tax revenue"],["財源","ざいげん","financial resources"]],
+  chars: [],
+  grammar: {"pattern":"財政を健全化する","meaning":"to restore fiscal health","example_jp":"歳出削減と税収増加により財政の健全化を図る。","example_en":"We aim to restore fiscal health through spending cuts and increased tax revenue."},
+  practice: "Create a short paragraph on a related topic incorporating five of today's words.",
+  tip: "Reading newspapers regularly is one of the best ways to encounter these words in natural context."
+});
+
+curriculum.push({
+  day: 1383,
+  phaseNum: 28,
+  phaseName: "N1 Vocabulary",
+  week: Math.ceil(1383 / 7),
+  title: "Economics III: Markets & Trade",
+  intro: "Today's focus is economics — words you will encounter in formal texts and exams.",
+  type: "vocab",
+  vocab: [["需要","じゅよう","demand"],["供給","きょうきゅう","supply"],["市場","しじょう","market"],["規制緩和","きせいかんわ","deregulation"],["民営化","みんえいか","privatization"],["利率","りりつ","interest rate"],["資産","しさん","assets"],["負債","ふさい","liabilities"]],
+  chars: [],
+  grammar: {"pattern":"需要と供給のバランス","meaning":"the balance of supply and demand","example_jp":"市場において需要と供給のバランスが崩れた。","example_en":"The balance of supply and demand in the market collapsed."},
+  practice: "For each vocabulary item, write one original example sentence in a formal register.",
+  tip: "Try to learn words in collocations rather than isolation — knowing which verbs pair with which nouns is crucial."
+});
+
+curriculum.push({
+  day: 1384,
+  phaseNum: 28,
+  phaseName: "N1 Vocabulary",
+  week: Math.ceil(1384 / 7),
+  title: "Economics IV: Business & Investment",
+  intro: "We explore economics expressions that appear frequently in N1-level materials.",
+  type: "vocab",
+  vocab: [["配当","はいとう","dividend"],["出資","しゅっし","investment, contribution"],["合併","がっぺい","merger"],["買収","ばいしゅう","acquisition, buyout"],["破綻","はたん","bankruptcy, collapse"],["倒産","とうさん","business failure"],["債権","さいけん","credit, claim"],["債務","さいむ","debt, obligation"]],
+  chars: [],
+  grammar: {"pattern":"～が破綻する","meaning":"~ goes bankrupt / collapses","example_jp":"過度な債務により大手企業が破綻した。","example_en":"A major corporation went bankrupt due to excessive debt."},
+  practice: "Compose a brief essay (80-100 characters) using as many of today's words as possible.",
+  tip: "At the N1 level, nuance matters more than raw vocabulary count. Pay attention to subtle differences."
+});
+
+curriculum.push({
+  day: 1385,
+  phaseNum: 28,
+  phaseName: "N1 Vocabulary",
+  week: Math.ceil(1385 / 7),
+  title: "Economics V: Economic Policy",
+  intro: "Advanced economics vocabulary for today. These words are common in formal writing.",
+  type: "vocab",
+  vocab: [["金融政策","きんゆうせいさく","monetary policy"],["財政政策","ざいせいせいさく","fiscal policy"],["公共事業","こうきょうじぎょう","public works"],["補助金","ほじょきん","subsidy, grant"],["関税","かんぜい","tariff, customs duty"],["貿易","ぼうえき","trade, commerce"],["輸出","ゆしゅつ","export"],["輸入","ゆにゅう","import"]],
+  chars: [],
+  grammar: {"pattern":"金融政策を講じる","meaning":"to implement monetary policy","example_jp":"中央銀行は景気刺激のため金融政策を講じた。","example_en":"The central bank implemented monetary policy to stimulate the economy."},
+  practice: "Match each word to its synonym or antonym from previous lessons, then write example sentences.",
+  tip: "Keep a vocabulary notebook organized by theme — it helps build semantic networks in your memory."
+});
+
+curriculum.push({
+  day: 1386,
+  phaseNum: 28,
+  phaseName: "N1 Vocabulary",
+  week: Math.ceil(1386 / 7),
+  title: "Economics VI: Economic Indicators",
+  intro: "Today brings more economics terms to strengthen your N1 word power.",
+  type: "vocab",
+  vocab: [["GDP","じーでぃーぴー","gross domestic product"],["失業率","しつぎょうりつ","unemployment rate"],["消費者物価指数","しょうひしゃぶっかしすう","consumer price index"],["経常収支","けいじょうしゅうし","current account balance"],["成長率","せいちょうりつ","growth rate"],["インフレ","いんふれ","inflation"],["デフレ","でふれ","deflation"],["景気循環","けいきじゅんかん","business cycle"]],
+  chars: [],
+  grammar: {"pattern":"～が上昇する / 下落する","meaning":"~ rises / falls","example_jp":"消費者物価指数が三ヶ月連続で上昇した。","example_en":"The consumer price index rose for three consecutive months."},
+  practice: "Practice reading aloud each word and its example sentence, then write your own examples.",
+  tip: "Practice writing these words by hand. The physical act of writing reinforces kanji recognition."
+});
+
+curriculum.push({
+  day: 1387,
+  phaseNum: 28,
+  phaseName: "N1 Vocabulary",
+  week: Math.ceil(1387 / 7),
+  title: "Reading: Economic Analysis",
+  intro: "Today is a reading day. Apply the vocabulary you have learned in context through an extended passage.",
+  type: "reading",
+  vocab: [["動向","どうこう","trend, movement"],["見通し","みとおし","outlook, forecast"],["低迷","ていめい","stagnation"],["回復基調","かいふくきちょう","recovery trend"],["懸念","けねん","concern, apprehension"]],
+  chars: [],
+  grammar: {"pattern":"～が懸念される","meaning":"~ is a concern","example_jp":"景気の先行きに対する懸念が高まっている。","example_en":"Concern about the economic outlook is growing."},
+  practice: "Read the passage carefully. Answer the comprehension questions, then summarize the main argument in your own words.",
+  tip: "When reading formal Japanese, identify the connectives first — they reveal the logical structure of the argument.",
+  passage: {"text_jp":"世界経済の動向を概観すると、先進国においては概ね回復基調にあるものの、新興国の成長率は著しく鈍化している。殊に懸念されるのは、資源価格の変動がもたらす影響である。原油価格の急落は輸出国の財政を圧迫する一方、輸入国には恩恵をもたらしている。然し乍ら、この恩恵は一時的なものに過ぎず、構造的な課題の解決には到底至らない。各国は金融政策と財政政策の適切な組み合わせにより、持続可能な成長の実現を目指すべきである。畢竟、グローバル経済の安定は各国の協調なくして達成し得ない。","text_en":"Surveying trends in the global economy, while advanced nations are generally on a recovery trend, the growth rate of emerging nations has slowed remarkably. Of particular concern is the impact of resource price fluctuations. While the sharp drop in oil prices puts pressure on the finances of exporting countries, it benefits importing countries. However, this benefit is merely temporary and utterly fails to resolve structural issues. Each country should aim to achieve sustainable growth through an appropriate combination of monetary and fiscal policy. In the final analysis, stability of the global economy cannot be achieved without international cooperation.","questions":[{"question_jp":"新興国経済について筆者はどのような見方を示していますか。","question_en":"What view does the author present about emerging economies?","answer":"成長率が著しく鈍化しており、資源価格変動の影響が懸念される"}]}
+});
+
+curriculum.push({
+  day: 1388,
+  phaseNum: 28,
+  phaseName: "N1 Vocabulary",
+  week: Math.ceil(1388 / 7),
+  title: "Philosophy I: Core Concepts",
+  intro: "Today's philosophy words will deepen your understanding of formal Japanese.",
+  type: "vocab",
+  vocab: [["概念","がいねん","concept"],["本質","ほんしつ","essence, true nature"],["普遍","ふへん","universal"],["抽象","ちゅうしょう","abstract"],["具象","ぐしょう","concrete, tangible"],["認識","にんしき","cognition, recognition"],["存在","そんざい","existence"],["意識","いしき","consciousness"]],
+  chars: [],
+  grammar: {"pattern":"～の本質を問う","meaning":"to question the essence of ~","example_jp":"哲学とは存在の本質を問う学問である。","example_en":"Philosophy is the discipline that questions the essence of existence."},
+  practice: "Create flashcards for today's words and practice recall in both directions.",
+  tip: "Review previous lessons' vocabulary alongside today's to build connections between related terms."
+});
+
+curriculum.push({
+  day: 1389,
+  phaseNum: 28,
+  phaseName: "N1 Vocabulary",
+  week: Math.ceil(1389 / 7),
+  title: "Philosophy II: Logic & Dialectics",
+  intro: "We continue building philosophy vocabulary for advanced reading and listening.",
+  type: "vocab",
+  vocab: [["弁証法","べんしょうほう","dialectics"],["形而上学","けいじじょうがく","metaphysics"],["存在論","そんざいろん","ontology"],["認識論","にんしきろん","epistemology"],["倫理","りんり","ethics"],["道徳","どうとく","morality"],["合理","ごうり","rationality"],["二律背反","にりつはいはん","antinomy"]],
+  chars: [],
+  grammar: {"pattern":"弁証法的に～を捉える","meaning":"to grasp ~ dialectically","example_jp":"矛盾を弁証法的に捉えることで新たな認識が生まれる。","example_en":"New understanding is born by grasping contradictions dialectically."},
+  practice: "Write a dialogue between two professionals using at least five of today's vocabulary items.",
+  tip: "Many of these words appear in JLPT N1 reading passages. Practice identifying them in longer texts."
+});
+
+curriculum.push({
+  day: 1390,
+  phaseNum: 28,
+  phaseName: "N1 Vocabulary",
+  week: Math.ceil(1390 / 7),
+  title: "Philosophy III: Subject & Object",
+  intro: "Today's lesson covers important philosophy terms used in professional settings.",
+  type: "vocab",
+  vocab: [["主体","しゅたい","subject, agent"],["客体","きゃくたい","object"],["実存","じつぞん","existence (existential)"],["虚無","きょむ","nihility, nothingness"],["相対","そうたい","relative"],["絶対","ぜったい","absolute"],["超越","ちょうえつ","transcendence"],["内在","ないざい","immanence"]],
+  chars: [],
+  grammar: {"pattern":"主体と客体の関係","meaning":"the relationship between subject and object","example_jp":"認識論は主体と客体の関係を考察する。","example_en":"Epistemology examines the relationship between subject and object."},
+  practice: "For each word, identify the context where it would most naturally appear (news, academic, legal, etc.).",
+  tip: "When learning formal vocabulary, always note the register — some words are only appropriate in writing."
+});
+
+curriculum.push({
+  day: 1391,
+  phaseNum: 28,
+  phaseName: "N1 Vocabulary",
+  week: Math.ceil(1391 / 7),
+  title: "Philosophy IV: Values & Ethics",
+  intro: "Today we study philosophy vocabulary essential for N1 reading comprehension.",
+  type: "vocab",
+  vocab: [["善","ぜん","good, virtue"],["悪","あく","evil, vice"],["正義","せいぎ","justice"],["公正","こうせい","fairness, impartiality"],["自律","じりつ","autonomy"],["他律","たりつ","heteronomy"],["功利","こうり","utility, utilitarianism"],["義務論","ぎむろん","deontology"]],
+  chars: [],
+  grammar: {"pattern":"正義とは何か","meaning":"what is justice?","example_jp":"正義とは何かという問いは古来より哲学の根本的命題である。","example_en":"The question of what justice is has been a fundamental proposition of philosophy since ancient times."},
+  practice: "Write three sentences using at least four of today's vocabulary items in context.",
+  tip: "Many N1 vocabulary items have kanji that hint at their meaning. Look for common radicals to aid memorization."
+});
+
+curriculum.push({
+  day: 1392,
+  phaseNum: 28,
+  phaseName: "N1 Vocabulary",
+  week: Math.ceil(1392 / 7),
+  title: "Philosophy V: Modern Thought",
+  intro: "Continuing with philosophy terms, today's lesson builds your advanced vocabulary.",
+  type: "vocab",
+  vocab: [["実存主義","じつぞんしゅぎ","existentialism"],["構造主義","こうぞうしゅぎ","structuralism"],["現象学","げんしょうがく","phenomenology"],["解釈学","かいしゃくがく","hermeneutics"],["懐疑","かいぎ","skepticism, doubt"],["啓蒙","けいもう","enlightenment"],["理性","りせい","reason, rationality"],["感性","かんせい","sensibility"]],
+  chars: [],
+  grammar: {"pattern":"～主義の観点から","meaning":"from the perspective of ~ism","example_jp":"実存主義の観点から人間の自由と責任を考察する。","example_en":"We examine human freedom and responsibility from the perspective of existentialism."},
+  practice: "Create a short paragraph on a related topic incorporating five of today's words.",
+  tip: "Reading newspapers regularly is one of the best ways to encounter these words in natural context."
+});
+
+curriculum.push({
+  day: 1393,
+  phaseNum: 28,
+  phaseName: "N1 Vocabulary",
+  week: Math.ceil(1393 / 7),
+  title: "Philosophy VI: Aesthetics & Culture",
+  intro: "Today's focus is philosophy — words you will encounter in formal texts and exams.",
+  type: "vocab",
+  vocab: [["美学","びがく","aesthetics"],["崇高","すうこう","sublime"],["風雅","ふうが","elegance, refinement"],["侘び","わび","wabi (rustic beauty)"],["寂び","さび","sabi (aged beauty)"],["幽玄","ゆうげん","profound mystery"],["もののあはれ","もののあわれ","pathos of things"],["無常","むじょう","impermanence"]],
+  chars: [],
+  grammar: {"pattern":"～という美意識","meaning":"the aesthetic sense of ~","example_jp":"無常という美意識は日本文化の根底にある。","example_en":"The aesthetic sense of impermanence lies at the foundation of Japanese culture."},
+  practice: "For each vocabulary item, write one original example sentence in a formal register.",
+  tip: "Try to learn words in collocations rather than isolation — knowing which verbs pair with which nouns is crucial."
+});
+
+curriculum.push({
+  day: 1394,
+  phaseNum: 28,
+  phaseName: "N1 Vocabulary",
+  week: Math.ceil(1394 / 7),
+  title: "Philosophy VII: Epistemology",
+  intro: "We explore philosophy expressions that appear frequently in N1-level materials.",
+  type: "vocab",
+  vocab: [["経験論","けいけんろん","empiricism"],["合理論","ごうりろん","rationalism"],["直観","ちょっかん","intuition"],["悟性","ごせい","understanding (Kantian)"],["先験的","せんけんてき","a priori, transcendental"],["後験的","こうけんてき","a posteriori, empirical"],["表象","ひょうしょう","representation"],["観念","かんねん","idea, notion"]],
+  chars: [],
+  grammar: {"pattern":"先験的な～","meaning":"a priori ~","example_jp":"カントは先験的な認識の条件を探究した。","example_en":"Kant explored the a priori conditions of cognition."},
+  practice: "Compose a brief essay (80-100 characters) using as many of today's words as possible.",
+  tip: "At the N1 level, nuance matters more than raw vocabulary count. Pay attention to subtle differences."
+});
+
+curriculum.push({
+  day: 1395,
+  phaseNum: 28,
+  phaseName: "N1 Vocabulary",
+  week: Math.ceil(1395 / 7),
+  title: "Philosophy VIII: Language & Meaning",
+  intro: "Advanced philosophy vocabulary for today. These words are common in formal writing.",
+  type: "vocab",
+  vocab: [["記号","きごう","sign, symbol"],["意味論","いみろん","semantics"],["語用論","ごようろん","pragmatics"],["言語行為","げんごこうい","speech act"],["指示","しじ","reference, denotation"],["含意","がんい","implication, connotation"],["解釈","かいしゃく","interpretation"],["文脈","ぶんみゃく","context"]],
+  chars: [],
+  grammar: {"pattern":"～の文脈において","meaning":"in the context of ~","example_jp":"言語の意味は文脈において初めて確定する。","example_en":"The meaning of language is first determined in context."},
+  practice: "Match each word to its synonym or antonym from previous lessons, then write example sentences.",
+  tip: "Keep a vocabulary notebook organized by theme — it helps build semantic networks in your memory."
+});
+
+curriculum.push({
+  day: 1396,
+  phaseNum: 28,
+  phaseName: "N1 Vocabulary",
+  week: Math.ceil(1396 / 7),
+  title: "Philosophy IX: Society & Politics",
+  intro: "Today brings more philosophy terms to strengthen your N1 word power.",
+  type: "vocab",
+  vocab: [["社会契約","しゃかいけいやく","social contract"],["主権","しゅけん","sovereignty"],["民主","みんしゅ","democracy"],["全体主義","ぜんたいしゅぎ","totalitarianism"],["自由主義","じゆうしゅぎ","liberalism"],["共和","きょうわ","republic"],["権力","けんりょく","power, authority"],["抵抗","ていこう","resistance"]],
+  chars: [],
+  grammar: {"pattern":"社会契約に基づく～","meaning":"~ based on the social contract","example_jp":"民主主義は社会契約に基づく統治形態である。","example_en":"Democracy is a form of governance based on the social contract."},
+  practice: "Practice reading aloud each word and its example sentence, then write your own examples.",
+  tip: "Practice writing these words by hand. The physical act of writing reinforces kanji recognition."
+});
+
+curriculum.push({
+  day: 1397,
+  phaseNum: 28,
+  phaseName: "N1 Vocabulary",
+  week: Math.ceil(1397 / 7),
+  title: "Reading: Philosophical Essay",
+  intro: "Today is a reading day. Apply the vocabulary you have learned in context through an extended passage.",
+  type: "reading",
+  vocab: [["思索","しさく","contemplation"],["洞察","どうさつ","insight, penetration"],["根源","こんげん","root, origin"],["探究","たんきゅう","inquiry, exploration"],["省察","せいさつ","reflection, introspection"]],
+  chars: [],
+  grammar: {"pattern":"～を探究する","meaning":"to explore / inquire into ~","example_jp":"人間存在の根源を探究することが哲学の使命である。","example_en":"It is the mission of philosophy to explore the root of human existence."},
+  practice: "Read the passage carefully. Answer the comprehension questions, then summarize the main argument in your own words.",
+  tip: "When reading formal Japanese, identify the connectives first — they reveal the logical structure of the argument.",
+  passage: {"text_jp":"人間は何故に問うのか。この問い自体が、人間の存在様式の根源を示している。動物は与えられた環境に適応するが、人間は自らの存在の意味を問い、世界の本質を探究せずにはいられない。古代ギリシアの哲学者たちは驚きこそが哲学の始まりであると述べた。日常の中に潜む不思議に気づき、当たり前とされてきたものを改めて問い直す。この営みは、科学技術が飛躍的に発展した現代においても、その意義を些かも失っていない。寧ろ、技術の進歩が齎す倫理的問題は、哲学的思索の必要性を一層高めている。","text_en":"Why do humans ask questions? This question itself reveals the root of the human mode of existence. Animals adapt to their given environment, but humans cannot help but question the meaning of their own existence and explore the essence of the world. Ancient Greek philosophers stated that wonder is the beginning of philosophy. Noticing the mysteries hidden in daily life and re-questioning what has been taken for granted — this endeavor has not lost its significance in the least, even in modern times when science and technology have developed dramatically. Rather, the ethical problems brought about by technological progress are increasing the need for philosophical contemplation all the more.","questions":[{"question_jp":"筆者によると、現代において哲学がより必要とされる理由は何ですか。","question_en":"According to the author, why is philosophy needed more in modern times?","answer":"技術の進歩が齎す倫理的問題が哲学的思索の必要性を一層高めているから"}]}
+});
+
+curriculum.push({
+  day: 1398,
+  phaseNum: 28,
+  phaseName: "N1 Vocabulary",
+  week: Math.ceil(1398 / 7),
+  title: "Literary Expressions I: Classical Adverbs",
+  intro: "Today's literary expression words will deepen your understanding of formal Japanese.",
+  type: "vocab",
+  vocab: [["余儀なく","よぎなく","unavoidably, compelled to"],["甚だ","はなはだ","exceedingly, very"],["如何","いかん","how, what"],["所以","ゆえん","reason, grounds"],["已むを得ず","やむをえず","unavoidably, reluctantly"],["所謂","いわゆる","so-called"],["然るに","しかるに","however, nevertheless"],["而も","しかも","moreover, furthermore"]],
+  chars: [],
+  grammar: {"pattern":"～を余儀なくされる","meaning":"to be forced to ~","example_jp":"台風により避難を余儀なくされた。","example_en":"They were forced to evacuate due to the typhoon."},
+  practice: "Create flashcards for today's words and practice recall in both directions.",
+  tip: "Review previous lessons' vocabulary alongside today's to build connections between related terms."
+});
+
+curriculum.push({
+  day: 1399,
+  phaseNum: 28,
+  phaseName: "N1 Vocabulary",
+  week: Math.ceil(1399 / 7),
+  title: "Literary Expressions II: Discourse Markers",
+  intro: "We continue building literary expression vocabulary for advanced reading and listening.",
+  type: "vocab",
+  vocab: [["且つ","かつ","and, moreover"],["或いは","あるいは","or, perhaps"],["但し","ただし","however, provided that"],["況して","まして","much more, let alone"],["凡そ","およそ","approximately, about"],["蓋し","けだし","perhaps, probably"],["抑も","そもそも","in the first place"],["然れども","されども","nevertheless"]],
+  chars: [],
+  grammar: {"pattern":"蓋し～であろう","meaning":"it is perhaps ~ (literary speculation)","example_jp":"蓋しこれこそが人間の本質であろう。","example_en":"This is perhaps the essence of humanity."},
+  practice: "Write a dialogue between two professionals using at least five of today's vocabulary items.",
+  tip: "Many of these words appear in JLPT N1 reading passages. Practice identifying them in longer texts."
+});
+
+curriculum.push({
+  day: 1400,
+  phaseNum: 28,
+  phaseName: "N1 Vocabulary",
+  week: Math.ceil(1400 / 7),
+  title: "Literary Expressions III: Temporal & Modal",
+  intro: "Today's lesson covers important literary expression terms used in professional settings.",
+  type: "vocab",
+  vocab: [["嘗て","かつて","formerly, once"],["未だ","いまだ","not yet, still"],["既に","すでに","already"],["将に","まさに","exactly, just about to"],["須く","すべからく","ought to, should"],["豈","あに","how could (rhetorical)"],["寧ろ","むしろ","rather"],["恰も","あたかも","as if, just like"]],
+  chars: [],
+  grammar: {"pattern":"恰も～の如く","meaning":"as if ~, just like ~","example_jp":"彼は恰も全てを知っているかの如く振る舞った。","example_en":"He acted as if he knew everything."},
+  practice: "For each word, identify the context where it would most naturally appear (news, academic, legal, etc.).",
+  tip: "When learning formal vocabulary, always note the register — some words are only appropriate in writing."
+});
+
+curriculum.push({
+  day: 1401,
+  phaseNum: 28,
+  phaseName: "N1 Vocabulary",
+  week: Math.ceil(1401 / 7),
+  title: "Literary Expressions IV: Evaluative",
+  intro: "Today we study literary expression vocabulary essential for N1 reading comprehension.",
+  type: "vocab",
+  vocab: [["真に","まことに","truly, indeed"],["誠に","まことに","sincerely, truly"],["甚だしい","はなはだしい","extreme, excessive"],["著しい","いちじるしい","remarkable"],["夥しい","おびただしい","enormous, immense"],["逞しい","たくましい","sturdy, robust"],["儚い","はかない","fleeting, transient"],["麗しい","うるわしい","beautiful, lovely"]],
+  chars: [],
+  grammar: {"pattern":"真に～である","meaning":"it is truly ~","example_jp":"これは真に画期的な発見である。","example_en":"This is truly a groundbreaking discovery."},
+  practice: "Write three sentences using at least four of today's vocabulary items in context.",
+  tip: "Many N1 vocabulary items have kanji that hint at their meaning. Look for common radicals to aid memorization."
+});
+
+curriculum.push({
+  day: 1402,
+  phaseNum: 28,
+  phaseName: "N1 Vocabulary",
+  week: Math.ceil(1402 / 7),
+  title: "Literary Expressions V: Formal Set Phrases",
+  intro: "Continuing with literary expression terms, today's lesson builds your advanced vocabulary.",
+  type: "vocab",
+  vocab: [["然り","しかり","indeed, so it is"],["否","いな","no, or rather"],["曰く","いわく","to say, according to"],["故に","ゆえに","therefore, for this reason"],["即ち","すなわち","that is to say"],["謂わば","いわば","so to speak"],["云々","うんぬん","and so forth"],["等閑","なおざり","neglect, inattention"]],
+  chars: [],
+  grammar: {"pattern":"故に～","meaning":"therefore ~","example_jp":"我思う、故に我あり。","example_en":"I think, therefore I am."},
+  practice: "Create a short paragraph on a related topic incorporating five of today's words.",
+  tip: "Reading newspapers regularly is one of the best ways to encounter these words in natural context."
+});
+
+curriculum.push({
+  day: 1403,
+  phaseNum: 28,
+  phaseName: "N1 Vocabulary",
+  week: Math.ceil(1403 / 7),
+  title: "Literary Expressions VI: Compound Expressions",
+  intro: "Today's focus is literary expression — words you will encounter in formal texts and exams.",
+  type: "vocab",
+  vocab: [["以て","もって","by means of, with"],["於いて","おいて","at, in, regarding"],["対して","たいして","toward, against"],["関して","かんして","regarding, concerning"],["際して","さいして","on the occasion of"],["応じて","おうじて","according to"],["先立って","さきだって","prior to, before"],["踏まえて","ふまえて","based on, taking into account"]],
+  chars: [],
+  grammar: {"pattern":"～に際して","meaning":"on the occasion of ~","example_jp":"卒業に際して一言申し上げます。","example_en":"On the occasion of graduation, I would like to say a few words."},
+  practice: "For each vocabulary item, write one original example sentence in a formal register.",
+  tip: "Try to learn words in collocations rather than isolation — knowing which verbs pair with which nouns is crucial."
+});
+
+curriculum.push({
+  day: 1404,
+  phaseNum: 28,
+  phaseName: "N1 Vocabulary",
+  week: Math.ceil(1404 / 7),
+  title: "Literary Expressions VII: Emotional & Aesthetic",
+  intro: "We explore literary expression expressions that appear frequently in N1-level materials.",
+  type: "vocab",
+  vocab: [["憐れ","あわれ","pity, pathos"],["哀れ","あわれ","sorrow, grief"],["趣","おもむき","elegance, flavor"],["風情","ふぜい","taste, elegance"],["情緒","じょうちょ","emotion, atmosphere"],["郷愁","きょうしゅう","nostalgia"],["愁い","うれい","grief, melancholy"],["慕う","したう","to yearn for"]],
+  chars: [],
+  grammar: {"pattern":"～の趣がある","meaning":"to have the feel/elegance of ~","example_jp":"この庭園には日本の伝統的な風情の趣がある。","example_en":"This garden has the elegance of traditional Japanese atmosphere."},
+  practice: "Compose a brief essay (80-100 characters) using as many of today's words as possible.",
+  tip: "At the N1 level, nuance matters more than raw vocabulary count. Pay attention to subtle differences."
+});
+
+curriculum.push({
+  day: 1405,
+  phaseNum: 28,
+  phaseName: "N1 Vocabulary",
+  week: Math.ceil(1405 / 7),
+  title: "Literary Expressions VIII: Rhetorical Devices",
+  intro: "Advanced literary expression vocabulary for today. These words are common in formal writing.",
+  type: "vocab",
+  vocab: [["比喩","ひゆ","metaphor, simile"],["換喩","かんゆ","metonymy"],["暗喩","あんゆ","metaphor (implied)"],["直喩","ちょくゆ","simile (explicit)"],["誇張","こちょう","exaggeration, hyperbole"],["反語","はんご","rhetorical question, irony"],["婉曲","えんきょく","euphemism"],["皮肉","ひにく","irony, sarcasm"]],
+  chars: [],
+  grammar: {"pattern":"～という比喩を用いて","meaning":"using the metaphor of ~","example_jp":"人生を旅という比喩を用いて語る文学は多い。","example_en":"There is much literature that speaks of life using the metaphor of a journey."},
+  practice: "Match each word to its synonym or antonym from previous lessons, then write example sentences.",
+  tip: "Keep a vocabulary notebook organized by theme — it helps build semantic networks in your memory."
+});
+
+curriculum.push({
+  day: 1406,
+  phaseNum: 28,
+  phaseName: "N1 Vocabulary",
+  week: Math.ceil(1406 / 7),
+  title: "Literary Expressions IX: Narrative Techniques",
+  intro: "Today brings more literary expression terms to strengthen your N1 word power.",
+  type: "vocab",
+  vocab: [["叙述","じょじゅつ","narration, description"],["描写","びょうしゃ","depiction, portrayal"],["伏線","ふくせん","foreshadowing"],["結末","けつまつ","ending, conclusion"],["転機","てんき","turning point"],["葛藤","かっとう","conflict, inner struggle"],["主題","しゅだい","theme, motif"],["寓意","ぐうい","allegory, moral"]],
+  chars: [],
+  grammar: {"pattern":"伏線を張る / 回収する","meaning":"to lay / resolve foreshadowing","example_jp":"序盤に張られた伏線が終盤で見事に回収された。","example_en":"The foreshadowing laid early on was brilliantly resolved in the final act."},
+  practice: "Practice reading aloud each word and its example sentence, then write your own examples.",
+  tip: "Practice writing these words by hand. The physical act of writing reinforces kanji recognition."
+});
+
+curriculum.push({
+  day: 1407,
+  phaseNum: 28,
+  phaseName: "N1 Vocabulary",
+  week: Math.ceil(1407 / 7),
+  title: "Literary Expressions X: Classical Remnants",
+  intro: "Expanding your literary expression vocabulary with words vital for academic and formal contexts.",
+  type: "vocab",
+  vocab: [["左様","さよう","so, that is correct"],["御座る","ござる","to be (archaic polite)"],["候","そうろう","to be (classical epistolary)"],["参る","まいる","to go/come (humble)"],["罷り出る","まかりでる","to come forward (humble)"],["畏まる","かしこまる","to obey humbly"],["承る","うけたまわる","to hear/accept (humble)"],["仰る","おっしゃる","to say (honorific)"]],
+  chars: [],
+  grammar: {"pattern":"左様でございます","meaning":"that is correct (very formal)","example_jp":"左様でございます。ご指摘の通りでございます。","example_en":"That is correct. It is exactly as you point out."},
+  practice: "Use today's vocabulary to summarize a recent news article you have read.",
+  tip: "Listen to NHK news broadcasts to hear these words pronounced in natural speech patterns."
+});
+
+curriculum.push({
+  day: 1408,
+  phaseNum: 28,
+  phaseName: "N1 Vocabulary",
+  week: Math.ceil(1408 / 7),
+  title: "Reading: Classical Literature Appreciation",
+  intro: "Today is a reading day. Apply the vocabulary you have learned in context through an extended passage.",
+  type: "reading",
+  vocab: [["古典","こてん","classic, classical literature"],["文語","ぶんご","literary language"],["口語","こうご","colloquial language"],["韻律","いんりつ","rhythm, meter"],["名文","めいぶん","fine writing"]],
+  chars: [],
+  grammar: {"pattern":"～の名文として知られる","meaning":"known as a fine piece of writing about ~","example_jp":"方丈記の冒頭は無常観を表す名文として知られる。","example_en":"The opening of the Hōjōki is known as a fine piece of writing expressing the sense of impermanence."},
+  practice: "Read the passage carefully. Answer the comprehension questions, then summarize the main argument in your own words.",
+  tip: "When reading formal Japanese, identify the connectives first — they reveal the logical structure of the argument.",
+  passage: {"text_jp":"日本文学の伝統において、無常という概念は根源的な美意識として脈々と受け継がれてきた。鴨長明の方丈記は「ゆく河の流れは絶えずして、しかも、もとの水にあらず」という名文で始まる。これは単なる自然描写ではない。万物は絶え間なく変化し、恰も水の流れの如く留まることがないという、仏教的無常観の文学的表現である。兼好法師の徒然草もまた、日常の機微を鋭い洞察で捉え、人間の愚かさと愛おしさを同時に描いた。これらの古典は、数百年を経た現代においても尚、読む者の心に深く響く。蓋し、普遍的な真実を宿す言葉は時を超えるのであろう。","text_en":"In the tradition of Japanese literature, the concept of impermanence has been passed down through the ages as a fundamental aesthetic sensibility. Kamo no Chōmei's Hōjōki begins with the famous passage: 'The flow of the river is ceaseless and, moreover, its water is never the same.' This is not mere nature description. It is a literary expression of the Buddhist view of impermanence — that all things ceaselessly change and, like the flow of water, never remain still. Kenkō's Tsurezuregusa also captures the subtleties of daily life with keen insight, simultaneously depicting human foolishness and endearingness. These classics continue to resonate deeply in readers' hearts even today, centuries later. Perhaps words that harbor universal truth transcend time.","questions":[{"question_jp":"方丈記の冒頭が単なる自然描写ではないとされる理由は何ですか。","question_en":"Why is the opening of the Hōjōki considered more than mere nature description?","answer":"仏教的無常観の文学的表現であるから"}]}
+});
+
+curriculum.push({
+  day: 1409,
+  phaseNum: 28,
+  phaseName: "N1 Vocabulary",
+  week: Math.ceil(1409 / 7),
+  title: "四字熟語 I: Wisdom & Action",
+  intro: "We continue building four-character idiom vocabulary for advanced reading and listening.",
+  type: "vocab",
+  vocab: [["一石二鳥","いっせきにちょう","killing two birds with one stone"],["自業自得","じごうじとく","reaping what you sow"],["以心伝心","いしんでんしん","tacit understanding"],["一期一会","いちごいちえ","once-in-a-lifetime encounter"],["試行錯誤","しこうさくご","trial and error"],["異口同音","いくどうおん","in unison"],["単刀直入","たんとうちょくにゅう","getting straight to the point"],["臨機応変","りんきおうへん","adapting to circumstances"]],
+  chars: [],
+  grammar: {"pattern":"臨機応変に対応する","meaning":"to respond flexibly to the situation","example_jp":"予期せぬ事態にも臨機応変に対応すべきである。","example_en":"One should respond flexibly even to unexpected situations."},
+  practice: "Write a dialogue between two professionals using at least five of today's vocabulary items.",
+  tip: "Many of these words appear in JLPT N1 reading passages. Practice identifying them in longer texts."
+});
+
+curriculum.push({
+  day: 1410,
+  phaseNum: 28,
+  phaseName: "N1 Vocabulary",
+  week: Math.ceil(1410 / 7),
+  title: "四字熟語 II: Effort & Perseverance",
+  intro: "Today's lesson covers important four-character idiom terms used in professional settings.",
+  type: "vocab",
+  vocab: [["起死回生","きしかいせい","dramatic recovery"],["粉骨砕身","ふんこつさいしん","working oneself to the bone"],["不撓不屈","ふとうふくつ","indomitable spirit"],["切磋琢磨","せっさたくま","mutual improvement"],["七転八起","しちてんはっき","perseverance through adversity"],["一心不乱","いっしんふらん","with undivided attention"],["堅忍不抜","けんにんふばつ","perseverance and fortitude"],["精進潔斎","しょうじんけっさい","purification and devotion"]],
+  chars: [],
+  grammar: {"pattern":"切磋琢磨する","meaning":"to improve through mutual competition","example_jp":"仲間と切磋琢磨することで技術が向上する。","example_en":"Skills improve through mutual competition with peers."},
+  practice: "For each word, identify the context where it would most naturally appear (news, academic, legal, etc.).",
+  tip: "When learning formal vocabulary, always note the register — some words are only appropriate in writing."
+});
+
+curriculum.push({
+  day: 1411,
+  phaseNum: 28,
+  phaseName: "N1 Vocabulary",
+  week: Math.ceil(1411 / 7),
+  title: "四字熟語 III: Reversals & Surprises",
+  intro: "Today we study four-character idiom vocabulary essential for N1 reading comprehension.",
+  type: "vocab",
+  vocab: [["青天霹靂","せいてんへきれき","bolt from the blue"],["前代未聞","ぜんだいみもん","unprecedented"],["言語道断","ごんごどうだん","outrageous, inexcusable"],["本末転倒","ほんまつてんとう","putting the cart before the horse"],["朝三暮四","ちょうさんぼし","clever manipulation"],["我田引水","がでんいんすい","self-serving argument"],["針小棒大","しんしょうぼうだい","making a mountain of a molehill"],["大同小異","だいどうしょうい","much the same"]],
+  chars: [],
+  grammar: {"pattern":"本末転倒である","meaning":"to be putting the cart before the horse","example_jp":"手段が目的化するのは本末転倒である。","example_en":"When means become ends, that is putting the cart before the horse."},
+  practice: "Write three sentences using at least four of today's vocabulary items in context.",
+  tip: "Many N1 vocabulary items have kanji that hint at their meaning. Look for common radicals to aid memorization."
+});
+
+curriculum.push({
+  day: 1412,
+  phaseNum: 28,
+  phaseName: "N1 Vocabulary",
+  week: Math.ceil(1412 / 7),
+  title: "四字熟語 IV: Character & Virtue",
+  intro: "Continuing with four-character idiom terms, today's lesson builds your advanced vocabulary.",
+  type: "vocab",
+  vocab: [["清廉潔白","せいれんけっぱく","upright and honest"],["公明正大","こうめいせいだい","fair and aboveboard"],["質実剛健","しつじつごうけん","simple and sturdy"],["温厚篤実","おんこうとくじつ","gentle and sincere"],["明鏡止水","めいきょうしすい","serene and clear-minded"],["和洋折衷","わようせっちゅう","Japanese-Western compromise"],["付和雷同","ふわらいどう","following blindly"],["厚顔無恥","こうがんむち","brazen and shameless"]],
+  chars: [],
+  grammar: {"pattern":"清廉潔白な人物","meaning":"an upright and honest person","example_jp":"政治家には清廉潔白であることが求められる。","example_en":"Politicians are required to be upright and honest."},
+  practice: "Create a short paragraph on a related topic incorporating five of today's words.",
+  tip: "Reading newspapers regularly is one of the best ways to encounter these words in natural context."
+});
+
+curriculum.push({
+  day: 1413,
+  phaseNum: 28,
+  phaseName: "N1 Vocabulary",
+  week: Math.ceil(1413 / 7),
+  title: "四字熟語 V: Situations & States",
+  intro: "Today's focus is four-character idiom — words you will encounter in formal texts and exams.",
+  type: "vocab",
+  vocab: [["四面楚歌","しめんそか","surrounded by enemies"],["五里霧中","ごりむちゅう","totally lost, in a fog"],["右往左往","うおうさおう","running around in confusion"],["危機一髪","ききいっぱつ","by a hair's breadth"],["天変地異","てんぺんちい","natural disaster"],["一朝一夕","いっちょういっせき","overnight (not ~)"],["一長一短","いっちょういったん","pros and cons"],["十人十色","じゅうにんといろ","different strokes for different folks"]],
+  chars: [],
+  grammar: {"pattern":"一朝一夕にはいかない","meaning":"cannot be done overnight","example_jp":"語学の習得は一朝一夕にはいかない。","example_en":"Language acquisition cannot be done overnight."},
+  practice: "For each vocabulary item, write one original example sentence in a formal register.",
+  tip: "Try to learn words in collocations rather than isolation — knowing which verbs pair with which nouns is crucial."
+});
+
+curriculum.push({
+  day: 1414,
+  phaseNum: 28,
+  phaseName: "N1 Vocabulary",
+  week: Math.ceil(1414 / 7),
+  title: "Reading: 四字熟語 in Modern Life",
+  intro: "Today is a reading day. Apply the vocabulary you have learned in context through an extended passage.",
+  type: "reading",
+  vocab: [["故事成語","こじせいご","proverb from classical story"],["由来","ゆらい","origin, derivation"],["含蓄","がんちく","implication, depth"],["簡潔","かんけつ","concise, brief"],["教訓","きょうくん","lesson, moral"]],
+  chars: [],
+  grammar: {"pattern":"～に由来する","meaning":"to originate from ~","example_jp":"多くの四字熟語は中国の古典に由来する。","example_en":"Many four-character idioms originate from Chinese classics."},
+  practice: "Read the passage carefully. Answer the comprehension questions, then summarize the main argument in your own words.",
+  tip: "When reading formal Japanese, identify the connectives first — they reveal the logical structure of the argument.",
+  passage: {"text_jp":"四字熟語は日本語の中で独特の位置を占めている。僅か四つの漢字で複雑な状況や深い教訓を簡潔に表現できるこの言語形式は、中国の古典に由来するものが大半であるが、日本独自のものも少なくない。例えば「一期一会」は茶道の精神から生まれた日本固有の表現である。現代社会においても四字熟語は日常的に用いられている。新聞の見出しには「前代未聞」「言語道断」が踊り、ビジネスの場では「臨機応変」「試行錯誤」が好まれる。これらの表現が持つ含蓄と簡潔さは、冗長な説明を嫌う日本語の美意識と見事に合致している。","text_en":"Four-character idioms occupy a unique position in the Japanese language. This linguistic form, which can concisely express complex situations and deep lessons in just four kanji, mostly originates from Chinese classics, but there are also quite a few uniquely Japanese ones. For example, 'ichigo ichie' (once-in-a-lifetime encounter) is a uniquely Japanese expression born from the spirit of tea ceremony. Even in modern society, four-character idioms are used daily. 'Unprecedented' and 'outrageous' dance in newspaper headlines, while 'adapting to circumstances' and 'trial and error' are favored in business settings. The depth and conciseness these expressions possess perfectly align with the Japanese aesthetic sense that dislikes verbose explanation.","questions":[{"question_jp":"四字熟語が現代でも多用される理由として筆者が挙げているのは何ですか。","question_en":"What reason does the author give for four-character idioms still being widely used today?","answer":"含蓄と簡潔さが冗長な説明を嫌う日本語の美意識と合致しているから"}]}
+});
+
+curriculum.push({
+  day: 1415,
+  phaseNum: 28,
+  phaseName: "N1 Vocabulary",
+  week: Math.ceil(1415 / 7),
+  title: "Proverbs I: Wisdom & Caution",
+  intro: "Advanced proverb vocabulary for today. These words are common in formal writing.",
+  type: "vocab",
+  vocab: [["猿も木から落ちる","さるもきからおちる","even experts make mistakes"],["石橋を叩いて渡る","いしばしをたたいてわたる","being overly cautious"],["七転び八起き","ななころびやおき","perseverance"],["灯台下暗し","とうだいもとくらし","overlooking what's under your nose"],["急がば回れ","いそがばまわれ","more haste, less speed"],["転ばぬ先の杖","ころばぬさきのつえ","an ounce of prevention"],["備えあれば憂いなし","そなえあればうれいなし","prepared means no worries"],["油断大敵","ゆだんたいてき","carelessness is one's greatest enemy"]],
+  chars: [],
+  grammar: {"pattern":"油断大敵である","meaning":"carelessness is the greatest enemy","example_jp":"試験前こそ油断大敵である。","example_en":"Carelessness is the greatest enemy, especially before an exam."},
+  practice: "Match each word to its synonym or antonym from previous lessons, then write example sentences.",
+  tip: "Keep a vocabulary notebook organized by theme — it helps build semantic networks in your memory."
+});
+
+curriculum.push({
+  day: 1416,
+  phaseNum: 28,
+  phaseName: "N1 Vocabulary",
+  week: Math.ceil(1416 / 7),
+  title: "Proverbs II: Actions & Consequences",
+  intro: "Today brings more proverb terms to strengthen your N1 word power.",
+  type: "vocab",
+  vocab: [["案ずるより産むが易し","あんずるよりうむがやすし","easier done than worried about"],["花より団子","はなよりだんご","substance over style"],["棚から牡丹餅","たなからぼたもち","unexpected good fortune"],["果報は寝て待て","かほうはねてまて","good things come to those who wait"],["蒔かぬ種は生えぬ","まかぬたねははえぬ","you reap what you sow"],["善は急げ","ぜんはいそげ","strike while the iron is hot"],["雨降って地固まる","あめふってじかたまる","adversity strengthens bonds"],["禍を転じて福と為す","わざわいをてんじてふくとなす","turn misfortune into fortune"]],
+  chars: [],
+  grammar: {"pattern":"案ずるより産むが易し","meaning":"worrying is harder than doing","example_jp":"難しそうに見えたが、案ずるより産むが易しだった。","example_en":"It looked difficult, but it turned out easier done than worried about."},
+  practice: "Practice reading aloud each word and its example sentence, then write your own examples.",
+  tip: "Practice writing these words by hand. The physical act of writing reinforces kanji recognition."
+});
+
+curriculum.push({
+  day: 1417,
+  phaseNum: 28,
+  phaseName: "N1 Vocabulary",
+  week: Math.ceil(1417 / 7),
+  title: "Proverbs III: Relationships & Society",
+  intro: "Expanding your proverb vocabulary with words vital for academic and formal contexts.",
+  type: "vocab",
+  vocab: [["郷に入っては郷に従え","ごうにいってはごうにしたがえ","when in Rome, do as the Romans do"],["蛙の子は蛙","かえるのこはかえる","like father, like son"],["類は友を呼ぶ","るいはともをよぶ","birds of a feather flock together"],["三人寄れば文殊の知恵","さんにんよればもんじゅのちえ","two heads are better than one"],["人の振り見て我が振り直せ","ひとのふりみてわがふりなおせ","learn from others' mistakes"],["能ある鷹は爪を隠す","のうあるたかはつめをかくす","still waters run deep"],["出る杭は打たれる","でるくいはうたれる","the nail that sticks out gets hammered"],["井の中の蛙","いのなかのかわず","a frog in a well (narrow-minded)"]],
+  chars: [],
+  grammar: {"pattern":"出る杭は打たれる","meaning":"the nail that sticks out gets hammered down","example_jp":"日本社会では出る杭は打たれるとよく言われる。","example_en":"In Japanese society, they often say the nail that sticks out gets hammered down."},
+  practice: "Use today's vocabulary to summarize a recent news article you have read.",
+  tip: "Listen to NHK news broadcasts to hear these words pronounced in natural speech patterns."
+});
+
+curriculum.push({
+  day: 1418,
+  phaseNum: 28,
+  phaseName: "N1 Vocabulary",
+  week: Math.ceil(1418 / 7),
+  title: "Proverbs IV: Nature & Time",
+  intro: "Today's proverb words will deepen your understanding of formal Japanese.",
+  type: "vocab",
+  vocab: [["花鳥風月","かちょうふうげつ","beauties of nature"],["風前の灯火","ふうぜんのともしび","precarious situation"],["柳に風","やなぎにかぜ","going with the flow"],["明日は明日の風が吹く","あしたはあしたのかぜがふく","tomorrow is another day"],["光陰矢の如し","こういんやのごとし","time flies like an arrow"],["歳月人を待たず","さいげつひとをまたず","time waits for no one"],["春眠暁を覚えず","しゅんみんあかつきをおぼえず","sleeping in on spring mornings"],["秋の日は釣瓶落とし","あきのひはつるべおとし","autumn days are short"]],
+  chars: [],
+  grammar: {"pattern":"光陰矢の如し","meaning":"time flies like an arrow","example_jp":"光陰矢の如し。学生時代はあっという間に過ぎた。","example_en":"Time flies like an arrow. Student days passed in the blink of an eye."},
+  practice: "Create flashcards for today's words and practice recall in both directions.",
+  tip: "Review previous lessons' vocabulary alongside today's to build connections between related terms."
+});
+
+curriculum.push({
+  day: 1419,
+  phaseNum: 28,
+  phaseName: "N1 Vocabulary",
+  week: Math.ceil(1419 / 7),
+  title: "Proverbs V: Learning & Knowledge",
+  intro: "We continue building proverb vocabulary for advanced reading and listening.",
+  type: "vocab",
+  vocab: [["百聞は一見に如かず","ひゃくぶんはいっけんにしかず","seeing is believing"],["学問に王道なし","がくもんにおうどうなし","there is no royal road to learning"],["習うより慣れろ","ならうよりなれろ","practice makes perfect"],["初心忘るべからず","しょしんわするべからず","never forget your beginner's spirit"],["温故知新","おんこちしん","learn from the past"],["門前の小僧習わぬ経を読む","もんぜんのこぞうならわぬきょうをよむ","learning by osmosis"],["知らぬが仏","しらぬがほとけ","ignorance is bliss"],["聞くは一時の恥","きくはいっときのはじ","asking is a momentary shame"]],
+  chars: [],
+  grammar: {"pattern":"初心忘るべからず","meaning":"one must not forget the beginner's spirit","example_jp":"上達しても初心忘るべからずの精神が大切だ。","example_en":"Even when skilled, the spirit of never forgetting your beginner's mind is important."},
+  practice: "Write a dialogue between two professionals using at least five of today's vocabulary items.",
+  tip: "Many of these words appear in JLPT N1 reading passages. Practice identifying them in longer texts."
+});
+
+curriculum.push({
+  day: 1420,
+  phaseNum: 28,
+  phaseName: "N1 Vocabulary",
+  week: Math.ceil(1420 / 7),
+  title: "Proverbs VI: Determination & Fate",
+  intro: "Today's lesson covers important proverb terms used in professional settings.",
+  type: "vocab",
+  vocab: [["虎穴に入らずんば虎子を得ず","こけつにいらずんばこじをえず","nothing ventured, nothing gained"],["二兎を追う者は一兎をも得ず","にとをおうものはいっとをもえず","he who chases two rabbits catches neither"],["弘法にも筆の誤り","こうぼうにもふでのあやまり","even Homer nods"],["身から出た錆","みからでたさび","you brought it on yourself"],["渡る世間に鬼はない","わたるせけんにおにはない","there are good people everywhere"],["捨てる神あれば拾う神あり","すてるかみあればひろうかみあり","when one door closes another opens"],["人間万事塞翁が馬","にんげんばんじさいおうがうま","you never know what will happen"],["一寸先は闇","いっすんさきはやみ","the future is uncertain"]],
+  chars: [],
+  grammar: {"pattern":"虎穴に入らずんば虎子を得ず","meaning":"nothing ventured, nothing gained","example_jp":"虎穴に入らずんば虎子を得ず。挑戦なくして成功はない。","example_en":"Nothing ventured, nothing gained. There is no success without challenge."},
+  practice: "For each word, identify the context where it would most naturally appear (news, academic, legal, etc.).",
+  tip: "When learning formal vocabulary, always note the register — some words are only appropriate in writing."
+});
+
+curriculum.push({
+  day: 1421,
+  phaseNum: 28,
+  phaseName: "N1 Vocabulary",
+  week: Math.ceil(1421 / 7),
+  title: "Reading: Proverbs in Japanese Culture",
+  intro: "Today is a reading day. Apply the vocabulary you have learned in context through an extended passage.",
+  type: "reading",
+  vocab: [["箴言","しんげん","proverb, maxim"],["戒め","いましめ","admonition, warning"],["口承","こうしょう","oral tradition"],["処世術","しょせいじゅつ","way of getting along in life"],["先人","せんじん","predecessors, ancestors"]],
+  chars: [],
+  grammar: {"pattern":"先人の知恵に学ぶ","meaning":"to learn from the wisdom of predecessors","example_jp":"諺は先人の知恵に学ぶ最良の手段である。","example_en":"Proverbs are the best means of learning from the wisdom of our predecessors."},
+  practice: "Read the passage carefully. Answer the comprehension questions, then summarize the main argument in your own words.",
+  tip: "When reading formal Japanese, identify the connectives first — they reveal the logical structure of the argument.",
+  passage: {"text_jp":"日本の諺は、先人たちが長い歴史の中で培ってきた知恵の結晶である。「猿も木から落ちる」は謙虚さを、「石橋を叩いて渡る」は慎重さを、「七転び八起き」は粘り強さを説く。これらの言葉は口承により何世代にもわたって受け継がれ、日本人の価値観の形成に少なからぬ影響を与えてきた。興味深いのは、矛盾する諺が共存していることである。「善は急げ」と「急がば回れ」、「渡る世間に鬼はない」と「人を見たら泥棒と思え」。これは諺が絶対的な真理ではなく、状況に応じた処世術であることを示している。","text_en":"Japanese proverbs are crystallizations of the wisdom that predecessors cultivated over long history. 'Even monkeys fall from trees' teaches humility, 'tap the stone bridge before crossing' teaches caution, and 'fall seven times, rise eight' teaches perseverance. These words have been passed down through oral tradition over many generations and have exerted considerable influence on the formation of Japanese values. What is interesting is that contradictory proverbs coexist. 'Strike while the iron is hot' and 'more haste, less speed'; 'there are good people everywhere' and 'suspect everyone you meet.' This shows that proverbs are not absolute truths but situational wisdom for getting along in life.","questions":[{"question_jp":"矛盾する諺が共存していることは何を示していますか。","question_en":"What does the coexistence of contradictory proverbs demonstrate?","answer":"諺が絶対的な真理ではなく状況に応じた処世術であること"}]}
+});
+
+curriculum.push({
+  day: 1422,
+  phaseNum: 28,
+  phaseName: "N1 Vocabulary",
+  week: Math.ceil(1422 / 7),
+  title: "Onomatopoeia I: Emotions & Moods",
+  intro: "Continuing with onomatopoeia terms, today's lesson builds your advanced vocabulary.",
+  type: "vocab",
+  vocab: [["しんみり","しんみり","quietly pensive, sentimentally"],["まごまご","まごまご","bewildered, at a loss"],["おどおど","おどおど","timidly, nervously"],["きょとん","きょとん","blankly, with a puzzled look"],["むっつり","むっつり","sullenly, gloomily"],["うっとり","うっとり","enchanted, entranced"],["しみじみ","しみじみ","deeply, keenly"],["そわそわ","そわそわ","restlessly, fidgety"]],
+  chars: [],
+  grammar: {"pattern":"しみじみと～を感じる","meaning":"to deeply feel ~","example_jp":"秋の夜長にしみじみと人生を振り返った。","example_en":"On the long autumn night, I deeply reflected on life."},
+  practice: "Create a short paragraph on a related topic incorporating five of today's words.",
+  tip: "Reading newspapers regularly is one of the best ways to encounter these words in natural context."
+});
+
+curriculum.push({
+  day: 1423,
+  phaseNum: 28,
+  phaseName: "N1 Vocabulary",
+  week: Math.ceil(1423 / 7),
+  title: "Onomatopoeia II: Physical States",
+  intro: "Today's focus is onomatopoeia — words you will encounter in formal texts and exams.",
+  type: "vocab",
+  vocab: [["ぐったり","ぐったり","exhausted, limp"],["ぼんやり","ぼんやり","absent-mindedly, vaguely"],["のろのろ","のろのろ","sluggishly, slowly"],["てきぱき","てきぱき","briskly, efficiently"],["きびきび","きびきび","crisply, energetically"],["ふらふら","ふらふら","unsteadily, dizzy"],["ぐっすり","ぐっすり","soundly (sleeping)"],["すっきり","すっきり","refreshed, clear"]],
+  chars: [],
+  grammar: {"pattern":"ぐったりと疲れる","meaning":"to be utterly exhausted","example_jp":"一日中走り回ってぐったりと疲れた。","example_en":"After running around all day, I was utterly exhausted."},
+  practice: "For each vocabulary item, write one original example sentence in a formal register.",
+  tip: "Try to learn words in collocations rather than isolation — knowing which verbs pair with which nouns is crucial."
+});
+
+curriculum.push({
+  day: 1424,
+  phaseNum: 28,
+  phaseName: "N1 Vocabulary",
+  week: Math.ceil(1424 / 7),
+  title: "Onomatopoeia III: Manners & Attitudes",
+  intro: "We explore onomatopoeia expressions that appear frequently in N1-level materials.",
+  type: "vocab",
+  vocab: [["しぶしぶ","しぶしぶ","reluctantly, unwillingly"],["いそいそ","いそいそ","cheerfully, eagerly"],["おずおず","おずおず","timidly, hesitantly"],["めそめそ","めそめそ","sniveling, whimpering"],["ぶつぶつ","ぶつぶつ","grumbling, muttering"],["にこにこ","にこにこ","smilingly, cheerfully"],["きっぱり","きっぱり","firmly, decisively"],["しっかり","しっかり","firmly, reliably"]],
+  chars: [],
+  grammar: {"pattern":"しぶしぶ～する","meaning":"to reluctantly do ~","example_jp":"彼はしぶしぶ謝罪した。","example_en":"He reluctantly apologized."},
+  practice: "Compose a brief essay (80-100 characters) using as many of today's words as possible.",
+  tip: "At the N1 level, nuance matters more than raw vocabulary count. Pay attention to subtle differences."
+});
+
+curriculum.push({
+  day: 1425,
+  phaseNum: 28,
+  phaseName: "N1 Vocabulary",
+  week: Math.ceil(1425 / 7),
+  title: "Onomatopoeia IV: Textures & Sensations",
+  intro: "Advanced onomatopoeia vocabulary for today. These words are common in formal writing.",
+  type: "vocab",
+  vocab: [["ぴりぴり","ぴりぴり","tingling, tense"],["ずるずる","ずるずる","dragging on, slippery"],["ぬるぬる","ぬるぬる","slimy, slippery"],["さらさら","さらさら","smooth, flowing"],["ごわごわ","ごわごわ","stiff, rough"],["ふわふわ","ふわふわ","fluffy, soft"],["ねばねば","ねばねば","sticky, gooey"],["つるつる","つるつる","smooth, slippery"]],
+  chars: [],
+  grammar: {"pattern":"ぴりぴりした空気","meaning":"a tense atmosphere","example_jp":"会議室にはぴりぴりした空気が漂っていた。","example_en":"A tense atmosphere pervaded the meeting room."},
+  practice: "Match each word to its synonym or antonym from previous lessons, then write example sentences.",
+  tip: "Keep a vocabulary notebook organized by theme — it helps build semantic networks in your memory."
+});
+
+curriculum.push({
+  day: 1426,
+  phaseNum: 28,
+  phaseName: "N1 Vocabulary",
+  week: Math.ceil(1426 / 7),
+  title: "Onomatopoeia V: Sounds & Movements",
+  intro: "Today brings more onomatopoeia terms to strengthen your N1 word power.",
+  type: "vocab",
+  vocab: [["がたがた","がたがた","rattling, shaking"],["ごろごろ","ごろごろ","rumbling, lounging"],["ばたばた","ばたばた","flapping, bustling"],["ひそひそ","ひそひそ","whispering"],["がやがや","がやがや","noisily, clamorously"],["ざわざわ","ざわざわ","rustling, murmuring"],["しーん","しーん","dead silence"],["どんどん","どんどん","rapidly, banging"]],
+  chars: [],
+  grammar: {"pattern":"ざわざわする","meaning":"to rustle / to be unsettled","example_jp":"発表を聞いて会場がざわざわした。","example_en":"The venue murmured with unrest upon hearing the announcement."},
+  practice: "Practice reading aloud each word and its example sentence, then write your own examples.",
+  tip: "Practice writing these words by hand. The physical act of writing reinforces kanji recognition."
+});
+
+curriculum.push({
+  day: 1427,
+  phaseNum: 28,
+  phaseName: "N1 Vocabulary",
+  week: Math.ceil(1427 / 7),
+  title: "Onomatopoeia VI: Complex States",
+  intro: "Expanding your onomatopoeia vocabulary with words vital for academic and formal contexts.",
+  type: "vocab",
+  vocab: [["もやもや","もやもや","hazy, unsettled feeling"],["わくわく","わくわく","excited, thrilled"],["どきどき","どきどき","heart pounding"],["いらいら","いらいら","irritated, annoyed"],["うずうず","うずうず","itching to do something"],["はらはら","はらはら","anxiously watching"],["じれったい","じれったい","frustratingly slow"],["せかせか","せかせか","restlessly busy"]],
+  chars: [],
+  grammar: {"pattern":"わくわくする","meaning":"to be excited / thrilled","example_jp":"新しい挑戦にわくわくしている。","example_en":"I am thrilled about the new challenge."},
+  practice: "Use today's vocabulary to summarize a recent news article you have read.",
+  tip: "Listen to NHK news broadcasts to hear these words pronounced in natural speech patterns."
+});
+
+curriculum.push({
+  day: 1428,
+  phaseNum: 28,
+  phaseName: "N1 Vocabulary",
+  week: Math.ceil(1428 / 7),
+  title: "Reading: Onomatopoeia in Literature",
+  intro: "Today is a reading day. Apply the vocabulary you have learned in context through an extended passage.",
+  type: "reading",
+  vocab: [["擬態語","ぎたいご","mimetic word"],["擬音語","ぎおんご","onomatopoeia"],["五感","ごかん","five senses"],["表現力","ひょうげんりょく","expressive power"],["臨場感","りんじょうかん","sense of being there"]],
+  chars: [],
+  grammar: {"pattern":"臨場感を与える","meaning":"to give a sense of being there","example_jp":"擬態語は読者に臨場感を与える効果がある。","example_en":"Mimetic words have the effect of giving readers a sense of being there."},
+  practice: "Read the passage carefully. Answer the comprehension questions, then summarize the main argument in your own words.",
+  tip: "When reading formal Japanese, identify the connectives first — they reveal the logical structure of the argument.",
+  passage: {"text_jp":"日本語の擬音語・擬態語は、世界の言語の中でも飛び抜けて豊富である。英語では一語で済むところを、日本語では微妙なニュアンスの違いによって使い分ける。例えば「笑う」という動作一つをとっても、にこにこ、にやにや、げらげら、くすくす、にんまりと、様態によって異なる表現が存在する。これらの語彙は五感に直接訴えかける力を持ち、文学作品に臨場感と情緒を与える。宮沢賢治の作品には独創的な擬音語が溢れ、読者を幻想的な世界へと誘う。擬態語・擬音語の習得は、日本語の表現力を飛躍的に高める鍵である。","text_en":"Japanese onomatopoeia and mimetic words are outstandingly abundant even among the world's languages. Where English suffices with one word, Japanese distinguishes through subtle nuances. For example, just for the action of 'laughing,' different expressions exist depending on the manner: nikonioko (cheerfully), niyaniya (smirkingly), geragera (loudly), kusukusu (giggling), ninmari (with satisfaction). These words have the power to directly appeal to the five senses and give literary works a sense of presence and emotion. The works of Miyazawa Kenji overflow with creative onomatopoeia, inviting readers into fantastical worlds. Mastering mimetic words and onomatopoeia is the key to dramatically enhancing one's Japanese expressive power.","questions":[{"question_jp":"擬態語・擬音語が文学作品にもたらす効果は何ですか。","question_en":"What effect do mimetic words and onomatopoeia have on literary works?","answer":"臨場感と情緒を与える効果がある"}]}
+});
+
+curriculum.push({
+  day: 1429,
+  phaseNum: 28,
+  phaseName: "N1 Vocabulary",
+  week: Math.ceil(1429 / 7),
+  title: "Newspaper Vocab I: Reporting",
+  intro: "We continue building newspaper vocabulary for advanced reading and listening.",
+  type: "vocab",
+  vocab: [["見出し","みだし","headline"],["社説","しゃせつ","editorial"],["特派員","とくはいん","correspondent"],["論説","ろんせつ","editorial essay"],["報道","ほうどう","news report"],["速報","そくほう","breaking news"],["号外","ごうがい","extra edition"],["紙面","しめん","newspaper page"]],
+  chars: [],
+  grammar: {"pattern":"～を報道する","meaning":"to report on ~","example_jp":"各紙は事件を一面で報道した。","example_en":"All newspapers reported the incident on the front page."},
+  practice: "Write a dialogue between two professionals using at least five of today's vocabulary items.",
+  tip: "Many of these words appear in JLPT N1 reading passages. Practice identifying them in longer texts."
+});
+
+curriculum.push({
+  day: 1430,
+  phaseNum: 28,
+  phaseName: "N1 Vocabulary",
+  week: Math.ceil(1430 / 7),
+  title: "Newspaper Vocab II: Sources & Ethics",
+  intro: "Today's lesson covers important newspaper terms used in professional settings.",
+  type: "vocab",
+  vocab: [["取材","しゅざい","coverage, reporting"],["匿名","とくめい","anonymous"],["署名","しょめい","signature, byline"],["記者会見","きしゃかいけん","press conference"],["世論","よろん","public opinion"],["情報源","じょうほうげん","information source"],["偏向報道","へんこうほうどう","biased reporting"],["客観報道","きゃっかんほうどう","objective reporting"]],
+  chars: [],
+  grammar: {"pattern":"客観的に報道する","meaning":"to report objectively","example_jp":"報道機関には客観報道の義務がある。","example_en":"News organizations have an obligation to report objectively."},
+  practice: "For each word, identify the context where it would most naturally appear (news, academic, legal, etc.).",
+  tip: "When learning formal vocabulary, always note the register — some words are only appropriate in writing."
+});
+
+curriculum.push({
+  day: 1431,
+  phaseNum: 28,
+  phaseName: "N1 Vocabulary",
+  week: Math.ceil(1431 / 7),
+  title: "Newspaper Vocab III: Publishing",
+  intro: "Today we study newspaper vocabulary essential for N1 reading comprehension.",
+  type: "vocab",
+  vocab: [["発行部数","はっこうぶすう","circulation"],["電子版","でんしばん","digital edition"],["購読","こうどく","subscription"],["連載","れんさい","serialization"],["朝刊","ちょうかん","morning edition"],["夕刊","ゆうかん","evening edition"],["投稿","とうこう","contribution, submission"],["読者欄","どくしゃらん","letters to the editor"]],
+  chars: [],
+  grammar: {"pattern":"新聞を購読する","meaning":"to subscribe to a newspaper","example_jp":"電子版の購読者数が紙面を上回った。","example_en":"Digital edition subscribers exceeded those of the print edition."},
+  practice: "Write three sentences using at least four of today's vocabulary items in context.",
+  tip: "Many N1 vocabulary items have kanji that hint at their meaning. Look for common radicals to aid memorization."
+});
+
+curriculum.push({
+  day: 1432,
+  phaseNum: 28,
+  phaseName: "N1 Vocabulary",
+  week: Math.ceil(1432 / 7),
+  title: "Newspaper Vocab IV: Current Events",
+  intro: "Continuing with newspaper terms, today's lesson builds your advanced vocabulary.",
+  type: "vocab",
+  vocab: [["首脳会談","しゅのうかいだん","summit meeting"],["声明","せいめい","statement, declaration"],["制裁","せいさい","sanctions"],["条約","じょうやく","treaty"],["紛争","ふんそう","conflict, dispute"],["難民","なんみん","refugee"],["支援","しえん","support, aid"],["復興","ふっこう","reconstruction, recovery"]],
+  chars: [],
+  grammar: {"pattern":"声明を発表する","meaning":"to issue a statement","example_jp":"両国の首脳は共同声明を発表した。","example_en":"The leaders of both countries issued a joint statement."},
+  practice: "Create a short paragraph on a related topic incorporating five of today's words.",
+  tip: "Reading newspapers regularly is one of the best ways to encounter these words in natural context."
+});
+
+curriculum.push({
+  day: 1433,
+  phaseNum: 28,
+  phaseName: "N1 Vocabulary",
+  week: Math.ceil(1433 / 7),
+  title: "Newspaper Vocab V: Crime & Justice",
+  intro: "Today's focus is newspaper — words you will encounter in formal texts and exams.",
+  type: "vocab",
+  vocab: [["容疑者","ようぎしゃ","suspect"],["逮捕","たいほ","arrest"],["捜査","そうさ","investigation"],["供述","きょうじゅつ","confession, statement"],["公判","こうはん","public trial"],["懲役","ちょうえき","imprisonment"],["執行猶予","しっこうゆうよ","suspended sentence"],["冤罪","えんざい","false accusation"]],
+  chars: [],
+  grammar: {"pattern":"容疑者を逮捕する","meaning":"to arrest a suspect","example_jp":"警察は詐欺の容疑者を逮捕した。","example_en":"Police arrested the fraud suspect."},
+  practice: "For each vocabulary item, write one original example sentence in a formal register.",
+  tip: "Try to learn words in collocations rather than isolation — knowing which verbs pair with which nouns is crucial."
+});
+
+curriculum.push({
+  day: 1434,
+  phaseNum: 28,
+  phaseName: "N1 Vocabulary",
+  week: Math.ceil(1434 / 7),
+  title: "Newspaper Vocab VI: Politics & Governance",
+  intro: "We explore newspaper expressions that appear frequently in N1-level materials.",
+  type: "vocab",
+  vocab: [["政権","せいけん","political power, administration"],["与党","よとう","ruling party"],["野党","やとう","opposition party"],["閣僚","かくりょう","cabinet minister"],["答弁","とうべん","reply (parliamentary)"],["法案","ほうあん","bill, legislation"],["可決","かけつ","passage (of bill)"],["否決","ひけつ","rejection (of bill)"]],
+  chars: [],
+  grammar: {"pattern":"法案を可決する","meaning":"to pass a bill","example_jp":"国会は法案を賛成多数で可決した。","example_en":"The Diet passed the bill by majority vote."},
+  practice: "Compose a brief essay (80-100 characters) using as many of today's words as possible.",
+  tip: "At the N1 level, nuance matters more than raw vocabulary count. Pay attention to subtle differences."
+});
+
+curriculum.push({
+  day: 1435,
+  phaseNum: 28,
+  phaseName: "N1 Vocabulary",
+  week: Math.ceil(1435 / 7),
+  title: "Reading: Newspaper Editorial",
+  intro: "Today is a reading day. Apply the vocabulary you have learned in context through an extended passage.",
+  type: "reading",
+  vocab: [["論調","ろんちょう","tone of argument"],["主張","しゅちょう","assertion, claim"],["公器","こうき","public instrument"],["使命","しめい","mission, duty"],["中立","ちゅうりつ","neutrality"]],
+  chars: [],
+  grammar: {"pattern":"～としての使命","meaning":"the mission as ~","example_jp":"報道機関は社会の公器としての使命を果たすべきである。","example_en":"News organizations should fulfill their mission as instruments of public service."},
+  practice: "Read the passage carefully. Answer the comprehension questions, then summarize the main argument in your own words.",
+  tip: "When reading formal Japanese, identify the connectives first — they reveal the logical structure of the argument.",
+  passage: {"text_jp":"情報技術の飛躍的な発展により、報道を取り巻く環境は劇的に変化した。かつて新聞は情報の独占的な伝達手段であったが、今やインターネットを通じて誰もが情報を発信できる時代となった。この変化は民主主義にとって概ね望ましいものであるが、同時に偏向報道や虚偽情報の拡散という深刻な問題も生じている。報道機関には社会の公器としての使命があり、客観的かつ正確な報道を通じて世論の形成に貢献する責務がある。然し乍ら、商業的圧力の下で速報性と正確性の均衡を保つことは容易ではない。読者もまた、情報を批判的に読み解く力を養う必要がある。","text_en":"Due to the dramatic development of information technology, the environment surrounding journalism has changed drastically. Newspapers were once the exclusive means of conveying information, but we now live in an era where anyone can disseminate information through the internet. This change is generally desirable for democracy, but at the same time it has produced serious problems such as biased reporting and the spread of false information. News organizations have a mission as instruments of public service and bear the responsibility of contributing to the formation of public opinion through objective and accurate reporting. Nevertheless, it is not easy to maintain a balance between speed and accuracy under commercial pressure. Readers too need to cultivate the ability to critically interpret information.","questions":[{"question_jp":"筆者が報道機関と読者の双方に求めていることは何ですか。","question_en":"What does the author demand of both news organizations and readers?","answer":"報道機関には客観的で正確な報道、読者には情報を批判的に読み解く力"}]}
+});
+
+curriculum.push({
+  day: 1436,
+  phaseNum: 28,
+  phaseName: "N1 Vocabulary",
+  week: Math.ceil(1436 / 7),
+  title: "Proverbs VII: Work & Craft",
+  intro: "Today we study advanced N1 vocabulary essential for reading comprehension.",
+  type: "vocab",
+  vocab: [["餅は餅屋","もちはもちや","leave it to the experts"],["下手の横好き","へたのよこずき","being enthusiastic despite lacking skill"],["好きこそ物の上手なれ","すきこそもののじょうずなれ","you excel at what you love"],["継続は力なり","けいぞくはちからなり","persistence is power"],["千里の道も一歩から","せんりのみちもいっぽから","a journey of a thousand miles begins with a single step"],["鉄は熱いうちに打て","てつはあついうちにうて","strike while the iron is hot"],["塵も積もれば山となる","ちりもつもればやまとなる","many a little makes a mickle"],["三日坊主","みっかぼうず","giving up quickly"]],
+  chars: [],
+  grammar: {"pattern":"継続は力なり","meaning":"persistence is power","example_jp":"語学学習において継続は力なりという言葉は真実である。","example_en":"In language learning, the saying 'persistence is power' is true."},
+  practice: "Write three sentences using at least four of today's vocabulary items.",
+  tip: "N1 vocabulary often has kanji that hint at meaning. Look for common radicals."
+});
+
+curriculum.push({
+  day: 1437,
+  phaseNum: 28,
+  phaseName: "N1 Vocabulary",
+  week: Math.ceil(1437 / 7),
+  title: "Proverbs VIII: Human Nature",
+  intro: "Continuing with N1 terms that build your advanced word power.",
+  type: "vocab",
+  vocab: [["馬の耳に念仏","うまのみみにねんぶつ","preaching to deaf ears"],["糠に釘","ぬかにくぎ","pointless effort"],["猫に小判","ねこにこばん","casting pearls before swine"],["帯に短し襷に長し","おびにみじかしたすきにながし","neither one thing nor another"],["焼け石に水","やけいしにみず","a drop in the ocean"],["暖簾に腕押し","のれんにうでおし","pushing against thin air"],["豚に真珠","ぶたにしんじゅ","casting pearls before swine"],["馬耳東風","ばじとうふう","turning a deaf ear"]],
+  chars: [],
+  grammar: {"pattern":"馬の耳に念仏だ","meaning":"it's like preaching to deaf ears","example_jp":"何度注意しても馬の耳に念仏だ。","example_en":"No matter how many times I warn them, it's like preaching to deaf ears."},
+  practice: "Create a short paragraph incorporating five of today's words.",
+  tip: "Regular newspaper reading helps you encounter these words naturally."
+});
+
+curriculum.push({
+  day: 1438,
+  phaseNum: 28,
+  phaseName: "N1 Vocabulary",
+  week: Math.ceil(1438 / 7),
+  title: "Proverbs IX: Fortune & Misfortune",
+  intro: "Today's words appear frequently in N1-level formal and academic texts.",
+  type: "vocab",
+  vocab: [["泣き面に蜂","なきつらにはち","adding insult to injury"],["弱り目に祟り目","よわりめにたたりめ","when it rains, it pours"],["怪我の功名","けがのこうみょう","fortunate accident"],["災い転じて福となす","わざわいてんじてふくとなす","turning misfortune into blessing"],["瓢箪から駒","ひょうたんからこま","unexpected good fortune"],["塞翁が馬","さいおうがうま","blessing in disguise"],["捨てる神あれば拾う神あり","すてるかみあればひろうかみあり","when one door closes another opens"],["七転び八起き","ななころびやおき","perseverance through setbacks"]],
+  chars: [],
+  grammar: {"pattern":"災い転じて福となす","meaning":"to turn misfortune into fortune","example_jp":"失敗を教訓に災い転じて福となした。","example_en":"By learning from failure, they turned misfortune into fortune."},
+  practice: "Write one original example sentence for each vocabulary item.",
+  tip: "Learn words in collocations — knowing verb-noun pairs is crucial at N1."
+});
+
+curriculum.push({
+  day: 1439,
+  phaseNum: 28,
+  phaseName: "N1 Vocabulary",
+  week: Math.ceil(1439 / 7),
+  title: "Proverbs X: Speech & Silence",
+  intro: "We explore expressions that you will encounter in news, essays, and exams.",
+  type: "vocab",
+  vocab: [["口は禍の元","くちはわざわいのもと","loose lips sink ships"],["沈黙は金","ちんもくはきん","silence is golden"],["雄弁は銀","ゆうべんはぎん","eloquence is silver"],["言わぬが花","いわぬがはな","some things are better left unsaid"],["壁に耳あり障子に目あり","かべにみみありしょうじにめあり","walls have ears"],["噂をすれば影がさす","うわさをすればかげがさす","speak of the devil"],["物は言いよう","ものはいいよう","it's all in how you say it"],["口八丁手八丁","くちはっちょうてはっちょう","glib and capable"]],
+  chars: [],
+  grammar: {"pattern":"沈黙は金、雄弁は銀","meaning":"silence is golden, eloquence is silver","example_jp":"時として沈黙は金であり、余計な一言が命取りになる。","example_en":"Sometimes silence is golden, and one unnecessary word can be fatal."},
+  practice: "Compose a brief essay (80-100 chars) using as many words as possible.",
+  tip: "At N1, nuance matters more than raw count. Note subtle differences."
+});
+
+curriculum.push({
+  day: 1440,
+  phaseNum: 28,
+  phaseName: "N1 Vocabulary",
+  week: Math.ceil(1440 / 7),
+  title: "Proverbs Review: Consolidation",
+  intro: "Advanced vocabulary for today strengthens your N1 preparation.",
+  type: "vocab",
+  vocab: [["諺","ことわざ","proverb"],["格言","かくげん","maxim, aphorism"],["慣用句","かんようく","idiomatic expression"],["故事成語","こじせいご","proverb from classical story"],["教訓","きょうくん","lesson, moral"],["含蓄","がんちく","implication, depth"],["比喩的","ひゆてき","figurative, metaphorical"],["処世訓","しょせいくん","lesson for life"]],
+  chars: [],
+  grammar: {"pattern":"～という格言がある","meaning":"there is a maxim that says ~","example_jp":"「継続は力なり」という格言がある。","example_en":"There is a maxim that says 'persistence is power.'"},
+  practice: "Match words to synonyms from previous lessons, then write sentences.",
+  tip: "Keep a vocabulary notebook organized by theme for better retention."
+});
+
+curriculum.push({
+  day: 1441,
+  phaseNum: 28,
+  phaseName: "N1 Vocabulary",
+  week: Math.ceil(1441 / 7),
+  title: "Onomatopoeia VII: Weather & Nature Sounds",
+  intro: "Today brings more terms vital for academic and formal contexts.",
+  type: "vocab",
+  vocab: [["ざあざあ","ざあざあ","pouring (rain)"],["しとしと","しとしと","drizzling gently"],["ぱらぱら","ぱらぱら","sprinkling, scattered"],["ごうごう","ごうごう","roaring (wind/fire)"],["そよそよ","そよそよ","gently blowing (breeze)"],["きらきら","きらきら","sparkling, glittering"],["ぎらぎら","ぎらぎら","glaring, dazzling"],["じめじめ","じめじめ","damp, humid"]],
+  chars: [],
+  grammar: {"pattern":"しとしとと雨が降る","meaning":"rain falls gently","example_jp":"秋雨がしとしとと降り続いた。","example_en":"The autumn rain continued to fall gently."},
+  practice: "Practice reading aloud, then write your own example sentences.",
+  tip: "Writing kanji by hand reinforces recognition and recall."
+});
+
+curriculum.push({
+  day: 1442,
+  phaseNum: 28,
+  phaseName: "N1 Vocabulary",
+  week: Math.ceil(1442 / 7),
+  title: "Onomatopoeia VIII: Eating & Drinking",
+  intro: "Expanding vocabulary with words important for professional Japanese.",
+  type: "vocab",
+  vocab: [["がぶがぶ","がぶがぶ","gulping down"],["もぐもぐ","もぐもぐ","munching, chewing"],["ぱくぱく","ぱくぱく","eating hungrily"],["ちびちび","ちびちび","sipping slowly"],["ぺろぺろ","ぺろぺろ","licking"],["ごくごく","ごくごく","gulping"],["ぱりぱり","ぱりぱり","crunchy, crispy"],["とろとろ","とろとろ","thick and creamy"]],
+  chars: [],
+  grammar: {"pattern":"ごくごくと飲む","meaning":"to gulp down","example_jp":"喉が渇いて水をごくごくと飲んだ。","example_en":"Being thirsty, I gulped down water."},
+  practice: "Use today's vocabulary to summarize a recent news article.",
+  tip: "NHK news broadcasts let you hear these words in natural speech."
+});
+
+curriculum.push({
+  day: 1443,
+  phaseNum: 28,
+  phaseName: "N1 Vocabulary",
+  week: Math.ceil(1443 / 7),
+  title: "Onomatopoeia IX: Body Language",
+  intro: "Today's lesson deepens understanding of formal written Japanese.",
+  type: "vocab",
+  vocab: [["うろうろ","うろうろ","wandering aimlessly"],["きょろきょろ","きょろきょろ","looking around restlessly"],["うなずく","うなずく","to nod"],["ぺこぺこ","ぺこぺこ","bowing repeatedly / hungry"],["くねくね","くねくね","winding, curving"],["よろよろ","よろよろ","staggering, tottering"],["のっそり","のっそり","lumbering, slowly"],["すたすた","すたすた","walking briskly"]],
+  chars: [],
+  grammar: {"pattern":"きょろきょろ見回す","meaning":"to look around restlessly","example_jp":"迷子の子供がきょろきょろと見回していた。","example_en":"The lost child was looking around restlessly."},
+  practice: "Create flashcards and practice recall in both directions.",
+  tip: "Review previous vocabulary alongside today's to build connections."
+});
+
+curriculum.push({
+  day: 1444,
+  phaseNum: 28,
+  phaseName: "N1 Vocabulary",
+  week: Math.ceil(1444 / 7),
+  title: "Onomatopoeia X: Speech Patterns",
+  intro: "We continue building vocabulary for advanced reading and listening.",
+  type: "vocab",
+  vocab: [["ぺらぺら","ぺらぺら","fluently / chattering"],["たどたどしい","たどたどしい","faltering, halting"],["はきはき","はきはき","clearly, distinctly"],["もごもご","もごもご","mumbling, indistinctly"],["べらべら","べらべら","blabbering"],["ぼそぼそ","ぼそぼそ","muttering quietly"],["すらすら","すらすら","fluently, smoothly"],["どもる","どもる","to stammer"]],
+  chars: [],
+  grammar: {"pattern":"すらすらと話す","meaning":"to speak fluently","example_jp":"彼女は日本語をすらすらと話す。","example_en":"She speaks Japanese fluently."},
+  practice: "Write a dialogue using at least five of today's vocabulary items.",
+  tip: "Many of these words appear in N1 reading passages. Practice spotting them."
+});
+
+curriculum.push({
+  day: 1445,
+  phaseNum: 28,
+  phaseName: "N1 Vocabulary",
+  week: Math.ceil(1445 / 7),
+  title: "Onomatopoeia XI: Emotional Reactions",
+  intro: "Important terms used in professional and scholarly settings.",
+  type: "vocab",
+  vocab: [["がっかり","がっかり","disappointed"],["うんざり","うんざり","fed up, disgusted"],["ぞっと","ぞっと","shuddering, chilling"],["ほっと","ほっと","relieved"],["しょんぼり","しょんぼり","dejected, downcast"],["にやにや","にやにや","grinning, smirking"],["むかむか","むかむか","nauseous / angry"],["くよくよ","くよくよ","brooding, worrying"]],
+  chars: [],
+  grammar: {"pattern":"がっかりする","meaning":"to be disappointed","example_jp":"試験の結果を聞いてがっかりした。","example_en":"I was disappointed upon hearing the exam results."},
+  practice: "Identify the context where each word most naturally appears.",
+  tip: "Always note the register — some words are only appropriate in writing."
+});
+
+curriculum.push({
+  day: 1446,
+  phaseNum: 28,
+  phaseName: "N1 Vocabulary",
+  week: Math.ceil(1446 / 7),
+  title: "Reading: Proverbs & Onomatopoeia in Context",
+  intro: "Today is a reading day. Apply vocabulary in context through an extended passage.",
+  type: "reading",
+  vocab: [["表現","ひょうげん","expression"],["感覚","かんかく","sense, sensation"],["生き生き","いきいき","vividly, lively"],["独自","どくじ","unique, original"],["豊かさ","ゆたかさ","richness, abundance"]],
+  chars: [],
+  grammar: {"pattern":"生き生きと描写する","meaning":"to depict vividly","example_jp":"擬音語は場面を生き生きと描写する力がある。","example_en":"Onomatopoeia has the power to depict scenes vividly."},
+  practice: "Read the passage carefully. Answer questions and summarize the main argument.",
+  tip: "In formal texts, identify connectives first — they reveal the logical structure.",
+  passage: {"text_jp":"日本語の表現の豊かさは、諺と擬音語・擬態語に如実に表れている。「猿も木から落ちる」という諺は、どれほど熟練した者でも失敗することがあるという教訓を、生き生きとした比喩で伝える。一方、擬態語の「しんみり」と「しみじみ」は、どちらも静かな感情を表すが、前者は寂しさを含み、後者は深い感慨を含む。このような微妙な差異を使い分けることが、日本語の上級者への道である。日本語は感覚的な表現において独自の体系を持ち、それが文学や日常会話に深みを与えている。","text_en":"The richness of Japanese expression is clearly manifested in proverbs and onomatopoeia. The proverb 'even monkeys fall from trees' conveys through vivid metaphor the lesson that even the most skilled can fail. Meanwhile, the mimetic words 'shinmiri' and 'shimijimi' both express quiet emotions, but the former contains sadness while the latter contains deep sentiment. Being able to distinguish such subtle differences is the path to advanced Japanese. Japanese has a unique system for sensory expression, and this gives depth to both literature and daily conversation.","questions":[{"question_jp":"「しんみり」と「しみじみ」の違いは何ですか。","question_en":"What is the difference between 'shinmiri' and 'shimijimi'?","answer":"しんみりは寂しさを含み、しみじみは深い感慨を含む"}]}
+});
+
+curriculum.push({
+  day: 1447,
+  phaseNum: 28,
+  phaseName: "N1 Vocabulary",
+  week: Math.ceil(1447 / 7),
+  title: "Onomatopoeia XII: Complex Emotional States",
+  intro: "Continuing with N1 terms that build your advanced word power.",
+  type: "vocab",
+  vocab: [["もやもや","もやもや","hazy, unsettled"],["わくわく","わくわく","excited, thrilled"],["どきどき","どきどき","heart pounding"],["いらいら","いらいら","irritated"],["うずうず","うずうず","itching to do something"],["はらはら","はらはら","anxiously watching"],["じれったい","じれったい","frustratingly slow"],["せかせか","せかせか","restlessly busy"]],
+  chars: [],
+  grammar: {"pattern":"わくわくする","meaning":"to be excited","example_jp":"新しい挑戦にわくわくしている。","example_en":"I am thrilled about the new challenge."},
+  practice: "Create a short paragraph incorporating five of today's words.",
+  tip: "Regular newspaper reading helps you encounter these words naturally."
+});
+
+curriculum.push({
+  day: 1448,
+  phaseNum: 28,
+  phaseName: "N1 Vocabulary",
+  week: Math.ceil(1448 / 7),
+  title: "Onomatopoeia XIII: Appearance & Impressions",
+  intro: "Today's words appear frequently in N1-level formal and academic texts.",
+  type: "vocab",
+  vocab: [["すっきり","すっきり","refreshed, neat"],["こざっぱり","こざっぱり","neat and tidy"],["ぼろぼろ","ぼろぼろ","tattered, worn out"],["ぴかぴか","ぴかぴか","shiny, sparkling"],["よぼよぼ","よぼよぼ","tottering (elderly)"],["しゃきっと","しゃきっと","crisp, alert"],["だらだら","だらだら","sluggishly, lazily"],["しゃんと","しゃんと","straight, upright"]],
+  chars: [],
+  grammar: {"pattern":"すっきりする","meaning":"to feel refreshed","example_jp":"朝のシャワーですっきりした。","example_en":"I felt refreshed after my morning shower."},
+  practice: "Write one original example sentence for each vocabulary item.",
+  tip: "Learn words in collocations — knowing verb-noun pairs is crucial at N1."
+});
+
+curriculum.push({
+  day: 1449,
+  phaseNum: 28,
+  phaseName: "N1 Vocabulary",
+  week: Math.ceil(1449 / 7),
+  title: "Onomatopoeia XIV: Intensity & Speed",
+  intro: "We explore expressions that you will encounter in news, essays, and exams.",
+  type: "vocab",
+  vocab: [["ぐんぐん","ぐんぐん","rapidly, steadily"],["めきめき","めきめき","making rapid progress"],["じわじわ","じわじわ","gradually, slowly"],["ずんずん","ずんずん","steadily advancing"],["するする","するする","smoothly, easily"],["ばりばり","ばりばり","energetically working"],["もりもり","もりもり","vigorously (eating/working)"],["がんがん","がんがん","pounding, aggressively"]],
+  chars: [],
+  grammar: {"pattern":"めきめき上達する","meaning":"to improve rapidly","example_jp":"練習のおかげでめきめき上達した。","example_en":"Thanks to practice, I improved rapidly."},
+  practice: "Compose a brief essay (80-100 chars) using as many words as possible.",
+  tip: "At N1, nuance matters more than raw count. Note subtle differences."
+});
+
+curriculum.push({
+  day: 1450,
+  phaseNum: 28,
+  phaseName: "N1 Vocabulary",
+  week: Math.ceil(1450 / 7),
+  title: "Onomatopoeia XV: Relationship Dynamics",
+  intro: "Advanced vocabulary for today strengthens your N1 preparation.",
+  type: "vocab",
+  vocab: [["べたべた","べたべた","clingy, sticky"],["つんつん","つんつん","standoffish, prickly"],["でれでれ","でれでれ","lovey-dovey"],["よそよそしい","よそよそしい","distant, aloof"],["なれなれしい","なれなれしい","overly familiar"],["ぎくしゃく","ぎくしゃく","awkward, strained"],["むつまじい","むつまじい","harmonious, intimate"],["わいわい","わいわい","noisily (in a group)"]],
+  chars: [],
+  grammar: {"pattern":"ぎくしゃくした関係","meaning":"a strained relationship","example_jp":"二人の関係はぎくしゃくしている。","example_en":"Their relationship is strained."},
+  practice: "Match words to synonyms from previous lessons, then write sentences.",
+  tip: "Keep a vocabulary notebook organized by theme for better retention."
+});
+
+curriculum.push({
+  day: 1451,
+  phaseNum: 28,
+  phaseName: "N1 Vocabulary",
+  week: Math.ceil(1451 / 7),
+  title: "Onomatopoeia XVI: Physical Sensations",
+  intro: "Today brings more terms vital for academic and formal contexts.",
+  type: "vocab",
+  vocab: [["ずきずき","ずきずき","throbbing (pain)"],["ちくちく","ちくちく","prickling, stinging"],["ひりひり","ひりひり","smarting, burning"],["むずむず","むずむず","itchy, ticklish"],["がんがん","がんがん","pounding (headache)"],["ぞくぞく","ぞくぞく","chills / thrilling"],["じんじん","じんじん","tingling, numbing"],["くらくら","くらくら","dizzy"]],
+  chars: [],
+  grammar: {"pattern":"頭がずきずきする","meaning":"to have a throbbing headache","example_jp":"二日酔いで頭がずきずきする。","example_en":"I have a throbbing headache from a hangover."},
+  practice: "Practice reading aloud, then write your own example sentences.",
+  tip: "Writing kanji by hand reinforces recognition and recall."
+});
+
+curriculum.push({
+  day: 1452,
+  phaseNum: 28,
+  phaseName: "N1 Vocabulary",
+  week: Math.ceil(1452 / 7),
+  title: "Onomatopoeia XVII: Texture & Touch Advanced",
+  intro: "Expanding vocabulary with words important for professional Japanese.",
+  type: "vocab",
+  vocab: [["ざらざら","ざらざら","rough, coarse"],["すべすべ","すべすべ","smooth, silky"],["もちもち","もちもち","chewy, springy"],["かちかち","かちかち","hard, frozen"],["ぐにゃぐにゃ","ぐにゃぐにゃ","limp, bendy"],["ぷよぷよ","ぷよぷよ","soft, jiggly"],["ごつごつ","ごつごつ","rugged, rough"],["しっとり","しっとり","moist, supple"]],
+  chars: [],
+  grammar: {"pattern":"肌がすべすべだ","meaning":"the skin is smooth","example_jp":"赤ちゃんの肌はすべすべだ。","example_en":"A baby's skin is smooth."},
+  practice: "Use today's vocabulary to summarize a recent news article.",
+  tip: "NHK news broadcasts let you hear these words in natural speech."
+});
+
+curriculum.push({
+  day: 1453,
+  phaseNum: 28,
+  phaseName: "N1 Vocabulary",
+  week: Math.ceil(1453 / 7),
+  title: "Onomatopoeia XVIII: Manner of Movement",
+  intro: "Today's lesson deepens understanding of formal written Japanese.",
+  type: "vocab",
+  vocab: [["ひらひら","ひらひら","fluttering"],["くるくる","くるくる","spinning, twirling"],["ゆらゆら","ゆらゆら","swaying gently"],["ぶらぶら","ぶらぶら","dangling, strolling"],["ころころ","ころころ","rolling"],["よたよた","よたよた","tottering unsteadily"],["ちょこちょこ","ちょこちょこ","toddling, taking small steps"],["のそのそ","のそのそ","lumbering, plodding"]],
+  chars: [],
+  grammar: {"pattern":"ひらひらと舞う","meaning":"to flutter and dance","example_jp":"桜の花びらがひらひらと舞い落ちた。","example_en":"Cherry blossom petals fluttered and danced down."},
+  practice: "Create flashcards and practice recall in both directions.",
+  tip: "Review previous vocabulary alongside today's to build connections."
+});
+
+curriculum.push({
+  day: 1454,
+  phaseNum: 28,
+  phaseName: "N1 Vocabulary",
+  week: Math.ceil(1454 / 7),
+  title: "Onomatopoeia XIX: Environmental Sounds",
+  intro: "We continue building vocabulary for advanced reading and listening.",
+  type: "vocab",
+  vocab: [["せせらぎ","せせらぎ","babbling (brook)"],["さやさや","さやさや","rustling (leaves)"],["ちろちろ","ちろちろ","trickling"],["ごうごう","ごうごう","roaring"],["がらがら","がらがら","rattling / empty"],["ぎしぎし","ぎしぎし","creaking"],["ぽたぽた","ぽたぽた","dripping"],["かさかさ","かさかさ","rustling, dry"]],
+  chars: [],
+  grammar: {"pattern":"小川がせせらぎを立てる","meaning":"a brook babbles","example_jp":"森の中で小川のせせらぎが聞こえた。","example_en":"In the forest, I heard the babbling of a brook."},
+  practice: "Write a dialogue using at least five of today's vocabulary items.",
+  tip: "Many of these words appear in N1 reading passages. Practice spotting them."
+});
+
+curriculum.push({
+  day: 1455,
+  phaseNum: 28,
+  phaseName: "N1 Vocabulary",
+  week: Math.ceil(1455 / 7),
+  title: "Onomatopoeia XX: Animal Sounds & Behaviors",
+  intro: "Important terms used in professional and scholarly settings.",
+  type: "vocab",
+  vocab: [["わんわん","わんわん","bow-wow (dog)"],["にゃあにゃあ","にゃあにゃあ","meow (cat)"],["ちゅんちゅん","ちゅんちゅん","chirping (sparrow)"],["ぶんぶん","ぶんぶん","buzzing (insect)"],["こけこっこう","こけこっこう","cock-a-doodle-doo"],["けろけろ","けろけろ","ribbit (frog)"],["もうもう","もうもう","moo (cow)"],["ひひーん","ひひーん","neigh (horse)"]],
+  chars: [],
+  grammar: {"pattern":"虫がぶんぶんと飛ぶ","meaning":"insects buzz around","example_jp":"夏の夜、蚊がぶんぶんと飛んでいた。","example_en":"On summer nights, mosquitoes were buzzing around."},
+  practice: "Identify the context where each word most naturally appears.",
+  tip: "Always note the register — some words are only appropriate in writing."
+});
+
+curriculum.push({
+  day: 1456,
+  phaseNum: 28,
+  phaseName: "N1 Vocabulary",
+  week: Math.ceil(1456 / 7),
+  title: "Onomatopoeia: Expressive Writing Practice",
+  intro: "Today we study advanced N1 vocabulary essential for reading comprehension.",
+  type: "vocab",
+  vocab: [["擬声語","ぎせいご","phonomime (voice sound)"],["擬容語","ぎようご","phenomime (appearance)"],["擬情語","ぎじょうご","psychomime (emotion)"],["語感","ごかん","word feeling, nuance"],["リズム","りずむ","rhythm"],["韻","いん","rhyme"],["響き","ひびき","resonance, sound"],["余韻","よいん","lingering resonance"]],
+  chars: [],
+  grammar: {"pattern":"語感を大切にする","meaning":"to value word feeling","example_jp":"日本語の擬態語は語感を大切にする文化の産物である。","example_en":"Japanese mimetic words are a product of a culture that values word feeling."},
+  practice: "Write three sentences using at least four of today's vocabulary items.",
+  tip: "N1 vocabulary often has kanji that hint at meaning. Look for common radicals."
+});
+
+curriculum.push({
+  day: 1457,
+  phaseNum: 28,
+  phaseName: "N1 Vocabulary",
+  week: Math.ceil(1457 / 7),
+  title: "Onomatopoeia: Context & Register",
+  intro: "Continuing with N1 terms that build your advanced word power.",
+  type: "vocab",
+  vocab: [["書き言葉","かきことば","written language"],["話し言葉","はなしことば","spoken language"],["文体","ぶんたい","writing style"],["砕けた","くだけた","casual, informal"],["改まった","あらたまった","formal, official"],["口語的","こうごてき","colloquial"],["文語的","ぶんごてき","literary"],["使い分け","つかいわけ","using properly depending on context"]],
+  chars: [],
+  grammar: {"pattern":"場面に応じて使い分ける","meaning":"to use differently according to the situation","example_jp":"擬態語は場面に応じて使い分けることが重要だ。","example_en":"It is important to use mimetic words differently according to the situation."},
+  practice: "Create a short paragraph incorporating five of today's words.",
+  tip: "Regular newspaper reading helps you encounter these words naturally."
+});
+
+curriculum.push({
+  day: 1458,
+  phaseNum: 28,
+  phaseName: "N1 Vocabulary",
+  week: Math.ceil(1458 / 7),
+  title: "Reading: Onomatopoeia in Literature",
+  intro: "Today is a reading day. Apply vocabulary in context through an extended passage.",
+  type: "reading",
+  vocab: [["描写力","びょうしゃりょく","descriptive power"],["臨場感","りんじょうかん","sense of being there"],["創造性","そうぞうせい","creativity"],["言語感覚","げんごかんかく","linguistic sense"],["文学的効果","ぶんがくてきこうか","literary effect"]],
+  chars: [],
+  grammar: {"pattern":"臨場感を与える","meaning":"to give a sense of being there","example_jp":"擬態語は読者に臨場感を与える。","example_en":"Mimetic words give readers a sense of being there."},
+  practice: "Read the passage carefully. Answer questions and summarize the main argument.",
+  tip: "In formal texts, identify connectives first — they reveal the logical structure.",
+  passage: {"text_jp":"日本語の擬音語・擬態語は、世界の言語の中でも飛び抜けて豊富である。英語では一語で済むところを、日本語では微妙なニュアンスの違いによって使い分ける。例えば「笑う」という動作一つをとっても、にこにこ、にやにや、げらげら、くすくすと、様態によって異なる表現が存在する。これらの語彙は五感に直接訴えかける力を持ち、文学作品に臨場感と情緒を与える。宮沢賢治の作品には独創的な擬音語が溢れ、読者を幻想的な世界へと誘う。擬態語・擬音語の習得は、日本語の表現力を飛躍的に高める鍵である。","text_en":"Japanese onomatopoeia and mimetic words are outstandingly abundant even among the world's languages. Where English suffices with one word, Japanese distinguishes through subtle nuances. For example, just for the action of laughing, different expressions exist depending on the manner: nikoniko (cheerfully), niyaniya (smirking), geragera (loudly), kusukusu (giggling). These words have the power to directly appeal to the five senses and give literary works a sense of presence and emotion. The works of Miyazawa Kenji overflow with creative onomatopoeia, inviting readers into fantastical worlds. Mastering mimetic words is the key to dramatically enhancing Japanese expressive power.","questions":[{"question_jp":"擬態語が文学作品にもたらす効果は何ですか。","question_en":"What effect do mimetic words have on literary works?","answer":"臨場感と情緒を与える"}]}
+});
+
+curriculum.push({
+  day: 1459,
+  phaseNum: 28,
+  phaseName: "N1 Vocabulary",
+  week: Math.ceil(1459 / 7),
+  title: "Newspaper Vocab I: Reporting",
+  intro: "We explore expressions that you will encounter in news, essays, and exams.",
+  type: "vocab",
+  vocab: [["見出し","みだし","headline"],["社説","しゃせつ","editorial"],["特派員","とくはいん","correspondent"],["論説","ろんせつ","editorial essay"],["報道","ほうどう","news report"],["速報","そくほう","breaking news"],["号外","ごうがい","extra edition"],["紙面","しめん","newspaper page"]],
+  chars: [],
+  grammar: {"pattern":"一面で報道する","meaning":"to report on the front page","example_jp":"各紙は事件を一面で報道した。","example_en":"All newspapers reported the incident on the front page."},
+  practice: "Compose a brief essay (80-100 chars) using as many words as possible.",
+  tip: "At N1, nuance matters more than raw count. Note subtle differences."
+});
+
+curriculum.push({
+  day: 1460,
+  phaseNum: 28,
+  phaseName: "N1 Vocabulary",
+  week: Math.ceil(1460 / 7),
+  title: "Newspaper Vocab II: Sources & Ethics",
+  intro: "Advanced vocabulary for today strengthens your N1 preparation.",
+  type: "vocab",
+  vocab: [["取材","しゅざい","coverage, reporting"],["匿名","とくめい","anonymous"],["署名","しょめい","signature, byline"],["記者会見","きしゃかいけん","press conference"],["世論","よろん","public opinion"],["情報源","じょうほうげん","information source"],["偏向報道","へんこうほうどう","biased reporting"],["客観報道","きゃっかんほうどう","objective reporting"]],
+  chars: [],
+  grammar: {"pattern":"客観的に報道する","meaning":"to report objectively","example_jp":"報道機関には客観報道の義務がある。","example_en":"News organizations have an obligation to report objectively."},
+  practice: "Match words to synonyms from previous lessons, then write sentences.",
+  tip: "Keep a vocabulary notebook organized by theme for better retention."
+});
+
+curriculum.push({
+  day: 1461,
+  phaseNum: 28,
+  phaseName: "N1 Vocabulary",
+  week: Math.ceil(1461 / 7),
+  title: "Newspaper Vocab III: Publishing",
+  intro: "Today brings more terms vital for academic and formal contexts.",
+  type: "vocab",
+  vocab: [["発行部数","はっこうぶすう","circulation"],["電子版","でんしばん","digital edition"],["購読","こうどく","subscription"],["連載","れんさい","serialization"],["朝刊","ちょうかん","morning edition"],["夕刊","ゆうかん","evening edition"],["投稿","とうこう","submission"],["読者欄","どくしゃらん","letters to the editor"]],
+  chars: [],
+  grammar: {"pattern":"新聞を購読する","meaning":"to subscribe to a newspaper","example_jp":"電子版の購読者数が紙面を上回った。","example_en":"Digital subscribers exceeded print subscribers."},
+  practice: "Practice reading aloud, then write your own example sentences.",
+  tip: "Writing kanji by hand reinforces recognition and recall."
+});
+
+curriculum.push({
+  day: 1462,
+  phaseNum: 28,
+  phaseName: "N1 Vocabulary",
+  week: Math.ceil(1462 / 7),
+  title: "Newspaper Vocab IV: International Affairs",
+  intro: "Expanding vocabulary with words important for professional Japanese.",
+  type: "vocab",
+  vocab: [["首脳会談","しゅのうかいだん","summit meeting"],["声明","せいめい","statement, declaration"],["制裁","せいさい","sanctions"],["条約","じょうやく","treaty"],["紛争","ふんそう","conflict, dispute"],["難民","なんみん","refugee"],["支援","しえん","support, aid"],["復興","ふっこう","reconstruction"]],
+  chars: [],
+  grammar: {"pattern":"共同声明を発表する","meaning":"to issue a joint statement","example_jp":"両首脳は共同声明を発表した。","example_en":"Both leaders issued a joint statement."},
+  practice: "Use today's vocabulary to summarize a recent news article.",
+  tip: "NHK news broadcasts let you hear these words in natural speech."
+});
+
+curriculum.push({
+  day: 1463,
+  phaseNum: 28,
+  phaseName: "N1 Vocabulary",
+  week: Math.ceil(1463 / 7),
+  title: "Newspaper Vocab V: Crime & Justice",
+  intro: "Today's lesson deepens understanding of formal written Japanese.",
+  type: "vocab",
+  vocab: [["容疑者","ようぎしゃ","suspect"],["逮捕","たいほ","arrest"],["捜査","そうさ","investigation"],["供述","きょうじゅつ","statement, confession"],["公判","こうはん","public trial"],["懲役","ちょうえき","imprisonment"],["執行猶予","しっこうゆうよ","suspended sentence"],["冤罪","えんざい","false accusation"]],
+  chars: [],
+  grammar: {"pattern":"容疑者を逮捕する","meaning":"to arrest a suspect","example_jp":"警察は詐欺の容疑者を逮捕した。","example_en":"Police arrested the fraud suspect."},
+  practice: "Create flashcards and practice recall in both directions.",
+  tip: "Review previous vocabulary alongside today's to build connections."
+});
+
+curriculum.push({
+  day: 1464,
+  phaseNum: 28,
+  phaseName: "N1 Vocabulary",
+  week: Math.ceil(1464 / 7),
+  title: "Newspaper Vocab VI: Politics",
+  intro: "We continue building vocabulary for advanced reading and listening.",
+  type: "vocab",
+  vocab: [["政権","せいけん","administration"],["与党","よとう","ruling party"],["野党","やとう","opposition party"],["閣僚","かくりょう","cabinet minister"],["答弁","とうべん","parliamentary reply"],["法案","ほうあん","bill, legislation"],["可決","かけつ","passage of bill"],["否決","ひけつ","rejection of bill"]],
+  chars: [],
+  grammar: {"pattern":"法案を可決する","meaning":"to pass a bill","example_jp":"国会は法案を賛成多数で可決した。","example_en":"The Diet passed the bill by majority vote."},
+  practice: "Write a dialogue using at least five of today's vocabulary items.",
+  tip: "Many of these words appear in N1 reading passages. Practice spotting them."
+});
+
+curriculum.push({
+  day: 1465,
+  phaseNum: 28,
+  phaseName: "N1 Vocabulary",
+  week: Math.ceil(1465 / 7),
+  title: "Newspaper Vocab VII: Economy & Business News",
+  intro: "Important terms used in professional and scholarly settings.",
+  type: "vocab",
+  vocab: [["景況感","けいきょうかん","economic sentiment"],["業績","ぎょうせき","business results"],["決算","けっさん","financial settlement"],["増収増益","ぞうしゅうぞうえき","increased revenue and profit"],["減収減益","げんしゅうげんえき","decreased revenue and profit"],["上場","じょうじょう","market listing"],["株主","かぶぬし","shareholder"],["配当","はいとう","dividend"]],
+  chars: [],
+  grammar: {"pattern":"増収増益を達成する","meaning":"to achieve increased revenue and profit","example_jp":"同社は三期連続で増収増益を達成した。","example_en":"The company achieved increased revenue and profit for three consecutive periods."},
+  practice: "Identify the context where each word most naturally appears.",
+  tip: "Always note the register — some words are only appropriate in writing."
+});
+
+curriculum.push({
+  day: 1466,
+  phaseNum: 28,
+  phaseName: "N1 Vocabulary",
+  week: Math.ceil(1466 / 7),
+  title: "Newspaper Vocab VIII: Society & Welfare",
+  intro: "Today we study advanced N1 vocabulary essential for reading comprehension.",
+  type: "vocab",
+  vocab: [["少子高齢化","しょうしこうれいか","declining birthrate and aging population"],["待機児童","たいきじどう","children on nursery waiting lists"],["介護","かいご","nursing care"],["生活保護","せいかつほご","welfare"],["孤立","こりつ","isolation"],["格差","かくさ","disparity, gap"],["貧困","ひんこん","poverty"],["共生","きょうせい","coexistence"]],
+  chars: [],
+  grammar: {"pattern":"格差が拡大する","meaning":"the gap widens","example_jp":"所得格差が年々拡大している。","example_en":"The income gap is widening year by year."},
+  practice: "Write three sentences using at least four of today's vocabulary items.",
+  tip: "N1 vocabulary often has kanji that hint at meaning. Look for common radicals."
+});
+
+curriculum.push({
+  day: 1467,
+  phaseNum: 28,
+  phaseName: "N1 Vocabulary",
+  week: Math.ceil(1467 / 7),
+  title: "Newspaper Vocab IX: Science & Technology",
+  intro: "Continuing with N1 terms that build your advanced word power.",
+  type: "vocab",
+  vocab: [["人工知能","じんこうちのう","artificial intelligence"],["再生医療","さいせいいりょう","regenerative medicine"],["宇宙開発","うちゅうかいはつ","space development"],["量子","りょうし","quantum"],["遺伝子","いでんし","gene"],["特許","とっきょ","patent"],["知的財産","ちてきざいさん","intellectual property"],["技術革新","ぎじゅつかくしん","technological innovation"]],
+  chars: [],
+  grammar: {"pattern":"技術革新が進む","meaning":"technological innovation advances","example_jp":"人工知能の分野で技術革新が急速に進んでいる。","example_en":"Technological innovation is advancing rapidly in the field of artificial intelligence."},
+  practice: "Create a short paragraph incorporating five of today's words.",
+  tip: "Regular newspaper reading helps you encounter these words naturally."
+});
+
+curriculum.push({
+  day: 1468,
+  phaseNum: 28,
+  phaseName: "N1 Vocabulary",
+  week: Math.ceil(1468 / 7),
+  title: "Newspaper Vocab X: Environment & Disaster",
+  intro: "Today's words appear frequently in N1-level formal and academic texts.",
+  type: "vocab",
+  vocab: [["温暖化","おんだんか","global warming"],["排出量","はいしゅつりょう","emissions"],["再生可能エネルギー","さいせいかのうえねるぎー","renewable energy"],["脱炭素","だつたんそ","decarbonization"],["防災","ぼうさい","disaster prevention"],["避難","ひなん","evacuation"],["復旧","ふっきゅう","restoration"],["被災","ひさい","being affected by disaster"]],
+  chars: [],
+  grammar: {"pattern":"排出量を削減する","meaning":"to reduce emissions","example_jp":"2050年までに排出量をゼロにする目標を掲げた。","example_en":"They set a goal to reduce emissions to zero by 2050."},
+  practice: "Write one original example sentence for each vocabulary item.",
+  tip: "Learn words in collocations — knowing verb-noun pairs is crucial at N1."
+});
+
+curriculum.push({
+  day: 1469,
+  phaseNum: 28,
+  phaseName: "N1 Vocabulary",
+  week: Math.ceil(1469 / 7),
+  title: "Newspaper Vocab XI: Education & Culture",
+  intro: "We explore expressions that you will encounter in news, essays, and exams.",
+  type: "vocab",
+  vocab: [["教育改革","きょういくかいかく","education reform"],["学力","がくりょく","academic ability"],["不登校","ふとうこう","school refusal"],["いじめ","いじめ","bullying"],["文化財","ぶんかざい","cultural property"],["無形文化遺産","むけいぶんかいさん","intangible cultural heritage"],["世界遺産","せかいいさん","world heritage"],["伝統芸能","でんとうげいのう","traditional performing arts"]],
+  chars: [],
+  grammar: {"pattern":"文化財を保護する","meaning":"to protect cultural properties","example_jp":"無形文化遺産として伝統芸能を保護する取り組みが進んでいる。","example_en":"Efforts to protect traditional performing arts as intangible cultural heritage are advancing."},
+  practice: "Compose a brief essay (80-100 chars) using as many words as possible.",
+  tip: "At N1, nuance matters more than raw count. Note subtle differences."
+});
+
+curriculum.push({
+  day: 1470,
+  phaseNum: 28,
+  phaseName: "N1 Vocabulary",
+  week: Math.ceil(1470 / 7),
+  title: "Reading: Newspaper Editorial",
+  intro: "Today is a reading day. Apply vocabulary in context through an extended passage.",
+  type: "reading",
+  vocab: [["論調","ろんちょう","tone of argument"],["主張","しゅちょう","assertion"],["公器","こうき","public instrument"],["使命","しめい","mission"],["中立","ちゅうりつ","neutrality"]],
+  chars: [],
+  grammar: {"pattern":"公器としての使命","meaning":"the mission as a public instrument","example_jp":"報道機関は社会の公器としての使命を果たすべきである。","example_en":"News organizations should fulfill their mission as public instruments."},
+  practice: "Read the passage carefully. Answer questions and summarize the main argument.",
+  tip: "In formal texts, identify connectives first — they reveal the logical structure.",
+  passage: {"text_jp":"情報技術の飛躍的な発展により、報道を取り巻く環境は劇的に変化した。かつて新聞は情報の独占的な伝達手段であったが、今やインターネットを通じて誰もが情報を発信できる時代となった。この変化は民主主義にとって概ね望ましいものであるが、同時に偏向報道や虚偽情報の拡散という深刻な問題も生じている。報道機関には社会の公器としての使命があり、客観的かつ正確な報道を通じて世論の形成に貢献する責務がある。然し乍ら、商業的圧力の下で速報性と正確性の均衡を保つことは容易ではない。読者もまた情報を批判的に読み解く力を養う必要がある。","text_en":"Due to the dramatic development of information technology, the environment surrounding journalism has changed drastically. Newspapers were once the exclusive means of conveying information, but we now live in an era where anyone can disseminate information through the internet. This change is generally desirable for democracy, but at the same time it has produced serious problems such as biased reporting and the spread of false information. News organizations have a mission as public instruments and bear the responsibility of contributing to public opinion through objective and accurate reporting. Nevertheless, it is not easy to maintain balance between speed and accuracy under commercial pressure. Readers too need to cultivate the ability to critically interpret information.","questions":[{"question_jp":"筆者が報道機関と読者の双方に求めていることは何ですか。","question_en":"What does the author demand of both news organizations and readers?","answer":"報道機関には客観的で正確な報道、読者には批判的に情報を読み解く力"}]}
+});
+// ═══════════════════════════════════════════════════════════════════════════
+// PHASE 29: N1 VERBS & EXPRESSIONS (Days 1471-1530)
+// 60 days of advanced N1-level verbs, classical remnants, keigo, and set expressions
+// ═══════════════════════════════════════════════════════════════════════════
+
+curriculum.push({
+  "day": 1471,
+  "phaseNum": 29,
+  "phaseName": "N1 Verbs & Expressions",
+  "week": Math.ceil(1471 / 7),
+  "title": "Literary Verbs I: Movement & Action",
+  "intro": "Today we begin N1-level literary verbs. These verbs appear in formal writing, literature, and news articles, replacing common verbs with more elevated alternatives.",
+  "type": "verbs",
+  "vocab": [
+    [
+      "赴く",
+      "おもむく",
+      "to go to, to proceed to (literary)"
+    ],
+    [
+      "施す",
+      "ほどこす",
+      "to carry out, to administer, to bestow"
+    ],
+    [
+      "講じる",
+      "こうじる",
+      "to take (measures), to devise"
+    ],
+    [
+      "促す",
+      "うながす",
+      "to urge, to press, to prompt"
+    ],
+    [
+      "覆す",
+      "くつがえす",
+      "to overturn, to overthrow"
+    ]
+  ],
+  "chars": [],
+  "grammar": {
+    "pattern": "～を講じる",
+    "meaning": "to take (measures/steps)",
+    "example_jp": "政府は緊急対策を講じる必要がある。",
+    "example_en": "The government needs to take emergency measures."
+  },
+  "practice": "Write five sentences using today's literary verbs in formal contexts such as news reports or official statements.",
+  "tip": "Literary verbs like 赴く replace common verbs (行く) in formal registers. Recognizing the common verb behind each literary verb accelerates comprehension."
+});
+
+curriculum.push({
+  "day": 1472,
+  "phaseNum": 29,
+  "phaseName": "N1 Verbs & Expressions",
+  "week": Math.ceil(1472 / 7),
+  "title": "Literary Verbs II: Effort & Achievement",
+  "intro": "Today's literary verbs express striving, accomplishment, and challenge. These appear frequently in biographical writing and motivational contexts.",
+  "type": "verbs",
+  "vocab": [
+    [
+      "遂げる",
+      "とげる",
+      "to accomplish, to achieve"
+    ],
+    [
+      "挑む",
+      "いどむ",
+      "to challenge, to dare"
+    ],
+    [
+      "掲げる",
+      "かかげる",
+      "to raise, to display, to advocate"
+    ],
+    [
+      "携わる",
+      "たずさわる",
+      "to be engaged in, to participate in"
+    ],
+    [
+      "費やす",
+      "ついやす",
+      "to spend, to expend (time/resources)"
+    ]
+  ],
+  "chars": [],
+  "grammar": {
+    "pattern": "～を遂げる",
+    "meaning": "to accomplish / achieve ~",
+    "example_jp": "長年の研究が遂に成果を遂げた。",
+    "example_en": "The years of research finally achieved results."
+  },
+  "practice": "Describe a famous person's accomplishments using today's verbs. Try to write a short biography paragraph.",
+  "tip": "遂げる collocates with 成長, 発展, 成功, and 進化. Learning these fixed collocations helps you sound natural."
+});
+
+curriculum.push({
+  "day": 1473,
+  "phaseNum": 29,
+  "phaseName": "N1 Verbs & Expressions",
+  "week": Math.ceil(1473 / 7),
+  "title": "Literary Verbs III: Judgment & Governance",
+  "intro": "These literary verbs relate to authority, judgment, and governance. They are essential for understanding legal, political, and historical texts.",
+  "type": "verbs",
+  "vocab": [
+    [
+      "裁く",
+      "さばく",
+      "to judge, to try (in court)"
+    ],
+    [
+      "統べる",
+      "すべる",
+      "to rule, to govern, to command"
+    ],
+    [
+      "司る",
+      "つかさどる",
+      "to be in charge of, to administer"
+    ],
+    [
+      "廃する",
+      "はいする",
+      "to abolish, to discontinue"
+    ],
+    [
+      "封じる",
+      "ふうじる",
+      "to seal, to block, to suppress"
+    ]
+  ],
+  "chars": [],
+  "grammar": {
+    "pattern": "～を司る",
+    "meaning": "to be in charge of / administer ~",
+    "example_jp": "脳は身体の全機能を司る器官である。",
+    "example_en": "The brain is the organ that administers all bodily functions."
+  },
+  "practice": "Write sentences about government or legal topics using each of today's verbs.",
+  "tip": "Many literary verbs use kun-yomi readings. When you see unfamiliar kanji in formal texts, try guessing the kun-yomi first."
+});
+
+curriculum.push({
+  "day": 1474,
+  "phaseNum": 29,
+  "phaseName": "N1 Verbs & Expressions",
+  "week": Math.ceil(1474 / 7),
+  "title": "Literary Verbs IV: Emotion & Perception",
+  "intro": "Today's literary verbs express emotional and perceptual states at a sophisticated level. These appear in literary fiction and formal essays.",
+  "type": "verbs",
+  "vocab": [
+    [
+      "慈しむ",
+      "いつくしむ",
+      "to love tenderly, to cherish"
+    ],
+    [
+      "憂う",
+      "うれう",
+      "to lament, to grieve over"
+    ],
+    [
+      "悔いる",
+      "くいる",
+      "to regret, to repent"
+    ],
+    [
+      "惜しむ",
+      "おしむ",
+      "to begrudge, to lament the loss of"
+    ],
+    [
+      "蔑む",
+      "さげすむ",
+      "to scorn, to despise"
+    ]
+  ],
+  "chars": [],
+  "grammar": {
+    "pattern": "～を憂う",
+    "meaning": "to lament / grieve over ~",
+    "example_jp": "識者たちは国の将来を憂う声明を発表した。",
+    "example_en": "The intellectuals issued a statement lamenting the country's future."
+  },
+  "practice": "Write a reflective paragraph about a social issue using at least three of today's verbs.",
+  "tip": "Emotional literary verbs often carry nuances absent from their common equivalents. 惜しむ, for example, implies both sadness and reluctance."
+});
+
+curriculum.push({
+  "day": 1475,
+  "phaseNum": 29,
+  "phaseName": "N1 Verbs & Expressions",
+  "week": Math.ceil(1475 / 7),
+  "title": "Literary Verbs V: Change & Transformation",
+  "intro": "These verbs express transformation, decline, and change. They are staples of academic writing and journalistic commentary.",
+  "type": "verbs",
+  "vocab": [
+    [
+      "衰える",
+      "おとろえる",
+      "to decline, to weaken"
+    ],
+    [
+      "廃れる",
+      "すたれる",
+      "to fall into disuse, to become obsolete"
+    ],
+    [
+      "滅びる",
+      "ほろびる",
+      "to perish, to be ruined"
+    ],
+    [
+      "栄える",
+      "さかえる",
+      "to prosper, to flourish"
+    ],
+    [
+      "育む",
+      "はぐくむ",
+      "to nurture, to foster"
+    ]
+  ],
+  "chars": [],
+  "grammar": {
+    "pattern": "～が衰える",
+    "meaning": "~ declines / weakens",
+    "example_jp": "伝統工芸の技術が衰えることを防ぐべきだ。",
+    "example_en": "We should prevent the decline of traditional craft techniques."
+  },
+  "practice": "Write a short essay contrasting 栄える and 滅びる using a historical example.",
+  "tip": "Pairs of antonymous literary verbs (栄える/滅びる, 育む/衰える) often appear in the same passage. Learning them in pairs strengthens retention."
+});
+
+curriculum.push({
+  "day": 1476,
+  "phaseNum": 29,
+  "phaseName": "N1 Verbs & Expressions",
+  "week": Math.ceil(1476 / 7),
+  "title": "Literary Verbs VI: Speech & Communication",
+  "intro": "Today's literary verbs relate to speech acts and communication in elevated registers. These are essential for understanding formal discourse.",
+  "type": "verbs",
+  "vocab": [
+    [
+      "唱える",
+      "となえる",
+      "to advocate, to chant, to recite"
+    ],
+    [
+      "諭す",
+      "さとす",
+      "to admonish, to remonstrate gently"
+    ],
+    [
+      "嘆く",
+      "なげく",
+      "to lament, to deplore"
+    ],
+    [
+      "誓う",
+      "ちかう",
+      "to vow, to pledge"
+    ],
+    [
+      "称える",
+      "たたえる",
+      "to praise, to extol"
+    ]
+  ],
+  "chars": [],
+  "grammar": {
+    "pattern": "～を唱える",
+    "meaning": "to advocate / propose ~",
+    "example_jp": "彼は新たな教育理念を唱えて改革を推進した。",
+    "example_en": "He advocated a new educational philosophy and promoted reform."
+  },
+  "practice": "Write a dialogue between two intellectuals debating a social issue using today's vocabulary.",
+  "tip": "唱える and 称える look similar but have very different meanings. Create distinct mental images for each to avoid confusion."
+});
+
+curriculum.push({
+  "day": 1477,
+  "phaseNum": 29,
+  "phaseName": "N1 Verbs & Expressions",
+  "week": Math.ceil(1477 / 7),
+  "title": "Literary Verbs VII: Force & Resistance",
+  "intro": "These verbs express force, resistance, and confrontation. They appear in news coverage, historical accounts, and political commentary.",
+  "type": "verbs",
+  "vocab": [
+    [
+      "阻む",
+      "はばむ",
+      "to obstruct, to hinder, to thwart"
+    ],
+    [
+      "抑える",
+      "おさえる",
+      "to suppress, to restrain, to hold down"
+    ],
+    [
+      "凌ぐ",
+      "しのぐ",
+      "to endure, to surpass, to outdo"
+    ],
+    [
+      "屈する",
+      "くっする",
+      "to yield, to submit, to succumb"
+    ],
+    [
+      "抗う",
+      "あらがう",
+      "to resist, to defy"
+    ]
+  ],
+  "chars": [],
+  "grammar": {
+    "pattern": "～に抗う",
+    "meaning": "to resist / defy ~",
+    "example_jp": "彼女は社会の偏見に抗い、自らの道を切り開いた。",
+    "example_en": "She defied society's prejudice and carved out her own path."
+  },
+  "practice": "Describe a historical conflict or social movement using today's verbs in formal register.",
+  "tip": "凌ぐ has two distinct meanings: 'to endure' and 'to surpass'. Context determines which: 困難を凌ぐ (endure) vs. 記録を凌ぐ (surpass)."
+});
+
+curriculum.push({
+  "day": 1478,
+  "phaseNum": 29,
+  "phaseName": "N1 Verbs & Expressions",
+  "week": Math.ceil(1478 / 7),
+  "title": "Literary Verbs VIII: Creation & Destruction",
+  "intro": "Today we study verbs of creation and destruction at the literary level. These appear in descriptions of historical events, natural disasters, and artistic endeavors.",
+  "type": "verbs",
+  "vocab": [
+    [
+      "築く",
+      "きずく",
+      "to build, to construct, to establish"
+    ],
+    [
+      "崩す",
+      "くずす",
+      "to demolish, to break down, to dismantle"
+    ],
+    [
+      "刻む",
+      "きざむ",
+      "to carve, to engrave, to mince"
+    ],
+    [
+      "紡ぐ",
+      "つむぐ",
+      "to spin (thread), to weave (a story)"
+    ],
+    [
+      "潰す",
+      "つぶす",
+      "to crush, to smash, to squander"
+    ]
+  ],
+  "chars": [],
+  "grammar": {
+    "pattern": "～を築く",
+    "meaning": "to build / establish ~",
+    "example_jp": "先人たちが築いた伝統を後世に伝えるべきだ。",
+    "example_en": "We should pass down the traditions our predecessors built to future generations."
+  },
+  "practice": "Write three sentences contrasting 築く and 崩す in the context of institutions, relationships, or nations.",
+  "tip": "紡ぐ is increasingly used metaphorically: 物語を紡ぐ (to weave a story), 言葉を紡ぐ (to weave words). This figurative use is common in literary criticism."
+});
+
+curriculum.push({
+  "day": 1479,
+  "phaseNum": 29,
+  "phaseName": "N1 Verbs & Expressions",
+  "week": Math.ceil(1479 / 7),
+  "title": "Literary Verbs IX: Concealment & Revelation",
+  "intro": "These literary verbs deal with hiding, revealing, and discovering. They are essential for understanding mystery, investigative, and philosophical texts.",
+  "type": "verbs",
+  "vocab": [
+    [
+      "暴く",
+      "あばく",
+      "to expose, to disclose, to lay bare"
+    ],
+    [
+      "潜む",
+      "ひそむ",
+      "to lurk, to lie hidden"
+    ],
+    [
+      "秘める",
+      "ひめる",
+      "to keep secret, to conceal within"
+    ],
+    [
+      "顕す",
+      "あらわす",
+      "to reveal, to manifest"
+    ],
+    [
+      "偽る",
+      "いつわる",
+      "to deceive, to falsify, to misrepresent"
+    ]
+  ],
+  "chars": [],
+  "grammar": {
+    "pattern": "～に潜む",
+    "meaning": "to lurk in / lie hidden in ~",
+    "example_jp": "日常の中に潜む危険を見過ごしてはならない。",
+    "example_en": "We must not overlook the dangers that lurk in everyday life."
+  },
+  "practice": "Write a short mystery scenario using at least four of today's verbs.",
+  "tip": "暴く implies forceful, often sensational exposure (scandals, truths). 顕す implies something naturally coming to light. The nuance matters in N1 reading."
+});
+
+curriculum.push({
+  "day": 1480,
+  "phaseNum": 29,
+  "phaseName": "N1 Verbs & Expressions",
+  "week": Math.ceil(1480 / 7),
+  "title": "Reading: Literary Verbs in Narrative Context",
+  "intro": "Today is a reading day. Apply the literary verbs you have learned this section in context through an extended passage.",
+  "type": "reading",
+  "vocab": [
+    [
+      "遂げる",
+      "とげる",
+      "to accomplish, to achieve"
+    ],
+    [
+      "携わる",
+      "たずさわる",
+      "to be engaged in"
+    ],
+    [
+      "育む",
+      "はぐくむ",
+      "to nurture, to foster"
+    ],
+    [
+      "築く",
+      "きずく",
+      "to build, to establish"
+    ],
+    [
+      "衰える",
+      "おとろえる",
+      "to decline, to weaken"
+    ]
+  ],
+  "chars": [],
+  "grammar": {
+    "pattern": "～を遂げる",
+    "meaning": "to accomplish / achieve ~",
+    "example_jp": "彼の努力は見事な成果を遂げた。",
+    "example_en": "His efforts achieved magnificent results."
+  },
+  "practice": "Read the passage carefully. Answer the comprehension questions, then summarize the main argument in your own words.",
+  "tip": "When encountering literary verbs in passages, focus on the overall sentence structure first, then refine your understanding of each verb's nuance.",
+  "passage": {
+    "text_jp": "明治維新を遂げた日本は、西洋列強に伍するべく近代化に邁進した。新政府は殖産興業を掲げ、全国各地に官営工場を設立し、近代産業の基盤を築いた。鉄道の敷設、電信の導入、郵便制度の整備など、社会の隅々にまで変革の波は及んだ。しかし、急速な変革は光と影を伴うものであった。伝統的な手工業は廃れ、長年にわたり育まれてきた職人の技が衰える危機に瀕した。西洋化を促すあまり、日本固有の文化が蔑まれる風潮さえ生じたのである。一方で、近代教育制度の整備に携わった先駆者たちは、国民の知的水準を飛躍的に向上させることに成功した。殊に、福沢諭吉や森有礼といった思想家たちは、単なる技術の導入にとどまらず、近代的な市民意識そのものを育むことを使命として掲げた。彼らは封建的な身分制度を覆し、万人に教育の機会を施すという壮大な理想に挑んだのである。翻って現代を見れば、日本は再び大きな転換期を迎えている。少子高齢化という構造的課題に直面し、経済成長の鈍化を凌ぐための新たな施策を講じることが求められている。地方の過疎化は深刻さを増し、かつて栄えた商店街は閑散とした姿を晒している。過去の改革の教訓を踏まえ、伝統と革新の均衡を保ちつつ、次世代のための社会基盤を築くことが喫緊の課題である。歴史は繰り返すと言われるが、先人たちが困難に挑み、偉業を遂げた精神を受け継ぐことこそが、未来を切り開く鍵となるであろう。文明開化の時代、人々は未知なる西洋文明に対する畏怖を秘めながらも、新時代を切り拓く覚悟を固めた。その勇気ある姿勢を称え、現代に活かす努力を惜しんではならない。我々は過去を顧みることなく前進するのではなく、歴史に潜む知恵を汲み取り、それを現代に活かす道を模索し続けるべきである。改革とは、古きを単に廃するのではなく、その中に潜む価値を顕し、新たな時代に紡ぎ直すことにほかならないのだから。真の改革者とは、破壊者ではなく、過去と未来を繋ぐ架け橋を築く者のことである。",
+    "text_en": "Having accomplished the Meiji Restoration, Japan pressed forward with modernization to stand alongside the Western powers. The new government raised the banner of promoting industry, established government-run factories across the nation, and built the foundation of modern industry. However, rapid transformation brought both light and shadow. Traditional handicrafts fell into disuse, and artisan skills nurtured over many years faced the crisis of decline. On the other hand, pioneers engaged in developing the modern education system succeeded in dramatically raising the intellectual level of the populace. In particular, thinkers such as Fukuzawa Yukichi and Mori Arinori did not stop at merely introducing technology, but raised as their mission the nurturing of modern civic consciousness itself. They challenged the feudal class system and pursued the grand ideal of providing educational opportunities to all. Looking back at the present day, Japan faces another great turning point. Confronting the structural challenge of a declining birthrate and aging population, new measures must be devised to surpass the slowdown in economic growth. Drawing on lessons from past reforms, it is an urgent task to build social infrastructure for the next generation while maintaining balance between tradition and innovation. It is said that history repeats itself, but inheriting the spirit of our predecessors who challenged difficulties and achieved great feats is the key to forging the future. In the era of civilization and enlightenment, people harbored awe toward the unknown Western civilization yet steeled their resolve to carve open a new era. We must not begrudge the effort to praise that courageous stance and apply it to the present. Rather than advancing without looking back at the past, we should continue to seek ways to draw out the wisdom hidden in history and apply it to the present. For reform is not simply abolishing the old, but revealing the value hidden within it and weaving it anew for a new era.",
+    "questions": [
+      {
+        "question_jp": "明治維新後の近代化がもたらした負の側面として筆者が挙げているのは何ですか。",
+        "question_en": "What negative aspect of post-Meiji modernization does the author mention?",
+        "answer": "伝統的な手工業が廃れ、職人の技が衰える危機に瀕したこと"
+      },
+      {
+        "question_jp": "筆者が現代日本に必要だと主張していることは何ですか。",
+        "question_en": "What does the author argue is needed in modern Japan?",
+        "answer": "歴史に潜む知恵を汲み取り、伝統と革新の均衡を保ちつつ次世代のための社会基盤を築くこと"
+      }
+    ]
+  }
+});
+
+curriculum.push({
+  "day": 1481,
+  "phaseNum": 29,
+  "phaseName": "N1 Verbs & Expressions",
+  "week": Math.ceil(1481 / 7),
+  "title": "Classical Remnants I: ~ざる (Negative)",
+  "intro": "We begin exploring classical Japanese forms that survive in modern formal and literary writing. Today's focus is ~ざる, the classical negative that persists in fixed expressions.",
+  "type": "verbs",
+  "vocab": [
+    [
+      "計り知れない",
+      "はかりしれない",
+      "immeasurable, unfathomable"
+    ],
+    [
+      "止むを得ない",
+      "やむをえない",
+      "unavoidable, inevitable"
+    ],
+    [
+      "欠かざる",
+      "かかざる",
+      "indispensable (classical neg.)"
+    ],
+    [
+      "拘らず",
+      "かかわらず",
+      "regardless of, despite"
+    ],
+    [
+      "由らざる",
+      "よらざる",
+      "not dependent on (classical neg.)"
+    ]
+  ],
+  "chars": [],
+  "grammar": {
+    "pattern": "～ざるを得ない",
+    "meaning": "cannot help but ~, have no choice but to ~",
+    "example_jp": "その状況下では辞任せざるを得なかった。",
+    "example_en": "Under those circumstances, there was no choice but to resign."
+  },
+  "practice": "Write five sentences using ～ざるを得ない in business and political contexts.",
+  "tip": "～ざる is the classical negative equivalent of ～ない. While archaic, it survives in many fixed legal and formal expressions."
+});
+
+curriculum.push({
+  "day": 1482,
+  "phaseNum": 29,
+  "phaseName": "N1 Verbs & Expressions",
+  "week": Math.ceil(1482 / 7),
+  "title": "Classical Remnants II: ~なり (Assertion & State)",
+  "intro": "The classical copula なり survives in numerous modern expressions. Understanding its nuances helps decode formal and literary Japanese.",
+  "type": "verbs",
+  "vocab": [
+    [
+      "我がまま",
+      "わがまま",
+      "selfish, willful"
+    ],
+    [
+      "自然なり",
+      "しぜんなり",
+      "natural as it is (classical)"
+    ],
+    [
+      "独自なり",
+      "どくじなり",
+      "unique as it is (classical)"
+    ],
+    [
+      "形式的",
+      "けいしきてき",
+      "formal, formulaic"
+    ],
+    [
+      "文語体",
+      "ぶんごたい",
+      "literary style, written language"
+    ]
+  ],
+  "chars": [],
+  "grammar": {
+    "pattern": "～なり（に）",
+    "meaning": "in one's own way / as ~ is",
+    "example_jp": "彼なりの方法で問題を解決しようとしている。",
+    "example_en": "He is trying to solve the problem in his own way."
+  },
+  "practice": "Write three sentences using ～なり(に) to describe people approaching tasks in their own unique ways.",
+  "tip": "Modern ～なり(に) derives from the classical copula. While the classical form is rare, the modern derivative is extremely common at all levels."
+});
+
+curriculum.push({
+  "day": 1483,
+  "phaseNum": 29,
+  "phaseName": "N1 Verbs & Expressions",
+  "week": Math.ceil(1483 / 7),
+  "title": "Classical Remnants III: ~べし (Obligation & Conjecture)",
+  "intro": "The classical auxiliary べし (should, must, ought to) remains in formal written Japanese. Today we study its surviving forms and usage patterns.",
+  "type": "verbs",
+  "vocab": [
+    [
+      "為すべき",
+      "なすべき",
+      "what should be done"
+    ],
+    [
+      "然るべき",
+      "しかるべき",
+      "appropriate, proper"
+    ],
+    [
+      "知るべき",
+      "しるべき",
+      "should know, ought to know"
+    ],
+    [
+      "恐るべき",
+      "おそるべき",
+      "fearsome, formidable"
+    ],
+    [
+      "許すべからざる",
+      "ゆるすべからざる",
+      "unforgivable, inexcusable"
+    ]
+  ],
+  "chars": [],
+  "grammar": {
+    "pattern": "～べき（だ）",
+    "meaning": "should ~, ought to ~",
+    "example_jp": "政治家は国民の声に耳を傾けるべきである。",
+    "example_en": "Politicians ought to listen to the voices of the people."
+  },
+  "practice": "Write an opinion essay paragraph using ～べき and ～べからざる to argue for or against a policy.",
+  "tip": "べし has six classical meanings: obligation, conjecture, intention, possibility, command, and appropriateness. In modern Japanese, obligation and appropriateness dominate."
+});
+
+curriculum.push({
+  "day": 1484,
+  "phaseNum": 29,
+  "phaseName": "N1 Verbs & Expressions",
+  "week": Math.ceil(1484 / 7),
+  "title": "Classical Remnants IV: ~如し・~ごとし (Simile)",
+  "intro": "The classical comparison forms 如し and ごとし create literary similes. These appear in proverbs, literary prose, and formal speeches.",
+  "type": "verbs",
+  "vocab": [
+    [
+      "光陰矢の如し",
+      "こういんやのごとし",
+      "time flies like an arrow"
+    ],
+    [
+      "水の如く",
+      "みずのごとく",
+      "like water (literary simile)"
+    ],
+    [
+      "嵐の如き",
+      "あらしのごとき",
+      "like a storm (literary simile)"
+    ],
+    [
+      "夢幻の如し",
+      "むげんのごとし",
+      "like a dream (transient)"
+    ],
+    [
+      "獅子奮迅の如く",
+      "ししふんじんのごとく",
+      "with furious energy, like a raging lion"
+    ]
+  ],
+  "chars": [],
+  "grammar": {
+    "pattern": "～の如く / ～が如し",
+    "meaning": "like ~, as if ~ (literary simile)",
+    "example_jp": "彼は嵐の如き勢いで業界を席巻した。",
+    "example_en": "He swept through the industry with storm-like force."
+  },
+  "practice": "Create five literary similes using ～の如く or ～が如し to describe people, events, or natural phenomena.",
+  "tip": "如し/ごとし similes are beloved in speeches and graduation addresses. Mastering a few famous ones helps you recognize the pattern instantly."
+});
+
+curriculum.push({
+  "day": 1485,
+  "phaseNum": 29,
+  "phaseName": "N1 Verbs & Expressions",
+  "week": Math.ceil(1485 / 7),
+  "title": "Classical Remnants V: ~たり (Classical Perfect & State)",
+  "intro": "The classical auxiliary たり, indicating a completed action or ongoing state, persists in several modern expressions and literary contexts.",
+  "type": "verbs",
+  "vocab": [
+    [
+      "堂々たる",
+      "どうどうたる",
+      "magnificent, imposing"
+    ],
+    [
+      "圧倒的",
+      "あっとうてき",
+      "overwhelming, dominant"
+    ],
+    [
+      "悠然たる",
+      "ゆうぜんたる",
+      "calm, composed, serene"
+    ],
+    [
+      "厳然たる",
+      "げんぜんたる",
+      "stern, solemn, undeniable"
+    ],
+    [
+      "泰然たる",
+      "たいぜんたる",
+      "composed, self-possessed"
+    ]
+  ],
+  "chars": [],
+  "grammar": {
+    "pattern": "～たる（もの）",
+    "meaning": "being ~, as one who is ~ (classical state)",
+    "example_jp": "指導者たる者は常に冷静沈着であるべきだ。",
+    "example_en": "One who is a leader should always be calm and composed."
+  },
+  "practice": "Write sentences about leaders, professionals, or institutions using ～たる to describe their qualities.",
+  "tip": "～たる is the attributive form of the classical copula たり. It modifies nouns directly: 堂々たる態度 (a magnificent attitude)."
+});
+
+curriculum.push({
+  "day": 1486,
+  "phaseNum": 29,
+  "phaseName": "N1 Verbs & Expressions",
+  "week": Math.ceil(1486 / 7),
+  "title": "Classical Remnants VI: ~まじ・~まい (Negative Conjecture)",
+  "intro": "The classical negative conjecture forms ~まじ and its descendant ~まい express strong negative intention or conjecture. They appear in formal and literary contexts.",
+  "type": "verbs",
+  "vocab": [
+    [
+      "あるまじき",
+      "あるまじき",
+      "unbecoming, unworthy of"
+    ],
+    [
+      "許すまじ",
+      "ゆるすまじ",
+      "must not forgive (literary)"
+    ],
+    [
+      "二度とすまい",
+      "にどとすまい",
+      "shall never do again"
+    ],
+    [
+      "容易ならざる",
+      "よういならざる",
+      "not easy, formidable"
+    ],
+    [
+      "忘るまじ",
+      "わするまじ",
+      "must not forget (classical)"
+    ]
+  ],
+  "chars": [],
+  "grammar": {
+    "pattern": "～まい / ～まじき",
+    "meaning": "will not ~, should not ~ (neg. volition/judgment)",
+    "example_jp": "教育者にあるまじき発言として厳しく批判された。",
+    "example_en": "It was harshly criticized as a remark unbecoming of an educator."
+  },
+  "practice": "Write three sentences using ～まい to express negative intention, and three using ～まじき to describe inappropriate behavior.",
+  "tip": "あるまじき is the most common surviving まじ form. It always modifies a noun: 教師にあるまじき行為 (conduct unbecoming of a teacher)."
+});
+
+curriculum.push({
+  "day": 1487,
+  "phaseNum": 29,
+  "phaseName": "N1 Verbs & Expressions",
+  "week": Math.ceil(1487 / 7),
+  "title": "Classical Remnants VII: Literary Compound Expressions",
+  "intro": "Today we study compound expressions that blend classical and modern elements. These hybrid forms are hallmarks of formal written Japanese.",
+  "type": "verbs",
+  "vocab": [
+    [
+      "言わんばかり",
+      "いわんばかり",
+      "as if to say"
+    ],
+    [
+      "知らんぷり",
+      "しらんぷり",
+      "pretending not to know"
+    ],
+    [
+      "思わんとする",
+      "おもわんとする",
+      "intending to think (classical)"
+    ],
+    [
+      "見んとする",
+      "みんとする",
+      "about to see (classical intent)"
+    ],
+    [
+      "果たさんがため",
+      "はたさんがため",
+      "in order to fulfill (literary)"
+    ]
+  ],
+  "chars": [],
+  "grammar": {
+    "pattern": "～んばかり（に）",
+    "meaning": "as if about to ~, almost ~",
+    "example_jp": "彼女は泣かんばかりの表情で訴えた。",
+    "example_en": "She pleaded with an expression as if about to cry."
+  },
+  "practice": "Write five sentences using ～んばかり to describe dramatic emotional or physical reactions.",
+  "tip": "～ん is the classical volitional/intentional form. Recognizing it helps decode many fixed expressions: 言わんや (needless to say), いかんともしがたい (nothing can be done)."
+});
+
+curriculum.push({
+  "day": 1488,
+  "phaseNum": 29,
+  "phaseName": "N1 Verbs & Expressions",
+  "week": Math.ceil(1488 / 7),
+  "title": "Classical Remnants VIII: Archaic Auxiliaries in Modern Use",
+  "intro": "We conclude classical remnants with archaic auxiliary verbs that persist in idiomatic and formal usage. These are essential for N1 reading comprehension.",
+  "type": "verbs",
+  "vocab": [
+    [
+      "能わず",
+      "あたわず",
+      "unable to, cannot (classical)"
+    ],
+    [
+      "曰く",
+      "いわく",
+      "to say, according to (classical)"
+    ],
+    [
+      "所以",
+      "ゆえん",
+      "reason, grounds (classical noun)"
+    ],
+    [
+      "在りし日",
+      "ありしひ",
+      "days gone by, the late (classical)"
+    ],
+    [
+      "甚だ",
+      "はなはだ",
+      "exceedingly, very much (literary)"
+    ]
+  ],
+  "chars": [],
+  "grammar": {
+    "pattern": "～能わず",
+    "meaning": "unable to ~, cannot ~ (classical)",
+    "example_jp": "如何ともし能わず、計画は中止された。",
+    "example_en": "Unable to do anything about it, the plan was discontinued."
+  },
+  "practice": "Rewrite five modern sentences using classical remnant expressions to create a formal literary tone.",
+  "tip": "曰く is still used in journalism: 関係者曰く (according to sources). Recognizing these classical fragments speeds up your reading of formal texts."
+});
+
+curriculum.push({
+  "day": 1489,
+  "phaseNum": 29,
+  "phaseName": "N1 Verbs & Expressions",
+  "week": Math.ceil(1489 / 7),
+  "title": "Classical Forms: Review & Integration",
+  "intro": "Today we review and integrate the classical remnant forms studied this section. We practice recognizing and using them in modern formal contexts.",
+  "type": "verbs",
+  "vocab": [
+    [
+      "否めない",
+      "いなめない",
+      "undeniable, cannot deny"
+    ],
+    [
+      "免れない",
+      "まぬがれない",
+      "unavoidable, cannot escape"
+    ],
+    [
+      "禁じ得ない",
+      "きんじえない",
+      "cannot help but (feel)"
+    ],
+    [
+      "已むなく",
+      "やむなく",
+      "unavoidably, reluctantly"
+    ],
+    [
+      "畏まる",
+      "かしこまる",
+      "to be reverently humble"
+    ]
+  ],
+  "chars": [],
+  "grammar": {
+    "pattern": "～を禁じ得ない",
+    "meaning": "cannot help but feel ~",
+    "example_jp": "その光景を見て感動を禁じ得なかった。",
+    "example_en": "Seeing that scene, I could not help but be moved."
+  },
+  "practice": "Write a formal letter or essay using at least six classical remnant expressions from this section.",
+  "tip": "禁じ得ない collocates with emotions: 涙を禁じ得ない, 驚きを禁じ得ない, 怒りを禁じ得ない. The pattern always expresses overwhelming emotion."
+});
+
+curriculum.push({
+  "day": 1490,
+  "phaseNum": 29,
+  "phaseName": "N1 Verbs & Expressions",
+  "week": Math.ceil(1490 / 7),
+  "title": "Reading: Classical Forms in Modern Editorial",
+  "intro": "Today is a reading day. Apply the classical remnant forms you have learned through an extended editorial passage.",
+  "type": "reading",
+  "vocab": [
+    [
+      "然るべき",
+      "しかるべき",
+      "appropriate, proper"
+    ],
+    [
+      "堂々たる",
+      "どうどうたる",
+      "magnificent, imposing"
+    ],
+    [
+      "免れない",
+      "まぬがれない",
+      "unavoidable, cannot escape"
+    ],
+    [
+      "禁じ得ない",
+      "きんじえない",
+      "cannot help but feel"
+    ],
+    [
+      "已むなく",
+      "やむなく",
+      "unavoidably, reluctantly"
+    ]
+  ],
+  "chars": [],
+  "grammar": {
+    "pattern": "～ざるを得ない",
+    "meaning": "cannot help but ~",
+    "example_jp": "現状を鑑みれば、制度改革に踏み切らざるを得ない。",
+    "example_en": "Considering the current situation, there is no choice but to proceed with institutional reform."
+  },
+  "practice": "Read the passage carefully. Answer the comprehension questions, then identify all classical remnant forms in the text.",
+  "tip": "In editorials, classical forms add authority and gravitas. Writers deliberately choose them over modern equivalents to signal formality.",
+  "passage": {
+    "text_jp": "昨今の政治状況を鑑みるに、国民の政治離れは憂うべき事態と言わざるを得ない。選挙の投票率は年々低下の一途を辿り、とりわけ若年層の無関心は看過すべからざる問題である。二十代の投票率が三割を下回る選挙も珍しくなく、この数値は先進国の中でも際立って低い水準にある。民主主義の根幹たる選挙制度が形骸化しつつある現状は、為政者のみならず国民一人ひとりが真摯に向き合うべき課題である。然るべき対策を講じなければ、この傾向は不可逆的なものとなりかねない。一部の識者は、投票義務制の導入を唱えるが、個人の自由を制約することへの懸念も免れない。強制によって得られた一票は、果たして民意の真正な表明と呼べるであろうか。翻って北欧諸国の事例を見れば、政治教育の充実が投票率向上に寄与しており、その成果は恐るべきものがある。殊にスウェーデンでは、中学生の段階から模擬選挙を実施し、政治的判断力を育む教育を推進している。生徒たちは実際の政党の公約を比較検討し、自らの意見を論理的に構築する訓練を積む。堂々たる民主主義国家を維持せんとするならば、こうした教育を通じた政治参加意識の醸成こそが肝要である。已むなく投票するのではなく、主体的に政治に関わる市民を育むことが、在りし日の民主主義の理想を現代に甦らせる唯一の道であると確信する。畢竟、民主主義とは制度ではなく、市民一人ひとりの意識の上に築かれるものにほかならない。如何に精緻な制度を設計しようとも、それを支える市民の関心と参加なくしては、民主主義は名ばかりのものに成り果てるであろう。政治に無関心であることは、すなわち自らの未来を他者に委ねることに等しい。この問題を前にして危機感を禁じ得ないのは、筆者のみではあるまい。我々は今こそ、民主主義の原点に立ち返り、その価値を再認識すべき時に来ているのである。一人ひとりの行動が社会を変える力を持つという信念を、次世代に継承していかねばならない。それこそが、真の民主主義教育の在るべき姿であろう。",
+    "text_en": "Considering the current political situation, the public's disengagement from politics must be called a lamentable state of affairs. Voter turnout in elections continues its steady decline year after year, and the indifference of young people in particular is a problem that must not be overlooked. The current state in which the electoral system — the very foundation of democracy — is becoming hollow is a challenge that not only politicians but every citizen should face sincerely. If appropriate measures are not taken, this trend may become irreversible. Some intellectuals advocate introducing compulsory voting, but concerns about restricting individual freedom are also unavoidable. On the other hand, looking at examples from Nordic countries, the enhancement of political education has contributed to increased voter turnout, and the results are formidable. In Sweden in particular, mock elections are held from the middle school level, promoting education that nurtures political judgment. If we are to maintain a magnificent democratic nation, it is essential to cultivate awareness of political participation through such education. Not voting reluctantly, but nurturing citizens who proactively engage in politics is the only path to reviving the ideals of democracy from days past in the modern era. In the final analysis, democracy is not a system but something built upon the consciousness of each individual citizen. No matter how precisely a system is designed, without the interest and participation of the citizens who support it, democracy will become nothing but a name. Being indifferent to politics is tantamount to entrusting one's own future to others. I am convinced that I am not the only one who cannot help but feel a sense of crisis facing this problem. Now is the time for us to return to the origins of democracy and reaffirm its value.",
+    "questions": [
+      {
+        "question_jp": "筆者が最も効果的だと考える政治参加促進の方法は何ですか。",
+        "question_en": "What method does the author consider most effective for promoting political participation?",
+        "answer": "教育を通じた政治参加意識の醸成"
+      },
+      {
+        "question_jp": "投票義務制について筆者はどのような立場を取っていますか。",
+        "question_en": "What position does the author take on compulsory voting?",
+        "answer": "個人の自由を制約する懸念があり、教育による自発的参加を優先すべきだという立場"
+      }
+    ]
+  }
+});
+
+curriculum.push({
+  "day": 1491,
+  "phaseNum": 29,
+  "phaseName": "N1 Verbs & Expressions",
+  "week": Math.ceil(1491 / 7),
+  "title": "Keigo Mastery I: Written Keigo Foundations",
+  "intro": "Today we begin advanced keigo study at the N1 level. Written keigo in formal correspondence, reports, and official documents uses distinct patterns from spoken keigo.",
+  "type": "verbs",
+  "vocab": [
+    [
+      "拝読する",
+      "はいどくする",
+      "to read (humble, written)"
+    ],
+    [
+      "拝察する",
+      "はいさつする",
+      "to surmise (humble, formal)"
+    ],
+    [
+      "拝受する",
+      "はいじゅする",
+      "to receive (humble, written)"
+    ],
+    [
+      "御高覧",
+      "ごこうらん",
+      "your (honored) perusal"
+    ],
+    [
+      "御査収",
+      "ごさしゅう",
+      "your (honored) inspection and acceptance"
+    ]
+  ],
+  "chars": [],
+  "grammar": {
+    "pattern": "拝～する",
+    "meaning": "humbly do ~ (written humble form)",
+    "example_jp": "お手紙を拝読し、深く感銘を受けました。",
+    "example_en": "Having humbly read your letter, I was deeply impressed."
+  },
+  "practice": "Write a formal letter of thanks using at least four of today's keigo expressions.",
+  "tip": "拝～ compounds (拝見、拝読、拝借、拝受) all use the humble prefix 拝, originally meaning 'to bow.' They are appropriate in written formal contexts."
+});
+
+curriculum.push({
+  "day": 1492,
+  "phaseNum": 29,
+  "phaseName": "N1 Verbs & Expressions",
+  "week": Math.ceil(1492 / 7),
+  "title": "Keigo Mastery II: Telephone & Business Keigo",
+  "intro": "Telephone and business keigo requires specific set phrases and patterns. These are heavily tested in N1 listening and are essential for professional Japanese.",
+  "type": "verbs",
+  "vocab": [
+    [
+      "申し伝える",
+      "もうしつたえる",
+      "to convey (humble, on behalf of)"
+    ],
+    [
+      "承る",
+      "うけたまわる",
+      "to hear, to accept (humble)"
+    ],
+    [
+      "差し上げる",
+      "さしあげる",
+      "to give (humble)"
+    ],
+    [
+      "頂戴する",
+      "ちょうだいする",
+      "to receive (humble, polite)"
+    ],
+    [
+      "お取り次ぎ",
+      "おとりつぎ",
+      "to connect, to transfer (a call)"
+    ]
+  ],
+  "chars": [],
+  "grammar": {
+    "pattern": "～を承る",
+    "meaning": "to humbly receive / accept ~",
+    "example_jp": "ご注文を承りました。",
+    "example_en": "I have received your order (humble)."
+  },
+  "practice": "Role-play a business phone call scenario using today's keigo expressions. Write both sides of the conversation.",
+  "tip": "承る is one of the most versatile humble verbs. It replaces 聞く, 受ける, and 引き受ける in formal contexts."
+});
+
+curriculum.push({
+  "day": 1493,
+  "phaseNum": 29,
+  "phaseName": "N1 Verbs & Expressions",
+  "week": Math.ceil(1493 / 7),
+  "title": "Keigo Mastery III: Sonkeigo (Respect Language) Mastery",
+  "intro": "Advanced sonkeigo goes beyond basic お～になる patterns. Today we study special sonkeigo verbs and expressions used in the most formal situations.",
+  "type": "verbs",
+  "vocab": [
+    [
+      "仰る",
+      "おっしゃる",
+      "to say (honorific)"
+    ],
+    [
+      "召し上がる",
+      "めしあがる",
+      "to eat, to drink (honorific)"
+    ],
+    [
+      "お目に掛かる",
+      "おめにかかる",
+      "to meet (humble)"
+    ],
+    [
+      "ご覧になる",
+      "ごらんになる",
+      "to see, to look at (honorific)"
+    ],
+    [
+      "お越しになる",
+      "おこしになる",
+      "to come, to visit (honorific)"
+    ]
+  ],
+  "chars": [],
+  "grammar": {
+    "pattern": "お～になる / ご～になる",
+    "meaning": "honorific verb pattern",
+    "example_jp": "社長がお越しになりましたら、すぐにお知らせください。",
+    "example_en": "When the president arrives, please notify me immediately."
+  },
+  "practice": "Write a formal reception scenario where you guide a VIP guest, using appropriate sonkeigo throughout.",
+  "tip": "At the N1 level, keigo errors are harshly penalized. The most common mistake is mixing sonkeigo and kenjougo for the same person."
+});
+
+curriculum.push({
+  "day": 1494,
+  "phaseNum": 29,
+  "phaseName": "N1 Verbs & Expressions",
+  "week": Math.ceil(1494 / 7),
+  "title": "Keigo Mastery IV: Formal Correspondence Expressions",
+  "intro": "Japanese formal correspondence — letters, emails, and official documents — uses a distinct set of fixed keigo expressions. Mastering these is essential for N1.",
+  "type": "verbs",
+  "vocab": [
+    [
+      "賜る",
+      "たまわる",
+      "to receive, to be granted (very humble)"
+    ],
+    [
+      "申し上げる",
+      "もうしあげる",
+      "to say, to tell (humble)"
+    ],
+    [
+      "お目通し",
+      "おめどおし",
+      "reviewing, looking over (honorific)"
+    ],
+    [
+      "ご笑納",
+      "ごしょうのう",
+      "please accept (this small gift)"
+    ],
+    [
+      "ご自愛",
+      "ごじあい",
+      "please take care of yourself"
+    ]
+  ],
+  "chars": [],
+  "grammar": {
+    "pattern": "～を賜る",
+    "meaning": "to be graciously granted ~ (very humble)",
+    "example_jp": "ご指導を賜りますよう、お願い申し上げます。",
+    "example_en": "I humbly request that you grant me your guidance."
+  },
+  "practice": "Write a formal letter to a professor or business executive using at least five of today's expressions.",
+  "tip": "賜る is the most humble way to say 'receive' — higher than いただく. Use it in formal letters, acceptance speeches, and official requests."
+});
+
+curriculum.push({
+  "day": 1495,
+  "phaseNum": 29,
+  "phaseName": "N1 Verbs & Expressions",
+  "week": Math.ceil(1495 / 7),
+  "title": "Keigo Mastery V: Double Keigo & Common Errors",
+  "intro": "Double keigo (二重敬語) is technically incorrect but sometimes accepted in practice. Today we study the rules, common errors, and accepted exceptions.",
+  "type": "verbs",
+  "vocab": [
+    [
+      "お召し上がりになる",
+      "おめしあがりになる",
+      "to eat (double keigo, accepted)"
+    ],
+    [
+      "ご覧になられる",
+      "ごらんになられる",
+      "to see (double keigo, common error)"
+    ],
+    [
+      "お伺いする",
+      "おうかがいする",
+      "to visit/ask (double keigo, accepted)"
+    ],
+    [
+      "拝見させていただく",
+      "はいけんさせていただく",
+      "to see (over-humble, avoid)"
+    ],
+    [
+      "存じ上げる",
+      "ぞんじあげる",
+      "to know (humble)"
+    ]
+  ],
+  "chars": [],
+  "grammar": {
+    "pattern": "させていただく",
+    "meaning": "to be allowed to do ~ (humble, often overused)",
+    "example_jp": "本日は私が司会を務めさせていただきます。",
+    "example_en": "Today I will have the honor of serving as moderator."
+  },
+  "practice": "Identify and correct keigo errors in five given sentences, then rewrite them with appropriate keigo.",
+  "tip": "させていただく is the most overused keigo pattern in modern Japanese. Use it only when you genuinely received permission from someone."
+});
+
+curriculum.push({
+  "day": 1496,
+  "phaseNum": 29,
+  "phaseName": "N1 Verbs & Expressions",
+  "week": Math.ceil(1496 / 7),
+  "title": "Keigo Mastery VI: Keigo in Formal Meetings",
+  "intro": "Formal meetings in Japanese business culture require specific keigo patterns for proposals, objections, agreements, and requests. These patterns are essential for N1.",
+  "type": "verbs",
+  "vocab": [
+    [
+      "ご検討",
+      "ごけんとう",
+      "your consideration (honorific)"
+    ],
+    [
+      "お諮りする",
+      "おはかりする",
+      "to consult, to put before (humble)"
+    ],
+    [
+      "ご了承",
+      "ごりょうしょう",
+      "your understanding/consent (honorific)"
+    ],
+    [
+      "差し支えない",
+      "さしつかえない",
+      "no objection, no problem"
+    ],
+    [
+      "ご容赦",
+      "ごようしゃ",
+      "your pardon, your forgiveness"
+    ]
+  ],
+  "chars": [],
+  "grammar": {
+    "pattern": "ご検討いただけますでしょうか",
+    "meaning": "could you kindly consider ~ (formal request)",
+    "example_jp": "この提案についてご検討いただけますでしょうか。",
+    "example_en": "Could you kindly consider this proposal?"
+  },
+  "practice": "Write a script for a formal meeting where you present a proposal and respond to questions using appropriate keigo.",
+  "tip": "ご～いただけますでしょうか is the gold standard for polite requests in formal settings. It combines honorific, humble, and polite forms perfectly."
+});
+
+curriculum.push({
+  "day": 1497,
+  "phaseNum": 29,
+  "phaseName": "N1 Verbs & Expressions",
+  "week": Math.ceil(1497 / 7),
+  "title": "Keigo Mastery VII: Keigo in Academic & Ceremonial Contexts",
+  "intro": "Academic and ceremonial Japanese uses distinct keigo patterns for speeches, introductions, and formal acknowledgments.",
+  "type": "verbs",
+  "vocab": [
+    [
+      "お言葉を頂く",
+      "おことばをいただく",
+      "to receive (someone's) words (humble)"
+    ],
+    [
+      "ご臨席",
+      "ごりんせき",
+      "your (honored) presence, attendance"
+    ],
+    [
+      "ご列席",
+      "ごれっせき",
+      "being present, attending (honorific)"
+    ],
+    [
+      "ご挨拶",
+      "ごあいさつ",
+      "greeting, address (honorific)"
+    ],
+    [
+      "恐縮",
+      "きょうしゅく",
+      "feeling grateful/sorry (humble)"
+    ]
+  ],
+  "chars": [],
+  "grammar": {
+    "pattern": "ご臨席を賜り",
+    "meaning": "having been graced with your presence",
+    "example_jp": "本日はご臨席を賜り、誠にありがとうございます。",
+    "example_en": "Thank you sincerely for gracing us with your presence today."
+  },
+  "practice": "Write an opening speech for a formal ceremony using today's keigo expressions.",
+  "tip": "Ceremonial keigo follows rigid patterns. Memorize the opening (ご臨席を賜り) and closing (ご自愛ください) formulas — they appear in almost every ceremony."
+});
+
+curriculum.push({
+  "day": 1498,
+  "phaseNum": 29,
+  "phaseName": "N1 Verbs & Expressions",
+  "week": Math.ceil(1498 / 7),
+  "title": "Keigo Mastery VIII: Humble Expressions in Complaints & Apologies",
+  "intro": "Even complaints and apologies in Japanese business require careful keigo. Today we study the art of expressing dissatisfaction and making amends formally.",
+  "type": "verbs",
+  "vocab": [
+    [
+      "お詫び申し上げる",
+      "おわびもうしあげる",
+      "to sincerely apologize (very humble)"
+    ],
+    [
+      "ご迷惑をお掛けする",
+      "ごめいわくをおかけする",
+      "to cause inconvenience (humble)"
+    ],
+    [
+      "重ねてお詫び",
+      "かさねておわび",
+      "to apologize again, repeated apology"
+    ],
+    [
+      "善処する",
+      "ぜんしょする",
+      "to handle properly, to do one's best"
+    ],
+    [
+      "陳謝する",
+      "ちんしゃする",
+      "to apologize formally (press/public)"
+    ]
+  ],
+  "chars": [],
+  "grammar": {
+    "pattern": "深くお詫び申し上げます",
+    "meaning": "I deeply apologize (very formal humble)",
+    "example_jp": "この度はご迷惑をお掛けし、深くお詫び申し上げます。",
+    "example_en": "I deeply apologize for the inconvenience caused on this occasion."
+  },
+  "practice": "Write a formal apology letter from a company to its customers regarding a product defect.",
+  "tip": "In Japanese business, the depth of apology must match the severity of the situation. 深くお詫び申し上げます is for serious matters; お詫びいたします suffices for minor issues."
+});
+
+curriculum.push({
+  "day": 1499,
+  "phaseNum": 29,
+  "phaseName": "N1 Verbs & Expressions",
+  "week": Math.ceil(1499 / 7),
+  "title": "Keigo Mastery IX: Review & Keigo Level Assessment",
+  "intro": "Today we review all keigo levels and practice selecting the appropriate register for different situations. This is a critical N1 skill.",
+  "type": "verbs",
+  "vocab": [
+    [
+      "お手数をお掛けする",
+      "おてすうをおかけする",
+      "to trouble someone (humble)"
+    ],
+    [
+      "ご厚意",
+      "ごこうい",
+      "your kindness, your goodwill"
+    ],
+    [
+      "ご高配",
+      "ごこうはい",
+      "your kind consideration (very formal)"
+    ],
+    [
+      "ご愛顧",
+      "ごあいこ",
+      "your patronage (business)"
+    ],
+    [
+      "謹んで",
+      "つつしんで",
+      "respectfully, humbly"
+    ]
+  ],
+  "chars": [],
+  "grammar": {
+    "pattern": "謹んで～申し上げます",
+    "meaning": "I respectfully state ~ (most formal)",
+    "example_jp": "謹んで新年のお慶びを申し上げます。",
+    "example_en": "I respectfully extend my New Year's greetings."
+  },
+  "practice": "Write three messages at different keigo levels: casual polite, business formal, and ceremonial, for the same underlying message.",
+  "tip": "Keigo has three registers: everyday polite (です/ます), business formal (お/ご + verb), and ceremonial (賜る/謹んで). Matching the register to the situation is key."
+});
+
+curriculum.push({
+  "day": 1500,
+  "phaseNum": 29,
+  "phaseName": "N1 Verbs & Expressions",
+  "week": Math.ceil(1500 / 7),
+  "title": "Reading: Keigo in Business Correspondence",
+  "intro": "Today is a reading day. Apply the keigo mastery skills you have studied through a formal business correspondence passage.",
+  "type": "reading",
+  "vocab": [
+    [
+      "賜る",
+      "たまわる",
+      "to receive (very humble)"
+    ],
+    [
+      "承る",
+      "うけたまわる",
+      "to hear, to accept (humble)"
+    ],
+    [
+      "申し上げる",
+      "もうしあげる",
+      "to say (humble)"
+    ],
+    [
+      "ご高配",
+      "ごこうはい",
+      "your kind consideration"
+    ],
+    [
+      "恐縮",
+      "きょうしゅく",
+      "feeling grateful/sorry"
+    ]
+  ],
+  "chars": [],
+  "grammar": {
+    "pattern": "賜りますよう",
+    "meaning": "so that we may be granted ~ (very humble request)",
+    "example_jp": "今後ともご指導ご鞭撻を賜りますようお願い申し上げます。",
+    "example_en": "I humbly request your continued guidance and encouragement."
+  },
+  "practice": "Read the passage carefully. Answer the comprehension questions, then identify all keigo expressions and classify them as sonkeigo, kenjougo, or teineigo.",
+  "tip": "In business correspondence, the opening (拝啓) and closing (敬具) frames signal the formality level. Everything between must maintain consistent keigo.",
+  "passage": {
+    "text_jp": "拝啓　時下ますますご清栄のこととお慶び申し上げます。平素は格別のご高配を賜り、厚く御礼申し上げます。さて、先般ご依頼を承りました新規事業計画の件につきまして、弊社にて慎重に検討を重ねてまいりました。関係部署の担当者を集め、技術面、財務面、法務面の各観点から多角的に検証を行った次第でございます。ご提案の内容を拝読いたしましたところ、双方にとって大変有益な協業の可能性を拝察する次第でございます。特に、御社が培ってこられた技術力と弊社の販売網を組み合わせることで、市場における競争力の飛躍的な向上が期待されます。昨今の市場環境は日々変化しており、単独での事業展開には限界が生じつつあることは否めません。御社との協業は、まさにこの課題を克服する最善の策であると確信いたしております。御社の先進的な研究開発力と弊社の長年にわたる顧客基盤を融合させることで、従来にはない革新的なサービスの提供が可能になるものと存じます。つきましては、具体的な条件等について改めてお打ち合わせの機会を頂戴したく存じます。弊社としましては、資本比率、人員配置、知的財産権の取り扱い等につきまして、率直な意見交換をさせていただければ幸いに存じます。ご多忙中恐縮ではございますが、来月上旬にお時間を賜ることは可能でしょうか。弊社からは担当の山田が参上いたします。なお、山田は本案件の企画段階より携わっておりますので、技術的なご質問にもお答えできるかと存じます。また、本件に関する資料を同封いたしましたので、ご査収くださいますようお願い申し上げます。資料には市場調査の結果および収支予測を含めておりますので、ご検討の一助となれば誠に幸甚でございます。今後とも変わらぬご愛顧を賜りますよう、謹んでお願い申し上げます。何かご不明な点がございましたら、何なりとお申し付けくださいませ。お手数をお掛けいたしますが、何卒よろしくお願い申し上げます。末筆ながら、貴社のますますのご発展をお祈り申し上げます。敬具",
+    "text_en": "Dear Sir/Madam, I am pleased to hear that you are prospering. We are deeply grateful for your extraordinary consideration in our regular dealings. Regarding the new business plan that you previously entrusted to us, we have been carefully deliberating at our company. Having read your proposal, we humbly surmise that there is potential for a highly beneficial collaboration for both parties. In particular, by combining the technological capabilities your company has cultivated with our sales network, a dramatic improvement in market competitiveness is expected. Accordingly, we would like to request an opportunity to meet again to discuss the specific conditions. On our part, we would be grateful for a frank exchange of opinions regarding capital ratios, personnel allocation, and the handling of intellectual property rights. We apologize for troubling you during your busy schedule, but would it be possible to be granted some time early next month? Our representative Yamada will attend. As Yamada has been involved since the planning stage of this project, he should be able to answer any technical questions. Additionally, we have enclosed materials related to this matter, and we kindly ask that you review and accept them. The materials include market research results and revenue projections, and we would be most grateful if they could serve as an aid to your deliberations. We humbly request your continued patronage. In closing, we pray for the continued prosperity of your company. Respectfully yours.",
+    "questions": [
+      {
+        "question_jp": "この手紙の主な目的は何ですか。",
+        "question_en": "What is the main purpose of this letter?",
+        "answer": "新規事業計画の協業について具体的な打ち合わせの機会を依頼すること"
+      },
+      {
+        "question_jp": "筆者は相手の提案についてどのような見解を示していますか。",
+        "question_en": "What view does the writer express about the recipient's proposal?",
+        "answer": "双方にとって大変有益な協業の可能性があるという前向きな見解"
+      }
+    ]
+  }
+});
+
+curriculum.push({
+  "day": 1501,
+  "phaseNum": 29,
+  "phaseName": "N1 Verbs & Expressions",
+  "week": Math.ceil(1501 / 7),
+  "title": "Four-Character Idiom Verbs I: Rejection & Dismissal",
+  "intro": "Many N1 suru-verbs derive from four-character idioms (四字熟語). Today we study verbs expressing rejection, dismissal, and denial.",
+  "type": "verbs",
+  "vocab": [
+    [
+      "一蹴する",
+      "いっしゅうする",
+      "to flatly reject, to kick aside"
+    ],
+    [
+      "黙殺する",
+      "もくさつする",
+      "to ignore completely, to kill with silence"
+    ],
+    [
+      "看過する",
+      "かんかする",
+      "to overlook, to turn a blind eye to"
+    ],
+    [
+      "黙認する",
+      "もくにんする",
+      "to tacitly approve, to condone"
+    ],
+    [
+      "排斥する",
+      "はいせきする",
+      "to exclude, to ostracize"
+    ]
+  ],
+  "chars": [],
+  "grammar": {
+    "pattern": "～を一蹴する",
+    "meaning": "to flatly reject ~",
+    "example_jp": "野党の提案は与党によって一蹴された。",
+    "example_en": "The opposition's proposal was flatly rejected by the ruling party."
+  },
+  "practice": "Write five news-style sentences using today's verbs to describe political or corporate decisions.",
+  "tip": "一蹴 literally means 'one kick.' Visualizing the literal meaning of four-character compounds helps you remember their figurative usage."
+});
+
+curriculum.push({
+  "day": 1502,
+  "phaseNum": 29,
+  "phaseName": "N1 Verbs & Expressions",
+  "week": Math.ceil(1502 / 7),
+  "title": "Four-Character Idiom Verbs II: Acceptance & Approval",
+  "intro": "Continuing with four-character idiom verbs, today we study verbs expressing acceptance, approval, and recognition in formal contexts.",
+  "type": "verbs",
+  "vocab": [
+    [
+      "容認する",
+      "ようにんする",
+      "to approve, to tolerate"
+    ],
+    [
+      "承認する",
+      "しょうにんする",
+      "to approve officially, to authorize"
+    ],
+    [
+      "是認する",
+      "ぜにんする",
+      "to approve, to sanction"
+    ],
+    [
+      "追認する",
+      "ついにんする",
+      "to ratify after the fact"
+    ],
+    [
+      "公認する",
+      "こうにんする",
+      "to officially recognize, to certify"
+    ]
+  ],
+  "chars": [],
+  "grammar": {
+    "pattern": "～を承認する",
+    "meaning": "to officially approve ~",
+    "example_jp": "取締役会は新たな事業計画を承認した。",
+    "example_en": "The board of directors approved the new business plan."
+  },
+  "practice": "Write sentences describing official approval processes in government, business, and academia.",
+  "tip": "The ～認 verbs form a spectrum of formality: 認める (general) < 容認 (tolerating) < 承認 (official) < 公認 (publicly certified)."
+});
+
+curriculum.push({
+  "day": 1503,
+  "phaseNum": 29,
+  "phaseName": "N1 Verbs & Expressions",
+  "week": Math.ceil(1503 / 7),
+  "title": "Four-Character Idiom Verbs III: Suggestion & Implication",
+  "intro": "Today's verbs express suggestion, implication, and indirect communication. These are common in academic writing and diplomatic language.",
+  "type": "verbs",
+  "vocab": [
+    [
+      "示唆する",
+      "しさする",
+      "to suggest, to imply, to hint"
+    ],
+    [
+      "暗示する",
+      "あんじする",
+      "to hint at, to allude to"
+    ],
+    [
+      "言及する",
+      "げんきゅうする",
+      "to mention, to refer to"
+    ],
+    [
+      "論及する",
+      "ろんきゅうする",
+      "to discuss, to touch upon in argument"
+    ],
+    [
+      "敷衍する",
+      "ふえんする",
+      "to elaborate, to expand upon"
+    ]
+  ],
+  "chars": [],
+  "grammar": {
+    "pattern": "～を示唆する",
+    "meaning": "to suggest / imply ~",
+    "example_jp": "この研究結果は新たな治療法の可能性を示唆している。",
+    "example_en": "These research results suggest the possibility of a new treatment method."
+  },
+  "practice": "Write an academic abstract using today's verbs to describe research findings and their implications.",
+  "tip": "示唆する is indispensable in academic Japanese. It signals indirect evidence: the data suggests but does not prove. This distinction is crucial."
+});
+
+curriculum.push({
+  "day": 1504,
+  "phaseNum": 29,
+  "phaseName": "N1 Verbs & Expressions",
+  "week": Math.ceil(1504 / 7),
+  "title": "Four-Character Idiom Verbs IV: Action & Implementation",
+  "intro": "Today's four-character idiom verbs express decisive action and implementation. They appear in business plans, policy documents, and strategic discussions.",
+  "type": "verbs",
+  "vocab": [
+    [
+      "断行する",
+      "だんこうする",
+      "to carry out decisively"
+    ],
+    [
+      "遂行する",
+      "すいこうする",
+      "to execute, to accomplish"
+    ],
+    [
+      "履行する",
+      "りこうする",
+      "to fulfill, to carry out (obligations)"
+    ],
+    [
+      "敢行する",
+      "かんこうする",
+      "to carry out boldly, to dare to do"
+    ],
+    [
+      "施行する",
+      "しこうする",
+      "to enforce, to put into effect (law)"
+    ]
+  ],
+  "chars": [],
+  "grammar": {
+    "pattern": "～を遂行する",
+    "meaning": "to execute / accomplish ~",
+    "example_jp": "困難な状況下でも任務を遂行する覚悟がある。",
+    "example_en": "I am prepared to carry out the mission even under difficult circumstances."
+  },
+  "practice": "Write a project proposal outlining steps to be taken, using today's action verbs.",
+  "tip": "施行 can be read しこう or せこう (the latter is increasingly common). Both are accepted, but しこう is traditional for legal contexts."
+});
+
+curriculum.push({
+  "day": 1505,
+  "phaseNum": 29,
+  "phaseName": "N1 Verbs & Expressions",
+  "week": Math.ceil(1505 / 7),
+  "title": "Four-Character Idiom Verbs V: Investigation & Examination",
+  "intro": "These verbs express investigation, examination, and analytical processes. They are essential for academic, legal, and journalistic Japanese.",
+  "type": "verbs",
+  "vocab": [
+    [
+      "精査する",
+      "せいさする",
+      "to scrutinize, to examine closely"
+    ],
+    [
+      "吟味する",
+      "ぎんみする",
+      "to examine carefully, to savor"
+    ],
+    [
+      "審議する",
+      "しんぎする",
+      "to deliberate, to discuss officially"
+    ],
+    [
+      "糾弾する",
+      "きゅうだんする",
+      "to denounce, to censure"
+    ],
+    [
+      "弾劾する",
+      "だんがいする",
+      "to impeach, to accuse"
+    ]
+  ],
+  "chars": [],
+  "grammar": {
+    "pattern": "～を精査する",
+    "meaning": "to scrutinize / closely examine ~",
+    "example_jp": "提出された報告書の内容を精査する必要がある。",
+    "example_en": "It is necessary to scrutinize the contents of the submitted report."
+  },
+  "practice": "Write a newspaper article about a parliamentary investigation using today's verbs.",
+  "tip": "吟味 originally meant 'to recite and savor poetry.' Its meaning expanded to 'to examine carefully' — still carrying the nuance of thoughtful consideration."
+});
+
+curriculum.push({
+  "day": 1506,
+  "phaseNum": 29,
+  "phaseName": "N1 Verbs & Expressions",
+  "week": Math.ceil(1506 / 7),
+  "title": "Four-Character Idiom Verbs VI: Conflict & Opposition",
+  "intro": "Today's verbs express conflict, opposition, and confrontation. These appear frequently in news reports and political commentary.",
+  "type": "verbs",
+  "vocab": [
+    [
+      "対峙する",
+      "たいじする",
+      "to confront, to stand face to face"
+    ],
+    [
+      "拮抗する",
+      "きっこうする",
+      "to rival, to be evenly matched"
+    ],
+    [
+      "牽制する",
+      "けんせいする",
+      "to keep in check, to restrain"
+    ],
+    [
+      "威嚇する",
+      "いかくする",
+      "to intimidate, to threaten"
+    ],
+    [
+      "報復する",
+      "ほうふくする",
+      "to retaliate, to take revenge"
+    ]
+  ],
+  "chars": [],
+  "grammar": {
+    "pattern": "～と対峙する",
+    "meaning": "to confront / face ~",
+    "example_jp": "両軍は国境線を挟んで対峙した。",
+    "example_en": "The two armies confronted each other across the border."
+  },
+  "practice": "Describe an international conflict or political standoff using today's verbs in a news report format.",
+  "tip": "対峙 implies a sustained, tense standoff — not just a momentary encounter. It is stronger than 対立 (opposition) and implies physical or psychological confrontation."
+});
+
+curriculum.push({
+  "day": 1507,
+  "phaseNum": 29,
+  "phaseName": "N1 Verbs & Expressions",
+  "week": Math.ceil(1507 / 7),
+  "title": "Four-Character Idiom Verbs VII: Change & Transformation",
+  "intro": "These verbs express transformation, conversion, and change at the institutional or societal level. They are common in policy discussions and sociological analysis.",
+  "type": "verbs",
+  "vocab": [
+    [
+      "転換する",
+      "てんかんする",
+      "to convert, to switch, to transform"
+    ],
+    [
+      "刷新する",
+      "さっしんする",
+      "to reform, to renovate completely"
+    ],
+    [
+      "変革する",
+      "へんかくする",
+      "to reform radically, to revolutionize"
+    ],
+    [
+      "是正する",
+      "ぜせいする",
+      "to correct, to rectify"
+    ],
+    [
+      "改竄する",
+      "かいざんする",
+      "to falsify, to tamper with"
+    ]
+  ],
+  "chars": [],
+  "grammar": {
+    "pattern": "～を刷新する",
+    "meaning": "to completely reform / renovate ~",
+    "example_jp": "新社長は企業文化を根本から刷新する方針を打ち出した。",
+    "example_en": "The new president announced a policy to completely reform the corporate culture from the ground up."
+  },
+  "practice": "Write a speech by a leader announcing organizational reforms using today's verbs.",
+  "tip": "改竄 is always negative — it means to falsify or tamper with documents. The kanji 竄 is rare outside this word but appears on N1."
+});
+
+curriculum.push({
+  "day": 1508,
+  "phaseNum": 29,
+  "phaseName": "N1 Verbs & Expressions",
+  "week": Math.ceil(1508 / 7),
+  "title": "Four-Character Idiom Verbs VIII: Communication & Announcement",
+  "intro": "Today's verbs relate to formal communication, announcements, and declarations. They are essential for understanding official statements and press releases.",
+  "type": "verbs",
+  "vocab": [
+    [
+      "公表する",
+      "こうひょうする",
+      "to make public, to announce officially"
+    ],
+    [
+      "布告する",
+      "ふこくする",
+      "to proclaim, to decree"
+    ],
+    [
+      "宣告する",
+      "せんこくする",
+      "to pronounce, to declare (verdict)"
+    ],
+    [
+      "通達する",
+      "つうたつする",
+      "to notify officially, to issue a directive"
+    ],
+    [
+      "喧伝する",
+      "けんでんする",
+      "to publicize widely, to trumpet"
+    ]
+  ],
+  "chars": [],
+  "grammar": {
+    "pattern": "～を公表する",
+    "meaning": "to officially announce / make public ~",
+    "example_jp": "政府は調査結果を来週公表する予定だ。",
+    "example_en": "The government plans to officially announce the investigation results next week."
+  },
+  "practice": "Write three official announcements in different contexts: government, corporate, and academic.",
+  "tip": "公表 implies making something public that was previously internal. 発表 is more general. Choose 公表 when emphasizing the transition from private to public."
+});
+
+curriculum.push({
+  "day": 1509,
+  "phaseNum": 29,
+  "phaseName": "N1 Verbs & Expressions",
+  "week": Math.ceil(1509 / 7),
+  "title": "Four-Character Idiom Verbs IX: Preservation & Protection",
+  "intro": "These verbs express preservation, protection, and maintenance. They appear in cultural, environmental, and legal contexts.",
+  "type": "verbs",
+  "vocab": [
+    [
+      "保全する",
+      "ほぜんする",
+      "to preserve, to conserve"
+    ],
+    [
+      "擁護する",
+      "ようごする",
+      "to defend, to advocate for"
+    ],
+    [
+      "庇護する",
+      "ひごする",
+      "to shelter, to protect, to patronize"
+    ],
+    [
+      "堅持する",
+      "けんじする",
+      "to firmly maintain, to adhere to"
+    ],
+    [
+      "死守する",
+      "ししゅする",
+      "to defend to the death, to protect at all costs"
+    ]
+  ],
+  "chars": [],
+  "grammar": {
+    "pattern": "～を堅持する",
+    "meaning": "to firmly maintain / adhere to ~",
+    "example_jp": "憲法に定められた基本的人権を堅持しなければならない。",
+    "example_en": "We must firmly maintain the fundamental human rights established in the constitution."
+  },
+  "practice": "Write an advocacy essay defending a cause using today's verbs.",
+  "tip": "擁護 and 庇護 both mean 'to protect' but differ: 擁護 is defending a principle or position; 庇護 is sheltering a person or group under your protection."
+});
+
+curriculum.push({
+  "day": 1510,
+  "phaseNum": 29,
+  "phaseName": "N1 Verbs & Expressions",
+  "week": Math.ceil(1510 / 7),
+  "title": "Reading: Four-Character Idiom Verbs in Legal Commentary",
+  "intro": "Today is a reading day. Apply the four-character idiom verbs through an extended legal and political commentary passage.",
+  "type": "reading",
+  "vocab": [
+    [
+      "示唆する",
+      "しさする",
+      "to suggest, to imply"
+    ],
+    [
+      "精査する",
+      "せいさする",
+      "to scrutinize"
+    ],
+    [
+      "是正する",
+      "ぜせいする",
+      "to correct, to rectify"
+    ],
+    [
+      "堅持する",
+      "けんじする",
+      "to firmly maintain"
+    ],
+    [
+      "糾弾する",
+      "きゅうだんする",
+      "to denounce"
+    ]
+  ],
+  "chars": [],
+  "grammar": {
+    "pattern": "～を看過する",
+    "meaning": "to overlook / turn a blind eye to ~",
+    "example_jp": "このような不正を看過するわけにはいかない。",
+    "example_en": "We cannot turn a blind eye to such injustice."
+  },
+  "practice": "Read the passage carefully. Answer the comprehension questions, then list all four-character idiom verbs used in the text.",
+  "tip": "Legal and political commentary is dense with four-character idiom verbs. Reading such texts regularly builds the pattern recognition essential for N1.",
+  "passage": {
+    "text_jp": "近年、行政における情報公開の在り方が厳しく問われている。複数の省庁において公文書の改竄が発覚し、国民の信頼を根底から揺るがす事態となった。改竄された文書には、政策決定の過程を記録した極めて重要な資料が含まれており、その影響は甚大である。野党はこの問題を国会で糾弾し、政府の説明責任を追及した。しかし、与党はこれを一蹴し、内部調査で十分であると主張した。識者の間では、第三者機関による精査が不可欠であるとの見解が示されている。そもそも公文書とは、行政が国民に対して説明責任を果たすための根幹的な記録であり、その管理を疎かにすることは、国民主権の理念そのものを蔑ろにする行為にほかならない。行政の透明性を堅持するためには、情報公開制度の抜本的な是正が急務である。現行制度の不備を看過し続ければ、民主主義の根幹が損なわれかねない。具体的には、文書の作成義務の厳格化、保存期間の延長、そして独立した監視機関の設置が不可欠であろう。諸外国では既にこうした制度が整備されており、我が国の遅れは顕著と言わざるを得ない。一部には、内部告発者の庇護制度の充実を示唆する声もある。内部告発者が報復を恐れることなく不正を暴くことができる環境を整備することは、行政の自浄作用を促す上で極めて重要である。公文書管理の刷新と、不正に対する厳格な処罰の施行が、国民の信頼回復に向けた第一歩となるであろう。この問題を黙殺することは、すなわち民主主義そのものを黙認のうちに破壊することに等しい。国民一人ひとりが行政の監視者としての自覚を持ち、透明な政治を求める声を上げ続けることが、健全な民主社会を維持するための唯一の道である。情報公開は民主主義の生命線であり、その重要性を軽視することは、将来の世代に対する重大な背信行為と言わねばならない。今こそ、国を挙げてこの問題に取り組むべき時である。行政の透明性なくして、国民の信頼回復はあり得ないのだから。",
+    "text_en": "In recent years, the state of information disclosure in government administration has been severely questioned. The falsification of official documents has come to light in multiple ministries, shaking public trust to its foundations. The opposition parties denounced this issue in parliament and demanded government accountability. However, the ruling party flatly rejected this, claiming that an internal investigation was sufficient. Among experts, the view has been expressed that scrutiny by an independent third-party organization is indispensable. To begin with, official documents are the fundamental records through which the government fulfills its accountability to the people, and neglecting their management is nothing other than an act that disregards the very principle of popular sovereignty. To firmly maintain administrative transparency, fundamental rectification of the information disclosure system is urgently needed. If we continue to overlook deficiencies in the current system, the very foundation of democracy may be undermined. Specifically, stricter obligations for document creation, extension of preservation periods, and the establishment of an independent oversight body would be indispensable. Some voices have also suggested enhancing the protection system for whistleblowers. Creating an environment where whistleblowers can expose wrongdoing without fear of retaliation is extremely important for promoting the self-purification capacity of the administration. The complete reform of official document management and the enforcement of strict punishment for misconduct would be the first step toward restoring public trust. To ignore this problem is tantamount to tacitly destroying democracy itself. Each citizen must maintain awareness as a monitor of the administration and continue to raise their voice demanding transparent politics — this is the only path to maintaining a healthy democratic society.",
+    "questions": [
+      {
+        "question_jp": "筆者が最も緊急だと考えている対策は何ですか。",
+        "question_en": "What measure does the author consider most urgent?",
+        "answer": "情報公開制度の抜本的な是正"
+      },
+      {
+        "question_jp": "与党と野党の立場の違いを説明してください。",
+        "question_en": "Explain the difference in position between the ruling and opposition parties.",
+        "answer": "野党は国会で糾弾し説明責任を追及したが、与党は一蹴して内部調査で十分だと主張した"
+      }
+    ]
+  }
+});
+
+curriculum.push({
+  "day": 1511,
+  "phaseNum": 29,
+  "phaseName": "N1 Verbs & Expressions",
+  "week": Math.ceil(1511 / 7),
+  "title": "Nuanced Synonyms I: 変える/換える/代える/替える",
+  "intro": "Japanese has multiple kanji for common verbs, each carrying distinct nuances. Today we study the four forms of 'kaeru' (to change), a frequent N1 distinction.",
+  "type": "verbs",
+  "vocab": [
+    [
+      "変える",
+      "かえる",
+      "to change (state/nature)"
+    ],
+    [
+      "換える",
+      "かえる",
+      "to exchange, to convert"
+    ],
+    [
+      "代える",
+      "かえる",
+      "to substitute, to replace (a person/role)"
+    ],
+    [
+      "替える",
+      "かえる",
+      "to replace, to switch (an item)"
+    ],
+    [
+      "入れ替える",
+      "いれかえる",
+      "to swap, to rotate"
+    ]
+  ],
+  "chars": [],
+  "grammar": {
+    "pattern": "～に代える",
+    "meaning": "to substitute ~ for / in place of ~",
+    "example_jp": "書面をもってご挨拶に代えさせていただきます。",
+    "example_en": "I will substitute this letter for a personal greeting."
+  },
+  "practice": "Write four pairs of sentences, each using a different kanji form of かえる, highlighting the semantic distinction.",
+  "tip": "変える = state change, 換える = exchange/convert, 代える = substitute person/role, 替える = replace item. Visualize each kanji's radical for clues."
+});
+
+curriculum.push({
+  "day": 1512,
+  "phaseNum": 29,
+  "phaseName": "N1 Verbs & Expressions",
+  "week": Math.ceil(1512 / 7),
+  "title": "Nuanced Synonyms II: 聞く/聴く/訊く",
+  "intro": "The verb 'kiku' splits into three kanji-differentiated meanings. Distinguishing these is a hallmark of N1-level precision.",
+  "type": "verbs",
+  "vocab": [
+    [
+      "聞く",
+      "きく",
+      "to hear, to listen (general)"
+    ],
+    [
+      "聴く",
+      "きく",
+      "to listen attentively, to appreciate (music)"
+    ],
+    [
+      "訊く",
+      "きく",
+      "to ask, to inquire"
+    ],
+    [
+      "傾聴する",
+      "けいちょうする",
+      "to listen intently, to give ear to"
+    ],
+    [
+      "拝聴する",
+      "はいちょうする",
+      "to listen (humble)"
+    ]
+  ],
+  "chars": [],
+  "grammar": {
+    "pattern": "～に耳を傾ける",
+    "meaning": "to lend an ear to ~, to listen carefully",
+    "example_jp": "指導者は国民の声に耳を傾けるべきである。",
+    "example_en": "Leaders should lend an ear to the voices of the people."
+  },
+  "practice": "Write sentences distinguishing 聞く, 聴く, and 訊く, then add sentences with 傾聴 and 拝聴.",
+  "tip": "聴く contains 耳 (ear) + 目 (eye) + 心 (heart) — listening with full attention. This mnemonic captures its meaning perfectly."
+});
+
+curriculum.push({
+  "day": 1513,
+  "phaseNum": 29,
+  "phaseName": "N1 Verbs & Expressions",
+  "week": Math.ceil(1513 / 7),
+  "title": "Nuanced Synonyms III: 見る/観る/診る/看る",
+  "intro": "The verb 'miru' has four distinct kanji forms, each specifying a different kind of seeing or watching. Today we master these distinctions.",
+  "type": "verbs",
+  "vocab": [
+    [
+      "見る",
+      "みる",
+      "to see, to look at (general)"
+    ],
+    [
+      "観る",
+      "みる",
+      "to view, to watch (performance/scenery)"
+    ],
+    [
+      "診る",
+      "みる",
+      "to examine (medical)"
+    ],
+    [
+      "看る",
+      "みる",
+      "to look after, to nurse (a patient)"
+    ],
+    [
+      "見做す",
+      "みなす",
+      "to regard as, to deem"
+    ]
+  ],
+  "chars": [],
+  "grammar": {
+    "pattern": "～と見做す",
+    "meaning": "to regard / deem as ~",
+    "example_jp": "提出期限を過ぎた場合は辞退したものと見做す。",
+    "example_en": "If the deadline passes, it will be deemed as having withdrawn."
+  },
+  "practice": "Write a hospital scenario using 診る and 看る, then a theater scenario using 観る, clearly distinguishing each usage.",
+  "tip": "見る is the default; 観る is for intentional viewing (映画を観る); 診る is medical (patient を診る); 看る is nursing care (病人を看る)."
+});
+
+curriculum.push({
+  "day": 1514,
+  "phaseNum": 29,
+  "phaseName": "N1 Verbs & Expressions",
+  "week": Math.ceil(1514 / 7),
+  "title": "Nuanced Synonyms IV: 計る/測る/量る/図る",
+  "intro": "The verb 'hakaru' has four kanji forms, each specifying what is being measured or planned. These distinctions are tested directly on N1.",
+  "type": "verbs",
+  "vocab": [
+    [
+      "計る",
+      "はかる",
+      "to measure (time), to plan"
+    ],
+    [
+      "測る",
+      "はかる",
+      "to measure (length/distance)"
+    ],
+    [
+      "量る",
+      "はかる",
+      "to measure (weight/volume)"
+    ],
+    [
+      "図る",
+      "はかる",
+      "to plan, to attempt, to aim for"
+    ],
+    [
+      "推し量る",
+      "おしはかる",
+      "to guess, to conjecture"
+    ]
+  ],
+  "chars": [],
+  "grammar": {
+    "pattern": "～を図る",
+    "meaning": "to aim for / attempt ~",
+    "example_jp": "業務効率の改善を図るために新システムを導入した。",
+    "example_en": "A new system was introduced in order to aim for improvement in operational efficiency."
+  },
+  "practice": "Write sentences for each hakaru kanji: time (計る), distance (測る), weight (量る), and planning (図る).",
+  "tip": "図る is the most abstract: it means 'to plan/aim for' and collocates with abstract nouns: 改善を図る, 合理化を図る, 解決を図る."
+});
+
+curriculum.push({
+  "day": 1515,
+  "phaseNum": 29,
+  "phaseName": "N1 Verbs & Expressions",
+  "week": Math.ceil(1515 / 7),
+  "title": "Nuanced Synonyms V: 上げる/挙げる/揚げる",
+  "intro": "The verb 'ageru' splits into three kanji forms with distinct meanings. Today we explore these critical N1-level distinctions.",
+  "type": "verbs",
+  "vocab": [
+    [
+      "上げる",
+      "あげる",
+      "to raise (general, upward)"
+    ],
+    [
+      "挙げる",
+      "あげる",
+      "to cite, to enumerate, to hold (ceremony)"
+    ],
+    [
+      "揚げる",
+      "あげる",
+      "to deep-fry, to hoist (a flag)"
+    ],
+    [
+      "打ち上げる",
+      "うちあげる",
+      "to launch, to set off (fireworks)"
+    ],
+    [
+      "繰り上げる",
+      "くりあげる",
+      "to move up (a date/schedule)"
+    ]
+  ],
+  "chars": [],
+  "grammar": {
+    "pattern": "～を挙げる",
+    "meaning": "to cite / enumerate ~",
+    "example_jp": "成功の要因として三つの点を挙げることができる。",
+    "example_en": "Three points can be cited as factors for success."
+  },
+  "practice": "Write sentences using each ageru form: raising (上げる), citing (挙げる), and frying/hoisting (揚げる).",
+  "tip": "挙げる is academic essential: 例を挙げる (cite examples), 名前を挙げる (name someone), 成果を挙げる (achieve results). Master its collocations."
+});
+
+curriculum.push({
+  "day": 1516,
+  "phaseNum": 29,
+  "phaseName": "N1 Verbs & Expressions",
+  "week": Math.ceil(1516 / 7),
+  "title": "Nuanced Synonyms VI: 務める/努める/勤める",
+  "intro": "The verb 'tsutomeru' has three forms distinguishing role fulfillment, effort, and employment. These are commonly confused even by native speakers.",
+  "type": "verbs",
+  "vocab": [
+    [
+      "務める",
+      "つとめる",
+      "to serve as, to fill a role"
+    ],
+    [
+      "努める",
+      "つとめる",
+      "to strive, to make an effort"
+    ],
+    [
+      "勤める",
+      "つとめる",
+      "to work (at a company), to be employed"
+    ],
+    [
+      "勤勉",
+      "きんべん",
+      "diligent, industrious"
+    ],
+    [
+      "任務",
+      "にんむ",
+      "duty, mission, task"
+    ]
+  ],
+  "chars": [],
+  "grammar": {
+    "pattern": "～に努める",
+    "meaning": "to strive for / make efforts toward ~",
+    "example_jp": "環境保全に努めることは企業の社会的責任である。",
+    "example_en": "Striving for environmental conservation is a corporate social responsibility."
+  },
+  "practice": "Write three career-related paragraphs, each centered on a different tsutomeru form.",
+  "tip": "務める = role (議長を務める), 努める = effort (改善に努める), 勤める = employment (銀行に勤める). The kanji radicals offer clues."
+});
+
+curriculum.push({
+  "day": 1517,
+  "phaseNum": 29,
+  "phaseName": "N1 Verbs & Expressions",
+  "week": Math.ceil(1517 / 7),
+  "title": "Nuanced Synonyms VII: 収める/納める/治める/修める",
+  "intro": "The verb 'osameru' has four kanji forms, each with a distinct meaning. Today we untangle these frequently tested N1 distinctions.",
+  "type": "verbs",
+  "vocab": [
+    [
+      "収める",
+      "おさめる",
+      "to obtain, to achieve, to put away"
+    ],
+    [
+      "納める",
+      "おさめる",
+      "to pay, to supply, to dedicate"
+    ],
+    [
+      "治める",
+      "おさめる",
+      "to govern, to rule, to manage"
+    ],
+    [
+      "修める",
+      "おさめる",
+      "to master, to study (formally)"
+    ],
+    [
+      "納税",
+      "のうぜい",
+      "tax payment"
+    ]
+  ],
+  "chars": [],
+  "grammar": {
+    "pattern": "成果を収める",
+    "meaning": "to achieve results",
+    "example_jp": "長年の研究が素晴らしい成果を収めた。",
+    "example_en": "The years of research achieved wonderful results."
+  },
+  "practice": "Write one sentence for each osameru form, then identify the correct kanji for five ambiguous contexts.",
+  "tip": "収める = achieve/store, 納める = pay/deliver, 治める = govern, 修める = study. N1 tests love asking which kanji is correct in context."
+});
+
+curriculum.push({
+  "day": 1518,
+  "phaseNum": 29,
+  "phaseName": "N1 Verbs & Expressions",
+  "week": Math.ceil(1518 / 7),
+  "title": "Nuanced Synonyms VIII: 合う/会う/遭う/逢う",
+  "intro": "The verb 'au' has four kanji forms distinguishing different types of meetings and encounters. Understanding these nuances reflects true N1 mastery.",
+  "type": "verbs",
+  "vocab": [
+    [
+      "合う",
+      "あう",
+      "to match, to fit, to do together"
+    ],
+    [
+      "会う",
+      "あう",
+      "to meet (a person, planned)"
+    ],
+    [
+      "遭う",
+      "あう",
+      "to encounter (misfortune, accident)"
+    ],
+    [
+      "逢う",
+      "あう",
+      "to meet (literary, romantic)"
+    ],
+    [
+      "巡り合う",
+      "めぐりあう",
+      "to come across, to meet by chance"
+    ]
+  ],
+  "chars": [],
+  "grammar": {
+    "pattern": "～に遭う",
+    "meaning": "to encounter (misfortune / disaster)",
+    "example_jp": "帰宅途中に激しい嵐に遭った。",
+    "example_en": "I encountered a violent storm on the way home."
+  },
+  "practice": "Write a short story using all four au forms naturally, distinguishing each type of encounter.",
+  "tip": "遭う is always negative (事故に遭う, 災害に遭う). Never use it for positive encounters. 逢う is poetic — reserve it for literary or romantic contexts."
+});
+
+curriculum.push({
+  "day": 1519,
+  "phaseNum": 29,
+  "phaseName": "N1 Verbs & Expressions",
+  "week": Math.ceil(1519 / 7),
+  "title": "Nuanced Synonyms IX: 効く/利く",
+  "intro": "The verb 'kiku' (to be effective/to work) has two kanji forms with overlapping but distinct meanings. Today we also study related compound verbs.",
+  "type": "verbs",
+  "vocab": [
+    [
+      "効く",
+      "きく",
+      "to be effective (medicine, technique)"
+    ],
+    [
+      "利く",
+      "きく",
+      "to function, to be usable, to be discerning"
+    ],
+    [
+      "気が利く",
+      "きがきく",
+      "to be attentive, considerate"
+    ],
+    [
+      "融通が利く",
+      "ゆうずうがきく",
+      "to be flexible, adaptable"
+    ],
+    [
+      "小回りが利く",
+      "こまわりがきく",
+      "to be nimble, maneuverable"
+    ]
+  ],
+  "chars": [],
+  "grammar": {
+    "pattern": "～が利く",
+    "meaning": "~ functions / is available / is discerning",
+    "example_jp": "彼女は機転が利く人物として知られている。",
+    "example_en": "She is known as a person with quick wit."
+  },
+  "practice": "Write sentences distinguishing 効く and 利く, then write three sentences each with the compound expressions.",
+  "tip": "効く = effectiveness (薬が効く, 冷房が効く). 利く = capability/function (応用が利く, 鼻が利く). The distinction: effectiveness vs. capability."
+});
+
+curriculum.push({
+  "day": 1520,
+  "phaseNum": 29,
+  "phaseName": "N1 Verbs & Expressions",
+  "week": Math.ceil(1520 / 7),
+  "title": "Reading: Nuanced Synonyms in Essay Context",
+  "intro": "Today is a reading day. Apply the nuanced synonym distinctions through an extended passage that uses multiple synonym groups.",
+  "type": "reading",
+  "vocab": [
+    [
+      "図る",
+      "はかる",
+      "to aim for, to plan"
+    ],
+    [
+      "収める",
+      "おさめる",
+      "to achieve, to obtain"
+    ],
+    [
+      "努める",
+      "つとめる",
+      "to strive, to make an effort"
+    ],
+    [
+      "挙げる",
+      "あげる",
+      "to cite, to enumerate"
+    ],
+    [
+      "見做す",
+      "みなす",
+      "to regard as, to deem"
+    ]
+  ],
+  "chars": [],
+  "grammar": {
+    "pattern": "～の改善を図る",
+    "meaning": "to aim for improvement of ~",
+    "example_jp": "教育の質の向上を図ることが急務である。",
+    "example_en": "It is urgent to aim for improvement in the quality of education."
+  },
+  "practice": "Read the passage carefully. Answer the comprehension questions, then identify all nuanced synonym pairs in the text.",
+  "tip": "When reading, pay attention to which kanji form the author chose. N1 reading comprehension often tests whether you understand why a specific kanji was selected.",
+  "passage": {
+    "text_jp": "日本語教育の質的向上を図るためには、まず現状の問題点を正確に把握することが不可欠である。専門家が挙げる課題の筆頭は、画一的な指導法に固執するあまり、学習者個々の特性に応じた教育が疎かになっている点である。世界各国から日本語を学ぶ人々が増加している現在、多様なニーズに応えられる柔軟な教育体制の構築が急務となっている。効果的な言語教育とは何かを見極めるため、複数の教育機関における実践例を精査した結果、いくつかの重要な知見を収めることができた。第一に、母語の違いに応じて教授法を変える必要がある。英語話者と中国語話者では、つまずきやすい箇所が根本的に異なるからである。例えば、英語話者は助詞の使い分けに苦慮する一方、中国語話者は漢字の読みの多様性に戸惑うことが多い。こうした差異を踏まえた個別対応が教育効果を大きく左右する。第二に、教師自身が常に研鑽に努めることが求められる。言語学の最新の知見を修め、それを教室実践に反映させることで、指導の質は飛躍的に向上する。教師が自らの授業を客観的に観ることができる研修制度の整備も急務であろう。第三に、学習者の動機づけを維持する工夫が必要である。試験のためだけに勤める学習を、コミュニケーションの喜びを実感できる学びに替えることが肝要だ。具体的には、実社会での日本語使用場面を教材に取り入れ、学習者が日本語を使って何かを成し遂げる経験を積むことが効果的である。さらに、テクノロジーの活用も見逃せない。音声認識技術を用いた発音練習や、人工知能を活用した個別最適化学習は、従来の教室教育を補完する強力な手段となり得る。これらの改善策を総合的に講じることにより、日本語教育は新たな段階に到達し得るものと確信する。学習者一人ひとりの可能性を見極め、その成長を育む教育こそが、我々が目指すべき理想の姿である。言語教育は単なる知識の伝達ではなく、異文化理解と人間的成長を促す営みにほかならないのである。",
+    "text_en": "In order to aim for qualitative improvement in Japanese language education, it is indispensable to first accurately grasp the current problems. The foremost issue that experts cite is that, due to clinging to uniform teaching methods, education tailored to individual learner characteristics has been neglected. Having scrutinized practical examples at multiple educational institutions to discern what constitutes effective language education, we were able to achieve several important findings. First, it is necessary to change teaching methods according to differences in native language. This is because the points where English speakers and Chinese speakers tend to stumble differ fundamentally. For example, English speakers struggle with distinguishing particle usage, while Chinese speakers are often confused by the diversity of kanji readings. Individualized approaches that account for such differences greatly influence educational effectiveness. Second, teachers themselves are required to constantly strive for professional development. By mastering the latest findings in linguistics and reflecting them in classroom practice, the quality of instruction improves dramatically. The development of training systems that allow teachers to objectively observe their own classes is also urgently needed. Third, devising ways to maintain learner motivation is necessary. It is essential to replace study undertaken merely for examinations with learning where one can experience the joy of communication. Specifically, incorporating real-world Japanese usage scenarios into teaching materials and allowing learners to gain experience accomplishing things through Japanese is effective. Furthermore, the utilization of technology cannot be overlooked. Pronunciation practice using speech recognition technology and individually optimized learning through artificial intelligence can serve as powerful tools to complement traditional classroom education. I am convinced that by comprehensively implementing these improvement measures, Japanese language education can reach a new stage. Education that discerns each learner's potential and nurtures their growth is the ideal we should strive for.",
+    "questions": [
+      {
+        "question_jp": "筆者が挙げている三つの改善策を簡潔に述べてください。",
+        "question_en": "Briefly state the three improvement measures the author cites.",
+        "answer": "母語に応じた教授法の変更、教師の継続的研鑽、学習者の動機づけ維持"
+      },
+      {
+        "question_jp": "筆者が画一的な指導法の問題点として指摘していることは何ですか。",
+        "question_en": "What does the author point out as the problem with uniform teaching methods?",
+        "answer": "学習者個々の特性に応じた教育が疎かになっていること"
+      }
+    ]
+  }
+});
+
+curriculum.push({
+  "day": 1521,
+  "phaseNum": 29,
+  "phaseName": "N1 Verbs & Expressions",
+  "week": Math.ceil(1521 / 7),
+  "title": "Formal Adjectives I: Evaluative Expressions",
+  "intro": "N1-level formal adjectives provide precise, sophisticated descriptions. Today we study evaluative adjectives that appear in academic writing and formal assessments.",
+  "type": "verbs",
+  "vocab": [
+    [
+      "顕著な",
+      "けんちょな",
+      "remarkable, conspicuous, striking"
+    ],
+    [
+      "膨大な",
+      "ぼうだいな",
+      "enormous, vast, voluminous"
+    ],
+    [
+      "厳密な",
+      "げんみつな",
+      "strict, precise, rigorous"
+    ],
+    [
+      "甚大な",
+      "じんだいな",
+      "immense, enormous (damage/impact)"
+    ],
+    [
+      "稀有な",
+      "けうな",
+      "rare, exceptional, uncommon"
+    ]
+  ],
+  "chars": [],
+  "grammar": {
+    "pattern": "顕著な～",
+    "meaning": "remarkable / conspicuous ~",
+    "example_jp": "気候変動の影響は近年顕著になりつつある。",
+    "example_en": "The effects of climate change have been becoming conspicuous in recent years."
+  },
+  "practice": "Write five academic-style sentences, each using one of today's formal adjectives to describe a trend or phenomenon.",
+  "tip": "顕著 is the go-to N1 adjective for 'noticeable/remarkable.' It collocates with 傾向, 変化, 差, 影響, and 特徴."
+});
+
+curriculum.push({
+  "day": 1522,
+  "phaseNum": 29,
+  "phaseName": "N1 Verbs & Expressions",
+  "week": Math.ceil(1522 / 7),
+  "title": "Formal Adjectives II: Character & Quality",
+  "intro": "Today's formal adjectives describe character, quality, and nature. These are essential for written descriptions and literary characterization.",
+  "type": "verbs",
+  "vocab": [
+    [
+      "粗暴な",
+      "そぼうな",
+      "violent, rough, brutal"
+    ],
+    [
+      "巧妙な",
+      "こうみょうな",
+      "clever, ingenious, skillful"
+    ],
+    [
+      "卑劣な",
+      "ひれつな",
+      "despicable, mean, cowardly"
+    ],
+    [
+      "崇高な",
+      "すうこうな",
+      "sublime, noble, lofty"
+    ],
+    [
+      "精巧な",
+      "せいこうな",
+      "elaborate, exquisite, finely crafted"
+    ]
+  ],
+  "chars": [],
+  "grammar": {
+    "pattern": "巧妙な～",
+    "meaning": "clever / ingenious ~",
+    "example_jp": "犯人は巧妙な手口で警察の目を欺いた。",
+    "example_en": "The criminal deceived the police with clever tactics."
+  },
+  "practice": "Write character descriptions of historical or fictional figures using today's adjectives.",
+  "tip": "巧妙 and 精巧 both relate to skill but differ: 巧妙 = cleverness of method, 精巧 = fineness of craftsmanship."
+});
+
+curriculum.push({
+  "day": 1523,
+  "phaseNum": 29,
+  "phaseName": "N1 Verbs & Expressions",
+  "week": Math.ceil(1523 / 7),
+  "title": "Set Expressions I: ~を余儀なくされる",
+  "intro": "Today we begin studying formal set expressions that function as single units. These fixed patterns are essential for N1 reading and tested directly on the exam.",
+  "type": "verbs",
+  "vocab": [
+    [
+      "余儀なくされる",
+      "よぎなくされる",
+      "to be compelled to, to be forced to"
+    ],
+    [
+      "余儀ない",
+      "よぎない",
+      "unavoidable, inevitable"
+    ],
+    [
+      "強いられる",
+      "しいられる",
+      "to be forced, to be compelled"
+    ],
+    [
+      "やむを得ず",
+      "やむをえず",
+      "unavoidably, out of necessity"
+    ],
+    [
+      "不可避",
+      "ふかひ",
+      "inevitable, unavoidable"
+    ]
+  ],
+  "chars": [],
+  "grammar": {
+    "pattern": "～を余儀なくされる",
+    "meaning": "to be compelled to ~ (by circumstances)",
+    "example_jp": "台風により多くの住民が避難を余儀なくされた。",
+    "example_en": "Many residents were compelled to evacuate due to the typhoon."
+  },
+  "practice": "Write five sentences using ～を余儀なくされる describing situations where people had no choice.",
+  "tip": "～を余儀なくされる always implies external force — the subject has no choice. The thing forced is marked with を: 変更を余儀なくされる."
+});
+
+curriculum.push({
+  "day": 1524,
+  "phaseNum": 29,
+  "phaseName": "N1 Verbs & Expressions",
+  "week": Math.ceil(1524 / 7),
+  "title": "Set Expressions II: ~の域を出ない",
+  "intro": "Today's set expression means 'does not go beyond the level of.' It is used to downplay or limit the significance of something.",
+  "type": "verbs",
+  "vocab": [
+    [
+      "域を出ない",
+      "いきをでない",
+      "does not go beyond the level of"
+    ],
+    [
+      "推測の域",
+      "すいそくのいき",
+      "the realm of speculation"
+    ],
+    [
+      "憶測",
+      "おくそく",
+      "conjecture, speculation"
+    ],
+    [
+      "仮説",
+      "かせつ",
+      "hypothesis"
+    ],
+    [
+      "裏付け",
+      "うらづけ",
+      "backing, substantiation"
+    ]
+  ],
+  "chars": [],
+  "grammar": {
+    "pattern": "～の域を出ない",
+    "meaning": "does not go beyond ~ / is merely ~",
+    "example_jp": "現段階ではこの理論は仮説の域を出ない。",
+    "example_en": "At the present stage, this theory does not go beyond the level of hypothesis."
+  },
+  "practice": "Write four sentences using ～の域を出ない to cautiously evaluate theories, reports, or claims.",
+  "tip": "This expression is inherently cautious and academic. Common collocations: 推測の域を出ない, 仮説の域を出ない, 想像の域を出ない."
+});
+
+curriculum.push({
+  "day": 1525,
+  "phaseNum": 29,
+  "phaseName": "N1 Verbs & Expressions",
+  "week": Math.ceil(1525 / 7),
+  "title": "Set Expressions III: ~に他ならない / ~にほかならない",
+  "intro": "This set expression means 'is nothing other than' — a strong assertion of identity or cause. It is one of the most frequently tested N1 grammar patterns.",
+  "type": "verbs",
+  "vocab": [
+    [
+      "他ならない",
+      "ほかならない",
+      "is nothing other than"
+    ],
+    [
+      "端的に",
+      "たんてきに",
+      "plainly, directly, succinctly"
+    ],
+    [
+      "証左",
+      "しょうさ",
+      "evidence, proof"
+    ],
+    [
+      "帰結",
+      "きけつ",
+      "consequence, conclusion"
+    ],
+    [
+      "必然",
+      "ひつぜん",
+      "inevitability, necessity"
+    ]
+  ],
+  "chars": [],
+  "grammar": {
+    "pattern": "～にほかならない",
+    "meaning": "is nothing other than ~",
+    "example_jp": "この成果は全員の努力の賜物にほかならない。",
+    "example_en": "This result is nothing other than the fruit of everyone's efforts."
+  },
+  "practice": "Write five emphatic statements using ～にほかならない to assert causes, identities, or explanations.",
+  "tip": "～にほかならない is always emphatic and conclusive. It cannot be used tentatively. Place it at the end of a definitive statement."
+});
+
+curriculum.push({
+  "day": 1526,
+  "phaseNum": 29,
+  "phaseName": "N1 Verbs & Expressions",
+  "week": Math.ceil(1526 / 7),
+  "title": "Set Expressions IV: ~を禁じ得ない / ~を免れない",
+  "intro": "Today we study two set expressions expressing irresistibility. ~を禁じ得ない expresses an overwhelming feeling; ~を免れない expresses an unavoidable consequence.",
+  "type": "verbs",
+  "vocab": [
+    [
+      "感涙を禁じ得ない",
+      "かんるいをきんじえない",
+      "cannot hold back tears of emotion"
+    ],
+    [
+      "責めを免れない",
+      "せめをまぬがれない",
+      "cannot escape blame"
+    ],
+    [
+      "批判",
+      "ひはん",
+      "criticism"
+    ],
+    [
+      "責任",
+      "せきにん",
+      "responsibility"
+    ],
+    [
+      "感慨",
+      "かんがい",
+      "deep emotion, strong feeling"
+    ]
+  ],
+  "chars": [],
+  "grammar": {
+    "pattern": "～を免れない",
+    "meaning": "cannot avoid / escape ~",
+    "example_jp": "この決定は世論の批判を免れないだろう。",
+    "example_en": "This decision will probably not escape public criticism."
+  },
+  "practice": "Write three sentences with ～を禁じ得ない (emotions) and three with ～を免れない (consequences).",
+  "tip": "禁じ得ない takes emotions: 涙/感動/驚き/怒りを禁じ得ない. 免れない takes consequences: 批判/責任/罰を免れない. Never mix them."
+});
+
+curriculum.push({
+  "day": 1527,
+  "phaseNum": 29,
+  "phaseName": "N1 Verbs & Expressions",
+  "week": Math.ceil(1527 / 7),
+  "title": "Set Expressions V: ~に即して / ~を踏まえて",
+  "intro": "These set expressions mean 'in accordance with' and 'based on / taking into account.' They are essential connectors in formal argumentation.",
+  "type": "verbs",
+  "vocab": [
+    [
+      "即して",
+      "そくして",
+      "in accordance with, in line with"
+    ],
+    [
+      "踏まえて",
+      "ふまえて",
+      "based on, taking into account"
+    ],
+    [
+      "現実",
+      "げんじつ",
+      "reality"
+    ],
+    [
+      "実情",
+      "じつじょう",
+      "actual conditions, real situation"
+    ],
+    [
+      "前例",
+      "ぜんれい",
+      "precedent"
+    ]
+  ],
+  "chars": [],
+  "grammar": {
+    "pattern": "～を踏まえて",
+    "meaning": "based on / taking into account ~",
+    "example_jp": "過去の失敗を踏まえて、より慎重な計画を立てた。",
+    "example_en": "Based on past failures, we made a more cautious plan."
+  },
+  "practice": "Write a policy recommendation using both ～に即して and ～を踏まえて in a coherent argument.",
+  "tip": "即して = 'aligned with' (principles, reality). 踏まえて = 'having considered' (facts, experience). 即して is about alignment; 踏まえて is about foundation."
+});
+
+curriculum.push({
+  "day": 1528,
+  "phaseNum": 29,
+  "phaseName": "N1 Verbs & Expressions",
+  "week": Math.ceil(1528 / 7),
+  "title": "Set Expressions VI: ~を以て / ~に至る",
+  "intro": "Today's set expressions mark boundaries and endpoints. ~を以て means 'as of' or 'by means of'; ~に至る means 'to reach, to come to.'",
+  "type": "verbs",
+  "vocab": [
+    [
+      "を以て",
+      "をもって",
+      "as of, by means of, with"
+    ],
+    [
+      "に至る",
+      "にいたる",
+      "to reach, to come to, to result in"
+    ],
+    [
+      "に至っては",
+      "にいたっては",
+      "as for (extreme case)"
+    ],
+    [
+      "終了",
+      "しゅうりょう",
+      "termination, conclusion"
+    ],
+    [
+      "経緯",
+      "けいい",
+      "circumstances, process, background"
+    ]
+  ],
+  "chars": [],
+  "grammar": {
+    "pattern": "～を以て",
+    "meaning": "as of ~ / by means of ~",
+    "example_jp": "本日を以て、当店は閉店いたします。",
+    "example_en": "As of today, this store will close."
+  },
+  "practice": "Write formal announcements and historical descriptions using ～を以て and ～に至る.",
+  "tip": "を以て has two uses: temporal (本日を以て = as of today) and instrumental (誠意を以て = with sincerity). Context determines which."
+});
+
+curriculum.push({
+  "day": 1529,
+  "phaseNum": 29,
+  "phaseName": "N1 Verbs & Expressions",
+  "week": Math.ceil(1529 / 7),
+  "title": "Set Expressions VII: ~を顧みず / ~をものともせず",
+  "intro": "These set expressions describe acting without regard for consequences or obstacles. They add dramatic emphasis to descriptions of courage and determination.",
+  "type": "verbs",
+  "vocab": [
+    [
+      "顧みず",
+      "かえりみず",
+      "without regard for, heedless of"
+    ],
+    [
+      "ものともせず",
+      "ものともせず",
+      "undaunted by, making nothing of"
+    ],
+    [
+      "危険",
+      "きけん",
+      "danger, risk"
+    ],
+    [
+      "犠牲",
+      "ぎせい",
+      "sacrifice, victim"
+    ],
+    [
+      "逆境",
+      "ぎゃっきょう",
+      "adversity"
+    ]
+  ],
+  "chars": [],
+  "grammar": {
+    "pattern": "～を顧みず",
+    "meaning": "without regard for ~ / heedless of ~",
+    "example_jp": "彼は自らの危険を顧みず、溺れる子どもを救った。",
+    "example_en": "He saved the drowning child without regard for his own safety."
+  },
+  "practice": "Write heroic narratives using both ～を顧みず and ～をものともせず to describe acts of courage.",
+  "tip": "顧みず implies deliberately ignoring a known risk. ものともせず implies being unaffected by it. The first is about choice; the second is about strength."
+});
+
+curriculum.push({
+  "day": 1530,
+  "phaseNum": 29,
+  "phaseName": "N1 Verbs & Expressions",
+  "week": Math.ceil(1530 / 7),
+  "title": "Reading: Formal Expressions in Cultural Essay",
+  "intro": "Today is a reading day. Apply the formal adjectives and set expressions through an extended cultural essay passage.",
+  "type": "reading",
+  "vocab": [
+    [
+      "顕著な",
+      "けんちょな",
+      "remarkable, conspicuous"
+    ],
+    [
+      "余儀なくされる",
+      "よぎなくされる",
+      "to be compelled to"
+    ],
+    [
+      "にほかならない",
+      "にほかならない",
+      "is nothing other than"
+    ],
+    [
+      "を踏まえて",
+      "をふまえて",
+      "based on, taking into account"
+    ],
+    [
+      "顧みず",
+      "かえりみず",
+      "without regard for"
+    ]
+  ],
+  "chars": [],
+  "grammar": {
+    "pattern": "～にほかならない",
+    "meaning": "is nothing other than ~",
+    "example_jp": "文化の衰退は社会全体の責任にほかならない。",
+    "example_en": "The decline of culture is nothing other than the responsibility of society as a whole."
+  },
+  "practice": "Read the passage carefully. Answer the comprehension questions, then identify all set expressions and explain their function in the argument.",
+  "tip": "Set expressions serve as logical connectors in formal essays. Recognizing them instantly helps you follow the author's argument structure.",
+  "passage": {
+    "text_jp": "日本の伝統芸能が直面する危機は顕著なものとなっている。能、歌舞伎、文楽といった古典芸能は、数百年の歴史を持ちながらも、現代社会において観客の減少を余儀なくされている。その原因は単なる娯楽の多様化にとどまらない。現代人の時間感覚や美意識そのものが変容したことにほかならない。即ち、三時間を超える上演に耐え得る観客の忍耐力は、情報過多の時代において著しく低下しているのである。しかしながら、これらの芸能が持つ文化的価値は推測の域を出ないものではなく、世界的にも高く評価されている厳然たる事実である。ユネスコの無形文化遺産に登録されている事実がそれを雄弁に物語っている。過去の保護政策を踏まえて言えば、単なる助成金の投入では根本的な解決には至らない。伝統芸能の担い手たちは、時代の逆境をものともせず、技の研鑽に努めてきた。その崇高な精神は深い敬意を禁じ得ないものである。しかし、担い手の高齢化と後継者不足という現実は甚大な危機をもたらしている。若い世代が伝統芸能に触れる機会が著しく減少していることも看過できない問題である。学校教育において鑑賞の機会を設けることは、将来の観客を育む上で不可欠な施策であろう。今求められているのは、伝統の本質に即しつつも、現代の感性に訴える新たな表現形式の模索である。近年、テクノロジーを活用した演出や、現代音楽との融合を試みる公演が注目を集めている。自らの安全地帯を顧みず革新に挑む芸術家たちの試みこそが、伝統芸能を次の世紀へと繋ぐ架け橋となるであろう。無論、革新の名の下に伝統の精髄を損なうことがあってはならない。守るべきものを堅持しながら、変えるべきものを大胆に変革する。その均衡を以て、伝統は初めて生きた文化として未来に継承されるのである。伝統とは過去の遺物ではなく、現代に息づく精神の表現であることを、我々は改めて認識すべきであろう。文化の灯火を絶やさぬことは、現代を生きる我々に課された責務にほかならない。",
+    "text_en": "The crisis facing Japan's traditional performing arts has become conspicuous. Classical performing arts such as Noh, Kabuki, and Bunraku, despite having histories spanning several centuries, have been compelled to face declining audiences in modern society. The cause is not merely the diversification of entertainment. It is nothing other than the transformation of modern people's sense of time and aesthetic sensibility itself. However, the cultural value these arts possess is not something that remains at the level of speculation — it is a solemn fact that is highly regarded worldwide. The fact that they are registered as UNESCO Intangible Cultural Heritage eloquently attests to this. Speaking based on past protection policies, merely pouring in subsidies will not lead to fundamental solutions. The bearers of traditional performing arts have strived for mastery of their craft, undaunted by the adversity of the times. One cannot help but feel deep respect for their sublime spirit. However, the reality of aging practitioners and a shortage of successors poses an immense crisis. The marked decrease in opportunities for younger generations to encounter traditional performing arts is also a problem that cannot be overlooked. What is now required is the exploration of new forms of expression that appeal to modern sensibility while remaining in accordance with the essence of tradition. In recent years, performances incorporating technology-enhanced staging and fusion with contemporary music have attracted attention. It is the endeavors of artists who challenge innovation without regard for their own comfort zones that will serve as the bridge connecting traditional performing arts to the next century. Naturally, the essence of tradition must not be compromised in the name of innovation. Firmly maintaining what must be preserved while boldly transforming what must be changed — it is with that balance that tradition is, for the first time, passed on to the future as living culture. We should reaffirm that tradition is not a relic of the past, but an expression of spirit that lives and breathes in the present.",
+    "questions": [
+      {
+        "question_jp": "筆者が伝統芸能の観客減少の根本原因と考えているのは何ですか。",
+        "question_en": "What does the author consider the root cause of declining audiences for traditional performing arts?",
+        "answer": "現代人の時間感覚や美意識そのものが変容したこと"
+      },
+      {
+        "question_jp": "筆者が提案する伝統芸能存続のための方策は何ですか。",
+        "question_en": "What approach does the author propose for the survival of traditional performing arts?",
+        "answer": "伝統の本質に即しつつ現代の感性に訴える新たな表現形式を模索し、守るべきものを堅持しながら変えるべきものを大胆に変革すること"
+      }
+    ]
+  }
+});
+
+
+// ═══════════════════════════════════════════════════════════════════════════
+// PHASE 30a: N1 GRAMMAR (Days 1531-1585)
+// 55 days of advanced N1-level grammar patterns (first half)
+// ═══════════════════════════════════════════════════════════════════════════
+
+curriculum.push({
+  day: 1531,
+  phaseNum: 30,
+  phaseName: "N1 Grammar",
+  week: Math.ceil(1531 / 7),
+  title: "Grammar: ～たりとも～ない",
+  intro: "Today we study ～たりとも～ない (taritomo ~nai) — 'not even one'. This emphatic negation pattern stresses that absolutely zero of something is allowed or possible.",
+  type: "grammar",
+  vocab: [["一瞬","いっしゅん","an instant, a moment"],["一歩","いっぽ","one step"],["妥協","だきょう","compromise"],["許容","きょよう","tolerance, permission"],["油断","ゆだん","carelessness, negligence"],["刹那","せつな","an instant, a moment"]],
+  chars: [],
+  grammar: {"pattern":"一 + counter + たりとも～ない","meaning":"not even one (emphatic negation)","example_jp":"一秒たりとも無駄にしてはならない。","example_en":"You must not waste even a single second."},
+  practice: "Write four sentences using ～たりとも～ない with different counters (秒, 円, 歩, 人).",
+  tip: "This pattern is highly formal and literary. It appears in speeches, editorials, and legal texts. The counter before たりとも sets the unit being negated."
+});
+
+curriculum.push({
+  day: 1532,
+  phaseNum: 30,
+  phaseName: "N1 Grammar",
+  week: Math.ceil(1532 / 7),
+  title: "Grammar: ～をもって",
+  intro: "Today we study ～をもって (wo motte) — 'by means of' or 'as of'. This formal pattern has two usages: indicating the means or basis for something, and indicating a point in time when something takes effect.",
+  type: "grammar",
+  vocab: [["手段","しゅだん","means, method"],["誠意","せいい","sincerity, good faith"],["本日","ほんじつ","today (formal)"],["閉幕","へいまく","closing (of an event)"],["宣言","せんげん","declaration"],["締め切り","しめきり","deadline"],["発効","はっこう","taking effect"],["終了","しゅうりょう","end, conclusion"]],
+  chars: [],
+  grammar: {"pattern":"N + をもって","meaning":"by means of / as of (a point in time)","example_jp":"本日をもって、この制度は廃止されます。","example_en":"As of today, this system will be abolished."},
+  practice: "Write two sentences using ～をもって as 'by means of' and two sentences using it as 'as of (date)'.",
+  tip: "When ～をもって indicates a deadline or end point, it often pairs with formal announcements. When it means 'by means of', it emphasizes the method or quality used."
+});
+
+curriculum.push({
+  day: 1533,
+  phaseNum: 30,
+  phaseName: "N1 Grammar",
+  week: Math.ceil(1533 / 7),
+  title: "Grammar: ～ならでは",
+  intro: "Today we study ～ならでは (nara dewa) — 'unique to, only possible with'. This pattern expresses something special that can only be found in or done by a particular person, place, or thing.",
+  type: "grammar",
+  vocab: [["独特","どくとく","unique, distinctive"],["風情","ふぜい","elegance, charm"],["醍醐味","だいごみ","real pleasure, true delight"],["名物","めいぶつ","local specialty"],["本場","ほんば","the home/origin of"],["老舗","しにせ","long-established shop"],["伝統","でんとう","tradition"],["匠","たくみ","craftsman, artisan"]],
+  chars: [],
+  grammar: {"pattern":"N + ならではの + N","meaning":"unique to ~, only possible with ~","example_jp":"京都ならではの風情が漂っている。","example_en":"There is an elegance unique to Kyoto."},
+  practice: "Write sentences describing things that are ならでは for: your hometown, a specific season, and a particular profession.",
+  tip: "～ならでは always carries a positive nuance — it highlights something praiseworthy and distinctive. You cannot use it for negative qualities."
+});
+
+curriculum.push({
+  day: 1534,
+  phaseNum: 30,
+  phaseName: "N1 Grammar",
+  week: Math.ceil(1534 / 7),
+  title: "Grammar: ～にかたくない",
+  intro: "Today we study ～にかたくない (ni kataku nai) — 'it is not hard to ~'. This literary pattern expresses that something is easy to imagine, understand, or guess based on circumstances.",
+  type: "grammar",
+  vocab: [["想像","そうぞう","imagination"],["推察","すいさつ","conjecture, guess"],["理解","りかい","understanding"],["察知","さっち","perception, sensing"],["苦労","くろう","hardship, trouble"],["心情","しんじょう","feelings, sentiments"],["窮状","きゅうじょう","dire situation"],["推測","すいそく","inference, guess"]],
+  chars: [],
+  grammar: {"pattern":"V(dict)/N + にかたくない","meaning":"it is not hard to ~ (imagine, understand)","example_jp":"被災者の苦労は想像にかたくない。","example_en":"It is not hard to imagine the hardship of the disaster victims."},
+  practice: "Write three sentences using ～にかたくない with 想像, 推察, and 理解.",
+  tip: "This pattern almost exclusively appears with 想像, 推察, and 理解. It is a formal, literary expression found in essays and news commentary."
+});
+
+curriculum.push({
+  day: 1535,
+  phaseNum: 30,
+  phaseName: "N1 Grammar",
+  week: Math.ceil(1535 / 7),
+  title: "Grammar: ～をおいて～ない",
+  intro: "Today we study ～をおいて～ない (wo oite ~nai) — 'there is no one/nothing other than'. This pattern emphatically states that someone or something is the only option.",
+  type: "grammar",
+  vocab: [["適任","てきにん","the right person"],["候補","こうほ","candidate"],["代替","だいたい","alternative, substitute"],["唯一","ゆいいつ","the only, sole"],["指導者","しどうしゃ","leader"],["該当","がいとう","applicable, corresponding"],["資格","しかく","qualification"],["選択肢","せんたくし","option, choice"]],
+  chars: [],
+  grammar: {"pattern":"N + をおいて(ほかに)～ない","meaning":"there is no one/nothing other than ~","example_jp":"この難局を乗り越えられるのは、彼をおいてほかにいない。","example_en":"There is no one other than him who can overcome this difficult situation."},
+  practice: "Write sentences naming the only person/thing suitable for three different scenarios using ～をおいてほかにない.",
+  tip: "This pattern is a strong, exclusive assertion. It often appears in recommendation speeches and formal evaluations where one choice is being singled out."
+});
+
+curriculum.push({
+  day: 1536,
+  phaseNum: 30,
+  phaseName: "N1 Grammar",
+  week: Math.ceil(1536 / 7),
+  title: "Grammar: ～いかんによらず",
+  intro: "Today we study ～いかんによらず (ikan ni yorazu) — 'regardless of'. This formal pattern states that the outcome or situation does not depend on the thing mentioned.",
+  type: "grammar",
+  vocab: [["結果","けっか","result, outcome"],["理由","りゆう","reason"],["事情","じじょう","circumstances"],["如何","いかん","how, what (formal)"],["成否","せいひ","success or failure"],["有無","うむ","presence or absence"],["規約","きやく","rules, regulations"],["適用","てきよう","application"]],
+  chars: [],
+  grammar: {"pattern":"N + のいかんによらず/いかんを問わず","meaning":"regardless of ~","example_jp":"理由のいかんによらず、遅刻は認められない。","example_en":"Regardless of the reason, tardiness is not permitted."},
+  practice: "Write three sentences using ～いかんによらず in formal contexts (workplace rules, legal provisions, school policies).",
+  tip: "いかん (如何) is a formal word meaning 'how' or 'what condition'. The related forms いかんによらず, いかんにかかわらず, and いかんを問わず are nearly synonymous."
+});
+
+curriculum.push({
+  day: 1537,
+  phaseNum: 30,
+  phaseName: "N1 Grammar",
+  week: Math.ceil(1537 / 7),
+  title: "Grammar: ～いかんにかかわらず",
+  intro: "Today we study ～いかんにかかわらず (ikan ni kakawarazu) — 'regardless of, irrespective of'. This is a close synonym of いかんによらず, commonly found in contracts and official documents.",
+  type: "grammar",
+  vocab: [["性別","せいべつ","gender"],["国籍","こくせき","nationality"],["年齢","ねんれい","age"],["経歴","けいれき","career history"],["応募","おうぼ","application"],["待遇","たいぐう","treatment, conditions"],["差別","さべつ","discrimination"],["公平","こうへい","fairness, impartiality"]],
+  chars: [],
+  grammar: {"pattern":"N + のいかんにかかわらず","meaning":"regardless of ~, irrespective of ~","example_jp":"国籍のいかんにかかわらず、全ての応募者を公平に審査する。","example_en":"Regardless of nationality, all applicants will be screened fairly."},
+  practice: "Compare いかんによらず and いかんにかかわらず by writing pairs of sentences with both forms. Note any nuance differences.",
+  tip: "In practice, いかんにかかわらず and いかんによらず are interchangeable. However, いかんにかかわらず sounds slightly more formal and appears more often in legal and contractual language."
+});
+
+curriculum.push({
+  day: 1538,
+  phaseNum: 30,
+  phaseName: "N1 Grammar",
+  week: Math.ceil(1538 / 7),
+  title: "Grammar: ～に足る",
+  intro: "Today we study ～に足る (ni taru) — 'worthy of, sufficient to'. This classical-sounding pattern indicates that something merits a particular action or evaluation.",
+  type: "grammar",
+  vocab: [["信頼","しんらい","trust, reliance"],["賞賛","しょうさん","praise, admiration"],["注目","ちゅうもく","attention, notice"],["論評","ろんぴょう","commentary, critique"],["実績","じっせき","achievements, track record"],["根拠","こんきょ","basis, grounds"],["証拠","しょうこ","evidence, proof"],["評価","ひょうか","evaluation, assessment"]],
+  chars: [],
+  grammar: {"pattern":"V(dict) + に足る + N","meaning":"~ worthy of, ~ sufficient to","example_jp":"彼の実績は信頼に足るものである。","example_en":"His track record is worthy of trust."},
+  practice: "Write sentences using ～に足る with 信頼, 賞賛, and 注目. Then write two using the negative form ～に足りない.",
+  tip: "The negative form ～に足りない (not worthy of) is equally common. Also note the related expression 取るに足りない meaning 'trivial, not worth considering'."
+});
+
+curriculum.push({
+  day: 1539,
+  phaseNum: 30,
+  phaseName: "N1 Grammar",
+  week: Math.ceil(1539 / 7),
+  title: "Grammar: ～をものともせずに",
+  intro: "Today we study ～をものともせずに (wo mono tomo sezu ni) — 'in defiance of, undeterred by'. This pattern describes someone who bravely faces difficulties without being discouraged.",
+  type: "grammar",
+  vocab: [["逆境","ぎゃっきょう","adversity"],["困難","こんなん","difficulty, hardship"],["障害","しょうがい","obstacle, barrier"],["批判","ひはん","criticism"],["反対","はんたい","opposition"],["偏見","へんけん","prejudice, bias"],["試練","しれん","trial, ordeal"],["挑戦","ちょうせん","challenge"]],
+  chars: [],
+  grammar: {"pattern":"N + をものともせずに","meaning":"in defiance of ~, undeterred by ~","example_jp":"彼女は周囲の反対をものともせずに、夢を追い続けた。","example_en":"She continued to pursue her dream, undeterred by the opposition around her."},
+  practice: "Write three sentences about historical or fictional figures who overcame adversity using ～をものともせずに.",
+  tip: "This pattern always carries a tone of admiration for someone's courage or determination. The obstacle mentioned is typically something that would stop ordinary people."
+});
+
+curriculum.push({
+  day: 1540,
+  phaseNum: 30,
+  phaseName: "N1 Grammar",
+  week: Math.ceil(1540 / 7),
+  title: "Grammar: ～に即して",
+  intro: "Today we study ～に即して (ni sokushite) — 'in accordance with, based on'. This formal pattern means to act or think in line with actual facts, reality, or specific standards.",
+  type: "grammar",
+  vocab: [["現実","げんじつ","reality"],["実態","じったい","actual conditions"],["法令","ほうれい","laws and regulations"],["方針","ほうしん","policy, course of action"],["基準","きじゅん","standard, criterion"],["実情","じつじょう","actual situation"],["運用","うんよう","practical application"],["遵守","じゅんしゅ","compliance, observance"]],
+  chars: [],
+  grammar: {"pattern":"N + に即して/に即した + N","meaning":"in accordance with ~, based on ~","example_jp":"現実に即した対策を講じる必要がある。","example_en":"It is necessary to take measures based on reality."},
+  practice: "Write sentences using both forms: ～に即して (adverbial) and ～に即した (attributive, modifying a noun).",
+  tip: "～に即して emphasizes practicality and groundedness. It is often contrasted with idealistic or theoretical approaches. Common collocations include 現実に即した and 実態に即した."
+});
+
+curriculum.push({
+  day: 1541,
+  phaseNum: 30,
+  phaseName: "N1 Grammar",
+  week: Math.ceil(1541 / 7),
+  title: "Grammar: ～たるもの",
+  intro: "Today we study ～たるもの (taru mono) — 'those who are ~, as befitting ~'. This classical pattern sets up expectations for people in a certain role or position, often followed by a statement about duty or proper behavior.",
+  type: "grammar",
+  vocab: [["指導者","しどうしゃ","leader"],["教育者","きょういくしゃ","educator"],["公務員","こうむいん","public servant"],["責務","せきむ","duty, responsibility"],["品格","ひんかく","dignity, character"],["模範","もはん","model, example"],["矜持","きょうじ","pride, self-respect"],["規範","きはん","norm, standard"]],
+  chars: [],
+  grammar: {"pattern":"N + たるもの(は)","meaning":"those who are ~, as befitting the role of ~","example_jp":"教育者たるもの、常に模範を示すべきである。","example_en":"Those who are educators should always set an example."},
+  practice: "Write sentences for three different roles (leader, parent, professional) using ～たるもの followed by an expectation or obligation.",
+  tip: "～たるもの uses the classical copula たる. It appears in speeches, editorials, and formal exhortations. The statement that follows typically uses べき, なければならない, or similar obligation expressions."
+});
+
+curriculum.push({
+  day: 1542,
+  phaseNum: 30,
+  phaseName: "N1 Grammar",
+  week: Math.ceil(1542 / 7),
+  title: "Grammar: ～ともなると / ～ともなれば",
+  intro: "Today we study ～ともなると and ～ともなれば (tomo naru to / tomo nareba) — 'when it comes to (a high level)'. These patterns highlight that reaching a certain level naturally brings certain consequences or expectations.",
+  type: "grammar",
+  vocab: [["大企業","だいきぎょう","major corporation"],["上級者","じょうきゅうしゃ","advanced learner"],["幹部","かんぶ","executive, leader"],["責任","せきにん","responsibility"],["影響力","えいきょうりょく","influence, clout"],["覚悟","かくご","readiness, resolve"],["相応","そうおう","appropriate, fitting"],["伴う","ともなう","to accompany"]],
+  chars: [],
+  grammar: {"pattern":"N + ともなると/ともなれば","meaning":"when it comes to (a high level of) ~","example_jp":"大企業の社長ともなると、一言一句が注目される。","example_en":"When it comes to the president of a major corporation, every single word draws attention."},
+  practice: "Write three sentences using ～ともなると about different levels of expertise, status, or scale.",
+  tip: "Both ともなると and ともなれば are interchangeable. They emphasize that a higher level naturally entails greater expectations, responsibilities, or consequences."
+});
+
+curriculum.push({
+  day: 1543,
+  phaseNum: 30,
+  phaseName: "N1 Grammar",
+  week: Math.ceil(1543 / 7),
+  title: "Grammar: ～に至っては",
+  intro: "Today we study ～に至っては (ni itatte wa) — 'when it comes to (an extreme case)'. This pattern singles out the most extreme example in a series, often with negative or surprising connotations.",
+  type: "grammar",
+  vocab: [["深刻","しんこく","serious, grave"],["惨状","さんじょう","disastrous state"],["末端","まったん","extremity, end"],["劣悪","れつあく","inferior, terrible"],["荒廃","こうはい","devastation, ruin"],["顕著","けんちょ","remarkable, conspicuous"],["至る","いたる","to reach, to arrive at"],["有様","ありさま","state, condition"]],
+  chars: [],
+  grammar: {"pattern":"N + に至っては","meaning":"when it comes to ~ (the most extreme case)","example_jp":"都市部でも問題は深刻だが、地方に至っては惨状と言うほかない。","example_en":"The problem is serious even in urban areas, but when it comes to rural areas, one can only call it disastrous."},
+  practice: "Write two sentences presenting a series of increasingly extreme examples, using ～に至っては for the worst case.",
+  tip: "～に至っては picks out the most extreme point in a sequence. It usually introduces something worse than what was previously mentioned, though occasionally it can highlight a surprisingly positive extreme."
+});
+
+curriculum.push({
+  day: 1544,
+  phaseNum: 30,
+  phaseName: "N1 Grammar",
+  week: Math.ceil(1544 / 7),
+  title: "Grammar: ～ずにはすまない",
+  intro: "Today we study ～ずにはすまない (zu ni wa sumanai) — 'cannot avoid doing, must do'. This pattern expresses that social norms, morality, or circumstances make an action unavoidable.",
+  type: "grammar",
+  vocab: [["謝罪","しゃざい","apology"],["賠償","ばいしょう","compensation, reparation"],["責任","せきにん","responsibility"],["弁償","べんしょう","reimbursement"],["対処","たいしょ","coping, dealing with"],["釈明","しゃくめい","explanation, justification"],["報告","ほうこく","report"],["処分","しょぶん","disposal, punishment"]],
+  chars: [],
+  grammar: {"pattern":"V(ない stem) + ずにはすまない","meaning":"cannot avoid doing ~, must do ~","example_jp":"これだけの損害を出した以上、謝罪せずにはすまない。","example_en":"Having caused this much damage, one cannot avoid apologizing."},
+  practice: "Write three sentences about situations where someone cannot avoid a particular action due to social or moral pressure.",
+  tip: "～ずにはすまない implies external pressure — society, morality, or circumstances demand the action. Compare with ～ないわけにはいかない which also expresses obligation but is less literary."
+});
+
+curriculum.push({
+  day: 1545,
+  phaseNum: 30,
+  phaseName: "N1 Grammar",
+  week: Math.ceil(1545 / 7),
+  title: "Reading: Formal Grammar in Legal Context",
+  intro: "Today is a reading day. Apply the formal grammar patterns you have learned in context through an extended passage.",
+  type: "reading",
+  vocab: [["条例","じょうれい","ordinance, regulation"],["施行","しこう","enforcement, implementation"],["遵守","じゅんしゅ","compliance, observance"],["違反","いはん","violation"],["罰則","ばっそく","penal regulations"]],
+  chars: [],
+  grammar: {"pattern":"～をもって","meaning":"as of (a point in time)","example_jp":"本条例は令和八年四月一日をもって施行する。","example_en":"This ordinance shall be enforced as of April 1st, Reiwa 8."},
+  practice: "Read the passage carefully. Answer the comprehension questions, then identify all N1 grammar patterns used in the text.",
+  tip: "When reading legal or formal texts, pay attention to how multiple grammar patterns combine. A single sentence may layer ～をもって, ～いかんによらず, and ～に即して together.",
+  passage: {"text_jp":"近年、地方自治体における環境保護条例の整備が急速に進んでいる。本市においても、令和七年度をもって新たな環境保全条例を施行する運びとなった。本条例は、事業規模のいかんにかかわらず、全ての事業者に対して環境基準の遵守を義務付けるものである。一秒たりとも環境対策を怠ってはならないという理念に基づき、違反者には厳格な罰則が適用される。尤も、本条例は単なる規制を目的としたものではない。地域の実情に即した持続可能な発展を目指すものにほかならない。本市ならではの豊かな自然環境は、先人たちが困難をものともせずに守り抜いてきた賜物である。その苦労は想像にかたくない。数十年にわたり、工場排水による河川汚染や森林伐採の問題と闘い続けてきた歴史がある。当時の住民たちは、資金も人手も不足する中、一歩たりとも譲らない姿勢で環境保全に取り組んだのである。こうした先人たちの努力に足る成果を上げることが、現代の我々に課せられた使命である。環境保全の責務を果たせるのは、現世代をおいてほかにいない。行政の指導者たるもの、率先して模範を示すべきである。大企業の経営者ともなると、社会的責任はさらに重い。中小企業の現状も深刻だが、個人事業主に至っては、対応の遅れが著しい。環境対策に要する費用の捻出が困難であるという事情は理解できるが、それをもって義務を免除することはできない。条例のいかんによらず、環境を守る意識は全ての市民に求められるものである。このまま放置すれば、将来の世代に対して謝罪せずにはすまないだろう。河川の水質悪化に至っては、取り返しのつかない段階に達しつつある。近隣の湖沼についても同様であり、かつての透明度は見る影もない。環境問題というものは、一度悪化すれば回復に数十年を要する。今こそ、誠意をもって環境問題に向き合い、法令に即して適切な措置を講じることが求められている。本条例の施行が、持続可能な社会への第一歩となることを切に願うものである。","text_en":"In recent years, the development of environmental protection ordinances in local governments has progressed rapidly. In our city as well, a new environmental conservation ordinance has come to be enforced as of fiscal year Reiwa 7. This ordinance obligates all businesses, regardless of the scale of their operations, to comply with environmental standards. Based on the principle that environmental measures must not be neglected even for a single second, strict penalties are applied to violators. However, this ordinance is not merely aimed at regulation. It is nothing other than an effort toward sustainable development based on the actual conditions of the region. The rich natural environment unique to our city is a gift from our predecessors who protected it undeterred by difficulties. It is not hard to imagine their hardships. There is a history of decades of fighting against river pollution from factory effluent and deforestation. The residents of that era, despite lacking funds and manpower, tackled environmental conservation with an attitude of not yielding even one step. There is no one other than the current generation who can fulfill the responsibility of environmental conservation. Those who are administrative leaders should take the initiative and set an example. When it comes to executives of major corporations, social responsibility is even heavier. The situation of small and medium enterprises is also serious, but when it comes to sole proprietors, the delay in response is conspicuous. While we can understand the difficulty of securing funds for environmental measures, that cannot serve as grounds for exemption from the obligation. If left as is, we will not be able to avoid apologizing to future generations. Now is the time to face environmental issues with sincerity and take appropriate measures in accordance with laws and regulations. We sincerely hope that the enforcement of this ordinance will be the first step toward a sustainable society.","questions":[{"question_jp":"本条例の適用範囲はどのように定められていますか。","question_en":"How is the scope of application of this ordinance defined?","answer":"事業規模のいかんにかかわらず、全ての事業者に適用される"},{"question_jp":"筆者が最も対応の遅れを指摘しているのは誰ですか。","question_en":"Whose delayed response does the author point out most critically?","answer":"個人事業主"}]}
+});
+
+curriculum.push({
+  day: 1546,
+  phaseNum: 30,
+  phaseName: "N1 Grammar",
+  week: Math.ceil(1546 / 7),
+  title: "Grammar: ～てやまない",
+  intro: "Today we study ～てやまない (te yamanai) — 'sincerely, earnestly, never cease to'. This literary pattern expresses deep, unceasing emotion or wish.",
+  type: "grammar",
+  vocab: [["願う","ねがう","to wish, to hope"],["祈る","いのる","to pray"],["敬愛","けいあい","respect and affection"],["尊敬","そんけい","respect, esteem"],["期待","きたい","expectation, hope"],["成功","せいこう","success"],["発展","はってん","development, growth"],["繁栄","はんえい","prosperity"]],
+  chars: [],
+  grammar: {"pattern":"V(て form) + やまない","meaning":"sincerely ~, never cease to ~","example_jp":"皆様のご健勝を願ってやみません。","example_en":"I sincerely wish for everyone's good health."},
+  practice: "Write three sentences using ～てやまない with 願う, 祈る, and 期待する to express heartfelt wishes.",
+  tip: "～てやまない is reserved for formal speeches, letters, and written greetings. Common verbs include 願う, 祈る, 愛する, 尊敬する, and 期待する. It is not used in casual speech."
+});
+
+curriculum.push({
+  day: 1547,
+  phaseNum: 30,
+  phaseName: "N1 Grammar",
+  week: Math.ceil(1547 / 7),
+  title: "Grammar: ～に堪えない (negative emotion)",
+  intro: "Today we study ～に堪えない (ni taenai) — 'unbearable, cannot endure'. This pattern expresses that an emotion or situation is so intense that one cannot bear it. It has both negative and positive uses.",
+  type: "grammar",
+  vocab: [["感謝","かんしゃ","gratitude"],["同情","どうじょう","sympathy"],["嘆かわしい","なげかわしい","deplorable, lamentable"],["見苦しい","みぐるしい","unsightly, disgraceful"],["聞く","きく","to hear, to listen"],["見る","みる","to see, to watch"],["惨状","さんじょう","disastrous state"],["感慨","かんがい","deep emotion"]],
+  chars: [],
+  grammar: {"pattern":"N/V(dict) + に堪えない","meaning":"cannot bear ~, unbearable","example_jp":"その惨状は見るに堪えない。","example_en":"That disastrous scene is unbearable to look at."},
+  practice: "Write two sentences using ～に堪えない for negative emotions and two for overwhelming positive emotions (like gratitude).",
+  tip: "With negative nouns or verbs (見るに堪えない, 聞くに堪えない), it means 'too awful to bear'. With positive nouns (感謝に堪えない), it means the feeling is overwhelming. Context determines the nuance."
+});
+
+curriculum.push({
+  day: 1548,
+  phaseNum: 30,
+  phaseName: "N1 Grammar",
+  week: Math.ceil(1548 / 7),
+  title: "Grammar: ～極まりない / ～極まる",
+  intro: "Today we study ～極まりない (kiwamari nai) and ～極まる (kiwamaru) — 'extremely, to the utmost degree'. These patterns express that something has reached the highest degree of a quality.",
+  type: "grammar",
+  vocab: [["危険","きけん","danger"],["不愉快","ふゆかい","unpleasant"],["失礼","しつれい","rude, impolite"],["退屈","たいくつ","boring, tedious"],["感慨","かんがい","deep emotion"],["迷惑","めいわく","nuisance, trouble"],["無礼","ぶれい","impoliteness"],["遺憾","いかん","regrettable"]],
+  chars: [],
+  grammar: {"pattern":"Na + 極まりない / 極まる","meaning":"extremely ~, ~ to the utmost degree","example_jp":"深夜の騒音は迷惑極まりない行為だ。","example_en":"Late-night noise is an extremely troublesome act."},
+  practice: "Write four sentences using ～極まりない and then rewrite them using ～極まる to practice both forms.",
+  tip: "～極まりない takes na-adjective stems directly (危険極まりない, 失礼極まりない). It is more common than ～極まる. Both are formal and literary, often used in complaints or strong evaluations."
+});
+
+curriculum.push({
+  day: 1549,
+  phaseNum: 30,
+  phaseName: "N1 Grammar",
+  week: Math.ceil(1549 / 7),
+  title: "Grammar: ～の至り",
+  intro: "Today we study ～の至り (no itari) — 'the height of, the utmost'. This highly formal pattern expresses that something has reached the extreme degree, often used in set phrases of humility or emotion.",
+  type: "grammar",
+  vocab: [["光栄","こうえい","honor, glory"],["恐縮","きょうしゅく","feeling obliged, humbled"],["汗顔","かんがん","deep embarrassment"],["若気","わかげ","youthful impetuosity"],["感激","かんげき","deep emotion, being moved"],["赤面","せきめん","blushing, embarrassment"],["至福","しふく","supreme bliss"],["恐れ入る","おそれいる","to feel grateful/sorry"]],
+  chars: [],
+  grammar: {"pattern":"N + の至り","meaning":"the height of ~, the utmost ~","example_jp":"お目にかかれて光栄の至りです。","example_en":"It is the utmost honor to meet you."},
+  practice: "Write formal expressions for three different situations using ～の至り (meeting someone important, receiving an award, making a mistake).",
+  tip: "～の至り is extremely formal and appears in ceremonial speeches and business greetings. The most common set phrases are 光栄の至り, 恐縮の至り, 汗顔の至り, and 若気の至り."
+});
+
+curriculum.push({
+  day: 1550,
+  phaseNum: 30,
+  phaseName: "N1 Grammar",
+  week: Math.ceil(1550 / 7),
+  title: "Grammar: ～にたえる / ～に堪える",
+  intro: "Today we study ～にたえる (ni taeru) — 'worthy of, can withstand'. Unlike yesterday's ～に堪えない, the affirmative form ～にたえる means something is worthy of or can endure a given action.",
+  type: "grammar",
+  vocab: [["鑑賞","かんしょう","appreciation (of art)"],["批評","ひひょう","criticism, critique"],["使用","しよう","use, usage"],["検討","けんとう","examination, consideration"],["読む","よむ","to read"],["熟読","じゅくどく","careful reading"],["耐久","たいきゅう","durability"],["実用","じつよう","practical use"]],
+  chars: [],
+  grammar: {"pattern":"V(dict)/N + にたえる/に堪える","meaning":"worthy of ~, can withstand ~","example_jp":"この論文は熟読に堪える内容だ。","example_en":"This paper has content worthy of careful reading."},
+  practice: "Write sentences using ～にたえる in affirmative and ～にたえない in negative form to contrast worthy and unworthy subjects.",
+  tip: "Distinguish between ～にたえる (worthy of) and ～にたえない (cannot bear/worthy of in emotion). The affirmative form ～にたえる always means 'can endure' or 'worthy of', never 'unbearable'."
+});
+
+curriculum.push({
+  day: 1551,
+  phaseNum: 30,
+  phaseName: "N1 Grammar",
+  week: Math.ceil(1551 / 7),
+  title: "Grammar: ～たる",
+  intro: "Today we study ～たる (taru) — 'befitting, worthy of being'. This classical attributive copula modifies a noun to indicate someone or something that has the qualities befitting the role described.",
+  type: "grammar",
+  vocab: [["社会人","しゃかいじん","working adult, member of society"],["知識人","ちしきじん","intellectual"],["紳士","しんし","gentleman"],["自覚","じかく","self-awareness"],["威厳","いげん","dignity, majesty"],["風格","ふうかく","bearing, dignity"],["本分","ほんぶん","one's duty, proper role"],["堂々","どうどう","dignified, imposing"]],
+  chars: [],
+  grammar: {"pattern":"N + たる + N","meaning":"befitting ~, worthy of being ~","example_jp":"紳士たる者は常に礼儀を忘れてはならない。","example_en":"One who is befitting of a gentleman must never forget courtesy."},
+  practice: "Write three sentences using ～たる to describe the expected conduct of different social roles.",
+  tip: "～たる is the classical attributive form of the copula だ/である. It survives in modern formal Japanese in set patterns. It differs from ～たるもの (which focuses on people in roles) in that it can also modify abstract nouns."
+});
+
+curriculum.push({
+  day: 1552,
+  phaseNum: 30,
+  phaseName: "N1 Grammar",
+  week: Math.ceil(1552 / 7),
+  title: "Grammar: ～というもの",
+  intro: "Today we study ～というもの (to iu mono) — 'the thing called ~'. This reflective pattern is used to make philosophical or evaluative statements about the essential nature of something.",
+  type: "grammar",
+  vocab: [["人生","じんせい","life, human life"],["友情","ゆうじょう","friendship"],["自由","じゆう","freedom, liberty"],["幸福","こうふく","happiness"],["本質","ほんしつ","essence, true nature"],["儚い","はかない","fleeting, transient"],["尊い","とうとい","precious, noble"],["定義","ていぎ","definition"]],
+  chars: [],
+  grammar: {"pattern":"N + というもの(は)","meaning":"the thing called ~, what we call ~","example_jp":"人生というものは、思い通りにいかないことが多い。","example_en":"The thing called life often does not go as we wish."},
+  practice: "Write philosophical reflections on three abstract concepts (freedom, love, success) using ～というもの.",
+  tip: "～というもの lends a contemplative, essayistic tone. It is used when the speaker wants to reflect on the fundamental nature of something. It often appears at the beginning of an argument."
+});
+
+curriculum.push({
+  day: 1553,
+  phaseNum: 30,
+  phaseName: "N1 Grammar",
+  week: Math.ceil(1553 / 7),
+  title: "Grammar: ～こそすれ～ない",
+  intro: "Today we study ～こそすれ～ない (koso sure ~nai) and ～こそあれ～ない (koso are ~nai) — 'may ~ but certainly not'. These patterns concede one thing while firmly denying another.",
+  type: "grammar",
+  vocab: [["減少","げんしょう","decrease"],["増加","ぞうか","increase"],["改善","かいぜん","improvement"],["悪化","あっか","deterioration"],["感謝","かんしゃ","gratitude"],["恨む","うらむ","to resent"],["賛成","さんせい","agreement"],["反対","はんたい","opposition"]],
+  chars: [],
+  grammar: {"pattern":"V(ます stem) + こそすれ、～ない","meaning":"may ~ but certainly does not ~","example_jp":"状況は悪化こそすれ、改善する見込みはない。","example_en":"The situation may worsen, but there is no prospect of improvement."},
+  practice: "Write three sentences using ～こそすれ～ない to concede a point while denying the opposite.",
+  tip: "～こそすれ uses the classical すれ (conditional of する). ～こそあれ works similarly with ある. Both patterns emphasize contrast: the reality is A, and definitely not B."
+});
+
+curriculum.push({
+  day: 1554,
+  phaseNum: 30,
+  phaseName: "N1 Grammar",
+  week: Math.ceil(1554 / 7),
+  title: "Grammar: ～ずにはおかない / ～ないではおかない",
+  intro: "Today we study ～ずにはおかない (zu ni wa okanai) — 'cannot help but, inevitably causes'. This pattern expresses that something naturally and inevitably produces a result or reaction.",
+  type: "grammar",
+  vocab: [["感動","かんどう","being moved, emotion"],["影響","えいきょう","influence, effect"],["衝撃","しょうげき","shock, impact"],["共感","きょうかん","empathy, sympathy"],["奮起","ふんき","arousal, inspiration"],["動揺","どうよう","agitation, shaking"],["触発","しょくはつ","stimulus, inspiration"],["波紋","はもん","ripple, repercussions"]],
+  chars: [],
+  grammar: {"pattern":"V(ない stem) + ずにはおかない","meaning":"cannot help but ~, inevitably causes ~","example_jp":"彼の演説は聞く者を感動させずにはおかない。","example_en":"His speech cannot help but move those who hear it."},
+  practice: "Write three sentences about powerful experiences that inevitably affect people using ～ずにはおかない.",
+  tip: "～ずにはおかない focuses on the inevitable effect something has on others. Compare with ～ずにはいられない which focuses on the speaker's own irresistible urge. Both express inability to resist, but the perspective differs."
+});
+
+curriculum.push({
+  day: 1555,
+  phaseNum: 30,
+  phaseName: "N1 Grammar",
+  week: Math.ceil(1555 / 7),
+  title: "Grammar: ～を禁じ得ない",
+  intro: "Today we study ～を禁じ得ない (wo kinjienai) — 'cannot suppress, cannot help feeling'. This formal pattern expresses that an emotion arises so strongly that one cannot hold it back.",
+  type: "grammar",
+  vocab: [["驚き","おどろき","surprise, astonishment"],["怒り","いかり","anger, rage"],["悲しみ","かなしみ","sadness, grief"],["疑念","ぎねん","doubt, suspicion"],["失望","しつぼう","disappointment"],["憤り","いきどおり","indignation"],["涙","なみだ","tears"],["嘆息","たんそく","sigh, lamentation"]],
+  chars: [],
+  grammar: {"pattern":"N + を禁じ得ない","meaning":"cannot suppress ~, cannot help feeling ~","example_jp":"今回の判決に対して、失望を禁じ得ない。","example_en":"I cannot help feeling disappointment toward this ruling."},
+  practice: "Write sentences using ～を禁じ得ない with four different emotions: surprise, anger, sadness, and doubt.",
+  tip: "～を禁じ得ない is a formal, literary expression typically found in editorials, formal statements, and speeches. The emotion noun must be a strong feeling — it is not used for mild sentiments."
+});
+
+curriculum.push({
+  day: 1556,
+  phaseNum: 30,
+  phaseName: "N1 Grammar",
+  week: Math.ceil(1556 / 7),
+  title: "Grammar: ～かぎりだ",
+  intro: "Today we study ～かぎりだ (kagiri da) — 'extremely (emotional)'. This pattern expresses that the speaker feels an emotion to an extreme degree.",
+  type: "grammar",
+  vocab: [["心強い","こころづよい","reassuring, encouraging"],["嬉しい","うれしい","happy, glad"],["情けない","なさけない","pathetic, miserable"],["羨ましい","うらやましい","envious"],["心細い","こころぼそい","anxious, helpless"],["腹立たしい","はらだたしい","irritating, infuriating"],["頼もしい","たのもしい","reliable, dependable"],["恥ずかしい","はずかしい","embarrassing, shameful"]],
+  chars: [],
+  grammar: {"pattern":"A(い)/Na + かぎりだ","meaning":"extremely ~ (emotional state)","example_jp":"皆様のご支援、心強いかぎりです。","example_en":"Your support is extremely reassuring."},
+  practice: "Write sentences expressing extreme emotions in four different scenarios using ～かぎりだ.",
+  tip: "～かぎりだ only works with adjectives that express emotion (嬉しい, 心強い, 情けない, etc.). It cannot be used with descriptive adjectives like 大きい or 赤い."
+});
+
+curriculum.push({
+  day: 1557,
+  phaseNum: 30,
+  phaseName: "N1 Grammar",
+  week: Math.ceil(1557 / 7),
+  title: "Review: Emphasis & Assertion Patterns",
+  intro: "Today we review and consolidate the emphasis and assertion grammar patterns studied this week. Practice distinguishing between similar patterns and using them in appropriate contexts.",
+  type: "grammar",
+  vocab: [["切実","せつじつ","earnest, pressing"],["痛感","つうかん","keenly feeling"],["真摯","しんし","sincere, earnest"],["熱望","ねつぼう","ardent desire"],["深甚","しんじん","profound, deepest"],["衷心","ちゅうしん","from the heart"],["切望","せつぼう","earnest desire"],["渇望","かつぼう","craving, longing"]],
+  chars: [],
+  grammar: {"pattern":"～てやまない / ～を禁じ得ない","meaning":"sincere emotion / cannot suppress emotion","example_jp":"平和を切望してやまない。戦争の映像には怒りを禁じ得ない。","example_en":"I sincerely desire peace. I cannot suppress my anger at footage of war."},
+  practice: "Create a comparison chart of all emphasis patterns studied so far, noting formality level, typical context, and example sentences for each.",
+  tip: "When choosing between emphasis patterns, consider: ～てやまない for ongoing wishes; ～を禁じ得ない for spontaneous emotions; ～極まりない for qualities at their extreme; ～かぎりだ for personal emotional states."
+});
+
+curriculum.push({
+  day: 1558,
+  phaseNum: 30,
+  phaseName: "N1 Grammar",
+  week: Math.ceil(1558 / 7),
+  title: "Practice: Assertion Patterns in Formal Writing",
+  intro: "Today we practice integrating assertion grammar patterns into formal writing. Focus on selecting the most appropriate pattern for each context.",
+  type: "grammar",
+  vocab: [["声明","せいめい","statement, declaration"],["訴える","うったえる","to appeal, to claim"],["主張","しゅちょう","assertion, claim"],["訓示","くんじ","instructions, admonition"],["激励","げきれい","encouragement"],["弔辞","ちょうじ","funeral address"],["祝辞","しゅくじ","congratulatory address"],["式辞","しきじ","ceremonial address"]],
+  chars: [],
+  grammar: {"pattern":"～こそすれ～ない","meaning":"may ~ but certainly not ~","example_jp":"この改革は市民に利益をもたらしこそすれ、損害を与えることはない。","example_en":"This reform may bring benefits to citizens, but it will certainly not cause harm."},
+  practice: "Write a short formal speech (100-150 characters) for a graduation ceremony incorporating at least three assertion patterns from this unit.",
+  tip: "In formal speeches, layer multiple assertion patterns to build emphasis. Start with ～というもの for reflection, use ～てやまない for wishes, and close with ～の至り for humble gratitude."
+});
+
+curriculum.push({
+  day: 1559,
+  phaseNum: 30,
+  phaseName: "N1 Grammar",
+  week: Math.ceil(1559 / 7),
+  title: "Grammar: Combining Emphasis Patterns",
+  intro: "Today we study how emphasis and assertion patterns combine with other N1 grammar to create complex formal sentences. Mastering these combinations is essential for N1 reading comprehension.",
+  type: "grammar",
+  vocab: [["論説","ろんせつ","editorial, commentary"],["社説","しゃせつ","newspaper editorial"],["寄稿","きこう","contribution (to publication)"],["巻頭言","かんとうげん","foreword, opening remarks"],["提言","ていげん","proposal, suggestion"],["所感","しょかん","impression, thoughts"],["見解","けんかい","opinion, view"],["抱負","ほうふ","aspiration, ambition"]],
+  chars: [],
+  grammar: {"pattern":"～にたえる + ～の至り","meaning":"worthy of ~ / the height of ~","example_jp":"鑑賞にたえる作品を生み出せたことは、光栄の至りである。","example_en":"It is the utmost honor to have produced a work worthy of appreciation."},
+  practice: "Write a newspaper editorial paragraph (80-100 characters) that combines at least three different emphasis/assertion patterns naturally.",
+  tip: "Complex sentences in editorials often chain patterns: a ～というもの reflection leads to a ～極まりない judgment, concluded with a ～ずにはおかない inevitable consequence."
+});
+
+curriculum.push({
+  day: 1560,
+  phaseNum: 30,
+  phaseName: "N1 Grammar",
+  week: Math.ceil(1560 / 7),
+  title: "Reading: Emphasis Patterns in a Commencement Address",
+  intro: "Today is a reading day. Apply the emphasis and assertion grammar patterns you have learned in context through an extended passage.",
+  type: "reading",
+  vocab: [["卒業生","そつぎょうせい","graduate"],["門出","かどで","departure, new start"],["前途","ぜんと","future prospects"],["洋々","ようよう","bright, promising"],["餞","はなむけ","farewell gift, parting words"]],
+  chars: [],
+  grammar: {"pattern":"～てやまない","meaning":"sincerely, never cease to ~","example_jp":"卒業生の前途が洋々たることを願ってやみません。","example_en":"I sincerely wish that the graduates' futures will be bright."},
+  practice: "Read the passage carefully. Answer the comprehension questions, then identify every emphasis and assertion pattern used.",
+  tip: "Commencement addresses are a natural habitat for N1 emphasis patterns. Notice how the speaker layers patterns to build emotional resonance while maintaining formal dignity.",
+  passage: {"text_jp":"本日、この晴れの日にお集まりの卒業生の皆様、ご卒業おめでとうございます。皆様とこの場を共にできますことは、光栄の至りでございます。本学での四年間というものは、決して平坦な道のりではなかったことでしょう。困難こそあれ、皆様は一度として歩みを止めることはなかった。その姿は頼もしいかぎりであり、教職員一同、深い感慨に堪えません。皆様の努力は賞賛に足るものであり、その成果は誰の目にも明らかです。とりわけ、この数年間は感染症の影響により、学生生活に多大な制約を受けました。対面での授業が制限される中、孤独と不安に苛まれた日々もあったことでしょう。しかし、皆様はそうした試練をものともせずに、自らの学びを深め続けました。その忍耐と努力は、賞賛に足るだけでなく、後輩たちの模範ともなるものです。研究においても目覚ましい成果を挙げた方が多く、本学ならではの自由闊達な学風が生んだ成果と言えましょう。社会に出れば、理不尽な批判や予期せぬ困難に直面することもあるでしょう。しかし、皆様ならば、いかなる逆境をものともせずに前に進めると確信しております。社会人たるもの、常に学び続ける姿勢が求められます。大企業の経営者ともなれば責任は重大ですが、いかなる立場であっても、真摯に取り組む姿勢こそが大切です。世界情勢は混迷を極めており、将来に不安を禁じ得ない方もいらっしゃるかもしれません。環境問題、国際紛争、経済格差など、解決すべき課題は山積しております。しかし、皆様の若さと情熱をもってすれば、必ずやこれらの課題を乗り越えられるでしょう。人生というものは、予測不能な出来事の連続です。それでも、本学で培った知性と教養は、皆様を支える揺るぎない土台となるはずです。皆様の前途が洋々たることを願ってやみません。本日の門出が、実り多き人生の第一歩となることを、心より祈念いたします。餞の言葉として申し上げます。感謝の心を忘れず、謙虚に、しかし堂々と歩んでいってください。","text_en":"To all the graduates gathered here on this auspicious day, congratulations on your graduation. Being able to share this moment with you is the utmost honor. The four years at this university were surely not an easy path. Though there may have been difficulties, you never once stopped moving forward. That determination is extremely reassuring, and all the faculty and staff cannot contain their deep emotion. Your efforts are worthy of praise, and the results are clear for all to see. In particular, these past few years brought severe restrictions on student life due to the pandemic. There must have been days of solitude and anxiety when in-person classes were limited. However, you continued to deepen your learning undeterred by such trials. Your patience and effort are not only worthy of praise but also serve as a model for future students. Once you enter society, you may face unreasonable criticism and unexpected difficulties. However, I am confident that you will press forward undeterred by any adversity. As members of society, you are expected to maintain an attitude of continuous learning. When it comes to corporate executives, the responsibility is great, but in any position, a sincere attitude is what matters most. The world situation is extremely chaotic, and there may be those who cannot suppress their anxiety about the future. Environmental issues, international conflicts, economic disparity — the challenges to be solved are piling up. However, with your youth and passion, you will surely overcome these challenges. I sincerely wish that your futures will be bright. I pray from the bottom of my heart that today's departure will be the first step of a fruitful life. As parting words, I say this: never forget gratitude, and walk forward humbly yet with dignity.","questions":[{"question_jp":"筆者は卒業生の大学生活についてどのように評価していますか。","question_en":"How does the speaker evaluate the graduates' university life?","answer":"困難はあったが一度も歩みを止めなかったことを賞賛に足ると評価している"},{"question_jp":"社会人に最も重要なことは何だと述べていますか。","question_en":"What does the speaker say is most important for members of society?","answer":"いかなる立場であっても真摯に取り組む姿勢が大切だということ"}]}
+});
+
+curriculum.push({
+  day: 1561,
+  phaseNum: 30,
+  phaseName: "N1 Grammar",
+  week: Math.ceil(1561 / 7),
+  title: "Grammar: ～ないまでも",
+  intro: "Today we study ～ないまでも (nai made mo) — 'even if not ~, at least'. This pattern expresses that even if the ideal outcome is not achieved, a minimum standard should be met.",
+  type: "grammar",
+  vocab: [["完璧","かんぺき","perfect, flawless"],["十分","じゅうぶん","sufficient, enough"],["最低限","さいていげん","bare minimum"],["及第点","きゅうだいてん","passing grade"],["満足","まんぞく","satisfaction"],["容認","ようにん","acceptance, tolerance"],["妥当","だとう","appropriate, reasonable"],["許容","きょよう","tolerance, permission"]],
+  chars: [],
+  grammar: {"pattern":"V(ない) + までも","meaning":"even if not ~, at least","example_jp":"完璧ではないまでも、及第点には達している。","example_en":"Even if it is not perfect, it at least reaches a passing grade."},
+  practice: "Write three sentences setting an ideal and a minimum standard using ～ないまでも.",
+  tip: "～ないまでも creates a scale from ideal to acceptable. The first part states the ideal (which may not be reached), and the second part states the acceptable minimum. It conveys a realistic, pragmatic tone."
+});
+
+curriculum.push({
+  day: 1562,
+  phaseNum: 30,
+  phaseName: "N1 Grammar",
+  week: Math.ceil(1562 / 7),
+  title: "Grammar: ～ずとも",
+  intro: "Today we study ～ずとも (zu tomo) — 'even without doing'. This classical negation pattern means that something is true or possible even without the stated action being performed.",
+  type: "grammar",
+  vocab: [["説明","せつめい","explanation"],["言及","げんきゅう","mention, reference"],["自明","じめい","self-evident, obvious"],["周知","しゅうち","common knowledge"],["承知","しょうち","being aware, knowing"],["明白","めいはく","obvious, clear"],["推量","すいりょう","conjecture, guess"],["察する","さっする","to sense, to guess"]],
+  chars: [],
+  grammar: {"pattern":"V(ない stem) + ずとも","meaning":"even without doing ~","example_jp":"言わずとも分かるだろう。","example_en":"You should understand even without being told."},
+  practice: "Write four sentences using ～ずとも in contexts where something is obvious or achievable without extra effort.",
+  tip: "～ずとも is the classical equivalent of ～なくても. It sounds more literary and dignified. Note the irregular form: する becomes せずとも."
+});
+
+curriculum.push({
+  day: 1563,
+  phaseNum: 30,
+  phaseName: "N1 Grammar",
+  week: Math.ceil(1563 / 7),
+  title: "Grammar: ～まじき",
+  intro: "Today we study ～まじき (majiki) — 'should not, unbecoming of'. This classical negative pattern expresses that an action is inappropriate or unacceptable for someone in a particular role.",
+  type: "grammar",
+  vocab: [["許す","ゆるす","to permit, to forgive"],["言語道断","ごんごどうだん","outrageous, absurd"],["不正","ふせい","injustice, fraud"],["卑劣","ひれつ","despicable, cowardly"],["背信","はいしん","betrayal, breach of trust"],["職務","しょくむ","official duties"],["倫理","りんり","ethics, morals"],["違背","いはい","violation, breach"]],
+  chars: [],
+  grammar: {"pattern":"V(dict) + まじき + N","meaning":"~ that should not be done, unbecoming of ~","example_jp":"教師にあるまじき行為だ。","example_en":"It is conduct unbecoming of a teacher."},
+  practice: "Write sentences using ～まじき for three different professions (doctor, politician, judge), describing unacceptable behavior.",
+  tip: "～まじき is the classical attributive form of the negative conjecture auxiliary まじ. In modern Japanese, it survives almost exclusively in the set phrase あるまじき (unbecoming, should not exist). It always modifies a noun."
+});
+
+curriculum.push({
+  day: 1564,
+  phaseNum: 30,
+  phaseName: "N1 Grammar",
+  week: Math.ceil(1564 / 7),
+  title: "Grammar: ～べからず",
+  intro: "Today we study ～べからず (bekarazu) — 'must not, shall not'. This classical prohibition pattern is commonly seen on signs, in rules, and in formal prohibitions.",
+  type: "grammar",
+  vocab: [["侵入","しんにゅう","intrusion, trespassing"],["投棄","とうき","dumping, disposal"],["喫煙","きつえん","smoking"],["厳禁","げんきん","strictly prohibited"],["禁止","きんし","prohibition"],["立入","たちいり","entry, trespassing"],["撮影","さつえい","photography"],["私語","しご","private conversation"]],
+  chars: [],
+  grammar: {"pattern":"V(dict) + べからず","meaning":"must not ~, shall not ~","example_jp":"関係者以外、立ち入るべからず。","example_en":"Unauthorized persons shall not enter."},
+  practice: "Write five prohibition signs using ～べからず for different locations (park, library, temple, factory, hospital).",
+  tip: "～べからず is the classical negative of べし (should). While archaic, it remains alive on signs and in proverbs (初心忘るべからず — one must not forget one's initial resolve). In modern speech, use ～てはならない instead."
+});
+
+curriculum.push({
+  day: 1565,
+  phaseNum: 30,
+  phaseName: "N1 Grammar",
+  week: Math.ceil(1565 / 7),
+  title: "Grammar: ～にあらず",
+  intro: "Today we study ～にあらず (ni arazu) — 'is not'. This classical negative copula is used in formal declarations, proverbs, and literary expressions to deny something emphatically.",
+  type: "grammar",
+  vocab: [["偶然","ぐうぜん","coincidence, chance"],["必然","ひつぜん","inevitability"],["単純","たんじゅん","simple, uncomplicated"],["容易","ようい","easy, simple"],["問題","もんだい","problem, issue"],["本意","ほんい","true intention"],["所以","ゆえん","reason, cause"],["根源","こんげん","root, origin"]],
+  chars: [],
+  grammar: {"pattern":"N + にあらず","meaning":"is not ~ (classical negation)","example_jp":"これは偶然にあらず、必然の結果である。","example_en":"This is not a coincidence; it is an inevitable result."},
+  practice: "Write three emphatic denial sentences using ～にあらず, then rewrite them using modern ～ではない to compare the tone.",
+  tip: "～にあらず is the classical negative of the copula. It survives in proverbs (人にあらず — not human), literary quotations, and formal declarations. In modern Japanese, use ～ではない for the same meaning."
+});
+
+curriculum.push({
+  day: 1566,
+  phaseNum: 30,
+  phaseName: "N1 Grammar",
+  week: Math.ceil(1566 / 7),
+  title: "Grammar: ～なくして(は)",
+  intro: "Today we study ～なくして(は) (naku shite wa) — 'without'. This formal pattern emphasizes that something is absolutely essential and that without it, a result is impossible.",
+  type: "grammar",
+  vocab: [["努力","どりょく","effort"],["犠牲","ぎせい","sacrifice"],["協力","きょうりょく","cooperation"],["覚悟","かくご","readiness, determination"],["信念","しんねん","belief, conviction"],["達成","たっせい","achievement"],["実現","じつげん","realization"],["成就","じょうじゅ","fulfillment, accomplishment"]],
+  chars: [],
+  grammar: {"pattern":"N + なくして(は) ～ない","meaning":"without ~ (something is impossible)","example_jp":"努力なくして成功はあり得ない。","example_en":"Without effort, success is impossible."},
+  practice: "Write three sentences about essential conditions using ～なくして(は)～ない for different domains (business, education, relationships).",
+  tip: "～なくして is more emphatic and literary than ～なしには or ～がなければ. It stresses the absolute indispensability of something. The は after なくして adds further emphasis."
+});
+
+curriculum.push({
+  day: 1567,
+  phaseNum: 30,
+  phaseName: "N1 Grammar",
+  week: Math.ceil(1567 / 7),
+  title: "Grammar: ～あっての",
+  intro: "Today we study ～あっての (atte no) — 'only because of, thanks to the existence of'. This pattern expresses that something exists or is possible solely because of the preceding element.",
+  type: "grammar",
+  vocab: [["健康","けんこう","health"],["支持","しじ","support"],["顧客","こきゃく","customer, client"],["基盤","きばん","foundation, base"],["前提","ぜんてい","premise, precondition"],["土台","どだい","foundation, base"],["恩恵","おんけい","grace, benefit"],["礎","いしずえ","cornerstone, foundation"]],
+  chars: [],
+  grammar: {"pattern":"N + あっての + N","meaning":"~ only because of ~, ~ thanks to ~","example_jp":"お客様あっての商売です。","example_en":"Business exists only because of our customers."},
+  practice: "Write sentences expressing gratitude or acknowledgment using ～あっての for five different relationships (customer-business, family, teacher-student, etc.).",
+  tip: "～あっての emphasizes that without A, B would not exist. It is warmer and more grateful in tone than ～なくして, which is more logical and emphatic."
+});
+
+curriculum.push({
+  day: 1568,
+  phaseNum: 30,
+  phaseName: "N1 Grammar",
+  week: Math.ceil(1568 / 7),
+  title: "Grammar: ～すら～ない / ～だに～ない",
+  intro: "Today we study two emphatic negation patterns: ～すら～ない (sura ~nai) — 'not even' and ～だに～ない (dani ~nai) — 'not even'. Both emphasize that even the minimum case does not apply.",
+  type: "grammar",
+  vocab: [["微動","びどう","slight movement"],["一瞥","いちべつ","a glance"],["想像","そうぞう","imagination"],["予想","よそう","prediction, expectation"],["夢","ゆめ","dream"],["知る","しる","to know"],["思う","おもう","to think"],["考える","かんがえる","to think, to consider"]],
+  chars: [],
+  grammar: {"pattern":"N + すら～ない / N + だに～ない","meaning":"not even ~ (emphatic negation)","example_jp":"彼はこちらを一瞥すらしなかった。そんな事態は想像だにしなかった。","example_en":"He did not even glance this way. I did not even imagine such a situation."},
+  practice: "Write two sentences with ～すら～ない and two with ～だに～ない, paying attention to which nouns pair naturally with each pattern.",
+  tip: "～すら is a more emphatic version of さえ and works with any noun. ～だに is more restricted and almost exclusively pairs with 想像, 予想, 夢, and 思う. Both are formal and literary."
+});
+
+curriculum.push({
+  day: 1569,
+  phaseNum: 30,
+  phaseName: "N1 Grammar",
+  week: Math.ceil(1569 / 7),
+  title: "Grammar: ～ならまだしも",
+  intro: "Today we study ～ならまだしも (nara mada shimo) — 'if it were ~, that would be one thing, but'. This pattern presents an acceptable scenario and contrasts it with the actual, unacceptable situation.",
+  type: "grammar",
+  vocab: [["初心者","しょしんしゃ","beginner"],["熟練者","じゅくれんしゃ","expert, veteran"],["少額","しょうがく","small amount"],["巨額","きょがく","enormous amount"],["軽微","けいび","minor, slight"],["重大","じゅうだい","serious, grave"],["些細","ささい","trivial, minor"],["甚大","じんだい","enormous, immense"]],
+  chars: [],
+  grammar: {"pattern":"N/V + ならまだしも","meaning":"if it were ~ that would be one thing, but (the actual situation is worse)","example_jp":"初心者のミスならまだしも、ベテランがこんな失敗をするとは。","example_en":"If it were a beginner's mistake, that would be one thing, but for a veteran to make such an error..."},
+  practice: "Write three sentences contrasting an acceptable scenario with an unacceptable reality using ～ならまだしも.",
+  tip: "～ならまだしも implies 'I could accept A, but B is unacceptable/surprising'. The actual situation (B) is always worse or more surprising than the hypothetical (A)."
+});
+
+curriculum.push({
+  day: 1570,
+  phaseNum: 30,
+  phaseName: "N1 Grammar",
+  week: Math.ceil(1570 / 7),
+  title: "Grammar: ～もさることながら",
+  intro: "Today we study ～もさることながら (mo saru koto nagara) — 'not only ~ but also, ~ is one thing but'. This pattern acknowledges one factor while highlighting another that is equally or more important.",
+  type: "grammar",
+  vocab: [["品質","ひんしつ","quality"],["価格","かかく","price"],["技術","ぎじゅつ","technology, skill"],["人柄","ひとがら","personality, character"],["内容","ないよう","content"],["形式","けいしき","form, format"],["実力","じつりょく","real ability"],["人望","じんぼう","popularity, personal appeal"]],
+  chars: [],
+  grammar: {"pattern":"N + もさることながら","meaning":"not only ~ but also, ~ is one thing but","example_jp":"この店は味もさることながら、サービスも素晴らしい。","example_en":"This restaurant's flavor is one thing, but the service is also wonderful."},
+  practice: "Write three sentences using ～もさることながら to highlight an additional praiseworthy or noteworthy quality.",
+  tip: "～もさることながら acknowledges the first element without dismissing it, then draws attention to another factor. It is often used in positive evaluations and recommendations."
+});
+
+curriculum.push({
+  day: 1571,
+  phaseNum: 30,
+  phaseName: "N1 Grammar",
+  week: Math.ceil(1571 / 7),
+  title: "Grammar: ～はおろか",
+  intro: "Today we study ～はおろか (wa oroka) — 'let alone, not to mention'. This pattern presents something that should be easy or expected, then reveals that even that basic level has not been met.",
+  type: "grammar",
+  vocab: [["基礎","きそ","basics, foundation"],["応用","おうよう","application, practical use"],["挨拶","あいさつ","greeting"],["敬語","けいご","honorific language"],["読解","どっかい","reading comprehension"],["会話","かいわ","conversation"],["漢字","かんじ","kanji characters"],["文法","ぶんぽう","grammar"]],
+  chars: [],
+  grammar: {"pattern":"N + はおろか、N + も/さえ～ない","meaning":"let alone ~, not even ~","example_jp":"敬語はおろか、基本的な挨拶さえできない。","example_en":"Let alone honorific language, they cannot even manage a basic greeting."},
+  practice: "Write three sentences using ～はおろか to emphasize how far below expectations a situation is.",
+  tip: "～はおろか is similar to ～どころか but more formal and literary. The first noun is the more difficult or advanced element, and the sentence reveals that even the easier element is not achieved."
+});
+
+curriculum.push({
+  day: 1572,
+  phaseNum: 30,
+  phaseName: "N1 Grammar",
+  week: Math.ceil(1572 / 7),
+  title: "Review: Negation & Limitation Patterns",
+  intro: "Today we review all negation and limitation grammar patterns from this unit. Focus on distinguishing their specific nuances and appropriate usage contexts.",
+  type: "grammar",
+  vocab: [["否定","ひてい","negation, denial"],["限定","げんてい","limitation, restriction"],["制約","せいやく","constraint, restriction"],["排除","はいじょ","exclusion, elimination"],["禁止","きんし","prohibition"],["抑制","よくせい","suppression, restraint"],["制限","せいげん","limitation"],["規制","きせい","regulation"]],
+  chars: [],
+  grammar: {"pattern":"～べからず / ～まじき / ～にあらず","meaning":"classical negation patterns comparison","example_jp":"入るべからず。あるまじき行為。偶然にあらず。","example_en":"One must not enter. Unbecoming conduct. It is not a coincidence."},
+  practice: "Create a classification chart grouping all negation patterns by type: prohibition (べからず), judgment (まじき), emphatic denial (にあらず), concession (ないまでも), etc.",
+  tip: "Classical negation patterns (べからず, まじき, にあらず) sound more authoritative than their modern equivalents. Use them when a formal, weighty tone is needed."
+});
+
+curriculum.push({
+  day: 1573,
+  phaseNum: 30,
+  phaseName: "N1 Grammar",
+  week: Math.ceil(1573 / 7),
+  title: "Practice: Negation Patterns in Editorial Writing",
+  intro: "Today we practice using negation and limitation patterns in the context of formal editorial writing. Focus on natural integration of multiple patterns.",
+  type: "grammar",
+  vocab: [["論旨","ろんし","argument, thesis"],["反駁","はんばく","refutation, rebuttal"],["指摘","してき","pointing out"],["批評","ひひょう","criticism, review"],["懸念","けねん","concern, apprehension"],["警鐘","けいしょう","alarm bell, warning"],["是正","ぜせい","correction, rectification"],["喚起","かんき","arousal, awakening"]],
+  chars: [],
+  grammar: {"pattern":"～はおろか～すら～ない","meaning":"let alone ~, not even ~","example_jp":"改善はおろか、問題の存在すら認識されていない。","example_en":"Let alone improvement, they have not even recognized the existence of the problem."},
+  practice: "Write an editorial paragraph (100-150 characters) about an environmental or social issue incorporating at least four negation/limitation patterns.",
+  tip: "In editorial writing, negation patterns serve to emphasize the severity of a problem or the inadequacy of a response. Layer them to build a compelling argument."
+});
+
+curriculum.push({
+  day: 1574,
+  phaseNum: 30,
+  phaseName: "N1 Grammar",
+  week: Math.ceil(1574 / 7),
+  title: "Grammar: Complex Negation Structures",
+  intro: "Today we study how negation patterns combine with conditional and concessive structures to create nuanced, multi-layered formal sentences commonly found in N1 reading passages.",
+  type: "grammar",
+  vocab: [["前例","ぜんれい","precedent"],["踏襲","とうしゅう","following, adhering to"],["逸脱","いつだつ","deviation, departure"],["恣意的","しいてき","arbitrary"],["慎重","しんちょう","cautious, careful"],["拙速","せっそく","hasty and careless"],["周到","しゅうとう","thorough, meticulous"],["綿密","めんみつ","minute, detailed"]],
+  chars: [],
+  grammar: {"pattern":"～ないまでも + ～べからず","meaning":"even if not ~, must not ~","example_jp":"完全な解決とはならないまでも、問題を放置するべからず。","example_en":"Even if it does not become a complete solution, the problem must not be left unattended."},
+  practice: "Write three complex sentences that combine two different negation patterns in a single statement.",
+  tip: "N1 reading passages frequently combine negation patterns. For example: ～ないまでも sets a realistic expectation, while ～べからず adds a prohibition. Practice parsing these layered structures."
+});
+
+curriculum.push({
+  day: 1575,
+  phaseNum: 30,
+  phaseName: "N1 Grammar",
+  week: Math.ceil(1575 / 7),
+  title: "Reading: Classical Negation in Modern Commentary",
+  intro: "Today is a reading day. Apply the negation and limitation grammar patterns you have learned in context through an extended passage.",
+  type: "reading",
+  vocab: [["衰退","すいたい","decline, decay"],["伝承","でんしょう","tradition, handing down"],["危機","きき","crisis"],["継承","けいしょう","succession, inheritance"],["存亡","そんぼう","life or death, survival"]],
+  chars: [],
+  grammar: {"pattern":"～なくして(は)～ない","meaning":"without ~ (it is impossible)","example_jp":"地域の協力なくして伝統文化の継承はあり得ない。","example_en":"Without regional cooperation, the succession of traditional culture is impossible."},
+  practice: "Read the passage carefully. Answer the comprehension questions, then list every negation and limitation pattern used with its function in context.",
+  tip: "Formal essays about cultural preservation frequently use classical negation patterns. Notice how ～べからず conveys urgency, ～にあらず makes philosophical points, and ～なくして emphasizes indispensability.",
+  passage: {"text_jp":"日本の伝統工芸は今、存亡の危機に瀕している。熟練の職人が高齢化し、後継者不足は深刻を極めている。この問題は単なる産業の衰退にあらず、日本文化の根幹に関わる重大事である。伝統技術はおろか、基本的な道具の使い方すら知らない若者が増えている。完璧な技の継承とはならないまでも、最低限の知識と技術は次世代に伝えねばならない。初心忘るべからずという言葉があるように、先人たちの志を忘れてはならないのである。職人の技というものは、長年の修練なくして身につくものではない。師匠あっての弟子であり、伝統あっての革新である。例えば、京都の西陣織は千年以上の歴史を持つが、現在の織元は最盛期の十分の一にまで減少した。若い世代の参入がなければ、この伝統は数十年以内に途絶えるであろう。言わずとも明らかなことだが、一度失われた技術を復元することは極めて困難である。もちろん、技術もさることながら、それを支える精神性も重要である。利益追求ならまだしも、伝統そのものに無関心な社会は、文化的貧困と言わざるを得ない。問題の深刻さは想像だにできないほどである。一人の職人が引退すれば、数百年の技が永遠に失われる。この現実を見て、危機感を抱かずにはいられない。行政の支援はおろか、一般市民の関心すら十分とは言えない現状を、座視するべからず。伝統工芸にあるまじき粗悪な模倣品が市場に出回っていることも、事態をさらに悪化させている。職人たるもの、品質に対する妥協は許されないが、安価な模倣品との価格競争を強いられている現状は、嘆かわしいかぎりである。伝統工芸の担い手ともなると、技術の習得だけでなく、材料の調達や販路の確保など、経営面での課題も避けて通れない。今こそ、官民一体となって伝統工芸の保護に取り組むべき時である。次世代に誇れる文化を残すことは、我々の世代の責務にほかならない。この課題の解決なくして、真の文化国家の実現はあり得ないのである。","text_en":"Japan's traditional crafts are now facing a crisis of survival. Skilled artisans are aging, and the shortage of successors is extremely serious. This problem is not merely the decline of an industry; it is a grave matter concerning the very foundation of Japanese culture. Let alone traditional techniques, the number of young people who do not even know how to use basic tools is increasing. Even if perfect succession of skills is not achieved, at minimum, knowledge and techniques must be passed on to the next generation. As the saying goes, 'one must not forget one's initial resolve,' we must not forget the aspirations of our predecessors. The skills of craftsmen are something that cannot be acquired without years of training. The apprentice exists only because of the master, and innovation exists only because of tradition. For example, Kyoto's Nishijin weaving has a history of over a thousand years, yet the current number of weaving houses has decreased to one-tenth of its peak. Without the entry of a younger generation, this tradition will die out within decades. It goes without saying, but once lost, restoring techniques is extremely difficult. Of course, while skill is important, the spirituality that supports it is equally important. If it were mere profit-seeking that would be one thing, but a society indifferent to tradition itself can only be called culturally impoverished. The severity of the problem is beyond what one can even imagine. When one artisan retires, centuries of technique are lost forever. Seeing this reality, one cannot help but feel a sense of crisis. The current situation where let alone government support, even ordinary citizens' interest is insufficient must not be left unattended. The circulation of shoddy imitation products unbecoming of traditional crafts in the market is further worsening the situation. Now is the time for government and citizens to work together to protect traditional crafts. Leaving behind a culture we can be proud of for the next generation is nothing other than the responsibility of our generation.","questions":[{"question_jp":"筆者はこの問題をどのように位置づけていますか。","question_en":"How does the author characterize this problem?","answer":"単なる産業の衰退ではなく、日本文化の根幹に関わる重大事だと位置づけている"},{"question_jp":"筆者が伝統工芸の継承に不可欠だと述べている要素は何ですか。","question_en":"What does the author say is indispensable for the succession of traditional crafts?","answer":"長年の修練と、技術を支える精神性の両方が不可欠だと述べている"}]}
+});
+
+curriculum.push({
+  day: 1576,
+  phaseNum: 30,
+  phaseName: "N1 Grammar",
+  week: Math.ceil(1576 / 7),
+  title: "Review: Formal & Written Grammar Patterns",
+  intro: "Today we review all formal and written grammar patterns from days 1531-1545. Consolidate your understanding of these foundational N1 patterns.",
+  type: "grammar",
+  vocab: [["概要","がいよう","summary, outline"],["総括","そうかつ","comprehensive summary"],["要旨","ようし","gist, main point"],["網羅","もうら","comprehensive coverage"],["体系的","たいけいてき","systematic"],["俯瞰","ふかん","bird's-eye view"],["整理","せいり","organization, arrangement"],["分類","ぶんるい","classification"]],
+  chars: [],
+  grammar: {"pattern":"～をもって / ～ならでは / ～をおいて～ない","meaning":"formal grammar review","example_jp":"この品質は本場ならではのものだ。彼をおいて適任者はいない。","example_en":"This quality is unique to the original source. There is no one more suitable than him."},
+  practice: "Write a summary paragraph using at least five formal grammar patterns from this unit. Then create original example sentences for any patterns you found difficult.",
+  tip: "Review strategy: group patterns by function — means (をもって), uniqueness (ならでは), exclusivity (をおいて~ない), indifference (いかんによらず), defiance (をものともせずに)."
+});
+
+curriculum.push({
+  day: 1577,
+  phaseNum: 30,
+  phaseName: "N1 Grammar",
+  week: Math.ceil(1577 / 7),
+  title: "Review: Emphasis & Assertion Grammar Patterns",
+  intro: "Today we review all emphasis and assertion patterns from days 1546-1560. Practice selecting the right pattern for each emotional and rhetorical context.",
+  type: "grammar",
+  vocab: [["修辞","しゅうじ","rhetoric"],["強調","きょうちょう","emphasis"],["断言","だんげん","assertion, declaration"],["誇張","こちょう","exaggeration"],["婉曲","えんきょく","euphemism"],["含蓄","がんちく","implication, suggestiveness"],["論調","ろんちょう","tone of argument"],["語調","ごちょう","tone of voice"]],
+  chars: [],
+  grammar: {"pattern":"～てやまない / ～極まりない / ～を禁じ得ない","meaning":"emphasis patterns review","example_jp":"成功を願ってやまない。失礼極まりない態度だ。怒りを禁じ得ない。","example_en":"I sincerely wish for success. An extremely rude attitude. I cannot suppress my anger."},
+  practice: "Write a formal letter of complaint incorporating at least four emphasis/assertion patterns naturally.",
+  tip: "Emphasis patterns serve different rhetorical functions: ～てやまない for wishes, ～極まりない for judgment, ～を禁じ得ない for spontaneous emotion, ～かぎりだ for personal feeling."
+});
+
+curriculum.push({
+  day: 1578,
+  phaseNum: 30,
+  phaseName: "N1 Grammar",
+  week: Math.ceil(1578 / 7),
+  title: "Review: Negation & Limitation Grammar Patterns",
+  intro: "Today we review all negation and limitation patterns from days 1561-1575. Focus on the spectrum from modern to classical forms.",
+  type: "grammar",
+  vocab: [["古典","こてん","classics, classical"],["文語","ぶんご","literary language"],["口語","こうご","colloquial language"],["文体","ぶんたい","writing style"],["格式","かくしき","formality, status"],["語彙","ごい","vocabulary"],["表現","ひょうげん","expression"],["用法","ようほう","usage"]],
+  chars: [],
+  grammar: {"pattern":"～べからず / ～まじき / ～にあらず / ～すら～ない","meaning":"negation patterns review","example_jp":"忘るべからず。あるまじき行為。偶然にあらず。想像すらできない。","example_en":"One must not forget. Unbecoming conduct. Not a coincidence. Cannot even imagine."},
+  practice: "Rank all negation patterns from most to least formal, then write a sentence for each showing its typical context.",
+  tip: "The classical negation patterns form a hierarchy: べからず (prohibition), まじき (judgment), にあらず (denial). Modern equivalents: てはならない, すべきではない, ではない."
+});
+
+curriculum.push({
+  day: 1579,
+  phaseNum: 30,
+  phaseName: "N1 Grammar",
+  week: Math.ceil(1579 / 7),
+  title: "Practice: Comprehensive Grammar Integration",
+  intro: "Today we practice integrating all three categories of N1 grammar patterns studied so far: formal/written, emphasis/assertion, and negation/limitation.",
+  type: "grammar",
+  vocab: [["統合","とうごう","integration, unification"],["応用","おうよう","application"],["実践","じっせん","practice, implementation"],["運用","うんよう","practical application"],["駆使","くし","free use, full command"],["活用","かつよう","utilization, conjugation"],["習熟","しゅうじゅく","mastery through practice"],["精通","せいつう","being well-versed in"]],
+  chars: [],
+  grammar: {"pattern":"Multiple patterns combined","meaning":"integrating formal, emphasis, and negation grammar","example_jp":"努力なくして成功はあり得ず、成功を願ってやまない者こそ、困難をものともせずに前進できるのだ。","example_en":"Success is impossible without effort, and it is precisely those who sincerely desire success who can advance undeterred by difficulties."},
+  practice: "Write a three-paragraph essay on a topic of your choice, using at least two patterns from each category (formal, emphasis, negation).",
+  tip: "The key to N1 mastery is not memorizing individual patterns but understanding how they work together. Practice combining patterns from different categories to create sophisticated, layered arguments."
+});
+
+curriculum.push({
+  day: 1580,
+  phaseNum: 30,
+  phaseName: "N1 Grammar",
+  week: Math.ceil(1580 / 7),
+  title: "Grammar: ～ごとき / ～ごとく",
+  intro: "Today we study ～ごとき (gotoki) and ～ごとく (gotoku) — 'like, as if'. These classical comparison patterns are more formal and literary than ～のような/～のように.",
+  type: "grammar",
+  vocab: [["稲妻","いなずま","lightning"],["矢","や","arrow"],["流星","りゅうせい","shooting star"],["疾風","しっぷう","gale, swift wind"],["怒濤","どとう","raging waves"],["迅速","じんそく","swift, rapid"],["光陰","こういん","time (poetic)"],["刹那","せつな","an instant"]],
+  chars: [],
+  grammar: {"pattern":"N + のごとき + N / N + のごとく + V","meaning":"like ~, as if ~ (classical comparison)","example_jp":"光陰矢のごとし。彼は疾風のごとく駆け抜けた。","example_en":"Time flies like an arrow. He dashed through like a gale."},
+  practice: "Write four sentences using ～ごとく (adverbial) and four using ～ごとき (attributive) with vivid comparisons.",
+  tip: "～ごとし is the classical equivalent of ～ようだ. Its forms: ごとく (adverbial), ごとき (attributive), ごとし (terminal). It survives in proverbs and literary writing."
+});
+
+curriculum.push({
+  day: 1581,
+  phaseNum: 30,
+  phaseName: "N1 Grammar",
+  week: Math.ceil(1581 / 7),
+  title: "Grammar: ～をもってしても",
+  intro: "Today we study ～をもってしても (wo motte shite mo) — 'even with, even by means of'. This pattern extends ～をもって to express that even with a powerful means, something is still difficult or impossible.",
+  type: "grammar",
+  vocab: [["最新","さいしん","latest, newest"],["技術","ぎじゅつ","technology, technique"],["全力","ぜんりょく","full power"],["手段","しゅだん","means, method"],["科学","かがく","science"],["解明","かいめい","elucidation, clarification"],["対処","たいしょ","coping, dealing with"],["克服","こくふく","overcoming"]],
+  chars: [],
+  grammar: {"pattern":"N + をもってしても","meaning":"even with ~, even by means of ~","example_jp":"現代の科学をもってしても、解明できない謎がある。","example_en":"There are mysteries that cannot be solved even with modern science."},
+  practice: "Write three sentences about limitations that persist even with powerful resources, using ～をもってしても.",
+  tip: "～をもってしても adds a concessive layer to ～をもって. It emphasizes that even the best available means is insufficient. This creates a powerful rhetorical effect in arguments about difficulty or impossibility."
+});
+
+curriculum.push({
+  day: 1582,
+  phaseNum: 30,
+  phaseName: "N1 Grammar",
+  week: Math.ceil(1582 / 7),
+  title: "Grammar: ～ともあろう(人が)",
+  intro: "Today we study ～ともあろう (tomo arou) — 'someone of the stature of ~'. This pattern expresses surprise or criticism that someone of high status or ability has done something unexpected or inappropriate.",
+  type: "grammar",
+  vocab: [["学者","がくしゃ","scholar, academic"],["専門家","せんもんか","expert, specialist"],["大臣","だいじん","minister (government)"],["名門","めいもん","prestigious family/institution"],["見識","けんしき","insight, judgment"],["権威","けんい","authority, prestige"],["失態","しったい","blunder, disgrace"],["醜聞","しゅうぶん","scandal"]],
+  chars: [],
+  grammar: {"pattern":"N + ともあろう + 人/者 + が","meaning":"someone of the stature of ~ (doing something unbecoming)","example_jp":"大臣ともあろう人が、そのような発言をするとは信じがたい。","example_en":"It is hard to believe that someone of the stature of a minister would make such a statement."},
+  practice: "Write three sentences using ～ともあろう to express surprise or criticism about high-status individuals.",
+  tip: "～ともあろう always implies disappointment or criticism — the person's high status makes their action especially surprising or unacceptable. It often pairs with ～とは (expressing surprise)."
+});
+
+curriculum.push({
+  day: 1583,
+  phaseNum: 30,
+  phaseName: "N1 Grammar",
+  week: Math.ceil(1583 / 7),
+  title: "Grammar: ～と相まって",
+  intro: "Today we study ～と相まって (to aimatte) — 'combined with, coupled with'. This pattern expresses that two factors work together to produce a result, often amplifying each other.",
+  type: "grammar",
+  vocab: [["景気","けいき","economic conditions"],["人口減少","じんこうげんしょう","population decline"],["高齢化","こうれいか","aging of population"],["技術革新","ぎじゅつかくしん","technological innovation"],["好天","こうてん","fine weather"],["宣伝","せんでん","publicity, advertising"],["相乗","そうじょう","synergistic, mutual"],["効果","こうか","effect, result"]],
+  chars: [],
+  grammar: {"pattern":"N + と相まって","meaning":"combined with ~, coupled with ~","example_jp":"人口減少と高齢化が相まって、労働力不足が深刻化している。","example_en":"Population decline coupled with aging has made the labor shortage more serious."},
+  practice: "Write three sentences about current social or economic issues using ～と相まって to show how multiple factors combine.",
+  tip: "～と相まって is common in analytical writing — news articles, research papers, and policy discussions. It highlights synergy between factors, whether positive or negative."
+});
+
+curriculum.push({
+  day: 1584,
+  phaseNum: 30,
+  phaseName: "N1 Grammar",
+  week: Math.ceil(1584 / 7),
+  title: "Grammar: ～たところで",
+  intro: "Today we study ～たところで (ta tokoro de) — 'even if one does ~, it will not matter'. This pattern expresses futility — that an action, even if performed, will not produce the desired result.",
+  type: "grammar",
+  vocab: [["後悔","こうかい","regret"],["抗議","こうぎ","protest"],["弁解","べんかい","excuse, justification"],["取り繕う","とりつくろう","to patch up, to gloss over"],["無駄","むだ","waste, futile"],["徒労","とろう","wasted effort"],["水泡","すいほう","bubble (in vain)"],["焼け石","やけいし","heated stone (futile effort)"]],
+  chars: [],
+  grammar: {"pattern":"V(た) + ところで","meaning":"even if ~, it won't matter / it's futile","example_jp":"今さら後悔したところで、何も変わらない。","example_en":"Even if you regret it now, nothing will change."},
+  practice: "Write four sentences about futile actions using ～たところで, covering different situations (work, relationships, studying, etc.).",
+  tip: "～たところで is less formal than ～たとて but more emphatic than ～ても when expressing futility. It often pairs with 無駄だ, 仕方がない, or 何も変わらない in the result clause."
+});
+
+curriculum.push({
+  day: 1585,
+  phaseNum: 30,
+  phaseName: "N1 Grammar",
+  week: Math.ceil(1585 / 7),
+  title: "Grammar: ～たとて",
+  intro: "Today we study ～たとて (ta tote) — 'even if, even though'. This literary concessive pattern is a more formal equivalent of ～たとしても, expressing that a hypothetical action would not change the outcome.",
+  type: "grammar",
+  vocab: [["懇願","こんがん","entreaty, earnest request"],["嘆願","たんがん","petition, appeal"],["哀願","あいがん","imploring, pleading"],["翻意","ほんい","change of mind"],["撤回","てっかい","withdrawal, retraction"],["覆る","くつがえる","to be overturned"],["揺るぐ","ゆるぐ","to waver, to shake"],["動じる","どうじる","to be perturbed"]],
+  chars: [],
+  grammar: {"pattern":"V(た) + とて","meaning":"even if ~, even though ~ (literary)","example_jp":"いくら懇願したとて、彼の決意は揺るがないだろう。","example_en":"No matter how much one pleads, his determination will probably not waver."},
+  practice: "Write three sentences using ～たとて and then rewrite them using ～たところで and ～たとしても to compare nuance.",
+  tip: "～たとて is the most literary and formal of the 'even if' concessive patterns. Formality ranking: たとて (highest) > たところで > たとしても > ても (lowest). Use たとて in essays and formal arguments."
+});
+// ═══════════════════════════════════════════════════════════════════════════
+// PHASE 30b: N1 GRAMMAR — SECOND HALF (Days 1586-1640)
+// 55 days of advanced N1-level grammar patterns
+// ═══════════════════════════════════════════════════════════════════════════
+
+curriculum.push({
+  day: 1586,
+  phaseNum: 30,
+  phaseName: "N1 Grammar",
+  week: Math.ceil(1586 / 7),
+  title: "Conditional Extremes I: ～ようものなら",
+  intro: "Today we begin a group of advanced conditional and concession patterns. The grammar point ～ようものなら expresses that if something were to happen, there would be dire consequences.",
+  type: "grammar",
+  vocab: [["抵触","ていしょく","conflict, infringement"],["違反","いはん","violation, breach"],["処罰","しょばつ","punishment, penalty"],["漏洩","ろうえい","leakage, disclosure"],["機密","きみつ","confidential, secret"],["厳罰","げんばつ","severe punishment"]],
+  chars: [],
+  grammar: {"pattern":"～ようものなら","meaning":"if you dare to ~ / if ~ were to happen (dire consequence)","example_jp":"機密情報を漏洩しようものなら、厳罰に処される。","example_en":"If you dare to leak confidential information, you will be severely punished."},
+  practice: "Write three sentences using ～ようものなら to describe consequences of extreme or careless actions.",
+  tip: "The pattern ～ようものなら always implies a negative or extreme consequence. Think of it as a strong warning."
+});
+
+curriculum.push({
+  day: 1587,
+  phaseNum: 30,
+  phaseName: "N1 Grammar",
+  week: Math.ceil(1587 / 7),
+  title: "Conditional Extremes II: ～たが最後",
+  intro: "The grammar pattern ～たが最後 expresses that once an action is done, there is no turning back — the outcome is inevitable and usually negative.",
+  type: "grammar",
+  vocab: [["中毒","ちゅうどく","addiction, poisoning"],["依存","いぞん","dependence, reliance"],["陥る","おちいる","to fall into"],["泥沼","どろぬま","quagmire, bog"],["抜け出す","ぬけだす","to escape from"],["深淵","しんえん","abyss, depths"]],
+  chars: [],
+  grammar: {"pattern":"～たが最後","meaning":"once you do ~ it's all over / no turning back","example_jp":"あのゲームを始めたが最後、寝る時間も忘れてしまう。","example_en":"Once you start that game, you'll forget all about sleep."},
+  practice: "Create sentences using ～たが最後 for situations where an action leads to an irreversible outcome.",
+  tip: "This pattern carries a strong sense of finality. It pairs naturally with verbs describing addictive or irreversible actions."
+});
+
+curriculum.push({
+  day: 1588,
+  phaseNum: 30,
+  phaseName: "N1 Grammar",
+  week: Math.ceil(1588 / 7),
+  title: "Concession Pairs: ～であれ～であれ",
+  intro: "Today's pattern ～であれ～であれ means 'whether ~ or ~' and is used to express that the conclusion holds regardless of which option applies.",
+  type: "grammar",
+  vocab: [["貧富","ひんぷ","wealth and poverty"],["老若","ろうにゃく","old and young"],["男女","だんじょ","men and women"],["平等","びょうどう","equality"],["享受","きょうじゅ","enjoyment, benefit"],["権利","けんり","right, privilege"]],
+  chars: [],
+  grammar: {"pattern":"～であれ～であれ","meaning":"whether ~ or ~ (the conclusion remains the same)","example_jp":"男女であれ老若であれ、すべての国民は平等に権利を享受すべきだ。","example_en":"Whether male or female, old or young, all citizens should equally enjoy their rights."},
+  practice: "Write three sentences using ～であれ～であれ with contrasting pairs (rich/poor, domestic/foreign, etc.).",
+  tip: "This pattern is often seen in formal writing and speeches. The pairs used are typically contrasting or complementary concepts."
+});
+
+curriculum.push({
+  day: 1589,
+  phaseNum: 30,
+  phaseName: "N1 Grammar",
+  week: Math.ceil(1589 / 7),
+  title: "Concession: ～にもせよ / ～にせよ",
+  intro: "The pattern ～にもせよ (and its variant ～にせよ) conveys 'even though' or 'even granting that,' acknowledging a fact while presenting a contrasting conclusion.",
+  type: "grammar",
+  vocab: [["事情","じじょう","circumstances"],["斟酌","しんしゃく","consideration, allowance"],["弁解","べんかい","excuse, justification"],["許容","きょよう","tolerance, permission"],["逸脱","いつだつ","deviation, departure"],["規範","きはん","norm, standard"]],
+  chars: [],
+  grammar: {"pattern":"～にもせよ","meaning":"even though / even granting that","example_jp":"事情があったにもせよ、規範からの逸脱は許容できない。","example_en":"Even granting there were circumstances, deviation from the norms cannot be tolerated."},
+  practice: "Practice using ～にもせよ and ～にせよ to acknowledge a point while asserting a different conclusion.",
+  tip: "The difference between ～にもせよ and ～にせよ is subtle: ～にもせよ adds slightly more emphasis on the concession."
+});
+
+curriculum.push({
+  day: 1590,
+  phaseNum: 30,
+  phaseName: "N1 Grammar",
+  week: Math.ceil(1590 / 7),
+  title: "Futile Conditions: ～たところで",
+  intro: "The pattern ～たところで expresses that even if an action is taken, the result will be negligible or meaningless — 'even if one does ~, it won't matter.'",
+  type: "grammar",
+  vocab: [["焦る","あせる","to be impatient, to rush"],["嘆く","なげく","to lament, to grieve"],["取り戻す","とりもどす","to take back, to recover"],["覆水","ふくすい","spilt water"],["徒労","とろう","futile effort"],["後悔","こうかい","regret, remorse"]],
+  chars: [],
+  grammar: {"pattern":"～たところで","meaning":"even if one does ~ (it won't matter/change anything)","example_jp":"今さら後悔したところで、覆水盆に返らずだ。","example_en":"Even if you regret it now, there's no use crying over spilt milk."},
+  practice: "Write sentences using ～たところで to express that an action would be futile or produce no meaningful result.",
+  tip: "This pattern is often used to counsel against wasting effort, or to express resignation about unchangeable situations."
+});
+
+curriculum.push({
+  day: 1591,
+  phaseNum: 30,
+  phaseName: "N1 Grammar",
+  week: Math.ceil(1591 / 7),
+  title: "Interrupted Actions: ～ところを",
+  intro: "Today's pattern ～ところを describes a situation where someone is caught or interrupted while doing something, or where one acts despite an inconvenient situation.",
+  type: "grammar",
+  vocab: [["拝察","はいさつ","(humble) surmise"],["多忙","たぼう","busy, occupied"],["恐縮","きょうしゅく","feeling obliged/sorry"],["参上","さんじょう","(humble) visiting"],["拝借","はいしゃく","(humble) borrowing"],["申し訳","もうしわけ","excuse, apology"]],
+  chars: [],
+  grammar: {"pattern":"～ところを","meaning":"when/while (being interrupted) / despite the situation of ~","example_jp":"お忙しいところを恐縮ですが、少々お時間をいただけますか。","example_en":"I'm sorry to bother you when you're busy, but could I have a moment of your time?"},
+  practice: "Practice both uses of ～ところを: (1) being caught/interrupted, and (2) politely acknowledging an imposition.",
+  tip: "In polite speech, ～ところを is frequently combined with 恐縮ですが to create a courteous request formula."
+});
+
+curriculum.push({
+  day: 1592,
+  phaseNum: 30,
+  phaseName: "N1 Grammar",
+  week: Math.ceil(1592 / 7),
+  title: "Disregard: ～をよそに",
+  intro: "The pattern ～をよそに means 'ignoring' or 'paying no heed to,' expressing that someone acts without regard for others' feelings or a situation.",
+  type: "grammar",
+  vocab: [["懸念","けねん","concern, apprehension"],["反対","はんたい","opposition"],["無視","むし","disregard, ignoring"],["嘆願","たんがん","petition, plea"],["強行","きょうこう","forced execution"],["住民","じゅうみん","residents, inhabitants"]],
+  chars: [],
+  grammar: {"pattern":"～をよそに","meaning":"ignoring / paying no heed to ~","example_jp":"住民の懸念をよそに、開発計画は強行された。","example_en":"Ignoring the residents' concerns, the development plan was forced through."},
+  practice: "Write sentences using ～をよそに to describe situations where someone's concerns or feelings are disregarded.",
+  tip: "This pattern always carries a negative nuance — the speaker disapproves of the disregard being shown."
+});
+
+curriculum.push({
+  day: 1593,
+  phaseNum: 30,
+  phaseName: "N1 Grammar",
+  week: Math.ceil(1593 / 7),
+  title: "Regretful Concession: ～ものを",
+  intro: "The pattern ～ものを expresses regret or frustration that something could have turned out differently — 'even though ~ (but unfortunately it didn't).'",
+  type: "grammar",
+  vocab: [["素直","すなお","obedient, honest"],["従う","したがう","to follow, to obey"],["丁寧","ていねい","polite, careful"],["済む","すむ","to be settled, to suffice"],["見逃す","みのがす","to overlook, to miss"],["惜しい","おしい","regrettable, precious"]],
+  chars: [],
+  grammar: {"pattern":"～ものを","meaning":"even though ~ (if only ~ had been done, regrettably)","example_jp":"素直に謝れば済むものを、言い訳ばかりして事態を悪化させた。","example_en":"It would have been resolved if only he'd apologized honestly, but he kept making excuses and made things worse."},
+  practice: "Create three sentences using ～ものを to express regret about how a situation was handled.",
+  tip: "The key emotional tone of ～ものを is frustration or regret about a missed opportunity or poor choice."
+});
+
+curriculum.push({
+  day: 1594,
+  phaseNum: 30,
+  phaseName: "N1 Grammar",
+  week: Math.ceil(1594 / 7),
+  title: "Emphatic Reason: ～ばこそ",
+  intro: "The pattern ～ばこそ means 'precisely because' and emphasizes that the reason for an action is a positive or deeply felt motivation.",
+  type: "grammar",
+  vocab: [["叱咤","しった","reprimand, encouragement"],["期待","きたい","expectation, anticipation"],["厳しい","きびしい","strict, severe"],["成長","せいちょう","growth, development"],["愛情","あいじょう","love, affection"],["信頼","しんらい","trust, confidence"]],
+  chars: [],
+  grammar: {"pattern":"～ばこそ","meaning":"precisely because ~ (positive emphasis)","example_jp":"あなたの成長を期待すればこそ、厳しいことを言うのだ。","example_en":"It is precisely because I expect great things from you that I say harsh things."},
+  practice: "Write sentences using ～ばこそ to justify an action by emphasizing its positive underlying motivation.",
+  tip: "Unlike most conditional patterns, ～ばこそ always frames the reason in a positive or noble light."
+});
+
+curriculum.push({
+  day: 1595,
+  phaseNum: 30,
+  phaseName: "N1 Grammar",
+  week: Math.ceil(1595 / 7),
+  title: "Special Circumstances: ～とあれば",
+  intro: "The pattern ～とあれば expresses 'if it is the case that ~' and implies willingness to act because of a special circumstance.",
+  type: "grammar",
+  vocab: [["窮地","きゅうち","predicament, tight spot"],["駆けつける","かけつける","to rush to"],["懇願","こんがん","earnest request"],["報酬","ほうしゅう","reward, compensation"],["惜しむ","おしむ","to spare, to grudge"],["尽力","じんりょく","utmost effort"]],
+  chars: [],
+  grammar: {"pattern":"～とあれば","meaning":"if it is the case that ~ (willingness due to special case)","example_jp":"友人の窮地とあれば、何を差し置いても駆けつける。","example_en":"If a friend is in a predicament, I'll rush over no matter what else I have to set aside."},
+  practice: "Practice ～とあれば in sentences where a special situation motivates extraordinary action.",
+  tip: "This pattern conveys a sense of noble readiness — the speaker is willing to go beyond normal limits for a worthy cause."
+});
+
+curriculum.push({
+  day: 1596,
+  phaseNum: 30,
+  phaseName: "N1 Grammar",
+  week: Math.ceil(1596 / 7),
+  title: "Causal Circumstances: ～とあって",
+  intro: "The pattern ～とあって means 'because of the special circumstance that ~' and explains why something extraordinary occurs.",
+  type: "grammar",
+  vocab: [["殺到","さっとう","flood of, rush"],["希少","きしょう","rare, scarce"],["行列","ぎょうれつ","queue, line"],["限定","げんてい","limited, restricted"],["即日","そくじつ","same day"],["完売","かんばい","sold out"]],
+  chars: [],
+  grammar: {"pattern":"～とあって","meaning":"because of the special circumstance that ~","example_jp":"限定品の発売とあって、開店前から長い行列ができていた。","example_en":"Because it was a limited-edition release, a long queue had formed before the store opened."},
+  practice: "Write three sentences using ～とあって to explain why something unusual happened due to special circumstances.",
+  tip: "While ～とあれば focuses on willingness, ～とあって focuses on explaining why an unusual result occurred."
+});
+
+curriculum.push({
+  day: 1597,
+  phaseNum: 30,
+  phaseName: "N1 Grammar",
+  week: Math.ceil(1597 / 7),
+  title: "Condition & Concession Review I",
+  intro: "Today we review and consolidate the condition and concession patterns studied this week, practicing them in varied contexts.",
+  type: "grammar",
+  vocab: [["撤回","てっかい","withdrawal, retraction"],["妥協","だきょう","compromise"],["譲歩","じょうほ","concession, compromise"],["紛争","ふんそう","dispute, conflict"],["和解","わかい","reconciliation, settlement"],["調停","ちょうてい","mediation, arbitration"]],
+  chars: [],
+  grammar: {"pattern":"～たところで～ものを","meaning":"even if ~ (futile), when ~ could have (regret)","example_jp":"今さら撤回したところで遅い。最初に妥協していれば済んだものを。","example_en":"Even if you retract it now, it's too late. If only you'd compromised at the beginning."},
+  practice: "Combine two or more of this week's patterns in a single paragraph about a negotiation or dispute.",
+  tip: "When reviewing, try to explain each pattern to an imaginary student. Teaching is one of the most effective ways to solidify understanding."
+});
+
+curriculum.push({
+  day: 1598,
+  phaseNum: 30,
+  phaseName: "N1 Grammar",
+  week: Math.ceil(1598 / 7),
+  title: "Condition & Concession Review II",
+  intro: "Continuing our review, today we apply condition and concession patterns in longer, more complex sentences.",
+  type: "grammar",
+  vocab: [["弁明","べんめい","explanation, justification"],["釈明","しゃくめい","explanation, vindication"],["弾劾","だんがい","impeachment, denunciation"],["抗弁","こうべん","protest, objection"],["免責","めんせき","exemption from liability"],["過失","かしつ","negligence, fault"]],
+  chars: [],
+  grammar: {"pattern":"～にもせよ～をよそに","meaning":"even though ~ , ignoring ~","example_jp":"過失があったにもせよ、世論をよそに免責を主張するのは無理がある。","example_en":"Even granting there was negligence, ignoring public opinion to claim exemption is unreasonable."},
+  practice: "Write a persuasive paragraph using at least three different condition/concession patterns from this section.",
+  tip: "In formal argumentation, layering multiple concession patterns shows sophisticated command of the language."
+});
+
+curriculum.push({
+  day: 1599,
+  phaseNum: 30,
+  phaseName: "N1 Grammar",
+  week: Math.ceil(1599 / 7),
+  title: "Condition & Concession Practice",
+  intro: "Today is focused on intensive practice with all the condition and concession patterns from days 1586-1598.",
+  type: "grammar",
+  vocab: [["施行","しこう","enforcement, implementation"],["撤廃","てっぱい","abolition, repeal"],["遵守","じゅんしゅ","compliance, observance"],["拘束","こうそく","restraint, binding"],["緩和","かんわ","relaxation, easing"],["法規","ほうき","laws and regulations"]],
+  chars: [],
+  grammar: {"pattern":"～であれ～であれ～ばこそ","meaning":"whether ~ or ~, precisely because ~","example_jp":"国内法であれ国際法であれ、人権を守ればこそ法規は意味を持つ。","example_en":"Whether domestic or international law, it is precisely because they protect human rights that regulations have meaning."},
+  practice: "Create a mini-essay of 5-6 sentences using at least four patterns from this section on the topic of law and society.",
+  tip: "Try to use these patterns in your own journal writing. Real-world practice cements classroom learning."
+});
+
+curriculum.push({
+  day: 1600,
+  phaseNum: 30,
+  phaseName: "N1 Grammar",
+  week: Math.ceil(1600 / 7),
+  title: "Reading: Condition & Concession in Context",
+  intro: "Today is a reading day. Apply the condition and concession patterns you have learned through an extended passage about environmental policy.",
+  type: "reading",
+  vocab: [["環境保全","かんきょうほぜん","environmental conservation"],["持続可能","じぞくかのう","sustainable"],["排出","はいしゅつ","emission, discharge"],["削減","さくげん","reduction, cutback"],["再生可能","さいせいかのう","renewable"]],
+  chars: [],
+  grammar: {"pattern":"～ようものなら","meaning":"if you dare to ~ (dire consequence)","example_jp":"この問題を放置しようものなら、取り返しのつかない事態に陥る。","example_en":"If we dare to neglect this problem, we will fall into an irreversible situation."},
+  practice: "Read the passage carefully. Answer the comprehension questions, then summarize the author's stance using condition/concession grammar.",
+  tip: "When encountering these patterns in reading, pay attention to the emotional tone each one conveys — warning, regret, emphasis, or resignation.",
+  passage: {"text_jp":"地球温暖化問題は、もはや一国の努力では解決し得ない段階に達している。先進国であれ途上国であれ、すべての国が協力しなければ持続可能な未来は望めない。とはいえ、経済発展を犠牲にしようものなら国民生活は立ち行かなくなる。この矛盾をよそに、一部の指導者は依然として短期的利益を優先している。環境活動家の懸念をよそに、排出削減目標は先送りされ続けてきた。しかし、このまま問題を放置したところで事態が好転するはずもない。むしろ、再生可能エネルギーへの転換を加速すればこそ、新たな経済成長の可能性が開ける。各国の事情が異なるにもせよ、地球規模の危機に対しては国境を越えた連帯が不可欠である。過去の失敗を嘆いても始まらない。今こそ具体的な行動を起こすべき時であり、次世代への責任とあれば、多少の犠牲は受け入れなければならない。この問題を先送りにしたが最後、後世の人々が支払う代償は計り知れないものとなるだろう。国際社会は数十年にわたり温暖化対策を議論してきたが、各国の利害が対立するところを調整することすらままならない状況が続いている。経済成長と環境保全の両立は困難を極めるが、技術革新と政策的な支援があれば決して不可能ではない。化石燃料に依存し続けたところで資源はいずれ枯渇する。持続可能な社会の構築は、現代に生きる我々にとって避けて通れない課題なのである。温暖化の影響は、海面上昇や異常気象にとどまらず、農業生産や生態系の破壊にまで及んでいる。科学者たちの警告をよそに対策が遅れようものなら、被害は加速度的に拡大する。一国の繁栄にもせよ、地球全体の存続なくしてはその意味を失う。先進国であれ途上国であれ、この危機を乗り越えるためには互いの立場を尊重し、共通の目標に向かって歩み寄る姿勢が求められる。子供たちの未来とあれば、現世代の我々が率先して行動を起こすのは当然の義務である。我々は今、歴史の転換点に立っているのだ。","text_en":"The problem of global warming has reached a stage where it can no longer be solved by the efforts of a single country. Whether developed or developing, all nations must cooperate or a sustainable future cannot be hoped for. That said, if economic development were to be sacrificed, citizens' livelihoods would become untenable. Ignoring this contradiction, some leaders still prioritize short-term gains. Paying no heed to environmental activists' concerns, emission reduction targets have continued to be postponed. However, even if we leave the problem as it is, there is no way the situation will improve. Rather, it is precisely by accelerating the transition to renewable energy that new possibilities for economic growth will open up. Even granting that each country's circumstances differ, cross-border solidarity is indispensable for a global-scale crisis. Lamenting past failures gets us nowhere. Now is the time to take concrete action, and if it is a matter of responsibility to future generations, some sacrifice must be accepted. Once this problem is postponed, the price future generations will pay will be immeasurable. The international community has debated climate measures for decades, yet coordinating conflicting national interests remains elusive. Balancing economic growth and environmental conservation is extremely difficult, but with technological innovation and policy support it is by no means impossible. Even if we continue to depend on fossil fuels, resources will eventually be exhausted. Building a sustainable society is an unavoidable challenge for those of us living in the present day.","questions":[{"question_jp":"筆者が排出削減目標の先送りの原因として指摘しているのは何ですか。","question_en":"What does the author point to as the cause of postponing emission reduction targets?","answer":"一部の指導者が短期的利益を優先し、環境活動家の懸念をよそにしていること"},{"question_jp":"筆者は再生可能エネルギーへの転換についてどのような立場を取っていますか。","question_en":"What position does the author take regarding the transition to renewable energy?","answer":"転換を加速すればこそ新たな経済成長の可能性が開けるという肯定的立場"}]}
+});
+
+curriculum.push({
+  day: 1601,
+  phaseNum: 30,
+  phaseName: "N1 Grammar",
+  week: Math.ceil(1601 / 7),
+  title: "Degree & Comparison I: ～んばかりに",
+  intro: "Today we begin degree and comparison patterns. The grammar ～んばかりに describes doing something 'as if about to' — an extreme degree of action or emotion.",
+  type: "grammar",
+  vocab: [["溢れる","あふれる","to overflow"],["感涙","かんるい","tears of emotion"],["握り締める","にぎりしめる","to grip tightly"],["抱擁","ほうよう","embrace, hug"],["歓喜","かんき","joy, jubilation"],["泣き崩れる","なきくずれる","to collapse in tears"]],
+  chars: [],
+  grammar: {"pattern":"～んばかりに","meaning":"as if about to ~ (extreme degree)","example_jp":"彼女は泣き崩れんばかりに感謝の言葉を述べた。","example_en":"She expressed her gratitude as if she were about to collapse in tears."},
+  practice: "Write three sentences using ～んばかりに to describe someone doing something with extreme intensity.",
+  tip: "The ん in ～んばかりに comes from the classical negative auxiliary ぬ. Think of it as 'to the point of almost doing.'"
+});
+
+curriculum.push({
+  day: 1602,
+  phaseNum: 30,
+  phaseName: "N1 Grammar",
+  week: Math.ceil(1602 / 7),
+  title: "Literary Simile: ～が如く / ～の如く",
+  intro: "The classical pattern ～が如く / ～の如く means 'as if' or 'like' and appears in literary, formal, and proverbial contexts.",
+  type: "grammar",
+  vocab: [["矢","や","arrow"],["光陰","こういん","time, time and tide"],["疾風","しっぷう","gale, swift wind"],["迅雷","じんらい","thunderclap"],["流星","りゅうせい","shooting star"],["怒涛","どとう","raging waves"]],
+  chars: [],
+  grammar: {"pattern":"～が如く / ～の如く","meaning":"as if / like (literary, classical)","example_jp":"光陰矢の如し。一日一日を大切に過ごさなければならない。","example_en":"Time flies like an arrow. We must cherish each and every day."},
+  practice: "Find and analyze three Japanese proverbs or literary phrases that use 如く, then write your own sentences.",
+  tip: "The particle が vs の before 如く reflects classical grammar. In modern usage, both forms are seen in set expressions."
+});
+
+curriculum.push({
+  day: 1603,
+  phaseNum: 30,
+  phaseName: "N1 Grammar",
+  week: Math.ceil(1603 / 7),
+  title: "Exceeding Comparison: ～にも増して",
+  intro: "Today's pattern ～にも増して means 'more than ~' or 'even more than ~,' used to compare the current situation to something already significant.",
+  type: "grammar",
+  vocab: [["意欲","いよく","motivation, eagerness"],["熱意","ねつい","enthusiasm, zeal"],["従前","じゅうぜん","previous, former"],["一段と","いちだんと","even more, further"],["高揚","こうよう","exaltation, uplift"],["奮起","ふんき","being roused to action"]],
+  chars: [],
+  grammar: {"pattern":"～にも増して","meaning":"more than ~ / even more than ~","example_jp":"今年は例年にも増して熱意を持って取り組んでいる。","example_en":"This year, we are tackling it with even more enthusiasm than in previous years."},
+  practice: "Write sentences using ～にも増して to compare a current state to a previously notable one.",
+  tip: "This pattern often appears in speeches and formal greetings, especially at the beginning of a new year or project."
+});
+
+curriculum.push({
+  day: 1604,
+  phaseNum: 30,
+  phaseName: "N1 Grammar",
+  week: Math.ceil(1604 / 7),
+  title: "Dismissive Comparison: ～ならいざ知らず",
+  intro: "The pattern ～ならいざ知らず means 'I don't know about ~ but' and dismisses one scenario as irrelevant while focusing on the real issue.",
+  type: "grammar",
+  vocab: [["初心者","しょしんしゃ","beginner"],["熟練","じゅくれん","skilled, experienced"],["許される","ゆるされる","to be permitted"],["容認","ようにん","approval, tolerance"],["見過ごす","みすごす","to overlook, to let pass"],["当然","とうぜん","natural, expected"]],
+  chars: [],
+  grammar: {"pattern":"～ならいざ知らず","meaning":"I don't know about ~ but (dismissive comparison)","example_jp":"初心者ならいざ知らず、熟練者がこんなミスをするとは信じられない。","example_en":"For a beginner I wouldn't know, but for an expert to make such a mistake is unbelievable."},
+  practice: "Create sentences using ～ならいざ知らず where you dismiss one case as potentially acceptable while criticizing another.",
+  tip: "This pattern is useful for expressing that different standards apply to different people or situations."
+});
+
+curriculum.push({
+  day: 1605,
+  phaseNum: 30,
+  phaseName: "N1 Grammar",
+  week: Math.ceil(1605 / 7),
+  title: "Additive Emphasis: ～もさることながら",
+  intro: "The pattern ～もさることながら means '~ goes without saying, but also' — it acknowledges one thing while emphasizing another equally or more important factor.",
+  type: "grammar",
+  vocab: [["内容","ないよう","content, substance"],["構成","こうせい","composition, structure"],["演出","えんしゅつ","production, direction"],["脚本","きゃくほん","screenplay, script"],["演技","えんぎ","acting, performance"],["音響","おんきょう","acoustics, sound"]],
+  chars: [],
+  grammar: {"pattern":"～もさることながら","meaning":"~ goes without saying, but also / not only ~ but also","example_jp":"脚本もさることながら、俳優の演技が観客を魅了した。","example_en":"The screenplay goes without saying, but the actors' performances captivated the audience."},
+  practice: "Write sentences using ～もさることながら to praise multiple aspects of something, emphasizing the second.",
+  tip: "This elegant pattern is perfect for reviews and evaluations where you want to highlight multiple strong points."
+});
+
+curriculum.push({
+  day: 1606,
+  phaseNum: 30,
+  phaseName: "N1 Grammar",
+  week: Math.ceil(1606 / 7),
+  title: "Inclusive Extent: ～に至るまで",
+  intro: "The pattern ～に至るまで means 'extending even to' or 'reaching as far as,' emphasizing the thoroughness or breadth of something.",
+  type: "grammar",
+  vocab: [["細部","さいぶ","details, fine points"],["隅々","すみずみ","every nook and cranny"],["末端","まったん","extremity, end"],["徹底","てってい","thoroughness"],["網羅","もうら","comprehensive coverage"],["緻密","ちみつ","meticulous, elaborate"]],
+  chars: [],
+  grammar: {"pattern":"～に至るまで","meaning":"extending even to / reaching as far as ~","example_jp":"デザインの細部に至るまで徹底的にこだわり抜いた作品だ。","example_en":"It is a work crafted with thorough attention extending even to the finest details of the design."},
+  practice: "Describe something comprehensive using ～に至るまで, emphasizing how thorough or extensive it is.",
+  tip: "This pattern highlights completeness. It works well with words like すべて, 隅々, 細部 to reinforce the thorough nature."
+});
+
+curriculum.push({
+  day: 1607,
+  phaseNum: 30,
+  phaseName: "N1 Grammar",
+  week: Math.ceil(1607 / 7),
+  title: "Starting Point: ～を皮切りに",
+  intro: "The pattern ～を皮切りに means 'starting with ~' and describes the first in a series of events or developments that follow.",
+  type: "grammar",
+  vocab: [["公演","こうえん","public performance"],["巡業","じゅんぎょう","tour, circuit"],["開催","かいさい","holding, hosting"],["展開","てんかい","development, deployment"],["拡大","かくだい","expansion, enlargement"],["連鎖","れんさ","chain, series"]],
+  chars: [],
+  grammar: {"pattern":"～を皮切りに","meaning":"starting with ~ / beginning from ~","example_jp":"東京公演を皮切りに、全国二十都市を巡る演奏会が開催される。","example_en":"Starting with the Tokyo performance, concerts will be held touring twenty cities nationwide."},
+  practice: "Write sentences using ～を皮切りに to describe the beginning of a series of events or expansions.",
+  tip: "The word 皮切り literally means 'skin-cutting' — referring to the first incision in moxibustion. It always implies subsequent related events."
+});
+
+curriculum.push({
+  day: 1608,
+  phaseNum: 30,
+  phaseName: "N1 Grammar",
+  week: Math.ceil(1608 / 7),
+  title: "Exclusive Extension: ～ひとり～だけでなく",
+  intro: "The pattern ～ひとり～だけでなく means 'not only ~ alone' and emphasizes that something extends beyond a single entity.",
+  type: "grammar",
+  vocab: [["当事者","とうじしゃ","person concerned, party"],["関係者","かんけいしゃ","people involved"],["波及","はきゅう","spread, ripple effect"],["影響","えいきょう","influence, impact"],["及ぶ","およぶ","to reach, to extend"],["社会全体","しゃかいぜんたい","society as a whole"]],
+  chars: [],
+  grammar: {"pattern":"～ひとり～だけでなく","meaning":"not only ~ alone (but also extending to)","example_jp":"この問題はひとり当事者だけでなく、社会全体に影響を及ぼしている。","example_en":"This problem affects not only the parties involved alone but society as a whole."},
+  practice: "Create sentences using ～ひとり～だけでなく to show that an issue or quality extends beyond one group.",
+  tip: "The ひとり here means 'only' or 'alone,' not 'one person.' It pairs with だけでなく to form a sophisticated 'not just' construction."
+});
+
+curriculum.push({
+  day: 1609,
+  phaseNum: 30,
+  phaseName: "N1 Grammar",
+  week: Math.ceil(1609 / 7),
+  title: "Point of No Return: ～が最後",
+  intro: "The pattern ～が最後 is closely related to ～たが最後 but can be used with different verb forms. It expresses that once something starts, there is no going back.",
+  type: "grammar",
+  vocab: [["口論","こうろん","quarrel, argument"],["激化","げきか","intensification"],["収拾","しゅうしゅう","settlement, resolution"],["泥仕合","どろじあい","mudslinging match"],["修復","しゅうふく","repair, restoration"],["断絶","だんぜつ","severance, rupture"]],
+  chars: [],
+  grammar: {"pattern":"～が最後","meaning":"once ~ (no going back, irreversible)","example_jp":"口論が始まったが最後、二人の関係は修復不可能なまでに悪化した。","example_en":"Once the argument started, the relationship between the two deteriorated beyond repair."},
+  practice: "Compare ～が最後 and ～たが最後 by writing parallel sentences. Note any differences in nuance or usage.",
+  tip: "Both ～が最後 and ～たが最後 express irreversibility, but ～たが最後 is more commonly seen in modern usage."
+});
+
+curriculum.push({
+  day: 1610,
+  phaseNum: 30,
+  phaseName: "N1 Grammar",
+  week: Math.ceil(1610 / 7),
+  title: "Optimal Choice: ～に越したことはない",
+  intro: "The pattern ～に越したことはない means 'nothing is better than ~' or 'it's best to ~,' expressing the ideal or safest option.",
+  type: "grammar",
+  vocab: [["予防","よぼう","prevention"],["早期","そうき","early stage"],["発見","はっけん","discovery, detection"],["備え","そなえ","preparation, provision"],["用心","ようじん","caution, vigilance"],["万全","ばんぜん","perfect, thorough"]],
+  chars: [],
+  grammar: {"pattern":"～に越したことはない","meaning":"nothing is better than ~ / it's best to ~","example_jp":"病気は早期発見に越したことはない。日頃から健康診断を受けるべきだ。","example_en":"There's nothing better than early detection of illness. You should get regular health checkups."},
+  practice: "Write five sentences using ～に越したことはない to give advice about the best course of action in various situations.",
+  tip: "This pattern is very practical and commonly used in everyday conversation, not just formal writing."
+});
+
+curriculum.push({
+  day: 1611,
+  phaseNum: 30,
+  phaseName: "N1 Grammar",
+  week: Math.ceil(1611 / 7),
+  title: "Degree & Comparison Review I",
+  intro: "Today we review the degree and comparison patterns from this section, consolidating understanding through practice.",
+  type: "grammar",
+  vocab: [["評価","ひょうか","evaluation, assessment"],["水準","すいじゅん","level, standard"],["卓越","たくえつ","excellence, superiority"],["凌駕","りょうが","surpassing, exceeding"],["比肩","ひけん","comparable to, rivaling"],["追随","ついずい","following, emulation"]],
+  chars: [],
+  grammar: {"pattern":"～にも増して～もさることながら","meaning":"more than ~ , not only ~ but also","example_jp":"昨年にも増して成果を上げた。技術力もさることながら、チームワークが卓越していた。","example_en":"We achieved even more results than last year. Technical ability goes without saying, but the teamwork was outstanding."},
+  practice: "Write a review of a product, movie, or experience using at least three degree/comparison patterns from this section.",
+  tip: "When combining multiple patterns in one text, ensure each one adds a distinct layer of meaning."
+});
+
+curriculum.push({
+  day: 1612,
+  phaseNum: 30,
+  phaseName: "N1 Grammar",
+  week: Math.ceil(1612 / 7),
+  title: "Degree & Comparison Review II",
+  intro: "Continuing the review of degree and comparison patterns with focus on producing natural, flowing text.",
+  type: "grammar",
+  vocab: [["顕著","けんちょ","remarkable, conspicuous"],["著しい","いちじるしい","striking, notable"],["目覚ましい","めざましい","spectacular"],["飛躍","ひやく","leap, dramatic advance"],["躍進","やくしん","rapid progress"],["成就","じょうじゅ","achievement, fulfillment"]],
+  chars: [],
+  grammar: {"pattern":"～を皮切りに～に至るまで","meaning":"starting with ~ extending even to ~","example_jp":"東京を皮切りに地方都市に至るまで、飛躍的な経済成長が見られた。","example_en":"Starting with Tokyo and extending even to regional cities, dramatic economic growth was observed."},
+  practice: "Create a narrative about a success story using ～を皮切りに, ～に至るまで, and ～んばかりに.",
+  tip: "Reading practice: look for these patterns in Japanese newspaper editorials to see how professionals combine them."
+});
+
+curriculum.push({
+  day: 1613,
+  phaseNum: 30,
+  phaseName: "N1 Grammar",
+  week: Math.ceil(1613 / 7),
+  title: "Degree & Comparison Synthesis",
+  intro: "Today's practice integrates all degree and comparison patterns into complex, multi-layered sentences and paragraphs.",
+  type: "grammar",
+  vocab: [["貢献","こうけん","contribution"],["功績","こうせき","achievement, merit"],["称賛","しょうさん","praise, admiration"],["栄誉","えいよ","honor, glory"],["偉業","いぎょう","great achievement"],["金字塔","きんじとう","monument, milestone"]],
+  chars: [],
+  grammar: {"pattern":"～ならいざ知らず～ひとり～だけでなく","meaning":"unlike ~ , not only ~ alone but also","example_jp":"個人の功績ならいざ知らず、ひとり研究チームだけでなく大学全体の栄誉だ。","example_en":"If it were an individual achievement that's one thing, but this is an honor not only for the research team alone but the entire university."},
+  practice: "Write a speech or formal address using at least five degree/comparison patterns, celebrating someone's achievements.",
+  tip: "At this stage, focus on choosing the right pattern for the right context. Not all patterns are interchangeable."
+});
+
+curriculum.push({
+  day: 1614,
+  phaseNum: 30,
+  phaseName: "N1 Grammar",
+  week: Math.ceil(1614 / 7),
+  title: "Degree & Comparison Practice",
+  intro: "An intensive practice session focused on producing natural text using all degree and comparison patterns studied.",
+  type: "grammar",
+  vocab: [["精緻","せいち","elaborate, exquisite"],["洗練","せんれん","refinement, sophistication"],["珠玉","しゅぎょく","gem, jewel"],["秀逸","しゅういつ","excellence, outstanding"],["白眉","はくび","the best, the finest"],["圧巻","あっかん","climax, highlight"]],
+  chars: [],
+  grammar: {"pattern":"～が如く～んばかりに","meaning":"as if ~ , as if about to ~","example_jp":"彼の演奏は流星が如く華やかで、聴衆は泣き崩れんばかりに感動した。","example_en":"His performance was as brilliant as a shooting star, and the audience was moved almost to the point of tears."},
+  practice: "Write a review or critique of an artistic work using as many degree/comparison patterns as natural.",
+  tip: "Practice reading your sentences aloud. If they sound natural when spoken, you have mastered the patterns."
+});
+
+curriculum.push({
+  day: 1615,
+  phaseNum: 30,
+  phaseName: "N1 Grammar",
+  week: Math.ceil(1615 / 7),
+  title: "Reading: Degree & Comparison in Context",
+  intro: "Today is a reading day. Apply the degree and comparison patterns you have studied through an extended passage about Japanese craftsmanship.",
+  type: "reading",
+  vocab: [["匠","たくみ","artisan, master craftsman"],["技巧","ぎこう","technique, skill"],["伝承","でんしょう","传承, handing down"],["継承","けいしょう","succession, inheritance"],["職人気質","しょくにんかたぎ","craftsman spirit"]],
+  chars: [],
+  grammar: {"pattern":"～もさることながら","meaning":"~ goes without saying, but also","example_jp":"技術もさることながら、職人の精神性が作品に息づいている。","example_en":"The technique goes without saying, but the craftsman's spirituality lives on in the work."},
+  practice: "Read the passage carefully. Answer the comprehension questions, then write your own paragraph about a craft you admire using degree/comparison patterns.",
+  tip: "When reading, underline each grammar pattern you recognize. This active reading strategy dramatically improves retention.",
+  passage: {"text_jp":"日本の伝統工芸は、その精緻さにおいて世界に比肩するものがない。陶芸を皮切りに、漆器、織物、刀剣に至るまで、あらゆる分野で匠の技が光っている。例年にも増して注目を集めているのは、若い世代の職人たちである。彼らは伝統的な技法もさることながら、現代的な感性を融合させた新しい表現に挑戦している。初心者ならいざ知らず、何十年もの修行を積んだ熟練の職人でさえ、日々の研鑽を怠ることはない。その姿は、まさに求道者が如く真摯であり、泣き崩れんばかりの感動を見る者に与える。ひとり日本国内だけでなく、海外からも多くの愛好家が訪れ、職人の工房を見学している。細部に至るまで一切の妥協を許さぬその姿勢は、量産品に越したことはないと考える現代の消費文化への静かなる抗議でもある。こうした伝統の継承は、技術の伝達にとどまらず、日本人の美意識そのものの伝承である。次世代の匠たちは、先人の偉業を超えんばかりの勢いで、新たな金字塔を打ち立てようとしている。地方の小さな工房にも増して、都市部の展示会が若手作家の発表の場となっている。素材の選定から仕上げに至るまで、一つとして同じものが存在しない手仕事の世界は、効率一辺倒の現代社会に問いを投げかけている。伝統工芸の未来は、過去を守るだけでは開けまい。革新と継承の両輪があってこそ、日本の匠の技は世界に誇れる文化遺産として輝き続けるのである。量産品ならいざ知らず、一点一点に魂を込めて作られた工芸品には、作り手の人生そのものが宿っている。その価値は金銭にも増して深く、手にした者の心を豊かにする力がある。我が国の伝統工芸は、単なる産業を超えた精神文化の結晶であり、それを次の世代へと伝えることは我々の責務にほかならない。技術の研鑽を怠ることなしに、絶えず高みを目指し続けてきた先人たちの姿勢こそが、日本のものづくりの根幹を支えてきたのである。この伝統を途絶えさせたが最後、二度と取り戻すことはできまい。","text_en":"Japanese traditional crafts are unrivaled in the world in their elaborateness. Starting with ceramics, and extending even to lacquerware, textiles, and swords, artisans' skills shine in every field. Attracting even more attention than in previous years are the young generation of craftspeople. Not only are their traditional techniques noteworthy, but they are also challenging themselves with new expressions that fuse modern sensibilities. For beginners that might be expected, but even veteran craftspeople with decades of training never neglect daily refinement. Their appearance is as sincere as that of a seeker of truth, giving viewers almost overwhelming emotion. Not only within Japan alone but from overseas as well, many enthusiasts visit and tour craftspeople's workshops. Their stance of permitting no compromise down to the finest details is also a quiet protest against the modern consumer culture that considers mass-produced goods sufficient. Such succession of tradition is not merely the transmission of technique but the passing down of the Japanese aesthetic sense itself. The next generation of artisans, with momentum as if to surpass the great achievements of their predecessors, are attempting to establish new milestones. More than the small workshops in rural areas, urban exhibitions have become venues for young artists to present their work. The world of handcraft, where no two pieces are the same from material selection through to finishing, poses a question to the efficiency-obsessed modern society. The future of traditional crafts probably cannot be opened by preserving the past alone. It is precisely with both wheels of innovation and succession that Japanese artisanship will continue to shine as a cultural heritage the world can be proud of.","questions":[{"question_jp":"筆者は若い世代の職人の特徴として何を挙げていますか。","question_en":"What does the author cite as a characteristic of the younger generation of craftspeople?","answer":"伝統的な技法に加えて、現代的な感性を融合させた新しい表現に挑戦していること"},{"question_jp":"筆者は伝統工芸の継承をどのように位置づけていますか。","question_en":"How does the author characterize the succession of traditional crafts?","answer":"技術の伝達にとどまらず、日本人の美意識そのものの伝承であると位置づけている"}]}
+});
+
+curriculum.push({
+  day: 1616,
+  phaseNum: 30,
+  phaseName: "N1 Grammar",
+  week: Math.ceil(1616 / 7),
+  title: "Classical Reasoning: ～ゆえに / ～ゆえの",
+  intro: "Today we begin reasoning and basis patterns. The classical ～ゆえに means 'therefore' or 'because of' and is used in formal, literary contexts.",
+  type: "grammar",
+  vocab: [["宿命","しゅくめい","fate, destiny"],["葛藤","かっとう","conflict, inner struggle"],["苦悩","くのう","anguish, suffering"],["逃れる","のがれる","to escape from"],["宿業","しゅくごう","karma, fate"],["甘受","かんじゅ","acceptance, resignation"]],
+  chars: [],
+  grammar: {"pattern":"～ゆえに","meaning":"therefore / because of ~ (formal, literary)","example_jp":"人間であるがゆえに、我々は葛藤から逃れることはできない。","example_en":"Because we are human, we cannot escape from inner conflict."},
+  practice: "Write three sentences using ～ゆえに in both the 'because of' and 'therefore' meanings.",
+  tip: "The particle が before ゆえに is optional but adds classical elegance. Both ～ゆえに and ～がゆえに are correct."
+});
+
+curriculum.push({
+  day: 1617,
+  phaseNum: 30,
+  phaseName: "N1 Grammar",
+  week: Math.ceil(1617 / 7),
+  title: "Circumstantial Reasoning: ～ことゆえ",
+  intro: "The pattern ～ことゆえ means 'because of the fact that ~' and is used in formal apologies, explanations, and polite contexts.",
+  type: "grammar",
+  vocab: [["不慣れ","ふなれ","unfamiliar, inexperienced"],["至らぬ","いたらぬ","inadequate, lacking"],["未熟","みじゅく","immature, inexperienced"],["寛容","かんよう","tolerance, magnanimity"],["容赦","ようしゃ","pardon, forgiveness"],["拙い","つたない","unskillful, poor"]],
+  chars: [],
+  grammar: {"pattern":"～ことゆえ","meaning":"because of the fact that ~ (polite/formal excuse)","example_jp":"不慣れなことゆえ、至らぬ点がございましたらご容赦ください。","example_en":"As I am inexperienced, please forgive me if there are any inadequacies."},
+  practice: "Practice using ～ことゆえ in formal apologies and humble self-introductions.",
+  tip: "This pattern is very common in business settings and formal speeches, particularly when taking on a new role."
+});
+
+curriculum.push({
+  day: 1618,
+  phaseNum: 30,
+  phaseName: "N1 Grammar",
+  week: Math.ceil(1618 / 7),
+  title: "Social Obligation: ～手前",
+  intro: "The pattern ～手前 expresses 'since I said/did ~, I must (maintain face)' — it describes acting due to social obligation or to avoid embarrassment.",
+  type: "grammar",
+  vocab: [["公言","こうげん","public declaration"],["撤回","てっかい","withdrawal, retraction"],["体面","たいめん","dignity, face"],["面目","めんぼく","honor, reputation"],["引っ込み","ひっこみ","withdrawal"],["貫く","つらぬく","to carry through"]],
+  chars: [],
+  grammar: {"pattern":"～手前","meaning":"since (I said/did) ~ I must (for the sake of face)","example_jp":"みんなの前で公言した手前、今さら撤回するわけにはいかない。","example_en":"Since I declared it publicly in front of everyone, I can't very well retract it now."},
+  practice: "Write sentences using ～手前 where social obligations or prior commitments constrain one's choices.",
+  tip: "The literal meaning of 手前 is 'in front of' — think of it as acting because others are watching and you must maintain consistency."
+});
+
+curriculum.push({
+  day: 1619,
+  phaseNum: 30,
+  phaseName: "N1 Grammar",
+  week: Math.ceil(1619 / 7),
+  title: "Hypothetical Means: ～をもってすれば",
+  intro: "The pattern ～をもってすれば means 'if one uses ~' or 'with ~ (hypothetical ability)' and often implies confidence in the means mentioned.",
+  type: "grammar",
+  vocab: [["実力","じつりょく","real ability, capability"],["手腕","しゅわん","skill, capability"],["遂行","すいこう","execution, accomplishment"],["克服","こくふく","overcoming, conquering"],["困難","こんなん","difficulty, hardship"],["突破","とっぱ","breakthrough, breaking through"]],
+  chars: [],
+  grammar: {"pattern":"～をもってすれば","meaning":"if one uses ~ / with ~ (confident hypothetical)","example_jp":"彼の手腕をもってすれば、この困難も必ず克服できるだろう。","example_en":"With his skill, he should surely be able to overcome this difficulty."},
+  practice: "Create sentences using ～をもってすれば expressing confidence in someone's abilities or tools.",
+  tip: "This pattern expresses high confidence. It is often used in recommendations and endorsements."
+});
+
+curriculum.push({
+  day: 1620,
+  phaseNum: 30,
+  phaseName: "N1 Grammar",
+  week: Math.ceil(1620 / 7),
+  title: "Conformity: ～に即して / ～に即した",
+  intro: "The pattern ～に即して means 'in line with' or 'in accordance with' and describes actions or decisions that conform to a standard or reality.",
+  type: "grammar",
+  vocab: [["実態","じったい","actual conditions, reality"],["方針","ほうしん","policy, direction"],["理念","りねん","principle, ideal"],["原則","げんそく","principle, ground rule"],["準拠","じゅんきょ","conformity, compliance"],["適合","てきごう","conformity, fitness"]],
+  chars: [],
+  grammar: {"pattern":"～に即して","meaning":"in line with / in accordance with ~","example_jp":"現場の実態に即した政策を立案する必要がある。","example_en":"It is necessary to formulate policies in line with actual conditions on the ground."},
+  practice: "Write sentences using both ～に即して and ～に即した (adnominal form) to describe conforming to standards or reality.",
+  tip: "The て form (に即して) modifies verbs, while the た form (に即した) modifies nouns. Both are essential."
+});
+
+curriculum.push({
+  day: 1621,
+  phaseNum: 30,
+  phaseName: "N1 Grammar",
+  week: Math.ceil(1621 / 7),
+  title: "Evidence-Based: ～を踏まえて / ～を踏まえた",
+  intro: "The pattern ～を踏まえて means 'based on' or 'taking into account' and is used when decisions or actions are grounded in prior knowledge or evidence.",
+  type: "grammar",
+  vocab: [["調査結果","ちょうさけっか","survey results"],["先行研究","せんこうけんきゅう","prior research"],["教訓","きょうくん","lesson, moral"],["経験","けいけん","experience"],["前例","ぜんれい","precedent"],["知見","ちけん","knowledge, findings"]],
+  chars: [],
+  grammar: {"pattern":"～を踏まえて","meaning":"based on / taking into account ~","example_jp":"先行研究の知見を踏まえて、新たな仮説を立てた。","example_en":"Based on the findings of prior research, we formulated a new hypothesis."},
+  practice: "Write sentences using ～を踏まえて and ～を踏まえた in academic and business contexts.",
+  tip: "This pattern is ubiquitous in academic writing. Master it to sound natural in research papers and formal reports."
+});
+
+curriculum.push({
+  day: 1622,
+  phaseNum: 30,
+  phaseName: "N1 Grammar",
+  week: Math.ceil(1622 / 7),
+  title: "Reflective Judgment: ～に鑑みて / ～に鑑み",
+  intro: "The pattern ～に鑑みて means 'in light of' or 'considering' and is used in formal contexts when making judgments based on precedents or circumstances.",
+  type: "grammar",
+  vocab: [["現状","げんじょう","current situation"],["経緯","けいい","circumstances, history"],["情勢","じょうせい","situation, state of affairs"],["判断","はんだん","judgment, decision"],["措置","そち","measure, step"],["見地","けんち","viewpoint, standpoint"]],
+  chars: [],
+  grammar: {"pattern":"～に鑑みて","meaning":"in light of / considering ~ (formal judgment)","example_jp":"昨今の国際情勢に鑑みて、安全保障体制の見直しが急務である。","example_en":"In light of the recent international situation, a review of the security framework is an urgent task."},
+  practice: "Practice using ～に鑑みて in formal policy statements and organizational decisions.",
+  tip: "The kanji 鑑 means 'mirror' — the idea is that you look into past events as a mirror to make current judgments."
+});
+
+curriculum.push({
+  day: 1623,
+  phaseNum: 30,
+  phaseName: "N1 Grammar",
+  week: Math.ceil(1623 / 7),
+  title: "Role Identity: ～たる者",
+  intro: "The pattern ～たる者 means 'one who is ~' or 'as someone who holds the position of ~' and defines expectations based on a role or status.",
+  type: "grammar",
+  vocab: [["指導者","しどうしゃ","leader, mentor"],["模範","もはん","model, example"],["矜持","きょうじ","pride, self-respect"],["品格","ひんかく","dignity, character"],["自覚","じかく","self-awareness"],["責務","せきむ","duty, responsibility"]],
+  chars: [],
+  grammar: {"pattern":"～たる者","meaning":"one who is ~ / as someone who is ~","example_jp":"指導者たる者、常に模範を示す責務がある。","example_en":"One who is a leader always has the duty to set an example."},
+  practice: "Write sentences using ～たる者 to describe the expectations and responsibilities of various roles.",
+  tip: "The たる comes from classical Japanese and gives this pattern a solemn, authoritative tone. It appears in speeches and mission statements."
+});
+
+curriculum.push({
+  day: 1624,
+  phaseNum: 30,
+  phaseName: "N1 Grammar",
+  week: Math.ceil(1624 / 7),
+  title: "Nominal Authority: ～の名の下に",
+  intro: "The pattern ～の名の下に means 'in the name of ~' and describes actions taken under the authority or justification of something.",
+  type: "grammar",
+  vocab: [["正義","せいぎ","justice, righteousness"],["大義","たいぎ","great cause, just cause"],["自由","じゆう","freedom, liberty"],["弾圧","だんあつ","oppression, suppression"],["侵略","しんりゃく","invasion, aggression"],["横暴","おうぼう","tyranny, high-handedness"]],
+  chars: [],
+  grammar: {"pattern":"～の名の下に","meaning":"in the name of ~","example_jp":"正義の名の下に行われる横暴ほど、危険なものはない。","example_en":"There is nothing more dangerous than tyranny carried out in the name of justice."},
+  practice: "Write sentences using ～の名の下に to describe both positive and negative actions taken under various justifications.",
+  tip: "This pattern can be used neutrally but often carries a critical nuance, questioning whether the stated justification is genuine."
+});
+
+curriculum.push({
+  day: 1625,
+  phaseNum: 30,
+  phaseName: "N1 Grammar",
+  week: Math.ceil(1625 / 7),
+  title: "Prerequisite Negation: ～ことなしに",
+  intro: "The pattern ～ことなしに means 'without doing ~' and implies that the omitted action was necessary or expected as a prerequisite.",
+  type: "grammar",
+  vocab: [["覚悟","かくご","determination, resolve"],["犠牲","ぎせい","sacrifice"],["代償","だいしょう","compensation, price"],["努力","どりょく","effort"],["成果","せいか","result, achievement"],["達成","たっせい","achievement, attainment"]],
+  chars: [],
+  grammar: {"pattern":"～ことなしに","meaning":"without doing ~ (necessary prerequisite omitted)","example_jp":"犠牲を払うことなしに、偉大な成果を達成することはできない。","example_en":"Without making sacrifices, one cannot achieve great results."},
+  practice: "Write sentences using ～ことなしに to express that something cannot be achieved without a necessary step.",
+  tip: "Compare this to ～なしに and ～ずに. The ことなしに form is the most formal and emphasizes the deliberate omission."
+});
+
+curriculum.push({
+  day: 1626,
+  phaseNum: 30,
+  phaseName: "N1 Grammar",
+  week: Math.ceil(1626 / 7),
+  title: "Reasoning & Basis Review I",
+  intro: "Today we review the reasoning and basis patterns studied this section, focusing on distinguishing their specific uses.",
+  type: "grammar",
+  vocab: [["根拠","こんきょ","basis, grounds"],["論拠","ろんきょ","argument, grounds for reasoning"],["裏付け","うらづけ","backing, substantiation"],["立証","りっしょう","proof, demonstration"],["妥当性","だとうせい","validity, appropriateness"],["整合性","せいごうせい","consistency, coherence"]],
+  chars: [],
+  grammar: {"pattern":"～を踏まえて～に即した","meaning":"based on ~ , in line with ~","example_jp":"調査結果を踏まえて実態に即した対策を講じる。","example_en":"Based on the survey results, we will take measures in line with the actual situation."},
+  practice: "Write a formal recommendation or policy proposal using at least four reasoning/basis patterns from this section.",
+  tip: "These reasoning patterns are the backbone of formal argumentation. Mastering them elevates your writing from adequate to sophisticated."
+});
+
+curriculum.push({
+  day: 1627,
+  phaseNum: 30,
+  phaseName: "N1 Grammar",
+  week: Math.ceil(1627 / 7),
+  title: "Reasoning & Basis Review II",
+  intro: "Continuing the review of reasoning and basis patterns with complex, multi-pattern sentences and formal writing practice.",
+  type: "grammar",
+  vocab: [["提言","ていげん","proposal, suggestion"],["答申","とうしん","report, recommendation"],["勧告","かんこく","advisory, recommendation"],["建議","けんぎ","proposal, proposition"],["諮問","しもん","consultation, inquiry"],["審議","しんぎ","deliberation, discussion"]],
+  chars: [],
+  grammar: {"pattern":"～に鑑みて～たる者～手前","meaning":"in light of ~ , one who is ~ , since ~","example_jp":"現状に鑑みて、指導者たる者は率先して行動すべきであり、公言した手前、責任を果たさねばならない。","example_en":"In light of the current situation, one who is a leader should take initiative, and since they declared it publicly, they must fulfill their responsibility."},
+  practice: "Draft a formal committee report using reasoning/basis patterns to justify a set of recommendations.",
+  tip: "When layering reasoning patterns, ensure logical flow: state the evidence, then the basis, then the conclusion."
+});
+
+curriculum.push({
+  day: 1628,
+  phaseNum: 30,
+  phaseName: "N1 Grammar",
+  week: Math.ceil(1628 / 7),
+  title: "Immediate Sequence I: ～なり",
+  intro: "Today we begin simultaneous and sequence patterns. The pattern ～なり means 'as soon as' and describes an action that happens immediately upon completing another.",
+  type: "grammar",
+  vocab: [["駆け込む","かけこむ","to rush in"],["飛び出す","とびだす","to jump out"],["叫ぶ","さけぶ","to shout, to scream"],["掴む","つかむ","to grab, to seize"],["怒鳴る","どなる","to shout angrily"],["立ち上がる","たちあがる","to stand up"]],
+  chars: [],
+  grammar: {"pattern":"～なり","meaning":"as soon as ~ (immediate action follows)","example_jp":"彼は部屋に入るなり、大声で怒鳴り始めた。","example_en":"As soon as he entered the room, he began shouting loudly."},
+  practice: "Write three sentences using ～なり to describe immediate sequences of actions.",
+  tip: "The subject of both clauses must be the same person with ～なり. This distinguishes it from ～や否や."
+});
+
+curriculum.push({
+  day: 1629,
+  phaseNum: 30,
+  phaseName: "N1 Grammar",
+  week: Math.ceil(1629 / 7),
+  title: "Frustrating Repetition: ～そばから",
+  intro: "The pattern ～そばから expresses frustration that no sooner is something done than it is undone — an exasperating cycle of repetition.",
+  type: "grammar",
+  vocab: [["片付ける","かたづける","to tidy up, to clean"],["散らかす","ちらかす","to scatter, to mess up"],["教える","おしえる","to teach"],["忘れる","わすれる","to forget"],["掃除","そうじ","cleaning"],["汚す","よごす","to make dirty"]],
+  chars: [],
+  grammar: {"pattern":"～そばから","meaning":"no sooner than ~ (frustrating repetition)","example_jp":"片付けるそばから子供たちが散らかすので、きりがない。","example_en":"No sooner do I tidy up than the children make a mess again, so it never ends."},
+  practice: "Create sentences using ～そばから to describe repetitive, frustrating cycles in daily life or work.",
+  tip: "This pattern always carries a tone of exasperation. The speaker feels their efforts are being immediately undone."
+});
+
+curriculum.push({
+  day: 1630,
+  phaseNum: 30,
+  phaseName: "N1 Grammar",
+  week: Math.ceil(1630 / 7),
+  title: "Reading: Reasoning & Sequence Patterns in Context",
+  intro: "Today is a reading day combining reasoning and sequence patterns in a passage about institutional reform and the challenges of organizational change.",
+  type: "reading",
+  vocab: [["改編","かいへん","reorganization"],["旧弊","きゅうへい","old abuses, outdated customs"],["刷新","さっしん","reform, renewal"],["抜本的","ばっぽんてき","fundamental, radical"],["停滞","ていたい","stagnation"],["画策","かくさく","scheming, planning"]],
+  chars: [],
+  grammar: {"pattern":"～ゆえに","meaning":"because of ~ / therefore (formal)","example_jp":"組織の停滞ゆえに、抜本的な刷新が求められている。","example_en":"Because of the organization's stagnation, fundamental reform is demanded."},
+  practice: "Read the passage carefully. Answer the comprehension questions, then write your own analysis of an organization using reasoning patterns.",
+  tip: "Pay attention to the logical connectives in the passage. They reveal the author's argumentative strategy.",
+  passage: {"text_jp":"わが国の行政組織は長年にわたって旧弊を引きずってきた。現状に鑑みて、抜本的な改編が不可欠であることは論を俟たない。しかし、改革を唱えるそばから利害関係者の抵抗に遭い、具体的な進展は停滞している。指導者たる者、この困難な局面においてこそ真価が問われるのである。先行事例の教訓を踏まえて慎重に計画を策定し、現場の実態に即した施策を打ち出さなければならない。改革を公言した手前、もはや後退は許されない。組織の硬直化ゆえに優秀な人材が流出しているという現実を直視すべきである。正義の名の下に既得権益を守ろうとする勢力は、変革を阻む最大の障壁である。犠牲を払うことなしに真の刷新は実現し得ない。もっとも、性急な改革は混乱を招く恐れもある。それゆえ、段階的かつ戦略的なアプローチが求められる。国民の信頼を基盤としてこそ、行政改革は持続的な成果を上げることができるのである。変革の道は長く険しいが、ここで歩みを止めるわけにはいかない。諸外国の行政改革の成功例を踏まえて言えば、現場の声に耳を傾けることなしに制度設計を行ったところで、実効性のある施策は生まれまい。改革の理念に即して具体的な工程表を作成し、進捗を国民に公開することが信頼回復の第一歩である。この機会を逃したが最後、次の改革の機運がいつ訪れるか分からない。行政組織たる者、国民の奉仕者としての自覚を持ち、絶えず自己改革に取り組まなければならない。改革の名の下に混乱を引き起こすことは本末転倒であるが、変化を恐れて現状を維持したところで問題は深刻化する一方である。過去の教訓に鑑みて、対話と協調を重んじつつも、決断すべき時には断固たる姿勢で臨むことが肝要である。国民一人ひとりの声に耳を傾けることなしに、真の行政改革は実現し得ない。透明性の確保をもってすれば、国民の理解と協力を得ることも不可能ではないだろう。変革の痛みを甘受する覚悟があればこそ、より良い社会を築くことができるのである。今こそ行動すべき時である。","text_en":"Our nation's administrative organizations have been dragging along old abuses for many years. In light of the current situation, it goes without saying that fundamental reorganization is indispensable. However, no sooner does one advocate reform than resistance from stakeholders is encountered, and concrete progress has stagnated. For one who is a leader, it is precisely in such difficult situations that their true worth is tested. Based on the lessons of prior cases, plans must be carefully formulated and policies in line with actual conditions on the ground must be put forward. Since reform was publicly declared, retreat is no longer permitted. The reality that talented personnel are leaving because of organizational rigidity must be faced squarely. Forces attempting to protect vested interests in the name of justice are the greatest barrier to change. Without making sacrifices, true reform cannot be realized. However, hasty reform also risks causing confusion. Therefore, a gradual and strategic approach is called for. Only on the foundation of public trust can administrative reform achieve sustainable results. The path of reform is long and steep, but we cannot afford to stop moving forward. Based on successful examples of administrative reform in other countries, even if institutional design is carried out without listening to voices on the ground, effective policies will probably not emerge. Creating a concrete roadmap in line with the reform ideals and disclosing progress to the public is the first step toward restoring trust. Once this opportunity is missed, there is no telling when the next momentum for reform will come. Now is the time to act.","questions":[{"question_jp":"筆者は改革停滞の原因として何を挙げていますか。","question_en":"What does the author cite as the cause of reform stagnation?","answer":"利害関係者の抵抗と既得権益を守ろうとする勢力の存在"},{"question_jp":"筆者が最終的に提唱しているアプローチはどのようなものですか。","question_en":"What approach does the author ultimately advocate?","answer":"国民の信頼を基盤とした段階的かつ戦略的なアプローチ"}]}
+});
+
+curriculum.push({
+  day: 1631,
+  phaseNum: 30,
+  phaseName: "N1 Grammar",
+  week: Math.ceil(1631 / 7),
+  title: "Instantaneous Sequence: ～が早いか",
+  intro: "The pattern ～が早いか describes something that happens the very moment an action is completed — 'the moment / as soon as.'",
+  type: "grammar",
+  vocab: [["鳴る","なる","to ring, to sound"],["ベル","べる","bell"],["殺到","さっとう","rush, flood"],["奪い合う","うばいあう","to scramble for"],["群がる","むらがる","to swarm, to crowd"],["押し寄せる","おしよせる","to surge forward"]],
+  chars: [],
+  grammar: {"pattern":"～が早いか","meaning":"the moment / as soon as (instantaneous)","example_jp":"開場のベルが鳴るが早いか、観客は席を奪い合った。","example_en":"The moment the opening bell rang, the audience scrambled for seats."},
+  practice: "Write sentences using ～が早いか to describe instantaneous reactions to events.",
+  tip: "This pattern emphasizes the speed of the reaction. The action in the second clause happens almost simultaneously with the first."
+});
+
+curriculum.push({
+  day: 1632,
+  phaseNum: 30,
+  phaseName: "N1 Grammar",
+  week: Math.ceil(1632 / 7),
+  title: "Instantaneous Sequence II: ～や否や",
+  intro: "The pattern ～や否や means 'the moment' or 'as soon as' and, unlike ～なり, can be used when the two subjects differ.",
+  type: "grammar",
+  vocab: [["到着","とうちゃく","arrival"],["報告","ほうこく","report"],["知らせ","しらせ","news, notification"],["動揺","どうよう","agitation, shock"],["騒然","そうぜん","uproar, commotion"],["慌てる","あわてる","to panic, to be flustered"]],
+  chars: [],
+  grammar: {"pattern":"～や否や","meaning":"the moment / as soon as (different subjects OK)","example_jp":"地震の知らせが届くや否や、会場は騒然となった。","example_en":"The moment the news of the earthquake arrived, the venue was thrown into commotion."},
+  practice: "Compare ～や否や, ～なり, and ～が早いか by writing parallel sentences. Note which allow different subjects.",
+  tip: "While all three express immediacy, ～や否や is the most versatile because the subjects of the two clauses can differ."
+});
+
+curriculum.push({
+  day: 1633,
+  phaseNum: 30,
+  phaseName: "N1 Grammar",
+  week: Math.ceil(1633 / 7),
+  title: "Thwarted Timing: ～矢先に",
+  intro: "The pattern ～矢先に means 'just when about to ~' or 'just at that moment' and describes a plan or expectation that is interrupted.",
+  type: "grammar",
+  vocab: [["出発","しゅっぱつ","departure"],["中止","ちゅうし","cancellation"],["予期","よき","expectation, anticipation"],["頓挫","とんざ","setback, frustration"],["暗転","あんてん","turn for the worse"],["水泡","すいほう","bubble (efforts come to nothing)"]],
+  chars: [],
+  grammar: {"pattern":"～矢先に","meaning":"just when about to ~ (plan interrupted)","example_jp":"出発しようとしていた矢先に、大雪で全便が中止になった。","example_en":"Just when we were about to depart, all flights were cancelled due to heavy snow."},
+  practice: "Write sentences using ～矢先に to describe moments when plans were thwarted by unexpected events.",
+  tip: "矢先 literally means 'the tip of an arrow' — at the very point of release. It always implies an interruption to plans."
+});
+
+curriculum.push({
+  day: 1634,
+  phaseNum: 30,
+  phaseName: "N1 Grammar",
+  week: Math.ceil(1634 / 7),
+  title: "Negative Volition: ～まい",
+  intro: "The auxiliary ～まい expresses negative volition ('intend not to') or negative conjecture ('probably won't'). It has both volitional and speculative uses.",
+  type: "grammar",
+  vocab: [["繰り返す","くりかえす","to repeat"],["後悔","こうかい","regret"],["誓う","ちかう","to swear, to vow"],["決意","けつい","determination, resolve"],["二度と","にどと","never again"],["過ち","あやまち","mistake, error"]],
+  chars: [],
+  grammar: {"pattern":"～まい","meaning":"will probably not / intend not to ~","example_jp":"二度と同じ過ちは繰り返すまいと固く決意した。","example_en":"I firmly resolved that I would never repeat the same mistake."},
+  practice: "Write sentences using ～まい for both negative volition (strong resolve) and negative conjecture (probably won't).",
+  tip: "For godan verbs, attach まい to the dictionary form. For ichidan verbs, both 食べまい and 食べるまい are acceptable."
+});
+
+curriculum.push({
+  day: 1635,
+  phaseNum: 30,
+  phaseName: "N1 Grammar",
+  week: Math.ceil(1635 / 7),
+  title: "Purpose: ～べく",
+  intro: "The pattern ～べく means 'in order to ~' and expresses purpose with a formal, literary tone. It comes from the classical auxiliary べし.",
+  type: "grammar",
+  vocab: [["達成","たっせい","achievement"],["実現","じつげん","realization"],["邁進","まいしん","striving forward"],["精進","しょうじん","devotion, diligence"],["尽くす","つくす","to exhaust, to devote"],["全力","ぜんりょく","full power, all one's strength"]],
+  chars: [],
+  grammar: {"pattern":"～べく","meaning":"in order to ~ (formal purpose)","example_jp":"目標の達成を実現すべく、全力を尽くして邁進する所存である。","example_en":"I intend to strive forward with all my strength in order to realize the achievement of our goals."},
+  practice: "Write formal statements of purpose using ～べく in business and academic contexts.",
+  tip: "The form ～べく comes from べし (obligation/purpose). Compare: べく (purpose), べき (obligation), べからず (prohibition)."
+});
+
+curriculum.push({
+  day: 1636,
+  phaseNum: 30,
+  phaseName: "N1 Grammar",
+  week: Math.ceil(1636 / 7),
+  title: "Strong Purpose: ～んがため(に)",
+  intro: "The pattern ～んがため(に) means 'for the purpose of ~' and is a highly literary, emphatic expression of purpose.",
+  type: "grammar",
+  vocab: [["権力","けんりょく","power, authority"],["掌握","しょうあく","grasping, seizing"],["画策","かくさく","scheming, plotting"],["野望","やぼう","ambition, aspiration"],["手段","しゅだん","means, method"],["選ぶ","えらぶ","to choose, to select"]],
+  chars: [],
+  grammar: {"pattern":"～んがため(に)","meaning":"for the purpose of ~ (literary, emphatic)","example_jp":"権力を掌握せんがため、あらゆる手段を講じた。","example_en":"For the purpose of seizing power, every possible means was employed."},
+  practice: "Compare ～んがため, ～べく, and ～ために by writing the same idea using all three patterns.",
+  tip: "The ん in ～んがため is the classical volitional む. This is the most formal and literary of the purpose expressions."
+});
+
+curriculum.push({
+  day: 1637,
+  phaseNum: 30,
+  phaseName: "N1 Grammar",
+  week: Math.ceil(1637 / 7),
+  title: "Unavoidable Action: ～ざるを得ない",
+  intro: "The pattern ～ざるを得ない means 'cannot help but ~' or 'have no choice but to ~' and expresses that an action is unavoidable despite reluctance.",
+  type: "grammar",
+  vocab: [["認める","みとめる","to acknowledge, to admit"],["撤退","てったい","withdrawal, retreat"],["断念","だんねん","giving up, abandoning"],["受諾","じゅだく","acceptance, consent"],["不本意","ふほんい","reluctant, unwilling"],["余儀なく","よぎなく","unavoidably"]],
+  chars: [],
+  grammar: {"pattern":"～ざるを得ない","meaning":"cannot help but ~ / have no choice but to ~","example_jp":"採算が合わないため、事業からの撤退を余儀なくされ、計画の断念を認めざるを得なかった。","example_en":"Because it was unprofitable, we were forced to withdraw from the business and had no choice but to acknowledge the abandonment of the plan."},
+  practice: "Write sentences using ～ざるを得ない for situations where reluctant action is forced by circumstances.",
+  tip: "Note the special form: する becomes せざるを得ない (not しざるを得ない). This is one of the most tested N1 patterns."
+});
+
+curriculum.push({
+  day: 1638,
+  phaseNum: 30,
+  phaseName: "N1 Grammar",
+  week: Math.ceil(1638 / 7),
+  title: "Dual Purpose: ～かたがた",
+  intro: "The pattern ～かたがた means 'while also' or 'taking the opportunity to' and describes performing two actions simultaneously, often with the second being the real purpose.",
+  type: "grammar",
+  vocab: [["挨拶","あいさつ","greeting"],["報告","ほうこく","report"],["御礼","おれい","gratitude, thanks"],["散歩","さんぽ","walk, stroll"],["見舞い","みまい","visit (to sick person)"],["伺う","うかがう","to visit (humble)"]],
+  chars: [],
+  grammar: {"pattern":"～かたがた","meaning":"while also / taking the opportunity to ~","example_jp":"御礼かたがた、近況のご報告に伺いました。","example_en":"I came to visit to express my thanks and also to report on my recent situation."},
+  practice: "Write formal sentences using ～かたがた for business visits and social calls with dual purposes.",
+  tip: "This pattern is very common in formal business correspondence and polite speech. The first noun is typically the primary stated purpose."
+});
+
+curriculum.push({
+  day: 1639,
+  phaseNum: 30,
+  phaseName: "N1 Grammar",
+  week: Math.ceil(1639 / 7),
+  title: "Incidental Purpose: ～がてら",
+  intro: "The pattern ～がてら means 'while doing ~ also' and describes a secondary action performed along with a primary one, in a more casual register than ～かたがた.",
+  type: "grammar",
+  vocab: [["買い物","かいもの","shopping"],["散策","さんさく","stroll, walk"],["見物","けんぶつ","sightseeing"],["運動","うんどう","exercise"],["気分転換","きぶんてんかん","change of pace"],["足を伸ばす","あしをのばす","to make a side trip"]],
+  chars: [],
+  grammar: {"pattern":"～がてら","meaning":"while doing ~ also (incidental secondary action)","example_jp":"散歩がてら、近所の新しいカフェに足を伸ばしてみた。","example_en":"While taking a walk, I also made a side trip to the new cafe in the neighborhood."},
+  practice: "Compare ～がてら and ～かたがた by writing similar sentences. Note the difference in formality.",
+  tip: "While ～かたがた is formal and used in business, ～がてら is more conversational and used for everyday activities."
+});
+
+curriculum.push({
+  day: 1640,
+  phaseNum: 30,
+  phaseName: "N1 Grammar",
+  week: Math.ceil(1640 / 7),
+  title: "Reading: Classical & Literary Patterns — Comprehensive Review",
+  intro: "Today is the final reading day of Phase 30. This passage integrates simultaneous, sequential, and classical patterns in a literary essay about the passage of time and legacy.",
+  type: "reading",
+  vocab: [["遺産","いさん","legacy, heritage"],["継承","けいしょう","succession, inheritance"],["礎","いしずえ","foundation, cornerstone"],["先人","せんじん","predecessors, ancestors"],["偉業","いぎょう","great achievement"]],
+  chars: [],
+  grammar: {"pattern":"～をもって","meaning":"as of / by means of (formal)","example_jp":"本日をもって、新たな時代の幕が開ける。","example_en":"As of today, the curtain opens on a new era."},
+  practice: "Read the passage carefully. Answer the comprehension questions, then reflect on how the author weaves multiple grammar patterns together.",
+  tip: "This passage brings together patterns from across the entire section. Use it as a model for your own formal writing.",
+  passage: {"text_jp":"光陰矢の如し。時は人を待たず、我々が歩みを止めようものなら、世界は容赦なく先へ進んでしまう。先人たちの偉業を振り返るに、彼らは困難に直面するなり立ち上がり、目標を達成すべく全身全霊を捧げた。その志を継承せんがために、我々もまた歩み続けねばならない。現代社会の課題に鑑みて、旧来の方法に固執したところで解決は望めまい。変化の激しい時代であるがゆえに、柔軟な発想が求められる。改革を口にした手前、行動で示さざるを得ない。新しい知見を踏まえて、現場の実態に即した施策を講じるべきである。挨拶かたがた申し上げるが、本日をもって新たな体制が発足する。散歩がてら足を運んでいただければ幸いだが、この改革は散策程度の気軽さでは成し遂げられまい。計画が軌道に乗ろうとしていた矢先に困難が訪れることもあろう。しかし、教えるそばから忘れ去られようとも、語り続けることに意味がある。成果を上げるや否や次の挑戦が待っている。犠牲を払うことなしに真の進歩はあり得ず、先人たる者の遺志を継ぐばこそ、我々は前を向くのである。この組織の新体制が発足するが早いか、内外から注目が集まっている。目標の実現をもってすれば、社会に大きな変革をもたらすことができるだろう。困難であれ試練であれ、乗り越えた先にこそ真の成長がある。志半ばで倒れた先人たちの無念を思えばこそ、我々は歩みを止めるわけにはいかない。改革を成し遂げんがために、時には孤独な戦いを強いられることもあろう。しかし、大義の名の下に団結すれば、いかなる困難も克服できるはずだ。目標の達成をもってすれば、後に続く者たちの道を照らす灯火となるだろう。何事も準備に越したことはないが、準備ばかりに時間を費やしたところで、行動なくして結果は生まれまい。一歩を踏み出すが早いか、新たな地平が広がることを信じて、我々はこの壮大な挑戦を未来の世代への掛け替えのない投資として受け止めなければならない。","text_en":"Time flies like an arrow. Time waits for no one, and if we dare to stop walking, the world will mercilessly move ahead. Looking back at the great achievements of our predecessors, they stood up the moment they faced difficulties and devoted their entire being to achieve their goals. In order to carry on that spirit, we too must continue walking. In light of the challenges of modern society, even if we cling to old methods, a solution probably cannot be hoped for. Precisely because we live in an era of intense change, flexible thinking is demanded. Since reform was spoken of publicly, we have no choice but to demonstrate it through action. Based on new findings, measures in line with actual conditions should be taken. While also offering greetings, I would like to state that as of today a new framework is launched. I would be glad if you could stop by while taking a stroll, but this reform probably cannot be accomplished with the casualness of a walk. Just when plans were getting on track, difficulties may arrive. However, even if lessons are forgotten no sooner than they are taught, there is meaning in continuing to speak. The moment results are achieved, the next challenge awaits. Without sacrifice, true progress is impossible, and it is precisely because we inherit the will of those who came before us that we face forward. The moment this organization's new framework launches, attention gathers from within and without. If we can realize our goals by these means, we can bring great transformation to society. Whether difficulty or trial, it is only beyond overcoming them that true growth lies. We must accept this challenge as an investment in the future.","questions":[{"question_jp":"筆者は先人たちの共通した特徴として何を挙げていますか。","question_en":"What does the author cite as a common characteristic of predecessors?","answer":"困難に直面するなり立ち上がり、目標を達成すべく全身全霊を捧げたこと"},{"question_jp":"筆者が改革の成功に不可欠だと考えているものは何ですか。","question_en":"What does the author consider indispensable for the success of reform?","answer":"犠牲を払うこと、柔軟な発想、そして先人の遺志を継ぐ決意"}]}
+});
+
+// ═══════════════════════════════════════════════════════════════════════════
+// PHASE 31: N1 KANJI (Days 1641-1690)
+// 50 days of advanced N1-level kanji study
+// ═══════════════════════════════════════════════════════════════════════════
+
+curriculum.push({
+  day: 1641,
+  phaseNum: 31,
+  phaseName: "N1 Kanji",
+  week: Math.ceil(1641 / 7),
+  title: "Literary Kanji I: Ambiguity & Blue",
+  intro: "Phase 31 covers ~200 N1 kanji used in literary, formal, and specialized contexts. We begin with characters found in classical and poetic Japanese.",
+  type: "kanji",
+  chars: [
+    ["曖", "あい"],
+    ["昧", "まい"],
+    ["蒼", "そう"],
+    ["碧", "へき"],
+    ["燦", "さん"]
+  ],
+  vocab: [
+    ["曖昧", "あいまい", "ambiguous, vague"],
+    ["蒼白", "そうはく", "pale, pallid"],
+    ["碧眼", "へきがん", "blue eyes"],
+    ["燦然", "さんぜん", "brilliant, radiant"],
+    ["蒼天", "そうてん", "blue sky"]
+  ],
+  grammar: { pattern: "〜たる", meaning: "classical adjectival ending (literary)", example_jp: "燦然たる輝きが夜空を照らした。", example_en: "A brilliant radiance illuminated the night sky." },
+  practice: "Write each kanji five times. Write a sentence using 曖昧 in a formal context.",
+  tip: "曖昧 is one of the most common N1 vocabulary items. The two characters share the 日 radical — both relate to unclear light/darkness."
+});
+
+curriculum.push({
+  day: 1642,
+  phaseNum: 31,
+  phaseName: "N1 Kanji",
+  week: Math.ceil(1642 / 7),
+  title: "Literary Kanji II: Brilliance & Haze",
+  intro: "Today we continue with literary kanji expressing visual qualities — brilliance, dimness, and atmospheric effects.",
+  type: "kanji",
+  chars: [
+    ["爛", "らん"],
+    ["煌", "こう"],
+    ["朧", "ろう"],
+    ["幽", "ゆう"],
+    ["玄", "げん"]
+  ],
+  vocab: [
+    ["絢爛", "けんらん", "gorgeous, brilliant"],
+    ["煌煌", "こうこう", "glittering, gleaming"],
+    ["朧月", "おぼろづき", "hazy moon"],
+    ["幽玄", "ゆうげん", "profound grace, mysterious beauty"],
+    ["玄関", "げんかん", "entrance, front door"]
+  ],
+  grammar: { pattern: "〜として", meaning: "as (in the capacity of); clearly", example_jp: "幽玄として深い美を湛えた庭園であった。", example_en: "It was a garden filled with profound and mysterious beauty." },
+  practice: "Write each kanji five times. Use 幽玄 and 絢爛 in contrasting sentences about Japanese aesthetics.",
+  tip: "幽玄 is a key concept in Japanese aesthetics — subtle, profound beauty. 玄 means 'mysterious/dark' and appears in 玄関 (entrance), originally meaning 'gateway to the profound.'"
+});
+
+curriculum.push({
+  day: 1643,
+  phaseNum: 31,
+  phaseName: "N1 Kanji",
+  week: Math.ceil(1643 / 7),
+  title: "Literary Kanji III: Solitude & Clarity",
+  intro: "These kanji express states of solitude, clarity, and refined beauty found in classical literature and poetry.",
+  type: "kanji",
+  chars: [
+    ["寂", "じゃく"],
+    ["凛", "りん"],
+    ["澄", "ちょう"],
+    ["瞭", "りょう"],
+    ["瀟", "しょう"]
+  ],
+  vocab: [
+    ["寂寥", "せきりょう", "loneliness, desolation"],
+    ["凛然", "りんぜん", "awe-inspiring, dignified"],
+    ["清澄", "せいちょう", "clear, limpid"],
+    ["明瞭", "めいりょう", "clear, distinct"],
+    ["瀟洒", "しょうしゃ", "elegant, refined"]
+  ],
+  grammar: { pattern: "〜の極み", meaning: "the height/extreme of ~", example_jp: "寂寥の極みに達した老詩人は筆を置いた。", example_en: "The old poet, having reached the height of desolation, set down his brush." },
+  practice: "Write each kanji five times. Write a short passage describing a winter scene using 凛 and 澄.",
+  tip: "凛 conveys cold, crisp dignity — think of 凛とした (dignified, commanding). 澄 means 'clear' as in water or sky. Both evoke winter imagery."
+});
+
+curriculum.push({
+  day: 1644,
+  phaseNum: 31,
+  phaseName: "N1 Kanji",
+  week: Math.ceil(1644 / 7),
+  title: "Literary Kanji IV: Elegance & Spirit",
+  intro: "Today's kanji convey refinement, taste, and aesthetic spirit — central concepts in Japanese cultural expression.",
+  type: "kanji",
+  chars: [
+    ["洒", "しゃ"],
+    ["雅", "が"],
+    ["粋", "すい"],
+    ["醸", "じょう"],
+    ["趣", "しゅ"]
+  ],
+  vocab: [
+    ["洒落", "しゃれ", "witty, stylish; pun"],
+    ["雅楽", "ががく", "court music"],
+    ["粋人", "すいじん", "person of refined taste"],
+    ["醸成", "じょうせい", "brewing, fostering"],
+    ["趣旨", "しゅし", "gist, purpose"]
+  ],
+  grammar: { pattern: "〜を醸し出す", meaning: "to create an atmosphere of ~", example_jp: "古い町並みが雅な趣を醸し出している。", example_en: "The old townscape creates an atmosphere of refined elegance." },
+  practice: "Write each kanji five times. Explain the difference between 粋 and 雅 in your own words.",
+  tip: "粋 (iki/sui) is a quintessentially Edo-period aesthetic — understated, spontaneous cool. 雅 (ga) is Heian-period courtly elegance. Both are key Japanese aesthetic concepts."
+});
+
+curriculum.push({
+  day: 1645,
+  phaseNum: 31,
+  phaseName: "N1 Kanji",
+  week: Math.ceil(1645 / 7),
+  title: "Literary Kanji V: Allure & Mystery",
+  intro: "We study kanji expressing allure, enchantment, and supernatural beauty — common in literary and classical texts.",
+  type: "kanji",
+  chars: [
+    ["艶", "えん"],
+    ["媚", "び"],
+    ["妖", "よう"],
+    ["怪", "かい"],
+    ["幻", "げん"]
+  ],
+  vocab: [
+    ["艶やか", "あでやか", "glamorous, bewitching"],
+    ["媚態", "びたい", "coquetry, flirtatious manner"],
+    ["妖艶", "ようえん", "bewitchingly beautiful"],
+    ["怪奇", "かいき", "bizarre, mysterious"],
+    ["幻想", "げんそう", "fantasy, illusion"]
+  ],
+  grammar: { pattern: "〜めく", meaning: "to have the appearance of ~", example_jp: "妖艶めく舞姿に観客は息を呑んだ。", example_en: "The audience held their breath at the bewitchingly beautiful dance." },
+  practice: "Write each kanji five times. Write two sentences contrasting 幻想 and reality.",
+  tip: "妖 means 'bewitching/uncanny.' Combined with 艶 (allure), 妖艶 describes supernatural beauty. 怪 (mysterious) appears in 怪談 (ghost story) and 怪物 (monster)."
+});
+
+curriculum.push({
+  day: 1646,
+  phaseNum: 31,
+  phaseName: "N1 Kanji",
+  week: Math.ceil(1646 / 7),
+  title: "Literary Kanji VI: Enchantment & Compassion",
+  intro: "Today we bridge from the mysterious to the compassionate — kanji expressing fascination, mercy, and sorrow.",
+  type: "kanji",
+  chars: [
+    ["惑", "わく"],
+    ["魅", "み"],
+    ["慈", "じ"],
+    ["悲", "ひ"],
+    ["哀", "あい"]
+  ],
+  vocab: [
+    ["魅惑", "みわく", "fascination, enchantment"],
+    ["魅力", "みりょく", "charm, appeal"],
+    ["慈悲", "じひ", "mercy, compassion"],
+    ["悲哀", "ひあい", "grief, sorrow"],
+    ["哀愁", "あいしゅう", "pathos, melancholy"]
+  ],
+  grammar: { pattern: "〜に満ちた", meaning: "filled with ~", example_jp: "慈悲に満ちた眼差しが人々を癒した。", example_en: "A gaze filled with compassion healed the people." },
+  practice: "Write each kanji five times. Write a sentence using both 魅力 and 哀愁.",
+  tip: "慈悲 is a Buddhist term for compassion/mercy. 慈 (benevolence) is loving-kindness; 悲 (sadness) is empathetic sorrow. Together they form the Buddhist ideal of universal compassion."
+});
+
+curriculum.push({
+  day: 1647,
+  phaseNum: 31,
+  phaseName: "N1 Kanji",
+  week: Math.ceil(1647 / 7),
+  title: "Literary Kanji VII: Mourning & Memory",
+  intro: "These kanji express feelings of loss, pity, mourning, and remembrance — essential for understanding literary and formal Japanese.",
+  type: "kanji",
+  chars: [
+    ["憐", "れん"],
+    ["憫", "びん"],
+    ["惜", "せき"],
+    ["悼", "とう"],
+    ["弔", "ちょう"]
+  ],
+  vocab: [
+    ["憐憫", "れんびん", "pity, compassion"],
+    ["惜別", "せきべつ", "reluctant parting"],
+    ["追悼", "ついとう", "mourning, memorial"],
+    ["弔辞", "ちょうじ", "eulogy, funeral address"],
+    ["惜しむ", "おしむ", "to regret, to grudge"]
+  ],
+  grammar: { pattern: "〜を惜しんで", meaning: "regretting/mourning ~", example_jp: "故人の死を惜しんで多くの弔辞が捧げられた。", example_en: "Many eulogies were offered, mourning the death of the deceased." },
+  practice: "Write each kanji five times. Write a formal sentence of condolence using 追悼 and 弔辞.",
+  tip: "弔 (condolence) uses the bow radical 弓. 悼 (grieve) has the heart radical 忄. Both are used in formal mourning contexts. 追悼式 (memorial ceremony) is a common compound."
+});
+
+curriculum.push({
+  day: 1648,
+  phaseNum: 31,
+  phaseName: "N1 Kanji",
+  week: Math.ceil(1648 / 7),
+  title: "Literary Kanji VIII: Remembrance & Aesthetic Feeling",
+  intro: "We complete the literary kanji group with characters for remembrance, wistfulness, and refined aesthetic sensibility.",
+  type: "kanji",
+  chars: [
+    ["偲", "し"],
+    ["侘", "た"],
+    ["靡", "び"],
+    ["風", "ふう"],
+    ["韻", "いん"]
+  ],
+  vocab: [
+    ["偲ぶ", "しのぶ", "to reminisce, to commemorate"],
+    ["侘寂", "わびさび", "austere beauty, rustic simplicity"],
+    ["靡く", "なびく", "to flutter, to sway; to yield"],
+    ["風靡", "ふうび", "sweeping influence"],
+    ["韻律", "いんりつ", "rhythm, meter (in poetry)"]
+  ],
+  grammar: { pattern: "〜を偲んで", meaning: "in remembrance of ~", example_jp: "亡き恩師を偲んで同窓会が催された。", example_en: "An alumni gathering was held in remembrance of the late mentor." },
+  practice: "Write each kanji five times. Explain 侘寂 in two or three sentences using your own words.",
+  tip: "侘寂 (wabi-sabi) is Japan's most famous aesthetic concept — beauty in imperfection, impermanence, and incompleteness. 侘 is austere simplicity; 寂 is patina of age."
+});
+
+curriculum.push({
+  day: 1649,
+  phaseNum: 31,
+  phaseName: "N1 Kanji",
+  week: Math.ceil(1649 / 7),
+  title: "Formal Document Kanji I: Imperial & Official",
+  intro: "We begin formal document kanji — characters used in imperial edicts, official seals, and government orders.",
+  type: "kanji",
+  chars: [
+    ["謄", "とう"],
+    ["璽", "じ"],
+    ["勅", "ちょく"],
+    ["詔", "しょう"],
+    ["赦", "しゃ"]
+  ],
+  vocab: [
+    ["謄本", "とうほん", "certified copy"],
+    ["国璽", "こくじ", "national seal"],
+    ["勅令", "ちょくれい", "imperial decree"],
+    ["詔書", "しょうしょ", "imperial rescript"],
+    ["恩赦", "おんしゃ", "amnesty, pardon"]
+  ],
+  grammar: { pattern: "〜に基づき", meaning: "based on, in accordance with (formal)", example_jp: "勅令に基づき恩赦が施行された。", example_en: "Amnesty was implemented based on the imperial decree." },
+  practice: "Write each kanji five times. Write a sentence describing an official government process using 謄本.",
+  tip: "璽 appears almost exclusively in 国璽 (national seal) and 御璽 (imperial seal). 勅 and 詔 both relate to imperial orders but 勅 is a command and 詔 is a formal proclamation."
+});
+
+curriculum.push({
+  day: 1650,
+  phaseNum: 31,
+  phaseName: "N1 Kanji",
+  week: Math.ceil(1650 / 7),
+  title: "Reading: Literary Kanji in Classical Context",
+  intro: "Today is a reading day. Apply the literary and formal kanji you have learned in context through an extended passage about Japanese aesthetics.",
+  type: "reading",
+  chars: [],
+  vocab: [
+    ["幽玄", "ゆうげん", "profound grace"],
+    ["侘寂", "わびさび", "austere beauty"],
+    ["風雅", "ふうが", "elegance, refinement"],
+    ["曖昧", "あいまい", "ambiguous"],
+    ["醸成", "じょうせい", "fostering, brewing"]
+  ],
+  grammar: { pattern: "〜とも言うべき", meaning: "which could be called ~", example_jp: "幽玄とも言うべき美が能の舞台に漂う。", example_en: "A beauty that could be called 'yugen' drifts across the Noh stage." },
+  practice: "Read the passage carefully. Answer the comprehension questions, then summarize the main argument in your own words.",
+  tip: "When reading literary Japanese, pay attention to aesthetic vocabulary — understanding 幽玄, 侘寂, 粋, 雅 is essential for N1 reading passages about culture.",
+  passage: { "text_jp": "日本の美意識は、古来より独自の発展を遂げてきた。平安時代には「雅」という概念が宮廷文化の中心を成し、貴族たちは和歌や装束に洗練された美を追求した。源氏物語に描かれる色彩の重なりや季節の移ろいへの繊細な感受性は、まさに雅の精神の結晶と言えよう。その後、鎌倉・室町時代に入ると、禅宗の影響を受けた「侘寂」の美学が台頭する。華やかさよりも質素さに、完全さよりも不完全さに美を見出すこの思想は、茶道や枯山水庭園に結実した。千利休が追求した一輪の花の静謐な美しさは、絢爛豪華な桃山文化への静かなる抵抗でもあった。能楽においては「幽玄」が最高の境地とされ、言葉や動作を極限まで削ぎ落とすことで、かえって深遠な世界が立ち現れるとされた。世阿弥が説いた「秘すれば花」の教えは、あえて見せないことで想像力を喚起するという逆説的な美の原理を示している。江戸時代には町人文化が花開き、「粋」という新たな美意識が生まれた。曖昧な境界線の上に成り立つこの概念は、洒脱でありながら品格を失わず、派手さを避けつつも地味に堕さない絶妙な均衡を指す。燦然たる絢爛豪華さとは対極にある美であり、凛とした佇まいの中に哀愁を醸し出す姿こそが粋の真髄であった。明治以降、西洋美術の流入により日本の美意識は大きな転換期を迎えたが、これらの伝統的美意識は現代の建築、文学、芸術においても脈々と受け継がれている。曖昧模糊とした境界を愛でる日本人の感性は、むしろグローバル化の時代にあってこそ再評価されるべきものであろう。古より連綿と続く美の系譜は、単なる懐古趣味ではなく、現代人の心をも深く魅了し続けている。蒼天の下に佇む古寺の朧な輪郭もまた、この国の美の一端を物語っているのである。碧く澄んだ空と寂寥感漂う枯れ庭の対比は、まさに日本美の縮図と言うべきものであり、訪れる者の心に静かな感動を呼び起こさずにはおかない。このような美の伝統を後世に伝えることは、我々に課せられた文化的使命でもある。", "text_en": "Japanese aesthetic sensibility has undergone a unique development since ancient times. In the Heian period, the concept of 'ga' (elegance) formed the center of court culture, and aristocrats pursued refined beauty in waka poetry and attire. The delicate sensitivity to layered colors and the shifting of seasons depicted in The Tale of Genji can truly be called the crystallization of the spirit of elegance. Later, entering the Kamakura and Muromachi periods, the aesthetic of 'wabi-sabi,' influenced by Zen Buddhism, rose to prominence. This philosophy of finding beauty in simplicity over splendor and imperfection over perfection came to fruition in the tea ceremony and dry landscape gardens. The tranquil beauty of a single flower pursued by Sen no Rikyu was also a quiet resistance against the gorgeous Momoyama culture. In Noh theater, 'yugen' (profound grace) was considered the highest attainment, and by paring down words and movements to their absolute minimum, a profoundly deep world was said to emerge. Zeami's teaching of 'if it is hidden, it is the flower' demonstrates the paradoxical principle of beauty that evokes imagination precisely by not showing. In the Edo period, townspeople's culture flourished and a new aesthetic sense called 'iki' (refined chic) was born. This concept, built upon ambiguous boundaries, pointed to an exquisite balance — stylish yet dignified, avoiding flashiness without falling into drabness. It was a beauty diametrically opposed to brilliant, gorgeous splendor; the essence of iki lay in a figure that exuded melancholy within a dignified bearing. After the Meiji era, the influx of Western art brought a major turning point for Japanese aesthetics, yet these traditional aesthetic sensibilities have been continuously passed down in modern architecture, literature, and art. The Japanese sensibility of appreciating ambiguous, hazy boundaries is something that should be re-evaluated precisely in an era of globalization. The lineage of beauty continuing unbroken from antiquity is not mere nostalgia but continues to deeply captivate the hearts of modern people. The hazy outline of an ancient temple standing under a blue sky also tells a part of this country's beauty.", "questions": [{ "question_jp": "筆者は「粋」の概念をどのように説明していますか。", "question_en": "How does the author explain the concept of 'iki'?", "answer": "洒脱でありながら品格を失わず、派手さを避けつつも地味に堕さない絶妙な均衡を指す概念" }] }
+});
+
+curriculum.push({
+  day: 1651,
+  phaseNum: 31,
+  phaseName: "N1 Kanji",
+  week: Math.ceil(1651 / 7),
+  title: "Formal Document Kanji II: Honors & Decorations",
+  intro: "Today we study kanji related to official honors, merit decorations, and formal commendations.",
+  type: "kanji",
+  chars: [
+    ["勲", "くん"],
+    ["叙", "じょ"],
+    ["綬", "じゅ"],
+    ["褒", "ほう"],
+    ["款", "かん"]
+  ],
+  vocab: [
+    ["勲章", "くんしょう", "medal of honor, decoration"],
+    ["叙勲", "じょくん", "conferral of decorations"],
+    ["綬章", "じゅしょう", "ribbon of an order"],
+    ["褒賞", "ほうしょう", "commendation, prize"],
+    ["款待", "かんたい", "warm reception, hospitality"]
+  ],
+  grammar: { pattern: "〜に対して〜を授与する", meaning: "to confer ~ upon ~", example_jp: "長年の功績に対して勲章が授与された。", example_en: "A medal of honor was conferred for long years of meritorious service." },
+  practice: "Write each kanji five times. Write a formal announcement awarding a 褒賞 to someone.",
+  tip: "勲 (merit) contains the 力 (power) radical. 叙勲 (conferral of decorations) is a formal government ceremony. 綬 is the ribbon attached to a medal — rarely seen alone."
+});
+
+curriculum.push({
+  day: 1652,
+  phaseNum: 31,
+  phaseName: "N1 Kanji",
+  week: Math.ceil(1652 / 7),
+  title: "Formal Document Kanji III: Seals & Commissions",
+  intro: "These kanji appear in legal documents, contracts, and official commission papers.",
+  type: "kanji",
+  chars: [
+    ["捺", "なつ"],
+    ["嘱", "しょく"],
+    ["託", "たく"],
+    ["斡", "あつ"],
+    ["旋", "せん"]
+  ],
+  vocab: [
+    ["捺印", "なついん", "affixing a seal"],
+    ["嘱託", "しょくたく", "commission, trust"],
+    ["委託", "いたく", "consignment, entrustment"],
+    ["斡旋", "あっせん", "mediation, good offices"],
+    ["旋回", "せんかい", "rotation, revolution"]
+  ],
+  grammar: { pattern: "〜を委託する", meaning: "to entrust ~ to, to consign ~", example_jp: "業務の斡旋を専門機関に委託した。", example_en: "The mediation of operations was entrusted to a specialized agency." },
+  practice: "Write each kanji five times. Write a sentence about signing a contract using 捺印.",
+  tip: "斡旋 (mediation) is a common N1 word. 斡 is almost never used outside this compound. 捺印 (affixing a seal) is the formal equivalent of はんこを押す."
+});
+
+curriculum.push({
+  day: 1653,
+  phaseNum: 31,
+  phaseName: "N1 Kanji",
+  week: Math.ceil(1653 / 7),
+  title: "Formal Document Kanji IV: Judgment & Approval",
+  intro: "Today's kanji deal with legal and bureaucratic processes — judgments, approvals, and formal deliberation.",
+  type: "kanji",
+  chars: [
+    ["裁", "さい"],
+    ["准", "じゅん"],
+    ["諮", "し"],
+    ["稟", "りん"],
+    ["諾", "だく"]
+  ],
+  vocab: [
+    ["裁可", "さいか", "sanction, official approval"],
+    ["准将", "じゅんしょう", "brigadier general"],
+    ["諮問", "しもん", "consultation, inquiry"],
+    ["稟議", "りんぎ", "request for approval"],
+    ["承諾", "しょうだく", "consent, acceptance"]
+  ],
+  grammar: { pattern: "〜を経て", meaning: "through, after going through ~", example_jp: "稟議を経て正式な承諾が得られた。", example_en: "After going through the approval process, formal consent was obtained." },
+  practice: "Write each kanji five times. Write a sentence about a formal approval process using 諮問 and 稟議.",
+  tip: "稟議 (ringi) is the Japanese bottom-up decision-making system where proposals circulate for approval. Understanding this concept is culturally important for N1."
+});
+
+curriculum.push({
+  day: 1654,
+  phaseNum: 31,
+  phaseName: "N1 Kanji",
+  week: Math.ceil(1654 / 7),
+  title: "Formal Document Kanji V: Courts & Advocacy",
+  intro: "We study kanji used in judicial proceedings — courts, appeals, prosecution, and defense.",
+  type: "kanji",
+  chars: [
+    ["廷", "てい"],
+    ["弁", "べん"],
+    ["控", "こう"],
+    ["訴", "そ"],
+    ["審", "しん"]
+  ],
+  vocab: [
+    ["法廷", "ほうてい", "courtroom"],
+    ["弁護", "べんご", "defense, advocacy"],
+    ["控訴", "こうそ", "appeal (legal)"],
+    ["訴訟", "そしょう", "lawsuit, litigation"],
+    ["審判", "しんぱん", "trial, judgment; referee"]
+  ],
+  grammar: { pattern: "〜に対して控訴する", meaning: "to appeal against ~", example_jp: "被告側は判決に対して控訴する方針を示した。", example_en: "The defense indicated its policy to appeal against the verdict." },
+  practice: "Write each kanji five times. Write a brief account of a court case using 法廷, 弁護, and 訴訟.",
+  tip: "廷 (court) appears in 法廷 (courtroom) and 宮廷 (imperial court). 弁 has multiple meanings: speech (弁論), distinction (弁別), and defense (弁護)."
+});
+
+curriculum.push({
+  day: 1655,
+  phaseNum: 31,
+  phaseName: "N1 Kanji",
+  week: Math.ceil(1655 / 7),
+  title: "Formal Document Kanji VI: Punishment & Discipline",
+  intro: "Today's kanji relate to criminal justice — punishment, imprisonment, and disciplinary measures.",
+  type: "kanji",
+  chars: [
+    ["刑", "けい"],
+    ["罰", "ばつ"],
+    ["懲", "ちょう"],
+    ["戒", "かい"],
+    ["禁", "きん"]
+  ],
+  vocab: [
+    ["刑罰", "けいばつ", "punishment, penalty"],
+    ["懲戒", "ちょうかい", "disciplinary action"],
+    ["戒律", "かいりつ", "commandment, precept"],
+    ["禁錮", "きんこ", "imprisonment"],
+    ["懲役", "ちょうえき", "penal servitude, imprisonment with labor"]
+  ],
+  grammar: { pattern: "〜に処する", meaning: "to punish with ~, to sentence to ~", example_jp: "被告は懲役三年の刑に処された。", example_en: "The defendant was sentenced to three years of imprisonment with labor." },
+  practice: "Write each kanji five times. Explain the difference between 禁錮 and 懲役 in a sentence.",
+  tip: "懲戒 (disciplinary action) is used in employment law. 禁錮 (imprisonment without labor) vs 懲役 (imprisonment with labor) is a key legal distinction in Japanese criminal law."
+});
+
+curriculum.push({
+  day: 1656,
+  phaseNum: 31,
+  phaseName: "N1 Kanji",
+  week: Math.ceil(1656 / 7),
+  title: "Formal Document Kanji VII: Detention & Amnesty",
+  intro: "We complete the formal document group with kanji for detention, confinement, and official pardons.",
+  type: "kanji",
+  chars: [
+    ["錮", "こ"],
+    ["拘", "こう"],
+    ["留", "りゅう"],
+    ["釈", "しゃく"],
+    ["赴", "ふ"]
+  ],
+  vocab: [
+    ["拘留", "こうりゅう", "detention, custody"],
+    ["拘束", "こうそく", "restraint, binding"],
+    ["保留", "ほりゅう", "reservation, pending"],
+    ["釈放", "しゃくほう", "release, acquittal"],
+    ["赴任", "ふにん", "proceeding to a new post"]
+  ],
+  grammar: { pattern: "〜の上で", meaning: "after doing ~; in terms of ~", example_jp: "証拠を精査した上で釈放が決定された。", example_en: "After careful examination of the evidence, the release was decided." },
+  practice: "Write each kanji five times. Write a newspaper-style sentence about a 釈放 decision.",
+  tip: "拘 (detain/restrain) appears in 拘束, 拘留, 拘泥 — all about holding/binding. 釈 (explain/release) appears in 釈放 (release) and 解釈 (interpretation)."
+});
+
+curriculum.push({
+  day: 1657,
+  phaseNum: 31,
+  phaseName: "N1 Kanji",
+  week: Math.ceil(1657 / 7),
+  title: "Nature Kanji I: Mist & Water",
+  intro: "We begin poetic nature kanji — characters that evoke the landscape imagery found in classical Japanese poetry and literature.",
+  type: "kanji",
+  chars: [
+    ["霞", "か"],
+    ["靄", "あい"],
+    ["雫", "だ"],
+    ["瀬", "せ"],
+    ["淵", "えん"]
+  ],
+  vocab: [
+    ["霞む", "かすむ", "to become hazy, to blur"],
+    ["靄靄", "あいあい", "misty, hazy"],
+    ["雫", "しずく", "drop, droplet"],
+    ["瀬戸", "せと", "strait, narrows"],
+    ["深淵", "しんえん", "abyss, depths"]
+  ],
+  grammar: { pattern: "〜がごとく", meaning: "as if ~, like ~ (literary)", example_jp: "山々は霞がごとく薄く佇んでいた。", example_en: "The mountains stood faintly, as if in a haze." },
+  practice: "Write each kanji five times. Write a haiku or short poem using 霞 and 雫.",
+  tip: "霞 (haze) has the rain radical 雨 on top. 瀬 (rapids/shallows) appears in 瀬戸内海 (Seto Inland Sea). These nature kanji frequently appear in N1 literary passages."
+});
+
+curriculum.push({
+  day: 1658,
+  phaseNum: 31,
+  phaseName: "N1 Kanji",
+  week: Math.ceil(1658 / 7),
+  title: "Nature Kanji II: Shore & Mountain",
+  intro: "Today's kanji describe coastal and mountain landscapes — shores, peaks, and gorges.",
+  type: "kanji",
+  chars: [
+    ["渚", "なぎさ"],
+    ["汀", "てい"],
+    ["磯", "き"],
+    ["嶺", "れい"],
+    ["峻", "しゅん"]
+  ],
+  vocab: [
+    ["渚", "なぎさ", "water's edge, beach"],
+    ["汀線", "ていせん", "shoreline, waterline"],
+    ["磯辺", "いそべ", "seashore, rocky beach"],
+    ["山嶺", "さんれい", "mountain ridge, peak"],
+    ["峻厳", "しゅんげん", "stern, severe"]
+  ],
+  grammar: { pattern: "〜たりとも", meaning: "even one ~, not even ~ (emphatic negation)", example_jp: "一歩たりとも峻厳な山嶺から退くわけにはいかなかった。", example_en: "We could not retreat even a single step from the steep mountain ridge." },
+  practice: "Write each kanji five times. Describe a coastal scene using 渚, 汀, and 磯.",
+  tip: "渚, 汀, 磯 all describe water's edge but differ: 渚 is a sandy shore, 汀 is the exact waterline, 磯 is a rocky shore. These distinctions appear in N1 literary texts."
+});
+
+curriculum.push({
+  day: 1659,
+  phaseNum: 31,
+  phaseName: "N1 Kanji",
+  week: Math.ceil(1659 / 7),
+  title: "Nature Kanji III: Valley & Spring",
+  intro: "These kanji evoke valleys, gorges, and water sources — the vital waterways of the Japanese landscape.",
+  type: "kanji",
+  chars: [
+    ["峡", "きょう"],
+    ["渓", "けい"],
+    ["湧", "ゆう"],
+    ["泉", "せん"],
+    ["潤", "じゅん"]
+  ],
+  vocab: [
+    ["峡谷", "きょうこく", "canyon, gorge"],
+    ["渓谷", "けいこく", "valley, ravine"],
+    ["湧水", "ゆうすい", "spring water"],
+    ["源泉", "げんせん", "source, fountainhead"],
+    ["潤沢", "じゅんたく", "abundant, ample"]
+  ],
+  grammar: { pattern: "〜にして", meaning: "being ~; at the point of ~ (literary)", example_jp: "渓谷にして清流の源泉たるこの地は古来より神聖視されてきた。", example_en: "This land, being a valley and the source of clear streams, has been regarded as sacred since antiquity." },
+  practice: "Write each kanji five times. Write a descriptive sentence about a Japanese gorge using 峡谷 and 渓谷.",
+  tip: "峡 and 渓 both describe valleys but 峡 emphasizes the narrow passage (gorge) while 渓 emphasizes the stream running through it. 湧 (gush/spring forth) has the water radical."
+});
+
+curriculum.push({
+  day: 1660,
+  phaseNum: 31,
+  phaseName: "N1 Kanji",
+  week: Math.ceil(1660 / 7),
+  title: "Reading: Nature Kanji in Poetry and Prose",
+  intro: "Today is a reading day. Apply the nature and landscape kanji you have learned in context through an extended passage about Japanese nature writing.",
+  type: "reading",
+  chars: [],
+  vocab: [
+    ["渓谷", "けいこく", "valley, ravine"],
+    ["深淵", "しんえん", "abyss, depths"],
+    ["霞む", "かすむ", "to become hazy"],
+    ["湧水", "ゆうすい", "spring water"],
+    ["峻厳", "しゅんげん", "stern, severe"]
+  ],
+  grammar: { pattern: "〜ともなれば", meaning: "when it comes to ~, if it reaches the point of ~", example_jp: "春ともなれば渓谷一帯が霞に包まれる。", example_en: "When spring comes, the entire valley is enveloped in haze." },
+  practice: "Read the passage carefully. Answer the comprehension questions, then summarize the main argument in your own words.",
+  tip: "Nature writing in Japanese is rich with kanji that evoke sensory experiences. Look for kanji with the water radical (氵), mountain radical (山), and rain radical (雨) to identify nature vocabulary.",
+  passage: { "text_jp": "日本の自然文学は、単なる風景描写に留まらず、人間の内面と外界の風景を重ね合わせる独特の伝統を持つ。万葉集の時代から、詩人たちは渓谷を流れる清流の音に心の声を聞き、峻厳な嶺に人生の厳しさを重ねてきた。春になれば霞が山々を覆い、万物が朧に霞む光景は、物事の境界が曖昧になる日本的な感性そのものを映し出している。渚に打ち寄せる波の雫は、はかない命の象徴として古来より詠まれてきた。磯辺に立てば潮の香りが五感を刺激し、汀に沿って歩けば刻一刻と変わる水際の表情に時の流れを感じずにはいられない。深淵を覗き込むと、そこには底知れぬ暗さと同時に、澄み切った水の美しさが共存している。この矛盾こそが日本文学における自然描写の核心である。峡谷を吹き抜ける風は、時に激しく時に穏やかに、人の心のうつろいを映すかのようだ。湧水が地中から滾々と湧き出る様は、生命の源泉そのものであり、古の人々はそこに神の存在を感じ取った。こうした自然との深い対話は、現代の都市生活において失われつつあるが、日本文学を通じて我々は今なおその感性に触れることができる。潤沢な自然に恵まれたこの国の文学は、自然と人間の不可分な関係を永遠に語り続けるであろう。松尾芭蕉は「古池や蛙飛び込む水の音」という僅か十七音の中に、静寂と動の対比、永遠と一瞬の交錯を凝縮させた。それは渓谷の奥深くで響く一滴の雫の音が、宇宙全体の真理を宿しているかのような壮大な世界観の表現でもあった。現代においても、杉の並木道を歩き、楓の紅葉に目を奪われる時、我々の中に眠る太古の感性が呼び覚まされるのを感じるはずである。自然は常に語りかけている。問題は、我々がその声に耳を傾ける余裕を持っているかどうかなのだ。沃野に実る穂の黄金色も、繁茂する藤棚の薄紫も、すべては人間に向けられた自然からの無言の手紙なのである。その手紙を読み解く力を養うことこそが、文学の使命ではないだろうか。", "text_en": "Japanese nature literature holds a unique tradition of not merely describing scenery but of layering the human interior with the external landscape. Since the era of the Man'yoshu, poets have heard the voice of the heart in the sound of clear streams flowing through valleys and have overlaid the harshness of life onto stern mountain ridges. In spring, when haze covers the mountains and all things blur into haziness, the scene reflects the very Japanese sensibility of boundaries becoming ambiguous. The droplets of waves washing against the shore have been composed about since antiquity as symbols of fleeting life. Standing on a rocky shore, the scent of the tide stimulates all five senses, and walking along the waterline, one cannot help but feel the passage of time in the ever-changing expression of the water's edge. Peering into an abyss, one finds both fathomless darkness and the beauty of crystal-clear water coexisting. This very contradiction is the core of nature description in Japanese literature. The wind blowing through gorges, sometimes fierce and sometimes gentle, seems to mirror the shifting of the human heart. The way spring water gushes endlessly from underground is the very source of life itself, and the ancients sensed the presence of the divine there. Such deep dialogue with nature is gradually being lost in modern urban life, yet through Japanese literature we can still touch that sensibility even now. The literature of this country, blessed with abundant nature, will continue to speak forever of the inseparable relationship between nature and humanity. Matsuo Basho condensed the contrast between stillness and motion, the intersection of eternity and an instant, within the mere seventeen syllables of 'the old pond, a frog jumps in, the sound of water.' It was also an expression of a grand worldview, as if the sound of a single droplet echoing deep in a valley contained the truth of the entire universe. Even today, when walking along an avenue of cedars or being captivated by the autumn colors of maples, we should feel the primordial sensibility sleeping within us being awakened. Nature is always speaking to us. The question is whether we have the leisure to listen to that voice.", "questions": [{ "question_jp": "筆者は日本の自然文学の特徴をどのように述べていますか。", "question_en": "How does the author describe the characteristic of Japanese nature literature?", "answer": "人間の内面と外界の風景を重ね合わせる独特の伝統を持つ" }] }
+});
+
+curriculum.push({
+  day: 1661,
+  phaseNum: 31,
+  phaseName: "N1 Kanji",
+  week: Math.ceil(1661 / 7),
+  title: "Nature Kanji IV: Fertile Land",
+  intro: "Today's kanji describe soil, fertility, and agricultural abundance — the productive earth.",
+  type: "kanji",
+  chars: [
+    ["沃", "よく"],
+    ["壌", "じょう"],
+    ["穣", "じょう"],
+    ["穂", "すい"],
+    ["稔", "ねん"]
+  ],
+  vocab: [
+    ["沃野", "よくや", "fertile plain"],
+    ["土壌", "どじょう", "soil, earth"],
+    ["豊穣", "ほうじょう", "abundant harvest, fertility"],
+    ["穂先", "ほさき", "tip of an ear of grain; brush tip"],
+    ["稔り", "みのり", "harvest, fruition"]
+  ],
+  grammar: { pattern: "〜をもたらす", meaning: "to bring about ~, to yield ~", example_jp: "肥沃な土壌が豊穣な実りをもたらした。", example_en: "The fertile soil brought about an abundant harvest." },
+  practice: "Write each kanji five times. Write a sentence about agriculture using 土壌 and 豊穣.",
+  tip: "穣 and 穂 both have the grain radical 禾. 穣 (abundance) appears in 豊穣 (rich harvest). 沃 (fertile) is related to 沃野 (fertile plain) — a literary word for rich farmland."
+});
+
+curriculum.push({
+  day: 1662,
+  phaseNum: 31,
+  phaseName: "N1 Kanji",
+  week: Math.ceil(1662 / 7),
+  title: "Nature Kanji V: Buds & Growth",
+  intro: "These kanji express plant growth — from seedlings and buds to full blossoming and luxuriant foliage.",
+  type: "kanji",
+  chars: [
+    ["苗", "びょう"],
+    ["蕾", "らい"],
+    ["萌", "ほう"],
+    ["茂", "も"],
+    ["繁", "はん"]
+  ],
+  vocab: [
+    ["苗木", "なえぎ", "seedling, sapling"],
+    ["蕾", "つぼみ", "flower bud"],
+    ["萌芽", "ほうが", "budding, germination"],
+    ["茂み", "しげみ", "thicket, bush"],
+    ["繁茂", "はんも", "luxuriant growth"]
+  ],
+  grammar: { pattern: "〜んばかりに", meaning: "as if about to ~", example_jp: "蕾が今にも咲かんばかりに膨らんでいた。", example_en: "The buds were swelling as if they were about to bloom at any moment." },
+  practice: "Write each kanji five times. Describe the stages of plant growth using 苗, 蕾, 萌, 茂.",
+  tip: "萌 (sprout) has become a modern slang word (萌え = adorable) but its original meaning is 'to bud/sprout.' 繁茂 (luxuriant growth) combines 繁 (frequent/lush) with 茂 (thick/lush)."
+});
+
+curriculum.push({
+  day: 1663,
+  phaseNum: 31,
+  phaseName: "N1 Kanji",
+  week: Math.ceil(1663 / 7),
+  title: "Nature Kanji VI: Trees & Wood",
+  intro: "Today we study kanji for specific Japanese trees — culturally significant species that appear in literature and daily life.",
+  type: "kanji",
+  chars: [
+    ["藤", "とう"],
+    ["桐", "とう"],
+    ["楓", "ふう"],
+    ["椿", "ちん"],
+    ["梢", "しょう"]
+  ],
+  vocab: [
+    ["藤棚", "ふじだな", "wisteria trellis"],
+    ["桐箪笥", "きりだんす", "paulownia chest"],
+    ["楓葉", "ふうよう", "maple leaves"],
+    ["椿油", "つばきあぶら", "camellia oil"],
+    ["梢", "こずえ", "treetop, canopy"]
+  ],
+  grammar: { pattern: "〜ならでは", meaning: "unique to ~, only possible with ~", example_jp: "日本ならではの楓の紅葉が山を彩った。", example_en: "The autumn colors of maple leaves, unique to Japan, adorned the mountains." },
+  practice: "Write each kanji five times. Write a sentence about autumn scenery using 楓 and 梢.",
+  tip: "藤 (wisteria) is one of Japan's most famous flowers and a common surname element. 桐 (paulownia) appears on the Japanese government seal. 椿 (camellia) is Japan's representative winter flower."
+});
+
+curriculum.push({
+  day: 1664,
+  phaseNum: 31,
+  phaseName: "N1 Kanji",
+  week: Math.ceil(1664 / 7),
+  title: "Nature Kanji VII: Forest Giants",
+  intro: "We complete the nature kanji group with characters for tree parts and majestic forest species.",
+  type: "kanji",
+  chars: [
+    ["幹", "かん"],
+    ["樹", "じゅ"],
+    ["杉", "さん"],
+    ["檜", "かい"],
+    ["柏", "はく"]
+  ],
+  vocab: [
+    ["幹線", "かんせん", "trunk line, main line"],
+    ["樹木", "じゅもく", "trees, timber"],
+    ["杉並木", "すぎなみき", "avenue of cedars"],
+    ["檜舞台", "ひのきぶたい", "grand stage; big opportunity"],
+    ["柏餅", "かしわもち", "oak-leaf wrapped rice cake"]
+  ],
+  grammar: { pattern: "〜に他ならない", meaning: "is nothing other than ~", example_jp: "森林保全は未来への投資に他ならない。", example_en: "Forest conservation is nothing other than an investment in the future." },
+  practice: "Write each kanji five times. Write about a famous Japanese forest or tree using 樹木 and 杉.",
+  tip: "檜舞台 (hinoki stage) literally means 'cypress stage' — Noh stages are made of cypress. Figuratively it means 'big opportunity.' 杉 (cedar) is Japan's most common tree and a major allergen source."
+});
+
+curriculum.push({
+  day: 1665,
+  phaseNum: 31,
+  phaseName: "N1 Kanji",
+  week: Math.ceil(1665 / 7),
+  title: "Body Kanji I: Joints & Limbs",
+  intro: "We begin body and medicine kanji — anatomical and medical terms essential for understanding health-related N1 passages.",
+  type: "kanji",
+  chars: [
+    ["膝", "しつ"],
+    ["肘", "ちゅう"],
+    ["踵", "しょう"],
+    ["腱", "けん"],
+    ["脊", "せき"]
+  ],
+  vocab: [
+    ["膝関節", "しつかんせつ", "knee joint"],
+    ["肘掛け", "ひじかけ", "armrest"],
+    ["踵", "かかと", "heel"],
+    ["腱鞘", "けんしょう", "tendon sheath"],
+    ["脊椎", "せきつい", "spine, vertebra"]
+  ],
+  grammar: { pattern: "〜に支障をきたす", meaning: "to cause problems for ~", example_jp: "膝の故障が日常生活に支障をきたしている。", example_en: "The knee injury is causing problems in daily life." },
+  practice: "Write each kanji five times. Write a sentence describing a body part using medical terminology.",
+  tip: "Most body kanji have the flesh/meat radical 月 (にくづき). 膝 (knee), 肘 (elbow), 腱 (tendon) all share this radical. 脊 (spine) uses the flesh radical differently."
+});
+
+curriculum.push({
+  day: 1666,
+  phaseNum: 31,
+  phaseName: "N1 Kanji",
+  week: Math.ceil(1666 / 7),
+  title: "Body Kanji II: Internal Organs",
+  intro: "Today we learn kanji for internal organs — essential medical vocabulary for reading health articles and documents.",
+  type: "kanji",
+  chars: [
+    ["髄", "ずい"],
+    ["臓", "ぞう"],
+    ["腎", "じん"],
+    ["肝", "かん"],
+    ["脾", "ひ"]
+  ],
+  vocab: [
+    ["脊髄", "せきずい", "spinal cord"],
+    ["心臓", "しんぞう", "heart (organ)"],
+    ["腎臓", "じんぞう", "kidney"],
+    ["肝臓", "かんぞう", "liver"],
+    ["脾臓", "ひぞう", "spleen"]
+  ],
+  grammar: { pattern: "〜を患う", meaning: "to suffer from (illness) ~", example_jp: "彼は長年にわたり肝臓の疾患を患っている。", example_en: "He has been suffering from a liver disease for many years." },
+  practice: "Write each kanji five times. Label the major organs in Japanese and write a sentence about health.",
+  tip: "All internal organ kanji end with 臓 (organ): 心臓, 肝臓, 腎臓, 脾臓. The starting kanji indicates which organ. 髄 (marrow) appears in 脊髄 (spinal cord) and 骨髄 (bone marrow)."
+});
+
+curriculum.push({
+  day: 1667,
+  phaseNum: 31,
+  phaseName: "N1 Kanji",
+  week: Math.ceil(1667 / 7),
+  title: "Body Kanji III: Digestive System",
+  intro: "These kanji relate to the digestive system and glands — vocabulary that appears in medical and scientific N1 passages.",
+  type: "kanji",
+  chars: [
+    ["膵", "すい"],
+    ["胆", "たん"],
+    ["胃", "い"],
+    ["腸", "ちょう"],
+    ["腺", "せん"]
+  ],
+  vocab: [
+    ["膵臓", "すいぞう", "pancreas"],
+    ["胆嚢", "たんのう", "gallbladder"],
+    ["胃腸", "いちょう", "stomach and intestines"],
+    ["大腸", "だいちょう", "large intestine"],
+    ["甲状腺", "こうじょうせん", "thyroid gland"]
+  ],
+  grammar: { pattern: "〜に罹患する", meaning: "to contract (a disease), to be affected by ~", example_jp: "胃腸の疾患に罹患する患者が増加している。", example_en: "The number of patients contracting gastrointestinal diseases is increasing." },
+  practice: "Write each kanji five times. Write a sentence about digestive health using 胃腸 and 膵臓.",
+  tip: "腺 (gland) is a modern coinage combining 月 (flesh) and 泉 (spring/source) — glands are 'sources' in the body. 膵 is used almost exclusively in 膵臓 (pancreas)."
+});
+
+curriculum.push({
+  day: 1668,
+  phaseNum: 31,
+  phaseName: "N1 Kanji",
+  week: Math.ceil(1668 / 7),
+  title: "Body Kanji IV: Disease & Ailment",
+  intro: "Today's kanji describe diseases, symptoms, and physical afflictions — important medical vocabulary.",
+  type: "kanji",
+  chars: [
+    ["瘍", "よう"],
+    ["瘡", "そう"],
+    ["痺", "ひ"],
+    ["痙", "けい"],
+    ["攣", "れん"]
+  ],
+  vocab: [
+    ["潰瘍", "かいよう", "ulcer"],
+    ["瘡蓋", "かさぶた", "scab"],
+    ["麻痺", "まひ", "paralysis, numbness"],
+    ["痙攣", "けいれん", "cramp, convulsion, spasm"],
+    ["痺れる", "しびれる", "to go numb, to tingle"]
+  ],
+  grammar: { pattern: "〜を呈する", meaning: "to present (symptoms), to exhibit ~", example_jp: "患者は重度の麻痺の症状を呈していた。", example_en: "The patient was exhibiting symptoms of severe paralysis." },
+  practice: "Write each kanji five times. Write a medical description using 潰瘍 and 痙攣.",
+  tip: "The sickness radical 疒 (やまいだれ) appears in all disease-related kanji: 瘍, 瘡, 痺, 痙. Recognizing this radical immediately signals medical/illness context."
+});
+
+curriculum.push({
+  day: 1669,
+  phaseNum: 31,
+  phaseName: "N1 Kanji",
+  week: Math.ceil(1669 / 7),
+  title: "Body Kanji V: Healing & Treatment",
+  intro: "These kanji relate to medical treatment, healing, and diagnosis — the therapeutic side of medicine.",
+  type: "kanji",
+  chars: [
+    ["癒", "ゆ"],
+    ["療", "りょう"],
+    ["診", "しん"],
+    ["疾", "しつ"],
+    ["患", "かん"]
+  ],
+  vocab: [
+    ["治癒", "ちゆ", "healing, recovery"],
+    ["医療", "いりょう", "medical treatment"],
+    ["診断", "しんだん", "diagnosis"],
+    ["疾患", "しっかん", "disease, ailment"],
+    ["患者", "かんじゃ", "patient"]
+  ],
+  grammar: { pattern: "〜の一途をたどる", meaning: "to continue on a course of ~", example_jp: "適切な医療により回復の一途をたどっている。", example_en: "With appropriate medical treatment, the patient is on a continuous course of recovery." },
+  practice: "Write each kanji five times. Write a short medical report using 診断, 疾患, and 治癒.",
+  tip: "癒 (heal) appears in 治癒 (medical recovery) and the popular word 癒し (healing/comfort). 患 (afflict) appears in both 患者 (patient) and 疾患 (disease)."
+});
+
+curriculum.push({
+  day: 1670,
+  phaseNum: 31,
+  phaseName: "N1 Kanji",
+  week: Math.ceil(1670 / 7),
+  title: "Reading: Medical Kanji in Health Articles",
+  intro: "Today is a reading day. Apply the body and medical kanji you have learned in context through an extended passage about modern healthcare.",
+  type: "reading",
+  chars: [],
+  vocab: [
+    ["疾患", "しっかん", "disease, ailment"],
+    ["診断", "しんだん", "diagnosis"],
+    ["治癒", "ちゆ", "healing, recovery"],
+    ["医療", "いりょう", "medical treatment"],
+    ["患者", "かんじゃ", "patient"]
+  ],
+  grammar: { pattern: "〜を余儀なくされる", meaning: "to be forced to ~", example_jp: "重篤な疾患により長期入院を余儀なくされた。", example_en: "Due to a serious illness, he was forced into a long-term hospitalization." },
+  practice: "Read the passage carefully. Answer the comprehension questions, then summarize the main argument in your own words.",
+  tip: "Medical texts in N1 often combine formal grammar with specialized vocabulary. Look for the sickness radical 疒 and flesh radical 月 to quickly identify medical terms.",
+  passage: { "text_jp": "現代医療の進歩は目覚ましいものがあるが、それに伴い新たな倫理的課題も浮上している。かつては治癒不可能とされた疾患の多くが、今や適切な診断と医療によって克服できるようになった。特に臓器移植の分野では、心臓、肝臓、腎臓などの移植手術が日常的に行われるようになり、多くの患者の命が救われている。しかしながら、臓器提供の不足は依然として深刻な問題であり、移植を待つ患者は長期にわたる苦痛を余儀なくされている。一方、再生医療の発展は新たな希望をもたらしている。脊髄損傷による麻痺の治療や、膵臓の機能を代替する人工臓器の開発が進められており、かつては不治とされた症状にも光明が見えつつある。胃腸疾患においても、潰瘍の治療法は劇的に改善され、かつては外科手術を要したものが薬物療法で治癒可能となった。甲状腺疾患の診断精度も飛躍的に向上し、早期発見・早期治療が可能になっている。膝関節の痙攣や腱鞘炎といった運動器疾患に対しても、低侵襲手術の技術が目覚ましい発展を見せている。慢性的な痺れや急性の症状に対する治療選択肢も格段に広がり、患者の生活の質は大幅に向上した。だが、医療技術の進歩は同時に、延命治療の是非や遺伝子治療の倫理的境界といった問いを我々に突き付けている。患者の自己決定権と医療者の責務の間で、いかにして均衡を保つべきか。兆候を早期に発見する技術が進歩すればするほど、「知る権利」と「知らないでいる権利」の間の緊張は高まる。この問いに対する明瞭な答えは未だ見出されていないが、医療に携わる者すべてが真摯に向き合わねばならない課題であることは疑いない。漸次的な改善を積み重ね、猛烈な速度で進化する技術と人間の尊厳との調和を図ることこそが、現代医療の最大の使命であると言えよう。脾臓や胆嚢といった比較的注目されにくい臓器の疾患においても、診断技術の向上は着実に成果を上げており、逐次的な医学の進歩が多くの命を救い続けている。", "text_en": "The progress of modern medicine is remarkable, but along with it, new ethical challenges have also emerged. Many diseases that were once considered incurable can now be overcome through appropriate diagnosis and treatment. In the field of organ transplantation in particular, transplant surgeries for hearts, livers, kidneys, and other organs have become routine, saving many patients' lives. However, the shortage of organ donations remains a serious problem, and patients waiting for transplants are forced to endure prolonged suffering. Meanwhile, the development of regenerative medicine is bringing new hope. Treatment for paralysis caused by spinal cord injuries and the development of artificial organs to replace pancreatic function are being pursued, and light is beginning to appear even for conditions once considered incurable. In gastrointestinal diseases as well, treatment methods for ulcers have improved dramatically, and what once required surgery can now be cured through drug therapy. Diagnostic accuracy for thyroid diseases has also improved dramatically, enabling early detection and treatment. For musculoskeletal conditions such as knee spasms and tendon sheath inflammation, minimally invasive surgical techniques have also shown remarkable development. Treatment options for chronic numbness and acute symptoms have expanded considerably, greatly improving patients' quality of life. Yet the progress of medical technology simultaneously confronts us with questions about the appropriateness of life-prolonging treatment and the ethical boundaries of gene therapy. How should we maintain balance between patients' right to self-determination and medical practitioners' responsibilities? The more that technology for early detection of signs advances, the more tension rises between the 'right to know' and the 'right not to know.' A clear answer to this question has not yet been found, but there is no doubt that it is a challenge that all those involved in medicine must face earnestly. Accumulating gradual improvements and harmonizing technology that evolves at a furious pace with human dignity may be said to be the greatest mission of modern medicine.", "questions": [{ "question_jp": "筆者は現代医療の進歩に伴う課題として何を挙げていますか。", "question_en": "What does the author identify as challenges accompanying the progress of modern medicine?", "answer": "延命治療の是非や遺伝子治療の倫理的境界、患者の自己決定権と医療者の責務の均衡" }] }
+});
+
+curriculum.push({
+  day: 1671,
+  phaseNum: 31,
+  phaseName: "N1 Kanji",
+  week: Math.ceil(1671 / 7),
+  title: "Body Kanji VI: Symptoms & Progression",
+  intro: "Today's kanji describe medical conditions and their progression — acute, chronic, gradual, and severe.",
+  type: "kanji",
+  chars: [
+    ["症", "しょう"],
+    ["兆", "ちょう"],
+    ["候", "こう"],
+    ["慢", "まん"],
+    ["急", "きゅう"]
+  ],
+  vocab: [
+    ["症状", "しょうじょう", "symptoms"],
+    ["兆候", "ちょうこう", "sign, indication, omen"],
+    ["徴候", "ちょうこう", "symptom, sign"],
+    ["慢性", "まんせい", "chronic"],
+    ["急性", "きゅうせい", "acute"]
+  ],
+  grammar: { pattern: "〜に至る", meaning: "to reach the point of ~, to lead to ~", example_jp: "慢性疾患が悪化し入院に至った。", example_en: "The chronic illness worsened, leading to hospitalization." },
+  practice: "Write each kanji five times. Write sentences contrasting 慢性 and 急性 conditions.",
+  tip: "兆 means 'sign/omen' and also 'trillion.' 候 means 'weather/sign' and is also an archaic honorific (そうろう). In medical contexts, 兆候 and 徴候 both mean 'symptom/sign.'"
+});
+
+curriculum.push({
+  day: 1672,
+  phaseNum: 31,
+  phaseName: "N1 Kanji",
+  week: Math.ceil(1672 / 7),
+  title: "Body Kanji VII: Disease Course & Intensity",
+  intro: "We complete the medical group with kanji describing the course and intensity of conditions — gradual, severe, and sequential.",
+  type: "kanji",
+  chars: [
+    ["猛", "もう"],
+    ["劇", "げき"],
+    ["緩", "かん"],
+    ["漸", "ぜん"],
+    ["逐", "ちく"]
+  ],
+  vocab: [
+    ["猛烈", "もうれつ", "fierce, furious"],
+    ["劇的", "げきてき", "dramatic"],
+    ["緩和", "かんわ", "alleviation, mitigation"],
+    ["漸次", "ぜんじ", "gradually, progressively"],
+    ["逐次", "ちくじ", "successively, one by one"]
+  ],
+  grammar: { pattern: "〜の一環として", meaning: "as part of ~", example_jp: "緩和ケアの一環として患者の痛みを漸次軽減していく方針だ。", example_en: "As part of palliative care, the policy is to gradually reduce the patient's pain." },
+  practice: "Write each kanji five times. Describe a treatment plan using 緩和 and 漸次.",
+  tip: "漸次 (gradually) vs 逐次 (one by one/sequentially) — both describe progressive action but 漸次 emphasizes smooth gradation while 逐次 emphasizes step-by-step sequence."
+});
+
+curriculum.push({
+  day: 1673,
+  phaseNum: 31,
+  phaseName: "N1 Kanji",
+  week: Math.ceil(1673 / 7),
+  title: "Virtue Kanji I: Modesty & Frugality",
+  intro: "We begin character and virtue kanji — moral concepts expressed through single characters, central to classical East Asian thought.",
+  type: "kanji",
+  chars: [
+    ["廉", "れん"],
+    ["恭", "きょう"],
+    ["倹", "けん"],
+    ["篤", "とく"],
+    ["寛", "かん"]
+  ],
+  vocab: [
+    ["廉潔", "れんけつ", "integrity, uprightness"],
+    ["恭敬", "きょうけい", "reverence, respect"],
+    ["勤倹", "きんけん", "diligence and frugality"],
+    ["篤志", "とくし", "benevolent intention"],
+    ["寛容", "かんよう", "tolerance, magnanimity"]
+  ],
+  grammar: { pattern: "〜をもって", meaning: "with ~, by means of ~", example_jp: "廉潔をもって範とすべき人物であった。", example_en: "He was a person who should be taken as a model of integrity." },
+  practice: "Write each kanji five times. Write a sentence about an admirable person using 廉潔 and 寛容.",
+  tip: "These virtue kanji are deeply rooted in Confucian philosophy. 廉 (integrity), 恭 (reverence), 倹 (frugality), 篤 (sincerity), 寛 (generosity) — each represents a cardinal virtue."
+});
+
+curriculum.push({
+  day: 1674,
+  phaseNum: 31,
+  phaseName: "N1 Kanji",
+  week: Math.ceil(1674 / 7),
+  title: "Virtue Kanji II: Humility & Prudence",
+  intro: "Today's kanji express humility, modesty, and careful self-restraint — virtues prized in Japanese culture.",
+  type: "kanji",
+  chars: [
+    ["敬", "けい"],
+    ["謙", "けん"],
+    ["遜", "そん"],
+    ["慎", "しん"],
+    ["矜", "きょう"]
+  ],
+  vocab: [
+    ["敬意", "けいい", "respect, esteem"],
+    ["謙遜", "けんそん", "modesty, humility"],
+    ["謙虚", "けんきょ", "humble, modest"],
+    ["慎重", "しんちょう", "prudent, cautious"],
+    ["矜持", "きょうじ", "pride, self-respect"]
+  ],
+  grammar: { pattern: "〜に徹する", meaning: "to be thorough in ~, to devote oneself to ~", example_jp: "謙虚さに徹する姿勢が周囲の敬意を集めた。", example_en: "The attitude of being thoroughly humble earned the respect of those around." },
+  practice: "Write each kanji five times. Explain the balance between 謙遜 and 矜持 in your own words.",
+  tip: "謙遜 (modesty) and 矜持 (self-respect/pride) represent complementary virtues — too much of either becomes a vice. This balance is a frequent theme in N1 reading passages."
+});
+
+curriculum.push({
+  day: 1675,
+  phaseNum: 31,
+  phaseName: "N1 Kanji",
+  week: Math.ceil(1675 / 7),
+  title: "Virtue Kanji III: Purity & Sincerity",
+  intro: "These kanji express moral purity, honesty, and sincerity — ideals that pervade Japanese ethical discourse.",
+  type: "kanji",
+  chars: [
+    ["潔", "けつ"],
+    ["清", "せい"],
+    ["誠", "せい"],
+    ["忠", "ちゅう"],
+    ["義", "ぎ"]
+  ],
+  vocab: [
+    ["潔白", "けっぱく", "innocence, purity"],
+    ["清潔", "せいけつ", "clean, hygienic"],
+    ["誠実", "せいじつ", "sincere, honest"],
+    ["忠実", "ちゅうじつ", "faithful, loyal"],
+    ["義務", "ぎむ", "duty, obligation"]
+  ],
+  grammar: { pattern: "〜たる者", meaning: "one who is ~, those who serve as ~", example_jp: "指導者たる者は誠実と清潔を旨とすべきである。", example_en: "Those who are leaders should make sincerity and integrity their guiding principles." },
+  practice: "Write each kanji five times. Write about the concept of 忠義 (loyalty and duty) in a historical context.",
+  tip: "忠 (loyalty) and 義 (righteousness) form 忠義 — the samurai ethical code. 誠 (sincerity) was the banner character of the Shinsengumi. These kanji carry deep historical weight."
+});
+
+curriculum.push({
+  day: 1676,
+  phaseNum: 31,
+  phaseName: "N1 Kanji",
+  week: Math.ceil(1676 / 7),
+  title: "Virtue Kanji IV: Benevolence & Wisdom",
+  intro: "Today's kanji represent the Confucian cardinal virtues — benevolence, wisdom, and propriety.",
+  type: "kanji",
+  chars: [
+    ["仁", "じん"],
+    ["智", "ち"],
+    ["礼", "れい"],
+    ["孝", "こう"],
+    ["悌", "てい"]
+  ],
+  vocab: [
+    ["仁義", "じんぎ", "humanity and justice; code of honor"],
+    ["智慧", "ちえ", "wisdom, sagacity"],
+    ["礼儀", "れいぎ", "manners, etiquette"],
+    ["孝行", "こうこう", "filial piety"],
+    ["孝悌", "こうてい", "filial piety and fraternal love"]
+  ],
+  grammar: { pattern: "〜こそ〜の本分である", meaning: "~ is precisely the essential duty of ~", example_jp: "仁義礼智こそ為政者の本分である。", example_en: "Benevolence, righteousness, propriety, and wisdom are precisely the essential duties of a ruler." },
+  practice: "Write each kanji five times. Explain one of the Five Confucian Virtues in your own words.",
+  tip: "仁義礼智信 are the Five Confucian Virtues. 孝 (filial piety) and 悌 (respect for elders) are foundational family virtues. These concepts underpin much of N1 classical content."
+});
+
+curriculum.push({
+  day: 1677,
+  phaseNum: 31,
+  phaseName: "N1 Kanji",
+  week: Math.ceil(1677 / 7),
+  title: "Virtue Kanji V: Endurance & Fortitude",
+  intro: "These kanji express inner strength, endurance, and determination — qualities celebrated in Japanese martial and philosophical traditions.",
+  type: "kanji",
+  chars: [
+    ["忍", "にん"],
+    ["耐", "たい"],
+    ["堅", "けん"],
+    ["毅", "き"],
+    ["剛", "ごう"]
+  ],
+  vocab: [
+    ["忍耐", "にんたい", "endurance, patience"],
+    ["堅固", "けんご", "solid, firm"],
+    ["毅然", "きぜん", "resolute, determined"],
+    ["剛毅", "ごうき", "fortitude, firmness"],
+    ["耐久", "たいきゅう", "durability, endurance"]
+  ],
+  grammar: { pattern: "〜ずにはおかない", meaning: "cannot help but ~, inevitably ~", example_jp: "その毅然たる態度は人を感動させずにはおかなかった。", example_en: "That resolute attitude could not help but move people." },
+  practice: "Write each kanji five times. Write a sentence about perseverance using 忍耐 and 毅然.",
+  tip: "忍 (endure) contains 心 (heart) under 刃 (blade) — endurance is keeping your heart strong under the blade. 毅然 (resolute) is one of the most important N1 personality descriptors."
+});
+
+curriculum.push({
+  day: 1678,
+  phaseNum: 31,
+  phaseName: "N1 Kanji",
+  week: Math.ceil(1678 / 7),
+  title: "Virtue Kanji VI: Gentleness & Harmony",
+  intro: "Today's kanji express the complementary virtues of softness, flexibility, and harmonious tranquility.",
+  type: "kanji",
+  chars: [
+    ["柔", "じゅう"],
+    ["和", "わ"],
+    ["穏", "おん"],
+    ["泰", "たい"],
+    ["朗", "ろう"]
+  ],
+  vocab: [
+    ["柔軟", "じゅうなん", "flexible, supple"],
+    ["温和", "おんわ", "gentle, mild"],
+    ["穏健", "おんけん", "moderate, temperate"],
+    ["安泰", "あんたい", "peace, security"],
+    ["朗読", "ろうどく", "reading aloud, recitation"]
+  ],
+  grammar: { pattern: "〜に即して", meaning: "in accordance with ~, suited to ~", example_jp: "時代に即して柔軟な姿勢で穏健な改革を進めるべきだ。", example_en: "We should advance moderate reforms with a flexible attitude suited to the times." },
+  practice: "Write each kanji five times. Compare 柔軟 and 剛毅 as complementary virtues in a short paragraph.",
+  tip: "和 (harmony) is perhaps Japan's most culturally significant character — 大和 (Yamato) is ancient Japan. 柔よく剛を制す (flexibility overcomes rigidity) is a famous proverb from martial arts."
+});
+
+curriculum.push({
+  day: 1679,
+  phaseNum: 31,
+  phaseName: "N1 Kanji",
+  week: Math.ceil(1679 / 7),
+  title: "Virtue Kanji VII: Clarity & Openness",
+  intro: "These kanji express brightness, openness, and an expansive spirit — the outward-facing virtues.",
+  type: "kanji",
+  chars: [
+    ["爽", "そう"],
+    ["快", "かい"],
+    ["闊", "かつ"],
+    ["達", "たつ"],
+    ["観", "かん"]
+  ],
+  vocab: [
+    ["爽快", "そうかい", "refreshing, exhilarating"],
+    ["快活", "かいかつ", "cheerful, lively"],
+    ["闊達", "かったつ", "broad-minded, magnanimous"],
+    ["豁達", "かったつ", "open-minded, generous"],
+    ["達観", "たっかん", "philosophical view, detachment"]
+  ],
+  grammar: { pattern: "〜を旨とする", meaning: "to make ~ one's principle", example_jp: "闊達な精神を旨とする校風が長年受け継がれてきた。", example_en: "The school tradition of making a broad-minded spirit its principle has been passed down for many years." },
+  practice: "Write each kanji five times. Describe a person with 爽快 and 闊達 qualities.",
+  tip: "達観 (philosophical detachment) is a Buddhist-influenced concept — seeing beyond worldly concerns. 闊 (broad/wide) appears in 闊達 (magnanimous) and is also used in 迂闊 (careless)."
+});
+
+curriculum.push({
+  day: 1680,
+  phaseNum: 31,
+  phaseName: "N1 Kanji",
+  week: Math.ceil(1680 / 7),
+  title: "Reading: Virtue Kanji in Ethical Discourse",
+  intro: "Today is a reading day. Apply the character and virtue kanji you have learned in context through an extended passage about Japanese ethical philosophy.",
+  type: "reading",
+  chars: [],
+  vocab: [
+    ["忍耐", "にんたい", "endurance"],
+    ["寛容", "かんよう", "tolerance"],
+    ["矜持", "きょうじ", "self-respect"],
+    ["謙遜", "けんそん", "modesty"],
+    ["毅然", "きぜん", "resolute"]
+  ],
+  grammar: { pattern: "〜べからず", meaning: "must not ~, should not ~ (classical prohibition)", example_jp: "矜持を失うべからず、されど傲慢に陥るべからず。", example_en: "One must not lose self-respect, yet must not fall into arrogance." },
+  practice: "Read the passage carefully. Answer the comprehension questions, then summarize the main argument in your own words.",
+  tip: "Ethical discourse in Japanese often draws on both Confucian and Buddhist traditions. Look for virtue kanji pairs (忠義, 仁義, 礼智) that signal philosophical argument.",
+  passage: { "text_jp": "日本の倫理思想は、儒教、仏教、そして固有の神道が複雑に絡み合いながら独自の発展を遂げてきた。儒教からは仁義礼智信の五常が導入され、為政者には廉潔と恭敬が求められた。武士道においては忠義が最高の徳目とされ、主君に対する忠実と、義務を果たすための忍耐が重んじられた。しかし、それは単なる盲従ではなく、毅然たる精神と矜持をもって自らの信念に従うことをも含んでいた。楠木正成が圧倒的な敵勢を前にしても退かなかったのは、忠義のためであると同時に、己の矜持のためでもあったと言える。一方、仏教は慈悲の精神と達観の境地をもたらした。苦しみに対する寛容と、世俗の価値からの超越は、武士道の厳格さを和らげる役割を果たした。茶道に体現される侘寂の美意識もまた、質素と謙遜の中に深い精神性を見出す倫理的態度の表れである。神道は万物に神性を見出す思想を基盤として、清潔と敬虔を重んじ、自然との調和を倫理の根幹に据えた。近世に入ると、町人社会では勤倹と篤志が美徳とされ、社会への貢献が個人の価値を測る尺度となった。石田梅岩の石門心学は、商人にも武士と同等の倫理的規範があるべきだと説き、誠実な商いこそが社会の繁栄につながると主張した。現代においても、日本社会は礼儀と敬意を重んじ、慎重さと穏健さを理想的な態度として評価する傾向がある。だが、柔軟さと堅固さ、謙遜と矜持、寛容と厳格さのいずれにも偏らない均衡こそが、日本の倫理思想が究極的に目指してきたものであろう。爽快で闊達な精神をもって世に処し、誠実に生きることの意味を、我々は改めて問い直す時に来ているのかもしれない。和の精神は対立を避けることではなく、異なる価値観を包摂しながらより高い次元の調和を目指すことにこそ、その真の意義がある。清廉で潔白な生き方を志しつつも、他者への慈悲の心を忘れず、快活で朗らかに日々を過ごすこと。それこそが古来より日本人が理想としてきた生の姿であろう。", "text_en": "Japanese ethical thought has undergone unique development through the complex interweaving of Confucianism, Buddhism, and the indigenous Shinto. From Confucianism, the Five Constants of benevolence, righteousness, propriety, wisdom, and sincerity were introduced, and integrity and reverence were demanded of rulers. In bushido, loyalty was regarded as the highest virtue, and faithfulness to one's lord and endurance in fulfilling one's duties were valued. However, this was not mere blind obedience — it also included following one's own convictions with a resolute spirit and self-respect. Kusunoki Masashige's refusal to retreat even before overwhelming enemy forces was for the sake of loyalty and equally for his own self-respect. Meanwhile, Buddhism brought the spirit of compassion and the state of philosophical detachment. Tolerance toward suffering and transcendence of worldly values served to soften the strictness of bushido. The wabi-sabi aesthetic embodied in the tea ceremony is also a manifestation of an ethical attitude that finds deep spirituality in simplicity and modesty. Shinto, based on the idea of finding divinity in all things, emphasized cleanliness and piety, placing harmony with nature at the foundation of ethics. In the early modern period, diligence and frugality along with benevolent intentions were considered virtues in townspeople's society, and contribution to society became the measure of individual worth. Ishida Baigan's Sekimon Shingaku taught that merchants should have ethical standards equal to samurai, arguing that honest commerce leads to social prosperity. Even in modern times, Japanese society tends to value courtesy and respect, and to regard prudence and moderation as ideal attitudes. Yet the balance that does not lean toward either flexibility or firmness, modesty or self-respect, tolerance or strictness, is perhaps what Japanese ethical thought has ultimately sought. We may have arrived at a time to ask ourselves anew the meaning of living sincerely, engaging with the world in a refreshing and magnanimous spirit. The true significance of the spirit of harmony lies not in avoiding conflict but in aiming for a higher-dimensional harmony while embracing different values.", "questions": [{ "question_jp": "筆者は日本の倫理思想が究極的に目指してきたものは何だと述べていますか。", "question_en": "What does the author state Japanese ethical thought has ultimately sought?", "answer": "柔軟さと堅固さ、謙遜と矜持、寛容と厳格さのいずれにも偏らない均衡" }] }
+});
+
+curriculum.push({
+  day: 1681,
+  phaseNum: 31,
+  phaseName: "N1 Kanji",
+  week: Math.ceil(1681 / 7),
+  title: "Business Kanji I: Setback & Obstruction",
+  intro: "We begin business and compound kanji — characters used in professional, organizational, and economic contexts.",
+  type: "kanji",
+  chars: [
+    ["頓", "とん"],
+    ["挫", "ざ"],
+    ["措", "そ"],
+    ["拗", "おう"],
+    ["泥", "でい"]
+  ],
+  vocab: [
+    ["頓挫", "とんざ", "setback, sudden failure"],
+    ["挫折", "ざせつ", "frustration, setback"],
+    ["措置", "そち", "measure, step"],
+    ["拗れる", "こじれる", "to become complicated"],
+    ["泥沼", "どろぬま", "quagmire, morass"]
+  ],
+  grammar: { pattern: "〜の末", meaning: "after ~, at the end of ~", example_jp: "長い交渉の末、計画は頓挫した。", example_en: "After long negotiations, the plan met with a setback." },
+  practice: "Write each kanji five times. Write a business scenario using 頓挫 and 措置.",
+  tip: "頓挫 (sudden failure) is extremely common in business and news contexts. 拗れる (to get complicated) is a useful verb for describing deteriorating situations."
+});
+
+curriculum.push({
+  day: 1682,
+  phaseNum: 31,
+  phaseName: "N1 Kanji",
+  week: Math.ceil(1682 / 7),
+  title: "Business Kanji II: Detour & Estrangement",
+  intro: "Today's kanji describe indirectness, distance, and departure from the expected path — common in business analysis.",
+  type: "kanji",
+  chars: [
+    ["迂", "う"],
+    ["疎", "そ"],
+    ["遠", "えん"],
+    ["逸", "いつ"],
+    ["脱", "だつ"]
+  ],
+  vocab: [
+    ["迂回", "うかい", "detour, roundabout route"],
+    ["疎遠", "そえん", "estrangement, alienation"],
+    ["敬遠", "けいえん", "keeping at a distance"],
+    ["逸脱", "いつだつ", "deviation, departure"],
+    ["脱却", "だっきゃく", "breaking free from"]
+  ],
+  grammar: { pattern: "〜から脱却する", meaning: "to break free from ~", example_jp: "従来の方法論から脱却し新たなアプローチを模索する。", example_en: "Breaking free from conventional methodology, we seek a new approach." },
+  practice: "Write each kanji five times. Write about organizational change using 逸脱 and 脱却.",
+  tip: "迂闊 (careless/thoughtless) combines 迂 (roundabout) with 闘 — going around instead of being direct. 疎遠 (estranged) is a common word for describing weakened relationships."
+});
+
+curriculum.push({
+  day: 1683,
+  phaseNum: 31,
+  phaseName: "N1 Kanji",
+  week: Math.ceil(1683 / 7),
+  title: "Business Kanji III: Surpassing & Exceeding",
+  intro: "These kanji express superiority, transcendence, and exceptional achievement — vocabulary for praise and comparison.",
+  type: "kanji",
+  chars: [
+    ["超", "ちょう"],
+    ["越", "えつ"],
+    ["凌", "りょう"],
+    ["駕", "が"],
+    ["卓", "たく"]
+  ],
+  vocab: [
+    ["超越", "ちょうえつ", "transcendence, surpassing"],
+    ["凌駕", "りょうが", "surpassing, outstripping"],
+    ["卓越", "たくえつ", "excellence, preeminence"],
+    ["卓抜", "たくばつ", "outstanding, remarkable"],
+    ["凌ぐ", "しのぐ", "to endure; to surpass"]
+  ],
+  grammar: { pattern: "〜を凌駕する", meaning: "to surpass ~, to outstrip ~", example_jp: "新技術が従来品の性能を凌駕した。", example_en: "The new technology surpassed the performance of the existing product." },
+  practice: "Write each kanji five times. Write a product comparison using 凌駕 and 卓越.",
+  tip: "凌駕 (surpassing) and 卓越 (excellence) are sophisticated alternatives to simple 上回る (to exceed). Using them signals formal, educated Japanese."
+});
+
+curriculum.push({
+  day: 1684,
+  phaseNum: 31,
+  phaseName: "N1 Kanji",
+  week: Math.ceil(1684 / 7),
+  title: "Business Kanji IV: Outstanding & Exceptional",
+  intro: "Today's kanji describe exceptional people, talent, and achievement — words for recognizing excellence.",
+  type: "kanji",
+  chars: [
+    ["秀", "しゅう"],
+    ["傑", "けつ"],
+    ["抜", "ばつ"],
+    ["群", "ぐん"],
+    ["膨", "ぼう"]
+  ],
+  vocab: [
+    ["秀逸", "しゅういつ", "excellent, outstanding"],
+    ["傑出", "けっしゅつ", "prominent, distinguished"],
+    ["抜群", "ばつぐん", "outstanding, preeminent"],
+    ["群雄", "ぐんゆう", "rival warlords, many heroes"],
+    ["膨張", "ぼうちょう", "expansion, swelling"]
+  ],
+  grammar: { pattern: "〜に勝るとも劣らない", meaning: "equal to ~, not inferior to ~", example_jp: "彼の才能は先人に勝るとも劣らない傑出したものだ。", example_en: "His talent is outstanding, equal to if not greater than his predecessors." },
+  practice: "Write each kanji five times. Describe an exceptional achievement using 傑出 and 抜群.",
+  tip: "抜群 (outstanding) literally means 'pulled from the group.' 傑出 (distinguished) contains 傑 (hero/outstanding person). Both are common in evaluative writing."
+});
+
+curriculum.push({
+  day: 1685,
+  phaseNum: 31,
+  phaseName: "N1 Kanji",
+  week: Math.ceil(1685 / 7),
+  title: "Business Kanji V: Scale & Magnitude",
+  intro: "These kanji express magnitude, enormity, and grandeur — vocabulary for describing large-scale phenomena.",
+  type: "kanji",
+  chars: [
+    ["莫", "ばく"],
+    ["甚", "じん"],
+    ["壮", "そう"],
+    ["雄", "ゆう"],
+    ["偉", "い"]
+  ],
+  vocab: [
+    ["莫大", "ばくだい", "enormous, vast"],
+    ["甚大", "じんだい", "immense, tremendous"],
+    ["壮大", "そうだい", "grand, magnificent"],
+    ["雄大", "ゆうだい", "grand, majestic"],
+    ["偉大", "いだい", "great, mighty"]
+  ],
+  grammar: { pattern: "〜たるや", meaning: "when it comes to ~, the magnitude of ~ (emphatic)", example_jp: "その被害たるや甚大であり莫大な復興費用を要した。", example_en: "The damage was tremendous, requiring enormous reconstruction costs." },
+  practice: "Write each kanji five times. Describe something grand using three different '大' compounds from today.",
+  tip: "莫大, 甚大, 壮大, 雄大, 偉大 — all end in 大 but the first kanji changes the nuance: 莫 (vast/desert), 甚 (extreme), 壮 (vigorous), 雄 (heroic), 偉 (great/distinguished)."
+});
+
+curriculum.push({
+  day: 1686,
+  phaseNum: 31,
+  phaseName: "N1 Kanji",
+  week: Math.ceil(1686 / 7),
+  title: "Business Kanji VI: Expansion & Prosperity",
+  intro: "Today's kanji describe growth, expansion, and prosperous development in organizational and economic contexts.",
+  type: "kanji",
+  chars: [
+    ["隆", "りゅう"],
+    ["盛", "せい"],
+    ["興", "こう"],
+    ["昂", "こう"],
+    ["奮", "ふん"]
+  ],
+  vocab: [
+    ["隆盛", "りゅうせい", "prosperity, flourishing"],
+    ["盛衰", "せいすい", "rise and fall"],
+    ["興隆", "こうりゅう", "rise, prosperity"],
+    ["昂揚", "こうよう", "enhancement, uplift"],
+    ["奮起", "ふんき", "rousing, rallying"]
+  ],
+  grammar: { pattern: "〜の感を禁じ得ない", meaning: "cannot help but feel ~", example_jp: "企業の隆盛ぶりに隔世の感を禁じ得ない。", example_en: "One cannot help but feel a sense of how times have changed at the company's prosperity." },
+  practice: "Write each kanji five times. Write about the rise and fall of a business using 隆盛 and 盛衰.",
+  tip: "隆盛 (prosperity) and 興隆 (rise to prominence) are near-synonyms. 盛衰 (rise and fall) is a philosophical concept — all things rise and decline. 昂 and 奮 express emotional uplift."
+});
+
+curriculum.push({
+  day: 1687,
+  phaseNum: 31,
+  phaseName: "N1 Kanji",
+  week: Math.ceil(1687 / 7),
+  title: "Business Kanji VII: Negotiation & Strategy",
+  intro: "These kanji relate to business strategy, negotiation, and organizational maneuvering.",
+  type: "kanji",
+  chars: [
+    ["渉", "しょう"],
+    ["妥", "だ"],
+    ["協", "きょう"],
+    ["恊", "きょう"],
+    ["衡", "こう"]
+  ],
+  vocab: [
+    ["交渉", "こうしょう", "negotiation"],
+    ["妥協", "だきょう", "compromise"],
+    ["協調", "きょうちょう", "cooperation, harmony"],
+    ["均衡", "きんこう", "equilibrium, balance"],
+    ["妥当", "だとう", "appropriate, valid"]
+  ],
+  grammar: { pattern: "〜を踏まえて", meaning: "based on ~, taking ~ into account", example_jp: "双方の立場を踏まえて妥協点を模索した。", example_en: "Taking both sides' positions into account, they searched for a point of compromise." },
+  practice: "Write each kanji five times. Write about a business negotiation using 交渉, 妥協, and 均衡.",
+  tip: "妥協 (compromise) and 均衡 (balance) are essential business vocabulary. 渉 (cross/negotiate) appears in 交渉 (negotiation) and 干渉 (interference)."
+});
+
+curriculum.push({
+  day: 1688,
+  phaseNum: 31,
+  phaseName: "N1 Kanji",
+  week: Math.ceil(1688 / 7),
+  title: "Business Kanji VIII: Assessment & Evaluation",
+  intro: "Today's kanji deal with evaluation, judgment, and critical assessment in professional settings.",
+  type: "kanji",
+  chars: [
+    ["鑑", "かん"],
+    ["査", "さ"],
+    ["監", "かん"],
+    ["督", "とく"],
+    ["稽", "けい"]
+  ],
+  vocab: [
+    ["鑑定", "かんてい", "appraisal, expert evaluation"],
+    ["検査", "けんさ", "inspection, examination"],
+    ["監督", "かんとく", "supervision, director"],
+    ["監査", "かんさ", "audit, inspection"],
+    ["稽古", "けいこ", "practice, training"]
+  ],
+  grammar: { pattern: "〜に鑑みて", meaning: "in light of ~, considering ~", example_jp: "過去の失敗に鑑みて監査体制を強化した。", example_en: "In light of past failures, the audit system was strengthened." },
+  practice: "Write each kanji five times. Write about a corporate audit using 監査 and 鑑定.",
+  tip: "鑑 (mirror/model) appears in 鑑定 (appraisal), 鑑賞 (appreciation), and 年鑑 (yearbook). 監 (watch over) appears in 監督 (director/supervisor), 監査 (audit), 監視 (surveillance)."
+});
+
+curriculum.push({
+  day: 1689,
+  phaseNum: 31,
+  phaseName: "N1 Kanji",
+  week: Math.ceil(1689 / 7),
+  title: "Business Kanji IX: Reform & Innovation",
+  intro: "We conclude the kanji study days with characters for reform, innovation, and organizational transformation.",
+  type: "kanji",
+  chars: [
+    ["刷", "さつ"],
+    ["革", "かく"],
+    ["斬", "ざん"],
+    ["新", "しん"],
+    ["拓", "たく"]
+  ],
+  vocab: [
+    ["刷新", "さっしん", "reform, renovation"],
+    ["革新", "かくしん", "innovation, reform"],
+    ["斬新", "ざんしん", "novel, original"],
+    ["一新", "いっしん", "complete renewal"],
+    ["開拓", "かいたく", "pioneering, development"]
+  ],
+  grammar: { pattern: "〜んがために", meaning: "in order to ~ (literary/formal)", example_jp: "組織を刷新せんがために斬新な改革案が提出された。", example_en: "In order to reform the organization, a novel reform proposal was submitted." },
+  practice: "Write each kanji five times. Write a proposal for organizational reform using 刷新, 革新, and 斬新.",
+  tip: "刷新 (reform by sweeping clean), 革新 (innovation by fundamentally changing), 斬新 (novelty by cutting away the old) — three different metaphors for making things new."
+});
+
+curriculum.push({
+  day: 1690,
+  phaseNum: 31,
+  phaseName: "N1 Kanji",
+  week: Math.ceil(1690 / 7),
+  title: "Reading: Business Kanji in Corporate Analysis",
+  intro: "Today is a reading day. Apply the business and compound kanji you have learned in context through an extended passage about corporate strategy and economic trends.",
+  type: "reading",
+  chars: [],
+  vocab: [
+    ["頓挫", "とんざ", "setback"],
+    ["凌駕", "りょうが", "surpassing"],
+    ["刷新", "さっしん", "reform"],
+    ["莫大", "ばくだい", "enormous"],
+    ["均衡", "きんこう", "equilibrium"]
+  ],
+  grammar: { pattern: "〜と相まって", meaning: "combined with ~, coupled with ~", example_jp: "技術革新と市場拡大が相まって急成長を遂げた。", example_en: "Combined with technological innovation and market expansion, rapid growth was achieved." },
+  practice: "Read the passage carefully. Answer the comprehension questions, then summarize the main argument in your own words.",
+  tip: "Business and economic passages in N1 use many compound words describing scale (莫大, 甚大), change (刷新, 革新), and strategy (妥協, 均衡). Mastering these pairs is key to reading comprehension.",
+  passage: { "text_jp": "日本経済はバブル崩壊以降、長期にわたる停滞を経験したが、近年ようやく新たな成長の兆候が見えつつある。かつての高度経済成長期には、製造業を中心とした輸出主導型の経済モデルが世界を凌駕する勢いで発展した。しかし、その後の国際競争の激化と国内市場の縮小が相まって、多くの企業が頓挫の危機に直面した。莫大な設備投資が重荷となり、組織の刷新が急務となった。先進的な企業は従来のビジネスモデルから脱却し、デジタル技術を活用した斬新な戦略を打ち出した。その結果、生産性において旧来の手法を凌駕する成果を上げている。一方で、急激な変革は組織内部に摩擦を生じさせ、労使間の均衡を保つことが重要な課題となっている。交渉と妥協を重ねながら、従業員の士気を昂揚させつつ改革を推進するという繊細な舵取りが求められている。甚大な損失を被った企業もあるが、逆境を乗り越えて卓越した業績を達成した企業も少なくない。傑出した経営者たちは、壮大なビジョンを掲げつつも慎重な措置を講じ、持続可能な成長への道筋を示してきた。近年注目されているのは、企業の社会的責任と環境への配慮を経営戦略の中核に据えるアプローチである。抜群の収益力を誇りながらも環境負荷の低減に取り組む企業が、投資家からの評価においても他社を凌駕する傾向が顕著になっている。監査体制の強化や情報開示の透明性向上もまた、企業統治の刷新において不可欠な要素である。偉大な企業とは、単に規模が膨大であることではなく、時代の変化に柔軟に対応し、社会に対する誠実な貢献を続ける組織のことであろう。隆盛と衰退を繰り返す経済の波の中で、真に卓越した企業だけが永続する価値を創造し続けるのである。秀逸な人材を擁し、抜群の組織力で困難を乗り越える企業こそが、雄大な経済発展の礎となり、次の世代に繁栄の道を切り拓くのだ。迂遠に見えても着実な歩みを止めない企業こそが、最終的には最も大きな成果を手にするのである。", "text_en": "The Japanese economy experienced prolonged stagnation following the collapse of the bubble, but in recent years signs of new growth have finally begun to appear. During the former period of high economic growth, an export-led economic model centered on manufacturing developed with a momentum that surpassed the world. However, the subsequent intensification of international competition coupled with the shrinking domestic market caused many companies to face the crisis of setback. Enormous capital investment became a burden, and organizational reform became an urgent necessity. Progressive companies broke free from conventional business models and launched novel strategies utilizing digital technology. As a result, they have achieved results that surpass traditional methods in productivity. On the other hand, rapid transformation has created friction within organizations, and maintaining balance between labor and management has become an important challenge. Delicate steering is required — advancing reform while repeatedly negotiating and compromising, and while uplifting employee morale. Although some companies have suffered tremendous losses, not a few have overcome adversity to achieve excellent performance. Distinguished managers have pointed the way toward sustainable growth by taking prudent measures while raising grand visions. What has attracted attention in recent years is the approach of placing corporate social responsibility and environmental consideration at the core of business strategy. The trend has become conspicuous for companies that boast outstanding profitability while also working to reduce environmental impact to surpass other companies in investor evaluations as well. Strengthening audit systems and improving transparency of information disclosure are also essential elements in the reform of corporate governance. A truly great company is not merely one of enormous scale, but an organization that responds flexibly to changes of the times and continues to make sincere contributions to society. Amid the waves of economic prosperity and decline, only truly excellent companies continue to create enduring value.", "questions": [{ "question_jp": "筆者は「偉大な企業」をどのように定義していますか。", "question_en": "How does the author define a 'great company'?", "answer": "時代の変化に柔軟に対応し、社会に対する誠実な貢献を続ける組織" }] }
+});
+
+// ═══════════════════════════════════════════════════════════════════════════
+// PHASE 32: N1 TEST PREP (Days 1691-1720)
+// 30 days of N1 test preparation and review
+// ═══════════════════════════════════════════════════════════════════════════
+
+curriculum.push({
+  day: 1691,
+  phaseNum: 32,
+  phaseName: "N1 Test Prep",
+  week: Math.ceil(1691 / 7),
+  title: "Cloze Review: Formal Adverbs & Conjunctions",
+  intro: "Begin N1 test preparation by reviewing formal adverbs and conjunctions through cloze exercises. Identify the correct word to complete each sentence.",
+  type: "review",
+  vocab: [["概ね","おおむね","generally, mostly"],["辛うじて","かろうじて","barely, narrowly"],["然し乍ら","しかしながら","nevertheless, however"],["畢竟","ひっきょう","after all, in the final analysis"],["就中","なかんずく","above all, especially"],["翻って","ひるがえって","on the other hand, conversely"],["其れ故","それゆえ","therefore, for that reason"],["飽くまで","あくまで","to the very end, stubbornly"]],
+  chars: [],
+  grammar: {"pattern":"概ね～である","meaning":"is generally ~","example_jp":"今回の結果は概ね良好であった。","example_en":"The results this time were generally favorable."},
+  practice: "Fill in the blanks in ten sentences choosing from the eight vocabulary items above. Each word may be used once or twice.",
+  tip: "On the actual JLPT, cloze questions test whether you understand subtle differences between similar expressions. Practice distinguishing near-synonyms."
+});
+
+curriculum.push({
+  day: 1692,
+  phaseNum: 32,
+  phaseName: "N1 Test Prep",
+  week: Math.ceil(1692 / 7),
+  title: "Cloze Review: Written Expressions & Formal Verbs",
+  intro: "Today's cloze review focuses on written expressions and formal verbs that frequently appear in N1 reading passages.",
+  type: "review",
+  vocab: [["促す","うながす","to urge, to prompt"],["覆す","くつがえす","to overturn, to reverse"],["培う","つちかう","to cultivate, to foster"],["携わる","たずさわる","to be involved in"],["衰える","おとろえる","to decline, to weaken"],["損なう","そこなう","to harm, to impair"],["募る","つのる","to grow intense, to recruit"],["補う","おぎなう","to supplement, to compensate"]],
+  chars: [],
+  grammar: {"pattern":"～を促す","meaning":"to urge / prompt ~","example_jp":"政府は市民に対し節電を促した。","example_en":"The government urged citizens to conserve electricity."},
+  practice: "Complete eight sentences by choosing the appropriate formal verb. Then rewrite each sentence using a near-synonym to check your understanding.",
+  tip: "Formal verbs in Japanese often carry nuances that their casual equivalents lack. On the N1, wrong-answer choices are typically close in meaning but wrong in nuance."
+});
+
+curriculum.push({
+  day: 1693,
+  phaseNum: 32,
+  phaseName: "N1 Test Prep",
+  week: Math.ceil(1693 / 7),
+  title: "Cloze Review: Academic & Technical Vocabulary",
+  intro: "Review academic and technical vocabulary through cloze-style exercises that mirror the N1 Language Knowledge section.",
+  type: "review",
+  vocab: [["論文","ろんぶん","thesis, academic paper"],["仮説","かせつ","hypothesis"],["検証","けんしょう","verification, testing"],["統計","とうけい","statistics"],["実証","じっしょう","empirical proof"],["緻密","ちみつ","meticulous, elaborate"],["膨大","ぼうだい","enormous, vast"],["的確","てきかく","precise, accurate"]],
+  chars: [],
+  grammar: {"pattern":"仮説を実証する","meaning":"to empirically prove a hypothesis","example_jp":"膨大なデータに基づき仮説を実証した。","example_en":"The hypothesis was empirically proven based on enormous data."},
+  practice: "Read the following academic abstract and fill in the missing terms from today's vocabulary. Then write your own abstract using at least five of the words.",
+  tip: "Academic vocabulary forms a core part of the N1 reading section. Familiarize yourself with common collocations used in research contexts."
+});
+
+curriculum.push({
+  day: 1694,
+  phaseNum: 32,
+  phaseName: "N1 Test Prep",
+  week: Math.ceil(1694 / 7),
+  title: "Cloze Review: N1 Grammar Patterns I",
+  intro: "Review key N1 grammar patterns through cloze exercises. Each sentence requires selecting the correct grammatical structure.",
+  type: "review",
+  vocab: [["是正","ぜせい","correction, rectification"],["弊害","へいがい","harmful effect"],["施策","しさく","policy measure"],["改革","かいかく","reform, revolution"],["抜本的","ばっぽんてき","fundamental, drastic"],["制度","せいど","system, institution"],["不可欠","ふかけつ","indispensable, essential"],["背景","はいけい","background, context"]],
+  chars: [],
+  grammar: {"pattern":"～にほかならない","meaning":"is nothing other than ~","example_jp":"教育改革は次世代への投資にほかならない。","example_en":"Education reform is nothing other than investment in the next generation."},
+  practice: "Select the correct grammar pattern to complete each of the ten sentences. Patterns include ～にほかならない, ～をもって, ～たりとも, and ～ずにはいられない.",
+  tip: "Grammar cloze questions on the N1 often present four patterns that could grammatically fit but only one is semantically correct. Always read the full sentence before choosing."
+});
+
+curriculum.push({
+  day: 1695,
+  phaseNum: 32,
+  phaseName: "N1 Test Prep",
+  week: Math.ceil(1695 / 7),
+  title: "Cloze Review: N1 Grammar Patterns II",
+  intro: "Continue grammar pattern review with more advanced structures. Focus on distinguishing similar patterns that are common N1 distractors.",
+  type: "review",
+  vocab: [["妥当","だとう","appropriate, valid"],["顕著","けんちょ","conspicuous, remarkable"],["懸念","けねん","concern, apprehension"],["是非","ぜひ","right and wrong; by all means"],["見解","けんかい","opinion, view"],["趣旨","しゅし","purpose, gist"],["措置","そち","measure, step"],["充実","じゅうじつ","fulfillment, enhancement"]],
+  chars: [],
+  grammar: {"pattern":"～を踏まえて","meaning":"based on ~, taking ~ into account","example_jp":"現状を踏まえて適切な措置を講じる必要がある。","example_en":"It is necessary to take appropriate measures based on the current situation."},
+  practice: "Complete fifteen sentences choosing from ～を踏まえて, ～に即して, ～をものともせず, ～に先立って, and ～を皮切りに. Explain your reasoning for each choice.",
+  tip: "When two grammar patterns seem equally valid, look for contextual clues: register, tense, and the logical relationship between clauses."
+});
+
+curriculum.push({
+  day: 1696,
+  phaseNum: 32,
+  phaseName: "N1 Test Prep",
+  week: Math.ceil(1696 / 7),
+  title: "Kanji Reading Drill: On-Kun Ambiguity I",
+  intro: "N1 kanji questions often test on-yomi versus kun-yomi readings in context. Today we drill kanji with multiple common readings.",
+  type: "kanji",
+  vocab: [["生涯","しょうがい","lifetime, career"],["生い立ち","おいたち","upbringing"],["芝生","しばふ","lawn, turf"],["生真面目","きまじめ","overly serious"],["相生","あいおい","growing together"],["一生懸命","いっしょうけんめい","with all one's might"],["生憎","あいにく","unfortunately"],["生業","なりわい","livelihood, occupation"]],
+  chars: [["生","セイ・ショウ・い（きる）・う（まれる）・なま・は（える）・き"],["涯","ガイ"],["芝","しば"],["懸","ケン・ケ・か（ける）"],["憎","ゾウ・にく（む）"]],
+  grammar: {"pattern":"生涯を通じて","meaning":"throughout one's lifetime","example_jp":"彼は生涯を通じて研究に携わった。","example_en":"He was involved in research throughout his lifetime."},
+  practice: "For each compound, identify whether it uses on-yomi or kun-yomi for 生. Then write the reading in hiragana without looking at the answer.",
+  tip: "The kanji 生 has more readings than almost any other character. On the N1, it appears in many compound words — context determines pronunciation."
+});
+
+curriculum.push({
+  day: 1697,
+  phaseNum: 32,
+  phaseName: "N1 Test Prep",
+  week: Math.ceil(1697 / 7),
+  title: "Kanji Reading Drill: On-Kun Ambiguity II",
+  intro: "Continue drilling kanji with ambiguous readings. Today focuses on characters whose readings change dramatically based on compound context.",
+  type: "kanji",
+  vocab: [["下降","かこう","descent, decline"],["下手","へた","unskilled"],["下町","したまち","downtown"],["下心","したごころ","ulterior motive"],["靴下","くつした","socks"],["以下","いか","below, the following"],["下落","げらく","decline, fall"],["下請","したうけ","subcontracting"]],
+  chars: [["下","カ・ゲ・した・しも・もと・さ（げる）・くだ（る）・お（ろす）"],["降","コウ・お（りる）・ふ（る）"],["靴","カ・くつ"],["落","ラク・お（ちる）"],["請","セイ・シン・う（ける）・こ（う）"]],
+  grammar: {"pattern":"～以下のとおり","meaning":"as follows below","example_jp":"詳細は以下のとおりである。","example_en":"The details are as follows."},
+  practice: "Cover the readings and try to read each compound aloud. Check your answers and mark any you got wrong for extra review.",
+  tip: "The kanji 下 has six or more readings. When you encounter an unfamiliar compound, try both on and kun readings to see which sounds like a real word."
+});
+
+curriculum.push({
+  day: 1698,
+  phaseNum: 32,
+  phaseName: "N1 Test Prep",
+  week: Math.ceil(1698 / 7),
+  title: "Kanji Reading Drill: Rare Readings & Jukujikun",
+  intro: "N1 tests frequently include jukujikun — compound words whose readings cannot be predicted from individual kanji. Master these special readings today.",
+  type: "kanji",
+  vocab: [["大人","おとな","adult"],["昨日","きのう","yesterday"],["今日","きょう","today"],["明日","あした","tomorrow"],["果物","くだもの","fruit"],["土産","みやげ","souvenir"],["海女","あま","female diver"],["紅葉","もみじ","autumn leaves"]],
+  chars: [["紅","コウ・ク・べに・くれない"],["葉","ヨウ・は"],["土","ド・ト・つち"],["産","サン・う（む）・う（まれる）"],["果","カ・は（たす）・くだもの"]],
+  grammar: {"pattern":"紅葉が色づく","meaning":"autumn leaves change color","example_jp":"山の紅葉が美しく色づいた。","example_en":"The autumn leaves on the mountain turned beautifully colored."},
+  practice: "Write each jukujikun word five times, saying the reading aloud each time. These must be memorized as whole units, not derived from individual kanji.",
+  tip: "Jukujikun are always tested on the N1. There is no shortcut — you must memorize these as fixed pairs of kanji and reading."
+});
+
+curriculum.push({
+  day: 1699,
+  phaseNum: 32,
+  phaseName: "N1 Test Prep",
+  week: Math.ceil(1699 / 7),
+  title: "Kanji Reading Drill: Sound-Change Compounds",
+  intro: "When kanji combine into compounds, phonological changes like rendaku and gemination occur. Today we drill these sound changes systematically.",
+  type: "kanji",
+  vocab: [["花火","はなび","fireworks"],["手紙","てがみ","letter"],["雨傘","あまがさ","umbrella"],["三日月","みかづき","crescent moon"],["血管","けっかん","blood vessel"],["発展","はってん","development"],["雑誌","ざっし","magazine"],["出発","しゅっぱつ","departure"]],
+  chars: [["傘","サン・かさ"],["管","カン・くだ"],["雑","ザツ・ゾウ"],["誌","シ"],["展","テン"],["脈","ミャク"]],
+  grammar: {"pattern":"～が発展する","meaning":"~ develops / advances","example_jp":"技術の発展に伴い社会は著しく変化した。","example_en":"Society changed remarkably along with the development of technology."},
+  practice: "Sort the vocabulary into three groups: rendaku (voicing), gemination (double consonant), and no change. Then find three additional examples for each group.",
+  tip: "Rendaku (voicing of the second element) and gemination (っ insertion) are predictable patterns. Learning the rules saves you from rote memorization."
+});
+
+curriculum.push({
+  day: 1700,
+  phaseNum: 32,
+  phaseName: "N1 Test Prep",
+  week: Math.ceil(1700 / 7),
+  title: "Kanji Reading Drill: Four-Character Compounds",
+  intro: "Four-character compounds (yojijukugo) are a staple of the N1 kanji section. These fixed expressions test both reading and meaning comprehension.",
+  type: "kanji",
+  vocab: [["一石二鳥","いっせきにちょう","killing two birds with one stone"],["異口同音","いくどうおん","in unison, unanimously"],["臨機応変","りんきおうへん","adapting to circumstances"],["試行錯誤","しこうさくご","trial and error"],["前代未聞","ぜんだいみもん","unprecedented, unheard-of"],["自業自得","じごうじとく","reaping what you sow"],["言語道断","ごんごどうだん","outrageous, preposterous"],["温故知新","おんこちしん","learning from the past"]],
+  chars: [["臨","リン・のぞ（む）"],["錯","サク"],["聞","ブン・モン・き（く）"],["断","ダン・た（つ）・ことわ（る）"],["故","コ・ゆえ"]],
+  grammar: {"pattern":"試行錯誤を重ねる","meaning":"to go through repeated trial and error","example_jp":"試行錯誤を重ねた末、画期的な発明が生まれた。","example_en":"After repeated trial and error, a groundbreaking invention was born."},
+  practice: "Match each yojijukugo to its meaning, then use each in an original sentence. Finally, write each compound from memory.",
+  tip: "Yojijukugo often appear in the reading section as well as the vocabulary section. Knowing them enriches your comprehension of formal texts."
+});
+
+curriculum.push({
+  day: 1701,
+  phaseNum: 32,
+  phaseName: "N1 Test Prep",
+  week: Math.ceil(1701 / 7),
+  title: "Reading: Newspaper Editorial on Aging Society",
+  intro: "Practice N1 reading comprehension with a newspaper editorial on Japan's aging population. Focus on identifying the author's thesis and supporting arguments.",
+  type: "reading",
+  vocab: [["少子高齢化","しょうしこうれいか","declining birthrate and aging population"],["福祉","ふくし","welfare"],["財源","ざいげん","financial resources"],["持続可能","じぞくかのう","sustainable"],["負担","ふたん","burden, load"],["年金","ねんきん","pension"],["介護","かいご","nursing care"],["世代間","せだいかん","intergenerational"]],
+  chars: [],
+  grammar: {"pattern":"～を余儀なくされる","meaning":"to be forced to ~","example_jp":"財源不足により制度改革を余儀なくされている。","example_en":"Due to insufficient financial resources, institutional reform is being forced."},
+  practice: "Read the passage carefully. Answer the comprehension questions, then identify three rhetorical techniques the author uses to persuade the reader.",
+  tip: "N1 editorials often present a problem, explore counterarguments, then state the author's position. Identify this structure to answer questions efficiently.",
+  passage: {"text_jp":"我が国は未曾有の少子高齢化に直面している。総務省の統計によれば、六十五歳以上の高齢者は総人口の三割を超え、生産年齢人口は減少の一途を辿っている。此の人口動態の変化は、年金制度や医療保険制度の持続可能性に深刻な影響を及ぼしている。現行の社会保障制度は、多くの現役世代が少数の高齢者を支えるという前提の下に設計されたものであり、前提そのものが崩壊しつつある現在、抜本的な改革は不可避である。然し乍ら、改革の方向性を巡っては見解が分かれている。一方では、高齢者の自己負担を引き上げ、世代間の公平性を確保すべきだとする主張がある。他方、高齢者の多くが年金に依存しており、負担増は生活の質を著しく損なうとの反論も根強い。此処で注目すべきは、北欧諸国の先進的な取り組みである。スウェーデンでは年金制度を賦課方式から積立方式へと段階的に移行させ、世代間の負担の均衡を図ることに一定の成功を収めている。尤も、此れをそのまま我が国に適用することには慎重であるべきだ。文化的背景や雇用慣行の違いを考慮せずに制度を移植しても、期待どおりの効果は得られないであろう。畢竟、この問題の本質は財源の確保にある。消費税の引き上げ、法人税の見直し、あるいは新たな税源の開拓など、複数の選択肢を緻密に検討した上で、国民的合意を形成していく以外に道はない。殊に重要なのは、短期的な利害に囚われず、五十年後、百年後の社会を見据えた議論を行うことである。選挙の周期に縛られた政治家に長期的視点を期待することは難しいかもしれないが、此の問題こそ超党派で取り組むべき国家的課題である。高齢者を単なる福祉の受け手と見なすのではなく、その知識と経験を社会に還元する仕組みを構築することが、真に持続可能な社会の実現に向けた第一歩となるであろう。世代間の対立を煽るのではなく、共生の理念に基づいた制度設計こそが求められている。我々は今、未来の社会を形作る重大な岐路に立っている。","text_en":"Our country is facing an unprecedented declining birthrate and aging population. According to Ministry of Internal Affairs statistics, seniors aged 65 and over exceed 30% of the total population, and the working-age population continues to decline steadily. This demographic change is having a serious impact on the sustainability of the pension and healthcare insurance systems. The current social security system was designed under the premise that many working-age people support a small number of elderly, and now that this very premise is crumbling, fundamental reform is unavoidable. However, opinions are divided regarding the direction of reform. On one hand, there are arguments that the self-payment burden on the elderly should be raised to ensure intergenerational fairness. On the other hand, the counterargument that many elderly depend on pensions and increased burden would significantly impair their quality of life remains strong. What deserves attention here are the advanced efforts of Nordic countries. Sweden has achieved a certain degree of success in balancing intergenerational burden by gradually transitioning its pension system from a pay-as-you-go to a funded scheme. However, we should be cautious about directly applying this to our country. Transplanting a system without considering differences in cultural background and employment practices will not yield the expected results. In the final analysis, the essence of this problem lies in securing financial resources. There is no path other than meticulously examining multiple options — raising the consumption tax, reviewing corporate taxes, or developing new tax sources — and building national consensus. What is particularly important is conducting discussions that look ahead to society fifty years from now, rather than being trapped by short-term interests. Rather than viewing the elderly merely as recipients of welfare, constructing mechanisms to return their knowledge and experience to society would be the first step toward realizing a truly sustainable society. What is needed is not fueling intergenerational conflict but institutional design based on the principle of coexistence. We now stand at a critical crossroads that will shape the society of the future.","questions":[{"question_jp":"筆者は現行の社会保障制度の根本的な問題は何だと述べていますか。","question_en":"What does the author state is the fundamental problem with the current social security system?","answer":"多くの現役世代が少数の高齢者を支えるという前提が崩壊しつつあること"},{"question_jp":"筆者が最も重要だと主張していることは何ですか。","question_en":"What does the author argue is most important?","answer":"短期的な利害に囚われず、五十年後の社会を見据えた議論を行うこと"}]}
+});
+
+curriculum.push({
+  day: 1702,
+  phaseNum: 32,
+  phaseName: "N1 Test Prep",
+  week: Math.ceil(1702 / 7),
+  title: "Reading: Academic Essay on Language Acquisition",
+  intro: "Read an academic essay on second language acquisition theory. Practice extracting the thesis statement, methodology, and conclusions from scholarly prose.",
+  type: "reading",
+  vocab: [["母語","ぼご","mother tongue, native language"],["臨界期","りんかいき","critical period"],["習得","しゅうとく","acquisition, mastery"],["仮説","かせつ","hypothesis"],["普遍的","ふへんてき","universal"],["認知","にんち","cognition, recognition"],["音韻","おんいん","phonology"],["語彙","ごい","vocabulary"]],
+  chars: [],
+  grammar: {"pattern":"～と相まって","meaning":"coupled with ~, combined with ~","example_jp":"環境的要因と生得的能力が相まって言語習得が進む。","example_en":"Language acquisition progresses through the combination of environmental factors and innate ability."},
+  practice: "Read the passage and answer the comprehension questions. Then outline the author's argument in three sentences, identifying the claim, evidence, and conclusion.",
+  tip: "Academic essays on the N1 follow a rigid structure: problem statement, prior research, methodology, findings, discussion. Use this framework to navigate dense prose.",
+  passage: {"text_jp":"第二言語習得における臨界期仮説は、長年に亘り言語学者の間で議論の的となってきた。レネバーグが一九六七年に提唱した此の仮説によれば、言語習得には生物学的に決定された臨界期が存在し、思春期を過ぎると母語話者と同等の言語能力を獲得することは極めて困難になるとされる。此の主張を裏付ける証拠として、移民を対象とした大規模調査が挙げられる。到着年齢が低いほど第二言語の文法的正確さが高い傾向が統計的に実証されている。特に、ジョンソンとニューポートによる一九八九年の研究は、七歳以前に移住した者と思春期以降に移住した者との間に、文法判断テストにおいて顕著な差異が見られることを示した。此の研究は其の後の議論の出発点となり、数多くの追試研究が行われた。初期の追試の多くはこの結果を支持するものであった。然し乍ら、近年の研究はこの見解に疑問を投げかけている。成人学習者の中にも母語話者に匹敵する能力を達成した事例が複数報告されており、臨界期の概念は絶対的なものではないとする立場が有力になりつつある。例えば、高い動機付けを持ち、目標言語の環境に深く浸った成人学習者が、発音を含む全ての言語領域で母語話者と区別できない水準に達した事例が記録されている。殊に、音韻習得と文法習得では臨界期の影響が異なるという知見は注目に値する。音韻体系の習得は確かに年齢の影響を強く受けるが、文法や語彙の習得においては、動機付け、学習環境、母語との類型的距離といった要因が年齢以上に重要であることが明らかになってきた。加えて、神経可塑性に関する最新の知見は、成人の脳もまた新たな言語体系に適応する能力を保持していることを示唆している。脳画像研究によれば、成人学習者においても第二言語の習熟に伴い、脳の言語関連領域に構造的変化が生じることが確認されている。畢竟、言語習得は生物学的制約と環境的要因の複雑な相互作用の産物であり、単一の要因に帰することはできない。今後の研究には、認知神経科学の手法を取り入れた、より緻密な実証的アプローチが求められている。","text_en":"The critical period hypothesis in second language acquisition has been a subject of debate among linguists for many years. According to this hypothesis proposed by Lenneberg in 1967, there exists a biologically determined critical period for language acquisition, and after puberty it becomes extremely difficult to acquire linguistic competence equivalent to that of native speakers. As evidence supporting this claim, large-scale surveys targeting immigrants have been cited. It has been statistically demonstrated that the younger the age of arrival, the higher the tendency toward grammatical accuracy in the second language. In particular, Johnson and Newport's 1989 study showed that there were marked differences in grammatical judgment tests between those who immigrated before age seven and those who immigrated after puberty. However, recent research has cast doubt on this view. Multiple cases have been reported of adult learners achieving competence comparable to native speakers, and the position that the concept of a critical period is not absolute is gaining ground. For example, cases have been documented of highly motivated adult learners deeply immersed in the target language environment who reached a level indistinguishable from native speakers in all linguistic domains, including pronunciation. Particularly noteworthy is the finding that the influence of the critical period differs between phonological acquisition and grammatical acquisition. While phonological system acquisition is indeed strongly influenced by age, it has become clear that in grammar and vocabulary acquisition, factors such as motivation, learning environment, and typological distance from the native language are more important than age. Additionally, the latest findings on neuroplasticity suggest that the adult brain also retains the ability to adapt to new language systems. In the final analysis, language acquisition is a product of complex interactions between biological constraints and environmental factors, and cannot be attributed to a single factor. Future research requires more meticulous empirical approaches incorporating methods from cognitive neuroscience.","questions":[{"question_jp":"臨界期仮説に対する近年の反論の根拠は何ですか。","question_en":"What is the basis for recent counterarguments to the critical period hypothesis?","answer":"成人学習者の中にも母語話者に匹敵する能力を達成した事例が報告されていること"},{"question_jp":"筆者は音韻習得と文法習得の違いについてどう述べていますか。","question_en":"What does the author say about the difference between phonological and grammatical acquisition?","answer":"音韻体系の習得は年齢の影響を強く受けるが、文法や語彙の習得では動機付けや学習環境などの要因が年齢以上に重要である"}]}
+});
+
+curriculum.push({
+  day: 1703,
+  phaseNum: 32,
+  phaseName: "N1 Test Prep",
+  week: Math.ceil(1703 / 7),
+  title: "Reading: Literary Excerpt — Modern Japanese Fiction",
+  intro: "Engage with a literary passage from modern Japanese fiction. Practice interpreting figurative language, character psychology, and narrative perspective at the N1 level.",
+  type: "reading",
+  vocab: [["黄昏","たそがれ","twilight, dusk"],["佇む","たたずむ","to stand motionlessly"],["微か","かすか","faint, slight"],["懐かしい","なつかしい","nostalgic"],["儚い","はかない","fleeting, transient"],["漂う","ただよう","to drift, to float"],["仄か","ほのか","faint, dim"],["物寂しい","ものさびしい","lonely, melancholy"]],
+  chars: [],
+  grammar: {"pattern":"～てやまない","meaning":"to never stop ~ing, to earnestly ~","example_jp":"故郷の風景を懐かしんでやまない。","example_en":"I never cease to feel nostalgic for the scenery of my hometown."},
+  practice: "Read the literary passage and answer the comprehension questions. Then analyze the author's use of seasonal imagery and explain how it reflects the narrator's emotional state.",
+  tip: "Literary passages on the N1 require reading between the lines. Pay attention to imagery, season words, and implied emotions rather than only explicit statements.",
+  passage: {"text_jp":"黄昏時の街を歩いていると、ふと遠い日の記憶が蘇ることがある。あの頃の私は、まだ世界の広さを知らず、狭い路地裏が宇宙の全てであった。祖母の家の縁側に座り、夕焼けに染まる空を眺めていた夏の日々。蝉の声が次第に弱まり、代わりに鈴虫の音色が庭に満ちてくる頃、祖母は決まって麦茶を運んできた。その器には必ず氷が二つ浮かんでいて、硝子の表面に結露が光っていた。何気ない光景であったが、今となっては取り返しのつかない時間の欠片である。当時は其れが永遠に続くものだと信じて疑わなかった。子どもにとって時間は濃密で、一日が果てしなく長い。夏休みは永遠であり、祖母は不滅の存在であった。あの頃の私にとって、世界は完結した小宇宙であり、何一つ変わることはないと思っていた。しかし祖母が亡くなって既に二十年が経つ。あの縁側はとうに取り壊され、跡地には無機質な駐車場が広がっている。然し乍ら、黄昏の光の中に立つと、麦茶の微かな香りが鼻腔を掠めるような気がする。記憶とは不思議なもので、五感の断片が思いがけない瞬間に甦り、過ぎ去った時間を鮮やかに再現する。私はその場に佇み、暫し目を閉じた。瞼の裏に映るのは、夕日に照らされた祖母の皺だらけの手であった。あの手は私の頭を幾度となく撫で、世界は安全な場所であると教えてくれた。祖母はよく言っていた。「人の一生は川の流れのようなものだ。どんなに留めようとしても水は流れていく。けれど、川底の石は残る。大事なのは、良い石を沈めることだ。」幼い私には其の言葉の意味が分からなかった。だが今、同じ手で孫の頭を撫でている自分に気づき、時の流れの残酷さと温かさを同時に感じずにはいられなかった。祖母が沈めた石は確かに此処にある。私の中に、そして今私が撫でている小さな頭の中に。儚いからこそ美しい。其の真理を、この年になってようやく理解し始めている。街灯が一つ、また一つと灯り始め、黄昏は静かに夜へと移ろっていった。","text_en":"Walking through the town at twilight, distant memories sometimes resurface unexpectedly. In those days, I did not yet know how vast the world was, and the narrow back alleys were the entirety of my universe. Those summer days sitting on the veranda of my grandmother's house, gazing at the sky dyed in sunset colors. When the cicadas gradually grew quieter and the sound of bell crickets filled the garden instead, grandmother would invariably bring barley tea. There were always two ice cubes floating in the cup, and condensation glistened on the glass surface. It was an unremarkable scene, but now it is an irretrievable fragment of time. Twenty years have already passed since grandmother died. That veranda was demolished long ago, and a sterile parking lot now spreads across the site. Nevertheless, standing in the twilight, I feel as though the faint scent of barley tea brushes past my nostrils. Memory is a mysterious thing — fragments of the five senses revive at unexpected moments, vividly recreating time that has passed. I stood motionlessly in that spot and closed my eyes for a while. What appeared behind my eyelids were grandmother's wrinkled hands illuminated by the setting sun. Those hands stroked my head countless times and taught me that the world was a safe place. Grandmother often used to say, 'A person's life is like the flow of a river. No matter how much you try to hold it back, the water keeps flowing. But the stones at the bottom of the river remain. What matters is sinking good stones.' As a child, I did not understand the meaning of those words. But now, noticing myself stroking my grandchild's head with the same hands, I could not help but feel both the cruelty and warmth of the passage of time simultaneously. The stones grandmother sank are certainly here — within me, and within the small head I am stroking now. It is beautiful precisely because it is fleeting. I am only just beginning to understand that truth at this age. The streetlights began to come on one by one, and twilight quietly gave way to night.","questions":[{"question_jp":"「何気ない光景」が筆者にとって特別な意味を持つのはなぜですか。","question_en":"Why does the 'unremarkable scene' hold special meaning for the narrator?","answer":"祖母が亡くなり縁側も取り壊されたため、もう取り返しのつかない時間の欠片となっているから"},{"question_jp":"筆者が「時の流れの残酷さと温かさ」を同時に感じたのはどのような瞬間ですか。","question_en":"At what moment did the narrator feel both the cruelty and warmth of time's passage?","answer":"自分が祖母と同じように孫の頭を撫でていることに気づいた瞬間"}]}
+});
+
+curriculum.push({
+  day: 1704,
+  phaseNum: 32,
+  phaseName: "N1 Test Prep",
+  week: Math.ceil(1704 / 7),
+  title: "Reading: Newspaper Editorial on Technology and Privacy",
+  intro: "Practice with an editorial examining the tension between technological advancement and personal privacy. Identify logical arguments and rhetorical strategies.",
+  type: "reading",
+  vocab: [["個人情報","こじんじょうほう","personal information"],["監視","かんし","surveillance, monitoring"],["規制","きせい","regulation, restriction"],["透明性","とうめいせい","transparency"],["侵害","しんがい","infringement, violation"],["利便性","りべんせい","convenience"],["法整備","ほうせいび","legal framework development"],["自律的","じりつてき","autonomous, self-governing"]],
+  chars: [],
+  grammar: {"pattern":"～と引き換えに","meaning":"in exchange for ~","example_jp":"利便性と引き換えに個人情報を差し出している。","example_en":"We are handing over personal information in exchange for convenience."},
+  practice: "Read the passage and answer the comprehension questions. Then write a 200-character rebuttal or supporting argument for the author's conclusion.",
+  tip: "Editorials on technology topics are increasingly common on the N1. They use specialized vocabulary but follow standard argumentative structure.",
+  passage: {"text_jp":"デジタル技術の急速な発展は、我々の生活に計り知れない恩恵をもたらした。然し乍ら、その利便性と引き換えに、我々は自らの個人情報を際限なく提供し続けているのではないだろうか。検索履歴、購買記録、位置情報——日常のあらゆる行動がデータとして収集・蓄積され、人工知能による分析の対象となっている。此の状況に対し、欧州連合はいち早く一般データ保護規則を施行し、個人の権利保護に乗り出した。同規則は個人に対しデータの削除を要求する権利や、自動化された意思決定に対して異議を申し立てる権利を保障しており、違反した企業には巨額の制裁金が科される。此の厳格な規制は世界各国の法整備に影響を与え、事実上の国際標準となりつつある。翻って我が国の対応は遅きに失したと言わざるを得ない。個人情報保護法の改正は行われたものの、実効性には疑問が残る。殊に懸念されるのは、企業による個人情報の利用目的が不透明なまま放置されている現状である。利用者の大半は、自らのデータがどのように利用されているかを把握していない。利用規約は膨大かつ難解であり、専門家でさえ全文を精読するには数時間を要する。殆どの利用者が内容を確認せずに同意ボタンを押しているのが実情である。同意の形骸化とも言うべき事態が常態化しているのである。監視社会への懸念も看過できない。防犯カメラの設置は治安維持に寄与する一方、市民の行動を逐一記録することの是非については十分な議論がなされていない。顔認識技術の発達により、匿名での公共空間の利用すら困難になりつつある。個人の行動が逐一追跡される社会は、自由な表現や政治活動を萎縮させる恐れがある。技術の進歩そのものを否定する必要はない。問題は、技術を制御する法制度と倫理的枠組みが追いついていないことにある。データの利活用と個人の権利保護の両立を図る、包括的かつ実効性のある法整備が急務である。我々は利便性の代償について、今一度真摯に向き合うべき時を迎えている。","text_en":"The rapid development of digital technology has brought immeasurable benefits to our lives. However, in exchange for that convenience, are we not endlessly providing our personal information? Search history, purchase records, location data — every aspect of daily behavior is being collected and accumulated as data, becoming subjects of artificial intelligence analysis. In response to this situation, the European Union was quick to enforce the General Data Protection Regulation and took action to protect individual rights. The regulation guarantees individuals the right to request data deletion and the right to object to automated decision-making. On the other hand, our country's response must be said to have been too late. Although amendments to the Personal Information Protection Act were made, questions remain about their effectiveness. What is particularly concerning is the current situation where the purposes for which companies use personal information remain opaque. The majority of users do not understand how their data is being used. Terms of service are voluminous and complex, and the reality is that most users press the agree button without reviewing the content. A situation that might be called the hollowing out of consent has become the norm. Concerns about a surveillance society cannot be overlooked either. While the installation of security cameras contributes to maintaining public safety, there has been insufficient discussion about the propriety of recording citizens' every action. With the development of facial recognition technology, even anonymous use of public spaces is becoming difficult. There is no need to deny technological progress itself. The problem is that legal systems and ethical frameworks to control technology have not kept pace. Comprehensive and effective legal framework development that achieves both data utilization and protection of individual rights is urgently needed. We have arrived at a time when we should once again sincerely confront the price of convenience.","questions":[{"question_jp":"筆者が最も問題視しているのはどのような現状ですか。","question_en":"What current situation does the author consider most problematic?","answer":"企業による個人情報の利用目的が不透明なまま放置され、同意が形骸化していること"},{"question_jp":"筆者は技術の進歩自体についてどのような立場をとっていますか。","question_en":"What position does the author take regarding technological progress itself?","answer":"技術の進歩そのものを否定する必要はなく、問題は技術を制御する法制度と倫理的枠組みが追いついていないことだとしている"}]}
+});
+
+curriculum.push({
+  day: 1705,
+  phaseNum: 32,
+  phaseName: "N1 Test Prep",
+  week: Math.ceil(1705 / 7),
+  title: "Reading: Academic Essay on Environmental Ethics",
+  intro: "Tackle an academic essay on environmental ethics and the concept of intergenerational responsibility. Practice identifying complex argument structures in scholarly writing.",
+  type: "reading",
+  vocab: [["環境倫理","かんきょうりんり","environmental ethics"],["世代間","せだいかん","intergenerational"],["責務","せきむ","duty, responsibility"],["持続可能","じぞくかのう","sustainable"],["生態系","せいたいけい","ecosystem"],["不可逆的","ふかぎゃくてき","irreversible"],["共生","きょうせい","coexistence, symbiosis"],["功利主義","こうりしゅぎ","utilitarianism"]],
+  chars: [],
+  grammar: {"pattern":"～に鑑みて","meaning":"in light of ~, considering ~","example_jp":"過去の教訓に鑑みて、より慎重な対応が求められる。","example_en":"In light of past lessons, a more careful response is required."},
+  practice: "Read the passage and answer the comprehension questions. Then identify the three main philosophical positions presented and evaluate which has the strongest evidence.",
+  tip: "Academic essays on the N1 often present multiple viewpoints before stating the author's position. Track each viewpoint separately as you read.",
+  passage: {"text_jp":"環境倫理学の中心的課題の一つに、未来世代に対する現在世代の責務がある。我々は地球環境を次世代に引き継ぐ義務を負っているのか。もし負っているとすれば、その根拠は何か。此の問いに対し、三つの主要な立場が存在する。第一に、功利主義的観点からは、未来世代の幸福の総量を最大化することが道徳的に要請されるとされる。此の立場によれば、現在の経済活動が将来の環境悪化をもたらすならば、たとえ現在世代の利益を犠牲にしても環境保全を優先すべきである。然し乍ら、此の主張には「割引率」の問題が付きまとう。未来の利益をどの程度現在の価値に換算すべきかという経済学的問いは、未だ決着を見ていない。割引率を高く設定すれば未来世代の利益は軽視され、低く設定すれば現在世代に過大な負担を強いることになる。第二に、権利論的立場は、未来世代もまた生存権や健全な環境への権利を有すると主張する。然し乍ら、まだ存在しない人々が権利の主体たり得るかという哲学的難問が残る。此の難問に対し、信託理論を援用する試みもある。即ち、現在世代は地球環境の受託者として、未来世代のために資源を管理する責務を負うという考え方である。我々は地球を所有しているのではなく、一時的に預かっているに過ぎないという此の発想は、先住民族の自然観とも通底するものがある。第三に、徳倫理学的観点は、環境を守ることは人間としての徳に適う行為であるとする。此の立場は個人の品性に訴えかける点で説得力を持つが、具体的な政策指針を導出しにくいという限界がある。生態系の破壊は往々にして不可逆的であり、一度失われた生物多様性は回復不可能である。此の事実に鑑みれば、予防原則に基づく慎重な意思決定が不可欠であろう。畢竟、世代間倫理の問題は、我々が如何なる社会を目指すのかという根源的な問いに帰着する。経済成長と環境保全の二項対立を超え、共生の哲学に基づいた新たなパラダイムの構築が急務である。","text_en":"One of the central issues in environmental ethics is the responsibility of the present generation to future generations. Do we bear an obligation to pass on the global environment to the next generation? If so, what is the basis for that obligation? Three major positions exist in response to this question. First, from a utilitarian perspective, it is morally required to maximize the total happiness of future generations. According to this position, if current economic activity causes future environmental degradation, environmental conservation should be prioritized even at the sacrifice of present generation interests. However, this argument is plagued by the problem of the 'discount rate.' The economic question of to what degree future benefits should be converted to present value has yet to be settled. Second, the rights-based position asserts that future generations also possess rights to survival and a healthy environment. However, the philosophical difficulty remains of whether people who do not yet exist can be subjects of rights. Attempts have been made to address this difficulty by invoking trust theory — that is, the idea that the present generation bears a responsibility as trustees of the global environment to manage resources for future generations. Third, the virtue ethics perspective holds that protecting the environment is an act befitting human virtue. While this position has persuasive power in appealing to individual character, it has the limitation of difficulty in deriving specific policy guidelines. Ecosystem destruction is often irreversible, and once lost, biodiversity cannot be recovered. In light of this fact, cautious decision-making based on the precautionary principle is indispensable. In the final analysis, the problem of intergenerational ethics comes down to the fundamental question of what kind of society we aim for. It is urgent to construct a new paradigm based on a philosophy of coexistence that transcends the dichotomy of economic growth and environmental conservation.","questions":[{"question_jp":"功利主義的観点から見た環境保全の根拠は何ですか。","question_en":"What is the basis for environmental conservation from a utilitarian perspective?","answer":"未来世代の幸福の総量を最大化することが道徳的に要請されること"},{"question_jp":"権利論的立場の哲学的難問とは何ですか。","question_en":"What is the philosophical difficulty of the rights-based position?","answer":"まだ存在しない人々が権利の主体たり得るかということ"}]}
+});
+
+curriculum.push({
+  day: 1706,
+  phaseNum: 32,
+  phaseName: "N1 Test Prep",
+  week: Math.ceil(1706 / 7),
+  title: "Reading: Literary Excerpt — Introspective Narrative",
+  intro: "Read a literary passage exploring themes of identity and belonging. Practice interpreting internal monologue, metaphor, and the unreliable narrator at the N1 level.",
+  type: "reading",
+  vocab: [["疎外感","そがいかん","sense of alienation"],["帰属","きぞく","belonging, affiliation"],["葛藤","かっとう","conflict, struggle"],["自我","じが","self, ego"],["喪失","そうしつ","loss, bereavement"],["漠然","ばくぜん","vague, ambiguous"],["渇望","かつぼう","craving, longing"],["矛盾","むじゅん","contradiction"]],
+  chars: [],
+  grammar: {"pattern":"～ずにはいられない","meaning":"cannot help but ~","example_jp":"故郷を離れるたびに、喪失感を覚えずにはいられない。","example_en":"Every time I leave my hometown, I cannot help but feel a sense of loss."},
+  practice: "Read the passage and answer the comprehension questions. Then write a short analysis of how the narrator's use of water imagery reflects their psychological state.",
+  tip: "Literary passages on the N1 often use the narrator's observations of nature to mirror inner states. Look for parallels between setting descriptions and emotions.",
+  passage: {"text_jp":"東京に出てきて十五年になるが、未だにこの街に属しているという実感が湧かない。毎朝、満員電車に揺られながら、自分がこの巨大な機構の歯車の一つに過ぎないことを痛感する。周囲の人々は皆、何処かへ急いでいる。しかし、その足取りには確信のようなものが感じられ、私だけが漂流者のように目的地を持たずに流されているような気がしてならない。故郷の漁村を出たのは、広い世界を見たいという素朴な渇望からであった。父は漁師で、祖父も漁師で、曾祖父もまた漁師であった。その連鎖を断ち切ったのは私である。父は何も言わなかったが、出発の朝、港に立つ背中が小さく見えたのを今でも覚えている。母は涙を堪えていた。父は泣かなかった。あるいは、息子の前で泣くことを自分に許さなかったのかもしれない。あの日から十五年が過ぎた。然し乍ら、世界が広がるにつれ、自分の輪郭が曖昧になっていくという逆説に囚われている。自由を求めて故郷を捨てたはずが、自由の中で自分を見失った。故郷では「あの家の息子」として確固たる存在であった。名前を呼ばれれば、即ち自分の全てが了解されていた。東京では誰も私の名前を呼ばない。呼ばれたとしても、それは書類上の記号に過ぎない。先日、久しぶりに帰省した折、港の防波堤に座って海を眺めた。潮の匂いが鼻腔を満たし、波の音が全身を包んだ。その瞬間、自分の中の何かが解けるのを感じた。幼い頃、此の海で泳ぎ、此の波に揺られ、此の風に吹かれて育った身体の記憶が蘇った。同時に、もはやこの場所に戻ることはできないという残酷な認識も浮かんだ。帰属とは場所の問題ではなく、時間の問題なのかもしれない。あの頃の自分はもう何処にも存在しない。東京の自分も故郷の自分も、等しく虚構であるのかもしれない。唯一確かなのは、この漠然とした喪失感だけが、矛盾に満ちた自己の唯一の証であるということだ。防波堤の上で、私は長い間海を見つめ続けていた。波は絶えず寄せては返し、何も変わらないように見えて、実は一瞬たりとも同じではない。","text_en":"It has been fifteen years since I came to Tokyo, but I still cannot feel that I belong to this city. Every morning, swaying in a packed train, I keenly feel that I am nothing more than one cog in this enormous mechanism. Everyone around me is hurrying somewhere. Yet there seems to be something like conviction in their steps, and I cannot help feeling that I alone am drifting without a destination, like someone adrift. I left my hometown fishing village out of a simple longing to see the wider world. My father was a fisherman, my grandfather was a fisherman, and my great-grandfather was also a fisherman. I was the one who broke that chain. My father said nothing, but I still remember how small his figure looked standing at the harbor on the morning of my departure. However, I am caught in the paradox that as the world expanded, my own contours grew vaguer. In my hometown, I was a solid existence as 'that family's son.' When my name was called, my entire being was understood. In Tokyo, no one calls my name. Even if they do, it is merely a symbol on documents. The other day, when I returned home for the first time in a while, I sat on the harbor breakwater and gazed at the sea. The smell of the tide filled my nostrils, and the sound of waves enveloped my entire body. In that moment, I felt something within me dissolve. The bodily memories revived — of swimming in this sea as a child, of rocking in these waves, of being blown by this wind as I grew up. At the same time, the cruel recognition surfaced that I could no longer return to this place. Perhaps belonging is not a matter of place but of time. The self of those days no longer exists anywhere. Perhaps both my Tokyo self and my hometown self are equally fictions. The only thing certain is that this vague sense of loss alone is the sole proof of a self full of contradictions. On the breakwater, I continued gazing at the sea for a long time.","questions":[{"question_jp":"筆者が東京と故郷の間で感じている「逆説」とは何ですか。","question_en":"What is the 'paradox' the narrator feels between Tokyo and their hometown?","answer":"世界が広がるにつれ、自分の輪郭が曖昧になっていくこと"},{"question_jp":"筆者は「帰属」について最終的にどのような認識に至っていますか。","question_en":"What understanding does the narrator ultimately reach about 'belonging'?","answer":"帰属とは場所の問題ではなく時間の問題であり、あの頃の自分はもう何処にも存在しないということ"}]}
+});
+
+curriculum.push({
+  day: 1707,
+  phaseNum: 32,
+  phaseName: "N1 Test Prep",
+  week: Math.ceil(1707 / 7),
+  title: "Reading: Newspaper Editorial on Work Culture Reform",
+  intro: "Analyze a newspaper editorial on Japan's work culture reform. Focus on identifying concessions, counterarguments, and the author's proposed solutions.",
+  type: "reading",
+  vocab: [["働き方改革","はたらきかたかいかく","work style reform"],["過労死","かろうし","death from overwork"],["生産性","せいさんせい","productivity"],["裁量","さいりょう","discretion"],["労使","ろうし","labor and management"],["慣行","かんこう","practice, custom"],["是正","ぜせい","correction, rectification"],["多様性","たようせい","diversity"]],
+  chars: [],
+  grammar: {"pattern":"～を皮切りに","meaning":"starting with ~, beginning from ~","example_jp":"大企業を皮切りに、働き方改革が広がりつつある。","example_en":"Starting with large corporations, work style reform is spreading."},
+  practice: "Read the passage and answer the comprehension questions. Then list the three reforms the author proposes and evaluate their feasibility.",
+  tip: "When an editorial uses concessive structures like ～とはいえ or ～ものの, the author's true position usually follows. Track these carefully.",
+  passage: {"text_jp":"我が国の労働文化は今、大きな転換点を迎えている。過労死という日本語が国際語として定着してしまった事実は、我々の働き方が如何に異常であったかを如実に物語っている。政府は「働き方改革関連法」を施行し、時間外労働の上限規制や有給休暇の取得義務化を進めてきた。此の取り組み自体は評価に値する。然し乍ら、法整備だけで長年の慣行が変わると考えるのは楽観的に過ぎるであろう。日本の労働慣行の根底には、組織への献身を美徳とする価値観がある。残業を厭わない姿勢が忠誠心の表れとして評価され、定時退社は暗黙の非難の対象となってきた。管理職自身が長時間労働を常態化させ、部下に対しても同様の働き方を暗に期待する構図が、多くの職場で未だに根強く残っている。新入社員が定時に帰宅しようとすれば、先輩の冷ややかな視線を浴びることも珍しくない。「空気を読む」ことが求められる日本社会において、此のような同調圧力は法律では規制できない領域に存在する。結果として、制度上は残業規制が設けられても、サービス残業という形で長時間労働が温存されるケースが後を絶たない。此の文化的土壌を変えない限り、制度改革は形骸化する。真に必要なのは、労働時間ではなく成果で評価する仕組みへの転換である。裁量労働制の適切な運用、テレワークの推進、そして何よりも管理職の意識改革が不可欠である。既に一部の先進的な企業では、会議の時間制限や退社時刻の厳守を経営方針として掲げ、生産性の向上と従業員の満足度の両立に成功している。此れらの企業では離職率も低下し、採用においても優秀な人材を惹きつける好循環が生まれている。加えて、労使間の対話を活性化し、現場の声を制度設計に反映させる仕組みが求められる。多様な働き方を認め、個々人が自らの生活と仕事の均衡を主体的に設計できる社会こそが、結果として最も高い生産性を実現するのではないだろうか。改革の成否は、我々一人一人が「よく働くとは何か」という問いに真正面から向き合えるかどうかにかかっている。","text_en":"Our country's work culture is now facing a major turning point. The fact that the Japanese word 'karoshi' has become established as an international term eloquently tells us how abnormal our way of working has been. The government has enacted the 'Work Style Reform Act' and has been advancing caps on overtime and mandatory use of paid leave. This effort itself deserves recognition. However, it would be overly optimistic to think that long-standing practices can be changed through legal framework alone. At the foundation of Japanese labor practices lies the value system that regards devotion to the organization as a virtue. An attitude of willingness to work overtime has been evaluated as a display of loyalty, while leaving on time has been the target of tacit criticism. The pattern in which managers themselves normalize long working hours and implicitly expect the same of their subordinates remains deeply entrenched in many workplaces. Unless this cultural soil is changed, institutional reform will become hollow. What is truly needed is a shift to a system that evaluates output rather than hours worked. Appropriate implementation of discretionary work systems, promotion of telework, and above all, a change in the mindset of managers are indispensable. Some progressive companies have already adopted time-limited meetings and strict departure times as management policy, succeeding in achieving both improved productivity and employee satisfaction. Additionally, mechanisms are needed to revitalize dialogue between labor and management and reflect voices from the workplace in institutional design. A society that recognizes diverse work styles and in which individuals can autonomously design the balance between their lives and work would, as a result, achieve the highest productivity. The success or failure of reform depends on whether each and every one of us can squarely face the question of what it means to work well.","questions":[{"question_jp":"筆者が法整備だけでは不十分だと考える理由は何ですか。","question_en":"Why does the author believe legal framework alone is insufficient?","answer":"組織への献身を美徳とする価値観という文化的土壌を変えない限り、制度改革は形骸化するから"},{"question_jp":"筆者が提案する改革の中で「何よりも」重要としているものは何ですか。","question_en":"What does the author consider most important among the proposed reforms?","answer":"管理職の意識改革"}]}
+});
+
+curriculum.push({
+  day: 1708,
+  phaseNum: 32,
+  phaseName: "N1 Test Prep",
+  week: Math.ceil(1708 / 7),
+  title: "Reading: Academic Essay on Artificial Intelligence Ethics",
+  intro: "Read a dense academic essay on the ethical implications of artificial intelligence. Practice navigating technical vocabulary and multi-layered argumentation.",
+  type: "reading",
+  vocab: [["人工知能","じんこうちのう","artificial intelligence"],["自律性","じりつせい","autonomy"],["倫理的","りんりてき","ethical"],["責任帰属","せきにんきぞく","attribution of responsibility"],["意思決定","いしけってい","decision-making"],["透明性","とうめいせい","transparency"],["偏向","へんこう","bias, prejudice"],["規範","きはん","norm, standard"]],
+  chars: [],
+  grammar: {"pattern":"～をもってしても","meaning":"even with ~","example_jp":"最先端の技術をもってしても、完全な公平性を保証することはできない。","example_en":"Even with cutting-edge technology, perfect fairness cannot be guaranteed."},
+  practice: "Read the passage and answer the comprehension questions. Then summarize the author's proposed solution in your own words and evaluate its strengths and weaknesses.",
+  tip: "Technical academic essays require you to track definitions carefully. When the author defines a term, note it — the definition often becomes key to answering questions.",
+  passage: {"text_jp":"人工知能の急速な発展は、人類に前例のない倫理的課題を突きつけている。自律的に意思決定を行うシステムが社会の隅々に浸透するにつれ、従来の倫理的枠組みでは対処しきれない問題が顕在化している。其の最たるものが責任帰属の問題である。自動運転車が事故を起こした場合、その責任は開発者にあるのか、利用者にあるのか、それとも人工知能自体に帰すべきなのか。現行の法体系は、行為の主体が人間であることを前提としており、機械が自律的に判断を下す状況を想定していない。此の法的空白は、技術の発展速度と立法の速度の乖離によって拡大し続けている。更に深刻なのは、人工知能の判断過程が不透明であるという問題である。深層学習に基づくシステムは、膨大なデータから自動的にパターンを抽出するが、何故そのような判断に至ったかを人間が理解可能な形で説明することが困難である。此のいわゆる「ブラックボックス問題」は、医療診断や司法判断など、人の生命や自由に関わる領域においては看過できない。患者が人工知能による診断を受けた場合、その根拠を知る権利があるはずだが、現状では其れを保障する仕組みが存在しない。加えて、学習データに内在する偏向が、人工知能の判断に反映されるという問題もある。過去の差別的慣行を含むデータで学習したシステムは、その偏向を再生産し、固定化する危険性を孕んでいる。採用選考や融資審査においてこのような偏向が作用すれば、社会的不公正が技術によって制度化されることになる。しかも、此の不公正は客観的なデータに基づく判断という外観を纏うため、異議を申し立てることが一層困難になる。此れらの課題に対し、技術的解決と制度的対応の両面からのアプローチが求められる。説明可能な人工知能の研究推進、倫理審査制度の確立、そして市民参加型のガバナンス構築が急務である。技術の恩恵を享受しつつ、人間の尊厳を守る——此の均衡を如何に実現するかが、今世紀最大の知的挑戦である。","text_en":"The rapid development of artificial intelligence is presenting humanity with unprecedented ethical challenges. As systems that make autonomous decisions permeate every corner of society, problems that cannot be addressed within conventional ethical frameworks are becoming apparent. The foremost of these is the problem of responsibility attribution. When a self-driving car causes an accident, does responsibility lie with the developer, the user, or should it be attributed to the AI itself? The current legal system is premised on the assumption that the agent of action is human and does not envision situations where machines make autonomous judgments. This legal vacuum continues to expand due to the gap between the speed of technological development and the speed of legislation. Even more serious is the problem that the judgment process of AI is opaque. Systems based on deep learning automatically extract patterns from enormous data, but it is difficult to explain in a human-understandable way why they reached a particular judgment. This so-called 'black box problem' cannot be overlooked in areas involving human life and freedom, such as medical diagnosis and judicial decisions. When a patient receives a diagnosis by AI, they should have the right to know the basis, but currently no mechanism exists to guarantee this. Additionally, there is the problem that biases inherent in training data are reflected in AI judgments. Systems trained on data containing past discriminatory practices harbor the risk of reproducing and solidifying those biases. If such biases operate in hiring decisions or loan screening, social injustice would be institutionalized through technology. A dual approach of both technical solutions and institutional responses is needed for these challenges. Promoting research on explainable AI, establishing ethics review systems, and building citizen-participatory governance are urgently needed. Enjoying the benefits of technology while protecting human dignity — how to achieve this balance is the greatest intellectual challenge of this century.","questions":[{"question_jp":"「ブラックボックス問題」が特に深刻となる領域として筆者が挙げているのは何ですか。","question_en":"What areas does the author cite where the 'black box problem' is particularly serious?","answer":"医療診断や司法判断など、人の生命や自由に関わる領域"},{"question_jp":"学習データに関する問題点として筆者が指摘していることは何ですか。","question_en":"What problem does the author point out regarding training data?","answer":"過去の差別的慣行を含むデータで学習したシステムが偏向を再生産し固定化する危険性があること"}]}
+});
+
+curriculum.push({
+  day: 1709,
+  phaseNum: 32,
+  phaseName: "N1 Test Prep",
+  week: Math.ceil(1709 / 7),
+  title: "Grammar Distinction: Expressing Cause and Reason (N3 vs N2 vs N1)",
+  intro: "Compare cause-and-reason expressions across JLPT levels. Distinguish when to use N3 patterns like ～ために versus N2 ～ばかりに versus N1 ～とあって.",
+  type: "grammar",
+  vocab: [["原因","げんいん","cause, origin"],["理由","りゆう","reason"],["結果","けっか","result, outcome"],["因果","いんが","cause and effect"],["所以","ゆえん","reason, grounds"],["起因","きいん","origin, cause"],["帰結","きけつ","consequence, conclusion"],["必然","ひつぜん","inevitability"]],
+  chars: [],
+  grammar: {"pattern":"N3: ～ために / N2: ～ばかりに / N1: ～とあって","meaning":"Because of ~ (escalating formality and nuance)","example_jp":"N3: 病気のために休んだ。N2: 一言多かったばかりに友人を失った。N1: 連休とあって観光地は大混雑だった。","example_en":"N3: I was absent because of illness. N2: Just because I said one word too many, I lost a friend. N1: Being a holiday weekend, tourist spots were extremely crowded."},
+  practice: "For each of the ten sentences provided, choose the most appropriate causal expression from the N3, N2, and N1 options. Explain why the other choices are incorrect.",
+  tip: "Causal expressions differ in formality and implied nuance. ～ばかりに implies regret, ～とあって implies an expected circumstance, and ～ために is neutral."
+});
+
+curriculum.push({
+  day: 1710,
+  phaseNum: 32,
+  phaseName: "N1 Test Prep",
+  week: Math.ceil(1710 / 7),
+  title: "Grammar Distinction: Expressing Contrast and Concession (N3 vs N2 vs N1)",
+  intro: "Master the nuances between contrastive and concessive expressions across JLPT levels. Learn when N1 patterns are required versus when simpler forms suffice.",
+  type: "grammar",
+  vocab: [["対照","たいしょう","contrast, comparison"],["譲歩","じょうほ","concession, compromise"],["逆説","ぎゃくせつ","paradox"],["矛盾","むじゅん","contradiction"],["相反","そうはん","conflict, mutual opposition"],["反面","はんめん","on the other hand"],["一方","いっぽう","on the other hand, meanwhile"],["翻って","ひるがえって","on the other hand, conversely"]],
+  chars: [],
+  grammar: {"pattern":"N3: ～のに / N2: ～ものの / N1: ～とはいえ","meaning":"Although ~, despite ~ (escalating formality)","example_jp":"N3: 勉強したのに不合格だった。N2: 努力したものの結果は出なかった。N1: 改善したとはいえ、課題は残る。","example_en":"N3: Despite studying, I failed. N2: Although I made an effort, results did not come. N1: Although there was improvement, challenges remain."},
+  practice: "Rewrite ten sentences three ways: first with an N3 concessive pattern, then N2, then N1. Note how register and nuance change with each version.",
+  tip: "～ものの and ～とはいえ are very close in meaning, but ～とはいえ is more common in formal writing and editorials. Context determines the best choice."
+});
+
+curriculum.push({
+  day: 1711,
+  phaseNum: 32,
+  phaseName: "N1 Test Prep",
+  week: Math.ceil(1711 / 7),
+  title: "Grammar Distinction: Expressing Limitation and Degree (N3 vs N2 vs N1)",
+  intro: "Compare limitation and degree expressions across levels. Understand how N1 patterns like ～に至るまで and ～たりとも differ from their N2 and N3 counterparts.",
+  type: "grammar",
+  vocab: [["限度","げんど","limit, bound"],["程度","ていど","degree, extent"],["範囲","はんい","range, scope"],["極限","きょくげん","extreme, utmost"],["際限","さいげん","limit, bound"],["上限","じょうげん","upper limit"],["最小限","さいしょうげん","minimum"],["最大限","さいだいげん","maximum"]],
+  chars: [],
+  grammar: {"pattern":"N3: ～だけ / N2: ～に限って / N1: ～たりとも～ない","meaning":"Only ~; not even ~ (escalating restriction)","example_jp":"N3: できるだけ早く。N2: 会員に限って入場可能。N1: 一秒たりとも無駄にはできない。","example_en":"N3: As soon as possible. N2: Entry is possible only for members. N1: Not even one second can be wasted."},
+  practice: "Match each of twelve sentences to the correct pattern from ～だけ, ～しか～ない, ～に限って, ～に至るまで, ～たりとも, and ～を限りに. Explain your reasoning.",
+  tip: "～たりとも emphasizes that even the smallest amount is included in the negation. It always pairs with a negative ending and carries strong emphasis."
+});
+
+curriculum.push({
+  day: 1712,
+  phaseNum: 32,
+  phaseName: "N1 Test Prep",
+  week: Math.ceil(1712 / 7),
+  title: "Grammar Distinction: Expressing Hearsay and Evidentiality (N3 vs N2 vs N1)",
+  intro: "Distinguish between hearsay and evidential expressions across JLPT levels. N1 patterns express finer degrees of certainty and source attribution.",
+  type: "grammar",
+  vocab: [["伝聞","でんぶん","hearsay, rumor"],["推測","すいそく","conjecture, guess"],["根拠","こんきょ","basis, grounds"],["信憑性","しんぴょうせい","credibility"],["裏付け","うらづけ","backing, evidence"],["確証","かくしょう","positive proof"],["憶測","おくそく","speculation"],["真偽","しんぎ","truth or falsehood"]],
+  chars: [],
+  grammar: {"pattern":"N3: ～そうだ(伝聞) / N2: ～とのことだ / N1: ～とか","meaning":"I heard that ~ (escalating informality of source)","example_jp":"N3: 明日は雨だそうだ。N2: 会議は延期になったとのことだ。N1: 来月から制度が変わるとか。","example_en":"N3: I heard it will rain tomorrow. N2: I'm informed the meeting has been postponed. N1: I hear the system is changing from next month."},
+  practice: "Choose the correct hearsay/evidential expression for each sentence based on context clues about formality, certainty, and source reliability.",
+  tip: "The N1 tests your ability to distinguish subtle evidential nuances. ～とのことだ is formal and attributed, while ～とか is casual and vaguely sourced."
+});
+
+curriculum.push({
+  day: 1713,
+  phaseNum: 32,
+  phaseName: "N1 Test Prep",
+  week: Math.ceil(1713 / 7),
+  title: "Grammar Distinction: Expressing Respect and Humility (N3 vs N2 vs N1)",
+  intro: "Compare honorific and humble expressions across JLPT levels. N1 requires mastery of archaic and highly formal keigo patterns used in business and literature.",
+  type: "grammar",
+  vocab: [["敬語","けいご","honorific language"],["謙譲語","けんじょうご","humble language"],["尊敬語","そんけいご","respectful language"],["丁寧語","ていねいご","polite language"],["恐縮","きょうしゅく","feeling obliged, sorry"],["拝察","はいさつ","humbly guessing"],["賜る","たまわる","to receive (humble)"],["仰せ","おおせ","command, instruction (honorific)"]],
+  chars: [],
+  grammar: {"pattern":"N3: お～になる / N2: ～ていただけませんか / N1: ～賜りたく存じます","meaning":"Honorific/humble escalation across levels","example_jp":"N3: 先生がお話しになった。N2: ご確認いただけませんか。N1: ご指導を賜りたく存じます。","example_en":"N3: The teacher spoke. N2: Could you please confirm? N1: I humbly wish to receive your guidance."},
+  practice: "Rewrite the same request in five different keigo registers, from casual to the most formal N1-level expression. Identify the contexts where each is appropriate.",
+  tip: "N1 keigo goes beyond textbook patterns. Expressions like 賜る, 拝察する, and 仰せ appear in formal correspondence and ceremonies. Context determines which level to use."
+});
+
+curriculum.push({
+  day: 1714,
+  phaseNum: 32,
+  phaseName: "N1 Test Prep",
+  week: Math.ceil(1714 / 7),
+  title: "Grammar Distinction: Expressing Inevitability and Resolution (N3 vs N2 vs N1)",
+  intro: "Compare expressions of inevitability and firm resolution across JLPT levels. Master N1 patterns that convey strong determination or unavoidable outcomes.",
+  type: "grammar",
+  vocab: [["決意","けつい","determination, resolution"],["覚悟","かくご","preparedness, resolve"],["断固","だんこ","firmly, resolutely"],["不可避","ふかひ","unavoidable"],["必至","ひっし","inevitable"],["宿命","しゅくめい","fate, destiny"],["使命","しめい","mission, calling"],["信念","しんねん","conviction, belief"]],
+  chars: [],
+  grammar: {"pattern":"N3: ～なければならない / N2: ～ざるを得ない / N1: ～よりほかない","meaning":"Must ~; have no choice but to ~ (escalating formality)","example_jp":"N3: 薬を飲まなければならない。N2: 計画を変更せざるを得ない。N1: 断固として反対するよりほかない。","example_en":"N3: I must take medicine. N2: We have no choice but to change the plan. N1: There is no alternative but to firmly oppose."},
+  practice: "For each situation described, select the most appropriate expression of inevitability from N3, N2, and N1 options. Then compose original sentences using each pattern.",
+  tip: "～ざるを得ない implies reluctant necessity, while ～よりほかない implies absolute lack of alternatives. ～までだ expresses resigned acceptance. Choose based on the speaker's attitude."
+});
+
+curriculum.push({
+  day: 1715,
+  phaseNum: 32,
+  phaseName: "N1 Test Prep",
+  week: Math.ceil(1715 / 7),
+  title: "Mock Exam: Language Knowledge — Vocabulary Section",
+  intro: "Simulate the N1 Language Knowledge vocabulary section. Practice selecting correct word usage, reading kanji in context, and identifying appropriate collocations.",
+  type: "review",
+  vocab: [["齎す","もたらす","to bring about, to cause"],["嵩む","かさむ","to pile up, to increase"],["窺う","うかがう","to peek, to observe"],["蔑む","さげすむ","to scorn, to despise"],["怯む","ひるむ","to flinch, to falter"],["拗れる","こじれる","to get complicated"],["綻びる","ほころびる","to come apart, to bloom"],["捗る","はかどる","to make progress"]],
+  chars: [],
+  grammar: {"pattern":"事態が拗れる","meaning":"the situation gets complicated","example_jp":"交渉が拗れ、解決の糸口が見えなくなった。","example_en":"Negotiations got complicated and a solution became impossible to see."},
+  practice: "Complete the 25-question mock vocabulary section under timed conditions (20 minutes). Review your errors and categorize them by type: reading, meaning, or collocation.",
+  tip: "The N1 vocabulary section tests subtle meaning differences. When two answers seem possible, look for contextual clues in the surrounding sentence.",
+  passage: {"text_jp":"近年、我が国における労働環境は著しい変化を遂げている。テレワークの普及は働き方の多様性を齎した一方で、新たな課題も浮上している。通信費や光熱費が嵩むことへの不満の声が高まり、また対面でのコミュニケーション不足が業務の質を損なうとの指摘もある。企業はこうした状況を注意深く窺いながら、最適な労働形態の模索を続けている。然し乍ら、改革への意欲が見られる企業がある一方で、旧来の慣行に固執する経営者も少なくない。此のような消極的態度を蔑むのは容易であるが、変化への恐れから怯むのは人間の自然な反応でもある。問題が拗れる前に、労使双方が建設的な対話を重ねることが肝要である。特に注目すべきは、テレワークが従業員の精神的健康に及ぼす影響である。通勤時間の削減は生活の質を向上させる一方、仕事と私生活の境界が曖昧になることで、かえって労働時間が増加する事例も報告されている。孤立感や組織への帰属意識の低下も深刻な問題として浮上している。一方、若い世代を中心に、場所や時間に縛られない柔軟な働き方を強く求める声が高まっている。彼らにとって、週五日のオフィス勤務を前提とする従来型の雇用形態は、もはや魅力的な選択肢ではない。副業やフリーランスといった雇用形態への関心も急速に高まっており、一つの企業に生涯を捧げるという従来の価値観は大きく揺らいでいる。企業が優秀な人材を確保するためには、多様な働き方を認める姿勢が不可欠である。既に先進的な企業では、完全リモートワークや週休三日制を導入し、生産性の維持と従業員の満足度向上の両立を実現している事例もある。此れらの成功事例は、働き方の見直しが企業にとっても利益になり得ることを示している。労働者の健康と幸福を守ることは、倫理的要請であると同時に、経営戦略としても合理的な選択なのである。綻びが見え始めた制度を放置すれば、やがて取り返しのつかない事態を招くであろう。改革が捗るか否かは、関係者全員の当事者意識にかかっている。","text_en":"In recent years, the working environment in our country has undergone remarkable changes. While the spread of telework has brought about diversity in work styles, new challenges have also emerged. Voices of dissatisfaction are growing over increasing communication and utility costs, and there are also indications that lack of face-to-face communication impairs work quality. Companies continue to search for optimal work arrangements while carefully observing these conditions. However, while some companies show enthusiasm for reform, there are also many managers who cling to old practices. It is easy to scorn such passive attitudes, but flinching from fear of change is also a natural human response. It is essential for both labor and management to engage in constructive dialogue before problems get complicated. Particularly noteworthy is the impact of telework on employees' mental health. While the reduction of commuting time improves quality of life, cases have been reported where working hours actually increased because the boundary between work and private life became blurred. Feelings of isolation and decreased sense of organizational belonging have also emerged as serious problems. On the other hand, voices are growing, especially among younger generations, strongly demanding flexible work arrangements unbound by place or time. For them, conventional employment models premised on five-day office work are no longer an attractive option. For companies to secure talented personnel, an attitude of accepting diverse work styles is indispensable. If we leave systems where cracks are beginning to show unattended, it will eventually lead to irreversible consequences. Whether reform progresses depends on the sense of ownership of all involved parties.","questions":[{"question_jp":"テレワークの普及による新たな課題として挙げられているものは何ですか。","question_en":"What new challenges are cited as resulting from the spread of telework?","answer":"通信費や光熱費が嵩むことへの不満と、対面コミュニケーション不足による業務の質の低下"}]}
+});
+
+curriculum.push({
+  day: 1716,
+  phaseNum: 32,
+  phaseName: "N1 Test Prep",
+  week: Math.ceil(1716 / 7),
+  title: "Mock Exam: Language Knowledge — Grammar Section",
+  intro: "Simulate the N1 Language Knowledge grammar section. Practice sentence ordering, grammar cloze, and identifying the correct grammatical pattern in formal contexts.",
+  type: "review",
+  vocab: [["一概に","いちがいに","unconditionally, sweepingly"],["強いて","しいて","forcibly, if pressed"],["寧ろ","むしろ","rather, instead"],["偏に","ひとえに","solely, entirely"],["況して","まして","much less, let alone"],["所詮","しょせん","after all, in the end"],["殊に","ことに","especially, particularly"],["尤も","もっとも","although, but then"]],
+  chars: [],
+  grammar: {"pattern":"一概に～とは言えない","meaning":"one cannot unconditionally say that ~","example_jp":"新技術が一概に良いとは言えない。","example_en":"One cannot unconditionally say that new technology is good."},
+  practice: "Complete the 20-question mock grammar section under timed conditions (15 minutes). For each error, write out the correct pattern and create three additional example sentences.",
+  tip: "Grammar ordering questions (文の組み立て) are often the hardest part. Start by identifying which fragments must be adjacent based on grammatical rules.",
+  passage: {"text_jp":"文化の多様性について一概に良し悪しを論じることはできない。強いて言えば、異なる文化との接触は人間の視野を広げる契機となり得る。寧ろ問題となるのは、文化的差異を認識しながらも、それを尊重する姿勢を欠く場合である。此の点は偏に教育の力に依るところが大きい。異文化理解教育が充実した環境で育った若者は、多様性を脅威ではなく資源として捉える傾向がある。況して、グローバル化が加速する現代社会において、此の能力の重要性は増すばかりである。所詮、一つの文化だけで世界を理解することは不可能なのだ。殊に注目すべきは、言語教育と文化理解の密接な関係である。外国語を学ぶことは、単に意思疎通の手段を獲得するだけでなく、異なる思考様式を体得することにほかならない。言語は単なるコミュニケーションの道具ではなく、世界を認識し分類する枠組みそのものである。サピア＝ウォーフの仮説が示唆するように、我々が使用する言語は思考の枠組みを規定し、現実の認識の仕方に影響を与える。例えば、日本語における敬語体系は、人間関係の上下や親疎を言語的に表現する仕組みであり、日本社会の価値観を如実に映し出している。同様に、ある言語に存在して別の言語に存在しない概念は、それぞれの文化が何を重視し、何を区別するかを物語っている。尤も、言語習得だけで異文化理解が完成するわけではない。教室での学習は基礎を築くが、実際の文化的文脈の中での経験なくしては、真の理解には到達し得ない。書物から得た知識は、生きた人間との交流を通じて初めて血肉となる。異文化の中で戸惑い、失敗し、誤解を乗り越え、そこから学ぶ経験こそが、最も深い理解をもたらす。実際の交流経験と組み合わせることで、初めて真の理解が生まれるのである。我々は異文化との出会いを恐れるのではなく、自己を豊かにするかけがえのない機会として積極的に受け入れるべきであろう。多様性を認め合う社会の構築は、一人一人の意識の変革から始まるのである。","text_en":"One cannot unconditionally discuss the merits and demerits of cultural diversity. If pressed to say, contact with different cultures can serve as an opportunity to broaden human perspectives. Rather, what becomes problematic is when one recognizes cultural differences but lacks the attitude to respect them. This point depends largely and solely on the power of education. Young people raised in environments with enriched cross-cultural understanding education tend to view diversity as a resource rather than a threat. Much less in today's society where globalization is accelerating, the importance of this ability only continues to grow. After all, it is impossible to understand the world through only one culture. Especially noteworthy is the close relationship between language education and cultural understanding. Learning a foreign language is nothing other than mastering a different mode of thinking, not merely acquiring a means of communication. Language is not merely a tool for communication but the very framework for perceiving and classifying the world. For example, the Japanese honorific system is a mechanism for linguistically expressing hierarchical and intimate relationships, vividly reflecting the values of Japanese society. Similarly, concepts that exist in one language but not in another tell us what each culture values and distinguishes. Although, language acquisition alone does not complete cross-cultural understanding. Classroom learning builds foundations, but without experience in actual cultural contexts, true understanding cannot be reached. True understanding only emerges when combined with actual exchange experiences. We should not fear encounters with other cultures but rather actively embrace them as opportunities to enrich ourselves.","questions":[{"question_jp":"筆者は外国語を学ぶことの本質的な意義をどう述べていますか。","question_en":"How does the author describe the essential significance of learning a foreign language?","answer":"単に意思疎通の手段を獲得するだけでなく、異なる思考様式を体得することにほかならないと述べている"}]}
+});
+
+curriculum.push({
+  day: 1717,
+  phaseNum: 32,
+  phaseName: "N1 Test Prep",
+  week: Math.ceil(1717 / 7),
+  title: "Mock Exam: Reading Comprehension — Short Passages",
+  intro: "Simulate the N1 Reading section with short passage comprehension. Practice answering questions about main ideas, author intent, and logical flow within tight time constraints.",
+  type: "review",
+  vocab: [["要旨","ようし","gist, summary"],["論旨","ろんし","gist of an argument"],["趣旨","しゅし","purpose, gist"],["主旨","しゅし","main point"],["骨子","こっし","outline, framework"],["概要","がいよう","summary, overview"],["要約","ようやく","summary, abstract"],["抄録","しょうろく","abstract, excerpt"]],
+  chars: [],
+  grammar: {"pattern":"～に他ならない","meaning":"is nothing other than ~","example_jp":"読解力の向上は、語彙力の蓄積に他ならない。","example_en":"Improving reading comprehension is nothing other than accumulating vocabulary."},
+  practice: "Read three short passages (200-400 characters each) and answer two questions per passage within 15 minutes total. Focus on identifying the main claim quickly.",
+  tip: "For short passage questions, read the question first, then scan the passage for the answer. This saves time compared to reading the whole passage first.",
+  passage: {"text_jp":"科学の発展は常に新たな倫理的問題を提起してきた。遺伝子編集技術の進歩はその最たる例である。此の技術は遺伝性疾患の治療に革命的な可能性を秘めている一方で、「デザイナーベビー」と呼ばれる生命の選別という倫理的深淵をも開いた。技術的に可能であることと、倫理的に許容されることの間には、越えてはならない一線が存在する。然し乍ら、其の線引きは容易ではない。例えば、致死的な遺伝性疾患の原因遺伝子を修正することには広い社会的合意が得られるであろう。だが、疾患とは呼べない身体的特徴——身長や知能、容貌——を遺伝子操作によって「改良」することは許されるのか。疾患の治療と能力の増強の境界は曖昧であり、文化や宗教によっても判断基準は異なる。国際的な合意形成の試みは進められているが、各国の利害や価値観の相違が障壁となっている。殊に問題なのは、規制の緩い国で研究が進み、事実上の既成事実が作られてしまう可能性である。既に一部の研究者がヒト胚の遺伝子編集を実施し、国際的な非難を浴びた事例がある。此の事件は科学界に衝撃を与え、自主規制の限界を露呈させた。科学者個人の倫理観に依存するだけでは、知識の探求という衝動を制御することは困難なのである。此のような行為を防ぐためには、拘束力のある国際的な監視体制の構築が急務である。核兵器の不拡散条約のように、遺伝子編集技術についても国際的な法的枠組みを整備する必要がある。科学者の自律的な倫理規範と、社会全体による民主的な議論の両方が、此の問題の解決には不可欠である。科学者だけに判断を委ねることも、政治家だけに規制を任せることも適切ではない。此の問題は全人類の未来に関わるものであり、市民一人一人がこの問題について理解を深め、議論に参加する必要がある。科学リテラシーの向上と開かれた公共的議論の場の整備が、其のための前提条件である。技術の進歩を止めることはできないが、その方向を制御することは我々の責務である。","text_en":"The development of science has always raised new ethical questions. The advancement of gene editing technology is a prime example. While this technology holds revolutionary potential for treating hereditary diseases, it has also opened an ethical abyss of life selection called 'designer babies.' Between what is technically possible and what is ethically permissible, there exists a line that must not be crossed. However, drawing that line is not easy. For example, correcting the causative genes of lethal hereditary diseases would likely receive broad social consensus. But is it permissible to 'improve' physical characteristics that cannot be called diseases — height, intelligence, appearance — through genetic manipulation? The boundary between treating disease and enhancing abilities is ambiguous, and criteria for judgment differ by culture and religion. Attempts at international consensus building are underway, but differences in national interests and values serve as barriers. What is particularly problematic is the possibility that research advances in countries with lax regulations, creating de facto accomplished facts. There have already been cases of researchers conducting gene editing on human embryos and facing international condemnation. To prevent such actions, the construction of an international monitoring system is urgently needed. Both autonomous ethical norms of scientists and democratic discussion by society as a whole are indispensable for solving this problem. Neither leaving judgment solely to scientists nor entrusting regulation solely to politicians is appropriate. Each and every citizen needs to deepen their understanding of this issue and participate in the discussion. We cannot stop technological progress, but controlling its direction is our responsibility.","questions":[{"question_jp":"筆者が「殊に問題」としているのは何ですか。","question_en":"What does the author consider 'particularly problematic'?","answer":"規制の緩い国で研究が進み、事実上の既成事実が作られてしまう可能性"},{"question_jp":"遺伝子編集技術の線引きが難しい理由として挙げられているものは何ですか。","question_en":"What is cited as a reason why drawing the line on gene editing technology is difficult?","answer":"疾患の治療と能力の増強の境界が曖昧であり、文化や宗教によっても判断基準が異なること"}]}
+});
+
+curriculum.push({
+  day: 1718,
+  phaseNum: 32,
+  phaseName: "N1 Test Prep",
+  week: Math.ceil(1718 / 7),
+  title: "Mock Exam: Reading Comprehension — Long Passage",
+  intro: "Simulate the N1 Reading section with a long passage. Practice sustained reading of 1000+ characters, tracking multiple arguments, and answering detailed comprehension questions.",
+  type: "review",
+  vocab: [["民主主義","みんしゅしゅぎ","democracy"],["権威主義","けんいしゅぎ","authoritarianism"],["市民社会","しみんしゃかい","civil society"],["統治","とうち","governance, rule"],["正当性","せいとうせい","legitimacy"],["合意形成","ごういけいせい","consensus building"],["多元的","たげんてき","pluralistic"],["代議制","だいぎせい","representative system"]],
+  chars: [],
+  grammar: {"pattern":"～に基づいて","meaning":"based on ~","example_jp":"法の支配に基づいて統治を行う。","example_en":"Governance is conducted based on the rule of law."},
+  practice: "Read the long passage and answer four comprehension questions within 20 minutes. After finishing, outline the passage structure and identify the author's thesis statement.",
+  tip: "For long passages, take brief notes on each paragraph's main point as you read. This creates a mental map that makes it faster to locate answers.",
+  passage: {"text_jp":"民主主義の危機が叫ばれて久しい。世界各地で権威主義的な指導者が台頭し、民主的制度への信頼が揺らいでいる。然し乍ら、此の現象を単純に民主主義の衰退と見なすのは早計であろう。寧ろ、従来の代議制民主主義が現代社会の複雑性に対応しきれなくなっていることの表れと解釈すべきである。代議制民主主義は、選挙を通じて市民の意思を政策に反映させる仕組みである。此の制度は長きに亘り一定の成功を収めてきた。然し乍ら、グローバル化、情報技術の発展、そして社会の多元化により、市民の利害は複雑化し、従来の政党政治では全ての声を掬い上げることが困難になっている。此の空白を埋めるように、ポピュリズムが台頭する。単純明快なスローガンと敵味方の二項対立を提示することで、既存の政治に不満を持つ層の支持を集めるのである。ソーシャルメディアの発達は此の動きを加速させた。情報の断片化とエコーチェンバー効果により、市民は自らの信念を強化する情報にのみ接触し、異なる意見との建設的な対話の機会が失われつつある。フェイクニュースの蔓延は此の問題を更に深刻化させている。何が事実で何が虚偽かの判断自体が、政治的立場によって異なるという事態が生じているのである。ポピュリズムを一概に否定することはできない。其れが既存の政治エリートへの正当な批判を含む場合もあるからだ。問題は、ポピュリズムがしばしば少数者の権利を軽視し、熟議を避ける傾向にあることである。民主主義の本質は多数決にあるのではなく、少数意見を尊重した上での合意形成にある。此の原則を守りつつ、より多くの市民が直接的に政策決定に参画できる仕組みを構築することが、現代民主主義の刷新につながるであろう。市民参加型の予算編成、熟議型の市民会議、そしてデジタル技術を活用した直接民主制的要素の導入など、実験的な取り組みは既に世界各地で始まっている。民主主義は完成された制度ではなく、常に進化し続けるべきものである。","text_en":"It has been long since the crisis of democracy was proclaimed. Authoritarian leaders are rising around the world, and trust in democratic institutions is wavering. However, it would be premature to simply regard this phenomenon as the decline of democracy. Rather, it should be interpreted as a manifestation of conventional representative democracy's inability to cope with the complexity of modern society. Representative democracy is a mechanism for reflecting citizens' will in policy through elections. This system has achieved a certain degree of success over a long period. However, due to globalization, the development of information technology, and the pluralization of society, citizens' interests have become complex, and it has become difficult for conventional party politics to capture every voice. Populism rises to fill this void. By presenting simple, clear slogans and friend-versus-enemy dichotomies, it gathers support from those dissatisfied with existing politics. The development of social media has accelerated this movement. Due to the fragmentation of information and the echo chamber effect, citizens are exposed only to information that reinforces their own beliefs, and opportunities for constructive dialogue with different opinions are being lost. Populism cannot be unconditionally rejected, because it sometimes contains legitimate criticism of existing political elites. The problem is that populism often tends to disregard minority rights and avoid deliberation. The essence of democracy lies not in majority rule but in consensus building that respects minority opinions. Constructing mechanisms that allow more citizens to directly participate in policy decisions while maintaining this principle would lead to the renewal of modern democracy. Experimental efforts such as participatory budgeting, deliberative citizens' assemblies, and the introduction of direct democratic elements utilizing digital technology have already begun around the world. Democracy is not a completed system but something that should constantly continue to evolve.","questions":[{"question_jp":"筆者は民主主義の本質をどのように定義していますか。","question_en":"How does the author define the essence of democracy?","answer":"多数決にあるのではなく、少数意見を尊重した上での合意形成にあると定義している"},{"question_jp":"ポピュリズムの台頭の原因として筆者が挙げているものは何ですか。","question_en":"What does the author cite as the cause of the rise of populism?","answer":"従来の政党政治が社会の複雑化により全ての声を掬い上げることが困難になり、その空白を埋める形で台頭している"}]}
+});
+
+curriculum.push({
+  day: 1719,
+  phaseNum: 32,
+  phaseName: "N1 Test Prep",
+  week: Math.ceil(1719 / 7),
+  title: "Mock Exam: Integrated Practice — Full Section Simulation",
+  intro: "Complete an integrated mock exam covering vocabulary, grammar, and reading comprehension. Simulate real test conditions with strict time limits to build exam stamina.",
+  type: "review",
+  vocab: [["総合","そうごう","comprehensive, integrated"],["配分","はいぶん","allocation, distribution"],["時間配分","じかんはいぶん","time allocation"],["正答率","せいとうりつ","correct answer rate"],["見直し","みなおし","review, re-examination"],["傾向","けいこう","tendency, trend"],["対策","たいさく","countermeasure, strategy"],["弱点","じゃくてん","weakness, weak point"]],
+  chars: [],
+  grammar: {"pattern":"～を限りに","meaning":"as of ~, ending with ~","example_jp":"本日を限りに旧制度は廃止される。","example_en":"The old system will be abolished as of today."},
+  practice: "Complete the full integrated mock section (vocabulary 20 min, grammar 15 min, reading 30 min). Record your score and identify your three weakest areas for final review.",
+  tip: "Time management is crucial on the actual N1. If you get stuck on a question, mark it and move on. You can return to it if time permits.",
+  passage: {"text_jp":"言葉は生き物であると言われる。時代とともに変化し、新たな表現が生まれ、古い表現が廃れていく。此の言語の動態は、社会の変化を映す鏡でもある。近年、インターネットの普及に伴い、言語変化の速度は著しく加速している。ソーシャルメディア上で生まれた新語や省略表現は、瞬く間に広がり、日常会話にまで浸透する。此の現象を「言葉の乱れ」として嘆く声は根強い。確かに、敬語の誤用や文法的に不正確な表現の蔓延は、コミュニケーションの質を低下させる恐れがある。世代間の意思疎通に支障を来す事例も少なくない。若者が使う略語や新語を年配者が理解できず、逆に年配者が用いる慣用表現を若者が知らないという断絶が生じている。職場においても、世代による言語感覚の差がコミュニケーション上の摩擦を生むことがある。上司の使う表現を部下が古臭いと感じ、部下の言葉遣いを上司が不作法だと感じる——此のようなすれ違いは日常的に発生している。然し乍ら、言語の変化を一概に否定することは、言語の本質を見誤ることになりかねない。歴史を繙けば、現在「正しい」とされている表現の多くも、かつては「乱れ」として非難されていたのである。「全然」に肯定表現を続ける用法は、元来は正しい使い方であったし、「ら抜き言葉」も方言学的には長い歴史を持つ。重要なのは、場面に応じた言語使用の能力——すなわち言語運用能力を養うことである。フォーマルな場面では適切な敬語を使い、友人との会話ではくだけた表現を用いる。ビジネスメールでは定型的な表現を駆使し、創作活動では自由な言葉遣いを楽しむ。学術論文では客観的で精密な表現を用い、日記では個人的な感情を率直に綴る。同じ人間が同じ日に、全く異なるレジスターの言語を自在に操る——此の使い分けの能力こそが、真の言語能力と呼ぶに相応しい。言語教育もまた、此の観点から見直されるべきであろう。「正しい日本語」を一方的に教え込むのではなく、多様な文脈における適切な言語選択の力を育てることが、現代の言語教育に求められている。","text_en":"Language is said to be a living thing. It changes with the times — new expressions are born and old ones fall into disuse. This dynamism of language is also a mirror reflecting social changes. In recent years, with the spread of the internet, the speed of language change has accelerated remarkably. New words and abbreviated expressions born on social media spread instantly and penetrate even into everyday conversation. The voice lamenting this phenomenon as 'corruption of language' remains strong. Certainly, the spread of misused honorifics and grammatically inaccurate expressions may risk lowering the quality of communication. Cases where intergenerational communication is hindered are not uncommon either. Disconnections arise where older people cannot understand the abbreviations and new words used by young people, and conversely, young people do not know the idiomatic expressions used by older people. However, unconditionally rejecting language change may mean misunderstanding the essence of language. If we examine history, many expressions now considered 'correct' were once criticized as 'corruption.' The usage of 'zenzen' followed by an affirmative expression was originally a correct usage, and 'ra-nuki kotoba' also has a long history from a dialectological perspective. What is important is cultivating the ability to use language appropriately according to context — that is, linguistic competence. Using appropriate honorifics in formal settings and casual expressions in conversations with friends. Employing formulaic expressions skillfully in business emails and enjoying free word usage in creative activities. It is this ability to differentiate usage that deserves to be called true linguistic ability. Language education should also be reconsidered from this perspective. Rather than unilaterally teaching 'correct Japanese,' what is demanded of modern language education is fostering the ability to make appropriate language choices in diverse contexts.","questions":[{"question_jp":"筆者が「真の言語能力」として定義しているものは何ですか。","question_en":"What does the author define as 'true linguistic ability'?","answer":"場面に応じた言語使用の使い分けの能力"},{"question_jp":"筆者は「言葉の乱れ」という見方についてどのような立場をとっていますか。","question_en":"What position does the author take regarding the view of 'corruption of language'?","answer":"言語の変化を一概に否定することは言語の本質を見誤ることになりかねず、歴史的に見れば現在正しいとされる表現もかつては乱れとして非難されていたという立場"}]}
+});
+
+curriculum.push({
+  day: 1720,
+  phaseNum: 32,
+  phaseName: "N1 Test Prep",
+  week: Math.ceil(1720 / 7),
+  title: "N1 Complete: Your Japanese Journey Milestone",
+  intro: "Congratulations on reaching the final day of the N1 curriculum. Today we celebrate your achievement and reflect on the journey from zero to N1-level Japanese proficiency.",
+  type: "review",
+  vocab: [["達成","たっせい","achievement, accomplishment"],["精進","しょうじん","devotion, diligence"],["研鑽","けんさん","study, pursuit of knowledge"],["集大成","しゅうたいせい","culmination, magnum opus"],["邁進","まいしん","striving forward"],["矜持","きょうじ","pride, self-respect"],["不断","ふだん","constant, unceasing"],["錬磨","れんま","training, discipline"]],
+  chars: [],
+  grammar: {"pattern":"～てやまない","meaning":"to sincerely ~, to never cease ~ing","example_jp":"皆様の更なるご活躍を祈ってやまない。","example_en":"I sincerely wish for everyone's continued success."},
+  practice: "Write a reflective essay in Japanese (300+ characters) about your language learning journey. Use at least ten N1 grammar patterns and twenty N1 vocabulary items from throughout the course.",
+  tip: "Passing N1 is a milestone, not a destination. Continue reading widely, listening actively, and using Japanese daily. True mastery comes from lifelong engagement with the language."
+});
+

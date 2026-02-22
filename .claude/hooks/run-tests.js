@@ -313,7 +313,7 @@ test("srsDueCards: all overdue → all returned", function (a) {
 
 // ── 12. Curriculum data integrity ─────────────────────────────────────────────
 test("curriculum: not empty and has at least N2 (1320 lessons)", function (a) {
-  a.ok(curriculum.length >= 1320, "should have at least 1320 lessons (N5 through N2 complete)");
+  a.ok(curriculum.length >= 1720, "should have at least 1720 lessons (N5 through N1 complete)");
 });
 
 test("curriculum: sequential day numbers starting from 1", function (a) {
@@ -421,7 +421,7 @@ test("curriculum: N4 ends at day 660", function (a) {
 test("curriculum: N3 ends at day 960, N2 complete at day 1320", function (a) {
   a.equal(curriculum[959].day, 960, "day 960 should be the last N3 lesson");
   a.equal(curriculum[1319].day, 1320, "day 1320 should be the last N2 lesson");
-  a.equal(curriculum[curriculum.length - 1].day, 1320, "last day in curriculum is 1320");
+  a.equal(curriculum[curriculum.length - 1].day, 1720, "last day in curriculum is 1720");
 });
 
 test("curriculum: N2 phase boundaries (phases 21–26)", function (a) {
@@ -445,6 +445,27 @@ test("curriculum: N2 phase boundaries (phases 21–26)", function (a) {
   a.equal(ph26.length, 0, "days 1276–1320 all phaseNum=26");
 });
 
+test("curriculum: N1 phase boundaries (phases 27–32)", function (a) {
+  // Phase 27: N2 Review days 1321–1350
+  var ph27 = curriculum.slice(1320, 1350).filter(function (l) { return l.phaseNum !== 27; });
+  a.equal(ph27.length, 0, "days 1321–1350 all phaseNum=27");
+  // Phase 28: N1 Vocabulary days 1351–1470
+  var ph28 = curriculum.slice(1350, 1470).filter(function (l) { return l.phaseNum !== 28; });
+  a.equal(ph28.length, 0, "days 1351–1470 all phaseNum=28");
+  // Phase 29: N1 Verbs & Expressions days 1471–1530
+  var ph29 = curriculum.slice(1470, 1530).filter(function (l) { return l.phaseNum !== 29; });
+  a.equal(ph29.length, 0, "days 1471–1530 all phaseNum=29");
+  // Phase 30: N1 Grammar days 1531–1640
+  var ph30 = curriculum.slice(1530, 1640).filter(function (l) { return l.phaseNum !== 30; });
+  a.equal(ph30.length, 0, "days 1531–1640 all phaseNum=30");
+  // Phase 31: N1 Kanji days 1641–1690
+  var ph31 = curriculum.slice(1640, 1690).filter(function (l) { return l.phaseNum !== 31; });
+  a.equal(ph31.length, 0, "days 1641–1690 all phaseNum=31");
+  // Phase 32: N1 Test Prep days 1691–1720
+  var ph32 = curriculum.slice(1690, 1720).filter(function (l) { return l.phaseNum !== 32; });
+  a.equal(ph32.length, 0, "days 1691–1720 all phaseNum=32");
+});
+
 test("curriculum: N4 starts at day 366 (if present)", function (a) {
   if (curriculum.length > 365) {
     a.equal(curriculum[365].day, 366, "day 366 should be the first N4 lesson");
@@ -464,10 +485,12 @@ var EXPECTED_PHASE_NAMES = {
   15: 'N4 Review', 16: 'N3 Vocabulary', 17: 'N3 Verbs & Adjectives',
   18: 'N3 Grammar', 19: 'N3 Kanji', 20: 'N3 Test Prep',
   21: 'N3 Review', 22: 'N2 Vocabulary', 23: 'N2 Verbs & Expressions',
-  24: 'N2 Grammar', 25: 'N2 Kanji', 26: 'N2 Test Prep'
+  24: 'N2 Grammar', 25: 'N2 Kanji', 26: 'N2 Test Prep',
+  27: 'N2 Review', 28: 'N1 Vocabulary', 29: 'N1 Verbs & Expressions',
+  30: 'N1 Grammar', 31: 'N1 Kanji', 32: 'N1 Test Prep'
 };
 var PHASE_NUMS = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
-                 21, 22, 23, 24, 25, 26];
+                 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32];
 
 test("PHASE_COLORS: defined with all phase keys as non-empty strings", function (a) {
   a.ok(typeof PHASE_COLORS === "object" && PHASE_COLORS !== null, "PHASE_COLORS is an object");

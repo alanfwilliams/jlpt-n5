@@ -1,6 +1,6 @@
-# 日本語 N5–N2 Course
+# 日本語 N5–N1 Course
 
-A free, self-contained interactive Japanese course from zero to JLPT N2 level.
+A free, self-contained interactive Japanese course from zero to JLPT N1 level.
 **No install. No account. Just open `index.html` in any browser.**
 
 🔗 **Live:** [alanfwilliams.github.io/jlpt](https://alanfwilliams.github.io/jlpt)
@@ -11,7 +11,7 @@ A free, self-contained interactive Japanese course from zero to JLPT N2 level.
 
 | Feature | Details |
 |---|---|
-| **N5 + N4 + N3 + N2 curriculum** | Complete N5 (365 days) + N4 (295 days) + N3 (300 days) + N2 (360 days) — 1,320 days total |
+| **N5 + N4 + N3 + N2 + N1 curriculum** | Complete N5 (365 days) + N4 (295 days) + N3 (300 days) + N2 (360 days) + N1 (400 days) — 1,720 days total |
 | **Spaced repetition (SRS)** | SM-2 algorithm, same as Anki — cards scheduled automatically |
 | **Text-to-speech** | Native browser Japanese voice on every vocab word |
 | **Listening exercises** | Hear a word, pick the meaning |
@@ -33,7 +33,7 @@ A free, self-contained interactive Japanese course from zero to JLPT N2 level.
 ```bash
 git init
 git add index.html README.md
-git commit -m "Initial commit: N5/N4/N3/N2 1320-day course"
+git commit -m "Initial commit: N5/N4/N3/N2/N1 1720-day course"
 git branch -M main
 git remote add origin https://github.com/YOUR_USERNAME/jlpt-n5.git
 git push -u origin main
@@ -79,9 +79,13 @@ Your site will be live at `https://YOUR_USERNAME.github.io/jlpt-n5` within a min
 - **Days 1231–1275** — N2 Kanji (~200 kanji, government, economy, science)
 - **Days 1276–1320** — Review & JLPT N2 Test Prep
 
-### Future content (Days 1321+)
-- **N1** — ~400 days (vocabulary, verbs, grammar, kanji, test prep)
-- See [N3-N2-N1-REQUIREMENTS.md](N3-N2-N1-REQUIREMENTS.md) for the full N1 implementation plan
+### N1 Course (Days 1321–1720)
+- **Days 1321–1350** — N2 Review & Bridge to N1 (30 days)
+- **Days 1351–1470** — N1 Vocabulary (~4,000 words: formal, academic, literary, idioms)
+- **Days 1471–1530** — N1 Verbs & Expressions (literary verbs, classical remnants, keigo mastery)
+- **Days 1531–1640** — N1 Grammar (~220 patterns: formal, classical, literary)
+- **Days 1641–1690** — N1 Kanji (~300 kanji: literary, formal, poetic, medical, virtue)
+- **Days 1691–1720** — Review & JLPT N1 Test Prep
 
 ## Browser compatibility
 
